@@ -1,0 +1,100 @@
+Email Diagnosis
+2011-02-09
+Michael Spence
+
+Audience
+
+Currently this documentation is for Field Support officers only.  In the future, this procedure may be useful for Help Desk operators.
+
+
+Preamble
+
+This document applies to the testing of Sending Emails to a client.  This test is a "best" method available test and its success demonstrates our (APEagers) abililty to communicate with a target mail system.  The test may demonstrate that the target mail server is rejecting [domain] or sender@[domain] (where domain is an apeagers owned domain and sender is a specific user alias) or may state that the target mail recipient does not exist on the target server.  Due to various complications, successful tests MAY NOT be accurate and if problems persist the administrator of the target mail system will need to be contacted to confirm the tests.
+
+
+Steps to Follow:
+
+1. Determine Recipient and Sender
+
+2. Lookup IP for Target Mail Server
+
+3. Telnet to Target Mail Server
+
+4. Perform Mail Test Procedure
+a. EHLO
+b. MAIL
+c. RCPT
+d. CLOSE
+e. QUIT
+
+
+Steps in Detail
+
+1. Determine Recipient and Sender
+
+Assumably, this test is being performed as a result of a "failed" email being sent to a client from a user.  Gain from this user: their email address (in full) and the target clients email address.
+
+In these note the domain names from which and to which the email is to travel.
+
+
+2. Lookup IP for Target Mail Server
+
+Using a command prompt, start the nslookup program without options.  I.e. :
+
+	nslookup
+
+Set the type of nslookup you wish to perform so that you find information about the target domains mail server:
+
+	set type=mx
+
+Type the target domain and press Enter.  The nslookup for that domain will be performed and will list the target domains mail server as a name and IP, if the target domain has a mail server.  IF the target domain DOES NOT have a mail system, then either:
+	a) the user has an incorrect email address
+	b) you have the incorrect domain name
+	c) the domain doesn't actually take mail
+
+3. Telnet to Target Mail Server
+
+Again using the command prompt, telnet to the mail system of the target domain.  This can be done with the following command:
+
+	telnet [IP of mail system] 25
+
+Note the "25" on the end which will target port 25 on the target mail system, which is the SMTP port and allows mail to be sent to it.  IF the target CANNOT be telnet'ed to then either:
+	a) their system is blocking our network -> no further testing can be done
+	b) incorrect IP address -> perform lookup again
+
+
+4. Perform Mail Test Procedure
+
+SMTP has a number of commands which are sent everytime an email is sent to a mail server.  The following is a basic set, which are useful for testing a target mail server.
+
+a. EHLO
+
+Say hello to the mail server.  This forces the target to recognise the source domain:
+
+	EHLO [domain]
+
+The response may indicate that "domain" is invalid to the target or is being blocked.  Talk to the target mail sender's administrator to have domain unblocked.
+
+b. MAIL
+
+Give the target mail server a sender address.  Use the users email address or possibly some other test address (i.e. admin@test.com)
+
+	MAIL FROM:[sender]
+
+The response may indicate that "sender" is being blocked.  Talk to the target mail system's administrator to have sender unblocked.
+
+c. RCPT
+
+Give the target mail server a recipient address.  Use the client email address only.
+
+	RCPT TO:[client]
+
+The response may indicate that "client" is invalid, client doesn't exist, client is being blocked or many other possibilities.  Remember the target mail server knows its rules about its clients.  Have the client talk to their administrator to have themselves unblocked.
+
+d. CLOSE
+
+End the email you are sending.
+
+e. QUIT
+
+Close the connection to the server.

@@ -1,0 +1,4 @@
+# Nmap 4.76 scan initiated Tue Apr  1 17:14:33 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/TMB_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/TMB.webhosts 
+Host: 10.26.13.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.26.13.152 ()	Ports: 23/closed/tcp//telnet///
+# Nmap done at Tue Apr  1 17:14:33 2014 -- 2 IP addresses (2 hosts up) scanned in 0.04 seconds

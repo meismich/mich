@@ -1,0 +1,1 @@
+use assets; select id from assets where s_serialno =  "XSH6Y00610" limit 1;

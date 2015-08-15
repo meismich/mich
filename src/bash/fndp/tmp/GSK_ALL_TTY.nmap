@@ -1,0 +1,7 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:46:15 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/GSK_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/GSK.webhosts 
+Host: 10.7.1.253 ()	Ports: 23/open/tcp//telnet///
+Host: 10.7.6.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.7.6.151 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.7.6.160 ()	Ports: 23/open/tcp//telnet///
+Host: 10.7.6.231 ()	Ports: 23/open/tcp//telnet///
+# Nmap done at Tue Apr  1 16:46:15 2014 -- 5 IP addresses (5 hosts up) scanned in 0.04 seconds

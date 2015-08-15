@@ -1,0 +1,9 @@
+Recorded Greetings for Hunt Groups
+2010-08-18
+Michael Spence
+
+goto 
+
+"Group" -> "Services" -> "Hunt Groups" -> "Messaging" -> "Greetings"
+
+Load personal greeting for "Busy Greeting" and "No Answer Greeting"

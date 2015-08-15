@@ -1,0 +1,32 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:38:49 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/EMP_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/EMP.webhosts 
+Host: 10.1.0.49 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.0.55 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.0.89 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.0.98 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.0.99 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.0.100 ()	Ports: 23/filtered/tcp//telnet///
+Host: 10.1.0.101 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.0.102 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.0.103 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.0.110 ()	Ports: 23/filtered/tcp//telnet///
+Host: 10.1.0.111 ()	Ports: 23/filtered/tcp//telnet///
+Host: 10.1.0.117 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.0.120 ()	Ports: 23/filtered/tcp//telnet///
+Host: 10.1.0.121 ()	Ports: 23/filtered/tcp//telnet///
+Host: 10.1.0.130 ()	Ports: 23/filtered/tcp//telnet///
+Host: 10.1.0.131 ()	Ports: 23/filtered/tcp//telnet///
+Host: 10.1.0.132 ()	Ports: 23/filtered/tcp//telnet///
+Host: 10.1.1.7 ()	Ports: 23/filtered/tcp//telnet///
+Host: 10.1.1.15 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.1.16 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.1.18 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.1.19 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.1.22 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.1.23 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.1.29 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.1.45 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.1.48 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.1.49 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.1.50 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.1.1.92 ()	Ports: 23/closed/tcp//telnet///
+# Nmap done at Tue Apr  1 16:38:49 2014 -- 30 IP addresses (30 hosts up) scanned in 0.24 seconds

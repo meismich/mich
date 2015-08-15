@@ -1,0 +1,26 @@
+###############################################################################
+# VMGS/HVY.CFG
+# Last Modified:	2011-07-29
+# Author:		Michael Spence
+###############################################################################
+
+# cca-app1
+define host{
+        use             vmware-guest
+        host_name       hvffs
+        alias           hvffs
+        parents         hvy-esx1
+        address         10.52.1.1
+        hostgroups      vmg_windows,svr_file,svr_not_dhcp
+        }
+
+# cca-fs
+define host{
+        use             vmware-guest
+        host_name       hvy-dc1
+        alias           HVY Domain Controller
+        address         10.52.1.2
+        parents         hvy-esx1
+        hostgroups      vmg_windows,svr_dhcp
+        }
+

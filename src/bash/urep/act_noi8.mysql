@@ -1,0 +1,19 @@
+use assets;
+
+select assets.id, assets.s_serialno, str_to_date(descriptions.s_description, '%Y-%m-%d') as t_date 
+	from assets, descriptions 
+	where assets.id = descriptions.i_asset 
+		and (assets.id < 90000000 or assets.id > 200800000)
+		and descriptions.i_desctype = 13 
+		and assets.i_status <> 2 
+		and str_to_date(descriptions.s_description, '%Y-%m-%d') > subdate(curdate(), INTERVAL 32 DAY);
+
+
+select assets.id, assets.s_serialno, str_to_date(descriptions.s_description, '%Y-%m-%d') as t_date 
+	from assets, descriptions 
+	where assets.id = descriptions.i_asset 
+		and (assets.id < 90000000 or assets.id > 200700000)
+		and descriptions.i_desctype = 13 
+		and assets.i_status = 2 
+		and str_to_date(descriptions.s_description, '%Y-%m-%d') < subdate(curdate(), INTERVAL 61 DAY);
+

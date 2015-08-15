@@ -1,0 +1,5 @@
+# Nmap 4.76 scan initiated Tue Apr  1 17:05:33 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/GRK_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/GRK.webhosts 
+Host: 10.24.1.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.24.1.231 ()	Ports: 23/open/tcp//telnet///
+Host: 10.24.1.253 ()	Ports: 23/open/tcp//telnet///
+# Nmap done at Tue Apr  1 17:05:33 2014 -- 3 IP addresses (3 hosts up) scanned in 0.04 seconds

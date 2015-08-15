@@ -1,0 +1,26 @@
+Client Accesss License Key		Blackberry Server	Blackberry Data Service
+bescal-pmyfyp-r5s5vg-fwkwqm-5sy1y2		10			10
+bescal-yg7qfy-y8khyn-7jgpjg-hb7f5g		10			10
+besx35-5c5jb5-jz5p95-hnnjsc-pq50qj		20			20
+besx35-9thjw9-j3h7f9-vxx05t-7fhjyj		20			20
+besx35-hd9jhh-jbp50f-b6907d-5m903j		10			10
+besx35-s50rgs-ht5hgq-vs11r5-hb0j3w		10			10
+
+SRP Identifier
+s7903628
+
+SRP Authentication Key
+eevm-wvvh-qwjy-63yx-yaue-qyrb-3wky-ia5x-24mp-4mw3
+
+
+
+
+Blackberry Enterprise Server 5.0 for Microsoft Exchange - 20 User
+
+Quantity: 1
+
+Number 1 of 1 
+SRP ID: S76947224 
+SRP Authentication Key: czse-6ebw-ttbn-jn2m-ihhb-vqtg-x9hu-riwr-25db-dsni 
+CAL ID: C0002505600 
+CAL Authentication Key: bescal-0z9dw0-8d54r0-hv6thz-4x9c5v 

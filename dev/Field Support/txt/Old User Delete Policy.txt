@@ -1,0 +1,65 @@
+Old User Delete Policy
+2010-08-10
+Michael Spence
+
+
+Audience:
+
+Currently, this documentation is for Field Support Officers only.  In the future, this may apply to the Service Desk staff also.
+
+
+Preable:
+
+This document applies to the deletion of old Active Directory user accounts.  This includes the moving of users from one dealership to another, in that users will not have access to their account from the old dealership.
+
+
+
+Steps to Follow:
+
+1. Change the Password
+
+2. Rename the Account
+
+3. Forward Emails if Requested
+
+4. Move Account
+
+5. DO NOT Delete Account
+
+
+Steps in Detail:
+
+
+1. Change the Password
+
+To deny access to the account, the first step is to change the password.  The password used is not important, but should not be able to be guessed by the former user.  If the account is needed during the grace period supplied, this password can be reset to something which can be used.
+
+
+2. Rename the Account
+
+Renaming an account in AD is a tedious issue which has to be carried out in three (3) steps. Before beginning, find the user in AD (this can be done using the search facility).  Then carry out the following sub-steps:
+
+a) Right-Click account and choose Rename.  From here this will change the "Full Name".  Enter "Old " at the front of the name (note the space).
+
+b) A rename box should appear.  Add to the First Name, "Old ".  This changes the "Display Name".
+
+c) Navigate to the logon name and add "old" at the front of the existing login name (note there is no space)
+
+Double check that information has been changed by displaying Account Properties.
+
+
+3. Forward Emails if Requested
+
+Obviously emails can be forwarded to managers or replacement staff.  This is only to be done if requested by an appropriate manager.  This is NOT to be done if requested by a user who has moved dealerships, or has left the organisation to which the emails belong.  Also this should not be done, if simply requested by a user replacing the old user.
+
+
+4. Move Account
+
+A folder in AD has been created in the root of apeagers.com.au, named "Old Accounts".  In this OU there are 12 OUs, one for each month of the year.  Right-click the account to move and select this months folder in the "Old Account" OU.  Accounts which are in this OU will be periodically deleted.
+
+
+5. DO NOT Delete Account
+
+The account is not to be deleted at this time.  We will leave a grace period for all accounts.  This is an attempt to make sure that no information is being deleted from either this persons account or from his exchange account.  
+
+The month folders will be cleared 3 months after the month has passed.

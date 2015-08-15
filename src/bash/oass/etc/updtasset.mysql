@@ -1,0 +1,25 @@
+use assets;
+
+drop temporary table if exists tempassets;
+
+create temporary table if not exists tempassets engine=memory select id, i_model, i_purchase, s_serialno from assets limit 0;
+
+load data infile '/home/mspence/src/oass/out/asset.new'
+	replace
+	into table tempassets
+	fields terminated by ','
+	enclosed by ''
+	lines terminated by '\n'
+	(id, @model, @purchase, s_serialno)
+	set i_model = (select id from models where s_model = @model limit 1),
+	    i_purchase = (select id from purchases where s_invoiceno = @purchase limit 1);
+
+
+update assets,tempassets set 
+	assets.i_purchase = tempassets.i_purchase,
+	assets.i_model = tempassets.i_model,
+	assets.s_serialno = tempassets.s_serialno
+	where assets.id = tempassets.id;
+
+drop temporary table if exists tempassets;
+

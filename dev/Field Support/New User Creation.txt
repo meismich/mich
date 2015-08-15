@@ -1,0 +1,270 @@
+New User Creation
+2011-12-20
+Michael Spence
+
+
+Audience:
+
+This documentation is for Field Support and Service Desk staff.  This documentation may be beneficial for remaining IT staff as the need arises.
+
+
+Preamble:
+
+This document applies to the creation of Active Directory user accounts.  This applies to users moving from one dealership to another, as users DO NOT retain the same account.
+
+This document also details the creation of Office 365 user accounts, which is primarily used for the purpose of email.
+
+The Active Directory setup gives a user the ability to log onto computers.  The Office 365 setup gives a user a mailbox for email purposes.  Each Office 365 account carries a charge to the dealership.
+
+Some steps in this document apply when the user's role is easily ascertained and can be replicated from existing users.  Intuition may be required for some setups.
+
+This document DOES NOT apply to the creation of ERA user accounts.
+
+
+Topics of Discussion:
+
+1. Required information
+	a. User Details
+	b. Email requirements
+	c. Internet Access Level
+	d. File Share access
+2. Active Directory User Setup
+	a. User Logon Name
+	b. Password Creation
+	c. Adding user Information
+	d. Add Email address
+	e. Security Groups
+		i. Internet Access
+		ii. Proxy Groups
+		iii. Folder Redirection
+		iv. Shares Groups
+3. Office 365 User Setup
+	a. User Admin Page
+	b. Details
+	c. Additional details (Room Number)
+	d. Settings	
+       e. Licencing
+       f. Email and Results
+       g. First User Logon
+       h. Additional Email Addresses
+       
+Z. Business Unit Codes
+
+
+Topics in Detail
+
+1. Required information
+
+Before beginning the creation process for a user, it should be obvious that some information is required before setup can be completed.  These are summarised below.
+
+1.a. User Details
+
+Naturally, some of the most basic information that is required for a User setup are:
+	- User Name (i.e. first and last name)
+	- Dealership (whom user works for)
+	- Location (where user is physically located)
+	- Phone Number
+
+This information is essential in creating a standard, easily identifiable user account.
+
+1.b. Email requirements
+
+Please note, an email account carries a cost to the dealership.  Although it is typical that a user has an associated email account, it may not be necessary in all cases.  Verify with the user's potential manager or financial controller.
+
+Determine if the user is to have multiple email aliases.  This may be necessary if the dealership uses two or more domain names.
+
+1.c. Internet Access Level
+
+As noted in the Internet Acces documentation, internet access can be granted by adding users to particular groups based on role or managerial strictness within the dealership.  Determine from the manager which level of access is appropriate for the user.  The following summarises the Levels of Access.
+
+	Level 0 		No Access to Internet
+	Level 1 		Specific Manufacturer Sites Only
+	Level 2		Whitelist & Manufacturer Sites Only
+	Level 5		General Standard Internet Access
+	Level 7		Additional access to Social Networking
+
+
+1.d. File Share access
+
+Throughout the dealerships of APEagers many file shares exist.  While attempts to standardise these shares has been made, many dealerships are still using haphazard file sharing techniques.  If required, it may be necessary to examine another user's setup to determine which shares are to be used by the new user.
+
+
+
+
+
+2. Active Directory User Setup
+
+These steps apply to a user which requires access to computers within the APEagers network.  These steps DO NOT apply if the user only requires email.
+
+Using the administrative tool, Active Directory Users and Computers, select the OU appropriate for the dealership the user is to be working in.  Within this OU, begin the creation of the new user.
+
+Follow the steps of the wizard to create the new user.  Note that the exchange steps of the setup MUST BE SKIPPED for all setups.  [Attempts will be made to remove the exchange tasks from ADU&C to reduce the chance of creating exchange attributes.]  Un-tick ?Create Exchange Mailbox? in this step.
+
+2.a. User log on name: Naming conventions
+
+During the setup wizard steps, the user's logon name must be given.  It has been the standard of APEagers IT in the past to use the following formula to generate a logon name:
+
+	<username> = <first initial><last name>
+		
+(for example Joe Doofus Bloggs' username would be "jbloggs")
+
+When the wizard returns the error, "The user logon name you have chosen is already in use in this enterprise.  Choose another logon name, and then try again.", it has been common practice to replace this formula with one of the following:
+
+	<username> = <first initial><second initial><last name>
+		or
+	<username> = <last name><first initial>
+		or
+	<username> = <first name>.<last name>
+		
+(for example Joe Doofus Bloggs' username could be "jdbloggs", "bloggsj" or "joe.bloggs")
+
+Note capital letters DO NOT create unique names, and while not illegal, should not be used in login names.
+
+2.b. Password Creation
+
+There are no rules for the creation of a password for a newly created account.  Rude or derogatory passwords are discouraged.  :)
+
+It has been the Field Supports standard to create a password using the following formula:
+
+	<password> = <day-of-week today><year today>
+		
+(assuming today is Tuesday 20th of December 2011 password would be "tuesday2011")
+
+
+
+
+
+2.c. Adding User Information
+
+After completing the user creation wizard, the user account can be edited and the generic information about the user can be added.
+
+Double click or bring up the properties of the account to being this process.
+
+Add in the collected information under the following tabs:
+	
+	- General
+	- Address
+	- Telephones
+	- Organization
+
+2.d. Add Email address
+
+If (and only if) this user is to be given an email account, using the general tab of the user properties, add the email address to the E-mail field.  By adding this property, when the Outlook client is configured, the email address will be able to be determined automatically by Outlook.
+
+2.e. Security Groups
+
+Security groups control the access users have to many systems.  The following topics describe some of the common groups.
+
+2.e.i. Internet Access
+
+According to the Internet Access documentation the following groups determine a user's level of access to the internet.
+
+	Internet L0 - No Access
+	Internet L1 - Manufacturer Only
+	Internet L2 - Whitelist Only
+	Internet L5 - Standard Access
+	Internet L7 - + social Networking
+
+Apply the appropriate security group to the user.  Refer to the Internet Access documentation for further details.
+
+2.e.ii. Proxy Groups
+
+By default, users within the APEagers network are given via group policy the "QLD-CSP" proxy server to access the internet.  By adding a user to one of the following groups, they will be given its related proxy server
+
+	Proxy - NSD-CSP
+	Proxy - DWN-CSP
+
+[Note at the time of writing this document DWN-CSP did not currently exist, but its existence was visible on the horizon]
+
+2.e.iii. Folder Redirection
+
+Each dealership has a location where user's My Documents and Desktop are redirected from.  Typically the name of the folder redirection group for a dealership uses the following formula:
+
+	<FR group> = _<dealership acronym> Folder Redirection Group
+		(for example Eagers Mazda has the folder redirection 
+       group "_EMZ Folder Redirection Group")
+
+2.e.iv. Shares Groups
+
+Dealership shares as already mentioned are not the most streamlined setups and do not as other systems follow strict standards.  It is the author's intention to have this streamlined in the near future.
+
+Refer to other users with similar roles within the same dealership as to which security groups a user may require for access to particular shares.
+
+[As shares become standardised, this section will be updated]
+
+
+
+
+
+3. Office 365 User Setup
+
+The following steps apply to the setup of an email account on Office 365.  These steps MAY NOT apply when also setting up a user within Active Directory.
+
+To perform these functions, administrative rights must be used within the Office 365 portal.  To reiterate the portal is accessed via the website:
+
+	http://portal.microsoftonline.com
+
+3.a. User Admin Page
+
+From the default "Admin" page within the portal, the user administration page can be accessed from the link in the menu on the left.  Click "Users" to gain access.
+
+When the user list appears, one of the options directly above the list is "New".  This is a drop down menu, which contains "User" and "Bulk Add".  Ordinarily the option "User" is clicked to create a single user.
+
+Begin user creation by selecting "New" and then "User".  This will begin the creation wizard.
+
+3.b. Details
+
+On the first page of the wizard, enter the user details as appropriate.  A unique user name is required for this step, and it is recommended that this follow a formula similar to username creation in Active Directory.  Also select the domain appropriate for the dealership, for which the user will be working.
+
+3.c. Additional details (Room Number)
+
+Before proceeding, use the arrow beside "Additional details" to show the additional details for the user.  Add the appropriate information into the displayed fields.
+
+Office Number is a field which is not used (and is not forseen to be used) within APEagers.  For this reason, it has been decided that this field will be used to determine the business unit to which this account will be charged.  Refer to the following Business unit account charge codes and fill in this field appropriately.  This code is based on Franchise, Manufacturer and Department.
+
+Refer to Appendix Z for the list of Business Unit Codes
+
+3.d. Settings
+
+Once details have been completed, the "Next" button will take the wizard to the Settings page.  Alter the location of the user to "Australia".
+
+This finalises the settings changes and "Next" can be pressed.
+
+
+
+
+3.e. Licencing
+
+Access is granted to the Office 365 system when the user is licenced.  Differing levels of services are granted based on the licence applied to the user.  
+
+There are two Plans available for licencing, one which applies to default users and another which applies to advanced users.
+
+For a default user select the plan licence:
+
+	Exchange Online Plan 1
+
+For advanced users select the option:
+
+	Microsoft Office 365 Plan E1	
+       Exchange Online (Plan 1)
+       
+       
+The ?Lync? and ?SharePoint? options can be ignored in this setup.  They concern an ongoing project.
+
+3.f. Email and Results
+
+The final step of the creation wizard is to email a copy of the creation report.  This will finalise the creation of the user.
+
+The final screen will then show the results of the created user.  These results include the randomly generated password for the account.
+
+3.g. First User Login 
+
+Before Outlook can be configured for a user, the password for the user must be set; the randomly generated password WILL NOT suffice.  Using the results of the prior setup, log into the portal as the user.  Change the password by navigating to ?My Profile? and ?Change Password?.
+
+3.h. Additional Email Addresses
+To add additional email addresses to a user?s Office 365 setup, select the user from the users list.  When the user?s details are displayed select the ?More? option and select ?Change Mailbox Settings?.  This will cause the browser to open a new window or tab displaying the user?s mailbox settings.
+From here select the dropdown section ?E-mail Options?.  The ?+ Add? button will allow you to add additional email addresses for the user.
+
+Appendix Z ? Business Unit Codes
+
+

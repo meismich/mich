@@ -1,0 +1,109 @@
+Klosters Backup
+2011-04-13
+Michael Spence
+
+
+Audience:
+The master of this document is specifically for the System Administrator of the Klosters Backup setup.  The adjusted copy of the document is for general use and maintenance of the Klosters Backup system.
+
+
+Preamble:
+This document describes the installation requirements for setting up the backup system for Klosters.  This includes the created accounts in AD, on local machines and ESXi hosts.  This document details the jobs created within the backup systems (vRanger and BackupExec).
+
+This document DOES NOT detail the impacts of failed backups.  This document DOES NOT describe how a restoration is to be performed.
+
+This document DOES suggest that KLOPC20 should be connected to the network correctly OR removed from production.
+
+
+Topics of Discussion:
+
+- Basic Explanation of Setup
+- Important Setup Notes
+- vRanger Job Setup
+- Backup Exec Job Setup
+- KLOPC20 Analysis
+
+
+Basic Explanation of Setup:
+The backup of the Klosters systems is a relatively simple setup.  The hardware used is one server KLOPC225, which has a reasonable quantity of disk space and has a Tandberg LTO tape drive attached.  The original analysis of the backup noted that there was sufficiently less than 1TB of data to place on tape in one run.  vRanger performs the backup of the virtual machines within the ESXi Cluster, placing all the recorded snapshots on KLOPC225.  BackupExec creates a copy of the MX server also on KLOPC225.  BackupExec concurrently performs a backup to tape of the Local Machine including the previously mentioned data AND also performs a backup of a few select machines.
+
+Important Setup Notes:
+Installed vRanger Pro 5.0
+
+Requires user account to execute services
+u/n klositeservices
+p/w klos3rv1c3s
+
+database installed using the existing SQL service on KLOPC225
+credentials were "Windows" using my personal domain account
+
+Repository user credentials
+
+vRanger Setup
+
+Host Credentials & klo-vc power user
+u/n vranger
+p/w vr4nger!
+
+Jobs:
+1- Backup MX (c-drive only) start at 7pm
+2- Backup All (except MX) start at 7:30pm
+
+
+Backup Exec 12.5 Service Account
+u/n besa
+p/w bes3rv1c3s
+
+Jobs:
+1- Full Exchange Backup start at 7:30pm
+2- Daily start at 8:30pm
+
+
+vRanger Job setup:
+Job1 - Backup All (except MX)
+This job connects to the vCentre and performs a back-up of all the virtual machines and their disks, with the exception of the Exchange server.  Each machine in turn has a snapshot taken of it and this snapshot is backed up to disk.  Target directory is \\klopc225\vRanger which is located at D:\vRanger on the machine KLOPC225.  The schedule for this job is "Every Day" starting at "7:30pm".  The expected completion time for this job is "12:00am".
+
+Job2 - Backup MX (c-drive only)
+As Exchange is a databasing system and cannot be "snapshot" using standard VMWare techniques, only a backup of the MX's c-drive is performed.  Again the Target directory is \\klopc225\vRanger.  The schedule for this job is "Every Day" starting at "7:00pm".  This job is started before Job1 due to its size and its resource requirements.  If this job starts at the same time or after Job1, the resources of the ESXi cluster can become constrained and fail to backup within a reasonable time frame.  The expected completion time for this job is "8:00pm".
+
+
+BackupExec 12.5 Job Setup:
+Job1 - Full Exchange Backup
+This job makes a full backup of the exchange database to a local directory.  The target directory of this backup is D:\Exchange Backup which is referenced through the "Backup-to-Disk Folders" as "EXCHANGE_BACKUP".  This repository has a maximum size of 50GB and a maximum of of 100 backup sets.  Only one concurrent job is allowed to this directory at a time.  The scheduled time for this backup is "Every Day" commencing between "7:30pm" and "8:00pm"
+
+Job2 - Daily
+The purpose of this job is perform the backup to tape.  Primarily this job targets the local machine "KLOPC225" and performs a backup of the stored data from both vRanger Jobs and also the Full Exchange Backup Job.  However, this job also performs a backup of these extra machines (and locations): KLOPC20 (C:, SQL, Shadow, System, E:), qm-server (C:) and klo-dc2 (D:).  The target repository is the "Daily" media set of tapes, defined by cataloguing particular tapes as designated below.  The shedule for this job is "Every Day" starting between "8:30pm" and "2:00am".  The expected completion time is "2:00pm".  
+
+
+KLOPC20 Analysis:
+The following analysis of the "Daily" job highlights the issues with the backup of klopc20 and the excessive length of time required to perform the backup of this system.  The author's current hypothesis is that the KLOPC20 machine DOES NOT have a 1Gb network link between it and KLOPC225, but rather a 100Mb link.  Supporting evidence for this is the rate at which the backup is perfomed (440MB/min = 7.33 MB/s ~= 73 Mb/s).
+
+
+Current Analysis of Job2:
+Service Name			Time(min)	Size (GB)	Rate(MB/min)
+Klopc20\C:			37.8		 18.2		460
+Klopc20\SQL			  3.3		  8.3		2200
+Klopc20\Shadow			  0.3		  0.072		220
+Klopc20\System			  5.3		  1.4		255
+qm-server\c:			  3.3		 10.7		3200
+klo-dc2\d:			  0.3		  0.15		400
+klopc225\c:			 53.8		 80		1400
+klopc225\sql			  0.5		  0.055		170
+klopc225\d:			320		667		2000
+klopc225\shadow			  0.3		  0.1		320
+klopc225\system			  2		  1.3		620
+klopc20\E:			280		128		440
+
+TOTALS				707min		915GB		(1295)
+				=11.78Hrs
+Estimated:
+Backup (w/o klopc20)		390		767		1970
+Backup (optimal w/ klopc20)	465		915		1970
+
+Verify (all)			205	3.43hrs
+
+Backup & Verify (current)	912	15.25hrs
+Backup & Verify (optimal)	670	11.17hrs
+
+
+The biggest danger with running Job2 at this time is the possibility that it will conflict with the "Full Exchange Backup" job or either of the vRanger jobs.  Currently priority is given to backup KLOPC20 first which takes in excess of 5 hours.  It is expected that if KLOPC20 is unavailable for backup or the time for backup is drastically decreased, this job (Job2) will not backup current data for many of the other machines.  This advice needs to be taken into consideration.

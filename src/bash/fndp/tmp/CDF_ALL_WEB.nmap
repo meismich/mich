@@ -1,0 +1,30 @@
+# Nmap 4.76 scan initiated Tue Apr 15 11:13:44 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 80 -oG /home/mspence/src/fndp/tmp/CDF_ALL_WEB.nmap 172.17.75.0/24 
+Host: 172.17.75.1 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.4 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.5 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.6 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.8 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.9 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.10 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.13 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.14 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.16 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.21 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.22 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.23 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.27 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.28 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.30 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.31 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.32 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.33 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.34 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.35 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.36 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.37 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.40 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.41 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.103 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.151 ()	Ports: 80/filtered/tcp//http///
+Host: 172.17.75.162 ()	Ports: 80/filtered/tcp//http///
+# Nmap done at Tue Apr 15 11:13:45 2014 -- 256 IP addresses (28 hosts up) scanned in 1.18 seconds

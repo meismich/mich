@@ -1,0 +1,8 @@
+use assets;
+
+load data infile '/home/mspence/src/oass/out/descr.new'
+	into table descriptions
+	fields terminated by ','
+	enclosed by ''
+	lines terminated by '\n'
+	(i_asset, i_desctype, s_description);

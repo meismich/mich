@@ -1,0 +1,72 @@
+MICKS-HP2-MIB DEFINITIONS ::= BEGIN
+
+    IMPORTS
+        enterprises
+            FROM MICKS-BASIC-SMI;
+
+
+    hp                OBJECT IDENTIFIER ::= { enterprises 11 }
+    nm                OBJECT IDENTIFIER ::= { hp 2 }
+    icf               OBJECT IDENTIFIER ::= { nm 14 }
+
+    hpicfObjects      OBJECT IDENTIFIER ::= { icf 11 }
+
+    hpicfCommon       OBJECT IDENTIFIER ::= { hpicfObjects 1 }
+    hpicfSwitch       OBJECT IDENTIFIER ::= { hpicfObjects 5 }
+
+    -- icfChassis (enterprises.11.2.14.11.1.2)
+    hpicfChassis      OBJECT IDENTIFIER ::= { hpicfCommon 2 }
+
+    hpicfSensorTable OBJECT IDENTIFIER ::= { hpicfChassis 6 }
+
+    hpicfSensorEntry OBJECT IDENTIFIER ::= { hpicfSensorTable 1 }
+
+    hpicfSensorStatus OBJECT-TYPE 
+           SYNTAX     INTEGER {
+                          unknown(1),
+                          bad(2),
+                          warning(3),
+                          good(4),
+                          notPresent(5)
+                          }
+           MAX-ACCESS read-only
+           STATUS     current
+           DESCRIPTION
+                   "Actual status indicated by the sensor."
+           ::= { hpicfSensorEntry 4 }
+
+    -- hpSwitch (enterprises.11.2.14.11.5.1)
+    hpSwitch          OBJECT IDENTIFIER ::= { hpicfSwitch 1 }
+
+    hpOpSystem        OBJECT IDENTIFIER ::= { hpSwitch 1 }
+
+    -- Mem
+    hpMem       OBJECT IDENTIFIER ::= { hpOpSystem 2 }
+
+    hpLocalMem  OBJECT IDENTIFIER ::= { hpMem 1 }
+
+    hpLocalMemTable OBJECT IDENTIFIER ::= { hpLocalMem 1 }
+
+    hpLocalMemEntry OBJECT IDENTIFIER ::= { hpLocalMemTable 1 }
+
+    hpLocalMemFreeBytes OBJECT-TYPE 
+        SYNTAX    INTEGER
+        ACCESS    read-only
+        STATUS    mandatory
+        DESCRIPTION
+                "The number of available (unallocated) bytes."
+        ::= { hpLocalMemEntry 6 }
+
+    -- CPU % Usage
+    hpSwitchStatistics        OBJECT IDENTIFIER ::= { hpSwitch 9 }
+
+    hpSwitchMiscStat OBJECT IDENTIFIER ::= { hpSwitchStatistics 6 }
+
+    hpSwitchCpuStat OBJECT-TYPE 
+        SYNTAX      INTEGER (0..100)
+        ACCESS      read-only
+        STATUS      mandatory
+        DESCRIPTION "The CPU utilization in percent(%)."
+        ::= { hpSwitchMiscStat 1 }
+
+    END

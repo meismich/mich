@@ -1,0 +1,21 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:42:08 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/MTG_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/MTG.webhosts 
+Host: 10.5.1.236 ()	Ports: 23/open/tcp//telnet///
+Host: 10.5.1.237 ()	Ports: 23/open/tcp//telnet///
+Host: 10.5.1.238 ()	Ports: 23/open/tcp//telnet///
+Host: 10.5.1.239 ()	Ports: 23/open/tcp//telnet///
+Host: 10.5.1.252 ()	Ports: 23/open/tcp//telnet///
+Host: 10.5.4.11 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.152 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.153 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.154 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.155 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.156 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.158 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.159 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.160 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.164 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.165 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.180 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.5.4.190 ()	Ports: 23/open/tcp//telnet///
+# Nmap done at Tue Apr  1 16:42:08 2014 -- 19 IP addresses (19 hosts up) scanned in 0.06 seconds

@@ -1,0 +1,121 @@
+==========================================================================
+INTEROG8 Data But NOT Active
+
+Total Assets: 28
+--------------------------------------------------------------------------
+AssetDB (Asset,Serial,Interog8) 
+  20100084,6A067321H,2013-05-07
+
+Interog8 Data
+  Computer: AP100084
+  Serial: 6A067321H
+  Asset: 20100084
+	Username: training6
+	IP Address: 10.32.254.101
+	IP Address: fe80::b14d:c75f:baa4:1ce0
+--------------------------------------------------------------------------
+AssetDB (Asset,Serial,Interog8) 
+  20100206,8A063028H,2013-05-24
+
+Interog8 Data
+  Computer: AUPSHO6
+  Serial: 8A063028H
+  Asset: 20100206
+	Username: stibaldi
+	IP Address: 10.17.254.21
+	IP Address: 0.0.0.0
+	IP Address: 10.17.254.21
+--------------------------------------------------------------------------
+AssetDB (Asset,Serial,Interog8) 
+  20100208,8A063022H,2013-05-27
+
+Interog8 Data
+  Computer: AUPSHO8
+  Serial: 8A063022H
+  Asset: 20100208
+	Username: aparlett
+	IP Address: 0.0.0.0
+	IP Address: 10.17.11.46
+	IP Address: 0.0.0.0
+--------------------------------------------------------------------------
+AssetDB (Asset,Serial,Interog8) 
+  20100242,7A062789H,2013-05-24
+
+Interog8 Data
+  Computer: AP100243
+  Serial: 7A062789H
+  Asset: 20100242
+	Username: ganthonsen
+	IP Address: 10.19.254.24
+	IP Address: fe80::8d68:780d:3920:4896
+--------------------------------------------------------------------------
+AssetDB (Asset,Serial,Interog8) 
+  20100320,7A063129H,2013-05-07
+
+Interog8 Data
+  Computer: AP100320
+  Serial: 7A063129H
+  Asset: 20100320
+	Username: training12
+	IP Address: 10.32.254.20
+	IP Address: fe80::7572:4a75:3812:d7d7
+--------------------------------------------------------------------------
+AssetDB (Asset,Serial,Interog8) 
+  20110098,B099339/001,2013-05-16
+
+Interog8 Data
+  Computer: BTPSVC2
+  Serial: B099339/001
+  Asset: 20110098
+	Username: service.palmerston
+	IP Address: 10.51.1.161
+--------------------------------------------------------------------------
+AssetDB (Asset,Serial,Interog8) 
+  20110162,6A063041H,2013-04-26
+
+Interog8 Data
+  Computer: EMZIDS3
+  Serial: 6A063041H
+  Asset: 20110162
+	Username: pcattell
+	IP Address: 10.10.5.48
+	IP Address: 0.0.0.0
+	IP Address: 10.10.5.48
+	IP Address: 169.254.52.70
+	IP Address: 169.254.52.70
+--------------------------------------------------------------------------
+AssetDB (Asset,Serial,Interog8) 
+  20110211,B099648/012,2013-05-23
+
+Interog8 Data
+  Computer: TTNFIN110211
+  Serial: B099648/012
+  Asset: 20110211
+	Username: msingh
+	IP Address: 10.25.254.53
+	IP Address: fe80::2546:de3d:8e7f:f6c2
+--------------------------------------------------------------------------
+AssetDB (Asset,Serial,Interog8) 
+  20110379,6B113147H,2013-05-15
+
+Interog8 Data
+  Computer: TTNSHOF
+  Serial: 6B113147H
+  Asset: 20110379
+	Username: ssooveere
+	IP Address: 10.36.254.42
+	IP Address: fe80::446b:33ca:9144:79b0
+--------------------------------------------------------------------------
+AssetDB (Asset,Serial,Interog8) 
+  20110380,6B109900H,2013-05-17
+
+Interog8 Data
+  Computer: AUSMGR3
+  Serial: 6B109900H
+  Asset: 20110380
+	Username: pgoschnick
+	IP Address: 10.35.1.113
+	IP Address: fe80::c4c2:f558:5af:32f8
+--------------------------------------------------------------------------
+AssetDB (Asset,Serial,Interog8) 
+  20110403,B100809/018,2013-05-22

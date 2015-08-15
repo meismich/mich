@@ -1,0 +1,8 @@
+# Nmap 4.76 scan initiated Tue Apr  1 17:25:18 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 80 -oG /home/mspence/src/fndp/tmp/MSN_ALL_WEB.nmap 10.38.2.0/24 
+Host: 10.38.2.1 ()	Ports: 80/closed/tcp//http///
+Host: 10.38.2.50 ()	Ports: 80/open/tcp//http///
+Host: 10.38.2.150 ()	Ports: 80/open/tcp//http///
+Host: 10.38.2.235 ()	Ports: 80/open/tcp//http///
+Host: 10.38.2.252 ()	Ports: 80/open/tcp//http///
+Host: 10.38.2.254 ()	Ports: 80/closed/tcp//http///
+# Nmap done at Tue Apr  1 17:25:19 2014 -- 256 IP addresses (6 hosts up) scanned in 0.58 seconds

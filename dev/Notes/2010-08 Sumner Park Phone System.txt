@@ -1,0 +1,69 @@
+Sumner Park Phone Setup
+2010-08-24
+Michael Spence
+
+
+Preamble:
+
+The phone system at Sumner Park is a temporary setup using Phone numbers from the IT TIPT range.  The original numbers from the original Service centre at Toowong are forwarded to this temporary system.  Please do not advertise any of the temporary numbers, as these are property of the IT department.  When the service centre is moved back to Toowong, your correct new numbers will be allocated to you.
+
+
+Phone numbers involved:
+
+Original numbers at Toowong
+---------------------------
+
+Kellie Latemore		3871 6822
+Matt Branch		3871 6818
+Rod Wylie		3871 6827
+Reception		3871 6800
+
+
+New Numbers at Sumner Park
+--------------------------
+
+Matt Branch		3828 6142
+Kellie Latemore		3828 6143
+Georgia Bailey		3828 6172
+Rod Wylie		3828 6144
+Hunt Group 6818		3828 6148
+Hunt Group 6822		3828 6149
+Hunt Group 6172		3828 6150
+Hunt Group 6827		3828 6151
+
+
+How the Numbers are related
+---------------------------
+
+(The following information is known as we had Telstra do these manually)
+
+Extension 6822 is forwarded to 6149
+Extension 6818 is forwarded to 6148
+Extension 6827 is forwarded to 6151
+
+(The following information is taken from the setup currently in place, which IT have control over)
+
+Extension 6172 rings and if unanswered forwards to 6150
+
+Extension 6148 is a hunt group and rings in order (5 rings each): 6142, 6143, 6172, 6144 and if unanswered forwards to 6800
+Extension 6149 is a hunt group and rings in order (5 rings each): 6143, 6172, 6142, 6144 and if unanswered forwards to 6800
+Extension 6150 is a hunt group and rings in order (5 rings each): 6143, 6142, 6144 and if unanswered forwards to 6800
+Extension 6151 is a hunt group and rings in order (5 rings each): 6144, 6143 and if unanswered forwards to 6800
+
+If a number in a hunt group is busy or do-not-disturb is set, the hunt group moves automatically to the next number.
+
+Each of the extensions 6142, 6143, 6144 are set to forward to 6800 if not answered or if busy.
+
+
+What it all means
+-----------------
+
+Matt's original number is forwarded to "His" hunt group, so he gets first chance to answer it.  It then calls Kellie, Georgia, Rod.
+Kellie's original number forwards to "Her" hunt group, so she gets first chance to answer it. It then calls Georgia, Matt, Rod.
+Georgia didn't have an old number, so if her number rings and isn't answered it goes to "Her" hunt group, which doesn't have her in it.  It calls Kellie, Matt, Rod.
+Rod's original number is forwarded to "His" hunt group, so he gets first chance to answer it.  It then calls Kellie.
+
+If for some reason, a person calls one of the person's temporary numbers (which shouldn't happen, because no-one should know your real numbers) (and this excludes Georgia's number) the phone will ring as normal.
+
+In ALL cases if the phone is unanswered, the phone call will be forwarded to Reception at Toowong Subaru.
+

@@ -1,0 +1,10 @@
+# Nmap 4.76 scan initiated Tue Aug  6 10:41:19 2013 as: nmap --min-hostgroup 256 --max-rtt-timeout 100 --max-retries 1 -T5 -n -PS -p 80 -oG /home/mspence/src/fndp/tmp/IRG_ALL.nmap 10.33.0.0/24 10.33.1.0/24 10.33.2.0/24 10.33.3.0/24 10.33.4.0/24 10.33.5.0/24 10.33.6.0/24 10.33.7.0/24 10.33.8.0/24 10.33.9.0/24 10.33.10.0/24 10.33.11.0/24 10.33.12.0/24 10.33.13.0/24 10.33.15.0/24 10.33.16.0/24 10.33.17.0/24 10.33.18.0/24 10.33.19.0/24 10.33.20.0/24 10.33.99.0/24 10.33.100.0/24 10.33.253.0/24 10.33.254.0/24 
+Host: 10.33.1.112 ()	Ports: 80/closed/tcp//http///
+Host: 10.33.1.115 ()	Ports: 80/closed/tcp//http///
+Host: 10.33.1.150 ()	Ports: 80/open/tcp//http///
+Host: 10.33.1.254 ()	Ports: 80/closed/tcp//http///
+Host: 10.33.4.250 ()	Ports: 80/closed/tcp//http///
+Host: 10.33.254.10 ()	Ports: 80/closed/tcp//http///
+Host: 10.33.254.11 ()	Ports: 80/closed/tcp//http///
+Host: 10.33.254.13 ()	Ports: 80/closed/tcp//http///
+# Nmap done at Tue Aug  6 10:41:42 2013 -- 6144 IP addresses (8 hosts up) scanned in 23.47 seconds

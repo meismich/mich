@@ -1,0 +1,35 @@
+Klosters ESXi 4.1
+2011-04-13
+Michael Spence
+
+
+Each ESXi is configured in the identical manner.  This is necessary from a VMWare point of view so that VM's can be easily transported from machine to machine (vMotion).  From an identification point of view, it simply eases the setup and aesthetics of the system.
+
+	Configuration Details (where {n} is the host number)
+		Option		Value
+		HostName	klo-esx{n}.ape.local
+		IP Address	172.17.104.8{n}
+		NetMask		255.255.252.0
+		GW Address	172.17.104.254
+		NameServers	172.17.104.234
+				172.17.104.235
+		root Pwd 	SecLvl 1
+		
+Using vSphere via the vCentre, the following options were configured on each of the hosts.  Again these options were identical across all ESX hosts.
+
+	Storage:
+		Identification		Device
+		KLO_MX1_LOG		eui.2243000155441738:1
+		KLO_MX1_OS		eui.22c60001554d4b1f:1
+		KLO_VMFS		eui.22b4000155e3e4aa:1
+		VM_ISO			eui.227e0001556f4edc:1
+
+	Network:
+		Switch Name	Port Groups		VLan		Adapters
+		vSwitch0 	VM Kernel 		n/a		vmnic0 (primary)
+				VM Network		0		vmnic2 (standby)
+				Klosters DMZ		9
+		vSwitch1	Klosters External	666		vmnic1 (primary)
+									vmnic3 (standby)
+Note: VM Kernel was configured for vMotion
+Note: physical patching is required for Redundant pathing.

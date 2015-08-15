@@ -1,0 +1,17 @@
+# Nmap 4.76 scan initiated Tue Aug  6 10:33:51 2013 as: nmap --min-hostgroup 256 --max-rtt-timeout 100 --max-retries 1 -T5 -n -PS -p 80 -oG /home/mspence/src/fndp/tmp/TNS_ALL.nmap 10.13.0.0/24 10.13.1.0/24 10.13.2.0/24 10.13.3.0/24 10.13.4.0/24 10.13.5.0/24 10.13.6.0/24 10.13.7.0/24 10.13.8.0/24 10.13.9.0/24 10.13.10.0/24 10.13.11.0/24 10.13.12.0/24 10.13.13.0/24 10.13.15.0/24 10.13.16.0/24 10.13.17.0/24 10.13.18.0/24 10.13.19.0/24 10.13.20.0/24 10.13.99.0/24 10.13.100.0/24 10.13.253.0/24 10.13.254.0/24 
+Host: 10.13.1.1 ()	Ports: 80/closed/tcp//http///
+Host: 10.13.1.239 ()	Ports: 80/open/tcp//http///
+Host: 10.13.3.5 ()	Ports: 80/closed/tcp//http///
+Host: 10.13.3.10 ()	Ports: 80/closed/tcp//http///
+Host: 10.13.3.21 ()	Ports: 80/closed/tcp//http///
+Host: 10.13.3.23 ()	Ports: 80/closed/tcp//http///
+Host: 10.13.3.34 ()	Ports: 80/closed/tcp//http///
+Host: 10.13.3.60 ()	Ports: 80/closed/tcp//http///
+Host: 10.13.3.150 ()	Ports: 80/open/tcp//http///
+Host: 10.13.3.151 ()	Ports: 80/open/tcp//http///
+Host: 10.13.3.152 ()	Ports: 80/open/tcp//http///
+Host: 10.13.3.159 ()	Ports: 80/open/tcp//http///
+Host: 10.13.3.160 ()	Ports: 80/open/tcp//http///
+Host: 10.13.3.165 ()	Ports: 80/open/tcp//http///
+Host: 10.13.3.254 ()	Ports: 80/closed/tcp//http///
+# Nmap done at Tue Aug  6 10:34:38 2013 -- 6144 IP addresses (15 hosts up) scanned in 47.80 seconds

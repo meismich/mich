@@ -1,0 +1,85 @@
+drop database services;
+
+create database services;
+
+use services;
+
+create table campuses (
+	id		int(16)		not null,
+	s_campus	char(64),
+	s_code		char(4)		not null
+	);
+
+create table sites (
+	id		int(16)		not null,
+	s_site		char(64),
+	s_code		char(8)		not null,
+	i_campus	int(16)		not null
+	);
+
+create table addresses (
+	id		int(16)		not null,
+	s_state		char(4)		not null,
+	s_suburb	char(32)	not null,
+	s_street	char(64)	not null,
+	s_number	char(32)	not null,
+	n_postcode	int(16)		not null,
+	i_site		int(16)		not null
+	);
+
+create table pstns (
+	id		int(16)		not null,
+	s_pstn		char(32)	not null,
+	i_supplier	int(16),
+	i_address	int(16)		not null
+	);
+
+create table networks (
+	id		int(16)		not null,
+	s_network	char(32)	not null,
+	s_subnet	char(32)	not null,
+	i_nettype	int(16)		not null,
+	i_supplier	int(16),
+	i_address	int(16)		not null
+	);
+
+create table nettypes (
+	id		int(16)		not null,
+	s_nettype	char(32)	not null
+	);
+
+insert into nettypes (id, s_nettype) values 
+	(1, "Internet Connection"),
+	(2, "WAN Connection"),
+	(3, "3G Connection");
+
+create table suppliers (
+	id		int(16)		not null,
+	s_supplier	char(32)	not null
+	);
+
+create table tennants (
+	id		int(16)		not null,
+	s_tennants	char(64)	not null,
+	s_code		char(8)		not null,
+	i_costcentre	int(16)
+	);
+
+create table tennantsites (
+	id		int(16)		not null,
+	i_tennant	int(16)		not null,
+	i_site		int(16)		not null
+	);
+
+create table telesolutions (
+	id		int(16)		not null,
+	s_telesolution	char(32)	not null,
+	s_brand		char(32),
+	s_model		char(32),
+	s_version	char(16),
+	s_numrange	char(32),
+	i_tennantsite	int(16)		not null
+	);
+	
+
+

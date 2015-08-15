@@ -1,0 +1,60 @@
+From _nagios@qld-nag.apeagers.com.au  Thu Apr 24 22:06:24 2014
+Return-Path: <_nagios@qld-nag.apeagers.com.au>
+Received: from bne-nixwww.apeagers.com.au (localhost [127.0.0.1])
+	by bne-nixwww.apeagers.com.au (8.14.3/8.14.3) with ESMTP id s3OC6OUV024048
+	for <mspence@localhost>; Thu, 24 Apr 2014 22:06:24 +1000
+MIME-Version: 1.0
+Received: from outlook-apacsouth.office365.com [111.221.115.82]
+	by bne-nixwww.apeagers.com.au with IMAP (fetchmail-6.3.8)
+	for <mspence@localhost> (single-drop); Thu, 24 Apr 2014 22:06:24 +1000 (EST)
+Received: from SINPR01MB249.apcprd01.prod.exchangelabs.com (10.242.52.142) by
+ HKXPR01MB245.apcprd01.prod.exchangelabs.com (10.242.120.144) with Microsoft
+ SMTP Server (TLS) id 15.0.921.12 via Mailbox Transport; Tue, 22 Apr 2014
+ 10:20:44 +0000
+Received: from SINPR01CA008.apcprd01.prod.exchangelabs.com (10.242.48.18) by
+ SINPR01MB249.apcprd01.prod.exchangelabs.com (10.242.52.142) with Microsoft
+ SMTP Server (TLS) id 15.0.921.12; Tue, 22 Apr 2014 10:20:42 +0000
+Received: from DB3FFO11FD007.protection.gbl (2a01:111:f400:7e04::147) by
+ SINPR01CA008.outlook.office365.com (2a01:111:e400:a800::18) with Microsoft
+ SMTP Server (TLS) id 15.0.921.12 via Frontend Transport; Tue, 22 Apr 2014
+ 10:20:41 +0000
+Received: from qld-nag.apeagers.com.au (165.228.157.90) by
+ DB3FFO11FD007.mail.protection.outlook.com (10.47.216.96) with Microsoft SMTP
+ Server (TLS) id 15.0.929.8 via Frontend Transport; Tue, 22 Apr 2014 10:20:39
+ +0000
+Received: from qld-nag.apeagers.com.au (_nagios@localhost [127.0.0.1])
+	by qld-nag.apeagers.com.au (8.14.3/8.14.3) with ESMTP id s3MA6pVa019550
+	for <mspence@apeagers.com.au>; Tue, 22 Apr 2014 20:06:51 +1000 (EST)
+Received: (from _nagios@localhost)
+	by qld-nag.apeagers.com.au (8.14.3/8.14.3/Submit) id s3MA6phC026494
+	for mspence@apeagers.com.au; Tue, 22 Apr 2014 20:06:51 +1000 (EST)
+Date: Tue, 22 Apr 2014 20:06:51 +1000
+From: Nagios user <_nagios@qld-nag.apeagers.com.au>
+Message-ID: <201404221006.s3MA6phC026494@qld-nag.apeagers.com.au>
+To: <mspence@apeagers.com.au>
+Subject: ** RECOVERY Service Alert: Y00000031699N - Cardiff WAN/Ping Test is OK **
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Organization-SCL: -1
+X-Forefront-Antispam-Report: CIP:165.228.157.90;CTRY:AU;IPV:CAL;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:SINPR01MB249;H:qld-nag.apeagers.com.au;FPR:;LANG:en;
+Content-Type: text/plain
+X-MS-Exchange-Organization-Network-Message-Id: bc3b63e3-ed7d-4f2c-1242-08d12c2ba6af
+X-MS-Exchange-Organization-AVStamp-Service: 1.0
+X-MS-Exchange-Organization-AuthSource: DB3FFO11FD007.protection.gbl
+X-MS-Exchange-Organization-AuthAs: Anonymous
+
+***** ISS Monitoring Server *****
+
+Notification Type: RECOVERY
+
+Service: Ping Test
+Host: Y00000031699N - Cardiff WAN
+Address: 172.17.74.254
+State: OK
+
+Date/Time: Tue Apr 22 20:06:51 EST 2014
+
+Additional Info:
+
+PING OK - Packet loss = 0%, RTA = 23.74 ms
+

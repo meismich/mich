@@ -1,0 +1,4 @@
+use assets;
+
+select * from xassets where s_status = 'Active';
+

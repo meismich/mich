@@ -1,0 +1,3 @@
+use assets;
+
+select assets.id, statuses.s_status from assets, statuses where assets.i_status = statuses.id;

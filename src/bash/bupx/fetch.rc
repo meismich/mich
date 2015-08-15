@@ -1,0 +1,7 @@
+poll outlook.office365.com protocol IMAP 
+	user "mspence@apeagers.com.au"
+	password "Castor70" 
+	folder "Inbox/Temp"
+	fetchlimit 1
+	no keep
+	ssl sslfingerprint "FB:BD:5E:2A:6C:61:FC:1B:B8:88:81:98:87:1F:99:AD"

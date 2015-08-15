@@ -1,0 +1,3 @@
+use assets;
+
+select * from descriptions into outfile '/home/mspence/src/oass/bup/descriptions.data';

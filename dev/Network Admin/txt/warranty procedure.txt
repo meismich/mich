@@ -1,0 +1,44 @@
+Warranty on Faulty Equipment Procedure
+2010-08-30
+Michael Spence
+
+
+Audience:
+
+At this time this this document is intended for field support officers only.  However this document may be applicable to Helpdesk operators, who may have need to refer faulty equipment to the Supplier Ocean.
+
+
+Preamble:
+
+This document covers the warranty procedure for equipment supplied by our primary IT supplier Ocean.  Equipment includes PC Desktops, Laptops, and Printers.
+
+This document does not cover equipment supplied from other sources, such as Optus, Telstra or other Printer Suppliers.
+
+This procedure is broken into two steps: a preliminary determination that the equipment is truly faulty; and a follow-up process which moves the repair to the appropriate supplier, which may be Ocean, Toshiba or IBM.
+
+It is worth noting that all equipment generally has a three year warranty.  Monitors on the other hand only have a one year contract.
+
+
+Preliminary Steps to be carried out
+
+1. Verify that machine is faulty
+
+2. Rule out Drivers/Operating System Faults
+Reboot device and verify that the problem persists.  If problem is possibly, operating system related it may be necessary to attempt reinstalling drivers or completely reinstalling operating system.  If you can verify the piece of equipmentin the device, which is causing the problem (eg memory or video card) attempt reseating it.
+
+3. Attempt to guess faulty device item
+
+4. Remove faulty item, examine and replace
+
+If you have identified a potential faulty item in the machine, remove the item if it is convenient.  Take care when doing this as mistreatment of equipment, will void any warranty.  If you do not feel competent doing this, do not proceed.  Examine this item for any defect or dust interference etc.  If you are happy with this item, replace and retest machine.
+
+5. Collect machine infomration
+
+If nothing you can do, can cause the machine to operate normally, proceed to collect the important piecess of information regarding this machine.  This includes: Asset Number, Serial Number, Model Type, User, User's contact details (including address and phone number).
+
+
+Ocean Supplied Assets
+
+1. Formulate Email to phil
+
+Create an email for Phil at Ocean (Brisbane office).  CC Paul on this email, as a precaution due to phil's absence.  In 

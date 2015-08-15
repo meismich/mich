@@ -1,0 +1,10 @@
+# Nmap 4.76 scan initiated Tue Apr  1 17:20:54 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 9100 -oG /home/mspence/src/fndp/tmp/IRG_ALL_LPT.nmap 10.33.0.0/24 10.33.1.0/24 10.33.2.0/24 10.33.3.0/24 10.33.4.0/24 10.33.5.0/24 10.33.6.0/24 10.33.7.0/24 10.33.8.0/24 10.33.9.0/24 10.33.10.0/24 10.33.11.0/24 10.33.12.0/24 10.33.13.0/24 10.33.15.0/24 10.33.16.0/24 10.33.17.0/24 10.33.18.0/24 10.33.19.0/24 10.33.20.0/24 10.33.99.0/24 10.33.100.0/24 10.33.253.0/24 10.33.254.0/24 
+Host: 10.33.1.22 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.33.1.115 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.33.1.150 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.33.1.151 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.33.1.254 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.33.4.10 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.33.4.11 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.33.4.12 ()	Ports: 9100/closed/tcp//jetdirect///
+# Nmap done at Tue Apr  1 17:21:33 2014 -- 6144 IP addresses (8 hosts up) scanned in 39.47 seconds

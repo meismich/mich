@@ -1,0 +1,48 @@
+File Servers Shares Setup Guide
+2011-07-22
+Michael Spence
+
+
+Audience:
+
+Field Support and Systems Administrator
+
+
+Preamble:
+
+How to setup shares
+How to configure Auto Drive Mapping
+
+
+Topics of Discussion:
+
+1. Overview of the Model
+2. Share Setup
+	a. Parent Folder
+	b. Child Folders
+3. Security Group Setup
+	a. Parent Groups
+	b. Child Groups
+4. Auto-drives Configuration
+
+
+Topics in Detail:
+
+1. Overview of the Model
+
+This model is designed to be a setup for all dealerships within APEagers.  Each dealership using this model will have a drive mapped to each user's computer, which all users can access to varying degrees.
+
+The specific folders within this drive are intended for use by specific roles or departments within the dealership and the security groups configured for them will enforce this distinction.  
+
+The end setup is intended to be simple enough that Service Desk staff can monitor and maintain the application
+
+2. Share Setup
+	a. Parent Folder
+	b. Child Folders
+3. Security Group Setup
+	a. Parent Groups
+	b. Child Groups
+4. Auto-drives Configuration
+
+
+

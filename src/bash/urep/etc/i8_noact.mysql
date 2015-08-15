@@ -1,0 +1,11 @@
+use assets;
+
+select distinct(xassets.id), xassets.s_serialno, interog8s.s_interog8, xassets.s_devicetype
+        from xassets left join interog8s
+                on xassets.id = interog8s.i_asset
+        where xassets.s_status <> "Active"
+                and (xassets.id < 90000000 or xassets.id > 200700000)
+                and xassets.s_devicetype in ("PC", "Notebook", "Thin Client", "Zbox", "Tablet PC", "Printer")
+                and interog8s.i_i8type = 8
+                and str_to_date(interog8s.s_interog8, '%Y-%m-%d') > subdate(curdate(), INTERVAL 32 DAY)
+        ;

@@ -1,0 +1,14 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:47:20 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 80 -oG /home/mspence/src/fndp/tmp/JSV_ALL_WEB.nmap 10.11.0.0/24 10.11.1.0/24 10.11.2.0/24 10.11.3.0/24 10.11.4.0/24 10.11.5.0/24 10.11.6.0/24 10.11.7.0/24 10.11.8.0/24 10.11.9.0/24 10.11.10.0/24 10.11.11.0/24 10.11.12.0/24 10.11.13.0/24 10.11.15.0/24 10.11.16.0/24 10.11.17.0/24 10.11.18.0/24 10.11.19.0/24 10.11.20.0/24 10.11.99.0/24 10.11.100.0/24 10.11.253.0/24 10.11.254.0/24 
+Host: 10.11.1.1 ()	Ports: 80/open/tcp//http///
+Host: 10.11.1.252 ()	Ports: 80/open/tcp//http///
+Host: 10.11.1.254 ()	Ports: 80/closed/tcp//http///
+Host: 10.11.7.14 ()	Ports: 80/closed/tcp//http///
+Host: 10.11.7.18 ()	Ports: 80/closed/tcp//http///
+Host: 10.11.7.150 ()	Ports: 80/open/tcp//http///
+Host: 10.11.7.151 ()	Ports: 80/open/tcp//http///
+Host: 10.11.7.152 ()	Ports: 80/open/tcp//http///
+Host: 10.11.7.232 ()	Ports: 80/open/tcp//http///
+Host: 10.11.254.1 ()	Ports: 80/closed/tcp//http///
+Host: 10.11.254.3 ()	Ports: 80/closed/tcp//http///
+Host: 10.11.254.100 ()	Ports: 80/closed/tcp//http///
+# Nmap done at Tue Apr  1 16:47:49 2014 -- 6144 IP addresses (12 hosts up) scanned in 28.75 seconds

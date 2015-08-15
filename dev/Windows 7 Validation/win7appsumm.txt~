@@ -1,0 +1,29 @@
+Windows 7 Validation Summary
+Michael Spence
+2011-02-15
+
+
+Preamble:
+
+This is a summary of the findings for the Installable applications, which we use throughout APEagers.  These applications are Dealership or Function/Role specific programs and hence these findings DO NOT summarize the functionality of other "tools".  When we have compiled a list of common tools, we will validate them against windows 7.  We HAVE NOT tested specific websites against Internet Explorer 8 and it may be necessary to do this before a role out of Windows 7 as Internet Explorer 7 CANNOT be run on Windows 7 (IE7 is the currently supported browser throughout APEagers).
+
+
+Procedure:
+
+We have tested all DoFS programs, by attempting to install the programs using existing notes onto Windows 7 machines.  These notes were commonly used to install these programs on XP based machines.  (It should be noted that the Windows 7 machines were setup in such a way as to be as generic as possible, without complication of other software.)
+
+When these notes have failed, we have attempted a number of various methods to gain a valid install of the program on the Windows 7 test machines.  New notes have been generated for the new installation procedure on Windows 7.
+
+A number of DoFS programs, CANNOT be installed by internal Field Support personnel, but instead by technicians from the company supplying the software.  In these cases, we have asked these software vendors to verify that their software is Windows 7 compliant.
+
+
+Results:
+
+The following table lists all the applications tested that also passed Validation.  This will form the basis of the applications we are capable of maintaining under Windows 7.  (I suggest that new programs, should be first tested by the FS Team and added to this list as time goes by.)
+
+
+The following table lists the applications tested which failed Validation.  We will not currently be able to support these applications under Windows 7 until further investigation into the failures is undertaken and resolved.
+
+
+
+The following table lists the applications NOT tested.  We deemed that these programs were not necessary to test, for various reasons.

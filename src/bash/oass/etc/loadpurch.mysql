@@ -1,0 +1,8 @@
+use assets;
+
+load data infile '/home/mspence/src/oass/out/purch.new'
+	into table purchases
+	fields terminated by ','
+	enclosed by ''
+	lines terminated by '\n'
+	(s_invoiceno, i_supplier, t_date);

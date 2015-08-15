@@ -1,0 +1,5 @@
+use assets;
+
+select s_location, count(distinct id) from xassets where s_status='Active' group by s_location;
+
+select xassets.s_location, xassets.s_department, xassets.id, xassets.s_devicetype, xassets.s_model, xassets.s_serialno, descriptions.s_description from xassets, descriptions where xassets.id = descriptions.i_asset and xassets.s_status='Active' order by xassets.s_location, xassets.s_department, xassets.id;

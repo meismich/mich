@@ -1,0 +1,15 @@
+use assets;
+update descriptions set s_description = '2013-08-01' where i_asset = 20100155 and i_desctype = 13;
+update descriptions set s_description = '2013-08-01' where i_asset = 20110268 and i_desctype = 13;
+update descriptions set s_description = '2013-08-01' where i_asset = 20110327 and i_desctype = 13;
+update descriptions set s_description = '2013-08-01' where i_asset = 20110369 and i_desctype = 13;
+update descriptions set s_description = '2013-08-01' where i_asset = 20110519 and i_desctype = 13;
+update descriptions set s_description = '2013-07-24' where i_asset = 20120045 and i_desctype = 13;
+update descriptions set s_description = '2013-07-26' where i_asset = 20120111 and i_desctype = 13;
+update descriptions set s_description = '2013-03-19' where i_asset = 20120117 and i_desctype = 13;
+update descriptions set s_description = '2013-07-11' where i_asset = 20120119 and i_desctype = 13;
+update descriptions set s_description = '2013-08-01' where i_asset = 20120167 and i_desctype = 13;
+update descriptions set s_description = '2013-08-01' where i_asset = 20120280 and i_desctype = 13;
+update descriptions set s_description = '2013-08-01' where i_asset = 20120617 and i_desctype = 13;
+update descriptions set s_description = '2013-08-01' where i_asset = 20130180 and i_desctype = 13;
+update descriptions set s_description = '2013-07-29' where i_asset = 20130242 and i_desctype = 13;

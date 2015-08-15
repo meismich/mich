@@ -1,0 +1,195 @@
+Klosters Modular Server & ESX Cluster
+2011-04-13
+Michael Spence
+
+
+Audience:
+Currently this document is primarily for use by the Systems Administrator for APEagers.  It may be useful as a guide for the maintenance of this system by any other staff involved.  It is assumed that the user of this guide, understands the use of the Intel Modular Server system, understands the basics of VMWare installations and operation and understands the basics of networking including vlans.
+
+
+Preamble:
+This document describes the layout of the Intel MultiFlex Modular Server setup at Klosters as their primary server.  The document details the configuration settings made to the defaults to bring the system up to a useable state.
+
+This document DOES NOT describe the virtual machines created upon the ESX cluster.  This document DOES NOT describe how to connect this machine to the network as this is assumed from the information provided.
+
+
+Topics of Discussion:
+
+1. Klosters MultiFlex Setup
+	- Chassis Management
+	- Blade Summary
+	- Storage
+	- Network
+
+2. vCentre 4.1 Setup
+
+3. ESXi 4.1 Hosts Setup
+
+
+Topics of Discussion:
+
+1. Klosters MultiFlex Setup
+
+Chassis Management:
+
+The chassis management module allows access to control the featues of the MultiFlex.  This module has two network adapters, one internal (MultiFlex facing) and external (Network Facing).  Only the the external adapter is configurable and has been set to be accessible by the entire APEagers WAN.
+
+	CMM Properties:
+		HostName	klo-modular
+		IP Address	172.17.104.5
+		Netmask		255.255.252.0
+		Gateway		172.17.107.254
+		DNS		172.17.104.234
+				172.17.104.235
+
+Access to the CMM is granted to the following configured users.  
+
+	Access:
+		Name		Password
+		issadmin 	SecLvl 1
+		spearce		########
+		msadmin		########
+		klosters 	########
+
+Note that the user "klosters" is not an administrator of the MultiFlex Chassis, but has the rights to administer the BSCMs and SCMs.
+
+
+Blade Summary:
+
+The MultiFlex has six (6) slots for the addition of blade server compute modules (BSCM).  Currently there are five (5) modules in the Kloster MultiFlex setup.
+
+	Blades:
+		Number		Host
+		1		klo-esx1
+		2		klo-esx2
+		3		klo-esx3
+		4		klo-ts1
+		5		klo-vc
+		6		(unused)
+
+
+
+Storage:
+
+The storage available to the MultiFlex is the internal drives which are attached to the two (2) storage control modules (SCMs).  The SCMs provide redundancy to the availability of these drives to the blades.  This model of the MultiFlex has fourteen (14) drive slots for HDDs, which are all populated (at this time) with 135GB drives.
+
+The storage is configured into pools in the following way:
+
+	Pool Name	Expected Usage			Discs	Size(GB)
+	Pool1		Blade OSes			6	 815
+	KloSAN		VM Storage			8	1088
+
+
+The Pools are configured into Virtual Drive
+
+	Drive Name	Expected Usage			RAID	Size	Host		Drive
+	(Storage in Pool 1)
+	klo-esx1	Host drive for esx1 		10	10GB	klo-esx1	0
+	klo-esx2	Host drive for esx2 		10	10GB	klo-esx1	0
+	klo-esx3	Host drive for esx3 		10	10GB	klo-esx1	0
+	klo-vc		Host drive for Old VC 		10	50GB	   (not assigned)
+	vm_ISO		Storage Pool for ISO's?? 	5	60GB	ALL ESX		2
+	klo-vc_4.1	Host drive for New VC 		10	30GB	klo-vc		0
+	klo ts1		Host drive for TS1 		10	30GB	klo-ts1		0
+	klo ts1 pf	Data drive for TS1?? 		10	10GB	klo-ts1		1
+	klo_mx1_os	Guest OS drive for MX1 		5	55GB	ALL ESX		3
+	klo_mx1_log	Guest Log drive for MX1 	10	96GB	ALL ESX		4
+	(Storage in KloSAN)
+	klo esx		Storage Pool for VM Guests 	50	815GB	ALL ESX		1
+
+
+Network:
+
+The two switch modules (SWMs) provide the ability for redundant network pathing for each of the blades.  This is the intention of having both modules and hence they are essentially setup identically.  Note however the additional setup on Switch 1 to cater for the Juniper - Ext 4 is set to Vlan 9.
+
+Switch 1 (Layer2 - VLAN)
+
+	Properties:
+		vlan id 9 "DMZ Network"
+		vlan id 666 "External Network"
+	Membership:
+		vlan 9 tagged on
+		ext2 and server n.1 (where n is the esx blade number)
+		vlan 9 untagged on Ext 4
+	Interface Settings:
+		Ext 1 on vlan 666
+		Server n.2 on Vlan 666 (where n is a esx blade number)
+		Ext 4 ov vlan 9
+		All other on Vlan 1
+
+Switch 2 (Layer2 - VLAN)
+
+	Properties:
+		vlan id 9 "DMZ Network"
+		vlan id 666 "External Network"
+	Membership:
+		vlan 9 tagged on
+		ext2 and server n.1 (where n is the esx blade number)
+	Interface Settings:
+		Ext 1 on VLan 666
+		Server n.2 on Vlan 666 (where n is a esx blade number)
+		All other on Vlan 1
+
+
+2. vCentre 4.1 Setup:
+
+The virtual centre for the Klosters ESXi host was configured on a physical host.  BSCM 5 of the MultiFlex was used for this purpose.
+
+	Configuration Details
+		Option		Value
+		Op Sys		Windows Server 2008
+		HostName	klo-vc (no domain)
+		IP Address	172.17.104.80
+		Netmask		255.255.252.0
+		GW Address	172.17.104.254
+		NameServer	172.17.104.234
+		AdminPwd	SecLvl 2
+		ISSAdmin User	Yes
+		Other Users	msadmin
+				shaneadmin
+				tonyadmin
+				ryanadmin
+				vranger
+
+vCentre 4.1 was installed on this machine to facilitate the coordination of the ESXi hosts.
+
+	License Key:	JJ42K-0DL5H-J8V3C-091KP-1JPJ0
+	License Type:	vCentre Server 4 Essentials
+
+
+	License Key:	NM022-4GJ0H-18K3W-0R2K0-CH4K4
+	License Type:	ESXi 4.1 Hosts (x3) Essentials
+
+
+3.  ESXi 4.1 Host Setup
+
+Each ESXi is configured in the identical manner.  This is necessary from a VMWare point of view so that VM's can be easily transported from machine to machine (vMotion).  From an identification point of view, it simply eases the setup and aesthetics of the system.
+
+	Configuration Details (where {n} is the host number)
+		Option		Value
+		HostName	klo-esx{n}.ape.local
+		IP Address	172.17.104.8{n}
+		NetMask		255.255.252.0
+		GW Address	172.17.104.254
+		NameServers	172.17.104.234
+				172.17.104.235
+		root Pwd 	SecLvl 1
+		
+Using vSphere via the vCentre, the following options were configured on each of the hosts.  Again these options were identical across all ESX hosts.
+
+	Storage:
+		Identification		Device
+		KLO_MX1_LOG		eui.2243000155441738:1
+		KLO_MX1_OS		eui.22c60001554d4b1f:1
+		KLO_VMFS		eui.22b4000155e3e4aa:1
+		VM_ISO			eui.227e0001556f4edc:1
+
+	Network:
+		Switch Name	Port Groups		VLan		Adapters
+		vSwitch0 	VM Kernel 		n/a		vmnic0 (primary)
+				VM Network		0		vmnic2 (standby)
+				Klosters DMZ		9
+		vSwitch1	Klosters External	666		vmnic1 (primary)
+									vmnic3 (standby)
+Note: VM Kernel was configured for vMotion
+Note: physical patching is required for Redundant pathing.

@@ -1,0 +1,8 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:48:55 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/JSV_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/JSV.webhosts 
+Host: 10.11.1.1 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.11.1.252 ()	Ports: 23/open/tcp//telnet///
+Host: 10.11.7.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.11.7.151 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.11.7.152 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.11.7.232 ()	Ports: 23/open/tcp//telnet///
+# Nmap done at Tue Apr  1 16:48:55 2014 -- 6 IP addresses (6 hosts up) scanned in 0.04 seconds

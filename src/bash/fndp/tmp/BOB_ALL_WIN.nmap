@@ -1,0 +1,2 @@
+# Nmap 4.76 scan initiated Tue Apr 15 11:13:10 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 445 -oG /home/mspence/src/fndp/tmp/BOB_ALL_WIN.nmap 192.168.7.0/24 
+# Nmap done at Tue Apr 15 11:13:23 2014 -- 256 IP addresses (0 hosts up) scanned in 13.14 seconds

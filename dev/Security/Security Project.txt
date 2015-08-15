@@ -1,0 +1,46 @@
+Security Project
+2011-04-11
+Michael Spence
+
+Preamble:
+
+This document will describe layout of new security model for APEagers IT services.  This document will describe the necessary proceses to bring the current infrastructure upto this standard.  This document will describe the analysis of a service and its categorisation into a security level
+
+
+Security Levels:
+
+S1 - Core
+
+Systems in the core level are CRITICAL and effect the entire organisation.  Without these services NO other services can run.  As such these services need the ULTIMATE security available.
+
+S2 - Enterprise
+
+Systems in the Enterprise level are NECESSARY and effect the entire organisation.  These services are essential, but DO NOT effect other services greatly.  These services need HIGH levels of security.
+
+S3 - Advanced
+
+Systems in the Advanced level are IMPORTANT and effect groups within the organissation.  Without these services, said groups may be limited in their ability.  These services need MODERATE levels of security.
+
+S4 - Administrative
+
+Systems in the Administrative level are ADVISORY and form a set of applications which monitor or report on systems above.  These services are NOT required, but hold purpose in the maintenance of higher systems.  These services need REDUCED levels of security.
+
+S5 - Local
+
+Sytems in the Local level are REDUNDANT and pose little to no threat to overall systems integrity.  These services effect single users only.  This security level merely LIMITS access to users.
+
+
+Password Hints:
+
+Password WILL NEVER be written down.  If you don't understand the hint, you do not have access to this level of security.
+
+S1	Core		easy
+S2	Enterprise	yay!
+S3	Advanced	is a!
+S4	Admin		clueless
+S5	Local		woody
+
+
+Security Matrix:
+
+To be created.

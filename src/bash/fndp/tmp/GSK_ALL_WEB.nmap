@@ -1,0 +1,13 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:43:26 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 80 -oG /home/mspence/src/fndp/tmp/GSK_ALL_WEB.nmap 10.7.0.0/24 10.7.1.0/24 10.7.2.0/24 10.7.3.0/24 10.7.4.0/24 10.7.5.0/24 10.7.6.0/24 10.7.7.0/24 10.7.8.0/24 10.7.9.0/24 10.7.10.0/24 10.7.11.0/24 10.7.12.0/24 10.7.13.0/24 10.7.15.0/24 10.7.16.0/24 10.7.17.0/24 10.7.18.0/24 10.7.19.0/24 10.7.20.0/24 10.7.99.0/24 10.7.100.0/24 10.7.253.0/24 10.7.254.0/24 
+Host: 10.7.1.253 ()	Ports: 80/open/tcp//http///
+Host: 10.7.1.254 ()	Ports: 80/closed/tcp//http///
+Host: 10.7.6.13 ()	Ports: 80/closed/tcp//http///
+Host: 10.7.6.14 ()	Ports: 80/closed/tcp//http///
+Host: 10.7.6.16 ()	Ports: 80/closed/tcp//http///
+Host: 10.7.6.17 ()	Ports: 80/closed/tcp//http///
+Host: 10.7.6.55 ()	Ports: 80/closed/tcp//http///
+Host: 10.7.6.150 ()	Ports: 80/open/tcp//http///
+Host: 10.7.6.151 ()	Ports: 80/open/tcp//http///
+Host: 10.7.6.160 ()	Ports: 80/open/tcp//http///
+Host: 10.7.6.231 ()	Ports: 80/open/tcp//http///
+# Nmap done at Tue Apr  1 16:44:47 2014 -- 6144 IP addresses (11 hosts up) scanned in 80.77 seconds

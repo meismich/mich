@@ -1,0 +1,421 @@
+id,s_serialno,s_interog8,s_devicetype,s_location
+20130262,B105006/005,NULL,PC,Adtrans Used Trucks Pinkenba
+20120008,B102091/004,NULL,PC,Adtrans Used Trucks Pinkenba
+20120068,XSZ1905866,NULL,Printer,Adtrans Used Trucks Pinkenba
+20120098,B102313/008,NULL,PC,Adtrans Used Trucks Pinkenba
+200700232,CNV73807F4,NULL,Thin Client,AUS Bokarina
+20100140,B097858/002,NULL,PC,AUS Curraminidi
+200800981,B097160/007,NULL,PC,AUS Curraminidi
+20100238,8A063023H,2013-03-01,Notebook,AUS Curraminidi
+20100246,B098499/001,NULL,PC,AUS Curraminidi
+20100306,XSZ0X03708,NULL,Printer,AUS Curraminidi
+200800467,B093900/005,NULL,PC,Austral Honda Newstead
+200800503,6168E600272,NULL,Thin Client,Austral Honda Newstead
+200800175,0802-B088935/002,NULL,PC,Austral Honda Newstead
+20110106,JATF005471,NULL,Printer,Austral Honda Newstead
+20130238,NUL3300750,NULL,Printer,Austral Honda Newstead
+20120113,B102508/003,NULL,Zbox,Austral Honda Newstead
+20110121,B099307/003,NULL,PC,Austral Honda Newstead
+20100203,QVR0900163,NULL,Printer,Austral Honda Newstead
+200701101,0707-B086446/001,NULL,PC,Austral Motors Newstead
+200701106,616BEC04619,NULL,Thin Client,Austral Motors Newstead
+200800975,B097160/002,NULL,PC,Austral Motors Newstead
+200701105,616BEC04422,NULL,Thin Client,Austral Motors Newstead
+200800977,B097160/004,NULL,PC,Austral PAG Fortitude Valley
+20120290,4C056875H,NULL,Notebook,Austral PAG Fortitude Valley
+20110001,Q670701114,NULL,Printer,Austral PAG Fortitude Valley
+20100169,B098034/009,NULL,PC,Austral PAG Fortitude Valley
+200800835,B096287/001,NULL,PC,Austral PAG Fortitude Valley
+20130227,3BTSA57716,NULL,Notebook,Austral PAG Fortitude Valley
+200700750,9Q18D600425,NULL,Thin Client,Austral PAG Fortitude Valley
+200700801,9Q18D600430,NULL,Thin Client,Austral PAG Fortitude Valley
+20110485,B101299/011,2013-06-07,PC,Austral PAG Fortitude Valley
+200800855,B096489/004,NULL,PC,Austral PAG Fortitude Valley
+20100128,K1C9X01782,NULL,Printer,Austral PAG Fortitude Valley
+20110334,B100373/006,NULL,PC,Austral PAG Fortitude Valley
+20110002,Q670X01623,NULL,Printer,Austral PAG Fortitude Valley
+200800723,B095941/003,NULL,PC,Austral PAG Fortitude Valley
+200700764,9Q18D900031,NULL,Thin Client,Austral PAG Fortitude Valley
+200700802,9Q18D600426,NULL,Thin Client,Austral PAG Fortitude Valley
+200800927,B097291/004,NULL,PC,Austral PAG Fortitude Valley
+200800856,B096489/005,NULL,PC,Austral PAG Fortitude Valley
+20110282,B100193/013,NULL,PC,Austral PAG Fortitude Valley
+20110336,B100373/008,NULL,PC,Austral VW Newstead
+200800608,B094507/003,NULL,PC,Austral VW Newstead
+200800853,B096489/002,NULL,PC,Austral VW Newstead
+20100104,B097621/010,NULL,PC,Austral VW Newstead
+20110579,B101786/010,NULL,PC,Austral VW Newstead
+200800727,B095941/007,NULL,PC,Austral VW Newstead
+200700720,9Q11BC00756,NULL,Thin Client,Austral VW Newstead
+200800836,B096287/002,NULL,PC,Austral VW Newstead
+20110441,B101026/011,NULL,PC,Austral VW Newstead
+200800183,0806-B090068/001,NULL,PC,Austral VW Newstead
+20110103,JATF005391,NULL,Printer,Austral VW Newstead
+20110508,XSZ1605370,NULL,Printer,Austral VW Newstead
+200800649,B095104/004,NULL,PC,Austral VW Newstead
+20110105,JATF005472,NULL,Printer,Austral VW Newstead
+200701197,0606-B081022/002,NULL,PC,BMA Pinkenba
+20100275,Q670600241,NULL,Printer,BMA Pinkenba
+20110373,Q671503611,NULL,Printer,BMA Pinkenba
+20100148,B097858/010,NULL,PC,BMA Pinkenba
+200800726,B095941/006,NULL,PC,BMA Pinkenba
+20120456,B103766/007,NULL,Zbox,BMA Pinkenba
+20110297,XSZ1304709,NULL,Printer,BMA Pinkenba
+20120035,B102207/001,NULL,PC,BMA Pinkenba
+20120612,B104000/002,2013-07-15,PC,BMA Pinkenba
+200701189,0606-B081022/012,NULL,PC,BMA Pinkenba
+200701204,0606-B080943/004,NULL,PC,BMA Pinkenba
+20110374,Q671503603,NULL,Printer,BMA Pinkenba
+20100060,B097468/006,NULL,PC,BMA Pinkenba
+200800664,B095289/005,NULL,PC,BMA Pinkenba
+200800668,B095289/009,NULL,PC,BMA Pinkenba
+20110573,B101786/004,2013-02-22,PC,BMA Pinkenba
+20100244,7A062436H,NULL,Notebook,BMA Pinkenba
+200800780,B096079/006,NULL,PC,Bridge Toyota Darwin
+20120126,CNW1400VQG,NULL,Thin Client,Bridge Toyota Darwin
+20120128,CNW1400VQB,NULL,Thin Client,Bridge Toyota Darwin
+200800776,B096079/002,NULL,PC,Bridge Toyota Darwin
+20100123,B097849/003,NULL,PC,Bridge Toyota Darwin
+20120267,CNW22505FZ,NULL,Thin Client,Bridge Toyota Darwin
+20100256,CNW04209MN,NULL,Thin Client,Bridge Toyota Darwin
+20120042,B102243/006,NULL,Zbox,Bridge Toyota Darwin
+20120650,CNW24203T4,NULL,Thin Client,Bridge Toyota Darwin
+20130275,NUL3300950,NULL,Printer,Bridge Toyota Darwin
+20110430,B101028/002,NULL,PC,Bridge Toyota Darwin
+20130133,J9LF086459,NULL,Printer,Bridge Toyota Darwin
+200800760,1A110158H,2013-05-02,Notebook,Bridge Toyota Darwin
+20130122,YC101561H,2013-06-06,Notebook,Bridge Toyota Darwin
+20120127,CNW1400VR4,NULL,Thin Client,Bridge Toyota Darwin
+20100122,B097849/002,NULL,PC,Bridge Toyota Darwin
+200800777,B096079/003,NULL,PC,Bridge Toyota Darwin
+20120482,CNW24203T3,NULL,Thin Client,Bridge Toyota Darwin
+20100125,B097849/005,NULL,PC,Bridge Toyota Darwin
+20120266,B103297/002,2013-05-17,PC,Bridge Toyota Darwin
+20120484,CNW24203T0,NULL,Thin Client,Bridge Toyota Darwin
+20120483,CNW24203T5,NULL,Thin Client,Bridge Toyota Palmerston
+200700314,0608-B081984/005,NULL,PC,Bridge Toyota Palmerston
+20120268,CNW22505FX,NULL,Thin Client,Bridge Toyota Palmerston
+200800688,B095700/005,NULL,PC,Caloundra City Great Wall
+200800885,CNVA1803QN,NULL,Thin Client,Caloundra City Great Wall
+200800879,B096661/010,NULL,PC,Caloundra City Holden
+200800806,B096091/002,NULL,PC,Caloundra City Holden
+200800708,CNV9470NFX,NULL,Thin Client,Caloundra City Holden
+200800812,B096091/008,NULL,PC,Caloundra City Holden
+200800793,B096208/007,NULL,PC,Caloundra City Holden
+200800795,B096208/009,NULL,PC,Caloundra City Holden
+200800769,XSZ9Z01635,NULL,Printer,Caloundra City Holden
+200702029,200702029,NULL,PC,Caloundra City Holden
+20100041,B097386/004,NULL,PC,Caloundra City Holden
+200702053,200702053,NULL,Printer,Caloundra City Holden
+20100046,B097386/009,NULL,PC,Caloundra City Holden
+200800813,B096091/009,NULL,PC,Caloundra City Holden
+200800900,B096884/001,NULL,PC,Caloundra City Holden
+200800787,B096208/001,NULL,PC,Caloundra City Holden
+200800789,B096208/003,NULL,PC,Caloundra City Holden
+200800794,B096208/008,NULL,PC,Caloundra City Holden
+200800796,B096208/010,NULL,PC,Caloundra City Holden
+200800923,G102114000810,NULL,PC,Caloundra City Holden
+200800862,B096489/011,NULL,PC,Caloundra City Holden
+200702052,200702052,NULL,Printer,Caloundra City Holden
+20100042,B097386/005,NULL,PC,Caloundra City Holden
+200702054,200702054,NULL,Printer,Caloundra City Holden
+200800873,B096661/004,NULL,PC,Caloundra City Honda
+20100139,B097858/001,NULL,PC,Caloundra City Honda
+200800807,B096091/003,NULL,PC,Caloundra City Honda
+200800432,CNV91305FW,NULL,Thin Client,Caloundra City Honda
+200800974,B097160/001,NULL,PC,Caloundra City Honda
+200702055,200702055,NULL,Printer,Caloundra City Mitsubishi
+200800877,B096661/008,NULL,PC,Caloundra City Mitsubishi
+20100143,B097858/005,NULL,PC,Caloundra City Mitsubishi
+20110325,5B090679H,NULL,Notebook,Carzoos BDC Wgabba
+20120039,B102243/003,NULL,Zbox,Carzoos BDC Wgabba
+20120043,B102243/007,NULL,Zbox,Carzoos BDC Wgabba
+20130252,B104905/002,NULL,Zbox,Carzoos BDC Wgabba
+20120112,B102508/002,NULL,Zbox,Carzoos BDC Wgabba
+20120044,B102243/008,NULL,Zbox,Carzoos BDC Wgabba
+20120059,8B114377H,NULL,Notebook,Carzoos BDC Wgabba
+20120115,B102508/005,NULL,Zbox,Carzoos BDC Wgabba
+20120118,B102508/008,NULL,Zbox,Carzoos BDC Wgabba
+20120001,B102063/001,NULL,Zbox,Carzoos BDC Wgabba
+20120511,ABCS25814,NULL,Printer,Corporate Internal Audit
+20120512,C02H61RYDV7N,NULL,Notebook,Corporate Office Fortitude Valley
+20100049,4A139777H,NULL,Notebook,Corporate Office Fortitude Valley
+200800611,B094507/006,NULL,PC,Corporate Office Fortitude Valley
+20110474,B101341/001,NULL,PC,Corporate Office Fortitude Valley
+200800359,B092035/001,NULL,PC,Corporate Office Fortitude Valley
+20120063,7B154937H,2013-05-10,Notebook,Corporate Payroll
+20110375,Q671503607,NULL,Printer,Corporate Payroll
+20100004,B097291/007,NULL,PC,Corporate Payroll
+200800691,B095700/008,NULL,PC,Corporate QLD/NT Division
+200701181,9Q11BC00303,NULL,Thin Client,Eagers Holden Newstead
+20100144,B097858/006,NULL,PC,Eagers Holden Newstead
+200700682,L3-ATBH1 06/02,NULL,Notebook,Eagers Holden Newstead
+20100064,B097468/010,NULL,PC,Eagers Holden Newstead
+200800951,B096848/001,NULL,PC,Eagers Holden Newstead
+200701089,0801-B088339/001,NULL,PC,Eagers Holden Newstead
+20100161,B098034/001,NULL,PC,Eagers Holden Newstead
+200700580,9Q18E100332,NULL,Thin Client,Eagers Holden Newstead
+20100075,5A111742H,2013-03-20,Notebook,Eagers Holden Newstead
+200800317,0808-B090787/001,NULL,PC,Eagers Holden Newstead
+200701095,CNV7070066,NULL,Thin Client,Eagers Holden Newstead
+200701117,0704-B084977/001,NULL,PC,Eagers Holden Newstead
+200800122,0802-B088961/001,NULL,PC,Eagers Holden Townsville
+20110404,08C09110327,NULL,Printer,Eagers Holden Townsville
+200800896,2A134393H,NULL,Notebook,Eagers Holden Townsville
+20100038,B097386/001,NULL,PC,Eagers Holden Townsville
+200700901,436672-001,NULL,Thin Client,Eagers Holden Windsor
+200800358,78061396H,2013-05-09,Notebook,Eagers Holden Windsor
+20100319,7A063715H,2013-06-22,Notebook,Eagers Holden Windsor
+20110101,JATF002863,NULL,Printer,Eagers Holden Windsor
+200700946,9Q11BC00388,NULL,Thin Client,Eagers Holden Windsor
+20120459,4C056590H,2013-07-24,Notebook,Eagers Holden Windsor
+200800718,79020719H,NULL,Notebook,Eagers Kia Kedron
+20100163,B098034/003,NULL,PC,Eagers Kia Kedron
+20130128,NR52901142,NULL,Printer,Eagers Kia Kedron
+20120451,B103766/002,NULL,Zbox,Eagers Kia Kedron
+200800982,B097160/008,NULL,PC,Eagers Kia Kedron
+200800613,B094507/008,NULL,PC,Eagers Kia Kedron
+200800889,JATF002783,NULL,Printer,Eagers Kia Service Kedron
+200800645,XSD9405078,NULL,Printer,Eagers Kia Service Kedron
+200800666,B095289/007,NULL,PC,Eagers Kia Service Kedron
+20100058,B097468/004,NULL,PC,Eagers Kia Service Kedron
+20100062,B097468/008,NULL,PC,Eagers Kia Service Kedron
+20120422,CNW2361805,NULL,Thin Client,Eagers Kia Service Kedron
+200800425,B092979/015,NULL,PC,Eagers Mazda Newstead
+20100080,XSZ0502766,NULL,Printer,Eagers Mazda Newstead
+20110102,JATF005064,NULL,Printer,Eagers Mazda Newstead
+20120423,CNW2361806,NULL,Thin Client,Eagers Mazda Newstead
+20110534,8B107483H,NULL,Notebook,Eagers Mazda Newstead
+20100003,B097291/006,NULL,PC,Eagers Mazda Newstead
+200800872,B096661/003,NULL,PC,Eagers Mazda Newstead
+20120374,XSZ2608011,NULL,Printer,Eagers Mazda Newstead
+200800607,B094507/002,NULL,PC,Eagers Mazda Newstead
+200800772,B096325/003,NULL,PC,Eagers Mazda Newstead
+200800685,B095700/002,NULL,PC,Eagers Mazda Newstead
+20100057,B097468/003,NULL,PC,Eagers Mitsubishi Newstead
+20110058,B099091/005,NULL,PC,Eagers Mitsubishi Newstead
+200800642,B095026/001,NULL,PC,Eagers Mitsubishi Newstead
+200800670,79043605H,2013-06-20,Notebook,Eagers Mitsubishi Newstead
+20120201,B102945/002,2013-01-09,PC,Eagers Mitsubishi Newstead
+200800953,B096848/003,NULL,PC,Eagers Mitsubishi Newstead
+200800979,B097160/006,NULL,PC,Eagers Mitsubishi Newstead
+20120288,4C056594H,2013-03-11,Notebook,Eagers Mitsubishi Newstead
+200800048,0805-B090055/001,NULL,PC,Eagers Mitsubishi Newstead
+200800137,0803-B089241/001,NULL,PC,Eagers Mitsubishi Newstead
+20100170,B098034/010,NULL,PC,Eagers Mitsubishi Newstead
+200800644,B095026/003,NULL,PC,Eagers Mitsubishi Newstead
+20130202,B104893002,NULL,Zbox,Eagers Mitsubishi Newstead
+20100252,B098499/007,2013-04-02,PC,Eagers Mitsubishi Newstead
+200800771,B096325/002,NULL,PC,Gympie Road Wholesale Cars
+200800770,B096325/001,NULL,PC,Gympie Road Wholesale Cars
+200800774,B096325/005,NULL,PC,Gympie Road Wholesale Cars
+20120403,XSZ2608009,NULL,Printer,Infiniti Centre Brisbane
+20110529,B101434/016,NULL,PC,Infiniti Centre Brisbane
+20110230,3B154770H,2013-07-23,Notebook,Infiniti Centre Brisbane
+20120217,ABCS27931,NULL,Printer,Infiniti Centre Brisbane
+20110100,B099379/001,NULL,PC,IT Department
+20110464,7B122292H,NULL,Notebook,IT North Lakes
+200800893,2A134153H,NULL,Notebook,IT Pinkenba
+200800756,1A063676H,2013-05-07,Notebook,IT Pinkenba
+20120346,B103585/002,NULL,Zbox,IT Pinkenba
+200800816,1A109034H,NULL,Notebook,IT Pinkenba
+20100084,6A067321H,2013-05-07,Notebook,IT Pinkenba
+20120133,7B156853H,2013-05-29,Notebook,IT Pinkenba
+20120034,B102161/001,NULL,Zbox,IT Pinkenba
+200700807,9Q11BC00062,NULL,Thin Client,IT Woolloongabba
+20120477,B103871/003,2013-06-21,PC,Lexus Darwin
+20100023,XSZ0502703,NULL,Printer,Metro Ford Eagle Farm
+200800379,B092035/018,NULL,PC,Metro Ford Eagle Farm
+20130206,ABCS34003,NULL,Printer,Metro Ford Eagle Farm
+20100044,B097386/007,NULL,PC,Metro Ford Fortitude Valley
+20100310,8A062844H,NULL,Notebook,Metro Ford Fortitude Valley
+20110003,Q670701115,NULL,Printer,Metro Ford Fortitude Valley
+20100188,B098232/001,NULL,PC,Metro Ford Fortitude Valley
+200800758,1A063678H,2013-06-14,Notebook,Metro Ford Fortitude Valley
+200800848,2A133640H,2013-07-23,Notebook,Metro Ford Fortitude Valley
+20100197,B098232/010,NULL,PC,Metro Ford Fortitude Valley
+20100199,B098232/012,NULL,PC,Metro Ford Fortitude Valley
+200800773,B096325/004,NULL,PC,Metro Ford Fortitude Valley
+200800956,B096848/006,NULL,PC,Metro Ford Fortitude Valley
+200800805,B096091/001,NULL,PC,Metro Ford Fortitude Valley
+200800710,CNV9470NHC,NULL,Thin Client,Metro Ford Fortitude Valley
+20120398,XSZ2607708,NULL,Printer,Metro Ford Fortitude Valley
+200700810,CNV7070076,NULL,Thin Client,Metro Ford Fortitude Valley
+20100198,B098232/011,NULL,PC,Metro Ford Fortitude Valley
+200800854,B096489/003,NULL,PC,Metro Ford Fortitude Valley
+20100001,B097291/001,NULL,PC,Metro Ford Fortitude Valley
+20100105,B097621/011,NULL,PC,Metro Ford Fortitude Valley
+200800677,J9KF021664,NULL,Printer,Metro Ford Fortitude Valley
+20100008,B097291/011,NULL,PC,Metro Ford Fortitude Valley
+200800687,B095700/004,NULL,PC,Metro Maroochydore
+200800804,B096290/002,NULL,PC,Metro Parts Eagle Farm
+20120093,B102313/003,NULL,PC,Metro Parts Eagle Farm
+20100088,5A112260H,NULL,Notebook,Metro Parts Eagle Farm
+20130185,08J121401201,NULL,Printer,Metro Parts Eagle Farm
+20130036,XSZ2607698,NULL,Printer,Metro Parts Eagle Farm
+20110181,B099620/002,NULL,PC,Metro Parts Eagle Farm
+200701006,9Q18D800371,NULL,Thin Client,Metro Parts Eagle Farm
+20100263,CNW04209MJ,NULL,Thin Client,Metro Parts Eagle Farm
+200800704,B095758/005,NULL,PC,Metro Parts Eagle Farm
+20100166,B098034/006,NULL,PC,Metro Parts Eagle Farm
+20100092,6A068032H,NULL,Notebook,Metro Parts Eagle Farm
+20100265,CNW04209BX,NULL,Thin Client,Metro Toowoomba Toowoomba
+200800843,B096287/009,NULL,PC,Metro Toowoomba Toowoomba
+20110040,B098957/010,NULL,PC,PAG Fortitude Valley
+20120390,XSZ2607700,NULL,Printer,PAG Fortitude Valley
+200800679,B095663/001,NULL,PC,PAG Fortitude Valley
+200800372,B092035/011,NULL,PC,PAG Fortitude Valley
+20110088,B099338/001,2013-05-20,PC,PAG Fortitude Valley
+200800375,B092035/014,NULL,PC,PAG Fortitude Valley
+20110432,B101026/002,2013-07-01,PC,Panel Shop Brendale
+20100059,B097468/005,NULL,PC,Porsche Centre Brisbane Newstead
+20120114,B102508/004,NULL,Zbox,Porsche Centre Brisbane Newstead
+200800185,0806-B090055/004,NULL,PC,Porsche Centre Brisbane Newstead
+20100208,8A063036H,NULL,Notebook,Porsche Centre Brisbane Newstead
+20100106,XSZ0502750,NULL,Printer,Porsche Centre Brisbane Newstead
+20100005,B097291/008,NULL,PC,Porsche Centre Brisbane Newstead
+200800376,B092035/015,NULL,PC,Porsche Centre Brisbane Newstead
+200800809,B096091/005,NULL,PC,Porsche Centre Brisbane Newstead
+200800825,CNVA130167,NULL,Thin Client,Porsche Centre Brisbane Newstead
+200800188,0806-B090068/002,NULL,PC,Porsche Centre Brisbane Newstead
+20120450, B103766/001,NULL,Zbox,Porsche Centre Brisbane Newstead
+20120452,B103766/003,NULL,Zbox,Porsche Centre Brisbane Newstead
+20100142,B097858/004,NULL,PC,Predelivery Pinkenba
+200701226,6158E505609,NULL,Thin Client,Predelivery Pinkenba
+200701227,9Q11BC00364,NULL,Thin Client,Predelivery Pinkenba
+200800279,0802-B088811/002,NULL,PC,Predelivery Pinkenba
+200700571,9Q11C900136,NULL,Thin Client,Southside Ford Woolloongabba
+20100194,B098232/007,NULL,PC,Southside Ford Woolloongabba
+200800891,JATF002781,NULL,Printer,Southside Ford Woolloongabba
+20100193,B098232/006,NULL,PC,Southside Ford Woolloongabba
+20100195,B098232/008,NULL,PC,Southside Ford Woolloongabba
+200800377,B092035/016,NULL,PC,Southside Honda Buranda
+200800388,XSD8904547,NULL,Printer,Southside Honda Buranda
+200800983,B097160/009,NULL,PC,Southside Honda Buranda
+200700473,CNV7070070,NULL,Thin Client,Southside Honda Buranda
+20100061,B097468/007,NULL,PC,Southside Honda Buranda
+20130203,B104893003,NULL,Zbox,Southside Honda Buranda
+200800650,B095104/005,NULL,PC,Southside Honda Buranda
+200700465,CNV7070074,NULL,Thin Client,Southside Honda Buranda
+200700480,9Q11C900132,NULL,Thin Client,Southside Honda Buranda
+20120120,B102508/010,NULL,Zbox,Southside Honda Buranda
+20100262,CNW04209HF,NULL,Thin Client,Southside Honda Buranda
+20100055,B097468/001,NULL,PC,Southside Toyota Mt Gravatt
+200700439,PZE7900298,NULL,Printer,Southside Toyota Mt Gravatt
+200800814,B096091/010,NULL,PC,Southside Toyota Mt Gravatt
+20110431,B101026/001,2013-03-27,PC,Southside Toyota Mt Gravatt
+20120425,CNW23617ZX,NULL,Thin Client,Southside Toyota Mt Gravatt
+200800396,B092979/002,NULL,PC,Southside Toyota Mt Gravatt
+20110024,7A063130H,2013-06-15,Notebook,Southside Toyota Mt Gravatt
+200800844,B096287/010,NULL,PC,Southside Toyota Mt Gravatt
+20120424,CNW23617ZM,NULL,Thin Client,Southside Toyota Mt Gravatt
+20110541,08J112701157,NULL,Printer,Southside Toyota Mt Gravatt
+200800882,QRE0300775,NULL,Printer,Southside Toyota Woolloongabba
+200800143,L3-H5212 08/02,NULL,Notebook,Southside Toyota Woolloongabba
+200800899,B096884/002,NULL,PC,Southside Toyota Woolloongabba
+200800163,0803-B089228/004,NULL,PC,Southside Toyota Woolloongabba
+20120421,CNW23617ZG,NULL,Thin Client,Southside Toyota Woolloongabba
+20110509,XSZ1705562,NULL,Printer,Southside Toyota Woolloongabba
+20110542,08J112701149,NULL,Printer,Southside Toyota Woolloongabba
+20110264,B100193/003,2013-07-22,PC,Southside Toyota Woolloongabba
+20110319,5B090642H,2013-04-11,Notebook,Southside Toyota Woolloongabba
+200800147,0803-B089340/003,NULL,PC,Southside Toyota Woolloongabba
+200800164,0805-B089998/001,NULL,PC,Southside Toyota Woolloongabba
+20120406,XSZ2608005,NULL,Printer,Southside Toyota Woolloongabba
+200800860,B096489/009,NULL,PC,Southside Toyota Woolloongabba
+200800610,B094507/005,NULL,PC,SSV/SSR Buranda
+200701079,0608-B081817/002,NULL,PC,SSV/SSR Buranda
+200800703,B095758/004,NULL,PC,Subaru City Newstead
+200800824,CNVA13016L,NULL,Thin Client,Subaru City Newstead
+20110437,B101026/007,NULL,PC,Subaru City Newstead
+200800837,B096287/003,NULL,PC,Subaru City Newstead
+200800276,0801-B088351/003,NULL,PC,Subaru City Newstead
+200800353,B091915/001,NULL,PC,Subaru City Newstead
+200700208,9Q11c900135,NULL,Thin Client,Subaru City Newstead
+200800757,1A062809H,NULL,Notebook,Subaru City Newstead
+200800247,0801-B088350/011,NULL,PC,Subaru City Newstead
+200800356,XSD8X04635,NULL,Printer,Subaru City Newstead
+200800230,0802-B088973/004,NULL,PC,Subaru Toowong
+200800234,0801-B088351/004,NULL,PC,Subaru Toowong
+200800231,0802-B088905/003,NULL,PC,Subaru Toowong
+200800952,B096848/002,NULL,PC,Subaru Toowong
+200800730,B095941/010,NULL,PC,Torque Ford Admin
+20110372,Q671503822,NULL,Printer,Torque Ford Admin
+200700057,CNV7070060,NULL,Thin Client,Torque Ford North Lakes
+200800692,B095700/009,NULL,PC,Torque Ford North Lakes
+20120621,NR52X01304,NULL,Printer,Torque Ford North Lakes
+20120099,B102313/009,NULL,PC,Torque Ford North Lakes
+200800728,B095941/008,NULL,PC,Torque Ford North Lakes
+20100192,B098232/005,NULL,PC,Torque Ford North Lakes
+20120117,B102508/007,NULL,Zbox,Torque Ford North Lakes
+20100096,B097621/002,NULL,PC,Torque Ford North Lakes
+200800309,0807-B090445/001,NULL,PC,Torque Ford North Lakes
+200700056,CNV707004Y,NULL,Thin Client,Torque Ford North Lakes
+20100054,4A139776H,2013-07-04,Notebook,Torque Ford North Lakes
+200800483,29025787H,NULL,Notebook,Torque Ford North Lakes
+20120382,XSZ2607884,NULL,Printer,Torque Ford North Lakes
+20100189,B098232/002,NULL,PC,Torque Ford North Lakes
+20110195,6A063054H,NULL,Notebook,Torque Ford North Lakes
+200700115,0705-B085625/003,NULL,PC,Torque Ford Strathpine
+200800648,B095104/003,NULL,PC,Torque Ford Strathpine
+20110104,JATF005468,NULL,Printer,Torque Ford Strathpine
+20100098,B097621/004,NULL,PC,Torque Ford Strathpine
+200800857,B096489/006,NULL,PC,Torque Ford Strathpine
+200800861,B096489/010,NULL,PC,Torque Ford Strathpine
+200800686,B095700/003,NULL,PC,Torque Ford Strathpine
+200701158,L3-BC082 07/01,NULL,Notebook,Torque Ford Strathpine
+20100043,B097386/006,NULL,PC,Torque Ford Strathpine
+200700112,XAH6800373,NULL,Printer,Torque Ford Strathpine
+200800880,B096661/011,NULL,PC,Torque Ford Strathpine
+20110386,B100809/001,NULL,PC,Torque Ford Strathpine
+20130253,B104905/003,NULL,Zbox,Torque Ford Strathpine
+200800729,B095941/009,NULL,PC,Torque Ford Strathpine
+20100191,B098232/004,NULL,PC,Torque Ford Strathpine
+20100100,B097621/006,NULL,PC,Torque Ford Strathpine
+200800955,B096848/005,NULL,PC,Torque Ford Strathpine
+200800871,B096661/002,NULL,PC,Torque Ford Strathpine
+20110349,QVR1300378,NULL,Printer,Torque Honda North Lakes
+20120352,B103585/008,NULL,Zbox,Torque Honda North Lakes
+200800999,4A133051H,2013-06-27,Notebook,Torque Honda North Lakes
+200700001,CNV7070083,NULL,Thin Client,Torque Honda North Lakes
+20100145,B097858/007,NULL,PC,Torque Honda North Lakes
+20100097,B097621/003,NULL,PC,Torque Honda North Lakes
+20100221,B098370/001,2013-06-04,PC,Torque Honda North Lakes
+20110302,QRE1303096,NULL,Printer,Torque Honda North Lakes
+200700002,CNV707008P,NULL,Thin Client,Torque Honda North Lakes
+20120024,7B095292H,NULL,Notebook,Torque Subaru Brendale
+20120223,QVR2200939,NULL,Printer,Torque Toyota Admin
+20110047,XSZ0Z04173,NULL,Printer,Torque Toyota Admin
+200800690,B095700/007,NULL,PC,Torque Toyota Brendale
+20120278,4C056610H,NULL,Notebook,Torque Toyota Brendale
+20120045,B102243/009,NULL,Zbox,Torque Toyota Brendale
+20100190,B098232/003,NULL,PC,Torque Toyota Brendale
+20120119,B102508/009,NULL,Zbox,Torque Toyota Brendale
+200800797,XSX0100733,NULL,Printer,Torque Toyota Brendale
+20110224,XSZ0Y03934,NULL,Printer,Torque Toyota Brendale
+200800868,B096661/001,NULL,PC,Torque Toyota Brendale
+200800959,B096848/009,NULL,PC,Torque Toyota Brendale
+20120271,B103299/001,NULL,Zbox,Torque Toyota Brendale
+20100141,B097858/003,NULL,PC,Torque Toyota Brendale
+20120275,B103299/005,NULL,Zbox,Torque Toyota Brendale
+200800693,B095700/010,NULL,PC,Torque Toyota Brendale
+20110347,QVR1300382,NULL,Printer,Torque Toyota Brendale
+20100056,B097468/002,NULL,PC,Torque Toyota Brendale
+200800755,1A063683H,NULL,Notebook,Torque Toyota Brendale
+200800852,B096489/001,NULL,PC,Torque Toyota Brendale
+20100136,B097891/006,NULL,PC,Torque Toyota Brendale
+20120274,B103299/004,NULL,Zbox,Torque Toyota North Lakes
+200800808,B096091/004,NULL,PC,Torque Toyota North Lakes
+200800788,B096208/002,NULL,PC,Torque Toyota North Lakes
+200800984,B097160/010,NULL,PC,Torque Toyota North Lakes
+20120348,B103585/004,NULL,Zbox,Torque Toyota North Lakes
+20120111,B102508/001,NULL,Zbox,Torque Toyota North Lakes
+200800838,B096287/004,NULL,PC,Torque Toyota North Lakes
+200800647,B095104/002,NULL,PC,Torque Toyota North Lakes
+200800958,B096848/008,NULL,PC,Torque Toyota North Lakes
+20120347,B103585/003,NULL,Zbox,Torque Toyota Pre-delivery
+200800019,CNV7330D4R,NULL,Thin Client,Torque Toyota Pre-delivery
+20120378,XSZ2607998,NULL,Printer,WHOP Leaseline & General
+200800925,B097291/002,NULL,PC,WHOP Leaseline & General
+20100274,Q670600308,NULL,Printer,WHOP Leaseline & General
+20120023,7B076639H,NULL,Notebook,WHOP Leaseline & General

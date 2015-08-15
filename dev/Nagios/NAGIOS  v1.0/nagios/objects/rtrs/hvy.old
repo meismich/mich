@@ -1,0 +1,10 @@
+# Berrimah WAN
+define host{
+        use             gen_c1841
+        host_name       ashmooberr01c18.ims.telstra.com.au
+        alias           Y00000023929N - Berrimah WAN
+        address         10.52.1.254
+        _WARNBPS        1000000,1000000
+        _CRITBPS        1500000,1500000
+        hostgroups      +lan_hvy
+        }

@@ -1,0 +1,9 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:53:32 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/TNS_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/TNS.webhosts 
+Host: 10.13.1.239 ()	Ports: 23/open/tcp//telnet///
+Host: 10.13.3.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.13.3.151 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.13.3.152 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.13.3.159 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.13.3.160 ()	Ports: 23/open/tcp//telnet///
+Host: 10.13.3.165 ()	Ports: 23/open/tcp//telnet///
+# Nmap done at Tue Apr  1 16:53:32 2014 -- 7 IP addresses (7 hosts up) scanned in 0.08 seconds

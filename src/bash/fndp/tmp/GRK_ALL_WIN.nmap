@@ -1,0 +1,9 @@
+# Nmap 4.76 scan initiated Tue Apr  1 17:04:39 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 445 -oG /home/mspence/src/fndp/tmp/GRK_ALL_WIN.nmap 10.24.0.0/24 10.24.1.0/24 10.24.2.0/24 10.24.3.0/24 10.24.4.0/24 10.24.5.0/24 10.24.6.0/24 10.24.7.0/24 10.24.8.0/24 10.24.9.0/24 10.24.10.0/24 10.24.11.0/24 10.24.12.0/24 10.24.13.0/24 10.24.15.0/24 10.24.16.0/24 10.24.17.0/24 10.24.18.0/24 10.24.19.0/24 10.24.20.0/24 10.24.99.0/24 10.24.100.0/24 10.24.253.0/24 10.24.254.0/24 
+Host: 10.24.1.12 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.24.1.13 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.24.1.54 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.24.1.150 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.24.1.231 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.24.1.253 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.24.1.254 ()	Ports: 445/closed/tcp//microsoft-ds///
+# Nmap done at Tue Apr  1 17:05:33 2014 -- 6144 IP addresses (7 hosts up) scanned in 54.05 seconds

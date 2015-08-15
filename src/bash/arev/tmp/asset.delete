@@ -1,0 +1,13 @@
+use assets;
+delete from interog8s where i_asset=20120036;
+delete from interog8s where i_asset=90000000;
+delete from interog8s where i_asset=20110464;
+delete from interog8s where i_asset=20110060;
+delete from interog8s where i_asset=20110387;
+delete from interog8s where i_asset=20130273;
+delete from interog8s where i_asset=20100285;
+delete from interog8s where i_asset=20140053;
+delete from interog8s where i_asset=20120207;
+delete from interog8s where i_asset=20130161;
+delete from interog8s where i_asset=20110007;
+delete from interog8s where i_asset=90000000;

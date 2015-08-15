@@ -1,0 +1,18 @@
+use assets;
+
+select i_asset, upper(s_description) from xdescs
+        where s_desctype = "Name"
+                and i_asset in (
+                        select distinct(xassets.id)
+                                from xassets left join interog8s
+                                        on xassets.id = interog8s.i_asset
+                                where xassets.s_status = "Active"
+                                        and xassets.s_devicetype in ("PC", "Notebook", "Thin Client", "Zbox", "Printer")
+                                        and (interog8s.i_i8type is null
+                                                or ( interog8s.i_i8type =8
+                                                        and str_to_date(interog8s.s_interog8, '%Y-%m-%d') < subdate(curdate(), INTERVAL 61 DAY)
+                                                        )
+                                                )
+                        )
+        order by i_asset
+        ;

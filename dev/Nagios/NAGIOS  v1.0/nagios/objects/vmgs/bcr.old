@@ -1,0 +1,15 @@
+# File:			vmgs/bcr.cfg
+# Date:			2012-08-20
+# Author:		Michael Spence
+
+#--- Host Definitions
+
+# porschefs
+define host{
+        use             gen_win_fs
+        host_name       porschefs
+        alias           Porsche File Server
+        address         10.17.11.3
+        parents         bcr_esx1
+        hostgroups      +vmg_dhcp
+        }

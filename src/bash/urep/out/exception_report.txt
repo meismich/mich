@@ -1,0 +1,23 @@
+==========================================================================
+USAGE REPORT: EXCEPTIONS SUMMARY
+
+Number of Active w/ Invalid Interog8 Data:
+	TOTAL:      349
+	PCs:        126
+	ThinClient: 47
+	Notebook:   65
+	Printer:    78
+	Zbox:       33
+
+Number of InActive w/ Valid Interog8 Data:
+	TOTAL:      29
+
+Number of Interog8s this Month with Status:
+	DONE:       1119
+	ERROR:      56
+	NULL:       0
+	VMWARE:     0
+
+Number of NMAP found devices:
+	Computers:  1054
+	Printers:   387

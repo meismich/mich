@@ -1,0 +1,120 @@
+Toyota Network - Internal to APEagers
+2011-07-04
+Michael Spence
+
+
+Audience:
+
+Currently this document is primarily for use by the Systems Administrator for APEagers.  It may be useful as a guide for the maintenance of this system by any other staff involved.  It is assumed that the user of this guide, understands the use of services such as DNS, route tables, and packet filtering and basic networking paradigms.
+
+
+Preamble:
+
+The Toyota Extranet Network is connected to the APEagers WAN via two connections - one at EMP and one in Darwin.
+
+This document describes what measures have been put in place to maintain a functional Toyota Network for the Toyota dealership we have under our control.
+
+Specific only to Toyota: This document describes firewall configurations.  This document describes proxy exceptions.  This document describes the physical/logical layout of the network.
+
+This document DOES NOT describe the firewall, proxies or network, where it is not in relation to Toyota.
+
+
+
+Topics of Discussion
+
+1. DAN Router
+	- Access Lists
+	- NEC Contacts
+2. Toyota Destinations
+3. Firewall Configurations
+4. DNS configurations
+5. Proxy Configuratons
+6. Physical/Logical Layout
+
+
+Topics in Detail
+
+1. DAN Router
+
+Each Toyota (in a perfect Toyota world) is supplied with an ADSL modem and Router (often combined) which connects directly to the Toyota network for their state.  Through this connection the Toyota and TMCA networks are accessible.
+
+Servicing QLD and NT are two DAN routers for the current six (6) Toyota locaions under APEagers control.  One DAN router is housed at the APEagers Data Centre at Eight Mile plains and the other at the Darwin Network Core at Bridge Toyota Darwin City.
+
+The IP addresses for the DAN routers are as follows:
+
+EMP DAN Router	10.40.1.46
+
+DWN DAN Router	172.16.1.8
+
+
+	- Access Lists
+The DAN routers have been configured to allow only specific subnets of the WAN to access the Toyota/TMCA networks.  The subnets allowed are listed below:
+
+EMP DAN Router
+10.1.0.0/16
+10.5.0.0/16
+10.18.0.0/16
+10.25.0.0/16
+10.32.0.0/16
+10.51.0.0/16
+
+DWN DAN Router
+10.50.0.0/16
+10.51.0.0/16
+
+	- NEC Contacts
+Administration for the DAN routers is performed by NEC.  At this time there is only limited contact details for these contractors.
+
+
+
+2. Toyota Destinations
+The Toyota Extranet network is known quite well and it can be easily confirmed that the following subnets describe parts of the Toyota Extranet.
+
+10.9.100.0/24
+132.147.0.0/16
+150.45.0.0/16
+192.168.42.0/24
+192.168.101.0/24
+192.168.108.0/24
+192.168.109.0/24
+129.168.206.0/24
+
+
+3. Firewall Configurations
+
+For PC access from the WAN the firewall must be configured to route traffic destined for the Toyota Extranet through the DAN router.
+
+The following routes are configured to be started at firewall startup:
+
+[INSERT RC.LOCAL TOYOTA ROUTES HERE]
+
+Also for PC's to access these networks, the packet filter must also allow traffic to traverse to these networks without the aid of a proxy.  The following PF rules are configured to allow traffic through the firewall and consequently through the DAN router.
+
+[INSERT PF.CONF TOYOTA RULES HERE]
+
+
+
+4. DNS configurations
+
+Domain resolution cannot be done across the internet for *.toyota.com.au and *.tmca.com.au as these are not generally accessible internet destinations.  Due to this DNS servers which are located in the Toyota Extranet must be used.  The two DNS servers provided to use are:
+
+	192.168.109.38
+	192.168.109.138
+
+To facilitate this DNS functionality within our own network, our DNS servers use DNS forwarding for the name resolution of toyota.com.au and tmca.com.au domains.
+
+
+5. Proxy Configuratons
+
+Almost all Toyota traffic is allowed through the firewall and onto the Toyota Extranet.  As such there is no need for a proxy to access Toyota sites contained on the Extranet.  However, a proxy is required to gain Internet access.  Due to this requirement the following Proxy Exceptions are required for Toyota Users:
+
+[INSERT PROXY EXCEPTIONS FOR TOYOTA HERE]
+
+
+
+
+6. Physical/Logical Layout
+
+The following image describes the Logical layout of our network.  PCs and users exist generally within the WAN and the firewall are maintained at both EMP and DWN.
+
+[INSERT TOYOTA NETWORK DIAG VISIO HERE]

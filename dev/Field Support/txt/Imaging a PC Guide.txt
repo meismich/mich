@@ -1,0 +1,50 @@
+Imaging a PC Guide
+2010-08-17
+Michael Spence
+
+
+Audience:
+
+Currently this doucmentation is for Field Support Officers only.  In the future, I do not forsee as yet other appropriate persons to whom this document may apply.  It is assumed that a Field Support Officer understand how to apply an image to a machine using the Ghost32 tool
+
+
+Preamble:
+
+This document applies to initialising the configuration of a PC to a Standard Operating Environment (SOE).  Each model of computer has a particular set of drivers and capabilities, but the SOE should be fairly similar across all these differently capable devices.  Maintaining a fleet of similarly operating systems, greatly reduces the knowledgebase requirements for the IT department.
+
+This document DOES NOT include instructions on how to create the SOE, nor the systems which must be installed in an SOE.  Please refer to "Building SOE Guide.txt".
+
+This document DOES NOT explain how to setup users on the newly configured machines.  Please refer to "New Computer Setup Policy.txt". 
+
+
+Steps to Follow:
+
+1. Determine the Model of the Computer
+
+2. Select/Find Ghost Image for Model 
+
+3. Boot Ghost32 System
+
+4. Ghost System HDD
+
+
+Steps in Detail:
+
+1. Determine the Model of the Computer
+
+All PC machines throughout APEagers will have details on/in them which will identify the model of computer you are dealing with.  As a first step, consult the Asset Database and determine the model number from the details listed here.  From here, examine the computer to determine if this information is correct (DO NOT trust the Asset Database 100%).  Towers often have a motherboard sticker on the internal side of the case; this details the model.  You may have to examine the motherboard itself to determine the model.  Laptops will contain the model number on the underside of the laptop.  Please be aware that there may be different drivers for differing models for the same range of laptops.
+
+
+2. Select/Find Ghost Image for Model 
+
+Each model of computer will have a distinct SOE image associated with it.  This image will have specific drivers for the model and any other appropriate software for that model.  Also, XP (which is the operating system on the SOE's) may be configured to only work on those machines from their specific SOE images.  
+
+
+3. Boot Ghost32 System
+
+Image discs in the past may or may not be bootable.  All Field Support officers should have been given a bootable USB disk drive to use for booting Ghost32.  This system loads USB drivers, CD drivers and the Ghost 32 program.  Ensure that the media you have the image on is readable and that you can see the harddrive for the system you are imaging.
+
+
+4. Ghost System HDD
+
+Now that you are prepared to image the computer, select "Image" -> "from Image".  This will display a File system selection utility where you can select the file containing the image for ghosting from.  Be aware that this system only uses single clicks to select items.  After the file is selected, you will be prompted to select the drive you wish to image.  **WARNING** Take care that you do not image the USB stick or a USB drive you have connected to the computer.

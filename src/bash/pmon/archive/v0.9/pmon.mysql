@@ -1,0 +1,3 @@
+use assets;
+
+select assets.id, ipaddresses.s_ipaddress, models.s_model from assets, ipaddresses, models where assets.id = ipaddresses.i_asset and assets.i_model = models.id and assets.i_status=2 and models.i_devicetype = 7;

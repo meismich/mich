@@ -1,0 +1,11 @@
+# Nmap 4.76 scan initiated Tue Apr 15 11:13:27 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 9100 -oG /home/mspence/src/fndp/tmp/BRO_ALL_LPT.nmap 172.17.150.0/24 
+Host: 172.17.150.2 ()	Ports: 9100/filtered/tcp//jetdirect///
+Host: 172.17.150.140 ()	Ports: 9100/filtered/tcp//jetdirect///
+Host: 172.17.150.149 ()	Ports: 9100/filtered/tcp//jetdirect///
+Host: 172.17.150.153 ()	Ports: 9100/filtered/tcp//jetdirect///
+Host: 172.17.150.156 ()	Ports: 9100/filtered/tcp//jetdirect///
+Host: 172.17.150.165 ()	Ports: 9100/filtered/tcp//jetdirect///
+Host: 172.17.150.182 ()	Ports: 9100/filtered/tcp//jetdirect///
+Host: 172.17.150.183 ()	Ports: 9100/filtered/tcp//jetdirect///
+Host: 172.17.150.187 ()	Ports: 9100/filtered/tcp//jetdirect///
+# Nmap done at Tue Apr 15 11:13:30 2014 -- 256 IP addresses (9 hosts up) scanned in 2.90 seconds

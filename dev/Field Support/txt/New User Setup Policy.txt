@@ -1,0 +1,106 @@
+New User Setup Policy
+2010-08-10
+Michael Spence
+
+
+Audience:
+
+Currently this documentation is for Field Support Officers only.  In the future, I recomend that this procedure be passed to the Service Desk as this function is more inline with the availability of staff to perform this function.
+
+
+Preamble:
+
+This document applies to the creation of new Active Directory user accounts.  This includes the moving of users from one dealership to the next, as users DO NOT get to take their user account from one to the next.
+
+Also this applies only to roles in the company which already exist, where securities can be assertained with no difficulty.  In cases where a role does not already exist, some of this information may still be relevant.
+
+This document DOES NOT apply to the creation of ERA user accounts.  This function is the sole responsibility of the accountant for the dealership.  (Some details may be edited by ERA-trained staff at our IS Service Desk or in our IS Applications Department.)
+
+
+Steps to Follow:
+
+The following steps are required to be followed during the setup of each user.
+
+1. Choose Appropriate Person to Copy
+
+2. Name Account Correctly
+
+3. Set Appropriate Password
+
+4. Select Exchange Store
+
+5. Add Required Email Addresses
+
+6. Verify Security Group Memberships
+
+7. Fill in Phone number and Location
+
+8. Email Manager/Receptionist Account Details
+
+
+Steps in Detail:
+
+
+1. Choose Appropriate Person to Copy
+
+In most cases a new employee will be replacing an existing employee or be essentially imitating a role of another employee.  When setting up a new employee, find another employee that has the same job function/role in the dealership, as this will give the new employee the same Security Group memberships and allow the user the appropriate access to file shares and associated Group Policies.
+
+(In the future, it is my desire to have Template User accounts setup for each job role at a dealership.  These will be the perfect thing to copy to create a new user.)
+
+Please note that in some cases, the user you may copy from, will not be the perfect person to copy and adjustments at step 5 will need to be done.
+
+
+2. Name Account Correctly
+
+Currently there are two (2) naming conventions across the apeagers.com.au domain.  These apply to "Caloundra City Autos" (CCA) and "the Rest".
+
+At CCA, the naming convention for a user is "<first name>.<last name>".  Exceptions may appear if there is another user of the same name combination.  In this case, it is appropriate to substitute <first name> with <nick name> eg. Mick instead of Michael.  Let the user decide this change.  If this is not appropriate, use "<first name>.<middle initial>.<last name>".
+
+At all other Sites, the naming convention for a user is "<first initial><last name>".  Exceptions appear more readily in this naming convention.  For an exception, I recomend that we use the format "<first initial><middle initial><last name>".  In the past we have used "<last name><first initial>" (for exceptions), but this has been confusing for some users as this is the standard used for ERA user account creation.
+
+
+3. Set Appropriate Password
+
+Passwords are set to change every 45 days, and users will be prompted a week before every day that their password is about to expire.  Due to this, I don't believe we need to make a very complex password for a user, as they are simply going to change it to something simpler when this time arrives.  My recomendation is to set the password to <day><year> eg. "Monday2010".  This is NOT requirement, but DO NOT make a password for a user, which is abusive, contains crude words or is in ANY way in appropriate.
+
+
+4. Select Correct Exchange Store
+
+There are two (2) standard stores for emails, which all users should be made members of.  They are "Standard Users Storage Group/Standard Users A-M Mailbox Store" and "Standard Users Storage Group/Standard Users N-Z Mailbox Store".  Choose the Exchange store based on the first letter of the person's last name.  For Example, John Smith would use the "Standard Users Storage Group/Standard Users N-Z Mailbox Store".
+
+This is an important step as the Exchange server has limited space for each Mailbox Store.  Without prior permission from the IT Services Manager, no user should ever be placed in an "Advanced User Storage Group".
+
+(This should end the copy process)
+
+
+5. Add Required Email Addresses
+
+Some dealerships have more than one email domain associated with them.  It will be your responsibility to determine if this user requires all the email domains added to their account.  Some of the domains which other users are using may be out-dated so please ask and verify.
+
+When you first start to configure the users email addresses, Untick "Automatically update e-mail addresses based on recipient policy" and press Apply.  If this is done within the first couple of minutes after the account is created, the email addresses will not be populated with CCMAIL, MS or X400 records.  These are unneccessary, and I would prefer not to see them there.  Only SMTP records are necessary.  Also users should not have @apeagers.com.au email addresses, unless they work for corporate.
+
+
+6. Verify Security Group Membership
+
+When you copied the new user from the old user, some of the Security Groups, the new user is now a member of, may not be appropriate.  This could be due to legacy groups still being applied to the old user, or perhaps the other user works accross departments and has a specialized role.  Simply double check the groups and delete those you don't think are appropriate.  This can be rectified later if you are wrong.
+
+(When then Templates are in place this step will be unnecessary)
+
+
+7. Fill in Phone number and Location
+
+If the information is available to you (and please make an effort to discover this infomation), please fill into the description fields for the user account, their phone number and location.  If the phone number is unavailable, please use the telephone number of the user's nearest receptionist.  By location, I mean the campus where the user will be located (refer to "Standard Naming Conventions.txt" for a list of campuses).  
+
+Many systems integrate and rely on this phone number and location information throughout APEagers and it is necessary to keep this information as accurate as possible.
+
+
+8. Email Manager/Receptionist Account Details
+
+Everytime an account is created, someone with the ability to pass on this information to the new user must be informed.  Do NOT send the details to the new user, they won't be able to recieve their details yet.  It is most appropriate to inform their direct Manager, but if they are unavailable, the Receptionist is a good place to send these details, as they are connected to all employees of a dealership directly.
+
+
+Considerations:
+
+When a user is moved from one dealership to another, this user DOES NOT carry any of his old documents, emails or contacts to the new dealership.  This information is owned by the dealership he previously worked for and must remain with that dealership.  For this reason, a new user account must be created when a user changes dealerships.  It may be necessary to follow the steps in "Old User Delete Policy.txt" before performing the steps in this document.
+
+Also if the user is replacing another user, in most cases this will be the user account you copy the new account from.  This account you copied from should be marked for deletion and the steps in "Old User Delete Policy.txt" should be carried out.

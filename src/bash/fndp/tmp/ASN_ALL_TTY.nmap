@@ -1,0 +1,10 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:43:26 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/ASN_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/ASN.webhosts 
+Host: 10.6.1.239 ()	Ports: 23/open/tcp//telnet///
+Host: 10.6.1.252 ()	Ports: 23/open/tcp//telnet///
+Host: 10.6.10.12 ()	Ports: 23/filtered/tcp//telnet///
+Host: 10.6.10.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.6.10.151 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.6.17.12 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.6.17.151 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.6.17.152 ()	Ports: 23/closed/tcp//telnet///
+# Nmap done at Tue Apr  1 16:43:26 2014 -- 8 IP addresses (8 hosts up) scanned in 0.23 seconds

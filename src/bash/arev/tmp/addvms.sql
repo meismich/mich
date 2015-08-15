@@ -1,0 +1,15 @@
+use assets;
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000050, 2, 276, 0, 47, 1, "VMware-42 06 1b c3 d1 f5 43 d6-62 3c 20 44 47 e8 de 73");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000051, 2, 276, 0, 47, 1, "VMware-42 06 34 b0 3a 1e b5 74-1a 71 c3 ec 81 8d 9c 4d");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000052, 2, 276, 0, 47, 1, "VMware-42 06 42 3b 18 87 0a 68-77 04 e9 ff d5 9e 78 dc");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000053, 2, 276, 0, 47, 1, "VMware-42 06 70 e0 6d 87 f2 d9-03 d6 7a 17 34 11 fb 31");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000054, 2, 276, 0, 47, 1, "VMware-42 06 a3 65 ab 7c fc ef-46 62 b7 8b 3e b6 bd 2b");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000055, 2, 276, 0, 47, 1, "VMware-42 06 cb a6 d8 e4 30 dd-59 07 0e 13 27 ed 3e ba");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000056, 2, 276, 0, 47, 1, "VMware-42 06 d2 a9 ad 6d a1 bf-c1 db 3e 24 83 d8 42 f3");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000057, 2, 276, 0, 47, 1, "VMware-42 06 da 74 78 8c 34 cf-0d ad 44 8e af 10 89 3b");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000058, 2, 276, 0, 47, 1, "VMware-42 06 de 6c 41 15 f4 30-73 71 b3 1e 73 c9 e4 97");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000059, 2, 276, 0, 47, 1, "VMware-42 06 f3 3b 2e 88 7b 2d-53 fa 39 c5 38 b8 6f 31");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000060, 2, 276, 0, 47, 1, "VMware-42 2c 07 32 81 e1 41 a7-99 1a e7 94 c4 23 20 5c");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000061, 2, 276, 0, 47, 1, "VMware-42 2c 1e 9f be df b8 9f-0d cd 7f a9 07 96 8d 36");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000062, 2, 276, 0, 47, 1, "VMware-42 2c 21 36 de 6f 2d 0e-11 a5 d1 d4 ba 64 49 b7");
+insert into assets (id, i_status, i_model, i_purchase, i_location, i_department, s_serialno) values (90000063, 2, 276, 0, 47, 1, "VMware-42 2c 3f 84 b0 20 33 82-ea 74 37 96 b4 20 cc da");

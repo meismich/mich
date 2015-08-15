@@ -1,0 +1,93 @@
+Domain Name Registration
+2010-08-29
+Michael Spence
+
+
+Audience
+
+The IS Systems Administrator is responsible for the execution of this procedure.
+
+
+Scope
+
+This procedure defines the registration of a new domain name.
+
+This procedure does not identify the maintenance of domain names or the email configuration procedures.  Please refer to the Maintenance of Domain Names procedure and Domain email Configuration procedure as referenced in part 5 of this procedure.
+
+It may be necessary to perform, during this setup process, items relating to the following related procedures: "Maintenance of Domain Names", "Domain Email configuration", "Raising Helpdesk Calls" and "ISS Monitoring Server".  Please also refer to the following documentation: "Melbourne IT Portal User Manual" and "Domain Name Spreadsheet".
+
+Also for reference purposes, a list of related definitions are included in Appendix Z of this document.
+
+
+Entry Criteria
+
+Helpdesk call received from Corporate, a Dealer Principal or authorised representative requesting the registration of a new domain name.
+
+
+Steps to be Performed
+
+1. Search/Register Domain Name - Melbourne IT Portal
+2. Create External DNS Entries - Telstra Portal
+a. mail and www domain
+b. pointer only domain
+3. Create Internal DNS Entries
+4. Finalise In-house Tasks
+
+
+Steps in Detail
+
+Search/register domain name - Melbourne IT Portal
+
+1. Log onto the Melbourne IT Portal : (https://onlineportal.melbourneitdbs.com)
+2. Username issadmin  Password: ********
+3. Use the Domain Name Availability Check search option via the main portal page (I believe that we can only use this a maximum of 8 times per day, before it blocks us for days)
+4. to register domain name(s) select the tick box in the column named "order".
+5. In the section named "Add domains to order", select "Create a new order..." to create a new order.
+6. Then select the business unit to the right where the domain names will be registered undrer.
+7. Click "Continue" to continue to order details.
+8. Use the default contact and administrative details for domain registration.
+
+An email will be sent to the issadmin@apeagers.com.au distributaion group confirming the order.  A further confirmation email will be sent to the distribution group acknowledging the successful domain name registration.
+
+
+Create external DNS entries - Telstra Portal
+
+1. log onto the Telstra Custdata portal: (https://www.telstra.net/cgi-bin/custdata/index.pl)
+2. username: 9439599010  password ********
+3. navigate to Service Management -> Primary DNS
+4. Enter Domain Name and email address (issadmin@apeagers.com.au) and click "Add".  (Leave TTL at 3600)
+
+
+For sites which will become a mail and www domain, perform the following steps:
+
+1. "Assign IP address for Domain" and enter BASE IP address.
+2. "Assign Mail Server entries for Domain" and enter the following details:
+- cluster1.ap.mesagelabs.com 10
+- cluster1a.ap.messagelabs.com 20
+3. "Assign host/Alias Names for domain" and enter the desired host records.  e.g. www.apeagers.com.au A 203.210.109.237
+4. click "Submit" to apply changes.
+
+For sites which are only a pointer for an existing domain, perform the following steps:
+
+1. "Assign IP address for Domain" and enter BASE IP address of existing domain.
+2. "Assign Mail Server entries for domain" and enter the following details:
+- cluster1.ap.messagelabs.com 10
+- cluster1a.ap.messagelabs.com 20
+3. "Assign Host/Alias Names for Domain" and enter the desired host records e.g. www.apeagers.com.au CNAME www.apeagers.net.au
+4. Click "Submit" to apply changes.
+
+
+Create internal DNS entries
+
+1. Open the DNS MMC on the Domain Controller with PDC Emulator role.
+2. Add www "A" host record to the associated FQDN object.
+3. Update domain name spreadsheet
+4. Add all necessary information to the Domain Name spreadsheet as referece above.
+
+
+Exit Criteria
+
+Dig/Nslookup/whois
+
+perform external DNS lookups and WHOIS database searches to confirm new domain has propagated to root DNS servers.
+

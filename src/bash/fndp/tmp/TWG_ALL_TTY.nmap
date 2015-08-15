@@ -1,0 +1,16 @@
+# Nmap 4.76 scan initiated Tue Apr  1 17:18:31 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/TWG_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/TWG.webhosts 
+Host: 10.28.1.1 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.28.1.235 ()	Ports: 23/open/tcp//telnet///
+Host: 10.28.1.237 ()	Ports: 23/open/tcp//telnet///
+Host: 10.28.1.239 ()	Ports: 23/open/tcp//telnet///
+Host: 10.28.1.251 ()	Ports: 23/open/tcp//telnet///
+Host: 10.28.1.252 ()	Ports: 23/open/tcp//telnet///
+Host: 10.28.16.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.28.16.151 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.28.16.153 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.28.16.154 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.28.16.155 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.28.16.156 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.28.16.157 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.28.16.185 ()	Ports: 23/open/tcp//telnet///
+# Nmap done at Tue Apr  1 17:18:31 2014 -- 14 IP addresses (14 hosts up) scanned in 0.04 seconds

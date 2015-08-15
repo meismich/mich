@@ -1,0 +1,367 @@
+Fire wall infrastructure - bne-obfw45
+Author Mark Cross - Systems Administrator
+Date 23 Feb 2010
+
+
+Introduction 
+
+This is the primary documentation for the ap eagers ltd firewall infrastructure provisions as related to thte APEagers Ltd qld/nt network.  This document includes information regarding the specific operation system and server SOE installation.  Passwods ant other secure information are not included in this document.
+
+The APEagers Firewall Infrastructure document contains the necessary information regarding the core firewall for the APEagers QLD/NT network, includeing an overview of the setup and configuration of the server/s.
+
+Assumptions
+
+This document assumes an understanding of network, verualisation and data backup and restoration technologies.  The target audience is restricted to Network, System and Security administrators.
+
+
+Server Administration
+
+Infrastructure administration is broken into two areas of responsibility.
+
+The server and hardware infrastrucutre is supported, administreed and managed by the APEagers Ltd Information Services Department's Systems Administrator.
+
+- Michael Spence - Network and Telephony Co-ordinator
+  Mob: 0439 535 950
+  email: mspence@apeagers.com.au
+
+Managed WAN and IPMAN infrastructure is supported, administred and managed by Telstra.  Refer to Telstra manual for contact details.
+
+
+Primary Site
+
+The Eight Mile Plains Fujitsu data centre is the primary site for the server and related infrastructure.  Other site locations are connected to the primary site via Telstra Managed WAN infrastructure.
+
+The primary site is physically located at 7  Brandl St Eight Mile Plains, Brisbane, Qld 4113
+
+
+Systems Inventory and Configuration
+
+Inventory
+
+bne-obfw45  (now bne-fw1)
+
+Server Name: bne-fw1.apeagers.com.au
+VM Host: qld-esx1.apeagers.com.au
+Server Role: Firewall and FTP Proxy
+IP Address: (internal) 10.1.1.253
+OS: OpenBSD 4.5
+Hardware: ESX VM Guest (1 vCPU, 4GB RAM)
+Storage: 40GB (inc swap)
+
+emp_core_c3560g-48ts_2
+
+Host Name: emp_core_c3560g-48ts_2
+IP Address: 10.1.1.244
+Hardware: Cisco Switch 3560G-48ts
+VLans: 1, 3, 4, 5, 6, 101, 666
+
+
+Installation
+
+The connections to and from the APEagers Ltd Qld/Nt networks are monitored, controlled and routed through an Open BSD PF firewall.  The firewall is build with the OpenBSD 4.5 release.  The following information is a break down on how thte firewall is installed and configured, as well as information on some custome scripts for mointoring and debugging.
+
+
+Firewall Hardware
+
+Name: bne-obfw45.apeagers.com.au
+OS: Open BSD 4.5
+IP Addresses:
+
+vic0 - 165.228.157.90/28  (External)
+vic0 - 203.38.61.192/28 (External Aliases)
+vic1 - 10.1.1.253 (Internal)
+vic2 - 172.20.3.33 (DMZ)
+vic3 - 10.40.1.34 (B2B)
+
+
+Firewall OS Installation
+
+The following information is a basic guide on how to install Open BSD on your chosen platrom.  For further information go to the link which as a more in-depth step-by-step guide on how to install OpenBSD on your chosen platform.
+
+Boot from OpenBSD cdrom
+Select "i" to install once the kernel has booted
+Terminal type TW200 or default
+"none" when prompted to select a keyboard encoding table
+Proceed with install "yes" 
+Rooth hard drive to use is the default "sd0"
+"no" when prompted whether to use the entire disk.  ** IMPORTANT ** edit MBR manually!!!
+Issue the follwongi commands for creating the MBR: "reinit", "write", "update", "quit" - *** IMPORTANT *** In this order everytime
+Disk label crateion: p to view partition, d to delete partition, a to add partitions.
+Add partition of size 37.7G, FS Type "4.2 BSD" and a mount point of /
+Add partition of size 2300M, FS type "swap"
+w to write, q to quit
+Proceed with setting file system "y"
+System hostname is the unqualified (no apeagers.com.au suffix) name which will be the same for all interfaces.
+configure network, "Y"
+BNS name is the complete DNS suffix (ie apeagers.com.au)
+Initialise external interface and select external IP address, netmask and symbolic hostname.
+Initialise internal interface and select internal IP address, netmask and symbolic hostname.
+Initialise DMZ interface and select DMZ IP address, netmask and symbolic hostname.
+Initialise B2B interface and select B2B IP address, netmask and symbolic hostname.
+Enter and confirm the root account password.  This password should be a difficult string to remember as you will never need to log into the box as root.  We ill setup a privileged user account later on.
+Ensure the sets which you wish to install are selected (base32.tgz, etc32.tgz, misc32.tgz, comp32.tgz, man32.tgz, and bsd) and remove any others with a command such as -game*.  Once complete type "done" and answer "y" to continue with installation.
+"n" to extract more sets and "n" when prompted whether we will be using the x windows system.
+Select the "Australia/Brisbane" time zone
+Once the installation has been completed, type halt to stop the server and press any key to reboot
+*** IMPORTANT *** Ensure you remove the installtion disk from the server before rebooting.
+
+
+Firewall Configuration
+
+** These steps need to be done with the "root" account from the console **
+
+Add a normal user account for monitoring and logging
+
+Issue the command adduser
+Enter the following details to setup user default environments:
+
+- default shell "ksh"
+- default home "/home"
+- copy dotfiles from /etc/skel "yes"
+- send mesage to user "no"
+- prompt for password "yes"
+- default encryption "auto"
+
+When you add the new user be sure to add the user to the group "wheel" if you intend for them to have "su" rights.   *** NOT NEcESSARY ***
+
+
+Edit /etc/sudoers
+
+In order to log into the firewall and obtain root privileges, we use a package called sudo.  This allows us to log in as a normal user, and then issue the command "sudo <command>", which will allow us to run whatever <command> is as root.
+
+- Add the following entry in /etc/sudoers
+
+<username> ALL=(ALL) ALL
+
+you will find an entry in this file for root already.  You may wish to copy this line and alter the entry from root to <username>.
+
+
+Edit /etc/sysctl.conf
+
+enable the firewall to forward IP packets by uncommenting:
+
+net.inet.ip.forwarding=1 #..... blah
+
+ensure that nobody can capture pages going to the swap by uncommenting:
+
+vm.swapencrypt.enable=1  #...... blah
+
+
+Edit /etc/rc.conf
+
+Enable PF firewall by changing pf=NO to "pf=YES"
+Turn off all services as absolutely no services apart from PF should be running on the firewall.  To do this, simply change yES variables to "NO"
+Point the pf_rules variable to where the PF configuration file will reside.  Currently APEagers Ltd uses a naming scheme which incorporates the company name.  IE "pf_rules=/etc/apeagers.conf"
+
+
+Edit/Create /etc/apeagers.conf
+
+The PF firewall and NAT is completely configured hrough the use of a .conf file, which is pointed to via the variable in /etc/rc.conf.  A complete copy of the rules used by this firewall is included.
+
+The general rules are as follows (in english):
+
+- Block all incoming traffic by default and only allow the traffic which is necessary for the business
+- Explicitly block any private address spaces with a quick rule
+- Pass all internal traffic out by default and only deny the traffic which is undesireable to the business.
+
+To block traffic you can simply follow this format:
+
+	block <in> [log] on <interface> all
+
+to allow NAT use the following format:
+
+	nat on <interface> from <source ip> to <dest ip> -> <interface>
+
+to redirect specific traffic to an internal/alternate server user the following:
+
+	rdr on <interface> from <source ip> to <dest ip> -> <server ip>
+** This may be more complicated due to protocols and ports needed for this redirect **
+
+
+Create /usr/bin/monitor-pf
+
+Create a script which will allow you to quickly monitor the output of the state table to the console or terminal.  The script should read:
+
+---------------------
+#!/bin/ksh
+clear
+tcpdump -n -e -ttt -i pflog0
+---------------------
+
+Remember to chmod 755 the file so that all users can execute it.
+
+
+Create /usr/bin/grep-pf
+
+Create a script which will allow you to quickly grep the output of the blocked packets to the console or terminal.  The script should read:
+
+---------------------
+#!/bin/ksh
+clear
+tcpdump -n -e -ttt -r /var/log/pflog | grep "block in on vic0"
+---------------------
+
+Remember to chmod 755 the file so that you can execute it.
+
+** THIS should be changed to simply grep for command line option 1, AND replaced with blocked-pf **
+
+---------------------
+#!/bin/ksh
+clear
+if [ $1 -n ]; then
+	echo "usage: grep-pf <what to grep>"
+else
+	tcpdump -n -e -ttt -r /var/log/pflog | grep $1
+fi
+---------------------
+
+
+Create restart-pf
+
+Create a script which wil allow you to quickly flush NAT and redirect rule tables, as well as restart the NAT an firewall   services.  The script should read:
+
+---------------------
+#!/bin/ksh
+clear
+pfctl -F nat
+pfctl -N -f /etc/apeagers.conf
+pfctl -s nat
+pfctl -F rules
+pfctl -R -f /etc/apeagers.conf
+pfctl -s rules
+---------------------
+
+Again, chmod 755 this script (although this may have to be run as root???)
+
+
+Hostfiles
+
+Hostfiles contain the definitions for the network cards and any aliases they have within the network if any.  These files should at least be partially correct if you setup the network correctly at installation.
+
+
+Edit/Verify /etc/hostname.vic0
+
+Should appear as:
+
+---------------------
+inet 165.228.157.90 255.255.255.252 NONE
+
+#203.38.61.192/28 Subnet
+inet alias 203.38.61.193 255.255.255.240 NONE
+inet alias 203.38.61.194 255.255.255.240 NONE
+inet alias 203.38.61.195 255.255.255.240 NONE
+inet alias 203.38.61.196 255.255.255.240 NONE
+inet alias 203.38.61.197 255.255.255.240 NONE
+inet alias 203.38.61.198 255.255.255.240 NONE
+inet alias 203.38.61.199 255.255.255.240 NONE
+inet alias 203.38.61.200 255.255.255.240 NONE
+inet alias 203.38.61.201 255.255.255.240 NONE
+inet alias 203.38.61.202 255.255.255.240 NONE
+inet alias 203.38.61.203 255.255.255.240 NONE
+inet alias 203.38.61.204 255.255.255.240 NONE
+inet alias 203.38.61.205 255.255.255.240 NONE
+inet alias 203.38.61.206 255.255.255.240 NONE
+---------------------
+
+
+Edit/Verify /etc/hostname.vic1
+
+Should appear as:
+
+---------------------
+inet 10.1.1.253 255.255.0.0 NONE
+---------------------
+
+
+Edit/Verify /etc/hostname.vic2
+
+Should appear as:
+
+---------------------
+inet 172.20.3.33 255.255.255.224 NONE
+---------------------
+
+Edit/Verify /etc/hostname.vic3
+
+Should appear as:
+
+---------------------
+inet 10.40.1.34 255.255.255.224 NONE
+---------------------
+
+
+Edit /etc/resolv.conf
+
+should appear as:
+
+---------------------
+lookup file bind
+nameserver 10.1.1.43
+---------------------
+
+
+Edit /etc/rc.local
+
+This file contains all the routes for the firewall.  This must be filled in with routes to all dealership locations, manufacturer locations (ie B2B destinations), 
+
+Examine appendix for the exact file used.
+
+
+Edit /etc/mail/relay-domains
+
+this file contains all the domains for APEagers.  This file will be edited everytime there is an additional domain added to apeagers.  If this file does not have an entry for a domain the firewall will fail to accept and relay the mail message to the MX server.
+
+Examine appendix for the current file used (at the time of this publication).
+
+
+edit /etc/apeagers.conf
+
+As explained before this file contains all the rules for the firewall's NATs, blocks and redirects. 
+
+Examine appendix for the exact file used.
+
+
+Edit /etc/mail/access
+
+Examin eappendix for the exact file used.
+
+
+Switch configuration
+
+As noted earlier the firewall will generally from now on be a virtual machine located in an ESX infrastructure.  To compensate for the 4 network cards, we use 4 separate VLan, 1 for internal, 3 for DMS, 5 for B2B and 666 for External.  Each of these are handled with a different virtual switch inside the ESX Host.  The guest Firewall connects each virtual NIC to matching switches.  These switches in turn have individual Interface ports to the real world (which may also have to be configured via the server interface).  The external interfaces must be known and patched accordingly to the correct vlans denoted on the core switch used.
+
+Examine appendix for the exact ports used on qld-esx1.
+
+Examine appendix for the setup used on emp_core_3560g-48ts_2
+
+
+
+Ongoing System Administration
+
+OS Version
+
+It is important to note that this document is based upon 4.5.  At the time of writing this document, the current version of OpenBSD is 4.7.  The configuration items explained in tihs document, will not work on this more recent release, due to a complete rework of the pf system.  However, the rules layed out here are useful as a guide for this new system.
+
+Warning: / was not properly unmounted
+
+Should the system be incorrectly rebooted or power cycled, the foort file system may be maked dirty.  In some cases the OS will drop to a shell after a core dump and may be unable to clean the FS.  Issue a manual fsck and clean appropriatley.  Reboot to a clean FS.
+
+
+System Backup Procedure
+
+At the time of writing this manual.  It is advised that a new machine be created if the former existing firewall is corrupted or fails.  Creation time should be around 15min, with practice.  Following and using Michael's backup scripts, will greatly reduce down time and editing times.
+
+Backup and Restore no longer relies upon ESX backup infrastructure.  You are encouraged to have a standby firewall built at all times.
+
+Michael's Backup script
+
+this script will copy all the relevant files to a consolidated position on the firewall and will then proceed to take ownership of the files and copy them to a backup server withing the APEagers Network. 
+
+
+Michael's Restore Script
+
+On a backup server mentioned above in "Backup Script", perform restore to new firewall.  Once files have been copied to new firewall, execute restore script on new firewall, which will copy consolidated files back to relevant positions.
+
+restart pf should be done, but it may be easier/simpler to reboot firewall with "shutdown -r now"
+
+Examine Appendix for the details of these scripts.

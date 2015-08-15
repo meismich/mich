@@ -1,0 +1,438 @@
+# File:			webs/ant.cfg
+# Date:			27-10-2011
+# Author:		Michael Spence
+
+#--- Antaresia
+
+#--- Hosts
+
+define host{
+	use		gen_web_host	
+	host_name	antaresia_109
+	alias		antaresia_109
+	address		113.192.56.109
+	parents		bne-obfw45-vic0
+	}
+
+define host{
+	use		gen_web_host	
+	host_name	antaresia_110
+	alias		antaresia_110
+	address		113.192.56.110
+	parents		bne-obfw45-vic0
+	}
+
+define host{
+	use		gen_web_page
+	host_name	apeagers.com.au
+	alias		apeagers
+	address		113.192.56.110
+	_HTTP		www.apeagers.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	australhonda.com.au
+	alias		australhonda.com.au
+	address		113.192.56.110
+	_HTTP		www.australhonda.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	australjaguar.com.au
+	alias		australjaguar.com.au
+	address		113.192.56.110
+	_HTTP		www.australjaguar.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	australlandrover.com.au
+	alias		australlandrover.com.au
+	address		113.192.56.110
+	_HTTP		www.australlandrover.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	australmotors.com.au
+	alias		australmotors.com.au
+	address		113.192.56.110
+	_HTTP		www.australmotors.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	australnewstead.com.au
+	alias		australnewstead.com.au
+	address		113.192.56.110
+	_HTTP		www.australnewstead.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	australprestige.com.au
+	alias		australprestige.com.au
+	address		113.192.56.110
+	_HTTP		www.australprestige.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	australvolkswagen.com.au
+	alias		australvolkswagen.com.au
+	address		113.192.56.110
+	_HTTP		www.australvolkswagen.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	australvolvo.com.au
+	alias		australvolvo.com.au
+	address		113.192.56.110
+	_HTTP		www.australvolvo.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	billbuckle.com.au
+	alias		billbuckle.com.au
+	address		113.192.56.110
+	_HTTP		www.billbuckle.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	billbucklesubaru.com.au
+	alias		billbucklesubaru.com.au
+	address		113.192.56.110
+	_HTTP		www.billbucklesubaru.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	billbuckletoyota.com.au
+	alias		billbuckletoyota.com.au
+	address		113.192.56.110
+	_HTTP		www.billbuckletoyota.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	billbucklevolkswagen.com.au
+	alias		billbucklevolkswagen.com.au
+	address		113.192.56.110
+	_HTTP		www.billbucklevolkswagen.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	bridgetoyota.com.au
+	alias		bridgetoyota.com.au
+	address		113.192.56.110
+	_HTTP		www.bridgetoyota.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	brisbanesubaru.com.au
+	alias		brisbanesubaru.com.au
+	address		113.192.56.110
+	_HTTP		www.brisbanesubaru.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	citroensunshinecoast.com.au
+	alias		citroensunshinecoast.com.au
+	address		113.192.56.110
+	_HTTP		www.citroensunshinecoast.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	city-automotive.com.au
+	alias		city-automotive.com.au
+	address		113.192.56.110
+	_HTTP		www.city-automotive.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	discountcarsdarwin.com.au
+	alias		discountcarsdarwin.com.au
+	address		113.192.56.110
+	_HTTP		www.discountcarsdarwin.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	eagers.com.au
+	alias		eagers.com.au
+	address		113.192.56.110
+	_HTTP		www.eagers.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	eagersfleet.com.au
+	alias		eagersfleet.com.au
+	address		113.192.56.110
+	_HTTP		www.eagersfleet.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	eagersholden.com.au
+	alias		eagersholden.com.au
+	address		113.192.56.110
+	_HTTP		www.eagersholden.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	eagershsv.com.au
+	alias		eagershsv.com.au
+	address		113.192.56.110
+	_HTTP		www.eagershsv.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	eagerskia.com.au
+	alias		eagerskia.com.au
+	address		113.192.56.110
+	_HTTP		www.eagerskia.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	eagersmazda.com.au
+	alias		eagersmazda.com.au
+	address		113.192.56.110
+	_HTTP		www.eagersmazda.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	eagersmitsubishi.com.au
+	alias		eagersmitsubishi.com.au
+	address		113.192.56.110
+	_HTTP		www.eagersmitsubishi.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	eagersusedcars.com.au
+	alias		eagersusedcars.com.au
+	address		113.192.56.110
+	_HTTP		www.eagersusedcars.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	hiddenvalleyford.com.au
+	alias		hiddenvalleyford.com.au
+	address		113.192.56.110
+	_HTTP		www.hiddenvalleyford.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	lexusofdarwin.com.au
+	alias		lexusofdarwin.com.au
+	address		113.192.56.110
+	_HTTP		www.lexusofdarwin.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	metroford.com.au
+	alias		metroford.com.au
+	address		113.192.56.110
+	_HTTP		www.metroford.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	metroparts.com.au
+	alias		metroparts.com.au
+	address		113.192.56.110
+	_HTTP		www.metroparts.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	newsteadstrip.com.au
+	alias		newsteadstrip.com.au
+	address		113.192.56.110
+	_HTTP		www.newsteadstrip.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	porschecentrebrisbane.com.au
+	alias		porschecentrebrisbane.com.au
+	address		113.192.56.110
+	_HTTP		www.porschecentrebrisbane.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	porschecentredarwin.com.au
+	alias		porschecentredarwin.com.au
+	address		113.192.56.110
+	_HTTP		www.porschecentredarwin.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	protondarwin.com.au
+	alias		protondarwin.com.au
+	address		113.192.56.110
+	_HTTP		www.protondarwin.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	southsideford.com.au
+	alias		southsideford.com.au
+	address		113.192.56.110
+	_HTTP		www.southsideford.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	southsidehonda.com.au
+	alias		southsidehonda.com.au
+	address		113.192.56.110
+	_HTTP		www.southsidehonda.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	southsidelandrover.com.au
+	alias		southsidelandrover.com.au
+	address		113.192.56.110
+	_HTTP		www.southsidelandrover.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	southsidetoyota.com.au
+	alias		southsidetoyota.com.au
+	address		113.192.56.110
+	_HTTP		www.southsidetoyota.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	southsidevolvo.com.au
+	alias		southsidevolvo.com.au
+	address		113.192.56.110
+	_HTTP		www.southsidevolvo.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	stuartmotorgroup.com.au
+	alias		stuartmotorgroup.com.au
+	address		113.192.56.110
+	_HTTP		www.stuartmotorgroup.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	subarucity.com.au
+	alias		subarucity.com.au
+	address		113.192.56.110
+	_HTTP		www.subarucity.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	subarudarwin.com.au
+	alias		subarudarwin.com.au
+	address		113.192.56.110
+	_HTTP		www.subarudarwin.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	subarutoowong.com.au
+	alias		subarutoowong.com.au
+	address		113.192.56.110
+	_HTTP		www.subarutoowong.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	torquehonda.com.au
+	alias		torquehonda.com.au
+	address		113.192.56.110
+	_HTTP		www.torquehonda.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	torquesubaru.com.au
+	alias		torquesubaru.com.au
+	address		113.192.56.110
+	_HTTP		www.torquesubaru.com.au
+	parents		antaresia_110
+	}
+
+define host{
+	use		gen_web_page
+	host_name	torquetoyota.com.au
+	alias		torquetoyota.com.au
+	address		113.192.56.110
+	_HTTP		www.torquetoyota.com.au
+	parents		antaresia_110
+	}
+

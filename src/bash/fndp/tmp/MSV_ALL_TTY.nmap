@@ -1,0 +1,6 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:56:54 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/MSV_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/MSV.webhosts 
+Host: 10.15.1.253 ()	Ports: 23/open/tcp//telnet///
+Host: 10.15.10.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.15.100.57 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.15.100.151 ()	Ports: 23/closed/tcp//telnet///
+# Nmap done at Tue Apr  1 16:56:54 2014 -- 4 IP addresses (4 hosts up) scanned in 0.04 seconds

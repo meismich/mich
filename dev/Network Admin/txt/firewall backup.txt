@@ -1,0 +1,48 @@
+FIREWALL BACKUP
+2011-03-07
+Michael Spence
+
+
+Audience:
+
+This document is intended for the Network Administrator.  This document should not be disclosed to the general Field Support personell or other departments.
+
+
+Preamble:
+
+This document demonstrates the simple method used to backup the important configured files on each of the firewalls.  This document DOES NOT demonstrate the method for setting up the firewalls.
+
+It is intended that this document in the future, will also demonstrate the restoration of these backup files.  (Although from the method of backup it may become apparent how to restore these files.)
+
+
+Initial Setup:
+
+A copy of the backup and restore scripts has been included in the appendix of this document.  
+
+These script should be written to a users "bin/" folder (eg /home/mspence/bin/)
+
+For the firewall under consideration, the script will need to be altered.  The FWID variable should be set to the name used for packet filtering.  For example on the Newstead firewall the configuration for the packet filter is "nsd.conf" hence FWID is set to "nsd".  
+
+On the server "bne-nixwww" (10.1.1.33) under "mspence" there is a "backup" directory with a subdirectory of "fw".  A folder with the same name as FWID will need to be created for the firewall in question.  (This directory is subject to change shortly due it's dependency on the account mspence.)
+
+
+Performing Backup:
+
+Step 1- Firewall Side Script
+Execute the backup.sh script by using the following syntax:
+
+	sudo backup.sh
+
+You will need to enter your password again, so long as you are a "sudoer".  
+
+This will cause the files to be copied to a location in your home directory.  The script then attempts to copy these files to bne-nixwww.  For which you will need to enter the password of the account "mspence" on bne-nixwww.  (This is subject to change shortly due it's dependency on the account mspence.)
+
+*** NOTE: Perform this step on all firewalls you wish to backup today, before proceeding to Step 2 ***
+
+Step 2- Backup Server Script
+Execute the _archive.sh script on bne-nixwww, which is located at "/home/mspence/backup/fw" (This is subjec to chane shortly due to it's dependency on the account mspence.)  No special syntax is required.
+
+This script will "tar" each firewall configuration backed up at this location, to the "_archive" directory with a file name of "FWID_%Y-%M-%D.tar" where FWID is the firewall ID and %Y-%M-%D is the date today.
+
+The script will then email each of today's files to issadmin@apeagers.com.au for safe keeping.
+

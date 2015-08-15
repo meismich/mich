@@ -1,0 +1,8 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:55:21 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/KED_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/KED.webhosts 
+Host: 10.14.1.230 ()	Ports: 23/open/tcp//telnet///
+Host: 10.14.6.153 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.14.6.166 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.14.254.2 ()	Ports: 23/open/tcp//telnet///
+Host: 10.14.254.4 ()	Ports: 23/open/tcp//telnet///
+Host: 10.14.254.8 ()	Ports: 23/open/tcp//telnet///
+# Nmap done at Tue Apr  1 16:55:21 2014 -- 6 IP addresses (6 hosts up) scanned in 0.04 seconds

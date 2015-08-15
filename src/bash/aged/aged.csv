@@ -1,0 +1,349 @@
+Aged Asset Report [Tue May 11 12:14:10 EST 2010]
+(~/src/aged/aged.sh)
+c/- Michael Spence
+
+Asset No, Serial No, Status, Model, Device, Date, Location, Group, Department, Description
+200700003,0705-B085328/004,Active,D945PSN,PC,2007-05-01,Torque Honda North Lakes,821 Torque Honda,Parts
+200700005,0705-B085361,Active,D945PSN,PC,2007-05-01,Torque Honda North Lakes,821 Torque Honda,Parts
+200700006,0705-B085328/003,Active,D945PSN,PC,2007-05-01,Torque Honda North Lakes,821 Torque Honda,Service
+200700007,L3-BZ785 07/03,Active,R60 9456-DRM,Notebook,2007-03-01,Torque Honda North Lakes,821 Torque Honda,Service
+200700009,L3-BZ661 07/03,Active,R60 9456-DRM,Notebook,2007-03-01,Torque Honda North Lakes,821 Torque Honda,Service
+200700011,L3-BZ581 07/03,Active,R60 9456-DRM,Notebook,2007-03-01,Torque Honda North Lakes,821 Torque Honda,Showroom
+200700013,0705-B085328/002,Active,D945PSN,PC,2007-05-01,Torque Honda North Lakes,821 Torque Honda,Showroom
+200700017,L3-BZ664 07/03,Active,R60 9456-DRM,Notebook,2007-03-01,Torque Honda North Lakes,821 Torque Honda,Showroom
+200700018,L3-BZ706 07/03,Active,R60 9456-DRM,Notebook,2007-03-01,Torque Honda North Lakes,821 Torque Honda,Showroom
+200700019,L3-BZ643 07/03,Active,R60 9456-DRM,Notebook,2007-03-01,Torque Honda North Lakes,821 Torque Honda,Showroom
+200700020,0705-B085328/001,Active,D945PSN,PC,2007-05-01,Torque Honda North Lakes,821 Torque Honda,Showroom
+200700021,0608-B081845,Active,D945PSN,PC,2006-08-01,Torque Toyota North Lakes,809 Torque Toyota,Parts
+200700022,0611-B083303/008,Active,D945PSN,PC,2006-11-01,Torque Toyota North Lakes,809 Torque Toyota,Parts
+200700023,0611-B083303/007,Active,D945PSN,PC,2006-11-01,Torque Toyota North Lakes,809 Torque Toyota,Parts
+200700024,0611-B083303/009,Active,D945PSN,PC,2006-11-01,Torque Toyota North Lakes,809 Torque Toyota,Parts
+200700025,0508-B076570/003,Active,D945PSN,PC,2005-08-01,Torque Toyota North Lakes,809 Torque Toyota,Parts
+200700028,0702-B084435/001,Active,D945PSN,PC,2007-02-01,Torque Ford North Lakes,820 Torque Ford,Showroom
+200700032,0702-B084462/003,Active,D945PSN,PC,2007-02-01,Torque Ford North Lakes,820 Torque Ford,Warranty
+200700034,0512-B078625/008,Active,D945PSN,PC,2005-12-01,Torque Ford North Lakes,820 Torque Ford,Warranty
+200700035,0505-B074953/001,Active,D945PSN,PC,2005-05-01,Torque Customer Relations,809 Torque Toyota,Customer Relations
+200700037,0502-B073457/001,Active,D945PSN,PC,2005-02-01,Torque Customer Relations,809 Torque Toyota,Customer Relations
+200700041,L3-BC080 07/01,Active,R60 9456-DRM,Notebook,2007-01-01,Torque Ford North Lakes,820 Torque Ford,Showroom
+200700042,L3-BC028 07/01,Active,R60 9456-DRM,Notebook,2007-01-01,Torque Ford North Lakes,820 Torque Ford,Showroom
+200700043,0702-B084462/002,Active,D945PSN,PC,2007-02-01,Torque Ford North Lakes,820 Torque Ford,Showroom
+200700045,L3-BC045 07/01,Active,R60 9456-DRM,Notebook,2007-01-01,Torque Ford North Lakes,820 Torque Ford,Showroom
+200700047,L3-BC102 07/01,Active,R60 9456-DRM,Notebook,2007-01-01,Torque Ford North Lakes,820 Torque Ford,Showroom
+200700049,L3-BC149 07/01,Active,R60 9456-DRM,Notebook,2007-01-01,Torque Ford North Lakes,820 Torque Ford,Service
+200700050,L3-BC122 07/01,Active,R60 9456-DRM,Notebook,2007-01-01,Torque Ford North Lakes,820 Torque Ford,Service
+200700051,0702-B084435/002,Active,D945PSN,PC,2007-02-01,Torque Ford North Lakes,820 Torque Ford,Parts
+200700053,0702-B084336/001,Active,D945PSN,PC,2007-02-01,Torque Ford North Lakes,820 Torque Ford,Parts
+200700054,0702-B084462/001,Active,D945PSN,PC,2007-02-01,Torque Ford North Lakes,820 Torque Ford,Service
+200700066,L3-B5097 06/08,Active,R60 9457-97M,Notebook,2006-08-01,Torque Toyota North Lakes,809 Torque Toyota,Showroom
+200700070,L3-AE147 06/10,Active,R60 9456-DRM,Notebook,2006-10-01,Torque Toyota North Lakes,809 Torque Toyota,Showroom
+200700073,L3-AL749 06/11,Active,R60 9456-DRM,Notebook,2006-11-01,Torque Toyota North Lakes,809 Torque Toyota,Showroom
+200700075,0611-B083303/004,Active,D945PSN,PC,2006-11-01,Torque Toyota North Lakes,809 Torque Toyota,Showroom
+200700077,L3-AD984 06/10,Active,R60 9456-DRM,Notebook,2006-10-01,Torque Toyota Brendale,809 Torque Toyota,Showroom
+200700082,0611-B083303/003,Active,D945PSN,PC,2006-11-01,Torque Toyota North Lakes,809 Torque Toyota,Showroom
+200700085,0611-B083303/001,Active,D945PSN,PC,2006-11-01,Torque Toyota North Lakes,809 Torque Toyota,Service
+200700087,0701-B083776/001,Active,D945PSN,PC,2007-01-01,Torque Toyota North Lakes,809 Torque Toyota,Service
+200700089,0611-B083303/002,Active,D945PSN,PC,2006-11-01,Torque Toyota North Lakes,809 Torque Toyota,Parts
+200700091,0602-B079419/001,Active,D945PSN,PC,2006-02-01,Torque Toyota North Lakes,809 Torque Toyota,Service
+200700097,0405-69194,Active,SC5299DP,File Server,2004-05-01,Torque Ford North Lakes,820 Torque Ford,Unknown
+200700098,0403-68441/001,Active,SC5299DP,File Server,2004-03-01,Torque Toyota North Lakes,809 Torque Toyota,Unknown
+200700111,0602-B079574/001,Active,D945PSN,PC,2006-02-01,Torque Ford Strathpine,820 Torque Ford,Service
+200700115,0705-B085625/003,Active,D945PSN,PC,2007-05-01,Torque Ford Strathpine,820 Torque Ford,Service
+200700119,0705-B085625/002,Active,D945PSN,PC,2007-05-01,Torque Ford Strathpine,820 Torque Ford,Service
+200700120,0705-B085625/004,Active,D945PSN,PC,2007-05-01,Torque Ford Strathpine,820 Torque Ford,Showroom
+200700129,0602-B079321/003,Active,D945PSN,PC,2006-02-01,Torque Ford Strathpine,820 Torque Ford,Showroom
+200700153,0405-69191,Active,SC5299DP,File Server,2004-05-01,Torque Ford Strathpine,820 Torque Ford,Unknown
+200700163,0508-B076589/001,Active,D945PSN,PC,2005-08-01,Torque Subaru Brendale,804 CAG Subaru,Showroom
+200700166,L3-A1729 06/06,Active,R60 9457-97M,Notebook,2006-06-01,Torque Toyota Brendale,809 Torque Toyota,Showroom
+200700171,L3-A1777 06/06,Active,R60 9457-97M,Notebook,2006-06-01,Eagers Holden Newstead,836 Eagers Holden,Service
+200700172,0403-68441/002,Active,SC5299DP,File Server,2004-03-01,Torque Toyota Brendale,809 Torque Toyota,Unknown
+200700175,L3-AT435 07/01,Active,R60 9460-3XM,Notebook,2007-01-01,Torque Toyota Brendale,809 Torque Toyota,Showroom
+200700177,0605-B080570/002,Active,D945PSN,PC,2006-05-01,Torque Toyota Brendale,809 Torque Toyota,Showroom
+200700179,L3-A1789 06/06,Active,R60 9457-97M,Notebook,2006-06-01,Torque Toyota Brendale,809 Torque Toyota,Showroom
+200700180,L3-BZ780 07/03,Active,R60 9456-DRM,Notebook,2007-03-01,IT Woolloongabba,IT,IT
+200700182,0611-B083303/006,Active,D945PSN,PC,2006-11-01,Torque Toyota Brendale,809 Torque Toyota,Sales
+200700183,L3-A1726 06/06,Active,R60 9457-97M,Notebook,2006-06-01,Torque Toyota Brendale,809 Torque Toyota,Parts
+200700184,0602-B079389/001,Active,D945PSN,PC,2006-02-01,Torque Toyota Brendale,809 Torque Toyota,Admin
+200700188,L3-A4319 06/06,Active,R60 9457-97M,Notebook,2006-06-01,Austral VW Newstead,807 Austral Honda-VW,Sales
+200700190,0512-B078625/007,Active,D945PSN,PC,2005-12-01,Torque Toyota Brendale,809 Torque Toyota,Showroom
+200700193,0701-B083981/004,Active,D945PSN,PC,2007-01-01,Torque Toyota Brendale,809 Torque Toyota,Service
+200700194,0701-B083981/002,Active,D945PSN,PC,2007-01-01,Torque Toyota Brendale,809 Torque Toyota,Service
+200700195,0608-B081834/001,Active,D945PSN,PC,2006-08-01,Torque Toyota Brendale,809 Torque Toyota,Service
+200700198,0608-B082003/001,Active,D945PSN,PC,2006-08-01,Torque Toyota Brendale,809 Torque Toyota,Unknown
+200700199,0701-B083981/003,Active,D945PSN,PC,2007-01-01,Torque Toyota Brendale,809 Torque Toyota,Service
+200700200,0701-B083981/001,Active,D945PSN,PC,2007-01-01,Torque Customer Relations,809 Torque Toyota,Customer Relations
+200700204,0608-B082025/001,Active,D945PSN,PC,2006-08-01,Torque Toyota North Lakes,809 Torque Toyota,Showroom
+200700206,0609-B082185/002,Active,D945PSN,PC,2006-09-01,Torque Toyota Brendale,809 Torque Toyota,Service
+200700209,L3-A4333 06/06,Active,R60 9457-97M,Notebook,2006-06-01,Torque Toyota Brendale,809 Torque Toyota,Service
+200700217,0705-B085303/001,Active,D945PSN,PC,2007-05-01,Southside Toyota Woolloongabba,801 Southside Toyota,Admin
+200700222,0611-B083270/008,Active,D945PSN,PC,2006-11-01,Panel Shop Brendale,809 Torque Toyota,Panel Shop
+200700226,0705-B85461/002,Active,D945PSN,PC,2007-05-01,AUS Bokarina,827 Austral S-coast,Parts
+200700228,0612-B083399/003,Active,D945PSN,PC,2006-12-01,AUS Bokarina,827 Austral S-coast,Parts
+200700233,0612-B083399/006,Active,D945PSN,PC,2006-12-01,AUS Bokarina,827 Austral S-coast,Service
+200700236,0612-B083399/001,Active,D945PSN,PC,2006-12-01,AUS Bokarina,827 Austral S-coast,Service
+200700238,0612-B083412/001,Active,SC5299DP,File Server,2006-12-01,AUS Curraminidi,827 Austral S-coast,Unknown
+200700241,0612-B083399/002,Active,D945PSN,PC,2006-12-01,AUS Bokarina,827 Austral S-coast,Showroom
+200700243,L3-AE173 06/10,Active,R60 9456-DRM,Notebook,2006-10-01,AUS Bokarina,827 Austral S-coast,Showroom
+200700244,L3-AE100 06/10,Active,R60 9456-DRM,Notebook,2006-10-01,AUS Bokarina,827 Austral S-coast,Showroom
+200700245,L3-AK294 06/11,Active,R60 9460-3XM,Notebook,2006-11-01,AUS Bokarina,827 Austral S-coast,Showroom
+200700250,0611-B083188/001,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Service
+200700271,0702-B084222/001,Active,D945PSN,PC,2007-02-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Admin
+200700272,0509-B077286/001,Active,D945PSN,PC,2005-09-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Admin
+200700296,0604-B080403/001,Active,D945PSN,PC,2006-04-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Admin
+200700297,0608-B082084/002,Active,D945PSN,PC,2006-08-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Admin
+200700298,0604-B080403/003,Active,D945PSN,PC,2006-04-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Admin
+200700299,0611-B083186/001,Active,SC5299DP,File Server,2006-11-01,HVF Berrimah,815 AP Motor Group,Unknown
+200700301,0608-B081984/003,Active,D945PSN,PC,2006-08-01,HVF Berrimah,815 AP Motor Group,Admin
+200700302,0611-B083188/014,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Admin
+200700303,0608-B081984/004,Active,D945PSN,PC,2006-08-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700304,0611-B083188/010,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700305,0608-B081984/001,Active,D945PSN,PC,2006-08-01,HVF Berrimah,815 AP Motor Group,Admin
+200700306,0611-B083188/022,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700307,L3-A5772 06/06,Active,9460-3XM,Notebook,2006-06-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700308,0611-B083188/013,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Admin
+200700309,0608-B081984/002,Active,D945PSN,PC,2006-08-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700310,0611-B083188/025,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700311,0611-B083188/004,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700312,0611-B083188/007,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700314,0608-B081984/005,Active,D945PSN,PC,2006-08-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700315,0611-B083188/021,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700316,0611-B083188/023,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Parts
+200700318,0611-B083188/020,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Parts
+200700319,0611-B083188/019,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Parts
+200700320,0611-B083188/017,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Parts
+200700321,0604-B080403/004,Active,D945PSN,PC,2006-04-01,HVF Berrimah,815 AP Motor Group,Service
+200700322,0611-B083188/005,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Service
+200700323,0611-B083188/024,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Service
+200700324,0611-B083188/006,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Service
+200700326,0611-B083188/003,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Service
+200700327,0611-B083188/015,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Service
+200700328,0611-B083188/008,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Parts
+200700329,0611-B083188/026,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Service
+200700331,0611-B083188/009,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Parts
+200700332,0611-B083188/016,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Parts
+200700333,0611-B083188/018,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700334,0611-B083188/011,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700335,0611-B083188/002,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700336,0611-B083188/012,Active,D945PSN,PC,2006-11-01,HVF Berrimah,815 AP Motor Group,Showroom
+200700339,0604-B080403/002,Active,D945PSN,PC,2006-04-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Service
+200700342,0608-B082084/001,Active,D945PSN,PC,2006-08-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Service
+200700367,L3-A4269 06/06,Active,9460-3XM,Notebook,2006-06-01,HVF Berrimah,815 AP Motor Group,Service
+200700412,0601-B078846/001,Active,D945PSN,PC,2006-01-01,Eagers Holden Townsville,836 Eagers Holden,Parts
+200700413,0602-B079418/002,Active,D945PSN,PC,2006-02-01,Eagers Holden Townsville,836 Eagers Holden,Parts
+200700420,L3-BHCL1 06/05,Active,1858-CVM,Notebook,2006-05-01,PAG Fortitude Valley,806 Austral PAG,Showroom
+200700422,0611-B083016/002,Active,D945PSN,PC,2006-11-01,Southside Toyota Mt Gravatt,801 Southside Toyota,Service
+200700423,0701-B084007/002,Active,D945PSN,PC,2007-01-01,Subaru Toowong,804 CAG Subaru,Showroom
+200700429,L3-DEWW3 05/09,Active,1858-6MM,Notebook,2005-09-01,PAG Fortitude Valley,806 Austral PAG,Showroom
+200700430,0611-B083016/003,Active,D945PSN,PC,2006-11-01,Torque Toyota Pre-delivery,809 Torque Toyota,Pre Delivery
+200700431,0611-B083016/001,Active,D945PSN,PC,2006-11-01,Metro Ford Fortitude Valley,808 Metro,Showroom
+200700432,0611-B083016/004,Active,D945PSN,PC,2006-11-01,Metro Ford Fortitude Valley,808 Metro,Admin
+200700436,0511-B077944/001,Active,D945PSN,PC,2005-11-01,Southside Toyota Mt Gravatt,801 Southside Toyota,Showroom
+200700438,0602-B079356,Active,D945PSN,PC,2006-02-01,Southside Toyota Mt Gravatt,801 Southside Toyota,Showroom
+200700443,0606-B081209/001,Active,D945PSN,PC,2006-06-01,Southside Toyota Mt Gravatt,801 Southside Toyota,Showroom
+200700451,0704-B085195/002,Active,D945PSN,PC,2007-04-01,Southside Toyota Mt Gravatt,801 Southside Toyota,Service
+200700460,0405-69192,Active,SC5299DP,File Server,2004-05-01,Southside Toyota Mt Gravatt,801 Southside Toyota,Unknown
+200700462,0701-B083747/003,Active,D945PSN,PC,2007-01-01,Southside Toyota Mt Gravatt,801 Southside Toyota,Pre Delivery
+200700466,0405-69190,Active,SC5299DP,File Server,2004-05-01,Southside Honda Buranda,802 Southside Honda,Unknown
+200700476,0702-B084420/001,Active,D945PSN,PC,2007-02-01,Southside Honda Buranda,802 Southside Honda,Service
+200700477,0609-B082185/003,Active,D945PSN,PC,2006-09-01,Southside Honda Buranda,802 Southside Honda,Service
+200700478,0602-B079309/001,Active,D945PSN,PC,2006-02-01,Southside Honda Buranda,802 Southside Honda,Service
+200700483,0704-B085211/007,Active,D945PSN,PC,2007-04-01,Southside Honda Buranda,802 Southside Honda,Showroom
+200700484,0704-B085211/004,Active,D945PSN,PC,2007-04-01,Southside Honda Buranda,802 Southside Honda,Showroom
+200700486,0704-B085211/005,Active,D945PSN,PC,2007-04-01,Southside Honda Buranda,802 Southside Honda,Showroom
+200700490,0704-B085211/008,Active,D945PSN,PC,2007-04-01,Southside Honda Buranda,802 Southside Honda,Showroom
+200700491,0605-B080843/001,Active,D945PSN,PC,2006-05-01,Southside Honda Buranda,802 Southside Honda,Showroom
+200700492,0704-B085211/002,Active,D945PSN,PC,2007-04-01,Southside Honda Buranda,802 Southside Honda,Showroom
+200700493,0704-B085211/001,Active,D945PSN,PC,2007-04-01,Southside Honda Buranda,802 Southside Honda,Showroom
+200700494,0704-B085211/006,Active,D945PSN,PC,2007-04-01,Southside Honda Buranda,802 Southside Honda,Service
+200700495,0704-B085211/003,Active,D945PSN,PC,2007-04-01,Southside Honda Buranda,802 Southside Honda,Showroom
+200700500,L3-09T13 05/08,Active,2373-8YM,Notebook,2005-08-01,Southside Honda Buranda,802 Southside Honda,Showroom
+200700528,L3-A1728 06/06,Active,9457-97M,Notebook,2006-06-01,Southside Honda Buranda,802 Southside Honda,Service
+200700533,0702-B084252/002,Active,D945PSN,PC,2007-02-01,Southside Honda Buranda,802 Southside Honda,Showroom
+200700541,L3-DEWW0 05/09,Active,1858-6MM,Notebook,2005-09-01,SSV/SSR Buranda,806 Austral PAG,Service
+200700554,0604-B080213/001,Active,D945PSN,PC,2006-04-01,Metro Ford Fortitude Valley,808 Metro,Showroom
+200700559,0608-B082070/001,Active,D945PSN,PC,2006-08-01,Metro Ford Fortitude Valley,808 Metro,Showroom
+200700563,0705-B085458/001,Active,D945PSN,PC,2007-05-01,Austral Motors Newstead,807 Austral Honda-VW,Admin
+200700564,0705-B085625/001,Active,D945PSN,PC,2007-05-01,Southside Ford Woolloongabba,808 Metro,Parts
+200700567,0705-B085484/001,Active,D945PSN,PC,2007-05-01,Southside Ford Woolloongabba,808 Metro,Parts
+200700568,0705-B085483/001,Active,D945PSN,PC,2007-05-01,Southside Ford Woolloongabba,808 Metro,Parts
+200700572,0604-B080302/003,Active,D945PSN,PC,2006-04-01,Southside Ford Woolloongabba,808 Metro,Service
+200700593,0703-B084818/002,Active,D945PSN,PC,2007-03-01,Southside Toyota Woolloongabba,801 Southside Toyota,Service
+200700596,0703-B084818/001,Active,D945PSN,PC,2007-03-01,Southside Toyota Woolloongabba,801 Southside Toyota,Service
+200700597,0703-B084816/001,Active,D945PSN,PC,2007-03-01,Southside Toyota Woolloongabba,801 Southside Toyota,Service
+200700599,0702-B084252/001,Active,D945PSN,PC,2007-02-01,Southside Toyota Woolloongabba,801 Southside Toyota,Service
+200700600,0703-B084637/001,Active,D945PSN,PC,2007-03-01,Southside Toyota Woolloongabba,801 Southside Toyota,Service
+200700601,0703-B084816/002,Active,D945PSN,PC,2007-03-01,Southside Toyota Woolloongabba,801 Southside Toyota,Service
+200700603,0702-B084370/001,Active,D945PSN,PC,2007-02-01,Southside Toyota Woolloongabba,801 Southside Toyota,Service
+200700619,0702-B084420/002,Active,D945PSN,PC,2007-02-01,Metro Ford Fortitude Valley,808 Metro,Showroom
+200700623,L3-BY250 07/03,Active,9456-DRM,Notebook,2007-03-01,Southside Toyota Woolloongabba,801 Southside Toyota,Showroom
+200700625,0508-B076491/001,Active,D945PSN,PC,2005-08-01,Southside Toyota Woolloongabba,801 Southside Toyota,Showroom
+200700627,0606-B080972/001,Active,D945PSN,PC,2006-06-01,Southside Toyota Woolloongabba,801 Southside Toyota,Showroom
+200700630,0602-B079340/001,Active,D945PSN,PC,2006-02-01,Southside Toyota Woolloongabba,801 Southside Toyota,Showroom
+200700636,0508-B076570/001,Active,D945PSN,PC,2005-08-01,Southside Toyota Woolloongabba,801 Southside Toyota,Admin
+200700639,0701-B083748/001,Active,D945PSN,PC,2007-01-01,Southside Toyota Woolloongabba,801 Southside Toyota,Parts
+200700651,L3-A4303 06/06,Active,9457-97M,Notebook,2006-06-01,Austral Honda Newstead,807 Austral Honda-VW,Showroom
+200700652,L3-A1732 06/06,Active,9457-97M,Notebook,2006-06-01,Austral Honda Newstead,807 Austral Honda-VW,Showroom
+200700653,L3-A1753 06/06,Active,9457-97M,Notebook,2006-06-01,Austral Honda Newstead,807 Austral Honda-VW,Showroom
+200700656,L3-B5136 06/08,Active,9457-97M,Notebook,2006-08-01,Austral Honda Newstead,807 Austral Honda-VW,Showroom
+200700659,L3-AE019 06/10,Active,9456-DRM,Notebook,2006-10-01,Austral Honda Newstead,807 Austral Honda-VW,Showroom
+200700660,0610-B082672/001,Active,D945PSN,PC,2006-10-01,Austral Honda Newstead,807 Austral Honda-VW,Showroom
+200700664,0704-B085007/002,Active,D945PSN,PC,2007-04-01,Austral Honda Newstead,807 Austral Honda-VW,Service
+200700679,0508-B076966/001,Active,D945PSN,PC,2005-08-01,Porsche Centre Brisbane Newstead,805 Austral Porsche,Showroom
+200700681,0702-B084356/001,Active,D945PSN,PC,2007-02-01,Porsche Centre Brisbane Newstead,805 Austral Porsche,Showroom
+200700682,L3-ATBH1 06/02,Active,1858-A17,Notebook,2006-02-01,Eagers Holden Newstead,836 Eagers Holden,Admin
+200700683,0607-B081497/001,Active,SC5299DP,File Server,2006-07-01,Porsche Centre Brisbane Newstead,805 Austral Porsche,Unknown
+200700687,L3-B5093 06/08,Active,9457-97M,Notebook,2006-08-01,Porsche Centre Brisbane Newstead,805 Austral Porsche,Showroom
+200700688,L3-M5KP1 05/06,Active,2373-8YM,Notebook,2005-06-01,Porsche Centre Brisbane Newstead,805 Austral Porsche,Service
+200700698,L3-BC085 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Mazda Newstead,833 Eagers Mazda,Showroom
+200700700,L3-BC094 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Mazda Newstead,833 Eagers Mazda,Showroom
+200700701,L3-BC059 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Mazda Newstead,833 Eagers Mazda,Showroom
+200700702,L3-BC051 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Mazda Newstead,833 Eagers Mazda,Showroom
+200700718,L3-BC110 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Kia Kedron,803 Eagers Misubishi&Kia,Showroom
+200700721,L3-BC033 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Kia Kedron,803 Eagers Misubishi&Kia,Showroom
+200700723,0605-B080631/001,Active,D945PSN,PC,2006-05-01,Eagers Kia Kedron,803 Eagers Misubishi&Kia,Showroom
+200700725,0405-69195,Active,SC5299DP,File Server,2004-05-01,Eagers Kia Kedron,803 Eagers Misubishi&Kia,Unknown
+200700726,L3-BC060 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Kia Kedron,803 Eagers Misubishi&Kia,Showroom
+200700727,L3-BC053 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Kia Kedron,803 Eagers Misubishi&Kia,Showroom
+200700736,0510-B077541/001,Active,D945PSN,PC,2005-10-01,PAG Fortitude Valley,806 Austral PAG,Showroom
+200700738,0605-B080571/001,Active,D945PSN,PC,2006-05-01,PAG Fortitude Valley,806 Austral PAG,Showroom
+200700741,0701-B083988/001,Active,D945PSN,PC,2007-01-01,PAG Fortitude Valley,806 Austral PAG,Showroom
+200700743,0510-B077583/001,Active,D945PSN,PC,2005-10-01,PAG Fortitude Valley,806 Austral PAG,Showroom
+200700746,0701-B083988/004,Active,D945PSN,PC,2007-01-01,Austral PAG Fortitude Valley,806 Austral PAG,Parts
+200700753,0701-B083988/003,Active,D945PSN,PC,2007-01-01,Austral PAG Fortitude Valley,806 Austral PAG,Service
+200700757,0702-B084303/002,Active,D945PSN,PC,2007-02-01,Austral PAG Fortitude Valley,806 Austral PAG,Service
+200700768,L3-B5150 06/08,Active,9457-97M,Notebook,2006-08-01,Austral PAG Fortitude Valley,806 Austral PAG,Showroom
+200700769,L3-AE005 06/10,Active,9456-DRM,Notebook,2006-10-01,Austral PAG Fortitude Valley,806 Austral PAG,Showroom
+200700770,L3-AE122 06/10,Active,9456-DRM,Notebook,2006-10-01,Austral PAG Fortitude Valley,806 Austral PAG,Showroom
+200700778,0606-B080953/001,Active,D945PSN,PC,2006-06-01,Austral PAG Fortitude Valley,806 Austral PAG,Showroom
+200700779,0606-B080942/001,Active,D945PSN,PC,2006-06-01,Austral PAG Fortitude Valley,806 Austral PAG,Showroom
+200700784,0508-B076681/001,Active,D945PSN,PC,2005-08-01,Corporate Office Fortitude Valley,258B Corporate,Admin
+200700786,0510-B077541/003,Active,D945PSN,PC,2005-10-01,Corporate Office Fortitude Valley,258B Corporate,Admin
+200700793,0704-B085075/001,Active,D945PSN,PC,2007-04-01,Corporate Office Fortitude Valley,258B Corporate,Admin
+200700797,0611-B083270/004,Active,D945PSN,PC,2006-11-01,Corporate Office Fortitude Valley,258B Corporate,Admin
+200700808,0704-B085133/001,Active,D945PSN,PC,2007-04-01,Eagers Mazda Newstead,833 Eagers Mazda,Service
+200700813,0609-B082185/001,Active,D945PSN,PC,2006-09-01,Metro Ford Fortitude Valley,808 Metro,Service
+200700814,0611-B083270/002,Active,D945PSN,PC,2006-11-01,Metro Ford Fortitude Valley,808 Metro,Parts
+200700816,0611-B083270/001,Active,D945PSN,PC,2006-11-01,Metro Ford Fortitude Valley,808 Metro,Parts
+200700827,L3-BC150 07/01,Active,9456-DRN,Notebook,2007-01-01,Metro Ford Fortitude Valley,808 Metro,Showroom
+200700834,L3-BC084 07/01,Active,9456-DRM,Notebook,2007-01-01,Southside Toyota Mt Gravatt,801 Southside Toyota,Showroom
+200700837,0611-B083270/006,Active,D945PSN,PC,2006-11-01,Metro Ford Fortitude Valley,808 Metro,Showroom
+200700838,0601-B078654/001,Active,D945PSN,PC,2006-01-01,Metro Ford Fortitude Valley,808 Metro,Showroom
+200700840,0701-B083818/001,Active,D945PSN,PC,2007-01-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Admin
+200700843,L3-4291R 06/02,Active,2373-KXM,Notebook,2006-02-01,CAG Valley,804 CAG Subaru,Admin
+200700846,0605-B080572/001,Active,D945PSN,PC,2006-05-01,Metro Ford Fortitude Valley,808 Metro,Admin
+200700847,L3-BC054 07/01,Active,9456-DRM,Notebook,2007-01-01,Metro Ford Fortitude Valley,808 Metro,Admin
+200700849,0611-B083270/007,Active,D945PSN,PC,2006-11-01,Metro Ford Fortitude Valley,808 Metro,Admin
+200700862,0610-B082661/001,Active,D945PSN,PC,2006-10-01,Metro Ford Fortitude Valley,808 Metro,Showroom
+200700873,L3-C8468 06/09,Active,9460-3XM,Notebook,2006-09-01,Austral VW Newstead,807 Austral Honda-VW,Showroom
+200700883,0701-B083817/001,Active,D945PSN,PC,2007-01-01,Eagers Mazda Newstead,833 Eagers Mazda,Admin
+200700884,L3-AT625 06/12,Active,9461-DZM,Notebook,2006-12-01,Austral Motors Newstead,807 Austral Honda-VW,Admin
+200700897,0704-B085007/003,Active,D945PSN,PC,2007-04-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Showroom
+200700899,0604-B080458/001,Active,D945PSN,PC,2006-04-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Showroom
+200700903,0610-B082784/001,Active,D945PSN,PC,2006-10-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Service
+200700905,0405-69193,Active,SC5299DP,File Server,2004-05-01,Eagers Holden Windsor,836 Eagers Holden,Unknown
+200700910,0609-B082384/001,Active,D945PSN,PC,2006-09-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Showroom
+200700912,0704-B085007/001,Active,D945PSN,PC,2007-04-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Showroom
+200700913,0602-B079313/001,Active,D945PSN,PC,2006-02-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Showroom
+200700915,L3-BC117 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Showroom
+200700922,0604-B080302/004,Active,D945PSN,PC,2006-04-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Showroom
+200700928,0704-B085195/001,Active,D945PSN,PC,2007-04-01,Eagers Holden Windsor,836 Eagers Holden,Parts
+200700932,0704-B085087/001,Active,D945PSN,PC,2007-04-01,Eagers Holden Windsor,836 Eagers Holden,Service
+200700933,0705-B085461/001,Active,D945PSN,PC,2007-05-01,Eagers Kia Service Kedron,803 Eagers Misubishi&Kia,Service
+200700936,0705-B085270/001,Active,D945PSN,PC,2007-05-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Service
+200700937,0704-B085199/001,Active,D945PSN,PC,2007-04-01,Eagers Holden Windsor,836 Eagers Holden,Showroom
+200700940,0602-B079321/002,Active,D945PSN,PC,2006-02-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Service
+200700943,0606-B080860/002,Active,D945PSN,PC,2006-06-01,Eagers Kia Service Kedron,803 Eagers Misubishi&Kia,Service
+200700950,0608-B081817/001,Active,D945PSN,PC,2006-08-01,Eagers Kia Service Kedron,803 Eagers Misubishi&Kia,Service
+200700951,0607-B081406/002,Active,D945PSN,PC,2006-07-01,Eagers Holden Windsor,836 Eagers Holden,Service
+200700952,0607-B081406/001,Active,D945PSN,PC,2006-07-01,Eagers Holden Windsor,836 Eagers Holden,Service
+200700956,0701-B084079/001,Active,D945PSN,PC,2007-01-01,Subaru Toowong,804 CAG Subaru,Service
+200700964,L3-A4317 06/06,Active,9457-97M,Notebook,2006-06-01,Subaru Toowong,804 CAG Subaru,Showroom
+200700965,L3-A4301 06/06,Active,9457-97M,Notebook,2006-06-01,Subaru Toowong,804 CAG Subaru,Showroom
+200700967,0608-B082080,Active,SC5299DP,File Server,2006-08-01,Subaru Toowong,804 CAG Subaru,Unknown
+200700971,L3-BC042 07/01,Active,9456-DRM,Notebook,2007-01-01,Metro Parts Eagle Farm,808 Metro,Parts
+200700991,FX-Z2166 03/07,Active,2723-BAM,Notebook,2003-07-01,Metro Parts Eagle Farm,808 Metro,Parts
+200700995,0602-B079317/005,Active,D945PSN,PC,2006-02-01,Metro Parts Eagle Farm,808 Metro,Parts
+200700996,0702-B084119/001,Active,D945PSN,PC,2007-02-01,Metro Parts Eagle Farm,808 Metro,Parts
+200700998,0602-B079317/006,Active,D945PSN,PC,2006-02-01,Metro Parts Eagle Farm,808 Metro,Parts
+200701001,0510-B077480/001,Active,D945PSN,PC,2005-10-01,Metro Parts Eagle Farm,808 Metro,Parts
+200701015,0605-B080573/001,Active,D945PSN,PC,2006-05-01,Subaru City Newstead,804 CAG Subaru,Showroom
+200701021,L3-BC006 07/01,Active,9456-DRM,Notebook,2007-01-01,Subaru City Newstead,804 CAG Subaru,Showroom
+200701022,L3-BC143 07/01,Active,9456-DRM,Notebook,2007-01-01,Subaru City Newstead,804 CAG Subaru,Showroom
+200701032,0702-B084296/002,Active,D945PSN,PC,2007-02-01,Austral VW Newstead,807 Austral Honda-VW,Service
+200701035,0605-B080574/001,Active,D945PSN,PC,2006-05-01,Austral VW Newstead,807 Austral Honda-VW,Service
+200701037,0704-B085220/001,Active,D945PSN,PC,2007-04-01,Austral VW Newstead,807 Austral Honda-VW,Parts
+200701039,0606-B081279/001,Active,D945PSN,PC,2006-06-01,Austral VW Newstead,807 Austral Honda-VW,Service
+200701040,0702-B084296/003,Active,D945PSN,PC,2007-02-01,Austral VW Newstead,807 Austral Honda-VW,Service
+200701041,0702-B084296/001,Active,D945PSN,PC,2007-02-01,Austral VW Newstead,807 Austral Honda-VW,Service
+200701042,0605-B080570/001,Active,D945PSN,PC,2006-05-01,Austral VW Newstead,807 Austral Honda-VW,Service
+200701047,0701-B083840/001,Active,D945PSN,PC,2007-01-01,Austral VW Newstead,807 Austral Honda-VW,Showroom
+200701052,L3-A4311 06/06,Active,9457-97M,Notebook,2006-06-01,Metro Ford Fortitude Valley,808 Metro,Showroom
+200701053,L3-A1693 06/06,Active,9457-97M,Notebook,2006-06-01,Austral VW Newstead,807 Austral Honda-VW,Showroom
+200701054,L3-A1749 06/06,Active,9457-97M,Notebook,2006-06-01,Austral VW Newstead,807 Austral Honda-VW,Showroom
+200701056,L3-A1767 06/06,Active,9457-97M,Notebook,2006-06-01,Austral VW Newstead,807 Austral Honda-VW,Showroom
+200701058,L3-BC107 07/01,Active,9456-DRM,Notebook,2007-01-01,Southside Toyota Woolloongabba,801 Southside Toyota,Showroom
+200701059,L3-A3859 06/06,Active,9460-3XM,Notebook,2006-06-01,Eagers Holden Newstead,836 Eagers Holden,Parts
+200701062,L3-BZ981 07/04,Active,9456-DRM,Notebook,2007-04-01,Austral VW Newstead,807 Austral Honda-VW,Showroom
+200701064,0702-B084303/001,Active,D945PSN,PC,2007-02-01,Austral VW Newstead,807 Austral Honda-VW,Showroom
+200701071,0612-B083563/001,Active,D945PSN,PC,2006-12-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Admin
+200701073,L3-A3119 06/06,Active,9460-3XM,Notebook,2006-06-01,Metro Parts Eagle Farm,808 Metro,Parts
+200701074,L3-AK291 06/11,Active,9460-3XM,Notebook,2006-11-01,Austral VW Newstead,807 Austral Honda-VW,Showroom
+200701075,0606-B081156/001,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701079,0608-B081817/002,Active,D945PSN,PC,2006-08-01,Eagers Holden Newstead,836 Eagers Holden,Service
+200701082,0701-B083747/001,Active,D945PSN,PC,2007-01-01,Eagers Holden Newstead,836 Eagers Holden,Service
+200701094,0701-B083747/002,Active,D945PSN,PC,2007-01-01,Eagers Holden Newstead,836 Eagers Holden,Service
+200701097,0603-B079720/001,Active,D945PSN,PC,2006-03-01,Eagers Holden Newstead,836 Eagers Holden,Service
+200701107,0605-B080625/002,Active,D945PSN,PC,2006-05-01,Eagers Holden Newstead,836 Eagers Holden,Parts
+200701109,0703-B084817/001,Active,D945PSN,PC,2007-03-01,Eagers Holden Newstead,836 Eagers Holden,Parts
+200701113,0611-B083319/001,Active,D945PSN,PC,2006-11-01,Eagers Holden Newstead,836 Eagers Holden,Parts
+200701114,0610-B082827/001,Active,D945PSN,PC,2006-10-01,Eagers Holden Newstead,836 Eagers Holden,Parts
+200701115,0611-B083325/001,Active,D945PSN,PC,2006-11-01,Eagers Holden Newstead,836 Eagers Holden,Parts
+200701117,0704-B084977/001,Active,D945PSN,PC,2007-04-01,Eagers Holden Newstead,836 Eagers Holden,Parts
+200701120,0501-B072947,Active,SC5299DP,File Server,2005-01-01,Eagers Holden Newstead,836 Eagers Holden,Unknown
+200701130,L3-BY260 07/03,Active,9456-DRM,Notebook,2007-03-01,Eagers Holden Newstead,836 Eagers Holden,Parts
+200701152,L3-BC022 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Holden Windsor,836 Eagers Holden,Showroom
+200701153,L3-BC090 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Holden Windsor,836 Eagers Holden,Showroom
+200701155,0612-B083563/003,Active,D945PSN,PC,2006-12-01,Eagers Holden Newstead,836 Eagers Holden,Admin
+200701157,L3-BC077 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Holden Windsor,836 Eagers Holden,Showroom
+200701158,L3-BC082 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Holden Windsor,836 Eagers Holden,Showroom
+200701161,L3-BC064 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Holden Windsor,836 Eagers Holden,Showroom
+200701166,0510-B077492/002,Active,D945PSN,PC,2005-10-01,Eagers Holden Windsor,836 Eagers Holden,Showroom
+200701173,0602-B079313/003,Active,D945PSN,PC,2006-02-01,Austral Motors Newstead,807 Austral Honda-VW,Admin
+200701176,L3-BC011 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Holden Windsor,836 Eagers Holden,Showroom
+200701177,L3-BC089 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Holden Windsor,836 Eagers Holden,Showroom
+200701182,0611-B083270/005,Active,D945PSN,PC,2006-11-01,Metro Ford Fortitude Valley,808 Metro,Service
+200701185,0606-B081062/003,Active,D945PSN,PC,2006-06-01,Austral VW Newstead,807 Austral Honda-VW,Admin
+200701186,0606-B081022/010,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701187,0606-B081022/006,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701188,0606-B081022/009,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701189,0606-B081022/012,Active,D945PSN,PC,2006-06-01,13zoos Woolloongabba,831 13zoos,Unknown
+200701193,0606-B081022/011,Active,D945PSN,PC,2006-06-01,13zoos Woolloongabba,831 13zoos,Unknown
+200701196,0606-B081022/003,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701197,0606-B081022/002,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701198,0606-B081062/005,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701199,0606-B081022/005,Active,D945PSN,PC,2006-06-01,IT Woolloongabba,IT,IT
+200701202,0606-B081022/008,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701204,0606-B080943/004,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701205,0606-B080943/003,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701206,0606-B080943/006,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701208,0606-B081062/001,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701209,0606-B081062/004,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701211,0606-B080943/002,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701212,0606-B081022/001,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701213,0606-B081022/007,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701214,0606-B081062/002,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Sales
+200701215,0606-B080943/001,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701216,0704-B085163/001,Active,SC5299DP,File Server,2007-04-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown
+200701221,0610-B082668/003,Active,D945PSN,PC,2006-10-01,Predelivery Pinkenba,808 Metro,Service
+200701222,0610-B082668/004,Active,D945PSN,PC,2006-10-01,Predelivery Pinkenba,808 Metro,Service
+200701223,0610-B082668/001,Active,D945PSN,PC,2006-10-01,BMA Pinkenba,810 Brisbane Motor Auction,Admin
+200701224,0610-B082668/002,Active,D945PSN,PC,2006-10-01,Predelivery Pinkenba,808 Metro,Service
+200701225,0610-B082668/005,Active,D945PSN,PC,2006-10-01,Predelivery Pinkenba,808 Metro,Service
+200701235,0607-B081654/001,Active,D945PSN,PC,2006-07-01,Corporate Office Fortitude Valley,258B Corporate,Admin
+200701243,0704-B085075/002,Active,D945PSN,PC,2007-04-01,Metro Ford Fortitude Valley,808 Metro,Showroom
+200701244,0704-B085249/001,Active,D945PSN,PC,2007-04-01,Austral Honda Newstead,807 Austral Honda-VW,Service
+200701249,0705-B085277/001,Active,D945PSN,PC,2007-05-01,Southside Toyota Mt Gravatt,801 Southside Toyota,Service
+200701250,L3-BK285 07/03,Active,9461-HYM,Notebook,2007-03-01,Metro Ford Fortitude Valley,808 Metro,Admin
+200701291,0702-B084101/001,Active,D945PSN,PC,2007-02-01,Metro Toowoomba Toowoomba,808 Metro,Parts
+200701293,0702-B084100/011,Active,D945PSN,PC,2007-02-01,Metro Toowoomba Toowoomba,808 Metro,Parts
+200800505,L3-A1758 06/06,Active,9457-97M,Notebook,2006-06-01,Porsche Centre Brisbane Newstead,805 Austral Porsche,Showroom
+200800506,L3-BC099 07/01,Active,9456-DRM,Notebook,2007-01-01,Eagers Holden Newstead,836 Eagers Holden,Showroom

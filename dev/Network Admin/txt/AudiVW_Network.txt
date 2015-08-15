@@ -1,0 +1,59 @@
+Audi/VW Network Description
+Michael Spence
+2010-10-04
+
+Preamble:
+This document describes the required network setup for the Audi & VW connections.  This document details the required routes and methodology used to create these routes on the Qld Firewall, demonstrating how a client can gain connectivity to the Audi/VW Extranets.
+
+
+Clients:
+All clients are considered to be computers within the Qld APEagers Network, most notably the Austral Audi users (at Currimundi) and the Austral VW users (at Newstead).  For reference, these computers exist on the internal networks of 10.35.0.0/16 and 10.10.0.0/16 respectively.
+
+
+Audi/VW supplied Equipment:
+The connections to Audi and VW are made available using the Audi/VW supplied Juniper.  This device creates a VPN between both Audi and VW.  This device is the property of Audi/VW.
+
+Some Audi/VW programs/tools talk directly to servers within our network.  For this purpose Audi/VW originally supplied a server, which has since been virtualised.  This computer has the name "au220400s01001" but will be referenced as the BTAC server hereafter.
+
+
+Audi/VW Subnets and Hosts:
+As supplied by Audi and VW the following lists are destination networks and hosts, to which clients connect.
+
+Audi:				|	VW:
+	10.112.192.0/24		|		10.112.198.0/24
+	10.166.145.0/24		|		10.112.230.0/24
+				|		10.152.15.0/24
+				|		172.16.61.0/24
+				|		210.193.223.156
+
+
+Juniper Setup:
+The Juniper has two types of interfaces; trusted interfaces and an untrusted interface.  Naturally the trusted interfaces exist on the internal network and the untrusted interface faces the internet.  One trusted interface, which exists on the Internal Vlan, has been configured with the IP address of 10.1.1.240.  The external interface, which exists on the B2B Vlan within the datacentre, has the IP address of 10.40.1.61.
+
+The firewall routes traffic, destined for the networks and hosts listed above, from the clients to the internal interface of the Juniper.  The Juniper routes and alters this traffic using its proprietry VPN method.  All traffic from the Juniper is routed to the Internet.
+
+All traffic originating from the Audi and VW Junipers (the Junipers on the Audi and VW networks) from the internet, is specifically allowed to pass through the firewall and is redirected to our Juniper.  This traffic is routed and altered according to the VPN method to clients or BTAC servers.
+
+
+Traffic Flow:
+The following is a step by step demonstration of how a typical client sends data to the Audi/VW networks.
+
+1. Client initiates access to a Audi/VW network/host
+2. Client's default route is to their local gateway into the WAN
+3. WAN directs traffic to the Data Centre
+4. Data Centre's default route is to the Firewall
+5. Firewall determines access to Audi/VW network/host
+6. Firewall routes traffic to internal interface of Juniper
+7. Juniper initiates traffic destined for the internet
+8. Firewall passes traffic to the internet
+
+The following is a step by step demonstration of how typical data is sent from Audi/VW to internal devices.
+
+1. Audi/VW initiates access to an APEagers Client/Device (Unknown Network)
+2. Audi/VW Juniper routes traffic to our External IP address (Ineternet Address)
+3. All traffic from the internet passes through the Firewall
+4. Firewall determines traffic from External Audi/VW Juniper
+5. Firewall routes traffic to Internal Audi/VW Juniper
+6. Juniper routes traffic to internal destination
+*** NOTE Firewall does not process this outbound traffic ***
+7. If destination is in the WAN traffic is routed to specific Subnet

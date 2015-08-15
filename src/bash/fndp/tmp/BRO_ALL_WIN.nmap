@@ -1,0 +1,4 @@
+# Nmap 4.76 scan initiated Tue Apr 15 11:13:30 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 445 -oG /home/mspence/src/fndp/tmp/BRO_ALL_WIN.nmap 172.17.150.0/24 
+Host: 172.17.150.165 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 172.17.150.166 ()	Ports: 445/filtered/tcp//microsoft-ds///
+# Nmap done at Tue Apr 15 11:13:43 2014 -- 256 IP addresses (2 hosts up) scanned in 12.59 seconds

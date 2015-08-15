@@ -1,0 +1,36 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:57:56 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/VLY_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/VLY.webhosts 
+Host: 10.16.0.101 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.1.235 ()	Ports: 23/open/tcp//telnet///
+Host: 10.16.1.237 ()	Ports: 23/open/tcp//telnet///
+Host: 10.16.1.238 ()	Ports: 23/open/tcp//telnet///
+Host: 10.16.1.239 ()	Ports: 23/open/tcp//telnet///
+Host: 10.16.1.249 ()	Ports: 23/open/tcp//telnet///
+Host: 10.16.1.250 ()	Ports: 23/open/tcp//telnet///
+Host: 10.16.1.251 ()	Ports: 23/open/tcp//telnet///
+Host: 10.16.1.252 ()	Ports: 23/open/tcp//telnet///
+Host: 10.16.8.11 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.8.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.8.153 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.8.154 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.8.159 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.8.172 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.10.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.10.151 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.10.154 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.10.156 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.10.158 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.10.159 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.10.160 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.10.161 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.10.163 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.10.236 ()	Ports: 23/open/tcp//telnet///
+Host: 10.16.11.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.12.152 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.100.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.100.151 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.100.153 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.100.154 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.100.158 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.16.100.180 ()	Ports: 23/filtered/tcp//telnet///
+Host: 10.16.254.58 ()	Ports: 23/closed/tcp//telnet///
+# Nmap done at Tue Apr  1 16:57:56 2014 -- 34 IP addresses (34 hosts up) scanned in 0.24 seconds

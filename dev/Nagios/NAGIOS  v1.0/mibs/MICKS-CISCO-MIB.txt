@@ -1,0 +1,101 @@
+MICKS-CISCO-MIB DEFINITIONS ::= BEGIN
+
+    IMPORTS
+        enterprises
+            FROM MICKS-BASIC-SMI;
+
+-- Data Types
+
+    Gauge32 ::=
+        [APPLICATION 2]
+            IMPLICIT INTEGER (0..4294967295)
+
+-- Cisco Definitions
+
+    cisco 		OBJECT IDENTIFIER ::= { enterprises 9 }	-- assigned by IANA
+
+    ciscoProducts	OBJECT IDENTIFIER ::= { cisco 1 }
+    ciscoMgmt		OBJECT IDENTIFIER ::= { cisco 9 }
+
+-- EnvMon (enterprises.9.9.13)
+    CiscoEnvMonState ::= TEXTUAL-CONVENTION
+        SYNTAX  INTEGER {
+                        normal(1),
+                        warning(2),
+                        critical(3),
+                        shutdown(4),
+                        notPresent(5),
+                        notFunctioning(6)
+                	}
+
+    ciscoEnvMonMIB 	OBJECT IDENTIFIER ::= { ciscoMgmt 13 }
+
+    ciscoEnvMonObjects 	OBJECT IDENTIFIER ::= { ciscoEnvMonMIB 1 }
+
+    ciscoEnvMonPresent 			OBJECT IDENTIFIER ::= { ciscoEnvMonObjects 1 }
+    ciscoEnvMonVoltageStatusTable 	OBJECT IDENTIFIER ::= { ciscoEnvMonObjects 2 }
+    ciscoEnvMonTemperatureStatusTable 	OBJECT IDENTIFIER ::= { ciscoEnvMonObjects 3 }
+    ciscoEnvMonFanStatusTable 		OBJECT IDENTIFIER ::= { ciscoEnvMonObjects 4 }
+    ciscoEnvMonSupplyStatusTable 	OBJECT IDENTIFIER ::= { ciscoEnvMonObjects 5 }
+
+    ciscoEnvMonVoltageStatusTableEntry 	OBJECT IDENTIFIER ::= { ciscoEnvMonVoltageStatusTable 1 }
+    ciscoEnvMonVoltageState       	OBJECT-TYPE
+	SYNTAX 		CiscoEnvMonState
+	MAX-ACCESS 	read-only
+	STATUS		current
+	    ::= { ciscoEnvMonVoltageStatusTableEntry 7 }
+
+    ciscoEnvMonTemperatureStatusTableEntry 	OBJECT IDENTIFIER ::= { ciscoEnvMonTemperatureStatusTable 1 }
+    ciscoEnvMonTemperatureStatusValue   OBJECT-TYPE
+	SYNTAX Gauge32
+	MAX-ACCESS read-only
+	STATUS		current
+	    ::= { ciscoEnvMonTemperatureStatusTableEntry 3 }
+    ciscoEnvMonTemperatureState   	OBJECT-TYPE
+	SYNTAX CiscoEnvMonState
+	MAX-ACCESS read-only
+	STATUS		current
+	    ::= { ciscoEnvMonTemperatureStatusTableEntry 6 }
+
+    ciscoEnvMonFanStatusTableEntry 	OBJECT IDENTIFIER ::= { ciscoEnvMonFanStatusTable 1 }
+    ciscoEnvMonFanState           	OBJECT-TYPE
+	SYNTAX CiscoEnvMonState
+	MAX-ACCESS read-only
+	STATUS		current
+	    ::= { ciscoEnvMonFanStatusTableEntry 3 }
+
+    ciscoEnvMonSupplyStatusTableEntry 	OBJECT IDENTIFIER ::= { ciscoEnvMonSupplyStatusTable 1 }
+    ciscoEnvMonSupplyState        	OBJECT-TYPE
+	SYNTAX CiscoEnvMonState
+	MAX-ACCESS read-only
+	STATUS		current
+	    ::= { ciscoEnvMonSupplyStatusTableEntry 3 }
+
+-- Dot11 Association (enterprises.9.9.273)
+    ciscoDot11AssociationMIB OBJECT IDENTIFIER ::= { ciscoMgmt 273 }
+
+    ciscoDot11AssocMIBObjects OBJECT IDENTIFIER ::= { ciscoDot11AssociationMIB 1 }
+    cDot11AssociationGlobal OBJECT IDENTIFIER ::= { ciscoDot11AssocMIBObjects 1 }
+    cDot11ActiveDevicesTable OBJECT IDENTIFIER ::= { cDot11AssociationGlobal 2 }
+    cDot11ActiveDevicesEntry OBJECT IDENTIFIER ::= { cDot11ActiveDevicesTable 1 }
+
+    cDot11ActiveWirelessClients OBJECT-TYPE
+        SYNTAX Gauge32
+        MAX-ACCESS read-only
+        STATUS mandatory
+            ::= { cDot11ActiveDevicesEntry 1 }
+
+-- Memory Pool (enterprises.9.9.48)
+    ciscoMemoryPoolMIB OBJECT IDENTIFIER ::= { ciscoMgmt 48 }
+
+    ciscoMemoryPoolObjects OBJECT IDENTIFIER ::= { ciscoMemoryPoolMIB 1 }
+    ciscoMemoryPoolTable OBJECT IDENTIFIER ::= { ciscoMemoryPoolObjects 1 }
+    ciscoMemoryPoolEntry OBJECT IDENTIFIER ::= { ciscoMemoryPoolTable 1 }
+
+    ciscoMemoryPoolFree OBJECT-TYPE
+        SYNTAX Gauge32
+        MAX-ACCESS read-only
+        STATUS mandatory
+            ::= { ciscoMemoryPoolEntry 6 }
+
+    END

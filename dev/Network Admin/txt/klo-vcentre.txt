@@ -1,0 +1,31 @@
+Klosters vCentre Setup
+2011-04-13
+Michael Spence
+
+The virtual centre for the Klosters ESXi host was configured on a physical host.  BSCM 5 of the MultiFlex was used for this purpose.
+
+	Configuration Details
+		Option		Value
+		Op Sys		Windows Server 2008
+		HostName	klo-vc (no domain)
+		IP Address	172.17.104.80
+		Netmask		255.255.252.0
+		GW Address	172.17.104.254
+		NameServer	172.17.104.234
+		AdminPwd	SecLvl 2
+		ISSAdmin User	Yes
+		Other Users	msadmin
+				shaneadmin
+				tonyadmin
+				ryanadmin
+				vranger
+
+vCentre 4.1 was installed on this machine to facilitate the coordination of the ESXi hosts.
+
+	License Key:	JJ42K-0DL5H-J8V3C-091KP-1JPJ0
+	License Type:	vCentre Server 4 Essentials
+
+
+	License Key:	NM022-4GJ0H-18K3W-0R2K0-CH4K4
+	License Type:	ESXi 4.1 Hosts (x3) Essentials
+

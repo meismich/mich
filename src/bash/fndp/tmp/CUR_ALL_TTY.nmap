@@ -1,0 +1,13 @@
+# Nmap 4.76 scan initiated Tue Apr  1 17:24:00 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/CUR_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/CUR.webhosts 
+Host: 10.35.1.175 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.35.1.232 ()	Ports: 23/open/tcp//telnet///
+Host: 10.35.1.252 ()	Ports: 23/open/tcp//telnet///
+Host: 10.35.18.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.35.18.151 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.35.18.152 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.35.18.153 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.35.18.154 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.35.18.155 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.35.18.156 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.35.18.157 ()	Ports: 23/closed/tcp//telnet///
+# Nmap done at Tue Apr  1 17:24:00 2014 -- 11 IP addresses (11 hosts up) scanned in 0.04 seconds

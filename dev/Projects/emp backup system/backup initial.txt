@@ -1,0 +1,30 @@
+BACKUP INITIAL
+2011-03-09
+Michael Spence
+
+
+Plan so far:
+
+Tim Walters has initially setup a backup system BNE-BK1 which is a 2008 R2 64bit server running on SAN style hardware.
+
+This system has 14 drives installed:
+	2x SSD 32GB mirrored
+	12x 15k 300GB in R10
+
+Currently lives in "Rack 3" at EMP DC.  Has a remote management interface, configured with IP 10.1.1.130.  To be changed to something less production and more core.... suggesting 10.1.0.50.
+
+Has vRanger4 installed as a trial.  Has Symantec Backup Exec installed as trial.  Both out of date at the time of this document.  This software to be uninstalled.
+
+Current model will have the following software installed:
+	vRanger 4		\
+	vFoglight		 >-- vRanger Essentials??
+	vFoglight Storage	/
+	Symantec Backup Exec 2010
+
+Will also need new SAS controller installed in machine.  Will require machine to be removed from rack and hardware installed.
+
+New tape drive has been purchased and is ready to be installed at data centre alongside the installed backup server.
+
+Tim's doco will explain the method for installing required software.
+
+

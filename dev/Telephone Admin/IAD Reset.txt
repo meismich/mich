@@ -1,0 +1,19 @@
+IAD Reset
+2010-12-30
+Michael Spence
+
+This is the method to factory reset an IAD.  This will wipe all settings and the device will need to reconnect the the Telstra network before it can regain settings.
+
+Applies to 8-port IAD devices (not sure about 2-port)
+
+1. Attach Analogue phone to port 1 of IAD (Old Telstra White phone is suitable)
+
+2. Pick up the handset attached to your SPA device. (You may or may not hear the dialtone.) 
+
+3. Dial ****73738# (You should be asked to confirm.)
+
+4. Dial 1# to confirm. 
+
+5. Hang up. 
+ 
+

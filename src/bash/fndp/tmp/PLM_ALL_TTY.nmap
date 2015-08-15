@@ -1,0 +1,13 @@
+# Nmap 4.76 scan initiated Tue Apr  1 17:29:18 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/PLM_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/PLM.webhosts 
+Host: 10.51.1.15 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.51.1.101 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.51.1.102 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.51.1.103 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.51.1.107 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.51.1.110 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.51.1.238 ()	Ports: 23/open/tcp//telnet///
+Host: 10.51.1.239 ()	Ports: 23/open/tcp//telnet///
+Host: 10.51.1.240 ()	Ports: 23/open/tcp//telnet///
+Host: 10.51.1.241 ()	Ports: 23/open/tcp//telnet///
+Host: 10.51.253.29 ()	Ports: 23/closed/tcp//telnet///
+# Nmap done at Tue Apr  1 17:29:18 2014 -- 11 IP addresses (11 hosts up) scanned in 0.19 seconds

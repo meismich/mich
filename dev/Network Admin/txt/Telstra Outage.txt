@@ -1,0 +1,118 @@
+Telstra Network Outage Procedure
+2010-08-25
+Michael spence
+
+
+Audience:
+
+The IS Services Department is responsible for the execution of this procedure.  The ISS Manager is responsible for the management of the incident.  If the ISS Manager is unavailable, refer the incident to the Systems Administrator.
+While Telstra are involved in rectifying the issue, no IS staff nor site staff are to change or power cycle MWAN infrastructure, unless the are directed to by the IP Services & Faults representative, assigned by Telstra.
+
+
+Preamble
+
+This document defines the prodedure for managing Telstra WAN outages.
+
+This procedure is limited to Telstra MWAN infrastructure only.  It does not include phone outages, but may involve TIPT phone outages.
+
+It is assumed that:
+- basic disagnosis of the outage has been performed, and that the problem is related to the Telstra MWAN
+- a continuous ping test to the router is maintained during this outage
+
+It may be necessary to refer to the following related procedures: AP Eagers Telstra Contact Sheet, Incident Report Template, and Incident Report Communications Tracking Sheet Template.
+
+
+
+Entry Criteria
+
+Phone or Helpdesk call received from site representative advising outage of service.
+Phone call received from elstra representative advising of outage of services
+Notification received from ISS monitoring server advising outage of services.
+
+
+Steps to be Performed
+
+1. Advise IS Staff
+2. Create Intranet Advisor Message
+3. Maintain an incident Communications tracking sheet
+4. Log a Call with Telstra
+5. Contact Senior Telstra Representative
+6. Maintain communication with staff and Telstra
+7. Finalise In-house Tasks
+8. Close the intranet advisory message
+9. Request Telstra costomer Impact Statement
+10. Complete incident report
+
+
+Steps in Detail
+
+
+Advise IS Staff
+
+Email the computer Department distribution group (compdept@apeagers.com.au) to ensure the entire department is aware of the site outage, and to maintain a single point of contact for the incident.
+
+
+Create intranet advisor message
+
+Create (or request the creation of) an Intranet Advisory Message.  The message should be short and precise.
+
+Example: "We are experiencing a network outage with our <site name> dealership.  The IS Department is investigating the issue."
+
+
+Maintain an incident communications tracking sheet
+
+Create an "Incident Report Communication Tracking Sheet" viat the following template:
+\\server\share\directory\Template_Data_Outage_Incident_Tracking.ods
+
+All  communications between any party must be recorded in the traking sheet.  Ensure that all communications and details regarding the outage are accurate, as it may be necessary to compare our version of events to telstra's Customer Impact Statement (CIS) if the time or scale of the incident is unacceptable (for which we seek compensation).
+
+
+Log a call with Telstra
+
+** Note: if telstra have advised of the outage, continue to the next step
+
+Contact Telstra on 1800 467 889 and select option 2
+the representative from IP Services and Faults will confirm that the route and switces have been power cycled and whether there are any obvious faults such as amber ligts etc.  The will require the service FNN number, which could be an NR or YN number; your contact details and a site contact, which may be you.
+Record the name of the Telstra representative in the tracking sheet, as well as the reference number which will by provided.
+Telstra will perform some basic loopback and connectivity tests, and return you call advisin wheter the incident is to be raised to Level 2.
+
+
+Contact senior Telstra Representative
+
+Immediately after logging a new call with Telstra, contact both David Morris and Eileen Schofield to advise network outage reference details.  David and Eileen will manage the incident from within their departments.
+
+Insert Contact details
+
+
+Maintain communication with staff and Telstra
+
+It is paramouont that these incidents are managed pro-actively.  Ensure that IS staff and the site representative are kept up-to-date with the progress of the isssue.  Telstra senior representatives must be contacted every 30mins to ensure the appropriate incident escalation.
+
+
+Exit Criteria
+
+Test and confirm restoration of service
+
+The following steps must be performed once the service has been renewed:
+
+Ensure that you can ping the site router and connect to any server/s on-site
+contact the site representative and confirm that they can see the data centre and ther service is now up
+
+
+Close the intranet advisory message
+
+Close (or request the closure of) the Intranet Advisory Message.
+
+
+Request Telstra costomer Impact Statement
+
+If the mipact to the business is significant, or the time frame to rectify the incident is unsatisfactory, a CIS must be obtained fromm a senior Telstra representative.  This request must be verbalised, as well as emailed to the appropriate contact.
+
+Until the CIS is received, the incident cannot be closed, and all reasonale measures must be taken to obtain the CIS.  In the case of a CIS being requested, the Incident Report must still be submitted to the Project Manager with the appropriate details entered into the 'on-going actions' field.
+
+Ensure all  communications, whether written or verbal, are included in the communications tracking sheet.
+
+
+Complete incident report
+
+The incident report is to be completed fully and accurately.  Once complete, it should be referred to the Project Manager, along with the dracking sheet for his review and management.

@@ -1,0 +1,5 @@
+# Nmap 4.76 scan initiated Tue Apr  1 17:06:39 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 80 -oG /home/mspence/src/fndp/tmp/TMB_ALL_WEB.nmap 10.26.0.0/24 10.26.1.0/24 10.26.2.0/24 10.26.3.0/24 10.26.4.0/24 10.26.5.0/24 10.26.6.0/24 10.26.7.0/24 10.26.8.0/24 10.26.9.0/24 10.26.10.0/24 10.26.11.0/24 10.26.12.0/24 10.26.13.0/24 10.26.15.0/24 10.26.16.0/24 10.26.17.0/24 10.26.18.0/24 10.26.19.0/24 10.26.20.0/24 10.26.99.0/24 10.26.100.0/24 10.26.253.0/24 10.26.254.0/24 
+Host: 10.26.13.150 ()	Ports: 80/open/tcp//http///
+Host: 10.26.13.152 ()	Ports: 80/open/tcp//http///
+Host: 10.26.13.254 ()	Ports: 80/closed/tcp//http///
+# Nmap done at Tue Apr  1 17:09:07 2014 -- 6144 IP addresses (3 hosts up) scanned in 148.18 seconds

@@ -1,0 +1,63 @@
+From erp2-bk@apeagers.com.au  Thu Apr 24 23:04:45 2014
+Return-Path: <erp2-bk@apeagers.com.au>
+Received: from bne-nixwww.apeagers.com.au (localhost [127.0.0.1])
+	by bne-nixwww.apeagers.com.au (8.14.3/8.14.3) with ESMTP id s3OD4jOC024828
+	for <mspence@localhost>; Thu, 24 Apr 2014 23:04:45 +1000
+MIME-Version: 1.0
+Received: from outlook-apacsouth.office365.com [111.221.119.102]
+	by bne-nixwww.apeagers.com.au with IMAP (fetchmail-6.3.8)
+	for <mspence@localhost> (single-drop); Thu, 24 Apr 2014 23:04:45 +1000 (EST)
+Received: from HKNPR01MB241.apcprd01.prod.exchangelabs.com (10.242.100.12) by
+ HKXPR01MB245.apcprd01.prod.exchangelabs.com (10.242.120.144) with Microsoft
+ SMTP Server (TLS) id 15.0.921.12 via Mailbox Transport; Wed, 23 Apr 2014
+ 18:10:10 +0000
+Received: from HKNPR01MB177.apcprd01.prod.exchangelabs.com (10.242.103.12) by
+ HKNPR01MB241.apcprd01.prod.exchangelabs.com (10.242.100.12) with Microsoft
+ SMTP Server (TLS) id 15.0.921.12; Wed, 23 Apr 2014 18:10:09 +0000
+Received: from HKNPR01CA009.apcprd01.prod.exchangelabs.com (10.242.116.19) by
+ HKNPR01MB177.apcprd01.prod.exchangelabs.com (10.242.103.12) with Microsoft
+ SMTP Server (TLS) id 15.0.921.12; Wed, 23 Apr 2014 18:10:08 +0000
+Received: from AM1FFO11FD053.protection.gbl (2a01:111:f400:7e00::194) by
+ HKNPR01CA009.outlook.office365.com (2a01:111:e400:a014::19) with Microsoft
+ SMTP Server (TLS) id 15.0.921.12 via Frontend Transport; Wed, 23 Apr 2014
+ 18:10:07 +0000
+Received: from qld-mx.ape1.local (165.228.157.90) by
+ AM1FFO11FD053.mail.protection.outlook.com (10.174.65.72) with Microsoft SMTP
+ Server id 15.0.929.8 via Frontend Transport; Wed, 23 Apr 2014 18:10:05 +0000
+Received: from erp2-bk ([10.1.0.93]) by qld-mx.ape1.local with Microsoft SMTPSVC(6.0.3790.1830);
+	 Thu, 24 Apr 2014 04:04:52 +1000
+From: <erp2-bk@apeagers.com.au>
+To: <mspence@apeagers.com.au>
+CC: <spearce@apeagers.com.au>, <issadmin@apeagers.com.au>
+Date: Thu, 24 Apr 2014 04:09:54 +1000
+Subject: vRanger Backup & Replication Backup Job: 1 successful, 0 failed, 0 aborted, 0
+ canceled
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+Message-ID: <QLD-MX3ZBqaujEJGuvt000a8f8e@qld-mx.ape1.local>
+X-OriginalArrivalTime: 23 Apr 2014 18:04:52.0961 (UTC) FILETIME=[86A45D10:01CF5F1E]
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Organization-SCL: -1
+X-Forefront-Antispam-Report: CIP:165.228.157.90;CTRY:AU;IPV:CAL;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:HKNPR01MB177;H:qld-mx.ape1.local;FPR:;LANG:en;;SKIP:1;
+X-MS-Exchange-Organization-Network-Message-Id: 8548b340-7b6d-445f-bb3e-08d12d366572
+X-MS-Exchange-Organization-AVStamp-Service: 1.0
+X-MS-Exchange-Organization-AuthSource: AM1FFO11FD053.protection.gbl
+X-MS-Exchange-Organization-AuthAs: Anonymous
+
+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJz
+ZXQ9dXRmLTgiPjxib2R5IHN0eWxlPSJmb250LWZhbWlseTphcmlhbCxzYW5zLXNlcmlmO2ZvbnQt
+c2l6ZTo5LjBwdCI+PHN0cm9uZz5Ib3N0IE5hbWU8L3N0cm9uZz46IEVSUDItQks8YnI+PHN0cm9u
+Zz5Kb2IgTmFtZTwvc3Ryb25nPjogQmFja3VwICdFUkEtSDcxNDYtTGl2ZS0yMDEyMTAxMic8YnI+
+PHN0cm9uZz5JbnZlbnRvcnkgTmFtZTwvc3Ryb25nPjogRVJBLUg3MTQ2LUxpdmUtMjAxMjEwMTI8
+YnI+PHN0cm9uZz5SZXN1bHQ8L3N0cm9uZz46IENvbXBsZXRlZDxicj48c3Ryb25nPlN0YXJ0IFRp
+bWU8L3N0cm9uZz46IDQvMjQvMjAxNCA0OjAwOjEzIEFNPGJyPjxzdHJvbmc+RW5kIFRpbWU8L3N0
+cm9uZz46IDQvMjQvMjAxNCA0OjA5OjU0IEFNPGJyPjxzdHJvbmc+RHVyYXRpb248L3N0cm9uZz46
+IDEwIG1pbnV0ZShzKTxicj48c3Ryb25nPkJhY2t1cCBUeXBlPC9zdHJvbmc+OiBGdWxsPGJyPjxi
+cj48YnI+PHN0cm9uZz5WTSBOYW1lPC9zdHJvbmc+OiBFUkEtSDcxNDYtTGl2ZS0yMDEyMTAxMjxi
+cj48c3Ryb25nPlJlc3VsdDwvc3Ryb25nPjogU3VjY2Vzc2Z1bDxicj48c3Ryb25nPlN0YXJ0IFRp
+bWU8L3N0cm9uZz46IDQvMjQvMjAxNCA0OjAwOjM2IEFNPGJyPjxzdHJvbmc+RW5kIFRpbWU8L3N0
+cm9uZz46IDQvMjQvMjAxNCA0OjA5OjU0IEFNPGJyPjxzdHJvbmc+RHVyYXRpb24gKG1pbnV0ZXMp
+PC9zdHJvbmc+OiA5PGJyPjxzdHJvbmc+QXJjaGl2ZSBTaXplPC9zdHJvbmc+OiAyLjYxNCBNQjxi
+cj48YnI+PC9ib2R5Pg==
+

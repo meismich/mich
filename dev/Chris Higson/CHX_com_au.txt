@@ -1,0 +1,94 @@
+CHX.com.au Configuration
+2011-07-05
+Michael Spence
+
+
+Audience:
+
+This document is for the use of Chris Higson and his Network Administrator.  It is assumed that the user of this document understands DNS configuration techniques.
+
+
+Preamble:
+
+This document details the setup of the domain chx.com.au.
+
+This document explains the steps taken to enable GMail as a mail provider for chx.com.au.
+
+
+Topics of Discussion
+
+1. Domain Authority
+2. Name Server configuration
+3. Google Apps 
+4. MX Record Configuration
+5. Gmail Pointer Configuration
+6. Other Configurations
+
+
+Topics in Detail
+
+1. Domain Authority
+
+The domain chx.com.au has been purchased from and is under the authority of Planet Domain.  
+
+The following website is used to administer this domain:
+
+	http://www.planetdomain.com
+
+The following username is the logon name for the account with rights to administer the domain:
+
+	CHX-00
+
+The password is known to Chris Higson.
+
+
+2. Name Server configuration
+
+As with all domains the domain configuration must contain at least one primary Domain Name Server, which will act as the primary source of information about the domain.  The following Domain Name Servers have been configured for the domain chx.com.au.
+
+	ns1.planetdomain.com
+	ns2.planetdomain.com
+
+These have been used as they are the default name servers for Planet Domain and further external configuration is not required.  It is suggested that in the future that this is not changed, and the account with Planet Domain is maintained.  In the author's experience the Planet Domain systems seems reliable and user friendly.
+
+To alter the Name Servers, on the Planet Domain site under chx.com.au administration, choose the "Domain Name" section.  The final options in the following page allow the alteration of the Domain Name Servers.
+
+
+3. Google Apps 
+
+In the author's opinion the Google Apps system provides a reliable, scalable and easy to administer system for email and web hosting.  As such a Google Apps account has been created for chx.com.au to host email.  It should be noted that the following TXT entry has been added to the chx.com.au domain configuration for the verification of the chx.com.au ownership.
+
+	google-site-verification=r_biHLqDBdFssZTNe3pt97IGzKrnv_OCgRS76hotcxA 
+
+After verification was completed the system was enabled and became fully functional.  The "Setup" area details how external DNS entries can be configured to point to the relevant MX and WWW records if they are to be used.  This area also details how to configure clients to connect to the GMail system (for example Outlook or iPhones)
+
+
+4. MX Record Configuration
+
+GMail provides a robust mail system which is highly available by providing multiple paths for mail to reach their systems.  To utilize this system, all of the following MX entries have been added to the chx.com.au domain with their corresponding priority.
+
+	1  	aspmx.l.google.com.
+	5 	alt1.aspmx.l.google.com.
+	5 	alt2.aspmx.l.google.com.
+	10 	aspmx2.googlemail.com.
+	10 	aspmx3.googlemail.com.
+
+
+5. Gmail Pointer Configuration
+
+For useablity, the following CNAME has been created to make accessing the GMail web portal easier:
+
+	gmail.chx.com.au	CNAME		mail.google.com/a/chx.com.au
+
+Hopefully this will give an easy to remember destination, while away from usual computers.
+
+
+6. Other Configurations
+
+As yet, there is no Google Apps website configured.  This can be easily done through the "Web Address Mapping" feature of Google Apps.  This system links an web address (like www.chx.com.au) to a Google Apps site.
+
+Once a mapping has been created, a CNAME record similar to the following should be added to the domain.
+
+	www	CNAME	sites.google.com/a/chx.com.au/www
+
+Further sites can easily be created and referenced in the same way.

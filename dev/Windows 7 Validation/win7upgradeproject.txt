@@ -1,0 +1,92 @@
+WINDOWS 7 Upgrade Project
+Michael Spence
+2011-02-15
+
+Preamble:
+
+This document describes some of the techniques and issues involved with the Upgrade to Windows 7.  This document does NOT describe the benefits, shortcomings of this transition, but may give e somdirection in these matters.
+
+
+Project Path:
+
+1. Validate Dealership Applications
+2. Build SOE Image for PCs and Laptops
+3. Build User Manual
+4. Roll Out to all IT staff - Helpdesk First
+5. Announce Planned Rollout to Dealerships
+6. Commence Rollout within Dealerships
+7. Measure End User Feedback
+8. Rebuild SOE as necessary
+
+Other Considerations:
+
+1. Existing PC's with XP Licences
+2. Existing PC's with Win7 Licences
+3. Other Tools/Applications
+4. Non Supported Applications
+
+
+New PCs (additional/replacement) to be deployed with Windows 7 commencing 14th March
+ - Requires SOE to be built
+
+Existing PCs will not be upgraded, unless they have a Win7 key AND it is specifically asked for (at this stage)
+
+Upgrade all Helpdesk operators to Windows 7 prior to this date
+ - Should aleviate many of the User Feel complaints
+ - Specific HD category for calls relating to Win7
+
+Research a FAQ/User Guide/Experience Change cheat sheet
+
+Handover training on deployment
+
+List of supported Application (and non supported if any)
+ (Mazda Magic for example not to be supported)
+
+Have a list of tools made up which need to be supported
+ (Windows Snippit tools, PDF writers etc)
+
+Measure End User feedback
+ - Number of HD calls
+ - Feedback to be collated (either verbal/email) as spreadsheet
+
+Announce the deployment throughout dealerships
+
+1. Validate Dealership Applications
+
+It is necessary that all programs which are vital to the running of the business are still valid and capable to be used under a Windows 7 environment.  It will be necessary to perform this validation before rolling out computers to the dealerships.
+
+Please make reference to the "Windows 7 DoFS Applications" list accompanied with this document.
+
+
+2. Build SOE Image for PCs and Laptops
+
+Once the valid list of applications and their dependencies have been analysed we will be able to build a Standard Operating Environment for PC's and Laptop.  
+
+
+3. Build User Manual
+
+To minimize the wasted time experienced by a user when familiarizing themselves with a new operating system.  It has been suggested that a Manual be created for the new users. This document should contain a list of frequently asked questions, a guide on how to use some of the new features, an experience change listing and a cheat sheet.
+
+
+4. Roll Out to all IT staff - Helpdesk First
+
+Before rolling this operating systetm out to common users, it is believed that the IT staff should suffer the experience of the new operating system, so that at least some difficulties may be already experienced and quickly dealt with at the user level.  This also why it is assumed to be most helpful to roll this operating system out to Helpdesk before any others.
+
+
+5. Announce Planned Rollout to Dealerships
+
+As all the above tasks are completed, it is advisable to announce to the company that Windows 7 will be rolled out to all dealerships.  As explainned   thfollowing tasks, the intention is not to install Windows 7 on every machine, but to only roll out replacement PC's and New PC's with Windows 7 (with the exception of some others).
+
+This announcement should alleviate the shock of the new operating system in some areas.  And hopefully, differences will be understood annd minimized.
+
+
+6. Commence Rollout within Dealerships
+
+As mentioned, the intention is to only roll out New or Replacement PC's with Windows 7 loaded.  The cost in both time and money to roll out Windows 7 to all computers accross all dealerships is prohibitive.  It is also believed that this would cause major disruption to staff and their ability to work could be severely impaired for some time.
+
+
+7. Measure End User Feedback
+
+As an on going exercise, feedback from the users should be noted.  If serious complications arise from this feedback they should be addressed
+
+8. Rebuild SOE as necessary

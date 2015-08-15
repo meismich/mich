@@ -1,0 +1,1 @@
+# Nmap 4.76 scan initiated Tue Apr 15 11:15:07 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 445 -oG /home/mspence/src/fndp/tmp/DAN_ALL_WIN.nmap 172.16.22.0/24 

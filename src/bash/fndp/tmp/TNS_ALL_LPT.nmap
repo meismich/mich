@@ -1,0 +1,15 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:51:55 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 9100 -oG /home/mspence/src/fndp/tmp/TNS_ALL_LPT.nmap 10.13.0.0/24 10.13.1.0/24 10.13.2.0/24 10.13.3.0/24 10.13.4.0/24 10.13.5.0/24 10.13.6.0/24 10.13.7.0/24 10.13.8.0/24 10.13.9.0/24 10.13.10.0/24 10.13.11.0/24 10.13.12.0/24 10.13.13.0/24 10.13.15.0/24 10.13.16.0/24 10.13.17.0/24 10.13.18.0/24 10.13.19.0/24 10.13.20.0/24 10.13.99.0/24 10.13.100.0/24 10.13.253.0/24 10.13.254.0/24 
+Host: 10.13.1.1 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.13.1.239 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.13.3.10 ()	Ports: 9100/filtered/tcp//jetdirect///
+Host: 10.13.3.21 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.13.3.23 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.13.3.33 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.13.3.150 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.13.3.151 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.13.3.152 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.13.3.159 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.13.3.160 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.13.3.165 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.13.3.254 ()	Ports: 9100/closed/tcp//jetdirect///
+# Nmap done at Tue Apr  1 16:52:52 2014 -- 6144 IP addresses (13 hosts up) scanned in 56.91 seconds

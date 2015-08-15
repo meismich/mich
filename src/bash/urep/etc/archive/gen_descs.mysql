@@ -1,0 +1,6 @@
+use assets;
+
+select i_asset, s_description
+	from descriptions
+	where i_desctype = 3
+	order by i_asset;

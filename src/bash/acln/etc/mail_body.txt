@@ -1,0 +1,9 @@
+REPORT ASSETS TO CLEAN
+======================
+
+Location: ###LOC###
+Date:     ###DAT###
+
+The list of attached assets are ACTIVE and DO NOT have VALID interog8 data.
+
+(This is an automatically generated report by 'acln.sh' v0.1... MS)

@@ -1,0 +1,116 @@
+VAS Machine Setup
+Michael Spence
+2011-01-06
+
+
+Audience:
+
+Currently this documentation is for Field Support officers only.  In the future, I do not foresee other appropriate persons to whom this document may apply.
+
+
+Preamble:
+
+This document applies to the Configuration of a VW VAS Machine.  These machines are used to configure and diagnose VW (only) cars.  The software used, connects to VW via the Juniper located at the data centre and makes use of the VW BTAC server (also at the data centre), to gain updates and process information with VW
+
+This document DOES NOT apply to other diagnostics machines throughout APEagers such as IDS devices or even Audi VAS machines.  This document SHOULD NOT be used as a guide to setting up a computer even a VW computer.
+
+
+Steps to Follow:
+
+The following steps are required to be followed for a VW VAS Machine. This setup assumes that the VAS machine is in a factory state, if not Step 0 may have to be performed.  
+
+0. Return to Factory Default
+1. Disable Windows Firewall
+2. Configure Network Settings
+	a) IP Address
+	b) Primary DNS
+	c) DNS Suffix
+	d) Alternate Suffixes
+	e) Workgroup
+3. Priliminary Tests
+4. VAS Software Online Test
+5. Contact VW Support
+
+
+Steps in Detail
+
+
+0. Return to Factory Default
+
+Machines can be taken back to factory default, with the use of the supplied CDs.  The service or workshop manager should be in possesion of this material and the appropriate instructions for installing them.
+
+
+1. Disable Windows Firewall
+
+Via the Windows Control Panel, open "Windows Firewall" and check the radio button to "Off".  Then navigate, again in Control Panel, to "Security Centre".  Under "Firewall" press the "Recomendations" button.  This opens a properties windows.  Check the box at the bottom, which states "I have a firewall solution, that I will monitor myself."
+
+2. Configure Network Settings
+a) IP Address 
+Choose an appropriate network address for the machine according to site.  Ideally the machine should be given a STATIC IP address.
+
+
+b) Primary DNS 
+As the VAS machine uses the BTAC to resolve names on the other end of the Juniper VPN set the Primary DNS server to be:
+	"10.1.1.8" 
+(this is the VW BTAC server within our domain)
+No Secondary DNS is necessary as the devices will not need to resolve machines within our domain.  Although there is no harm in setting this to either "10.1.1.43" or "10.1.1.42".
+
+
+c) DNS Suffix
+Under the "Advanced" settings for "TCP/IP", under the "DNS" tab, the "Suffix for this connection" needs to be set as:
+	"au22040001.apeagers.com.au"
+This is so the VAS machine can sucessfully resolve name spaces, which is a requirement of the VAS software.
+
+
+d) Alternate Suffixes
+Also in the "Advanced" settings, for clarity, in "Append these DNS suffixes (in order)" add the following:
+	"au22040001.apeagers.com.au"
+	"apeagers.com.au"
+While "apeagers.com.au" is not necessary, if the secondary DNS has been populated with an internal DNS server, names will or may not resolve properly without this setting.
+
+
+e) Workgroup
+This may or may not be necessary, but previous version of these machines were set to have a network "Workgroup" of:
+	"VAG"
+
+3. Preliminary tests 
+Before using the VAS software to test connectivity perform the following quick tests via a command prompt.  These tests will verify the required connectivity to VW via the Juniper:
+	"ping cpnbb"
+	"ping rpnbb"
+	"ping lpnbb"
+	"ping portal"
+(doing tracert's also will test routing to these addresses)
+These are the tests that a VW support technician will perform to ensure that the machine works.
+
+4. VAS Software Online Test:
+Follow the following steps to use the Online Test to determine valid network connectivity.
+
+	Start Program
+	Select "Guided Functions"
+	Select "Volkswagen"
+	Select "Model"
+	Select "Engine"
+	Select "Immobilizer"
+	Wait
+	Select "Online Test"
+	Press "Done"
+	Press "OK"
+	Wait
+	Press "OK"
+	Enter Username "DVAUHOP"
+	Enter Password "PASSWORD1"
+	Press "OK"
+	Await results
+
+(Although the VAS program does not need ANY? internet connectivity, this online test does attempt to reach "194.114.32.60" and will fail if it cannot do so.  A specific Firewall exception is in place to allow these machines, which do not have a proxy and hence no access to the internet, to contact this address.)
+
+
+5. Contact VW Support
+If for some reason the above steps to do not solve the connectivity issues, contact the VW IT support people.
+
+	Primary VW Support Line:
+		1300 819 982
+
+	Genesis Support Line:
+		03 9922 0000
+

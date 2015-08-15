@@ -1,0 +1,60 @@
+From _nagios@qld-nag.apeagers.com.au  Thu Apr 24 22:06:36 2014
+Return-Path: <_nagios@qld-nag.apeagers.com.au>
+Received: from bne-nixwww.apeagers.com.au (localhost [127.0.0.1])
+	by bne-nixwww.apeagers.com.au (8.14.3/8.14.3) with ESMTP id s3OC6ZZm024058
+	for <mspence@localhost>; Thu, 24 Apr 2014 22:06:35 +1000
+MIME-Version: 1.0
+Received: from outlook-apacsouth.office365.com [111.221.114.169]
+	by bne-nixwww.apeagers.com.au with IMAP (fetchmail-6.3.8)
+	for <mspence@localhost> (single-drop); Thu, 24 Apr 2014 22:06:35 +1000 (EST)
+Received: from HKXPR01MB248.apcprd01.prod.exchangelabs.com (10.242.121.148) by
+ HKXPR01MB245.apcprd01.prod.exchangelabs.com (10.242.120.144) with Microsoft
+ SMTP Server (TLS) id 15.0.921.12 via Mailbox Transport; Tue, 22 Apr 2014
+ 10:19:42 +0000
+Received: from HKXPR01CA010.apcprd01.prod.exchangelabs.com (10.242.96.20) by
+ HKXPR01MB248.apcprd01.prod.exchangelabs.com (10.242.121.148) with Microsoft
+ SMTP Server (TLS) id 15.0.921.12; Tue, 22 Apr 2014 10:19:40 +0000
+Received: from DB3FFO11FD060.protection.gbl (2a01:111:f400:7e04::120) by
+ HKXPR01CA010.outlook.office365.com (2a01:111:e400:1c00::20) with Microsoft
+ SMTP Server (TLS) id 15.0.921.12 via Frontend Transport; Tue, 22 Apr 2014
+ 10:19:39 +0000
+Received: from qld-nag.apeagers.com.au (165.228.157.90) by
+ DB3FFO11FD060.mail.protection.outlook.com (10.47.217.132) with Microsoft SMTP
+ Server (TLS) id 15.0.929.8 via Frontend Transport; Tue, 22 Apr 2014 10:19:37
+ +0000
+Received: from qld-nag.apeagers.com.au (_nagios@localhost [127.0.0.1])
+	by qld-nag.apeagers.com.au (8.14.3/8.14.3) with ESMTP id s3MA5nRB028293
+	for <mspence@apeagers.com.au>; Tue, 22 Apr 2014 20:05:49 +1000 (EST)
+Received: (from _nagios@localhost)
+	by qld-nag.apeagers.com.au (8.14.3/8.14.3/Submit) id s3MA5n7H010327
+	for mspence@apeagers.com.au; Tue, 22 Apr 2014 20:05:49 +1000 (EST)
+Date: Tue, 22 Apr 2014 20:05:49 +1000
+From: Nagios user <_nagios@qld-nag.apeagers.com.au>
+Message-ID: <201404221005.s3MA5n7H010327@qld-nag.apeagers.com.au>
+To: <mspence@apeagers.com.au>
+Subject: ** RECOVERY Service Alert: Y00000041892N - 106 Pittwater Rd/Ping Test is OK **
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Organization-SCL: -1
+X-Forefront-Antispam-Report: CIP:165.228.157.90;CTRY:AU;IPV:CAL;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:HKXPR01MB248;H:qld-nag.apeagers.com.au;FPR:;LANG:en;
+Content-Type: text/plain
+X-MS-Exchange-Organization-Network-Message-Id: 4f1d87e0-4dd9-4556-3621-08d12c2b81ce
+X-MS-Exchange-Organization-AVStamp-Service: 1.0
+X-MS-Exchange-Organization-AuthSource: DB3FFO11FD060.protection.gbl
+X-MS-Exchange-Organization-AuthAs: Anonymous
+
+***** ISS Monitoring Server *****
+
+Notification Type: RECOVERY
+
+Service: Ping Test
+Host: Y00000041892N - 106 Pittwater Rd
+Address: 192.168.7.254
+State: OK
+
+Date/Time: Tue Apr 22 20:05:49 EST 2014
+
+Additional Info:
+
+PING OK - Packet loss = 0%, RTA = 21.23 ms
+

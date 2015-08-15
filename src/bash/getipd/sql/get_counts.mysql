@@ -1,0 +1,3 @@
+use assets;
+
+select s_location, count(distinct id) from xassets where s_status='Active' group by s_location;

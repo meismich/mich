@@ -1,0 +1,37 @@
+Open BSD Common Utils
+Michael Spence
+2011-01-07
+
+
+Disk Free Statistics
+To display the amount of used and free space on the system, the following command is useful:
+
+	df -k
+
+This will display the Total, Used and Available 1K blocks on the system.  It also shows a percentage used value.
+
+
+
+Whats Running
+To determine the currently running processes (like in Task Manager), run the following command:
+
+	ps aux
+
+Note that the program is listed on the right of the screen and the width of your window may need to be increased so you can view this.  Also note the percentage of CPU usage for each process.
+
+
+
+Network Traffic Statistics
+To display the network traffic over the interfaces of the firewall, use the following command:
+
+	systat ifstat
+
+Of the displayed columns, the following are useful:
+	IFACE - gives interface names 
+	STATE - denotes if interface up or down
+	IBYTES - shows incoming bps
+	OBYTES - shows outgoing bps
+The final row displays Totals and IBYTES should approximately equal OBYTES
+
+
+

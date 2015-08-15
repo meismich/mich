@@ -1,0 +1,8 @@
+PNK-BK1|Backup###'pnk-esx1
+NLA-BK1|Backup###'nla-esx1
+CCA-BK1|Backup###'cca-esx1
+GAB-BK1|Backup###'gab-esx1
+NSD-BK1|Backup###'nsd-esx1
+NSD-BK1|Backup###'nsd-fs1
+DWN-BK1|Backup###'dwn-esx1
+ERP1-BK|Backup###'ERA-H7146

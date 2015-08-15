@@ -1,0 +1,40 @@
+###############################################################################
+# SWZS/HVY.CFG
+# Last Modified:	2011-07-26
+# Author:		Michael Spence
+###############################################################################
+
+#--------------------------
+# Hidden Valley
+#--------------------------
+
+
+define host{
+        use             gen_hp2510_48p
+        host_name       hvy_core_hp2510_48p_1
+        alias           hvy_core_hp2510_48p_1
+        parents         ashmooberr01c18.ims.telstra.com.au
+        address         10.52.1.240
+	_WARNBPS	1000000,1000000
+	_CRITBPS	1500000,1500000
+        hostgroups      +lan_hvy,swz_core
+        }
+
+#define host{
+        #use             gen_hp2510_48p
+        #host_name       hvy_data_hp2510_48p_1
+        #alias           hvy_data_hp2510_48p_1
+	#parents		hvy_core_hp2510_48p_1
+        #address         10.52.1.241
+        #hostgroups      +lan_hvy
+	#}
+
+define host{
+        use             gen_hp2510_24p
+        host_name       hvya_data_hp2510_24p_1
+        alias           hvya_data_hp2510_24p_1
+        parents         hvy_core_hp2510_48p_1
+        address         10.52.1.242
+        hostgroups      +lan_hvy
+        }
+

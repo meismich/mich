@@ -1,0 +1,83 @@
+Domain Name Maintenance
+2010-08-30
+Michael Spence
+
+
+Audience
+
+The IS Systems Administrator is responsible for the execution of the procedure.
+
+
+Preamble
+
+This procedure defines the procedure for maintaining a domain name.
+
+This procedure does not identify the registration of domain names or the email configuration procedures.  Pleasae refer to the Registration of Domain Names procedure and Domain Email Configuration procedure as referenced in part 5 of this procedure.
+
+It may be necessary to perform, during this setup process, items relating to the following related procedures: "Maintenance of Domain Names", "Domain Email configuration", "Raising Helpdesk Calls" and "ISS Monitoring Server".  Please also refer to the following documentation: "Melbourne IT Portal User Manual" and "Domain Name Spreadsheet".
+
+Also for reference purposes, a list of related definitions are included in Appendix Z of this document.
+
+
+Entry Criteria
+
+Helpdesk call received from Corporate, a Dealer Principal or authorised representative, requesting the change to a domain name.
+
+
+Steps to be Performed
+
+1. Maintenance of admin/tech/billing Details
+2. Maintenance of External DNS
+3. Maintenance of Internal DNS
+4. Advise External Interested Parties
+5. Finalise In-house Tasks
+
+
+Steps in Detail
+
+Maintenance of admin/tech/billing details
+
+1. Log onto the Melbourne IT Portal: (https://onlineportal.melbourneitdbs.com)
+2. Username: issadmin   password: ********
+3. Site Administration -> Manage default values -> Select Business Unit
+4. Make necessary changes.
+
+An email will be sent to the issadmin@apeagers.com.au distribution group confirming the order.  After approximately one business day, a confirmation email will be sent to the distribution group acknowledging the successful domain name registration.
+
+
+Maintenance of external DNS
+
+1. Log onto the Telstra Custdata portal: (https://www.telstra.net/cgi-bin/custdata/index.pl)
+2. Username: 9439599010  password: ********
+3. Service Management -> Primary DNS -> update (domain name)
+4. Click "Submit" to apply changes.
+
+
+Maintenance of internal DNS
+
+1. Open the DNS MMC on the Domain controller with PDC Emulator role.
+2. Change www "A" host record to the associated FQDN object.
+3. Update domain name spreadsheet.
+4. Amend all necessary information to the Domain Name spreadsheet, as reference above.
+
+
+Advise Web developers
+
+1. Advise web developers that the domain DNS entries have been changed.
+
+- Phase New Media
+Web | Digital | Interactive
+Suite 5, 242 Hawken Drive
+St Lucia Queensland Australia 4067
+phone +61 7 3371 3300 
+fax +61 7 3371 7700
+email info@phase.com.au
+web www.phase.com.au
+
+
+Exit Criteria
+
+1. Dig/nslookup/whois.  Perform external DNS lookups and whois database searches to confirm new domain has propagated to roon DNS servers.
+2. Close helpdesk call
+3. Add necessary call notes and information to the open helpdesk call and close according to helpdesk call procedures.
+

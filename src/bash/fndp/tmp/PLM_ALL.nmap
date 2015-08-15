@@ -1,0 +1,18 @@
+# Nmap 4.76 scan initiated Tue Aug  6 10:42:55 2013 as: nmap --min-hostgroup 256 --max-rtt-timeout 100 --max-retries 1 -T5 -n -PS -p 80 -oG /home/mspence/src/fndp/tmp/PLM_ALL.nmap 10.51.0.0/24 10.51.1.0/24 10.51.2.0/24 10.51.3.0/24 10.51.4.0/24 10.51.5.0/24 10.51.6.0/24 10.51.7.0/24 10.51.8.0/24 10.51.9.0/24 10.51.10.0/24 10.51.11.0/24 10.51.12.0/24 10.51.13.0/24 10.51.15.0/24 10.51.16.0/24 10.51.17.0/24 10.51.18.0/24 10.51.19.0/24 10.51.20.0/24 10.51.99.0/24 10.51.100.0/24 10.51.253.0/24 10.51.254.0/24 
+Host: 10.51.1.1 ()	Ports: 80/closed/tcp//http///
+Host: 10.51.1.101 ()	Ports: 80/open/tcp//http///
+Host: 10.51.1.102 ()	Ports: 80/open/tcp//http///
+Host: 10.51.1.103 ()	Ports: 80/open/tcp//http///
+Host: 10.51.1.107 ()	Ports: 80/open/tcp//http///
+Host: 10.51.1.200 ()	Ports: 80/open/tcp//http///
+Host: 10.51.1.239 ()	Ports: 80/open/tcp//http///
+Host: 10.51.1.241 ()	Ports: 80/open/tcp//http///
+Host: 10.51.1.254 ()	Ports: 80/open/tcp//http///
+Host: 10.51.253.11 ()	Ports: 80/closed/tcp//http///
+Host: 10.51.253.12 ()	Ports: 80/closed/tcp//http///
+Host: 10.51.253.17 ()	Ports: 80/closed/tcp//http///
+Host: 10.51.253.18 ()	Ports: 80/closed/tcp//http///
+Host: 10.51.253.26 ()	Ports: 80/closed/tcp//http///
+Host: 10.51.253.27 ()	Ports: 80/closed/tcp//http///
+Host: 10.51.253.31 ()	Ports: 80/closed/tcp//http///
+# Nmap done at Tue Aug  6 10:43:33 2013 -- 6144 IP addresses (16 hosts up) scanned in 38.32 seconds

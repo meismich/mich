@@ -1,0 +1,253 @@
+drop database bstar;
+
+create database bstar;
+
+use bstar;
+
+create table players {
+	id		int(16)		not null auto increment,
+	s_player	char(16)	not null,
+	s_desc1		char(128)	default "",
+	s_desc2		char(128)	default "",
+	s_desc3		char(128)	default "",
+	primary key (id)
+	}
+
+create table units (
+	id 		int(16)		not null,
+	s_unit		char(16)	default "",
+	i_player	int(16) 	not null,
+	i_person	int(16)		default 0,
+	i_unittype 	int(8)		default 0,
+
+	i_pos_x 	int(16),
+	i_pox_y 	int(16),
+	b_vel_type 	int(1),
+	i_vel_x 	int(16),
+	i_vel_y 	int(16),
+	i_fleet 	int(16),
+
+	b_lidar		int(1),
+
+	t_lastup	int(16),
+	primary key (id)
+	);
+
+create table groups (
+	id		int(16)		not null,
+	s_group		char(16),
+	i_player	int(16),	not null,
+	i_grouptype	int(8)		default 0,
+
+	i_mainunit	int(16)		not null,
+	i_slowunit	int(16)		not null,
+	i_weakunit	int(16)		not null,
+
+	b_veltype	int(1),
+	i_vel_x		int(16),
+	i_vel_y		int(16),
+
+	b_ftl		int(1),
+	primary key (id)
+	}
+
+create table mods (
+	id		int(8)		not null,
+	s_mod		char(16),
+	i_modtype	int(8)		not null,
+	i_unit		int(16)		not null,
+
+	i_level	int(8),
+
+	i_task		int(8),
+	s_taskargs	char(256),
+	i_taskrate	int(8),
+	i_taskdone	int(8),
+
+	t_lastup	int(32),	
+	primary key (id)
+	);
+
+
+create table unittypes (
+	id		int(16)		not null auto_increment,
+	s_unittype	char(64)	not null,
+	primary key (id)
+	);
+
+#insert into unittypes (s_unittype) values
+#	("Star"),
+#	("Planet"),
+#	("Asteroid"),
+#	("Nebula"),
+#	("Battleship"),
+#	("Destroyer"),
+#	("Frigate"),
+#	("Plane"),
+#	("Station");
+
+create table grouptypes (
+	id		int(16)		not null auto_increment,
+	s_grouptype	char(64)	not null,
+	primary key (id)
+	);
+
+#insert into grouptypes (s_grouptype) values
+#	("System"),
+#	("Cloud"),
+#	("Fleet"),
+#	("Squad");
+
+create table modtypes (
+	id		int(16)		not null auto_increment,
+	s_modtype	char(255)	not null,
+	primary key (id)
+	);
+
+#insert into modtypes (s_modtype) values
+#	("Control"),
+#	("Engine"),
+#	("Hanger"),
+#	("Factory"),
+#	("Medical"),
+#	("Weapons"),
+#	("Academy"),
+#	("Support"),
+#	("Store"),
+#	("Shield");
+
+create table modtypecmds (
+	id		int(16)		not null auto_increment,
+	s_modtypecmd	char(16),
+	i_modtype	int(16),
+
+	s_cmd		char(4),
+	s_cmdargs	char(128),
+	s_cmdtags	char(128),
+	primary key (id)
+	};
+
+
+create table purchases (
+	id		int(16)		not null auto_increment,
+	s_orderno	char(32) 	not null,
+	t_date		date 		default null,
+	i_supplier	int(8) 		not null,
+	s_invoiceno	char(32),
+	primary key (id)
+	);
+#insert into purchases (s_orderno, t_date, i_supplier, s_invoiceno) 
+	#values ("OrderNo", "1977-01-01", 1, "InvoiceNo");
+
+create table suppliers (
+	id		int(8)		not null auto_increment,
+	s_supplier	char(64)	not null,
+	s_detail1	char(255),
+	s_detail2	char(255),
+	s_detail3	char(255),
+	primary key (id)
+	);
+#insert into suppliers (s_supplier, s_detail1, s_detail2, s_detail3)
+	#values ("Supplier", "Detail1", "Detail2", "Detail3");
+
+
+create table locations (
+	id		int(16)		not null auto_increment,
+	s_location	char(255)	not null,
+	i_costcentre	int(8)		not null,
+	primary key (id)
+	);
+#insert into locations (s_location, i_costcentre)
+	#values ("Location", 1);
+
+create table costcentres (
+	id		int(8)		not null auto_increment,
+	s_costcentre	char(255)	not null,
+	primary key (id)
+	);
+#insert into costcentres (s_costcentre) values ("CostCentre");
+
+create table departments (
+	id		int(8)		not null auto_increment,
+	s_department	char(64)	not null,
+	primary key (id)
+	);
+#insert into departments (s_department) values ("Department");
+
+create table ipaddresses (
+	s_ipaddress	char(15)	not null,
+	i_asset		int(32)		not null
+	);
+#insert into ipaddresses (s_ipaddress, i_asset) values ("10.1.1.71", 1);
+
+create table stationids (
+	id		int(16)		not null,
+	i_asset		int(32)		not null,
+	primary key (id)
+	);
+	
+create table descriptions (
+	id		int(64)		not null auto_increment,
+	s_description	char(255)	not null,
+	i_desctype	int(8)		not null,
+	i_asset		int(32)		not null,
+	primary key (id)
+	);
+#insert into descriptions (s_description, i_desctype, i_asset) 
+	#values ("Description 1", 1, 1);
+#insert into descriptions (s_description, i_desctype, i_asset) 
+	#values ("Description 2", 2, 1);
+#insert into descriptions (s_description, i_desctype, i_asset) 
+	#values ("Desc New 2", 2, 1);
+
+create table desctypes (
+	id		int(8)		not null auto_increment,
+	s_desctype	char(255)	not null,
+	primary key (id)
+	);
+insert into desctypes (s_desctype) values ("Name");
+insert into desctypes (s_desctype) values ("User");
+insert into desctypes (s_desctype) values ("Generic");
+
+
+create view xassets as
+	select assets.id, assets.s_serialno, statuses.s_status, models.s_model, devicetypes.s_devicetype, 
+		purchases.t_date, locations.s_location, costcentres.s_costcentre, departments.s_department
+	from assets, statuses, models, devicetypes, purchases, locations, costcentres, departments
+	where assets.i_status = statuses.id 
+	and assets.i_model = models.id
+	and models.i_devicetype = devicetypes.id
+	and assets.i_purchase = purchases.id
+	and assets.i_location = locations.id
+	and locations.i_costcentre = costcentres.id
+	and assets.i_department = departments.id;
+
+create view xnames as
+	select descriptions.i_asset, descriptions.s_description
+	from descriptions
+	where descriptions.i_desctype = 2;
+
+create view xdescs as
+	select descriptions.i_asset, descriptions.s_description, desctypes.s_desctype,
+		 descriptions.i_desctype, descriptions.id
+	from descriptions, desctypes
+	where descriptions.i_desctype = desctypes.id;
+
+create view xpcosts as
+	select assets.id, statuses.s_status, costcentres.s_costcentre, locations.s_location, departments.s_department,
+		models.s_model, models.s_brand, devicetypes.s_devicetype, devicetypes.f_pcost
+	from assets, statuses, costcentres, locations, models, devicetypes
+	where assets.i_location = locations.id and locations.i_costcentre = costcentres.id
+	and assets.i_department = departments.id
+	and assets.i_status = statuses.id and statuses.s_status = "Active"
+	and assets.i_model = models.id and models.i_devicetype = devicetypes.id 
+	and devicetypes.f_pcost > 1.00;
+
+create view xlcosts as
+	select assets.id, statuses.s_status, costcentres.s_costcentre, locations.s_location, departments.s_department,
+		models.s_model, models.s_brand, devicetypes.s_devicetype, devicetypes.f_lcost
+	from assets, statuses, costcentres, locations, models, devicetypes
+	where assets.i_location = locations.id and locations.i_costcentre = costcentres.id
+	and assets.i_status = statuses.id and statuses.s_status = "Active"
+	and assets.i_model = models.id and models.i_devicetype = devicetypes.id 
+	and devicetypes.f_lcost > 1.00;

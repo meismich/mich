@@ -1,0 +1,21 @@
+###############################################################################
+# SWZS/JSV.CFG
+# Last Modified:	2011-07-26
+# Author: 		Michael Spence
+###############################################################################
+
+
+#--------------------------
+# James Street Valley
+#--------------------------
+
+define host{
+        use             gen_hp2626_24p
+        host_name       cpe_core_hp2626_24p_1
+        alias           cpe_core_hp2626_24p_1
+        parents         apeqfovr01c18.ims.telstra.com.au
+        address         10.11.1.252
+	_WARNBPS	1000000,1000000
+	_CRITBPS	1500000,1500000
+        hostgroups      +lan_jsv,swz_core
+        }

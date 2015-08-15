@@ -1,0 +1,124 @@
+Dealership Network shares
+2011-03-14
+Michael Spence
+
+
+Audience:
+
+The intended audience for this document is field officers as they will be the personnel to implement this technique.  However, this document may be useful as a guide to Dealership managers and as such much of the explanation has been kept as simple as possible.
+
+
+Preamble:
+
+This document describes the techniques employed to give a consistent and similar feel to all network shares for each Dealership throughout APEagers.  This document describes a "best practices" solution to the requirement for dealerships to have a common area where files can be shared accross differing levels of employees.  This document describes how folders (and as a result the files within them) have been segregated using permissions to limit their access and how dealerships can request the change of these permissions.
+
+This document does not describe how ad hoc shares are to be implement.  But this document does urge that a solution be implemented INSTEAD of the creation of ad hoc shares.
+
+
+Background:
+
+Shares form the backbone of file sharing throughout APEagers.  Spreadsheets, literature and advertising materials are often required to be shared throughout a department or dealership.  This method is used in preference to email, as email has the complications of size and age of the file; often files are updated regularly throughout a day and an emailed copy is too static.
+
+Previously, the standard for creating shares was to create a share for every application required of the dealership.  This has created a burdensome task of maintaining multiple and often times obscure lists of names for whom permision is given to the share.  Regularly, this system was abused and the result has become a cumbersome legacy of file shares.
+
+The solution outlined in this document, gives a single share to a dealership.  The folders within the share are simply named and convey the departments to which they belong; this also conveys a sense of the permission entitled to a user.  
+
+On initial setup, the dealership will need to be interigated as to who should have access to which folders.  To facilitate this, a simple cross referencing spreadsheet should be produced so that department managers can employ these privileges.
+
+Once setup is complete, all users defined in the security matrix will gain the drive at next log on (computer bugs withheld :)).
+
+
+Steps for implementation:
+
+1. Create Folder structure
+
+2. Create Share
+
+3. Create Security Groups
+
+4. Apply Securities to Folders
+
+5. Generate Securities Matrix
+
+6. Apply Matrix to Security Groups
+
+7. Configure AutoDrives
+
+
+
+Steps in Detail:
+
+1. Create Folder structure
+
+At each campus there is a file server - please verify with the System Administrator that this is the most appropriate server for your site.  Upon this server, place a directory on the "Data" drive named "Data\<Brand>", where Brand is the brand you are dealing with (ie Ford, or Mazda for example).
+
+Beneath, this folder you will place a folder for each department with in the dealership.  Some dealerships may not need all the folders listed below, but these should be catered for in any case.
+
+Departments:
+Admin
+CRM
+Fleet
+Parts
+Pre-Delivery
+Sales New
+Sales Used
+Service
+
+You may also be required to add a "General" folder, which is to be used for the entire department, without any security restrictions.  Also please refer to the "D.O.C. setup guide" for issues relating to the more complicated DOC file system.
+
+
+2. Create Share
+
+The initial folder you setup is to be the only folder shared at this point.  Give this share a name relative to the dealership to which it belongs.  The formula for the share name is:
+
+	"<dealership code>.data"
+
+"dealership code" is defined in the "Common initials document"
+
+
+3. Create Security Groups
+
+Using AD, create a folder under the dealership's folder named "_<dealership code> Share Groups".  Beneath this, create a master group named "_<dealership code> Share Users".  This master group will contain all the other department group (including the master DOC group if this function is used).
+
+For each department for which a folder was setup, create a security group named "_<dealership code> <department> Users".  Employees will then be added to these groups only (see step 6).  Add each group to the master group, as suggested previously.
+
+
+4. Apply Securities to Folders
+
+Back on the file server, ensure that the entire directory structure has Permissions set to "Everyone".  
+
+The base folder is to be set with the security "Read" and "Execute" for the master security group.  Ensure that securities ARE NOT being propogated to children, as this will create more work for you.
+
+For each department folder, apply "read", "write" and "execute" permissions to the security group relating to it.  Ensure that securities ARE being propogated to children.  If permissions have propogated from the parent to a folder, you will need to remove the master group permissions as this will give unwarranted permissions to people.
+
+
+5. Generate Securities Matrix
+
+From AD create a list of the employees at the dealership.  (Tools have been created to perform this function, but it could be done by typing these names into Excel... if you are desperate.)  The names should appear in one column only.
+
+Next create a column for each Department in the dealership.  Finally pretty the document up, by turning the column titles, so that the columns are quite narrow.  Give the whole document a title, and a date etc.  (See the example at the end of this document if you want an example.)
+
+From now on, this matrix should become the property of the General Manager of the Dealership.  It should be his responsibililty (or the responsibility of his appointed representative) to fill in this matrix and ensure that it is up to date and correct.  This document will represent the applied permissions to the department folders created.  It will have to be updated from time to time to include new employees and remove past ones.
+
+Hand this document to the GM and allow him time to fill in the grid.  Demonstrate how this is to be done.
+
+(Please keep in mind the DOC inclusions if they are being used.)
+
+
+6. Apply Matrix to Security Groups
+
+Now that there is a completed matrix, apply the appropriate names to the security groups.  This can all be done in AD, and can also be done in batches (ie select multiple names, right click and add to group).
+
+The people ticked in the matrix will at this point now have access to the file share.  This can be tested and demonstrated.
+
+
+7. Configure AutoDrives
+
+Systems have been setup to cause file shares to be mapped automatically to users' computers.  This is achieved by configuring the AutoDrives function.  using AD add the master group to the "AutoDrives" security group.  This will cause the users to run a particular group policy, which in turn runs the Autodrives script.
+
+The script requires that configuration details be added to a particular configuration file.  Using Explorer, navigate to 
+
+	\\apeagers.com.au\sysvol\apeagers.com.au\etc
+
+Currently the configuration file to be used is "gabba_user_drives.txt".  Open this file for editing.  Add to the end of this file an entry for your newly created share.  The first field is indicative of the master group you have created - note that this entry must be in lower case only.  The second field is the UNC path to the share.  The final fields are the drive letter to be used and a symbolic name (which is not necessary).
+

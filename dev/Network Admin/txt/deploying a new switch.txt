@@ -1,0 +1,164 @@
+Deploying a New Switch
+2010-08-31
+Michael Spence
+
+
+Audience
+
+IS Field Support staff are responsible for the execution of this procedure in most circumstances.  In the case of the Eight Mile Plains data centre, ISS Field Support staff are excluded from this responsibility and senior ISS staff are responsible instead.
+
+
+Preamble
+
+This document defines the procedure for deploying a new switch withing the Queensland and Northern Territory network environment.
+
+This procedure does not outline the necessary steps for setting the IP address or gateway details for the switch.  It is assumed the responsible party possesses these basic skills.
+
+This procedure does not identify the maintenance or replacement procedures related to switches.
+
+This procedure only relates to the Queensland and Northern Territory network, and excludes all other network environments.
+
+This procedure outlines the base configuration necessary for a standard switch.  Any further configuration such as VLANs and module configuration falls out of the scope of this document.
+
+It may be neccessary to refer to the following related procedures: Adding devices to the Asset Database, Help Desk call procedures and Switch Maintenance.
+
+
+Entry Criteria
+
+Helpdesk call received from ISS Manager or ISS Systems Adminstrator, requesting the configuration and deployment of a new switch.
+
+
+Steps to be performed
+
+1. Access the Switch
+2. Enter Configuration Mode
+3. Name the Switch
+4. Give Switch IP Address
+5. Configure Security
+6. Configure SNMP & NTP Seetings
+7. Save Configuration
+8. Finalise In-house Tasks
+
+
+Steps in Detail
+
+The following configuration guidelines are assumed for 'standard' site installs.  It is assumed common sense should be used if the site install falls out of the 'standard' install scope.
+
+Access the Switch
+
+For a new switch, the easiest method for accessing a switch is via the console port of the switch.  This is preferred in all cases, but after configuration is complete, you can access the IOS via Telnet also.  
+
+To access the switch via a console cable, connect the supplied cable to the switch and your computer.  Start up Hyperterminal and configure a new session with a baud of 9600 and turn "Hardware control" off.
+
+Once you start the session, press enter a number of times and the IOS should become visible and you will be able to log onto the switch if a password is set.  Note: for Cisco switches the default password is "Cisco"  ** please verify **
+
+
+Enter configuration Mode
+
+To enter configuration mode on a switch (for both Cisco and HP switches) enter the command:
+
+	configure terminal
+or
+	conf t				 for short
+
+The prompt will now display "(config)" after the hostname.
+
+
+Name the Switch
+
+The naming scheme follow the formula outlined in "Standard Naming Conventions", for your reference the formula is:
+
+	<switch_name> = <campus_code>_[switch_role]_[switch_model]-[no_ports]_[n]
+		where "switch role" is "core", "data" or "tipt"
+		where "switch model" is the model of the switch (e.g. c2560)
+		whree "no_ports" is the number of standard ports on the switch
+		where "n" is the next number in the series
+
+While configuring the switch enter the command:
+
+	hostname <switch_name>
+
+
+Give Switch IP Address
+
+Using the "IP Addressing scheme" determine a valid IP address for this switch at the campus it will be located.  Verify that there are no other devices using this IP address.  Also determine the Mask and Gateway for this location.
+
+For Cisco switches, while configuring the switch enter the following commands:
+
+	ip default-gateway [gateway]
+	interface vlan1
+	ip address [ip_address] [net_mask]
+	exit
+
+For HP switches, while configuring the switch enter the following commands:
+
+	ip default-gateway [gateway]
+	vlan 1
+	ip address [ip_address] [net_mask]
+	exit
+	
+
+Configure Security
+
+Set the passwords for the switch as soon as possible, as this will deter other non authorised people from making unneccessary changes to the configuration.  You should know the two passwords required for this configuration, known as "Line Password" and "Privileged Password".
+
+For Cisco switches, while configuring the switch enter the following commands:
+
+	enable secret level 5 <privileged_password>
+	service password-encryption
+	line con 0
+	password <line_password>
+
+For HP switches, while configuring the switch enter the following commands:
+
+	password manager <privileged_password>
+	password operator <line_password>
+	no front-panel-security password-clear
+
+
+Configure SNMP & NTP Settings
+
+So that the switch can be monitored sucessfully, SNMP needs to be enabled, but also set so that external people can not write to these values.  Also so that the switch reports the correct time, we use our network time server.
+
+For Cisco switches, while configuring the switch enter the following commands:
+
+	snmp-server community apsnmpro ro
+	snmp-server community apsnmprw rw
+	ntp server 10.1.1.43
+
+For HP switches, while configuring the switch enter the following commands:
+
+	snmp-server community apsnmpro restricted
+	snmp-server community apsnmprw operator
+	sntp server 10.1.1.43
+
+
+Save configuration
+
+Each time you make a change, it is advised that the changes be copied to the flash of the machine, so that when the switch is rebooted next, these changes are kept.
+
+For a Cisco switch, you must not be in configure mode.  Type exit until you no longer have "(xxx)" displayed next to hostname.  You can then enter the following command:
+
+	copy running-config startup-config
+
+For a HP swithc, you may be in any configuration level.  Enter the following command:
+
+	write memory
+
+
+Finalise In-house Tasks
+
+All switches should have their documentation saved in text file in a common location.  Currently the location for these files is:
+
+	\\gabbafs\it.data\Services Department\Local Area Networks
+
+Display the running config of the switch using the following command:
+
+	show running-config
+
+This will print the entire running configuration to screen, which you can copy piecemeal into a text document.  Alternatively you could copy the entire contents of your session, but you will have to delete extra lines.
+
+Update the Asset database with Serial Number, Model Type, IP Address, Name and other relevant information.
+
+Add necessary call notes and information to the open helpdesk call and close according to Helpdesk Call procedures.
+

@@ -1,0 +1,4 @@
+use assets;
+
+select i_asset, s_i8type, s_interog8
+	from xinterog8s;

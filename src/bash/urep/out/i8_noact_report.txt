@@ -1,0 +1,386 @@
+==========================================================================
+INTEROG8 Data But NOT Active
+
+Total Assets: 29
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700064	L3AE064	2014-03-13	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-13
+	IP Address:	10.19.254.37
+	IP Address:	0.0.0.0
+	Device Name:	TRAINING26
+	Mapped Drive:	\\bne-fsap_desktop_homedlillington
+	Install Date:	20091109154246.000000+600
+	User Name:	dlillington
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800440	XSU8Z00076	2014-03-10	Printer
+
+Interog8 Data
+	Page Count:	77381
+	Device Name:	10.32.3.170
+	User Name:	pmon.printer
+	Version:	v2.1
+	INTEROG8 D8:	2014-03-10
+	Mapped Drive:	FS-1350DN
+	IP Address:	10.32.3.170
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800740	1A060184H	2014-03-12	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-12
+	IP Address:	10.10.253.111
+	IP Address:	0.0.0.0
+	IP Address:	10.10.253.111
+	Device Name:	SUCADM1
+	Install Date:	20100517125747.000000+600
+	User Name:	bsmith
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800846	2A135346H	2014-03-06	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-06
+	IP Address:	fe80::7526:79fa:3a41:fd9e
+	IP Address:	10.34.254.13
+	Device Name:	SSFIDSA
+	Install Date:	20120516163450.000000+600
+	User Name:	ssfwshop
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800848	2A133640H	2014-04-01	Notebook
+
+Interog8 Data
+	User Name:	abroughton
+	Version:	v2.1
+	INTEROG8 D8:	2014-04-01
+	IP Address:	10.10.2.52
+	IP Address:	0.0.0.0
+	IP Address:	10.10.2.52
+	Device Name:	MFNSHO3
+	Install Date:	20100525153211.000000+600
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800951	B096848/001	2014-03-05	PC
+
+Interog8 Data
+	IP Address:	10.10.3.65
+	Device Name:	ENSSVCE
+	Mapped Drive:	\\newsteaddcENS.Service
+	Mapped Drive:	\\bne-fscorp.data
+	Mapped Drive:	\\newsteaddcens.ss
+	INTEROG8 D8:	2014-03-05
+	Install Date:	20100713145523.000000+600
+	User Name:	lhowkins
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130428	5D135513H	2014-03-20	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-20
+	IP Address:	10.10.253.34
+	Device Name:	EMZSHO130428
+	Install Date:	20131216134806.000000+600
+	User Name:	mflack
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130403	B105574/006	2014-04-02	PC
+
+Interog8 Data
+	INTEROG8 D8:	2014-04-02
+	IP Address:	fe80::fd58:e84b:8a:8acb
+	IP Address:	10.10.5.17
+	Device Name:	EMZSVC130400
+	Install Date:	20131129093554.000000+600
+	User Name:	cduitsch
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130375	NUL3200790	2014-04-02	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2014-04-02
+	Mapped Drive:	FS-4100DN
+	IP Address:	10.19.15.150
+	Page Count:	9373
+	Device Name:	10.19.15.150
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130372	NUL3200787	2014-04-02	Printer
+
+Interog8 Data
+	Page Count:	5072
+	Device Name:	10.10.3.176
+	User Name:	pmon.printer
+	Version:	v2.1
+	INTEROG8 D8:	2014-04-02
+	Mapped Drive:	FS-4100DN
+	IP Address:	10.10.3.176
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130337	R3702563	2014-03-21	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-21
+	IP Address:	fe80::ec9a:3430:400c:6cd0
+	IP Address:	10.32.254.46
+	Device Name:	DARCTOP
+	Install Date:	20140203162339.000000+600
+	User Name:	mjmadmin
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130318	5D135511H	2014-03-31	Notebook
+
+Interog8 Data
+	Install Date:	20140331121739.000000+600
+	User Name:	jlipton
+	Version:	v2.1
+	INTEROG8 D8:	2014-03-31
+	IP Address:	fe80::3196:4703:279c:fdac
+	IP Address:	10.16.254.65
+	Device Name:	AURSHO130318
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130053	B104421/007	2014-04-01	PC
+
+Interog8 Data
+	Install Date:	20130318151301.000000+570
+	INTEROG8 D8:	2014-04-01
+	User Name:	hmladmin
+	Version:	v2.1
+	IP Address:	fe80::bd53:1648:ca8f:7f35
+	IP Address:	10.50.253.78
+	Device Name:	BTDIT130053
+	Mapped Drive:	\\gabbafsxfer
+	Mapped Drive:	\\dwn-fsit
+	Mapped Drive:	\\btpfsxfer
+	Mapped Drive:	\\it-fsit.dataProjects
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100073	5A111727H	2014-03-06	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-06
+	IP Address:	10.34.254.24
+	IP Address:	0.0.0.0
+	IP Address:	10.34.254.24
+	Device Name:	SSFIDSB
+	Install Date:	20130709101501.000000+600
+	User Name:	ssfwshop
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100077	5A111728H	2014-03-05	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-05
+	IP Address:	10.25.254.49
+	IP Address:	0.0.0.0
+	IP Address:	10.25.254.49
+	Device Name:	APCORP11
+	Install Date:	20100913083417.000000+600
+	User Name:	mhung
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100162	B098034/002	2014-04-02	PC
+
+Interog8 Data
+	Device Name:	ENSSVC110284
+	Mapped Drive:	\\newsteaddcENS.Service
+	Mapped Drive:	\\bne-fscorp.data
+	Mapped Drive:	\\newsteaddcens.ss
+	Install Date:	20140305080047.000000+600
+	User Name:	lhowkins
+	INTEROG8 D8:	2014-04-02
+	IP Address:	fe80::ddb8:cbf3:93bc:d6ce
+	IP Address:	10.10.253.132
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100255	B098499/010	2014-03-11	PC
+
+Interog8 Data
+	Device Name:	SMTFIN
+	INTEROG8 D8:	2014-03-11
+	IP Address:	10.5.4.26
+	Mapped Drive:	\\bne-fscorp.data
+	Mapped Drive:	\\sstfssst.data
+	Mapped Drive:	\\bne-fsf&i.data
+	Install Date:	20101229132948.000000+600
+	User Name:	davidc
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110074	7A064990H	2014-03-31	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-31
+	IP Address:	fe80::f8ab:271b:711:7a86
+	IP Address:	10.12.254.23
+	Version:	v2.1
+	Device Name:	EWNSHOY
+	Install Date:	20100620020842.000000+600
+	User Name:	dbatley
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110263	B100193/002	2014-03-17	PC
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-17
+	IP Address:	10.34.254.58
+	Device Name:	SSTSTK1
+	Mapped Drive:	\\sstfssst.data
+	Mapped Drive:	\\SSTFSSST.DATAREGOS
+	Install Date:	20110906113335.000000+600
+	User Name:	megan.stewart
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110332	B100373/004	2014-03-08	PC
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-08
+	IP Address:	10.2.7.27
+	IP Address:	fe80::4d7a:7e23:b6c3:136f
+	Device Name:	SSHSHOY
+	Mapped Drive:	\\sshfsdata
+	Mapped Drive:	\\bne-fscorp.data
+	Mapped Drive:	\\bne-fsf&i.data
+	Install Date:	20110811113313.000000+600
+	User Name:	amacdonald
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110368	6B109895H	2014-03-21	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-21
+	IP Address:	fe80::a9d1:7f29:4d9e:21ee
+	IP Address:	10.34.254.75
+	Device Name:	APTRN110368
+	Install Date:	20110520001242.000000+600
+	User Name:	training8
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110470	7B120664H	2014-03-21	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-21
+	IP Address:	fe80::709c:9102:4733:d127
+	IP Address:	10.34.254.87
+	Device Name:	APTRN110470
+	Install Date:	20131018123945.000000+600
+	User Name:	training10
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120020	7B129100H	2014-04-02	Notebook
+
+Interog8 Data
+	ERA Link:	ERA Link Plus
+	IP Address:	fe80::6402:3160:e8ef:4c23
+	Version:	v2.1
+	IP Address:	10.10.253.28
+	IP Address:	fe80::5487:1031:25c7:cbba
+	IP Address:	10.10.253.96
+	Device Name:	SCIADM120020
+	Mapped Drive:	\\newsteaddcauw.data
+	Mapped Drive:	\\bne-fscorp.data
+	Install Date:	20131216155241.000000+600
+	User Name:	sreah
+	INTEROG8 D8:	2014-04-02
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120283	4C056602H	2014-03-04	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-03-04
+	IP Address:	fe80::9ce0:9770:448d:c389
+	IP Address:	10.32.254.21
+	Device Name:	AUPSMGR
+	Install Date:	20120816184738.000000+600
+	User Name:	dmarshall
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120615	B104000/005	2014-04-02	PC
+
+Interog8 Data
+	Device Name:	AUHRCPT1
+	Mapped Drive:	\\newsteaddcAustral.Regos
+	Mapped Drive:	\\newsteaddchonda sales
+	Install Date:	20140130075118.000000+600
+	INTEROG8 D8:	2014-04-02
+	User Name:	reception.honda
+	Version:	v2.1
+	IP Address:	fe80::d119:1561:dfe9:931
+	IP Address:	10.10.7.50
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20140012	NR53X02236	2014-04-02	Printer
+
+Interog8 Data
+	Mapped Drive:	FS-1135MFP
+	IP Address:	10.10.7.161
+	Page Count:	1553
+	Device Name:	10.10.7.161
+	User Name:	pmon.printer
+	Version:	v2.1
+	INTEROG8 D8:	2014-04-02
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20140035	B105964/015	2014-04-01	Zbox
+
+Interog8 Data
+	Device Name:	BMAMGR140035
+	Mapped Drive:	\\bma-wwwfileshare
+	Install Date:	20130703133814.000000+600
+	User Name:	mikek
+	Version:	v2.1
+	INTEROG8 D8:	2014-04-01
+	IP Address:	fe80::85e8:4837:e9e4:5c8e
+	IP Address:	10.32.254.70
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20140077	LWD4100087	2014-04-02	Printer
+
+Interog8 Data
+	Page Count:	3487
+	Device Name:	10.34.1.178
+	User Name:	pmon.printer
+	INTEROG8 D8:	2014-04-02
+	Version:	v2.1
+	Mapped Drive:	ECOSYSM6026cdn
+	IP Address:	10.34.1.178
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20140092	6D049524H	2014-04-02	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-04-02
+	IP Address:	fe80::b8ba:d5c7:34b7:f8e
+	IP Address:	10.12.254.36
+	INTEROG8 D8:	2014-04-02
+	IP Address:	fe80::b8ba:d5c7:34b7:f8e
+	IP Address:	10.12.254.36
+	Device Name:	EWNSHO140092
+	Device Name:	EWNSHO140092
+	Install Date:	20140213142731.000000+600
+	Install Date:	20140213142731.000000+600
+	User Name:	sjansen
+	Version:	v2.1
+	User Name:	yfadmin
+	Version:	v2.1

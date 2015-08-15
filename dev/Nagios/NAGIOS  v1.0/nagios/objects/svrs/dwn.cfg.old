@@ -1,0 +1,26 @@
+###############################################################################
+# SVRS/DWN.CFG
+# Last Modified:	2011-07-29
+# Author:		Michael Spence
+###############################################################################
+
+# dwnts.darwin
+define host{
+        use             windows-host
+        host_name       dwnts
+        alias           Darwin TS Server
+        parents         dwn_core_hp2510_48p_1
+        address         10.50.1.2
+        hostgroups      lan_dwn,windows-servers,svr_app
+        }
+
+# darwinbk.darwin
+define host{
+        use             windows-host
+        host_name       darwinbk
+        alias           Darwin Backup Server
+        parents         dwna_data_hp2510_48p_1
+        address         10.50.1.10
+        hostgroups      lan_dwn,windows-servers,svr_app
+        }
+

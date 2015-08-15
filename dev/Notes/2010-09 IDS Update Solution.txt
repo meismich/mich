@@ -1,0 +1,14 @@
+IDS Update Solution
+Michael Spence
+2010-09-30
+
+purpose:
+To explain the numerous different steps I've taken to repair the update facility on the Ford IDS machines.
+
+
+2010-09-30
+Uninstalled the IDS program, reinstalled version 68.  Tried running the Software Manager to see if updates were available.  SM quoted that there wasn't - even though the program had been at version 68.02 prior to the uninstall.  
+
+Then deleted the .ini files in the directory "C:\documents and settings\mfvsvci\Application Data\FLEXnet\Connect\Database\." and also the registry entry "HKCU\Software\InstallShield\DownloadManager\Files\68.02"
+
+Re-ran SM and voila there was an update 68.11 available.  Ran update.  System now functional but needs credentials due to the clean install.

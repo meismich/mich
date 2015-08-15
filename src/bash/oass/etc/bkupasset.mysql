@@ -1,0 +1,3 @@
+use assets;
+
+select * from assets into outfile '/home/mspence/src/oass/bup/assets.data';

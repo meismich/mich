@@ -1,0 +1,77 @@
+Microsoft 365 - User Administration Guide
+2011-07-15
+Michael Spence
+
+
+Audience:
+
+Currently this documentation is for all Administrators of the Microsoft 365 system for APEagers.  This document is NOT for general use.  It is assumed the user of this guide is aware of the security implications demonstrated within this document.
+
+
+Preamble:
+
+This document describes the procedure for creating a new mailbox user account.
+
+This document describes how to reset a password for an account.
+
+This document describes how to enable mail forwarding for an account.
+
+This document DOES NOT describe how to migrate users, configure domain names or configure internal systems (including Outlook).
+
+
+Topics of Discussion:
+
+1. Online Portal
+2. New User Creation
+3. User Renaming
+4. Password Reset
+5. Mail Forwarding
+
+
+Topics in Detail
+
+1. Online Portal
+
+All users of the Microsoft 365 system have the ability to connect to the online portal at the following address:
+
+	https://portal.microsoftonline.com
+
+From here users can configure their passwords and also their forwarding email addresses.  Make users aware of how to change their passwords, but please limit the knowledge of email address forwarding.
+
+The online portal also allows users to access their emails from outside the APEagers network, in a similar way to the OWA system attached to the internal Exchange system.
+
+It is also this portal which must be used to administer user accounts.  To start administration of a user, log into this site.  At the top of the presented page, there is at least a "Home" link.  This link directs a user to their default view.  For an Admin, the word "Admin" appears at the top also.  It is this Admin link which displays the required admin functions.  Some functions will be denied to some Administrators, so for the sake of this document, only the user administration functions will be described.
+
+From the Admin home page, navigate to the "Users" management page using the link provided in the left hand side menu.  This will present a list of some of the users, with a search function and a set of actions (including "New", "Edit" and "Reset Password").
+
+
+2. New User Creation
+
+From the Users administration page, click the "New" action located above the list of users.  This will display a drop down list where "User" can be selected, to create a new mailbox.
+
+Enter the appropriate properties into the properties fields.  Please use the correct domain from the domain drop down list located right of the user name.  If appropriate, fill in the Additional Properties for the new user.  Click "Next" to continue.
+
+Under settings, unless it is necessary, do not assign a user administrator rights.  The users location is to be set to "Australia".  Click "Next" to continue.
+
+There is only one licence, which will be assigned to users at this stage.  The other licences are still being discussed and validated for use within APEagers.  Please only select the "Exchange Online (Plan 2)" option for ALL users.  Click "Next" to continue.
+
+When the account is completed, an email can be sent, which contains the user name and temporary password for the new account.  This may not be necessary as the same information will be displayed in the following step.
+
+Please encourage the new user to access the portal immediately and have them change their password.
+
+
+3. User Renaming
+
+From the User admin page, "tick" the box near a users name and press "Edit" from the actions above the list.  The same details which were configured at creation, can be altered from the "Properties" section for that user.
+
+
+4. Password Reset
+
+From the User admin page, "tick" the box near a user's name and press "Reset Password".  Once the "Reset Password" button has been clicked on the next page the user's password will be altered to the new randomly generated password.  There is the option to have the details of this change emailed to someone, but the results do appear on the final page of this process.
+
+
+5. Mail Forwarding
+
+From the Admin page, choose "Manage" located beneath "Exchange Online".  This option will open a new tab in the browser and display the "Exchange Online" system.  In the top left there is the dropdown list containing "Myself", "My Organisation" or "Another User".  Select "Another User" and a list will appear prompting for a user to be selected.  There is a search option at the top to make life easier.  Select the appropriate user.
+
+Once the user has been selected, another window will open displaying Account information about the user.  On the right of this page, there is the option to "Forward you email".  Click on this link and the following page will display an area (at the bottom) where a forwarding address can be entered.  Click the "Start Forwarding" link to finalise changes.

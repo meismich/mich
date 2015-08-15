@@ -1,0 +1,26 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:40:17 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/BUR_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/BUR.webhosts 
+Host: 10.2.1.235 ()	Ports: 23/open/tcp//telnet///
+Host: 10.2.1.237 ()	Ports: 23/open/tcp//telnet///
+Host: 10.2.1.238 ()	Ports: 23/open/tcp//telnet///
+Host: 10.2.1.239 ()	Ports: 23/open/tcp//telnet///
+Host: 10.2.1.249 ()	Ports: 23/open/tcp//telnet///
+Host: 10.2.1.250 ()	Ports: 23/open/tcp//telnet///
+Host: 10.2.1.251 ()	Ports: 23/open/tcp//telnet///
+Host: 10.2.1.252 ()	Ports: 23/open/tcp//telnet///
+Host: 10.2.7.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.151 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.152 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.153 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.154 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.155 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.156 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.158 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.159 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.160 ()	Ports: 23/open/tcp//telnet///
+Host: 10.2.7.161 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.164 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.165 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.166 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.173 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.2.7.180 ()	Ports: 23/open/tcp//telnet///
+# Nmap done at Tue Apr  1 16:40:17 2014 -- 24 IP addresses (24 hosts up) scanned in 0.04 seconds

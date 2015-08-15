@@ -1,0 +1,142 @@
+New Computer Setup Policy
+2010-08-17
+Michael Spence
+
+Audience:
+
+Currently this documentation is for Field Support Officers only.  In the future, I do not forsee as yet other appropriate persons to whom this document may apply.  It is assumed that a Field Support Officer understands how to apply new IP addresses and use the command prompt for windows.
+
+
+Preamble:
+
+This document applies to the Setup of a New computer in a dealership.  Generally, this document would be followed also when a new user is setup at a dealership.  Please refer to "New User Setup Policy.txt" to perform the AD User Setup.  The term "New Computer" refers to any additional PC, including recycled PCs (aka titans) and also a PC which has moved location within a dealership.
+
+This procedure also assumes that the computer has a APEagers IT SOE image on the machine from our supplier.  If the computer DOES NOT have this style of setup on it, at boot please follow "Imaging a PC Guide.txt" or "Building SOE Guide.txt" to get the machine to this standard.
+
+This document DOES NOT apply to new computers put in place in the IT department, Corporate, servers in dealerships, or specialised machines in a dealership.  Special consideration outside the scope of this document needs to be made in these cases.
+
+
+Steps to Follow:
+
+The following steps are required to be followed during the setup of a new computer in a dealership.
+
+1. Assign Static IP
+
+2. Assign Name
+
+3. Join Computer to Domain
+
+4. Make Domain Users Administrators
+
+5. Install LanDesk and McAfee
+
+6. Map Network Drives
+
+7. Install Printers
+
+8. Licence Office 2007
+
+9. Setup User
+a) Configure MS Outlook
+b) Install/Configure Dealership Applications
+c) Configure TIPT Toolbar
+
+10. Assign New ERA Workstation Number
+
+11. Update Asset Database
+
+12. Label Machine
+
+
+
+Steps in Detail:
+
+0. Follow Setup Procedure
+
+When the computer is turned on for the first time after having the SOE installed on it, it will need an initial setup performed on it.  This is part of the "oobe" setup, you will need to supply the local administrator password, the Microsoft License key for XP and create a local user "user".
+
+(when the machine boots you should use the local administrator from this point until told later to use a domain account)
+
+1. Assign Static IP
+
+Using another PC, determine a valid IP address for the new machine by referring to "IP Addressing Scheme.xlsx", which will generate the 2nd and 3rd octets.  Consult the Asset Database for the next available IP address and confirm that this address is not in use by using "ping" and "nslookup".  Appropriatecommand line commands would be:
+
+ping a.b.c.d
+  and
+nslookup a.b.c.d
+
+If these return valid results, do not use the IP address; find another.
+
+Confirm the gateway for the campus, where the PC is located.  This may have to be determined by examining another machine at the same location.  In almost all cases the subnet mask will be "255.255.0.0".
+
+Currently our internal DNS servers (for the Brisbane district) are 10.1.1.43 (primary) and 10.1.1.42 (secondary).
+
+
+2. Assign Name
+
+Right-click "My Computer" -> "Properties" -> (tab) "Computer Name".  Press "Change" to assign computer name.  Refer to "Standard Naming Conventions.txt" to generate applicable name and then consult the Asset Database for the next available name in the series.  Assign this computer name to the computer and Press OK.  This will cause machine to reboot.  Allow machine to Reboot.
+
+
+3. Join Computer to Domain 
+
+Again, right-click "My Computer" -> "Properties" -> (tab) "Computer Name".  Press "Change" to add computer to the domain.  Change the membership (below the computer name) to "Member of..."  "(x) Domain".  Fill in the domain field with "apeagers.com.au".  You will be asked to supply domain admin credentials at this stage.  Fill in the required fields with your domain account and press enter.  If computer is connected to network correctly (ie correct IP address/gateway/DNS settings), computer will join domain.  This will cause a reboot.  Allow machine to Reboot.
+
+
+4. Make Domain Users Administrators
+
+Manage the computer, by Right-click "My Computer" -> "Manage".  Using the "Local Users and Groups", select the "Administrators" under "Groups" and add "Domain Users" to the set of administrators.  You will need to supply domain admin credentials at this stage.
+
+(you must now use domain accounts to log onto the machine.  preferrably use the computer user instead of your credentials.  this keeps the computer free of other accounts.)
+
+
+5. Install LanDesk and McAfee
+
+Follow the instructions for installing "Landesk" and "McAfee", which are found on "\\gabbafs\xfer" or alternatively "\\nas\nas"
+
+
+6. Map Network Drives
+
+Each dealership has a set of drives which will need to be connected for the user.  Please refer to another user of the same type (ie salesperson, admin, etc) to determine the appropriate shares that the user should have.  You may need to talk to the manager for the user to determine what the user should have access to.
+
+
+7. Install Printers
+
+Always install at least one printer on a new machine.  Generally, I would install the "main" printer, which is often located at reception, by default.  Some departments will have seperate printers, use these instead if you think it is appropriate.  DO NOT install colour printers unless a manager requests that this user has access to this facility.  Colour printing costs a lot more than B&W and its use should be minimised.
+
+
+8. Licence Office 2007
+
+Run a Microsoft Office program (ie Word or Excel, etc).  When first run on a computer, the program will ask to be Licenced and will prompt you for the Licence Key for this machine.  Each new machine is bundled with the OEM style licence for MS Office.  Type this key into this field when prompted.  And finish this process.
+
+Close the program and open it again.  This time when the program starts it will ask to be activated.  You will have to navigate using IE to a website outside of the APEagers domain; I prefer to go to "www.google.com.au".  Now using the activation process, press "Activate" under the SBE column (note the second column is only for upgrading.... do not do this!).  It will now attempt to activate via the internet the licence you supplied above.  This should complete quickly, if internet access is available.
+
+
+(you must now use the AD user account to setup user.  primary reason it was easier to login with this account before step 5.)
+
+9. Setup User
+a) Configure MS Outlook
+
+Start MS Outlook.  If this is Outlook 2007 (which it should be), press "Next" until completed.  This should find our Exchange server and the credentials for the current user.  This will setup Outlook successfully.
+
+b) Install/Configure Dealership Applications
+
+Some dealerships have specific programs for specific departments, it may be necessary to confer with the users manager to determine what if any programs this user may need.  Refer to the installation procedures for the programs to install these programs.  Some programs are to be installed by the dealerships (eg Microcat, etc), but you may be required for assistance.
+
+c) Configure TIPT Toolbar
+
+Some dealerships are now using TIPT phones and along side this system is a convenient toolbar which appears in Outlook and IE.  If this user is using a TIPT phone (and this includes phones patched into an IAD), install the toolbar from "\\gabbafs\xfer\phone&modem\telstra\telstra telephony".  Start IE after installation is complete and fill in the user credentials.  Username is (in almost all cases) "<phone number>@apegaers.com.au, where <phone number> is the full phone number including area code.  Password should be set as "password1", "password" or "password2".  If not have someone reset this password for this phone number.
+
+
+10. Assign new ERA Workstation Number
+
+Ring the Helpdesk and ask for the operator to generate a new workstation number for the computer.  Inform the user of this number.
+
+
+11. Update Asset Database
+
+The Asset Database is a database system which records all PC's, printers and IT related equipment.  It is necessary that this is kept up to date as it forms the basis for billing the dealerships for our equipment and time.  Record all details about the computer, including "Serial Number", "Model Number", "MS Office SBE Key", "User Name", "Machine Name", "IP Address", "Workstation Number", "Dealership", "Department".  You may also wish to add "Generic" descriptions to the PC, any number of descriptions can be added to the asset.
+
+
+12. Label Machine
+
+This step is extremely important for reference, so that users can reference their computers in Helpdesk calls easily.  Label the tower or laptop screen with "<computer name> <ip address> <workstation>" and for desktops also label monitor with "<workstation> <computer name>".

@@ -1,0 +1,26 @@
+BNE-EPO
+
+
+Login to bne-epo
+Use domain admin credentials
+
+Start ePolicy Orchestra (icon on desktop)
+
+Login to ePO
+
+Login details
+u/n: admin 
+p/w: that's a mighty woody
+
+
+Use the "System Tree" to display the Organisational breakdown.  For each "Product" and "Organisation" there is a set, describing the "Policy" for each "Category".
+
+To change program access, you will need to select the Policy for the specific category you are being blocked in.
+
+For example "Access Protection Policies" controls how programs on the clients access the network, ie determines which ports are accessible etc.
+
+Select the Policy.  This will display the rules for the policy, which you will need to select from.  The AccessProtectionLog will display the Category and Rule being used to block action.  Select the appropriate Category and then rule.  You can now press "Edit...", which takes you to the Rule editing screen.
+
+To exclude a process from the rule, you need to add its executable name to the list of "Processes to exclude"
+
+

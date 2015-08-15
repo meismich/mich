@@ -1,0 +1,3 @@
+use assets;
+
+select s_devicetype, count(*) from xassets where s_status='Active' group by s_devicetype;

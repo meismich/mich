@@ -1,0 +1,136 @@
+Creating a New FTP Host on the Dedicated Web Server
+2010-08-30
+Michael Spence
+
+
+Audience
+
+The IS Systems Administrator is responsible for the execution of the procedure.
+
+
+Preamble
+
+This is the primary procedure for creating a new FTP host on the dedicated web server.  This procedure is limited to the FTP configuration related to the dedicated web server based at WebCentral.
+
+This procedure does not identify details regarding maintenance of FTP hosts, nor any other IIS function related to the dedicated web server.
+
+This procedure assumes a domain name already exists for the new FTP host and that the DNS is managed via Telstra's CustData.  In cases not managed by our CustData, use the appropriated steps to create/ammend DNS entries.
+
+It may be necessary to perform, during this setup process, items relating to the following related procedures: "Maintenance of Domain Names", "Domain Email configuration", "Raising Helpdesk Calls" and "ISS Monitoring Server".  Please also refer to the following documentation: "Melbourne IT Portal User Manual" and "Domain Name Spreadsheet".
+
+Also for reference purposes, a list of related definitions are included in Appendix Z of this document.
+
+
+Entry Criteria
+
+Helpdesk call received from IS Services Manager, or created by IS Systems Administrator, requesting the creation of a new FTP host on the dedicated server.
+
+
+Steps to be Performed
+
+1. Create FTP User
+2. Create Path
+3. Create FTP Site
+4. Further FTP Site Configuration
+5. Create External DNS entries
+6. Create Internal DNS Entries
+7. Add to Monitoring Service
+8. Advise Customer of Appropriate Details
+9. Finalise In-house Tasks
+
+
+Create FTP User
+
+1. Log onto dedicated web server and navigate to Local Users via MMC
+2. Create a new local user with the naming convention of company_name_acronym>FTP.  Note the username should all be uppercase.  e.g.  ACME Services Ltd" would have a user name of ASLFTP
+3. Include a meaningful description of the user in the description field.  eg "ACME Services Ltd User"  If there is any non-standard setup relating to this user, ensure furhter detail is included in the description field.
+4. Create the password using a complex password creator such as mkpasswd" on a unix box.
+5. ensure the user cannot change password, and taht the password never expires.  Note: This is to be futher discussed with the IS Services Manager in relation to security implications at a later date.
+
+
+Create Path
+
+1. Create a new path for the FTP site.  *** ensure location is on E:\inetpub\wwwroot\ ***
+2. Set the permissions to "Allow inheritable permissions from the parent to propagate..."
+3. Explicitly deny all other FTP accounts from accessing the FTP server apart from the obvious owner  *** Important for copyright reasons ***
+
+
+Create FTP Site
+
+1. Open Internet Information Services (IIS) Manager MMC
+2. Expand Server -> FTP Sites
+3. Right-click FTP Sites -> New -> FTP Site...
+4. Next -> Add a description of the FTP site.  eg Acme Services Ltd
+5. Assign the next available descending IP address for the FTP site, using the standard port 21 for FTP
+6. Do not isolate users.  *** Important for multi-site reasons and IIS6 limitations ***
+7. Browse to the appropriate path.  *** Ensure location is on E:\inetpub\wwwroot\ ***
+8. Assign RW permissions for most standard insatlls.
+9. Finish
+
+
+Further FTP site configuration
+
+1. Within the properties of the FTP site, navigate to the loggin properties.
+2. Amend the Log file directory to point to  E:\extendedlogs\MSFTPSVC1 *** Important for space assignment ***
+3. Ensure no anonymouse connections are allowed.
+4. Right-click FTP site -> Permissions
+5. Explicitly deny all other FTP user accounts from accessing the FTP server apart from the obvious owner.  *** Important for copyright reasons ***
+
+
+Create external DNS entries
+
+1. Log onto the Telstra Custdata portal: (https://www.telstra.net/cgi-bin/custdata/index.pl)
+2. Username: 9439599010  password: ********
+3. navigate to Service Management -> Primary DNS
+4. Navigate to the relative domain -> Update
+5. "Assign Host/Alias Names for Domain" and enter the ftp host records.  e.g. ftp.acmeservices.com.au A 203.247.230.30
+6. Click "Submit" to apply changes.
+
+
+Create internal DNS Entries
+
+1. Open the DNS MMC on the Domain Controller with PDC Emulator role.
+2. Add ftp A" host record to the associate FQDN object
+3. Add all necessary information to the Domain Name spreadsheet, as referenced above.
+
+
+Add to monitoring server
+
+Add the FTP service to the monitoring server.  Refer to appropratite documentation for further details.
+
+
+Exit Criteria
+
+Dig/nslookup/whois
+
+Perform external DNS lookups and whois database searches to confirm new domain has propagated to root dns servers.
+
+Conectivity testing
+
+FTP to new site
+Upload a test file to the location
+Download the test file from the location
+
+
+Advise customer of appropriate Details
+
+Advise appropraite contacts of the FTP details.  BCC yourself and store details as appropriate.
+
+
+Hi <Customer Representative>,
+
+the FTP server configuration has now been completed.
+
+FTP details are as follows:
+
+IP Address:	210.247.230.xx (ftp.acmeservices.com.au)
+userename:	ASLFTP
+password:	"mkpasswd"
+permissions:	full conrol of third party directoyr.  No root directory access.
+
+As always, please give me a call if  you need any further info.
+
+
+Regards, 
+<You>
+<Your blurb>

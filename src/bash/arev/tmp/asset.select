@@ -1,0 +1,2 @@
+use assets;
+select id, s_serialno from assets where s_serialno in ('4D085580H','7B122292H','B098598/003','B098844/004','B099091/007','B100809/002','B102207/002','B102945/008','B104657/012','B105006/016','VMware-56 4d cd 6e f7 ef bd ca-52 04 aa 18 96 cd 1b e9','bork');

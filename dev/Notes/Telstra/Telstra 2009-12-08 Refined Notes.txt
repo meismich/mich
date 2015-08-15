@@ -1,0 +1,70 @@
+Telstra TIPT/VOIP Meeting
+2009-12-08
+Notes taken by Michael Spence
+
+Attendees: 
+APEagers - Shane, Tony, Rob, Michael
+Telstra - David, Richard, Darren, Alan, Ilene
+
+
+This meeting was the first of three meetings planned to resolve the issues of installing the Telstra TIPT/VOIP system throughout APEagers.
+
+Meeting 1. (Today's Meeting) Is to cover how we plan to get a uniform configuration across all sites.  Discussion will be about current model version numbers, vlan structure toolbar version upgrades.
+
+Meeting 2. Will cover the methods used for fault recovery; including topics, like who has the access to fix issues, who should receive extra training to resolve issues before they are escalated to Telstra.
+
+Meeting 3. Strategy long term.
+
+------------------
+
+Over the course of the next year there are five sites, which are planned to have TIPT installed.  The issue of the numbering schemes will need to tackled on a case-by-case basis.
+
+To create a uniform layout between sites, all phones will eventually have to be upgraded to the most recent version 312.  A number of older sites and installations are still using version 167.  With the older system, many features are independent of the network and only affected phone functionality.  Whilst this does not impact greatly on the user in most cases, functions of the TIPT Toolbar and Call Centre functionality will not work as intended.  Having all phones on the same version will mean phones can easily be moved between dealerships (although this is a rare occurence), will reduce the required setup by Telstra technicians (also reducing the occurence of bootserver errors), and will cause any firmware/software upgrades to occur naturally throughout the lifecycle of the phone.
+
+All phones receive an IP address via a DHCP scope.  This is via the phones physical MAC address.  Depending on this scope, the phones will be pointed to a particular bootserver at a group level.  (The term "group" refers to the set of phones controlled by a dealership/entity, eg Corporate/IT).  Due to earlier "test" installations, many setups that we have use the data-vlan to configure this scope.  This method of setup is flawed as it doesn't allow the phone to contact its bootserver properly (author doesn't understand).  Further to this, it has been decided that all setup should be converted to a separate Vlan specifically for voice data; as vlan 200 has been used in further setups, this will be the used vlan.
+
+In a number of setups, another vlan was setup along side the vlan 200 (namely vlan 201).  This type of setup is unnessesary and only duplicates the setup of the vlan 200.  This would only be used if there were too many phones at a location and further division was needed, simply to cater for the quantity of phones.  It has been decided that this will no longer be used.  Sites with this configuration will be converted to the standard.  Vlans simply isolate the voice network from the data network.
+
+Phone groups are a set of phones which receive, when they boot, a number of default set parameters.  Items received include Codex'es, call barring and on-hold schemes, etc.  (While many of these settings can be set at a department level (departments are subsets of groups), this is not typical, and can complicate setups).  For further flexibility, groups will in the future be limited to a set of 100 phone numbers.  Each group has its own boot files on the boot server; further to this each version of handset has its own configuration per group.
+
+Phones can be reconfigured to join different groups, but as explained above, there needs to be a configuration for the phone type in the group it is being to moved to.  Moving between groups though is not the same as just physically moving a phone.  Moving a phone can be done throughout the entire APeagers network, depending on the vlan functionality at the new site.
+
+Throughout a group the system can be configured such that a user can pickup another line which may be ringing.  This is not true throughout the entire enterprise, without the inclusion of special features (namely "executive" pack).  The executive pack also control more effectively throughout call centres the "do-not-disturb" feature of the phones.
+
+
+
+Additional points to note:
+
+8 port IADs are actually four 2-port IADs in one box.  A 2-port IAD can only handle so much information before it starts become overloaded, hence the caution to use only one fax line per 2-port IAD.
+
+BRIX devices are QOS devices, which monitor jitter and DNS delays.  These reports are accessible from ...... ???
+
+XML files for each and every phone are recorded on the Telstra servers.  These files contain information about the phone such as the side bar information.  When replacing/upgrading phones it may be necessary to have this information copied to the new phone's file.
+
+Bandwidth requirements for each line differ between configurations.  Typically a TIPT phone on a IPMAN setup uses 32k, on BDSL uses 42k and on an IAD uses 70k of bandwidth.  These amounts need to be factored to validate the required voice-dat bandwith allocation for the network.
+
+Routers have a static allocation of voice-data bandwidth.  This is set by Telstra and naturally takes precedence over plain data transmisstions.
+
+All bootservers configured for our use now have the same password, for easy configuration and to also reduce the outages we have experienced previously.
+
+If a phone number is to be converted from IAD to TIPT phone (or vice-versa), this change cannot be done internally and must be handled by Telstra.  An IAD has an XML file which is configured for each port of the IAD.  This file is converted to a BIN file and loaded onto the IAD.
+
+
+
+Action to be taken:
+
+Arising from this meeting we have determined that the following points need to be actioned.
+
+1. All TIPT phones need to be moved across to the Voice-Vlan, which as described above is Vlan 200.  This involves Router changes (via FNC), switch configurations and phone reboots.
+
+2. All TIPT phones need to be upgraded to the latest version (currently 312).  This effects Corporate, IT, Metro Ford, CAG Parts.  This cannot effectively work if the phone is not on Vlan200
+
+3. All Groups and Sites need to be audited, to verify the validity of the static "Voice Bandwidth" allocation.  Perhaps examining the BRIX QOS data may help in determining which site should be looked at first.
+
+4. All Tipt tool bar installations need to be upgraded to latest version.  The .msi should be examined to determine the best installation procedure for our needs.
+
+5. Audit the spare phones, spare packages at each site (esp. Metro Ford)
+
+6. Upgrade the CAG Parts users to the "executive" pack.  This will resolve their "do-not-disturb" issue.
+
+7. The network needs to be checked to verify that the BRIX systems are reaching their external targets.  Firewall rules need to be verified.

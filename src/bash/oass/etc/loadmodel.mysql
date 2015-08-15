@@ -1,0 +1,9 @@
+use assets;
+
+load data infile '/home/mspence/src/oass/out/model.new'
+	ignore
+	into table models
+	fields terminated by ','
+	enclosed by ''
+	lines terminated by '\n'
+	(s_model, s_brand, i_devicetype);

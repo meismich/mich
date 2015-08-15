@@ -1,0 +1,2 @@
+# Nmap 4.76 scan initiated Tue Apr 15 11:14:58 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/CSR_ALL_TTY.nmap -iL /home/mspence/src/fndp/rem/CSR.webhosts 
+# Nmap done at Tue Apr 15 11:14:58 2014 -- 0 IP addresses (0 hosts up) scanned in 0.03 seconds

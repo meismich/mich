@@ -1,0 +1,19 @@
+# h7146
+define host{
+        use                     gen_linux
+        host_name               h7146
+        alias                   h7146
+        address                 172.20.3.40
+        parents                 emp_xtra_c3560g_48p_1
+        hostgroups              +svr_dms,svr_era2sys
+        }
+
+# h894
+define host{
+        use                     gen_linux
+        host_name               h894
+        alias                   h894
+        address                 172.20.3.34
+        parents                 emp_xtra_c3560g_48p_1
+        hostgroups              +svr_dms,svr_era2sys
+        }

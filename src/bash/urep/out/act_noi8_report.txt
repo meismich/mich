@@ -1,0 +1,1963 @@
+==========================================================================
+Active But no INTEROG8 Data
+
+Total Assets: 349
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100005	B097291/008	2014-01-29	PC
+
+Interog8 Data
+	User Name:	FakedBy:mmccracken
+	Device Name:	UNKNOWN
+	Version:	v2.1
+	INTEROG8 D8:	2014-01-29
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100008	B097291/011	2013-09-27	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-09-27
+	IP Address:	10.10.2.43
+	Install Date:	20100927125807.000000+600
+	Device Name:	MFVSHOF
+	Version:	v2.1
+	User Name:	mjmadmin
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100018	4A139782H	2013-08-26	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-08-26
+	IP Address:	fe80::f92e:847e:3914:5175
+	IP Address:	10.50.254.94
+	Device Name:	BTDBOARDROOM
+	Install Date:	20130715083639.000000+570
+	User Name:	boardroom
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100023	XSZ0502703	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100026	4A139778H	2013-08-17	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-08-17
+	IP Address:	10.25.254.30
+	IP Address:	0.0.0.0
+	IP Address:	10.25.254.30
+	Device Name:	TFNSHOC
+	Mapped Drive:	\\bne-fscorp.data
+	Install Date:	20100726110510.000000+600
+	User Name:	brandle
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100038	B097386/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100041	B097386/004	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100042	B097386/005	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100043	B097386/006	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100046	B097386/009	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100049	4A139777H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100054	4A139776H	2013-07-04	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-07-04
+	IP Address:	10.25.254.35
+	IP Address:	0.0.0.0
+	IP Address:	10.25.254.35
+	Device Name:	TFNSHOD
+	Install Date:	20100726112911.000000+600
+	User Name:	jhiggison
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100056	B097468/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100060	B097468/006	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100064	B097468/010	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100069	5A112198H	2013-11-26	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-26
+	IP Address:	fe80::75da:82d5:8b04:b682
+	IP Address:	10.32.254.75
+	Device Name:	AP100069
+	Install Date:	20121016153010.000000+600
+	User Name:	training15
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100080	XSZ0502766	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100088	5A112260H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100092	6A068032H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100098	B097621/004	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100100	B097621/006	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100106	XSZ0502750	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100136	B097891/006	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100141	B097858/003	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100142	B097858/004	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100161	B098034/001	2014-01-28	PC
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-28
+	IP Address:	10.10.3.60
+	Device Name:	ENSPTST
+	Mapped Drive:	\\newsteaddcens.partsstock lists
+	Mapped Drive:	\\efarmpublic
+	Mapped Drive:	\\corpfscag public
+	Mapped Drive:	\\nsd-asaasa_server
+	Install Date:	20101101113607.000000+600
+	User Name:	enspts0
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100188	B098232/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100191	B098232/004	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100192	B098232/005	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100193	B098232/006	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100194	B098232/007	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100195	B098232/008	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100197	B098232/010	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100198	B098232/011	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100199	B098232/012	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100208	8A063036H	2013-10-18	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-10-18
+	IP Address:	fe80::dc0c:9242:ac47:6ee9
+	IP Address:	10.32.254.114
+	Device Name:	APTRN100208
+	Install Date:	20100729002127.000000+600
+	User Name:	training3
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100230	B098370/010	2013-08-08	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-08-08
+	IP Address:	10.32.254.59
+	IP Address:	10.32.254.59
+	Device Name:	BMA020
+	Mapped Drive:	\\bma-wwwfileshare
+	Install Date:	20101125125112.000000+600
+	User Name:	bmaspare
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100256	CNW04209MN	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100262	CNW04209HF	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100263	CNW04209MJ	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100265	CNW04209BX	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100267	7A062796H	2013-12-19	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-12-19
+	IP Address:	10.10.7.32
+	IP Address:	0.0.0.0
+	IP Address:	10.10.7.32
+	Device Name:	AUHSHOA
+	Install Date:	20101213091339.000000+600
+	User Name:	robertmb
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100274	Q670600308	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100275	Q670600241	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100319	7A063715H	2013-06-22	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-06-22
+	IP Address:	10.12.254.19
+	IP Address:	0.0.0.0
+	IP Address:	10.12.254.19
+	Device Name:	EWNSHOQ
+	Install Date:	20100618000406.000000+600
+	User Name:	jtelfer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20100321	XMT0Y00812	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.19.2.152
+	Page Count:	610128
+	Device Name:	10.19.2.152
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110001	Q670701114	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110002	Q670X01623	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110003	Q670701115	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110004	B098844/001	2013-11-26	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-26
+	IP Address:	10.34.2.56
+	IP Address:	0.0.0.0
+	Device Name:	SSFWSHOP110004
+	Install Date:	20110131112713.000000+600
+	User Name:	ssfwshop
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110005	B098844/002	2014-01-30	PC
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-30
+	IP Address:	10.10.7.50
+	Device Name:	AUHRCPT1
+	Mapped Drive:	\\newsteaddcAustral.Regos
+	Mapped Drive:	\\newsteaddcHonda Sales
+	Install Date:	20110202101553.000000+600
+	User Name:	reception.honda
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110013	B098844/010	2013-10-29	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-10-29
+	IP Address:	10.16.100.15
+	Device Name:	CORPPAY4
+	Mapped Drive:	\\bne-fscorp.data
+	Mapped Drive:	\\corpfsPayroll Yearly Reports
+	Mapped Drive:	\\corpfsData
+	Install Date:	20110210125652.000000+600
+	User Name:	mfletcher
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110040	B098957/010	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110079	7A065000H	2013-11-26	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-26
+	IP Address:	fe80::5864:4011:5bcd:2cd6
+	IP Address:	10.32.254.27
+	Device Name:	AP110079
+	Install Date:	20131031145457.000000+600
+	User Name:	training8
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110100	B099379/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110101	JATF002863	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110102	JATF005064	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110103	JATF005391	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110104	JATF005468	2014-01-14	Printer
+
+Interog8 Data
+	Device Name:	UNKNOWN
+	Version:	v2.1
+	INTEROG8 D8:	2014-01-14
+	User Name:	FakedBy:9091
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110105	JATF005472	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110106	JATF005471	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110111	6A062502H	2013-11-26	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-26
+	IP Address:	fe80::7c88:f90f:ad66:3507
+	IP Address:	10.32.254.36
+	Device Name:	AP110111
+	Install Date:	20100528010559.000000+600
+	User Name:	training13
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110115	6A063046H	2013-11-15	Notebook
+
+Interog8 Data
+	IP Address:	10.10.253.176
+	IP Address:	10.10.253.176
+	INTEROG8 D8:	2013-11-15
+	Device Name:	AUMADM2
+	Mapped Drive:	\\newsteaddcauw.data
+	Mapped Drive:	\\bne-fsf&i.data
+	Mapped Drive:	\\bne-fscorp.data
+	Mapped Drive:	\\corpfsAustral ANZ Online Data
+	Mapped Drive:	\\corpfsAustralPTYLTD
+	Mapped Drive:	\\newsteaddcHonda Sales
+	Mapped Drive:	\\corpfsFixedOPs
+	Install Date:	20100714221011.000000+600
+	User Name:	fraserc
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110121	B099307/003	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110127	B099307/009	2013-11-15	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-15
+	IP Address:	10.25.4.18
+	Device Name:	TCR11
+	Mapped Drive:	\\ttrfsTorqueToyotaDOC
+	Mapped Drive:	\\ttb-tune1
+	Install Date:	20110513124250.000000+600
+	User Name:	johnstond
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110165	6A063053H	2014-01-15	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-15
+	IP Address:	10.10.253.154
+	IP Address:	0.0.0.0
+	IP Address:	10.10.253.154
+	Device Name:	MFNSHO6
+	Mapped Drive:	\\corpfsford business centre
+	Install Date:	20100528000429.000000+600
+	User Name:	mvanlook
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110168	XSZ1204542	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.10.15.151
+	Page Count:	30216
+	Device Name:	10.10.15.151
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110170	XSZ0Z04258	2013-08-29	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-08-29
+	IP Address:	10.34.2.150
+	Page Count:	23473
+	Device Name:	10.34.2.150
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110171	XSZ1204546	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.34.4.179
+	Page Count:	1665
+	Device Name:	10.34.4.179
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110179	QVR0Z00303	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.34.99.150
+	Page Count:	2892
+	Device Name:	10.34.99.150
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110181	B099620/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110195	6A063054H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110204	B099648/005	2013-11-12	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-12
+	IP Address:	10.10.253.152
+	Device Name:	AUHSVC6
+	Install Date:	20110526130146.000000+600
+	User Name:	yfadmin
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110224	XSZ0Y03934	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110231	3B154730H	2014-01-09	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-09
+	IP Address:	fe80::2894:d5d:a4a8:7588
+	IP Address:	10.18.254.16
+	Device Name:	APCORP12
+	Mapped Drive:	\\ttrfsTorqueToyotaDOC
+	Mapped Drive:	\\bne-fscorp.data
+	Mapped Drive:	\\bne-fsf&i.data
+	Install Date:	20110714125421.000000+600
+	User Name:	rblack
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110236	B099962/001	2013-10-11	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-10-11
+	IP Address:	fe80::d81f:4640:a31f:e0a6
+	IP Address:	10.10.253.156
+	Device Name:	SUCSVC110236
+	Install Date:	20131011095556.000000+600
+	User Name:	sucsvc110236
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110253	B099962/018	2013-12-16	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-12-16
+	IP Address:	10.23.1.87
+	Device Name:	CCAFIN7
+	Mapped Drive:	\\cca-fsdata
+	Install Date:	20110818150447.000000+600
+	User Name:	mfergusson
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110280	B100193/011	2013-11-29	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-29
+	IP Address:	fe80::7d88:cbed:9ff4:6fce
+	IP Address:	10.28.254.16
+	Device Name:	SUTSVC110280
+	Install Date:	20130927115759.000000+600
+	User Name:	sutsvc110280
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110282	B100193/013	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110284	B100193/015	2013-04-09	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-04-09
+	IP Address:	10.10.3.87
+	Device Name:	ENSPTSY
+	Install Date:	20110920110114.000000+600
+	User Name:	ensptsy
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110297	XSZ1304709	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110319	5B090642H	2013-04-11	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-04-11
+	IP Address:	fe80::d50a:64ef:2341:1128
+	IP Address:	10.34.254.18
+	Device Name:	SSTSHOM
+	Install Date:	20110803072024.000000+600
+	User Name:	jmuller
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110325	5B090679H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110334	B100373/006	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110336	B100373/008	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110347	QVR1300382	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110349	QVR1300378	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110358	XSZ1605063	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.5.4.151
+	Page Count:	15457
+	Device Name:	10.5.4.151
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110373	Q671503611	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110374	Q671503603	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110375	Q671503607	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110386	B100809/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110404	08C09110327	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110420	7B120614H	2013-12-13	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-12-13
+	IP Address:	fe80::a0ef:c4b5:73c9:4b59
+	IP Address:	10.32.254.60
+	IP Address:	fe80::4dbb:3bf6:10a9:a715
+	IP Address:	10.32.254.49
+	Device Name:	APCORPX
+	Mapped Drive:	\\bne-fscorp.data
+	Install Date:	20111004092330.000000+600
+	User Name:	dwhelan
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110430	B101028/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110431	B101026/001	2013-03-27	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-03-27
+	IP Address:	fe80::7e:523c:2660:48a
+	IP Address:	10.18.2.13
+	Device Name:	TFSPTS110431
+	Install Date:	20111031130907.000000+600
+	User Name:	mfspts4
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110499	XSZ1605103	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110509	XSZ1705562	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.34.4.194
+	Page Count:	5416
+	Device Name:	10.34.4.194
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110529	B101434/016	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110541	08J112701157	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110542	08J112701149	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110547	XSZ1905803	2013-09-27	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-09-27
+	IP Address:	10.10.5.151
+	Page Count:	35326
+	Device Name:	10.10.5.151
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110552	XSZ1905819	2013-08-29	Printer
+
+Interog8 Data
+	User Name:	pmon.printer
+	Version:	v2.1
+	Device Name:	10.50.1.103
+	INTEROG8 D8:	2013-08-29
+	IP Address:	10.50.1.103
+	Page Count:	91574
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20110579	B101786/010	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120001	B102063/001	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120008	B102091/004	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120023	7B076639H	2013-12-28	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-12-28
+	User Name:	FakedBy:mmccracken
+	Device Name:	UNKNOWN
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120024	7B095292H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120034	B102161/001	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120035	B102207/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120039	B102243/003	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120042	B102243/006	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120043	B102243/007	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120044	B102243/008	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120045	B102243/009	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120059	8B114377H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120062	8B114354H	2013-11-08	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-08
+	IP Address:	fe80::e4cc:f:3f40:570e
+	IP Address:	10.32.254.113
+	Device Name:	APTRN120062
+	Install Date:	20131018123646.000000+600
+	User Name:	training3
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120098	B102313/008	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120099	B102313/009	2014-01-30	PC
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-30
+	IP Address:	fe80::98cd:3452:7459:ca4
+	IP Address:	10.25.2.53
+	Device Name:	TFNTRN120099
+	Install Date:	20120419180459.000000+600
+	User Name:	msjadmin
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120112	B102508/002	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120113	B102508/003	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120114	B102508/004	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120115	B102508/005	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120119	B102508/009	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120120	B102508/010	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120126	CNW1400VQG	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120127	CNW1400VR4	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120128	CNW1400VQB	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120133	7B156853H	2013-05-29	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-05-29
+	IP Address:	fe80::9f7:d891:7bb0:b422
+	IP Address:	10.34.254.17
+	Device Name:	EMZGMGR
+	Install Date:	20120405112725.000000+600
+	User Name:	mjmadmin
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120135	7B156860H	2013-12-05	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-12-05
+	IP Address:	fe80::6895:cba0:75be:da91
+	IP Address:	10.32.254.61
+	Device Name:	BMAMGR120135
+	Install Date:	20120608121953.000000+600
+	User Name:	bfadmin
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120165	7B156886H	2014-01-13	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-13
+	IP Address:	fe80::7403:f399:33b5:8ed1
+	IP Address:	10.32.254.9
+	Device Name:	APCORPITOX
+	Mapped Drive:	\\it-fsit.data
+	Mapped Drive:	\\bne-fscorp.data
+	Install Date:	20120518095424.000000+600
+	User Name:	k.engberg
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120186	B102769/013	2013-09-12	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-09-12
+	IP Address:	fe80::1df5:b0a9:e7c0:479f
+	IP Address:	10.34.2.91
+	Device Name:	SSFTRAIN120186
+	Install Date:	20130912115754.000000+600
+	User Name:	yfadmin
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120192	7B152573H	2013-11-07	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-07
+	IP Address:	fe80::81ee:3720:607e:ad5a
+	IP Address:	10.32.254.109
+	Device Name:	APTRN120192
+	Install Date:	20131018123656.000000+600
+	User Name:	training7
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120198	8B115741H	2013-10-09	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-10-09
+	IP Address:	fe80::cd6d:f8f2:e52a:bad3
+	IP Address:	10.10.253.197
+	Device Name:	SSHSHOT
+	Install Date:	20120807134011.000000+600
+	User Name:	amccracken
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120204	B102945/005	2014-01-18	PC
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-18
+	IP Address:	fe80::2476:e6ca:c728:865
+	IP Address:	10.25.254.63
+	Device Name:	TTNPTS120204
+	Mapped Drive:	\\ttb-tune1R
+	Install Date:	20120921090548.000000+600
+	User Name:	counter
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120217	ABCS27931	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120225	QVR2200936	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.10.5.170
+	Page Count:	7068
+	Device Name:	10.10.5.170
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120267	CNW22505FZ	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120268	CNW22505FX	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120271	B103299/001	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120275	B103299/005	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120278	4C056610H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120290	4C056875H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120298	QVR2601272	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.36.4.166
+	Page Count:	43417
+	Device Name:	10.36.4.166
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120299	NR52500741	2013-09-19	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-09-19
+	IP Address:	10.2.7.161
+	Page Count:	33924
+	Device Name:	10.2.7.161
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120306	QVR2701324	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.16.8.151
+	Page Count:	23117
+	Device Name:	10.16.8.151
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120307	QVR2701313	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.11.7.154
+	Page Count:	5399
+	Device Name:	10.11.7.154
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120335	5C054182H	2013-08-26	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-08-26
+	IP Address:	fe80::79ed:6fd:a2d5:5f7f
+	IP Address:	10.16.1.129
+	Device Name:	APCORP120335
+	Install Date:	20121009140234.000000+600
+	User Name:	amanda.e
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120346	B103585/002	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120348	B103585/004	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120349	B103585/005	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120369	XSZ2607904	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.10.3.170
+	Page Count:	7909
+	Device Name:	10.10.3.170
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120371	XSZ2608001	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.10.3.149
+	Page Count:	9109
+	Device Name:	10.10.3.149
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120374	XSZ2608011	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120378	XSZ2607998	2013-12-02	Printer
+
+Interog8 Data
+	Version:	v2.1
+	INTEROG8 D8:	2013-12-02
+	Device Name:	UNKNOWN
+	User Name:	FakedBy:mmccracken
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120382	XSZ2607884	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120383	XSZ2607895	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.50.1.106
+	Page Count:	124554
+	Device Name:	10.50.1.106
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120384	XSZ2608003	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.14.6.160
+	Page Count:	21714
+	Device Name:	10.14.6.160
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120385	XSZ2607890	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.2.7.157
+	Page Count:	28287
+	Device Name:	10.2.7.157
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120390	XSZ2607700	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120398	XSZ2607708	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120403	XSZ2608009	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120406	XSZ2608005	2013-11-28	Printer
+
+Interog8 Data
+	Page Count:	11245
+	Version:	v2.1
+	Device Name:	10.34.4.195
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.34.4.195
+	User Name:	pmon.printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120421	CNW23617ZG	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120422	CNW2361805	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120423	CNW2361806	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120424	CNW23617ZM	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120425	CNW23617ZX	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120450	 B103766/001	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120451	B103766/002	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120452	B103766/003	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120454	B103766/005	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120456	B103766/007	2013-10-21	Zbox
+
+Interog8 Data
+	INTEROG8 D8:	2013-10-21
+	IP Address:	fe80::98cc:7963:1dd7:6cc3
+	IP Address:	10.32.254.32
+	Device Name:	BMACZS120351
+	Install Date:	20121017125702.000000+600
+	User Name:	bmacarzoostv
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120463	7B153342H	2013-07-31	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-07-31
+	IP Address:	fe80::8dde:1e66:9cc1:9963
+	IP Address:	10.32.254.101
+	Device Name:	MTPPTS120463
+	Install Date:	20121130093006.000000+600
+	User Name:	tlomas
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120477	B103871/003	2013-06-21	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-06-21
+	IP Address:	fe80::ac7e:c59a:cccc:3dd5
+	IP Address:	10.52.254.9
+	Device Name:	HVFWARRANTY1204
+	Install Date:	20130104105952.000000+570
+	User Name:	afiddian
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120482	CNW24203T3	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120483	CNW24203T5	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120484	CNW24203T0	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120488	4C058093H	2014-01-15	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-15
+	IP Address:	fe80::746c:5daf:b2d6:dd57
+	IP Address:	10.51.253.14
+	Device Name:	BTPACC120488
+	Install Date:	20130501145524.000000+570
+	User Name:	kwhite
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120511	ABCS25814	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120512	C02H61RYDV7N	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120623	NR52X01329	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.50.1.108
+	Page Count:	70451
+	Device Name:	10.50.1.108
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120650	CNW24203T4	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20120656	B104104/001	2013-09-26	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-09-26
+	IP Address:	fe80::e191:ab1e:35ab:e6e2
+	IP Address:	10.10.9.56
+	Device Name:	AUWSHO120656
+	Install Date:	20130122124857.000000+600
+	User Name:	rkilmurray
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130006	7C032801H	2014-01-06	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-06
+	IP Address:	fe80::5943:e182:7a80:558a
+	IP Address:	10.23.254.30
+	Device Name:	CCASHO130006
+	Install Date:	20130130102420.000000+600
+	User Name:	mgoodeve
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130010	7C032828H	2014-01-02	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-02
+	IP Address:	fe80::6881:35dc:c5f2:ade5
+	IP Address:	10.23.254.15
+	Device Name:	CCASHO130010
+	Install Date:	20130130130249.000000+600
+	User Name:	mflanigan
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130036	XSZ2607698	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130040	XSZ2607710	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.36.2.158
+	Page Count:	11644
+	Device Name:	10.36.2.158
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130069	XC138410H	2014-01-10	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-10
+	IP Address:	fe80::cda6:6de8:8ad4:637c
+	IP Address:	10.23.254.42
+	Device Name:	CCASHO130069
+	Mapped Drive:	\\cca-fsdata
+	Install Date:	20130313142918.000000+600
+	User Name:	matt.quin
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130093	XC136810H	2014-01-15	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-15
+	IP Address:	fe80::186a:9d88:1379:6936
+	IP Address:	10.25.254.23
+	Device Name:	TTNSHO130093
+	Mapped Drive:	\\ttb-tune1R
+	Install Date:	20130402110657.000000+600
+	User Name:	gwallis
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130122	YC101561H	2013-06-06	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-06-06
+	IP Address:	fe80::1588:184a:40b5:e347
+	IP Address:	10.50.254.10
+	Device Name:	AP130122
+	Install Date:	20130606143136.000000+570
+	User Name:	hmladmin
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130128	NR52901142	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130133	J9LF086459	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130137	B104652/004	2013-11-01	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-01
+	IP Address:	fe80::c858:2008:2ccf:573b
+	IP Address:	10.50.253.26
+	Device Name:	BTDFLEET130137
+	Install Date:	20130717105256.000000+570
+	User Name:	mneervoort
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130139	B104652/006	2013-11-04	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-04
+	IP Address:	fe80::3cfd:ac35:723:c856
+	IP Address:	10.50.253.53
+	Device Name:	BTPPD130139
+	Install Date:	20130701181908.000000+570
+	User Name:	yarrawonga
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130156	B104657/007	2013-09-10	PC
+
+Interog8 Data
+	IP Address:	fe80::9e4:51cd:76fc:d7
+	INTEROG8 D8:	2013-09-10
+	IP Address:	10.18.2.66
+	Device Name:	TFSADM130156
+	Mapped Drive:	\\nlfs\tfs.data
+	Mapped Drive:	\\nlfs\thn.data
+	Mapped Drive:	\\ttrfsTorqueToyotaDOC
+	Mapped Drive:	\\ttb-tune1R
+	Mapped Drive:	\\nlfs\tfn.data
+	Install Date:	20130612102434.000000+600
+	User Name:	laitkenhead
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130185	08J121401201	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130186	08J130302019	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130202	B104893002	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130203	B104893003	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130206	ABCS34003	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130207	NN83302427	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130227	3BTSA57716	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130238	NUL3300750	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130244	5D086398H	2014-01-28	Notebook
+
+Interog8 Data
+	IP Address:	fe80::a91f:11b1:1667:dfa
+	IP Address:	10.32.254.39
+	Device Name:	APEBMA130244
+	Mapped Drive:	\\bne-fscorp.data
+	Install Date:	20130913095801.000000+600
+	User Name:	sbalfour
+	INTEROG8 D8:	2014-01-28
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130251	B104905/001	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130252	B104905/002	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130253	B104905/003	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130262	B105006/005	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130277	"6D048559H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130319	5D135512H	2013-12-05	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-12-05
+	IP Address:	fe80::7d6e:bfc7:fbcc:41ce
+	IP Address:	10.15.253.111
+	Device Name:	AUMADM130319
+	Install Date:	20130924103902.000000+600
+	User Name:	yfadmin
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130320	R9YYT18	2013-09-23	Tablet PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-09-23
+	IP Address:	fe80::45ee:1a34:ce3e:68
+	IP Address:	10.16.254.34
+	Device Name:	APCORP130320
+	Install Date:	20130606085855.000000+600
+	User Name:	a.bunce
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130328	B105260/001	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130329	B105260/002	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130330	B105260/003	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130331	B105260/004	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130335	R9YYT1C	2014-01-06	Tablet PC
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-06
+	IP Address:	fe80::b9c9:b6eb:dba:c13
+	IP Address:	10.32.254.117
+	Device Name:	APCORPIT130335
+	Install Date:	20131104092156.000000+600
+	User Name:	shane.pearce
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130356	R9YYT16	2013-11-01	Tablet PC
+
+Interog8 Data
+	IP Address:	fe80::645c:2ef8:d8b3:1a59
+	IP Address:	10.32.254.92
+	Device Name:	APCORP130356
+	Mapped Drive:	\\ttb-tune1
+	Install Date:	20130606201629.000000+600
+	User Name:	mmccracken
+	Version:	v2.1
+	INTEROG8 D8:	2013-11-01
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130360	R9YYT1H	2013-11-05	Tablet PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-05
+	IP Address:	fe80::bcf4:8cf5:e2a4:a59e
+	IP Address:	10.25.254.31
+	Device Name:	TFNSHO130360
+	Install Date:	20131012185643.000000+600
+	User Name:	janelle.w
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130368	NR53802082	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130399	B105574/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130400	B105574/003	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130423	5D027693H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130424	5D027693H	2014-01-17	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2014-01-17
+	IP Address:	fe80::9d9d:53d5:bd3c:6344
+	IP Address:	10.23.254.24
+	Device Name:	CCAFIN130424
+	Install Date:	20131210102538.000000+600
+	User Name:	louf
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130425	5D027693H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20130426	5D027693H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20140039	B105964/019	NULL		Zbox
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20140043	LWT3Z00117	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20140087	YD08177IH	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	20140089	YD081778H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700152	AJL3046689	2013-08-06	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-08-06
+	IP Address:	10.18.2.157
+	Page Count:	326684
+	Device Name:	10.18.2.157
+	User Name:	pmon
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700208	9Q11c900135	2013-12-28	Thin Client
+
+Interog8 Data
+	Version:	v2.1
+	INTEROG8 D8:	2013-12-28
+	User Name:	FakedBy:mmccracken
+	Device Name:	UNKNOWN
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700232	CNV73807F4	2014-01-15	Thin Client
+
+Interog8 Data
+	Device Name:	UNKNOWN
+	Version:	v2.1
+	User Name:	FakedBy:9091
+	INTEROG8 D8:	2014-01-15
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700314	0608-B081984/005	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700439	PZE7900298	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700465	CNV7070074	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700473	CNV7070070	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700480	9Q11C900132	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700571	9Q11C900136	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700580	9Q18E100332	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700720	9Q11BC00756	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700750	9Q18D600425	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700764	9Q18D900031	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700801	9Q18D600430	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700802	9Q18D600426	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700807	9Q11BC00062	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700810	CNV7070076	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700901	436672-001	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200700946	9Q11BC00388	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701006	9Q18D800371	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701079	0608-B081817/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701084	9Q11BC00635	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701089	0801-B088339/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701095	CNV7070066	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701101	0707-B086446/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701105	616BEC04422	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701106	616BEC04619	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701158	L3-BC082 07/01	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701181	9Q11BC00303	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701189	0606-B081022/012	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701197	0606-B081022/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701226	6158E505609	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200701227	9Q11BC00364	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200702029	200702029	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200702050	200702050	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200702051	200702051	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800122	0802-B088961/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800137	0803-B089241/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800175	0802-B088935/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800183	0806-B090068/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800185	0806-B090055/004	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800188	0806-B090068/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800230	0802-B088973/004	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800276	0801-B088351/003	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800298	XSH7Y00825	2013-11-28	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-28
+	IP Address:	10.10.3.176
+	Page Count:	56752
+	Device Name:	10.10.3.176
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800309	0807-B090445/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800356	XSD8X04635	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800358	78061396H	2013-05-09	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-05-09
+	IP Address:	10.12.3.210
+	Device Name:	EWNGMGR
+	Mapped Drive:	\\corpfsFixedOPs
+	Install Date:	20090114130314.000000+600
+	User Name:	pmikeleit
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800377	B092035/016	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800388	XSD8904547	2013-09-30	Printer
+
+Interog8 Data
+	Device Name:	UNKNOWN
+	Version:	v2.1
+	INTEROG8 D8:	2013-09-30
+	User Name:	Faked by MSpence
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800425	B092979/015	2013-12-23	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-12-23
+	IP Address:	10.10.5.98
+	Device Name:	EMZSVC1
+	Mapped Drive:	\\newsteaddcemz.data
+	Install Date:	20090506123049.000000+600
+	User Name:	pscobie
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800432	CNV91305FW	2014-01-06	Thin Client
+
+Interog8 Data
+	User Name:	FakedBy:9091
+	Device Name:	UNKNOWN
+	Version:	v2.1
+	INTEROG8 D8:	2014-01-06
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800467	B093900/005	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800483	29025787H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800503	6168E600272	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800610	B094507/005	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800632	XMW9600050	2013-09-27	Printer
+
+Interog8 Data
+	INTEROG8 D8:	2013-09-27
+	IP Address:	10.25.4.189
+	Page Count:	169321
+	Device Name:	10.25.4.189
+	User Name:	pmon.printer
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800645	XSD9405078	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800648	B095104/003	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800672	79043411H	2013-12-17	Notebook
+
+Interog8 Data
+	IP Address:	10.10.253.4
+	INTEROG8 D8:	2013-12-17
+	IP Address:	0.0.0.0
+	Device Name:	EMZSHO5
+	Mapped Drive:	\\newsteaddcemz.data
+	Mapped Drive:	\\bne-fshomedrive.data
+	Install Date:	20091229110944.000000+600
+	User Name:	mflack
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800677	J9KF021664	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800679	B095663/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800682	79030047H	2013-12-03	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-12-03
+	IP Address:	10.32.77.101
+	IP Address:	0.0.0.0
+	Device Name:	APE-LAB1
+	Install Date:	20110221122247.000000+600
+	User Name:	msadmin
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800686	B095700/003	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800688	B095700/005	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800690	B095700/007	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800691	B095700/008	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800693	B095700/010	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800710	CNV9470NHC	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800726	B095941/006	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800729	B095941/009	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800746	1A060193H	2013-11-07	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-07
+	IP Address:	fe80::495b:7988:354d:1f9b
+	IP Address:	10.32.254.107
+	Device Name:	AP0800746
+	Install Date:	20121016161701.000000+600
+	User Name:	training16
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800754	1A063690H	2013-12-21	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-12-21
+	IP Address:	10.10.2.68
+	IP Address:	0.0.0.0
+	IP Address:	10.10.2.68
+	Device Name:	MFNSHO1
+	Mapped Drive:	\\corpfsford business centre
+	Install Date:	20100525121719.000000+600
+	User Name:	dblomkamp
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800755	1A063683H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800756	1A063676H	2013-11-26	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-26
+	IP Address:	fe80::7993:a370:43f6:76fb
+	IP Address:	10.32.1.90
+	Device Name:	AP0800756
+	Install Date:	20121016122045.000000+600
+	User Name:	training4
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800757	1A062809H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800758	1A063678H	2013-09-27	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-09-27
+	IP Address:	10.10.253.72
+	IP Address:	0.0.0.0
+	IP Address:	10.10.253.72
+	Device Name:	MFNSVC4
+	Install Date:	20100525121741.000000+600
+	User Name:	mjmadmin
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800760	1A110158H	2013-10-15	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-10-15
+	IP Address:	fe80::80a0:961:9a15:5c63
+	IP Address:	10.50.253.22
+	Device Name:	BTDTRAINING01
+	Install Date:	20120726110754.000000+570
+	User Name:	boardroom
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800771	B096325/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800772	B096325/003	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800773	B096325/004	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800776	B096079/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800780	B096079/006	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800789	B096208/003	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800790	B096208/004	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800793	B096208/007	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800794	B096208/008	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800795	B096208/009	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800796	B096208/010	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800806	B096091/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800807	B096091/003	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800812	B096091/008	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800824	CNVA13016L	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800825	CNVA130167	NULL		Thin Client
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800843	B096287/009	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800852	B096489/001	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800855	B096489/004	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800856	B096489/005	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800857	B096489/006	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800860	B096489/009	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800871	B096661/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800879	B096661/010	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800880	B096661/011	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800882	QRE0300775	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800889	JATF002783	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800891	JATF002781	NULL		Printer
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800893	2A134153H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800896	2A134393H	NULL		Notebook
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800899	B096884/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800923	G102114000810	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800925	B097291/002	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800927	B097291/004	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800955	B096848/005	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800959	B096848/009	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800969	2A134405H	2013-09-20	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-09-20
+	IP Address:	10.23.254.44
+	IP Address:	0.0.0.0
+	IP Address:	10.23.254.44
+	Device Name:	CCAWEB2
+	Install Date:	20100216000612.000000+600
+	User Name:	narelle.minchenton
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800977	B097160/004	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800979	B097160/006	NULL		PC
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800983	B097160/009	2013-11-20	PC
+
+Interog8 Data
+	INTEROG8 D8:	2013-11-20
+	IP Address:	10.2.7.21
+	Device Name:	SSHSVCA
+	Install Date:	20100730164235.000000+600
+	User Name:	sshtrn
+	Version:	v2.1
+--------------------------------------------------------------------------
+AssetDB (Asset		Serial		Interog8	Type) 
+	200800999	4A133051H	2013-06-27	Notebook
+
+Interog8 Data
+	INTEROG8 D8:	2013-06-27
+	IP Address:	10.25.2.21
+	IP Address:	0.0.0.0
+	IP Address:	10.25.2.21
+	Device Name:	TFNSHOE
+	Install Date:	20100726114943.000000+600
+	User Name:	dhuffman
+	Version:	v2.1

@@ -1,0 +1,43 @@
+Build Additional DC
+Michael Spence
+2011-01-20
+
+
+Process Steps:
+
+Install 2003 Server R2
+
+Install McAfee
+
+Rum "dcpromo" and select "Additional DC" when asked (other options can be left as default)
+
+Install DNS
+	- Add/Remove Programs -> Windows Components -> Networking Services
+	- Add DNS Forwarders (see "DNS Forwarders List.txt")
+
+
+If this DC is to become PDC it will have to have FSMO roles transferred to it:
+
+Before taking the PDC role
+
+Set NTP Settings
+	- Run "regedit"
+	- HKLM\System\CurrentControlSet\Services\w32time\Parameters
+		[NtpServer] 	= ntp.adelaide.edu.au,0x1
+		[Type]		= NTP
+	- HKLM\System\CurrentControlSet\Services\w32time\config
+		[AnnounceFlags] = 5
+	- Restart "Windows Time" service via the "services" snap in
+
+Take FSMO Roles
+	- Run "ntdsutil"
+	- Type "roles"
+	- Type "connections"
+	- Type "connect to server <your new DC>"
+	- Type "q"
+	- Type "transfer domain naming master"
+	- Type "transfer infrastructure master"
+	- Type "transfer PDC"
+	- Type "transfer RID master"
+	- Type "transfer schema master"
+	- Type "q"

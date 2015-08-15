@@ -1,0 +1,106 @@
+Microsoft 365 - Bill Buckles Project
+2011-07-15
+Michael Spence
+
+
+Audience:
+
+This document in intended for the on-site IT coordinator of Bill Buckles.  This doucment may be useful for other IT savvy personnel on-site.
+
+
+Preamble:
+
+This document is designed to give an outlay of the process to migrate users from Bill Buckle's existing POP email system to the online Microsoft 365 system.
+
+This document details the steps required to prepare users for MS 365 use.
+
+This document details the requirements of the PC's for MS365 use.
+
+This document details how to connect the MS365 system to Outlook on the PC.
+
+This document details how to migrate a .pst to the MS365 system.
+
+
+Topics of Discussion:
+1. General Overview
+2. Preparing users
+3. PC Requirements and Upgrades
+4. Connecting Outlook
+5. Migrating Mail
+x. Considerations
+
+Topics in Detail 
+
+1. General Overview
+
+The Microsoft 365 system is an online Exchange system delivered by Microsoft.  To the ordinary user, this system feels much line an on-premise Exchange system with little to no noticible difference in functionality.  This system also provides an internet portal which can be accessed through a browser, giving functionality equivalent to most internet based mail systems, like hotmail for example.
+
+For the administrator of this system, there are some distinct differences in the application and administration of this system.  
+
+For a site, such as Bill Buckle's, where an Active Directory system is not in place nor is an on-premise exchange, user account will simply be created in the online system.  MX records for the domains applicable to Bill Buckle's will then be altered to point to the Microsoft 365 system.  At this point users can be connected to the MS365 system and mail from the existing POP system can then be transitioned.
+
+2. Preparing users
+	2.a User Creation
+When the online portal is accessed using an administrator account, new users can be administered.  From the Admin Home page, the menu on the left side gives a "Users" management option.  Navigating to this link presents the User administration page where passwords can be reset, details of users changed, and new users can be created.
+
+Above the table of listed users there are a number of options, most of which will be greyed out until a user is "ticked".  The "New" option should not be greyed out and by clicking on this dropdown, two options are listed: "User" and "Bulk add user".  Generally, the "User" option would be selected to create single users, but for the initial setup, "Bulk Add User" will be more time efficient.
+
+From the Bulk Add Users page, download the blank CSV file.  This file gives the headings for the columns of data which must be filled out per user.  This file will be once completed uploaded using this same webpage and will create the listed users.  Take the time to fill out this file for all users.
+
+NOTE: the username is user@domainname.com.au
+
+Upload the created .csv to the Microsoft 365 system and press "Next".  The file will be verified and errors will be displayed.  If errors are shown, correct the errors before proceeding.
+
+The settings for the users will be set to "Allowed" and the location will be "Australia".  Only one license option needs to be ticked which is "Exchange Online (Plan 2)".  DO NOT select other licensing options as the IT department is still in the process of validating their use.
+
+Have the import process send an email to an account which is accessible as this will provide the temporary passwords for the users.  It may be necessary to send this email to the IT Team to automatically distribute these email password to the users.
+
+ 
+	2.b Downloading Old Emails
+Using Outlook on each users PC, the current email for the user must be extracted so that it can be later uploaded to the Microsoft 365 system.  Each user should go through a process of extracting their emails to file.  This can easily be done, by going to the "File" menu and pressing "Import and Export".  The user then needs to select "Export to file" and choose the export method "Personal Folder File (.pst)" from the list.  The next presented window shows a tree of the connected mailbox, with Inbox, Calendar, Contacts, etc.  Users should select the ROOT of the tree (the very highest level) and tick the option "Include subfolders" before clicking next.  The wizard will then ask for a location to save the .pst file, it is recommended to leave this in the default location - "C:\documents and settings\<user>\Local Settings\Application Data\Microsoft\Outlook\backup.pst" - although for personal reasons it is understandable if a more convenient location and name is chosen.
+
+	2.c PC Requirements and Upgrades
+Each PC must be running Office 2007 or Office 2010 for the Microsoft 365 system to be connected successfully.  Office 2003 WILL NOT function and users of this application will be forced to use the online portal until their system is upgraded.
+
+For Office 2007 users must also ensure that their Office is patched to service pack 2.  The IT team in Brisbane have already downloaded this patch and it will be available on the Bill Buckle servers.  [Location TBA]
+
+	2.d Online Portal Access
+For a number of the following steps, users must have already accessed the online portal.  To do this users should navigate in their internet browser to the following address:
+
+	https://portal.microsoftonline.com
+
+The user names and password supplied in the user import process should be used to access this portal.  When users access the portal for the first time, they will be prompted to change their temporary password.  This new password MUST be strong, and it is suggested that each user has a capital letter and two numbers in their 8 character password.
+
+
+3. Preparing MX records
+
+All MX records for all domains will need to be altered to point to the Microsoft 365 system.  Please provide the IT team a list of ALL domain names used in the Bill Buckle dealerships, so that no domain names are forgotten.  (Yes we do have records of the domain names, but we want to make sure :))
+
+The MX records will be changed just after the users have been created but prior to extraction of user email.  During this time, users will be enabled online and will need to use the online portal while their Outlook is busy extracting their old emails.  
+
+4. Connecting Outlook
+	4.a Remove existing profiles
+From the control panel of the PC, navigate to the users mail settings.  Using the "Show Profiles" area, delete the mail profile which exists there.  It is assumed that there is only a single mail profile for each user.  
+
+A registry hack has been created to perform this function also, which can be found on the Bill Buckle servers.  [Location TBA]
+
+	4.b Configuring Outlook
+After the existing profile is removed, when Outlook is started, it will wish to configure a new mailbox.  The user will be prompted for his username and password.  Remember that the user name is as supplied in the resulting email from the import process as is the password.  By clicking next on the setup process, if the MX records have all been configured correctly, Outlook will autodiscover the correct settings for the user.  
+
+For further Outlook configuration examples and a document to supply users, refer to the "Microsoft 365 - Configure Outlook" document.
+
+
+5. Migrating Mail
+
+Now that the user's Outlook is connected to the online 365 system, the backup of their old email will be able to be imported to the 365 system.  In a similar manner to the method used to extract the email, the user needs to select from the "File" menu "Export and Import".  Now the user needs to select "Import from another program or file" and then choose the "Personal Folder File (.pst)" entry from the following list.  By default, the file name listed will be the default export file name as listed in the steps above.  (Another reason not to change the export file name.)  
+
+When the user finalises this import, they will be presented with the option to write over or duplicate any entries which may already exist.  It is suggested that they should duplicate entries for this import only.
+
+Outlook will then proceed to upload all entries to the online system.  During this process, Outlook will be unuseable and users should access their emails again from the online portal.
+
+
+6. Considerations
+
+Tests should be carried out to confirm that users can access the online portal through the proxy server at Bill Buckle sites.
+
+Prior to domain MX record changes, tests should be carried out to confirm that outlook can be configured automatically.

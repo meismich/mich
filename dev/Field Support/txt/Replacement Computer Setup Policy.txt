@@ -1,0 +1,100 @@
+Replacement Computer Setup Policy
+2010-08-17
+Michael Spence
+
+
+Audience:
+
+Currently this documentation is for Field Support officers only.  In the future, I do not foresee other appropriate persons to whom this document may apply.
+
+
+Preamble:
+
+This document applies to the Replacement of a computer in a dealership.  Generally this would be followed, when a computer is out of warranty and is to be decommissioned.  But it should also be followed if a machine is so faulty, that the time taken to repair it would lead to serious down-time for a user and therefore the solution is to replace the machine out-right.
+
+This document DOES NOT apply to a machine which has been moved from one dealership, department or location to another.  Please refer entirely to "New Computer Setup Policy.txt".
+
+This document does not stand alone and must be used in coordination with "New Computer Setup Policy.txt".  Elements of this document OVERRIDE the instructions detailed there-in.
+
+
+Steps to Follow:
+
+The following steps are required to be followed during the replacement of a computer in a dealership.
+
+1. Copy User Specific Files
+
+2. Record Mapped Drives
+
+3. Record Installed Printers
+
+4. Take note of Installed Programs
+
+5. Record Current Name and IP Address
+
+6. Install New Computer
+a) Use Recorded Name and IP at Step 1 & 2
+b) Use Mapped Drives at Step 6
+c) Use Installed Printes at Step 7
+d) Use Installed Programs at Step 9b
+
+7. Restore User Specific Files
+
+Steps in Detail:
+
+1. Copy User Specific Files
+
+When a user has been using a computer for a decent period of time, often times they will store information on the local machine.  Remembering that My Documents and Desktop are redirected, attempt to copy as much of the person's files to a local file server or USB device, so it can be copied onto the new computer.
+
+Files I would take care to copy would be:
+	Mail Archive File
+	Favorites Folder
+
+DO NOT copy music or movie files.
+
+
+2. Record Mapped Drives
+
+The mapped drives on this system will have to be setup on the new computer so that desktop shortcuts, the user may have, will still work.  Be sure to copy the exact location of the drives mapped, as they may be slightly different to the user next door.
+
+
+3. Record Installed Printers
+
+The printers installed for a user should have been installed for a reason.  Please check with the user to determine if they use all the printers which are installed on their original machine.  Record the IP addresses and models for these printers so that they can be installed on the new machine.  The IP address can be recorded from the "printers & faxes" page, by right-click on the desired printer "properties", (tab) ports, click "configure".  Record the IP address, taking care not to use "Port Name", which can lie to you.
+
+
+4. Take note of Installed Programs
+
+Even though you may not be able to install all the programs which are installed on this old machine, record all the installed programs, which were on the old machine.  We may need to copy certain files from this machine onto the new machine for the programs to work in the same way as they had.   This is true for a number of insurance, finance and registration programs.  Microcat programs also record personal notes files too.
+
+The programs, which you can install, will need to be installed onto the new machine.  Please verify with the user that he still uses the programs, you see on the old machine.
+
+
+5. Record Current Name and IP Address
+
+To reduce the creation of computer names and DNS filling up with garbage, I recomend that we use the same name and IP address for the new machine.  This obviously means that we can't join the new computer to the domain until the old machine is no longer accessing the network.  Record the name and IP address of the old machine, to be used with the new one.
+
+
+6. Install New Computer
+
+At this stage, follow "New Computer Setup Policy.txt" keeping the following points in mind.
+
+a) Use Recorded Name and IP at Step 1 & 2
+
+Instead of Generating a new IP and Name, use the recorded name and IP address.
+
+b) Use Mapped Drives at Step 6
+
+Do not refer to another PC in the dealership, use the recorded details of mapped drives.
+
+c) Use Installed Printes at Step 7
+
+Do not refer to another PC in the dealership, use the recorded details of installed printers.
+
+d) Use Installed Programs at Step 9b
+
+Install Programs which you saw in use on the old machine, and you have confirmed user still uses.  This does not mean install junk programs, that the user wants to have.  NO I DO NOT INSTALL BUBBLE EXCEL GAME!!
+
+
+7. Restore User Specific Files
+
+Now that the computer is up and running, restore the copied files from Step 1 of this procedure, to the locations you found them on the original computer.

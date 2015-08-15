@@ -1,0 +1,45 @@
+McAfee
+2011-04-05
+Michael Spence
+
+
+
+Topics:
+
+1- Configuring Clients
+2- Configuring ePO
+3- Building Agent Installation Packages
+4- Attaching Multiple Repositories
+
+
+Configuring Clients:
+
+Clients should have the latest Version of McAfee installed.  For us this is 8.7i.
+
+The installation for this program is located at:
+
+	\\nas\nas\mcafee\Mcafee Enterprise 8.7i
+
+Once the installation is completed, the client needs to be attached to an ePO repository to download the latest DATs or Engines.  This is done by a Packages specifically built for a location.  There are a number of preconfigured Package installers already created.  Batch files have been created for the easy installation of these.  They are:
+
+	APEagers Default:	\\nas\nas\mcafee\installagent.cmd
+	Darwin Repository:	\\nas\nas\mcafee\DWN - installagent.cmd
+	Klosters Repository:	\\nas\nas\mcafee\KLO - installagent.cmd
+
+(Later in this document, a demonstration of how to build these installations is given)
+
+
+Configuring ePO
+
+Configuring the Rules of what to block:
+
+
+Build Agent Installation Package:
+
+Using the "Menu v" button, navigate to "Systems -> System Tree"
+In "System Tree Actions" select "New Systems". (This displays the "New Systems" page appears.  It also allows us to create the installation packages.)
+Under the "How to add systems" options, select "Create and download agent installation package".
+Enter the Domain credentials as requested. 
+4 When prompted, select the location for downloading and saving the installation package.
+5 Distribute the custom installation package file as needed.
+

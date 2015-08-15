@@ -1,0 +1,87 @@
+Vexec ERA (vexecera.rdp)
+	- Executive ERA (execera)
+	- Shane Pearce
+
+Vexec ERA Old (vexecera-old.rdp) **NOT FUNCTIONAL**
+	- Executive ERA (execera)
+
+Veranet (veranet.rdp, veranet_1280_1024.rdp, venettrn_full_screen.rdp) ** POINTS TO BNE-ERANET **
+	- Shane Pearce
+	- VERANet (veranet)
+
+venettrn s55 only (venettrn_s55.rdp)  ** POINTS TO 10.1.1.9 **
+	- Shane Pearce
+
+venettrn (venettrn.rdp, venettrn_1024x768.rdp)
+	- ERANet Remote Access (eranet)
+	- VERANet (veranet)
+	- Shane Pearce
+
+System 2 EMP Management PC (rrmgt2.rdp)
+	- rrmgtadmin (rrmgtadmin)
+	- Shane Pearce
+	- Robert Madden
+
+System 1 WGA Management PC (rrmgt1.rdp)
+	- rrmgtadmin (rrmgtadmin)
+	- Shane Pearce
+	- Robert Madden
+
+RRMonitor (rrmonitor.rdp)
+	- Shane Pearce
+
+RF Scanner (rfscanner.rdp)
+	- RF Scanner (rfscanner)
+
+OLD ENET (old-enet.rdp) **NOT FUNCTIONAL**
+	- Shane Pearce
+
+OLD DWNENET (old-dwnenet.rdp) **NOT FUNCTIONAL**
+	- VERANet (veranet)
+	- ERANet Remote Access (eranet)
+	- Shane Pearce
+
+Gabba PSVR (gabbapsvr.rdp) **NOT FUNCTIONAL**
+	- docusmart (docusmart)
+	- Shane Pearce
+	- Mark Cross
+
+Gabba PSVR DR (gabbapsvrdr.rdp)  ** POINTS TO BNE-DOCUSMART **
+	- docusmart (docusmart)
+	- Shane Pearce
+	- Mark Cross
+
+ERANET (eranet_1280_1024.rdp, eranet_full_screen.rdp, eranet.rdp) **NOT FUNCTIONAL**
+	- Shane Pearce
+	- Lydia Lytanzi
+
+bne-s2eranet (bne-s2eranet.rdp)
+	- ERANet Remote Access (eranet)
+	- VERANet (veranet)
+	- Shane Pearce
+
+bne-eranet (bne-eranet.rdp)
+	- ERANet Remote Access (eranet)
+	- VERANet (veranet)
+	- Shane Pearce
+
+bne-docusmart (bne-docusmart.rdp)
+	- docusmart (docusmart)
+	- Shane Pearce
+	- Mark Cross
+
+bne-caplink (bne-caplink.rdp)
+	- Caplink Caplink (caplink)
+	- Robert Madden
+
+
+
+Distinct Pentana Based Users:
+	execera
+	rrmgtadmin
+	eranet
+	veranet
+	docusmart
+	caplink
+	rfscanner??? 
+

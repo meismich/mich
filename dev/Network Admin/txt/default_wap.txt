@@ -1,0 +1,156 @@
+
+!
+version 12.4
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname apdefault1
+!
+!
+aaa new-model
+!
+!
+aaa group server radius rad_eap
+!
+aaa group server radius rad_mac
+!
+aaa group server radius rad_acct
+!
+aaa group server radius rad_admin
+!
+aaa group server tacacs+ tac_admin
+!
+aaa group server radius rad_pmip
+!
+aaa group server radius dummy
+!
+aaa authentication login default local
+aaa authentication login eap_methods group rad_eap
+aaa authentication login mac_methods local
+aaa authorization exec default local 
+aaa accounting network acct_methods start-stop group rad_acct
+!
+aaa session-id common
+led display alternate
+!
+!
+dot11 syslog
+!
+dot11 ssid apdefault
+   authentication open mac-address mac_methods 
+!
+power inline negotiation prestandard source
+!
+!
+username administrator privilege 15 password 7 010707094C04090B
+username 001de0be5d23 password 7 075F711D4A0C490712470F5E57
+username 001de0be5d23 autocommand exit
+username 0013ce6780e7 password 7 1447425A5F072F7D7370633075
+username 0013ce6780e7 autocommand exit
+username 0013e8b3f889 password 7 1447425A5F017229772E6B6D7B
+username 0013e8b3f889 autocommand exit
+username 00215c321ddb password 7 06565F731D1B0A4A5746160F0E
+username 00215c321ddb autocommand exit
+username 001b77418cc9 password 7 075F711D4C5E4E51464A080F5D
+username 001b77418cc9 autocommand exit
+username 000cf165f9bf password 7 055B565F224A1F5F4C034E100D
+username 000cf165f9bf autocommand exit
+username 00166f6deb9e password 7 135547435D5A027C2F212A6A30
+username 00166f6deb9e autocommand exit
+username 000e355c4527 password 7 101E59490044475E0F507F7973
+username 000e355c4527 autocommand exit
+username 00215c6cea83 password 7 144742595D51297D272D326D71
+username 00215c6cea83 autocommand exit
+username 001de0be4de1 password 7 014356555F0E560D24184A0C48
+username 001de0be4de1 autocommand exit
+username 0023141ffef4 password 7 13554740585D507B2D222D3561
+username 0023141ffef4 autocommand exit
+username 001b7741bcc9 password 7 03540B5A045876181F0B1A064E
+username 001b7741bcc9 autocommand exit
+username 2ca835c353ee password 7 08734F4F514A5014415E5F012F
+username 2ca835c353ee autocommand exit
+username 002314c1225c password 7 03540B59555E754F1F5B4B5014
+username 002314c1225c autocommand exit
+username 00130269a3ca password 7 075F711D1D594B534E13580F05
+username 00130269a3ca autocommand exit
+username 00a065059cba password 7 1447420A5C527F7B7171303723
+username 00a065059cba autocommand exit
+username 001e65059cba password 7 0256540A0E505A7119170A1B04
+username 001e65059cba autocommand exit
+!
+!
+bridge irb
+!
+!
+interface Dot11Radio0
+ no ip address
+ no ip route-cache
+ !
+ encryption key 1 size 128bit 7 7D1A2A824D930BB1090B5A7A6E80 transmit-key
+ encryption mode wep mandatory 
+ !
+ ssid apdefault
+ !
+ speed  basic-1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 24.0 36.0 48.0 54.0
+ station-role root
+ bridge-group 1
+ bridge-group 1 subscriber-loop-control
+ bridge-group 1 block-unknown-source
+ no bridge-group 1 source-learning
+ no bridge-group 1 unicast-flooding
+ bridge-group 1 spanning-disabled
+!
+interface Dot11Radio1
+ no ip address
+ no ip route-cache
+ !
+ encryption key 1 size 128bit 7 5D1A2A824D930BB1090B5A7A6E80 transmit-key
+ encryption mode wep mandatory 
+ !
+ ssid apdefault
+ !
+ no dfs band block
+ channel dfs
+ station-role root
+ bridge-group 1
+ bridge-group 1 subscriber-loop-control
+ bridge-group 1 block-unknown-source
+ no bridge-group 1 source-learning
+ no bridge-group 1 unicast-flooding
+ bridge-group 1 spanning-disabled
+!
+interface FastEthernet0
+ no ip address
+ no ip route-cache
+ duplex auto
+ speed auto
+ bridge-group 1
+ no bridge-group 1 source-learning
+ bridge-group 1 spanning-disabled
+ hold-queue 160 in
+!
+interface BVI1
+ ip address 10.34.101.230 255.255.0.0
+ no ip route-cache
+!
+ip default-gateway 10.34.1.254
+ip http server
+ip http authentication aaa
+no ip http secure-server
+ip http help-path http://www.cisco.com/warp/public/779/smbiz/prodconfig/help/eag
+ip radius source-interface BVI1 
+snmp-server view dot11view ieee802dot11 included
+snmp-server community public RW
+snmp-server chassis-id ens_parts
+radius-server attribute 32 include-in-access-req format %h
+radius-server vsa send accounting
+bridge 1 route ip
+!
+!
+!
+line con 0
+line vty 0 4
+!
+end

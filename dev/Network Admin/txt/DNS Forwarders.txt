@@ -1,0 +1,41 @@
+DNS Forwarders List
+Michael Spence
+2011-01-19
+
+(As Taken from the BNE-DC1 server on this date)
+
+All other DNS domains:
+139.130.4.4
+203.50.2.71
+208.67.222.222		<----|
+208.67.220.220		<----+---- Omitted from QLD-DC1
+10.1.1.253		<----|
+
+ape.local
+172.17.104.234
+172.17.104.235
+
+cpn.vwg
+10.1.1.8
+10.112.230.2
+10.112.192.25
+
+mazda.com.au
+10.3.0.4
+
+nipt.telstra.com
+203.52.0.221
+203.52.0.222
+
+tmca.com.au
+192.168.109.38
+192.168.109.138
+
+toyota.com.au
+192.168.109.38
+192.168.109.138
+
+vgacpn.vwg
+10.1.1.8
+
+

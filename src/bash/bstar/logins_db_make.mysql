@@ -1,0 +1,14 @@
+drop database logins;
+
+create database logins;
+
+use logins;
+
+create table logins (
+	id 		int(16)		not null,
+	s_uname 	char(64)	not null,
+	s_pword	 	char(16)	not null,
+	s_email	 	char(16)	not null,
+	i_level	 	int(8)		not null,
+	primary key (id)
+	);

@@ -1,0 +1,739 @@
+<!--
+/*
+ * File:	start.ht
+ * Author:	Michael Spence
+ * Date:	2009-02-09
+ *
+ * Purpose:
+ * Starts layout HTML segment.  Includes all HTML header info, included CSS, JS etc, starts body and master table
+
+ +------------------------------------------------------
+ |
+ | Banner Images
+ |
+ +------------------------------------------------------
+ | Banner Menu
+ +------------------------------------------------------
+ |        |                                     | 
+ | Left   | Content                             | Right
+ | Menu   |                                     | Menu
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ +------------------------------------------------------
+ | Tail
+ +------------------------------------------------------
+
+Figure 1.  Layout for desired HTML (* denotes what this file is related to)
+
+ */
+-->
+<html><!-- oncontextmenu="return false" -->
+<head>
+<title>AP Eagers Ltd - AssetList</title>
+<link rel="stylesheet" href="etc/index.css">
+<link rel="stylesheet" href="etc/tree.css">
+<script type="text/javascript" src="etc/tree.js"></script>
+<script type="text/javascript" src="etc/loading.js"></script>
+<!--script type="text/javascript" src="totalBOM.js"></script-->
+
+<link rel="shortcut icon" href="http://intranet/images/layout_images/favicon.ico">
+<link rel="icon" href="http://intranet/images/layout_images/favicon.ico">
+<title></title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">@import "/css/style.css";</style>
+<style type="text/css">
+<!--
+
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" border="0" cellpadding="0" cellspacing="0" >
+
+<table class='def' height='100%' width='100%'>
+<!--
+/*
+ * File:	banner.tr
+ * Author:	Michael Spence
+ * Date:	2009-02-09
+ *
+ * Purpose:
+ * Banner layout HTML segment.  Fits inside master table and represents two top rows of layout skeleton
+
+ +------------------------------------------------------
+ |
+ | Banner Images*
+ |
+ +------------------------------------------------------
+ | Banner Menu*
+ +------------------------------------------------------
+ |        |                                     | 
+ | Left   | Content                             | Right
+ | Menu   |                                     | Menu
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ +------------------------------------------------------
+ | Tail
+ +------------------------------------------------------
+
+Figure 1.  Layout for desired HTML (* denotes what this file is related to)
+
+ */
+-->
+<!-- Banner Graphics -->
+<tr>
+	<td colspan=5 bgcolor="black" align="top" valign="top" height="97" width="100%" background="img/layout/main_banner3.jpg">
+	<table class=def>
+	<tr>
+		<td width=359 height=97 background="img/layout/main_banner1.jpg"><!--a href="http://intranet" alt="Back To AP Eagers Home Page">
+		<img src="img/layout/main_banner1.jpg" border="0" 
+			width="359" height="97" alt="Back To AP Eagers Intranet Home Page">
+		</a-->
+		<td width=641 background="img/layout/main_banner2.jpg"><b class=banner>ASSET&nbsp;LIST</b>
+		<td width=*>&nbsp;
+	</tr>
+	</table>
+	</td>
+</tr>
+<!-- END Banner Graphics -->
+
+
+<!-- Banner Menu -->
+<tr height="25" width="100%">
+	<td colspan=5 align="top" valign="top" height="25" width="100%" background="img/layout/under_main_banner.jpg">
+
+	<table class="def" height="25" width="100%">
+	<form action="index.php?content=logout" method="post">
+	<tr height="25" background="img/layout/under_main_banner.jpg">
+		<td height="25" width="500">
+		<font face="Arial" style="font-size : 14px;">&nbsp;
+			<a class="abanner" href="http://ittools/asset/index.php" class="link5">Home</a> | 
+			<a class="abanner" href="http://ittools/asset/index.php?content=instr" class="link8">Instructions</a> | 
+			<a class="abanner" href="http://www.apeagers.com.au" target="_blank" class="link5">AP Eagers Website</a> |
+			<a class="abanner" href="http://intranet/" class="link5">Intranet</a>
+		</font>
+		<td width=*>&nbsp;
+		<td height=25 width=500>
+			<font class="log">
+IP: 10.1.1.33	
+			</font>
+
+	</tr>
+	</form>
+	</table>
+	</td>
+</tr>
+<!-- END Banner Menu --> 
+
+<tr>
+<td height=100% width=180>
+<!--
+/*
+ * File:	leftmenu.tb
+ * Author:	Michael Spence
+ * Date:	2009-02-09
+ *
+ * Purpose:
+ * Left Menu layout HTML segment.  Fits inside master table and represents left side of the main section in layout skeleton
+
+ +------------------------------------------------------
+ |
+ | Banner Images
+ |
+ +------------------------------------------------------
+ | Banner Menu
+ +------------------------------------------------------
+ |        |                                     | 
+ | Left*  | Content                             | Right
+ | Menu   |                                     | Menu
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ +------------------------------------------------------
+ | Tail
+ +------------------------------------------------------
+
+Figure 1.  Layout for desired HTML (* denotes what this file is related to)
+
+ */
+-->
+<table class="def" height=100%>
+<tr>
+	<!-- Start of Left hand side Main Menu -->
+	<td height="100%" width="205" align="top" valign="top" background="img/layout/fill/K.jpg" > 
+
+
+	<!--
+	Create function to recursively make a tree from a table
+
+	f(x)
+
+	select * from menu where parent = x
+
+	for i all in rs
+		if first <ul>
+		display <li><a>
+		if !none </ul>
+		f(i)
+	-->
+	<!-- Tree -->
+	<div class="tree">
+	<font class="lm">
+	<ul id="tree1">
+		<li><a href="#">Search for Assets</a>
+		<ul>
+ 			<li><a href="index.php?content=assets">List of Active Assets</a></li>
+ 			<li><a href="index.php?content=asset">Search for Single Asset</a></li>
+ 			<li><a href="index.php?content=dated">List of Outdated Assets</a></li>
+		</ul>
+		</li>
+ 		<li><a href="index.php?content=purchase">New Purchase</a></li>
+ 		<li><a href="#">Cost Reports</a>
+		<ul>
+ 			<li><a href="index.php?content=preport">Computer Rental</a></li>
+ 			<li><a href="index.php?content=lreport">Service Charges</a></li>
+ 			<li><a href="index.php?content=sreport">Charges Summary</a></li>
+		</ul>
+ 		<li><a href="#">Misc Admin</a>
+		<ul>
+ 			<li><a href="index.php?content=model">Models Admin</a></li>
+ 			<li><a href="index.php?content=costcentre">Costcentre Admin</a></li>
+ 			<li><a href="index.php?content=status">Status Admin</a></li>
+ 			<li><a href="index.php?content=location">Location Admin</a></li>
+		</ul>
+		</li>
+	
+ 		<li><a><hr></a></li>
+ 		<li><a href="index.php?content=access">Update Access Keys</a></li>
+	
+ 		<li><a href="http://intranet/">Back to Intranet</a></li>
+	</ul>
+	</font>
+	</div>
+	<!-- END Tree -->
+		
+	<!--  Login  -->
+	<div>
+	<table class="lmtab" width=205>
+		<!-- Black Strip -->
+		<tr>
+			<td colspan="3" height="3" background="img/layout/fill/K.jpg"></td>
+		</tr>
+		<!-- Head Graphics -->
+		<tr>
+			<td width="14" height="21" background="img/layout/topnews1.jpg"></td>
+			<!-- story date/heading -->
+			<td background="img/layout/topnews2.jpg" height="21" valign="center">
+			<table class="def">
+			<tr>
+				<td width="16">*</td>
+				<td><font face="Arial" style="font-size : 13px;color:#e4eeff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User Login</font></td>
+			</tr>
+			</table>
+			</td>
+			<td width="7" height="21" background="img/layout/topnews3.jpg"></td>
+		</tr>
+		<!-- Main Section -->
+		<tr>
+			<td background="img/layout/side_image2.gif" width="13"></td>
+			<!-- Start Main Text Area -->
+			<form action="index.php?content=login" method="post">
+			<td>
+	 		<font face="Arial" style="font-size : 12px;">Please enter Access Key:
+	 		<input style="font-size:7pt;width:120px;height:18;" class="boxtbox" type="password" name="loginkey">
+	 		<input style="font-size:7pt;width:50px;height:18;" class="boxtbox" type="submit" value="Submit">
+	 		</font>
+			</td>
+			</form>
+			<!-- End Main Text Area -->
+			<td background="img/layout/side_image1.gif" width="7" height="1"></td>
+		</tr>
+		<!-- Tail Graphics -->
+		<tr>
+			<td background="img/layout/bottom1.gif" width="14" height="11"></td>
+			<td background="img/layout/bottom2.gif"></td>
+			<td width="7" height="11" background="img/layout/bottom3.gif"></td>
+		</tr>
+	</table>
+	</div>
+	<!--  END LayoutSearchTool  -->
+		
+	</td>
+</tr>
+</table>
+
+</td>
+<td width=10 bgcolor=#121212>&nbsp;</td>
+<td width=100% height=100% align=top valign=top bgcolor='#e4e4e4'>
+<!--
+/*
+ *	File:	login.1
+ */
+-->
+<!--
+/*
+ *	File:	startup.1
+ */
+-->
+<!--p>Generic Startup Page -->
+
+<b>Welcome to the Asset List System.</b>
+<p>This site will facilitate the reporting and housekeeping involved with the asset tracking and charging of IT equipment, AP Eagers wide.
+<p>As you can see there is a number of menu options on the Left, with which to make searches on the IT assets.  If you are logged in, you will be able to update items as appropriate with your login level.
+<p>Please send feedback to "issadmin@apeagers.com.au"
+
+</td><td width=5 bgcolor=#121212>&nbsp;</td>
+<td height=100% width=180 align=top valign=top background='img/layout/fill/K.jpg'>
+<!--
+/*
+ * File:	rightmenu.tb
+ * Author:	Michael Spence
+ * Date:	2009-02-09
+ *
+ * Purpose:
+ * Banner layout HTML segment.  Fits inside master table and represents right side of main section in layout skeleton
+
+ +------------------------------------------------------
+ |
+ | Banner Images
+ |
+ +------------------------------------------------------
+ | Banner Menu
+ +------------------------------------------------------
+ |        |                                     | 
+ | Left   | Content                             | Right*
+ | Menu   |                                     | Menu
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ +------------------------------------------------------
+ | Tail
+ +------------------------------------------------------
+
+Figure 1.  Layout for desired HTML (* denotes what this file is related to)
+
+ */
+-->
+</td>
+</tr>
+<!--
+/*
+ * File:	tail.ht
+ * Author:	Michael Spence
+ * Date:	2009-02-09
+ *
+ * Purpose:
+ * Tail layout HTML segment.  Ends HTML document
+
+ +------------------------------------------------------
+ |
+ | Banner Images
+ |
+ +------------------------------------------------------
+ | Banner Menu
+ +------------------------------------------------------
+ |        |                                     | 
+ | Left   | Content                             | Right
+ | Menu   |                                     | Menu
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ +------------------------------------------------------
+ | Tail*
+ +------------------------------------------------------
+
+Figure 1.  Layout for desired HTML (* denotes what this file is related to)
+
+ */
+-->
+<!-- Begin Tail -->
+<tr>
+	<td colspan=5 height="3" background="img/layout/fill/K.jpg"></td>
+</tr>
+
+<tr>
+	<td colspan=5 height="8" background="img/layout/fill/R.jpg"></td>
+</tr>
+
+<tr>
+	<td height="8" align="left" colspan=4>
+	<font class="lm"><a href="/adminlogin.asp" class="link3">&nbsp;2008 © Copyright AP Eagers Ltd</a></font>
+	</td>
+	<td width=180 align=right>v1.0000000</td>
+</tr>
+<!-- End Tail -->
+
+</table>
+</body>
+</html>
+
+<!--
+/*
+ * File:	start.ht
+ * Author:	Michael Spence
+ * Date:	2009-02-09
+ *
+ * Purpose:
+ * Starts layout HTML segment.  Includes all HTML header info, included CSS, JS etc, starts body and master table
+
+ +------------------------------------------------------
+ |
+ | Banner Images
+ |
+ +------------------------------------------------------
+ | Banner Menu
+ +------------------------------------------------------
+ |        |                                     | 
+ | Left   | Content                             | Right
+ | Menu   |                                     | Menu
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ +------------------------------------------------------
+ | Tail
+ +------------------------------------------------------
+
+Figure 1.  Layout for desired HTML (* denotes what this file is related to)
+
+ */
+-->
+<html><!-- oncontextmenu="return false" -->
+<head>
+<title>AP Eagers Ltd - AssetList</title>
+<link rel="stylesheet" href="etc/index.css">
+<link rel="stylesheet" href="etc/tree.css">
+<script type="text/javascript" src="etc/tree.js"></script>
+<script type="text/javascript" src="etc/loading.js"></script>
+<!--script type="text/javascript" src="totalBOM.js"></script-->
+
+<link rel="shortcut icon" href="http://intranet/images/layout_images/favicon.ico">
+<link rel="icon" href="http://intranet/images/layout_images/favicon.ico">
+<title></title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">@import "/css/style.css";</style>
+<style type="text/css">
+<!--
+
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" border="0" cellpadding="0" cellspacing="0" >
+
+<table class='def' height='100%' width='100%'>
+<!--
+/*
+ * File:	banner.tr
+ * Author:	Michael Spence
+ * Date:	2009-02-09
+ *
+ * Purpose:
+ * Banner layout HTML segment.  Fits inside master table and represents two top rows of layout skeleton
+
+ +------------------------------------------------------
+ |
+ | Banner Images*
+ |
+ +------------------------------------------------------
+ | Banner Menu*
+ +------------------------------------------------------
+ |        |                                     | 
+ | Left   | Content                             | Right
+ | Menu   |                                     | Menu
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ +------------------------------------------------------
+ | Tail
+ +------------------------------------------------------
+
+Figure 1.  Layout for desired HTML (* denotes what this file is related to)
+
+ */
+-->
+<!-- Banner Graphics -->
+<tr>
+	<td colspan=5 bgcolor="black" align="top" valign="top" height="97" width="100%" background="img/layout/main_banner3.jpg">
+	<table class=def>
+	<tr>
+		<td width=359 height=97 background="img/layout/main_banner1.jpg"><!--a href="http://intranet" alt="Back To AP Eagers Home Page">
+		<img src="img/layout/main_banner1.jpg" border="0" 
+			width="359" height="97" alt="Back To AP Eagers Intranet Home Page">
+		</a-->
+		<td width=641 background="img/layout/main_banner2.jpg"><b class=banner>ASSET&nbsp;LIST</b>
+		<td width=*>&nbsp;
+	</tr>
+	</table>
+	</td>
+</tr>
+<!-- END Banner Graphics -->
+
+
+<!-- Banner Menu -->
+<tr height="25" width="100%">
+	<td colspan=5 align="top" valign="top" height="25" width="100%" background="img/layout/under_main_banner.jpg">
+
+	<table class="def" height="25" width="100%">
+	<form action="index.php?content=logout" method="post">
+	<tr height="25" background="img/layout/under_main_banner.jpg">
+		<td height="25" width="500">
+		<font face="Arial" style="font-size : 14px;">&nbsp;
+			<a class="abanner" href="http://ittools/asset/index.php" class="link5">Home</a> | 
+			<a class="abanner" href="http://ittools/asset/index.php?content=instr" class="link8">Instructions</a> | 
+			<a class="abanner" href="http://www.apeagers.com.au" target="_blank" class="link5">AP Eagers Website</a> |
+			<a class="abanner" href="http://intranet/" class="link5">Intranet</a>
+		</font>
+		<td width=*>&nbsp;
+		<td height=25 width=500>
+			<font class="log">
+IP: 10.1.1.33You are Now Logged in as <b>Michael Spence</b><input type='submit' value='Logout' style='font-size:7pt;width:50px;font-weight:bold;height:20;'>	
+			</font>
+
+	</tr>
+	</form>
+	</table>
+	</td>
+</tr>
+<!-- END Banner Menu --> 
+
+<tr>
+<td height=100% width=180>
+<!--
+/*
+ * File:	leftmenu.tb
+ * Author:	Michael Spence
+ * Date:	2009-02-09
+ *
+ * Purpose:
+ * Left Menu layout HTML segment.  Fits inside master table and represents left side of the main section in layout skeleton
+
+ +------------------------------------------------------
+ |
+ | Banner Images
+ |
+ +------------------------------------------------------
+ | Banner Menu
+ +------------------------------------------------------
+ |        |                                     | 
+ | Left*  | Content                             | Right
+ | Menu   |                                     | Menu
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ +------------------------------------------------------
+ | Tail
+ +------------------------------------------------------
+
+Figure 1.  Layout for desired HTML (* denotes what this file is related to)
+
+ */
+-->
+<table class="def" height=100%>
+<tr>
+	<!-- Start of Left hand side Main Menu -->
+	<td height="100%" width="205" align="top" valign="top" background="img/layout/fill/K.jpg" > 
+
+
+	<!--
+	Create function to recursively make a tree from a table
+
+	f(x)
+
+	select * from menu where parent = x
+
+	for i all in rs
+		if first <ul>
+		display <li><a>
+		if !none </ul>
+		f(i)
+	-->
+	<!-- Tree -->
+	<div class="tree">
+	<font class="lm">
+	<ul id="tree1">
+		<li><a href="#">Search for Assets</a>
+		<ul>
+ 			<li><a href="index.php?content=assets">List of Active Assets</a></li>
+ 			<li><a href="index.php?content=asset">Search for Single Asset</a></li>
+ 			<li><a href="index.php?content=dated">List of Outdated Assets</a></li>
+		</ul>
+		</li>
+ 		<li><a href="index.php?content=purchase">New Purchase</a></li>
+ 		<li><a href="#">Cost Reports</a>
+		<ul>
+ 			<li><a href="index.php?content=preport">Computer Rental</a></li>
+ 			<li><a href="index.php?content=lreport">Service Charges</a></li>
+ 			<li><a href="index.php?content=sreport">Charges Summary</a></li>
+		</ul>
+ 		<li><a href="#">Misc Admin</a>
+		<ul>
+ 			<li><a href="index.php?content=model">Models Admin</a></li>
+ 			<li><a href="index.php?content=costcentre">Costcentre Admin</a></li>
+ 			<li><a href="index.php?content=status">Status Admin</a></li>
+ 			<li><a href="index.php?content=location">Location Admin</a></li>
+		</ul>
+		</li>
+	
+ 		<li><a><hr></a></li>
+ 		<li><a href="index.php?content=access">Update Access Keys</a></li>
+	
+ 		<li><a href="http://intranet/">Back to Intranet</a></li>
+	</ul>
+	</font>
+	</div>
+	<!-- END Tree -->
+		
+	<!--  Login  -->
+	<div>
+	<table class="lmtab" width=205>
+		<!-- Black Strip -->
+		<tr>
+			<td colspan="3" height="3" background="img/layout/fill/K.jpg"></td>
+		</tr>
+		<!-- Head Graphics -->
+		<tr>
+			<td width="14" height="21" background="img/layout/topnews1.jpg"></td>
+			<!-- story date/heading -->
+			<td background="img/layout/topnews2.jpg" height="21" valign="center">
+			<table class="def">
+			<tr>
+				<td width="16">*</td>
+				<td><font face="Arial" style="font-size : 13px;color:#e4eeff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User Login</font></td>
+			</tr>
+			</table>
+			</td>
+			<td width="7" height="21" background="img/layout/topnews3.jpg"></td>
+		</tr>
+		<!-- Main Section -->
+		<tr>
+			<td background="img/layout/side_image2.gif" width="13"></td>
+			<!-- Start Main Text Area -->
+			<form action="index.php?content=login" method="post">
+			<td>
+	 		<font face="Arial" style="font-size : 12px;">Please enter Access Key:
+	 		<input style="font-size:7pt;width:120px;height:18;" class="boxtbox" type="password" name="loginkey">
+	 		<input style="font-size:7pt;width:50px;height:18;" class="boxtbox" type="submit" value="Submit">
+	 		</font>
+			</td>
+			</form>
+			<!-- End Main Text Area -->
+			<td background="img/layout/side_image1.gif" width="7" height="1"></td>
+		</tr>
+		<!-- Tail Graphics -->
+		<tr>
+			<td background="img/layout/bottom1.gif" width="14" height="11"></td>
+			<td background="img/layout/bottom2.gif"></td>
+			<td width="7" height="11" background="img/layout/bottom3.gif"></td>
+		</tr>
+	</table>
+	</div>
+	<!--  END LayoutSearchTool  -->
+		
+	</td>
+</tr>
+</table>
+
+</td>
+<td width=10 bgcolor=#121212>&nbsp;</td>
+<td width=100% height=100% align=top valign=top bgcolor='#e4e4e4'>
+<!--
+/*
+ *	File:	bulk.9
+ */
+-->
+Bulk Generate<br>Generated SERVICES report for APAP258B (<a href='data/output/2014-05-01-APAP258B-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APAP258B-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APAP258B (<a href='data/output/2014-05-01-APAP258B-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APAP258B-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APFP258B (<a href='data/output/2014-05-01-APFP258B-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APFP258B-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APFP258B (<a href='data/output/2014-05-01-APFP258B-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APFP258B-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB801 (<a href='data/output/2014-05-01-APGB801-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB801-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB801 (<a href='data/output/2014-05-01-APGB801-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB801-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB802 (<a href='data/output/2014-05-01-APGB802-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB802-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB802 (<a href='data/output/2014-05-01-APGB802-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB802-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB803 (<a href='data/output/2014-05-01-APGB803-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB803-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB803 (<a href='data/output/2014-05-01-APGB803-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB803-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB804 (<a href='data/output/2014-05-01-APGB804-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB804-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB804 (<a href='data/output/2014-05-01-APGB804-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB804-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB805 (<a href='data/output/2014-05-01-APGB805-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB805-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB805 (<a href='data/output/2014-05-01-APGB805-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB805-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB806 (<a href='data/output/2014-05-01-APGB806-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB806-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB806 (<a href='data/output/2014-05-01-APGB806-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB806-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB807 (<a href='data/output/2014-05-01-APGB807-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB807-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB807 (<a href='data/output/2014-05-01-APGB807-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB807-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB808 (<a href='data/output/2014-05-01-APGB808-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB808-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB808 (<a href='data/output/2014-05-01-APGB808-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB808-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB809 (<a href='data/output/2014-05-01-APGB809-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB809-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB809 (<a href='data/output/2014-05-01-APGB809-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB809-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB810 (<a href='data/output/2014-05-01-APGB810-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB810-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB810 (<a href='data/output/2014-05-01-APGB810-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB810-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB810A (<a href='data/output/2014-05-01-APGB810A-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB810A-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB810A (<a href='data/output/2014-05-01-APGB810A-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB810A-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB812 (<a href='data/output/2014-05-01-APGB812-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB812-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB812 (<a href='data/output/2014-05-01-APGB812-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB812-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB814 (<a href='data/output/2014-05-01-APGB814-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB814-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB814 (<a href='data/output/2014-05-01-APGB814-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB814-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB815 (<a href='data/output/2014-05-01-APGB815-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB815-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB815 (<a href='data/output/2014-05-01-APGB815-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB815-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB816 (<a href='data/output/2014-05-01-APGB816-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB816-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB816 (<a href='data/output/2014-05-01-APGB816-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB816-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB818 (<a href='data/output/2014-05-01-APGB818-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB818-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB818 (<a href='data/output/2014-05-01-APGB818-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB818-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB820 (<a href='data/output/2014-05-01-APGB820-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB820-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB820 (<a href='data/output/2014-05-01-APGB820-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB820-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB821 (<a href='data/output/2014-05-01-APGB821-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB821-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB821 (<a href='data/output/2014-05-01-APGB821-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB821-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB827 (<a href='data/output/2014-05-01-APGB827-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB827-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB827 (<a href='data/output/2014-05-01-APGB827-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB827-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB831 (<a href='data/output/2014-05-01-APGB831-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB831-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB831 (<a href='data/output/2014-05-01-APGB831-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB831-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB832 (<a href='data/output/2014-05-01-APGB832-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB832-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB832 (<a href='data/output/2014-05-01-APGB832-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB832-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB833 (<a href='data/output/2014-05-01-APGB833-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB833-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB833 (<a href='data/output/2014-05-01-APGB833-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB833-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB836 (<a href='data/output/2014-05-01-APGB836-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB836-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB836 (<a href='data/output/2014-05-01-APGB836-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB836-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB837 (<a href='data/output/2014-05-01-APGB837-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB837-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB837 (<a href='data/output/2014-05-01-APGB837-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB837-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB840 (<a href='data/output/2014-05-01-APGB840-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB840-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB840 (<a href='data/output/2014-05-01-APGB840-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB840-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB862 (<a href='data/output/2014-05-01-APGB862-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB862-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB862 (<a href='data/output/2014-05-01-APGB862-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB862-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGB863 (<a href='data/output/2014-05-01-APGB863-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB863-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGB863 (<a href='data/output/2014-05-01-APGB863-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGB863-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APGP258B (<a href='data/output/2014-05-01-APGP258B-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGP258B-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APGP258B (<a href='data/output/2014-05-01-APGP258B-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APGP258B-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APPP258B (<a href='data/output/2014-05-01-APPP258B-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APPP258B-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APPP258B (<a href='data/output/2014-05-01-APPP258B-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APPP258B-BC-RENTAL.csv</a>)<br>Generated SERVICES report for APZP258B (<a href='data/output/2014-05-01-APZP258B-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APZP258B-BC-SERVICE.csv</a>)<br>Generated RENTAL report for APZP258B (<a href='data/output/2014-05-01-APZP258B-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-APZP258B-BC-RENTAL.csv</a>)<br>Generated SERVICES report for IT (<a href='data/output/2014-05-01-IT-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-IT-BC-SERVICE.csv</a>)<br>Generated RENTAL report for IT (<a href='data/output/2014-05-01-IT-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-IT-BC-RENTAL.csv</a>)<br>Generated SERVICES report for WHOP258B (<a href='data/output/2014-05-01-WHOP258B-BC-SERVICE.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-WHOP258B-BC-SERVICE.csv</a>)<br>Generated RENTAL report for WHOP258B (<a href='data/output/2014-05-01-WHOP258B-BC-RENTAL.csv'>/var/www/htdocs/asset/data/output/2014-05-01/2014-05-01-WHOP258B-BC-RENTAL.csv</a>)<br><br>Generated Summary report<br>Report can be downloaded from <a href='http://ittools/asset/data/output/2014-05-01-SUMMARY.csv'>HERE</a>
+</td><td width=5 bgcolor=#121212>&nbsp;</td>
+<td height=100% width=180 align=top valign=top background='img/layout/fill/K.jpg'>
+<!--
+/*
+ * File:	rightmenu.tb
+ * Author:	Michael Spence
+ * Date:	2009-02-09
+ *
+ * Purpose:
+ * Banner layout HTML segment.  Fits inside master table and represents right side of main section in layout skeleton
+
+ +------------------------------------------------------
+ |
+ | Banner Images
+ |
+ +------------------------------------------------------
+ | Banner Menu
+ +------------------------------------------------------
+ |        |                                     | 
+ | Left   | Content                             | Right*
+ | Menu   |                                     | Menu
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ +------------------------------------------------------
+ | Tail
+ +------------------------------------------------------
+
+Figure 1.  Layout for desired HTML (* denotes what this file is related to)
+
+ */
+-->
+</td>
+</tr>
+<!--
+/*
+ * File:	tail.ht
+ * Author:	Michael Spence
+ * Date:	2009-02-09
+ *
+ * Purpose:
+ * Tail layout HTML segment.  Ends HTML document
+
+ +------------------------------------------------------
+ |
+ | Banner Images
+ |
+ +------------------------------------------------------
+ | Banner Menu
+ +------------------------------------------------------
+ |        |                                     | 
+ | Left   | Content                             | Right
+ | Menu   |                                     | Menu
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ |        |                                     | 
+ +------------------------------------------------------
+ | Tail*
+ +------------------------------------------------------
+
+Figure 1.  Layout for desired HTML (* denotes what this file is related to)
+
+ */
+-->
+<!-- Begin Tail -->
+<tr>
+	<td colspan=5 height="3" background="img/layout/fill/K.jpg"></td>
+</tr>
+
+<tr>
+	<td colspan=5 height="8" background="img/layout/fill/R.jpg"></td>
+</tr>
+
+<tr>
+	<td height="8" align="left" colspan=4>
+	<font class="lm"><a href="/adminlogin.asp" class="link3">&nbsp;2008 © Copyright AP Eagers Ltd</a></font>
+	</td>
+	<td width=180 align=right>v1.0000000</td>
+</tr>
+<!-- End Tail -->
+
+</table>
+</body>
+</html>
+

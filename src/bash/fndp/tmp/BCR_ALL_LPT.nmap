@@ -1,0 +1,29 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:58:30 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 9100 -oG /home/mspence/src/fndp/tmp/BCR_ALL_LPT.nmap 10.17.0.0/24 10.17.1.0/24 10.17.2.0/24 10.17.3.0/24 10.17.4.0/24 10.17.5.0/24 10.17.6.0/24 10.17.7.0/24 10.17.8.0/24 10.17.9.0/24 10.17.10.0/24 10.17.11.0/24 10.17.12.0/24 10.17.13.0/24 10.17.15.0/24 10.17.16.0/24 10.17.17.0/24 10.17.18.0/24 10.17.19.0/24 10.17.20.0/24 10.17.99.0/24 10.17.100.0/24 10.17.253.0/24 10.17.254.0/24 
+Host: 10.17.1.239 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.1.252 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.11.3 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.11.10 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.11.12 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.11.13 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.11.29 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.11.46 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.11.150 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.17.11.152 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.17.11.153 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.17.11.154 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.17.11.157 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.17.11.160 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.17.11.161 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.17.11.232 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.11.254 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.100.3 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.100.150 ()	Ports: 9100/open/tcp//jetdirect///
+Host: 10.17.254.11 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.254.14 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.254.24 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.254.26 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.254.31 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.254.32 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.254.36 ()	Ports: 9100/closed/tcp//jetdirect///
+Host: 10.17.254.37 ()	Ports: 9100/closed/tcp//jetdirect///
+# Nmap done at Tue Apr  1 16:59:04 2014 -- 6144 IP addresses (27 hosts up) scanned in 34.34 seconds

@@ -1,0 +1,33 @@
+# Nmap 4.76 scan initiated Tue Apr  1 17:25:18 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/BRE_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/BRE.webhosts 
+Host: 10.36.0.100 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.0.101 ()	Ports: 23/filtered/tcp//telnet///
+Host: 10.36.1.248 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.1.249 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.1.250 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.1.251 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.1.252 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.2.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.4.2 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.4.16 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.4.18 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.4.154 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.4.155 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.4.156 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.4.160 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.4.162 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.4.163 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.4.164 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.4.165 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.4.167 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.4.199 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.4.234 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.4.235 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.4.236 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.4.237 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.6.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.6.159 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.16.151 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.16.152 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.36.16.231 ()	Ports: 23/open/tcp//telnet///
+Host: 10.36.16.235 ()	Ports: 23/open/tcp//telnet///
+# Nmap done at Tue Apr  1 17:25:18 2014 -- 31 IP addresses (31 hosts up) scanned in 0.23 seconds

@@ -1,0 +1,6 @@
+# Nmap 4.76 scan initiated Tue Apr 15 11:13:43 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/BRO_ALL_TTY.nmap -iL /home/mspence/src/fndp/rem/BRO.webhosts 
+Host: 172.17.150.100 ()	Ports: 23/open/tcp//telnet///
+Host: 172.17.150.231 ()	Ports: 23/open/tcp//telnet///
+Host: 172.17.150.243 ()	Ports: 23/closed/tcp//telnet///
+Host: 172.17.150.250 ()	Ports: 23/closed/tcp//telnet///
+# Nmap done at Tue Apr 15 11:13:44 2014 -- 4 IP addresses (4 hosts up) scanned in 1.06 seconds

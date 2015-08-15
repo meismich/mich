@@ -1,0 +1,62 @@
+Site Audit Plan
+2010-08-20
+Michael Spence
+
+
+Audience:
+
+Currently this documentation is for Field Support Officers and their Supervisor.  In the future, I do not forsee as yet, other appropriate persons to whom this document may apply.  This documentation may be useful, in an informative manner, to General Managers, Accountants and Corporate staff for house keeping purposes.
+
+
+Preamble:
+
+This document applies to the timetable to be used for repetitively auditing IT equipment at dealerships.  Through this process, all assets will be accounted for and the Asset Database updated regularly, ensuring its validity and accuracy.  This must be done so that equipment charges, which are performed monthly, are correct.
+
+This document DOES NOT include the method required to audit a site.  This document ONLY describes the plan for regular auditing of sites.
+
+
+Dealerships and Estimated Number of IT Assets:
+
+The following table describes for each Dealership (or Entity) the number of IT Assets at this dealership.  The number quoted should be treated as an estimate, but was accurate at the time of writing this document.
+
+SITE								# Assets
+
+Southside Toyota Woolloongabba (Sales/Admin)			81
+Southside Toyota Woolloongabba (Service)			25
+Southside Ford							34
+Southside Volvo/Landrover					11
+Southside Honda							59
+Southside Toyota Mount Gravatt					56
+Torque Toyota NorthLakes					55
+Torque Toyota Brendale						8+61=69
+Torque Ford NorthLakes						46
+Torque Ford Strathpine						
+Torque Honda
+Torque Subaru
+Torque Panel Shop/Pre-Delivery					6+11=17
+Gympie Road Wholesale Cars
+Eagers Kia (Sales)
+Eagers Kia (Service)
+Eagers Holden
+Eagers Mazda
+Eagers Mitsubishi
+Eagers Admin
+Eagers Parts
+Metro Ford
+Metro Parts
+Metro Refinish (T'mba/M'dore)
+Subaru City
+Subaru Toowong (Sales)
+Subaru Toowong (Service)
+Austral Honda
+Austral Volkwagen
+Austral Parts
+Austral Porsche
+Austral PAG
+Austral Sunshine Coast
+Caloundra City Autos
+Bridge Toyota Darwin City
+Bridge Toyota Palmerston
+Hidden Valley Ford
+Hidden Valley Other
+Klosters							??

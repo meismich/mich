@@ -1,0 +1,6 @@
+# Nmap 4.76 scan initiated Tue Apr  1 17:25:20 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/MSN_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/MSN.webhosts 
+Host: 10.38.2.50 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.38.2.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.38.2.235 ()	Ports: 23/open/tcp//telnet///
+Host: 10.38.2.252 ()	Ports: 23/open/tcp//telnet///
+# Nmap done at Tue Apr  1 17:25:20 2014 -- 4 IP addresses (4 hosts up) scanned in 0.04 seconds

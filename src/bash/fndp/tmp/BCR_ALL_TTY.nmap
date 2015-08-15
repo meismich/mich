@@ -1,0 +1,14 @@
+# Nmap 4.76 scan initiated Tue Apr  1 16:59:37 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/BCR_ALL_TTY.nmap -iL /home/mspence/src/fndp/out/BCR.webhosts 
+Host: 10.17.1.239 ()	Ports: 23/open/tcp//telnet///
+Host: 10.17.1.252 ()	Ports: 23/open/tcp//telnet///
+Host: 10.17.11.150 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.17.11.152 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.17.11.153 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.17.11.154 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.17.11.157 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.17.11.160 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.17.11.161 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.17.11.232 ()	Ports: 23/open/tcp//telnet///
+Host: 10.17.254.32 ()	Ports: 23/closed/tcp//telnet///
+Host: 10.17.254.36 ()	Ports: 23/open/tcp//telnet///
+# Nmap done at Tue Apr  1 16:59:37 2014 -- 12 IP addresses (12 hosts up) scanned in 0.04 seconds

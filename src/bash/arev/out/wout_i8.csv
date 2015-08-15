@@ -1,0 +1,419 @@
+id,s_serialno,s_status,s_model,s_devicetype,t_date,s_location,s_costcentre,s_department,NA,NA,13,NA
+200700115,0705-B085625/003,Active,D945PSN,PC,2007-05-01,Torque Ford Strathpine,820 Torque Ford,Service,NA,NA,13,NA
+200700121,0711-B087963/001,Active,D945PSN,PC,2007-11-01,Torque Ford Strathpine,820 Torque Ford,Showroom,NA,NA,13,NA
+200700280,0707-B086470/013,Active,D945PSN,PC,2007-07-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Showroom,NA,NA,13,NA
+200700290,0707-B086470/004,Active,D945PSN,PC,2007-07-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Showroom,NA,NA,13,NA
+200700298,0604-B080403/003,Active,D945PSN,PC,2006-04-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Admin,NA,NA,13,NA
+200700314,0608-B081984/005,Active,D945PSN,PC,2006-08-01,Bridge Toyota Palmerston,814 Bridge Toyota Darwin,Parts,NA,NA,13,NA
+200700357,0706-B085731/001,Active,D945PSN,PC,2007-06-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Parts,NA,NA,13,NA
+200700366,0710-B087495/001,Active,D945PSN,PC,2007-10-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Service,NA,NA,13,NA
+200700371,0707-B086470/015,Active,D945PSN,PC,2007-07-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Discount Auto Parts,NA,NA,13,NA
+200700375,0707-B086470/018,Active,D945PSN,PC,2007-07-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Showroom,NA,NA,13,NA
+200700455,L3-D7102 07/11,Active,8932-A19,Notebook,2007-11-01,Southside Toyota Mt Gravatt,801 Southside Toyota,Service,NA,NA,13,NA
+200700564,0705-B085625/001,Active,D945PSN,PC,2007-05-01,Southside Ford Woolloongabba,808 Metro,Parts,NA,NA,13,NA
+200700567,0705-B085484/001,Active,D945PSN,PC,2007-05-01,Southside Ford Woolloongabba,808 Metro,Parts,NA,NA,13,NA
+200700572,0604-B080302/003,Active,D945PSN,PC,2006-04-01,Southside Ford Woolloongabba,808 Metro,Service,NA,NA,13,NA
+200700574,0602-B079321/001,Active,D945PSN,PC,2006-02-01,Southside Ford Woolloongabba,808 Metro,Service,NA,NA,13,NA
+200700578,0711-B087721/003,Active,D945PSN,PC,2007-11-01,Southside Ford Woolloongabba,808 Metro,Service,NA,NA,13,NA
+200700601,0703-B084816/002,Active,D945PSN,PC,2007-03-01,Southside Toyota Woolloongabba,801 Southside Toyota,Service,NA,NA,13,NA
+200700612,0707-B086450/004,Active,D945PSN,PC,2007-07-01,Southside Toyota Woolloongabba,801 Southside Toyota,Service,NA,NA,13,NA
+200700613,0707-B086450/003,Active,D945PSN,PC,2007-07-01,Southside Toyota Woolloongabba,801 Southside Toyota,Service,NA,NA,13,NA
+200700615,0707-B086450/001,Active,D945PSN,PC,2007-07-01,Southside Toyota Woolloongabba,801 Southside Toyota,Service,NA,NA,13,NA
+200700682,L3-ATBH1 06/02,Active,1858-A17,Notebook,2006-02-01,Eagers Holden Newstead,836 Eagers Holden,Admin,NA,NA,13,NA
+200700772,0707-B086445/002,Active,D945PSN,PC,2007-07-01,Austral PAG Fortitude Valley,806 Austral PAG,Showroom,NA,NA,13,NA
+200700919,L3-E6885 07/12,Active,8932-A19,Notebook,2007-12-01,Unassigned,IT,Showroom,NA,NA,13,NA
+200700986,0708-B086615/001,Active,D945PSN,PC,2007-08-01,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200700987,0711-B088030/001,Active,D945PSN,PC,2007-11-01,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200700988,0708-B086615/002,Active,D945PSN,PC,2007-08-01,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200700989,0708-B086582/001,Active,D945PSN,PC,2007-08-01,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200700993,0708-B086615/003,Active,D945PSN,PC,2007-08-01,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200701036,0802-B088935/004,Active,D945PSN,PC,2008-02-01,Austral VW Newstead,807 Austral Honda-VW,Parts,NA,NA,13,NA
+200701039,0606-B081279/001,Active,D945PSN,PC,2006-06-01,Austral VW Newstead,807 Austral Honda-VW,Service,NA,NA,13,NA
+200701040,0702-B084296/003,Active,D945PSN,PC,2007-02-01,Austral VW Newstead,807 Austral Honda-VW,Service,NA,NA,13,NA
+200701071,0612-B083563/001,Active,D945PSN,PC,2006-12-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Admin,NA,NA,13,NA
+200701079,0608-B081817/002,Active,D945PSN,PC,2006-08-01,SSV/SSR Buranda,806 Austral PAG,Service,NA,NA,13,NA
+200701089,0801-B088339/001,Active,D945PSN,PC,2008-01-01,Eagers Holden Newstead,836 Eagers Holden,Service,NA,NA,13,NA
+200701101,0707-B086446/001,Active,D945PSN,PC,2007-07-01,Austral Motors Newstead,807 Austral Honda-VW,Parts,NA,NA,13,NA
+200701117,0704-B084977/001,Active,D945PSN,PC,2007-04-01,Eagers Holden Newstead,836 Eagers Holden,Parts,NA,NA,13,NA
+200701189,0606-B081022/012,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Sales,NA,NA,13,NA
+200701194,0709-B087227/002,Active,D945PSN,PC,2007-09-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown,NA,NA,13,NA
+200701197,0606-B081022/002,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown,NA,NA,13,NA
+200701204,0606-B080943/004,Active,D945PSN,PC,2006-06-01,BMA Pinkenba,810 Brisbane Motor Auction,Unknown,NA,NA,13,NA
+200701223,0610-B082668/001,Active,D945PSN,PC,2006-10-01,BMA Pinkenba,810 Brisbane Motor Auction,Admin,NA,NA,13,NA
+200800006,0802-B088967/003,Active,D945PSN,PC,2008-02-01,Torque Ford Admin,820 Torque Ford,Admin,NA,NA,13,NA
+200800047,0805-B090055/002,Active,D945PSN,PC,2008-05-01,Eagers Holden Townsville,836 Eagers Holden,Parts,NA,NA,13,NA
+200800048,0805-B090055/001,Active,D945PSN,PC,2008-05-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Admin,NA,NA,13,NA
+200800051,0806-B090226/001,Active,D945PSN,PC,2008-06-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Parts,NA,NA,13,NA
+200800052,0806-B090226/002,Active,D945PSN,PC,2008-06-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Service,NA,NA,13,NA
+200800058,0806-B090245/003,Active,D945PSN,PC,2008-06-01,Bridge Toyota Palmerston,814 Bridge Toyota Darwin,Showroom,NA,NA,13,NA
+200800122,0802-B088961/001,Active,D945PSN,PC,2008-02-01,Eagers Holden Townsville,836 Eagers Holden,Parts,NA,NA,13,NA
+200800128,0803-B089083/002,Active,D945PSN,PC,2008-03-01,SSV/SSR Buranda,806 Austral PAG,Service,NA,NA,13,NA
+200800133,0803-B089343/003,Active,D945PSN,PC,2008-03-01,Southside Ford Woolloongabba,808 Metro,Service,NA,NA,13,NA
+200800137,0803-B089241/001,Active,D945PSN,PC,2008-03-01,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Admin,NA,NA,13,NA
+200800143,L3-H5212 08/02,Active,8932-A45,Notebook,2008-02-01,Southside Toyota Woolloongabba,801 Southside Toyota,Showroom,NA,NA,13,NA
+200800147,0803-B089340/003,Active,D945PSN,PC,2008-03-01,Southside Toyota Woolloongabba,801 Southside Toyota,Showroom,NA,NA,13,NA
+200800163,0803-B089228/004,Active,D945PSN,PC,2008-03-01,Southside Toyota Woolloongabba,801 Southside Toyota,Admin,NA,NA,13,NA
+200800164,0805-B089998/001,Active,D945PSN,PC,2008-05-01,Southside Toyota Woolloongabba,801 Southside Toyota,Admin,NA,NA,13,NA
+200800165,0803-B089228/001,Active,D945PSN,PC,2008-03-01,Southside Toyota Woolloongabba,801 Southside Toyota,Admin,NA,NA,13,NA
+200800175,0802-B088935/002,Active,D945PSN,PC,2008-02-01,Austral Honda Newstead,807 Austral Honda-VW,Showroom,NA,NA,13,NA
+200800183,0806-B090068/001,Active,D945PSN,PC,2008-06-01,Austral VW Newstead,807 Austral Honda-VW,Showroom,NA,NA,13,NA
+200800185,0806-B090055/004,Active,D945PSN,PC,2008-06-01,Porsche Centre Brisbane Newstead,805 Austral Porsche,Parts,NA,NA,13,NA
+200800188,0806-B090068/002,Active,D945PSN,PC,2008-06-01,Porsche Centre Brisbane Newstead,805 Austral Porsche,Service,NA,NA,13,NA
+200800203,0804-B089572/001,Active,D945PSN,PC,2008-04-01,BMA Pinkenba,810 Brisbane Motor Auction,Sales,NA,NA,13,NA
+200800216,0802-B088440/001,Active,D945PSN,PC,2008-02-01,Metro Ford Fortitude Valley,808 Metro,Parts,NA,NA,13,NA
+200800225,0801-B088350/004,Active,D945PSN,PC,2008-01-01,Southside Toyota Mt Gravatt,801 Southside Toyota,Service,NA,NA,13,NA
+200800230,0802-B088973/004,Active,D945PSN,PC,2008-02-01,Subaru Toowong,804 CAG Subaru,Showroom,NA,NA,13,NA
+200800231,0802-B088905/003,Active,D945PSN,PC,2008-02-01,Subaru Toowong,804 CAG Subaru,Showroom,NA,NA,13,NA
+200800234,0801-B088351/004,Active,D945PSN,PC,2008-01-01,Subaru Toowong,804 CAG Subaru,Showroom,NA,NA,13,NA
+200800236,0802-B088943/001,Active,D945PSN,PC,2008-02-01,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200800237,0801-B088299/001,Active,D945PSN,PC,2008-01-01,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200800242,0802-B088810/004,Active,D945PSN,PC,2008-02-01,Subaru City Newstead,804 CAG Subaru,Parts,NA,NA,13,NA
+200800243,0802-B088809/003,Active,D945PSN,PC,2008-02-01,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200800244,0802-B088810/002,Active,D945PSN,PC,2008-02-01,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200800245,0801-B088350/009,Active,D945PSN,PC,2008-01-01,Subaru City Newstead,804 CAG Subaru,Service,NA,NA,13,NA
+200800246,0801-B088350/002,Active,D945PSN,PC,2008-01-01,Subaru City Newstead,804 CAG Subaru,Service,NA,NA,13,NA
+200800247,0801-B088350/011,Active,D945PSN,PC,2008-01-01,Subaru City Newstead,804 CAG Subaru,Service,NA,NA,13,NA
+200800256,0803-B089349/001,Active,D945PSN,PC,2008-03-01,Austral VW Newstead,807 Austral Honda-VW,Showroom,NA,NA,13,NA
+200800262,0801-B088350/006,Active,D945PSN,PC,2008-01-01,Austral Motors Newstead,807 Austral Honda-VW,Parts,NA,NA,13,NA
+200800270,0803-B089083/004,Active,D945PSN,PC,2008-03-01,Eagers Holden Windsor,836 Eagers Holden,Showroom,NA,NA,13,NA
+200800273,0807-B090473/001,Active,D945PSN,PC,2008-07-01,Eagers Holden Newstead,836 Eagers Holden,Parts,NA,NA,13,NA
+200800276,0801-B088351/003,Active,D945PSN,PC,2008-01-01,Subaru City Newstead,804 CAG Subaru,Parts,NA,NA,13,NA
+200800309,0807-B090445/001,Active,D945PSN,PC,2008-07-01,Torque Ford North Lakes,820 Torque Ford,Service,NA,NA,13,NA
+200800317,0808-B090787/001,Active,D945PSN,PC,2008-08-01,Eagers Holden Newstead,836 Eagers Holden,Parts,NA,NA,13,NA
+200800353,B091915/001,Active,Intel DP35,PC,2008-11-11,Subaru City Newstead,804 CAG Subaru,Service,NA,NA,13,NA
+200800359,B092035/001,Active,Intel DP35,PC,2008-12-03,Corporate Office Fortitude Valley,APGP258B Corporate,Admin,NA,NA,13,NA
+200800364,B092035/006,Active,Intel DP35,PC,2008-12-03,Eagers Holden Newstead,836 Eagers Holden,Parts,NA,NA,13,NA
+200800372,B092035/011,Active,Intel DP35,PC,2008-12-03,PAG Fortitude Valley,806 Austral PAG,Service,NA,NA,13,NA
+200800375,B092035/014,Active,Intel DP35,PC,2008-12-03,PAG Fortitude Valley,806 Austral PAG,Warranty,NA,NA,13,NA
+200800376,B092035/015,Active,Intel DP35,PC,2008-12-03,Porsche Centre Brisbane Newstead,805 Austral Porsche,Service,NA,NA,13,NA
+200800377,B092035/016,Active,Intel DP35,PC,2008-12-03,Southside Honda Buranda,802 Southside Honda,Showroom,NA,NA,13,NA
+200800379,B092035/018,Active,Intel DP35,PC,2008-12-03,Metro Ford Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200800381,B092035/020,Active,Intel DP35,PC,2008-12-03,PAG Fortitude Valley,806 Austral PAG,Service,NA,NA,13,NA
+200800396,B092979/002,Active,Intel DP43,PC,2009-03-25,Southside Toyota Mt Gravatt,801 Southside Toyota,Service,NA,NA,13,NA
+200800420,B092979/010,Active,Intel DP43,PC,2009-03-25,Eagers Holden Newstead,836 Eagers Holden,Parts,NA,NA,13,NA
+200800425,B092979/015,Active,Intel DP43,PC,2009-03-25,Eagers Mazda Newstead,833 Eagers Mazda,Service,NA,NA,13,NA
+200800428,B092979/018,Active,Intel DP43,PC,2009-03-25,Eagers Holden Windsor,836 Eagers Holden,Parts,NA,NA,13,NA
+200800464,B093900/002,Active,Intel DP43,PC,2009-06-30,Eagers Holden Windsor,836 Eagers Holden,Service,NA,NA,13,NA
+200800467,B093900/005,Active,Intel DP43,PC,2009-06-30,Austral Honda Newstead,807 Austral Honda-VW,Parts,NA,NA,13,NA
+200800468,B093900/006,Active,Intel DP43,PC,2009-06-30,Austral Honda Newstead,807 Austral Honda-VW,Parts,NA,NA,13,NA
+200800472,B093900/010,Active,Intel DP43,PC,2009-06-30,Austral PAG Fortitude Valley,806 Austral PAG,Parts,NA,NA,13,NA
+200800477,B093900/015,Active,Intel DP43,PC,2009-06-30,Austral Honda Newstead,807 Austral Honda-VW,Parts,NA,NA,13,NA
+200800483,29025787H,Active,PTSB0A-002001,Notebook,2009-07-10,Torque Ford North Lakes,820 Torque Ford,Sales,NA,NA,13,NA
+200800485,29026638H,Active,PTSB0A-002001,Notebook,2009-07-31,Torque Toyota North Lakes,809 Torque Toyota,Sales,NA,NA,13,NA
+200800526,L3-L5283,Active,8932-A45,Notebook,2007-06-30,Metro Ford Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200800607,B094507/002,Active,Intel DP43,PC,2009-09-01,Eagers Mazda Newstead,833 Eagers Mazda,Service,NA,NA,13,NA
+200800608,B094507/003,Active,Intel DP43,PC,2009-09-01,Austral VW Newstead,807 Austral Honda-VW,Service,NA,NA,13,NA
+200800609,B094507/004,Active,Intel DP43,PC,2009-09-01,Southside Toyota Woolloongabba,801 Southside Toyota,Service,NA,NA,13,NA
+200800610,B094507/005,Active,Intel DP43,PC,2009-09-01,SSV/SSR Buranda,806 Austral PAG,Service,NA,NA,13,NA
+200800611,B094507/006,Active,Intel DP43,PC,2009-09-01,Corporate Office Fortitude Valley,APGP258B Corporate,Admin,NA,NA,13,NA
+200800613,B094507/008,Active,Intel DP43,PC,2009-09-01,Eagers Kia Kedron,803 Eagers Misubishi&Kia,Parts,NA,NA,13,NA
+200800616,29026609H,Active,PTSB0A-002001,Notebook,2009-08-27,Torque Ford Strathpine,820 Torque Ford,Parts,NA,NA,13,NA
+200800642,B095026/001,Active,Intel DP43,PC,2009-10-29,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Service,NA,NA,13,NA
+200800643,B095026/002,Active,Intel DP43,PC,2009-10-29,Eagers Holden Windsor,836 Eagers Holden,Warranty,NA,NA,13,NA
+200800644,B095026/003,Active,Intel DP43,PC,2009-10-29,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Showroom,NA,NA,13,NA
+200800647,B095104/002,Active,Intel DP43,PC,2009-11-05,Torque Toyota North Lakes,809 Torque Toyota,Sales,NA,NA,13,NA
+200800648,B095104/003,Active,Intel DP43,PC,2009-11-05,Torque Ford Strathpine,820 Torque Ford,Sales,NA,NA,13,NA
+200800649,B095104/004,Active,Intel DP43,PC,2009-11-05,Austral VW Newstead,807 Austral Honda-VW,Service,NA,NA,13,NA
+200800650,B095104/005,Active,Intel DP43,PC,2009-11-05,Southside Honda Buranda,802 Southside Honda,Customer Relations,NA,NA,13,NA
+200800660,B095289/001,Active,Intel DP43,PC,2009-11-25,Eagers Mazda Newstead,833 Eagers Mazda,Showroom,NA,NA,13,NA
+200800662,B095289/003,Active,Intel DP43,PC,2009-11-25,Eagers Holden Windsor,836 Eagers Holden,Service,NA,NA,13,NA
+200800663,B095289/004,Active,Intel DP43,PC,2009-11-25,Eagers Holden Windsor,836 Eagers Holden,Service,NA,NA,13,NA
+200800664,B095289/005,Active,Intel DP43,PC,2009-11-25,BMA Pinkenba,810 Brisbane Motor Auction,Sales,NA,NA,13,NA
+200800665,B095289/006,Active,Intel DP43,PC,2009-11-25,Southside Toyota Woolloongabba,801 Southside Toyota,Sales,NA,NA,13,NA
+200800666,B095289/007,Active,Intel DP43,PC,2009-11-25,Eagers Kia Service Kedron,803 Eagers Misubishi&Kia,Service,NA,NA,13,NA
+200800667,B095289/008,Active,Intel DP43,PC,2009-11-25,Southside Toyota Woolloongabba,801 Southside Toyota,Parts,NA,NA,13,NA
+200800668,B095289/009,Active,Intel DP43,PC,2009-11-25,BMA Pinkenba,810 Brisbane Motor Auction,Sales,NA,NA,13,NA
+200800669,B095289/010,Active,Intel DP43,PC,2009-11-25,Torque Ford Admin,820 Torque Ford,Admin,NA,NA,13,NA
+200800679,B095663/001,Active,Zotac MAG HD-ND01,PC,2010-01-08,PAG Fortitude Valley,806 Austral PAG,Showroom,NA,NA,13,NA
+200800683,79030037H,Active,PTSB0A-04L001,Notebook,2010-01-19,Eagers Holden Newstead,836 Eagers Holden,Parts,NA,NA,13,NA
+200800684,B095700/001,Active,Intel DP43,PC,2010-01-19,IT Pinkenba,IT,IT,NA,NA,13,NA
+200800685,B095700/002,Active,Intel DP43,PC,2010-01-19,Eagers Mazda Newstead,833 Eagers Mazda,Sales,NA,NA,13,NA
+200800686,B095700/003,Active,Intel DP43,PC,2010-01-19,Torque Ford Strathpine,820 Torque Ford,Sales,NA,NA,13,NA
+200800687,B095700/004,Active,Intel DP43,PC,2010-01-19,Metro Maroochydore,808 Metro,Refinish,NA,NA,13,NA
+200800688,B095700/005,Active,Intel DP43,PC,2010-01-19,Caloundra City Great Wall,837 Caloundra City Autos,Sales,NA,NA,13,NA
+200800689,B095700/006,Active,Intel DP43,PC,2010-01-19,Metro Ford Fortitude Valley,808 Metro,Sales,NA,NA,13,NA
+200800690,B095700/007,Active,Intel DP43,PC,2010-01-19,Torque Toyota Brendale,809 Torque Toyota,Sales,NA,NA,13,NA
+200800691,B095700/008,Active,Intel DP43,PC,2010-01-19,Corporate QLD/NT Division,APFP258B QLD-NT Division,PTC,NA,NA,13,NA
+200800692,B095700/009,Active,Intel DP43,PC,2010-01-19,Torque Ford North Lakes,820 Torque Ford,Warranty,NA,NA,13,NA
+200800693,B095700/010,Active,Intel DP43,PC,2010-01-19,Torque Toyota Brendale,809 Torque Toyota,Admin,NA,NA,13,NA
+200800699,B095758/001,Active,Intel DP43,PC,2010-01-25,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200800702,B095758/003,Active,Intel DP43,PC,2010-01-25,Eagers Holden Windsor,836 Eagers Holden,Admin,NA,NA,13,NA
+200800703,B095758/004,Active,Intel DP43,PC,2010-01-25,Subaru City Newstead,804 CAG Subaru,Parts,NA,NA,13,NA
+200800704,B095758/005,Active,Intel DP43,PC,2010-01-25,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200800721,B095941/001,Active,Intel DP43,PC,2010-02-16,Eagers Kia Service Kedron,803 Eagers Misubishi&Kia,Service,NA,NA,13,NA
+200800722,B095941/002,Active,Intel DP43,PC,2010-02-16,Torque Ford Strathpine,820 Torque Ford,Showroom,NA,NA,13,NA
+200800723,B095941/003,Active,Intel DP43,PC,2010-02-16,Austral PAG Fortitude Valley,806 Austral PAG,Service,NA,NA,13,NA
+200800724,B095941/004,Active,Intel DP43,PC,2010-02-16,Metro Ford Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200800726,B095941/006,Active,Intel DP43,PC,2010-02-16,BMA Pinkenba,810 Brisbane Motor Auction,Sales,NA,NA,13,NA
+200800727,B095941/007,Active,Intel DP43,PC,2010-02-16,Austral VW Newstead,807 Austral Honda-VW,Admin,NA,NA,13,NA
+200800728,B095941/008,Active,Intel DP43,PC,2010-02-16,Torque Ford North Lakes,820 Torque Ford,Service,NA,NA,13,NA
+200800729,B095941/009,Active,Intel DP43,PC,2010-02-16,Torque Ford Strathpine,820 Torque Ford,Parts,NA,NA,13,NA
+200800730,B095941/010,Active,Intel DP43,PC,2010-02-16,Torque Ford Admin,820 Torque Ford,Admin,NA,NA,13,NA
+200800755,1A063683H,Active,PTSE1A-00K005,Notebook,2010-03-09,Torque Toyota Brendale,809 Torque Toyota,Showroom,NA,NA,13,NA
+200800757,1A062809H,Active,PTSE1A-00K005,Notebook,2010-03-09,Subaru City Newstead,804 CAG Subaru,Service,NA,NA,13,NA
+200800770,B096325/001,Active,Zotac MAG HD-ND01,PC,2010-03-19,Gympie Road Wholesale Cars,803 Eagers Misubishi&Kia,Showroom,NA,NA,13,NA
+200800771,B096325/002,Active,Zotac MAG HD-ND01,PC,2010-03-19,Gympie Road Wholesale Cars,803 Eagers Misubishi&Kia,Showroom,NA,NA,13,NA
+200800772,B096325/003,Active,Zotac MAG HD-ND01,PC,2010-03-19,Eagers Mazda Newstead,833 Eagers Mazda,Service,NA,NA,13,NA
+200800773,B096325/004,Active,Zotac MAG HD-ND01,PC,2010-03-19,Metro Ford Fortitude Valley,808 Metro,Sales,NA,NA,13,NA
+200800774,B096325/005,Active,Zotac MAG HD-ND01,PC,2010-03-19,Gympie Road Wholesale Cars,803 Eagers Misubishi&Kia,Showroom,NA,NA,13,NA
+200800776,B096079/002,Active,Intel DP43,PC,2010-03-24,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Sales,NA,NA,13,NA
+200800777,B096079/003,Active,Intel DP43,PC,2010-03-24,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Showroom,NA,NA,13,NA
+200800778,B096079/004,Active,Intel DP43,PC,2010-03-24,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Service,NA,NA,13,NA
+200702023,200702023,Active,Generic PC,PC,1970-01-01,Caloundra City Mitsubishi,837 Caloundra City Autos,Sales,NA,NA,13,NA
+200702024,200702024,Active,Generic PC,PC,1970-01-01,Caloundra City Suzuki,837 Caloundra City Autos,Sales,NA,NA,13,NA
+200702029,200702029,Active,Generic PC,PC,1970-01-01,Caloundra City Holden,837 Caloundra City Autos,Unknown,NA,NA,13,NA
+200702031,200702031,Active,Generic PC,PC,1970-01-01,Caloundra City Holden,837 Caloundra City Autos,Parts,NA,NA,13,NA
+200702035,200702035,Active,Generic PC,PC,1970-01-01,Caloundra City Holden,837 Caloundra City Autos,Parts,NA,NA,13,NA
+200702036,200702036,Active,Generic PC,PC,1970-01-01,Caloundra City Holden,837 Caloundra City Autos,Admin,NA,NA,13,NA
+200800804,B096290/002,Active,Intel DP43,PC,2010-03-31,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+200800805,B096091/001,Active,Intel DP43,PC,2010-04-07,Metro Ford Fortitude Valley,808 Metro,Service,NA,NA,13,NA
+200800806,B096091/002,Active,Intel DP43,PC,2010-04-07,Caloundra City Holden,837 Caloundra City Autos,Admin,NA,NA,13,NA
+200800807,B096091/003,Active,Intel DP43,PC,2010-04-07,Caloundra City Honda,837 Caloundra City Autos,Showroom,NA,NA,13,NA
+200800808,B096091/004,Active,Intel DP43,PC,2010-04-07,Torque Toyota North Lakes,809 Torque Toyota,Service,NA,NA,13,NA
+200800809,B096091/005,Active,Intel DP43,PC,2010-04-07,Porsche Centre Brisbane Newstead,805 Austral Porsche,Sales,NA,NA,13,NA
+200800810,B096091/006,Active,Intel DP43,PC,2010-04-07,Southside Toyota Woolloongabba,801 Southside Toyota,Sales,NA,NA,13,NA
+200800811,B096091/007,Active,Intel DP43,PC,2010-04-07,Eagers Holden Newstead,836 Eagers Holden,Service,NA,NA,13,NA
+200800812,B096091/008,Active,Intel DP43,PC,2010-04-07,Caloundra City Holden,837 Caloundra City Autos,Pre Delivery,NA,NA,13,NA
+200800813,B096091/009,Active,Intel DP43,PC,2010-04-07,Caloundra City Holden,837 Caloundra City Autos,Admin,NA,NA,13,NA
+200800814,B096091/010,Active,Intel DP43,PC,2010-04-07,Southside Toyota Mt Gravatt,801 Southside Toyota,Sales,NA,NA,13,NA
+200800816,1A109034H,Active,PTSE1A-00K005,Notebook,2010-04-08,IT Pinkenba,IT,IT,NA,NA,13,NA
+200800835,B096287/001,Active,Intel DP43,PC,2010-04-19,Austral PAG Fortitude Valley,806 Austral PAG,Showroom,NA,NA,13,NA
+200800836,B096287/002,Active,Intel DP43,PC,2010-04-19,Austral VW Newstead,807 Austral Honda-VW,Service,NA,NA,13,NA
+200800837,B096287/003,Active,Intel DP43,PC,2010-04-19,Subaru City Newstead,804 CAG Subaru,Showroom,NA,NA,13,NA
+200800838,B096287/004,Active,Intel DP43,PC,2010-04-19,Torque Toyota North Lakes,809 Torque Toyota,Service,NA,NA,13,NA
+200800839,B096287/005,Active,Intel DP43,PC,2010-04-19,Austral VW Newstead,807 Austral Honda-VW,Service,NA,NA,13,NA
+200800840,B096287/006,Active,Intel DP43,PC,2010-04-19,Austral VW Newstead,807 Austral Honda-VW,Service,NA,NA,13,NA
+200800841,B096287/007,Active,Intel DP43,PC,2010-04-19,Austral VW Newstead,807 Austral Honda-VW,Service,NA,NA,13,NA
+200800843,B096287/009,Active,Intel DP43,PC,2010-04-19,Metro Toowoomba Toowoomba,808 Metro,Parts,NA,NA,13,NA
+200800844,B096287/010,Active,Intel DP43,PC,2010-04-19,Southside Toyota Mt Gravatt,801 Southside Toyota,Service,NA,NA,13,NA
+200800852,B096489/001,Active,Intel DP43,PC,2010-04-30,Torque Toyota Brendale,809 Torque Toyota,Sales,NA,NA,13,NA
+200800853,B096489/002,Active,Intel DP43,PC,2010-04-30,Austral VW Newstead,807 Austral Honda-VW,Service,NA,NA,13,NA
+200800854,B096489/003,Active,Intel DP43,PC,2010-04-30,Metro Ford Fortitude Valley,808 Metro,Admin,NA,NA,13,NA
+200800855,B096489/004,Active,Intel DP43,PC,2010-04-30,Austral PAG Fortitude Valley,806 Austral PAG,Service,NA,NA,13,NA
+200800856,B096489/005,Active,Intel DP43,PC,2010-04-30,Austral PAG Fortitude Valley,806 Austral PAG,Service,NA,NA,13,NA
+200800857,B096489/006,Active,Intel DP43,PC,2010-04-30,Torque Ford Strathpine,820 Torque Ford,Showroom,NA,NA,13,NA
+200800860,B096489/009,Active,Intel DP43,PC,2010-04-30,Southside Toyota Woolloongabba,801 Southside Toyota,Sales,NA,NA,13,NA
+200800861,B096489/010,Active,Intel DP43,PC,2010-04-30,Torque Ford Strathpine,820 Torque Ford,Service,NA,NA,13,NA
+200800862,B096489/011,Active,Intel DP43,PC,2010-04-30,Caloundra City Holden,837 Caloundra City Autos,Parts,NA,NA,13,NA
+200800868,B096661/001,Active,Intel DP43,PC,2010-05-17,Torque Toyota Brendale,809 Torque Toyota,Showroom,NA,NA,13,NA
+200800871,B096661/002,Active,Intel DP43,PC,2010-05-17,Torque Ford Strathpine,820 Torque Ford,Service,NA,NA,13,NA
+200800872,B096661/003,Active,Intel DP43,PC,2010-05-17,Eagers Mazda Newstead,833 Eagers Mazda,Service,NA,NA,13,NA
+200800873,B096661/004,Active,Intel DP43,PC,2010-05-17,Caloundra City Honda,837 Caloundra City Autos,Service,NA,NA,13,NA
+200800877,B096661/008,Active,Intel DP43,PC,2010-05-17,Caloundra City Mitsubishi,837 Caloundra City Autos,Sales,NA,NA,13,NA
+200800878,B096661/009,Active,Intel DP43,PC,2010-05-17,Torque Ford Strathpine,820 Torque Ford,Parts,NA,NA,13,NA
+200800879,B096661/010,Active,Intel DP43,PC,2010-05-17,Caloundra City Holden,837 Caloundra City Autos,Admin,NA,NA,13,NA
+200800880,B096661/011,Active,Intel DP43,PC,2010-05-17,Torque Ford Strathpine,820 Torque Ford,Service,NA,NA,13,NA
+200800893,2A134153H,Active,PTSE1A-00K005,Notebook,2010-05-17,IT Pinkenba,IT,IT,NA,NA,13,NA
+200800896,2A134393H,Active,PTSE1A-00K005,Notebook,2010-05-17,Eagers Holden Townsville,836 Eagers Holden,Parts,NA,NA,13,NA
+200800898,2A134150H,Active,PTSE1A-00K005,Notebook,2010-05-17,BMA Pinkenba,810 Brisbane Motor Auction,Showroom,NA,NA,13,NA
+200800899,B096884/002,Active,Zotac MAG HD-ND01,PC,2010-05-19,Eagers Kia Kedron,803 Eagers Misubishi&Kia,Sales,NA,NA,13,NA
+200800900,B096884/001,Active,Zotac MAG HD-ND01,PC,2010-05-19,Caloundra City Holden,837 Caloundra City Autos,Sales,NA,NA,13,NA
+200800779,B096079/005,Active,Intel DP43,PC,2010-03-24,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Admin,NA,NA,13,NA
+200800780,B096079/006,Active,Intel DP43,PC,2010-03-24,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Admin,NA,NA,13,NA
+200800781,B096079/007,Active,Intel DP43,PC,2010-03-24,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Service,NA,NA,13,NA
+200800782,B096079/008,Active,Intel DP43,PC,2010-03-24,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Admin,NA,NA,13,NA
+200800783,B096079/009,Active,Intel DP43,PC,2010-03-24,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Admin,NA,NA,13,NA
+200800784,B096079/010,Active,Intel DP43,PC,2010-03-24,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Parts,NA,NA,13,NA
+200800787,B096208/001,Active,Lenovo PC,PC,2010-03-26,Caloundra City Holden,837 Caloundra City Autos,Admin,NA,NA,13,NA
+200800788,B096208/002,Active,Intel DP43,PC,2010-03-26,Torque Toyota North Lakes,809 Torque Toyota,Admin,NA,NA,13,NA
+200800789,B096208/003,Active,Intel DP43,PC,2010-03-26,Caloundra City Holden,837 Caloundra City Autos,Sales,NA,NA,13,NA
+200800790,B096208/004,Active,Intel DP43,PC,2010-03-26,Caloundra City Mitsubishi,837 Caloundra City Autos,Sales,NA,NA,13,NA
+200800792,B096208/006,Active,Intel DP43,PC,2010-03-26,Caloundra City Holden,837 Caloundra City Autos,Sales,NA,NA,13,NA
+200800793,B096208/007,Active,Intel DP43,PC,2010-03-26,Caloundra City Holden,837 Caloundra City Autos,Parts,NA,NA,13,NA
+200800794,B096208/008,Active,Intel DP43,PC,2010-03-26,Caloundra City Holden,837 Caloundra City Autos,Service,NA,NA,13,NA
+200800795,B096208/009,Active,Intel DP43,PC,2010-03-26,Caloundra City Holden,837 Caloundra City Autos,Service,NA,NA,13,NA
+200800796,B096208/010,Active,Intel DP43,PC,2010-03-26,Caloundra City Holden,837 Caloundra City Autos,Service,NA,NA,13,NA
+200800923,G102114000810,Active,Zotac zBOX HD-1D11,PC,2010-06-23,Caloundra City Holden,837 Caloundra City Autos,Admin,NA,NA,13,NA
+200800925,B097291/002,Active,Intel DH55,PC,2010-06-30,WHOP Leaseline & General,WHOP258B Leaseline & General,Admin,NA,NA,13,NA
+200800926,B097291/003,Active,Intel DH55,PC,2010-06-30,Eagers Holden Townsville,836 Eagers Holden,Parts,NA,NA,13,NA
+200800927,B097291/004,Active,Intel DH55,PC,2010-06-30,Austral PAG Fortitude Valley,806 Austral PAG,Service,NA,NA,13,NA
+200800951,B096848/001,Active,Intel DP43,PC,2010-05-24,Eagers Holden Newstead,836 Eagers Holden,Service,NA,NA,13,NA
+200800952,B096848/002,Active,Intel DP43,PC,2010-05-24,Subaru Toowong,804 CAG Subaru,Service,NA,NA,13,NA
+200800953,B096848/003,Active,Intel DP43,PC,2010-05-24,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Service,NA,NA,13,NA
+200800954,B096848/004,Active,Intel DP43,PC,2010-05-24,Southside Toyota Woolloongabba,801 Southside Toyota,Service,NA,NA,13,NA
+200800955,B096848/005,Active,Intel DP43,PC,2010-05-24,Torque Ford Strathpine,820 Torque Ford,Service,NA,NA,13,NA
+200800956,B096848/006,Active,Intel DP43,PC,2010-05-24,Metro Ford Fortitude Valley,808 Metro,Service,NA,NA,13,NA
+200800957,B096848/007,Active,Intel DP43,PC,2010-05-24,Eagers Holden Newstead,836 Eagers Holden,Parts,NA,NA,13,NA
+200800958,B096848/008,Active,Intel DP43,PC,2010-05-24,Torque Toyota North Lakes,809 Torque Toyota,Parts,NA,NA,13,NA
+200800959,B096848/009,Active,Intel DP43,PC,2010-05-24,Torque Toyota Brendale,809 Torque Toyota,Service,NA,NA,13,NA
+200800960,B096848/010,Active,Intel DP43,PC,2010-05-24,Torque Ford Admin,820 Torque Ford,Admin,NA,NA,13,NA
+200800961,B096848/011,Active,Intel DP43,PC,2010-05-24,Eagers Holden Newstead,836 Eagers Holden,Parts,NA,NA,13,NA
+200800968,B097070/001,Active,Intel DH55,PC,2010-06-04,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Service,NA,NA,13,NA
+200800974,B097160/001,Active,Intel DH55,PC,2010-06-24,Caloundra City Honda,837 Caloundra City Autos,Admin,NA,NA,13,NA
+200800975,B097160/002,Active,Intel DH55,PC,2010-06-24,Austral Motors Newstead,807 Austral Honda-VW,Admin,NA,NA,13,NA
+200800977,B097160/004,Active,Intel DH55,PC,2010-06-24,Austral PAG Fortitude Valley,806 Austral PAG,Service,NA,NA,13,NA
+200800978,B097160/005,Active,Intel DH55,PC,2010-06-24,Eagers Holden Windsor,836 Eagers Holden,Admin,NA,NA,13,NA
+200800979,B097160/006,Active,Intel DH55,PC,2010-06-24,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Parts,NA,NA,13,NA
+200800981,B097160/007,Active,Intel DH55,PC,2010-06-24,AUS Curraminidi,827 Austral S-coast,Service,NA,NA,13,NA
+200800982,B097160/008,Active,Intel DH55,PC,2010-06-24,Eagers Kia Kedron,803 Eagers Misubishi&Kia,Service,NA,NA,13,NA
+200800983,B097160/009,Active,Intel DH55,PC,2010-06-24,Southside Honda Buranda,802 Southside Honda,Service,NA,NA,13,NA
+200800984,B097160/010,Active,Intel DH55,PC,2010-06-24,Torque Toyota North Lakes,809 Torque Toyota,Service,NA,NA,13,NA
+20130019,1301-B104298/002,Active,Intel DQ67EP ITX,PC,1970-01-01,BMA Pinkenba,810 Brisbane Motor Auction,Sales,NA,NA,13,NA
+20130018,1301-B104298/001,Active,Intel DQ67EP ITX,PC,1970-01-01,BMA Pinkenba,810 Brisbane Motor Auction,Sales,NA,NA,13,NA
+20100001,B097291/001,Active,Intel DH55,PC,2010-06-30,Metro Ford Fortitude Valley,808 Metro,Admin,NA,NA,13,NA
+20100002,B097291/005,Active,Intel DH55,PC,2010-06-30,Austral VW Newstead,807 Austral Honda-VW,Admin,NA,NA,13,NA
+20100003,B097291/006,Active,Intel DH55,PC,2010-06-30,Eagers Mazda Newstead,833 Eagers Mazda,Service,NA,NA,13,NA
+20100004,B097291/007,Active,Intel DH55,PC,2010-06-30,Corporate Payroll,APPP258B Payroll,Admin,NA,NA,13,NA
+20100005,B097291/008,Active,Intel DH55,PC,2010-06-30,Porsche Centre Brisbane Newstead,805 Austral Porsche,Service,NA,NA,13,NA
+20100006,B097291/009,Active,Intel DH55,PC,2010-06-30,Eagers Holden Windsor,836 Eagers Holden,Service,NA,NA,13,NA
+20100007,B097291/010,Active,Intel DH55,PC,2010-06-30,Eagers Holden Windsor,836 Eagers Holden,Service,NA,NA,13,NA
+20100008,B097291/011,Active,Intel DH55,PC,2010-06-30,Metro Ford Fortitude Valley,808 Metro,Sales,NA,NA,13,NA
+20100031,B097359/001,Active,Intel DH55,PC,2010-07-12,HVF Berrimah,815 AP Motor Group,Sales,NA,NA,13,NA
+20100032,B097359/002,Active,Intel DH55,PC,2010-07-12,HVF Berrimah,815 AP Motor Group,Admin,NA,NA,13,NA
+20100033,B097359/003,Active,Intel DH55,PC,2010-07-12,HVF Berrimah,815 AP Motor Group,Admin,NA,NA,13,NA
+20100034,B097359/004,Active,Intel DH55,PC,2010-07-12,HVF Berrimah,815 AP Motor Group,Service,NA,NA,13,NA
+20100036,B097359/006,Active,Intel DH55,PC,2010-07-12,HVF Berrimah,815 AP Motor Group,Admin,NA,NA,13,NA
+20100037,B097359/007,Active,Intel DH55,PC,2010-07-12,HVF Berrimah,815 AP Motor Group,Sales,NA,NA,13,NA
+20100038,B097386/001,Active,Intel DH55,PC,2010-07-14,Eagers Holden Townsville,836 Eagers Holden,Parts,NA,NA,13,NA
+20100040,B097386/003,Active,Intel DH55,PC,2010-07-14,Torque Toyota North Lakes,809 Torque Toyota,Showroom,NA,NA,13,NA
+20100041,B097386/004,Active,Intel DH55,PC,2010-07-14,Caloundra City Holden,837 Caloundra City Autos,Service,NA,NA,13,NA
+20100042,B097386/005,Active,Intel DH55,PC,2010-07-14,Caloundra City Holden,837 Caloundra City Autos,Admin,NA,NA,13,NA
+20100043,B097386/006,Active,Intel DH55,PC,2010-07-14,Torque Ford Strathpine,820 Torque Ford,Showroom,NA,NA,13,NA
+20100044,B097386/007,Active,Intel DH55,PC,2010-07-14,Metro Ford Fortitude Valley,808 Metro,Service,NA,NA,13,NA
+20100046,B097386/009,Active,Intel DH55,PC,2010-07-14,Caloundra City Holden,837 Caloundra City Autos,Service,NA,NA,13,NA
+20100047,B097386/010,Active,Intel DH55,PC,2010-07-14,Caloundra City Mitsubishi,837 Caloundra City Autos,Sales,NA,NA,13,NA
+20100048,B097386/011,Active,Intel DH55,PC,2010-07-14,Caloundra City Honda,837 Caloundra City Autos,Service,NA,NA,13,NA
+20100049,4A139777H,Active,PTSE1A-00K005,Notebook,2010-07-15,Corporate Office Fortitude Valley,APGP258B Corporate,Admin,NA,NA,13,NA
+20100053,5A112183H,Active,PTSE1A-00K005,Notebook,2010-07-15,Austral PAG Fortitude Valley,806 Austral PAG,Service,NA,NA,13,NA
+20100055,B097468/001,Active,Intel DH55,PC,2010-07-22,Southside Toyota Mt Gravatt,801 Southside Toyota,Service,NA,NA,13,NA
+20100056,B097468/002,Active,Intel DH55,PC,2010-07-22,Torque Toyota Brendale,809 Torque Toyota,Service,NA,NA,13,NA
+20100058,B097468/004,Active,Intel DH55,PC,2010-07-22,Eagers Kia Service Kedron,803 Eagers Misubishi&Kia,Service,NA,NA,13,NA
+20100059,B097468/005,Active,Intel DH55,PC,2010-07-22,Porsche Centre Brisbane Newstead,805 Austral Porsche,Service,NA,NA,13,NA
+20100060,B097468/006,Active,Intel DH55,PC,2010-07-22,BMA Pinkenba,810 Brisbane Motor Auction,Sales,NA,NA,13,NA
+20100061,B097468/007,Active,Intel DH55,PC,2010-07-22,Southside Honda Buranda,802 Southside Honda,Service,NA,NA,13,NA
+20100062,B097468/008,Active,Intel DH55,PC,2010-07-22,Eagers Kia Service Kedron,803 Eagers Misubishi&Kia,Service,NA,NA,13,NA
+20100063,B097468/009,Active,Intel DH55,PC,2010-07-22,Southside Toyota Woolloongabba,801 Southside Toyota,Parts,NA,NA,13,NA
+20100064,B097468/010,Active,Intel DH55,PC,2010-07-22,Eagers Holden Newstead,836 Eagers Holden,Parts,NA,NA,13,NA
+20100083,5A112250H,Active,PTSE1A-00K005,Notebook,2010-08-10,Austral VW Newstead,807 Austral Honda-VW,Showroom,NA,NA,13,NA
+20100088,5A112260H,Active,PTSE1A-00K005,Notebook,2010-08-10,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+20100092,6A068032H,Active,PTSE1A-00K005,Notebook,2010-08-10,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+20100095,B097621/001,Active,Intel DH55,PC,2010-08-17,Caloundra City Holden,837 Caloundra City Autos,Service,NA,NA,13,NA
+20100096,B097621/002,Active,Intel DH55,PC,2010-08-17,Torque Ford North Lakes,820 Torque Ford,Service,NA,NA,13,NA
+20100097,B097621/003,Active,Intel DH55,PC,2010-08-17,Torque Honda North Lakes,821 Torque Honda,Sales,NA,NA,13,NA
+20100098,B097621/004,Active,Intel DH55,PC,2010-08-17,Torque Ford North Lakes,820 Torque Ford,Sales,NA,NA,13,NA
+20100099,B097621/005,Active,Intel DH55,PC,2010-08-17,Eagers Holden Windsor,836 Eagers Holden,Service,NA,NA,13,NA
+20100100,B097621/006,Active,Intel DH55,PC,2010-08-17,Torque Ford Strathpine,820 Torque Ford,Sales,NA,NA,13,NA
+20100102,B097621/008,Active,Intel DH55,PC,2010-08-17,Eagers Holden Newstead,836 Eagers Holden,Parts,NA,NA,13,NA
+20100103,B097621/009,Active,Intel DH55,PC,2010-08-17,Eagers Holden Windsor,836 Eagers Holden,Service,NA,NA,13,NA
+20100104,B097621/010,Active,Intel DH55,PC,2010-08-17,Austral VW Newstead,807 Austral Honda-VW,Service,NA,NA,13,NA
+20100105,B097621/011,Active,Intel DH55,PC,2010-08-17,Metro Ford Fortitude Valley,808 Metro,Sales,NA,NA,13,NA
+20100121,B097849/001,Active,Intel DH55,PC,2010-08-30,HVF Berrimah,815 AP Motor Group,Service,NA,NA,13,NA
+20100122,B097849/002,Active,Intel DH55,PC,2010-08-30,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Service,NA,NA,13,NA
+20100123,B097849/003,Active,Intel DH55,PC,2010-08-30,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Service,NA,NA,13,NA
+20100124,B097849/004,Active,Intel DH55,PC,2010-08-30,HVF Berrimah,815 AP Motor Group,Sales,NA,NA,13,NA
+20100125,B097849/005,Active,Intel DH55,PC,2010-08-30,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Service,NA,NA,13,NA
+20100126,B097849/006,Active,Intel DH55,PC,2010-08-30,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Service,NA,NA,13,NA
+20100127,B097849/007,Active,Intel DH55,PC,2010-08-30,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Service,NA,NA,13,NA
+20100131,B097891/001,Active,Intel DH55,PC,2010-09-06,Austral VW Newstead,807 Austral Honda-VW,Service,NA,NA,13,NA
+20100133,B097891/003,Active,Intel DH55,PC,2010-09-06,Southside Honda Buranda,802 Southside Honda,Showroom,NA,NA,13,NA
+20100134,B097891/004,Active,Intel DH55,PC,2010-09-06,Torque Ford Admin,820 Torque Ford,Admin,NA,NA,13,NA
+20100136,B097891/006,Active,Intel DH55,PC,2010-09-06,Torque Toyota Brendale,809 Torque Toyota,Service,NA,NA,13,NA
+20100139,B097858/001,Active,Intel DH55,PC,2010-09-09,Caloundra City Honda,837 Caloundra City Autos,Service,NA,NA,13,NA
+20100140,B097858/002,Active,Intel DH55,PC,2010-09-09,AUS Curraminidi,827 Austral S-coast,Service,NA,NA,13,NA
+20100141,B097858/003,Active,Intel DH55,PC,2010-09-09,Torque Toyota Brendale,809 Torque Toyota,Admin,NA,NA,13,NA
+20100142,B097858/004,Active,Intel DH55,PC,2010-09-09,Predelivery Pinkenba,808 Metro,Pre Delivery,NA,NA,13,NA
+20100143,B097858/005,Active,Intel DH55,PC,2010-09-09,Caloundra City Mitsubishi,837 Caloundra City Autos,Unknown,NA,NA,13,NA
+20100144,B097858/006,Active,Intel DH55,PC,2010-09-09,Eagers Holden Newstead,836 Eagers Holden,Parts,NA,NA,13,NA
+20100145,B097858/007,Active,Intel DH55,PC,2010-09-09,Torque Honda North Lakes,821 Torque Honda,Showroom,NA,NA,13,NA
+20100146,B097858/008,Active,Intel DH55,PC,2010-09-09,Southside Toyota Woolloongabba,801 Southside Toyota,Showroom,NA,NA,13,NA
+20100147,B097858/009,Active,Intel DH55,PC,2010-09-09,Southside Toyota Woolloongabba,801 Southside Toyota,Stock Control,NA,NA,13,NA
+20100148,B097858/010,Active,Intel DH55,PC,2010-09-09,BMA Pinkenba,810 Brisbane Motor Auction,Sales,NA,NA,13,NA
+20100161,B098034/001,Active,Intel DH55,PC,2010-09-21,Eagers Holden Newstead,836 Eagers Holden,Parts,NA,NA,13,NA
+20100163,B098034/003,Active,Intel DH55,PC,2010-09-21,Eagers Kia Kedron,803 Eagers Misubishi&Kia,Sales,NA,NA,13,NA
+20100164,B098034/004,Active,Intel DH55,PC,2010-09-21,Southside Toyota Woolloongabba,801 Southside Toyota,Parts,NA,NA,13,NA
+20100166,B098034/006,Active,Intel DH55,PC,2010-09-21,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+20100169,B098034/009,Active,Intel DH55,PC,2010-09-21,Austral PAG Fortitude Valley,806 Austral PAG,Showroom,NA,NA,13,NA
+20100170,B098034/010,Active,Intel DH55,PC,2010-09-21,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Admin,NA,NA,13,NA
+20100188,B098232/001,Active,Intel DH55,PC,2010-10-08,Metro Ford Fortitude Valley,808 Metro,Service,NA,NA,13,NA
+20100189,B098232/002,Active,Intel DH55,PC,2010-10-08,Torque Ford North Lakes,820 Torque Ford,Service,NA,NA,13,NA
+20100190,B098232/003,Active,Intel DH55,PC,2010-10-08,Torque Toyota Brendale,809 Torque Toyota,Admin,NA,NA,13,NA
+20100191,B098232/004,Active,Intel DH55,PC,2010-10-08,Torque Ford Strathpine,820 Torque Ford,Service,NA,NA,13,NA
+20100192,B098232/005,Active,Intel DH55,PC,2010-10-08,Torque Ford North Lakes,820 Torque Ford,Service,NA,NA,13,NA
+20100193,B098232/006,Active,Intel DH55,PC,2010-10-08,Southside Ford Woolloongabba,808 Metro,Unknown,NA,NA,13,NA
+20100194,B098232/007,Active,Intel DH55,PC,2010-10-08,Southside Ford Woolloongabba,808 Metro,Unknown,NA,NA,13,NA
+20100195,B098232/008,Active,Intel DH55,PC,2010-10-08,Southside Ford Woolloongabba,808 Metro,Unknown,NA,NA,13,NA
+20100196,B098232/009,Active,Intel DH55,PC,2010-10-08,Southside Ford Woolloongabba,808 Metro,Unknown,NA,NA,13,NA
+20100197,B098232/010,Active,Intel DH55,PC,2010-10-08,Metro Ford Fortitude Valley,808 Metro,Service,NA,NA,13,NA
+20100198,B098232/011,Active,Intel DH55,PC,2010-10-08,Metro Ford Fortitude Valley,808 Metro,Service,NA,NA,13,NA
+20100199,B098232/012,Active,Intel DH55,PC,2010-10-08,Metro Ford Fortitude Valley,808 Metro,Service,NA,NA,13,NA
+20100202,7A064368H,Active,PTSE1A-00K005,Notebook,2010-10-15,HVF Berrimah,815 AP Motor Group,Sales,NA,NA,13,NA
+20100219,B098343/006,Active,Intel DH55,PC,2010-10-21,HVF Berrimah,815 AP Motor Group,Service,NA,NA,13,NA
+20100221,B098370/001,Active,Intel DH55,PC,2010-10-25,Torque Honda North Lakes,821 Torque Honda,Service,NA,NA,13,NA
+20100226,B098370/006,Active,Intel DH55,PC,2010-10-25,Subaru Toowong,804 CAG Subaru,Service,NA,NA,13,NA
+20100244,7A062436H,Active,PTSE1A-00K005,Notebook,2010-11-05,BMA Pinkenba,810 Brisbane Motor Auction,Showroom,NA,NA,13,NA
+20100246,B098499/001,Active,Intel DH55,PC,2010-11-08,AUS Curraminidi,827 Austral S-coast,Showroom,NA,NA,13,NA
+20100310,8A062844H,Active,PTSE1A-00K005,Notebook,2010-12-20,Metro Ford Fortitude Valley,808 Metro,Showroom,NA,NA,13,NA
+20100777,,Active,ID82 HM65,PC,1970-01-01,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Sales,NA,NA,13,NA
+20110026,7A064996H,Active,PTSE1A-00K005,Notebook,2011-01-25,Southside Toyota Mt Gravatt,801 Southside Toyota,Showroom,NA,NA,13,NA
+20110040,B098957/010,Active,Intel DH55,PC,2011-02-02,PAG Fortitude Valley,806 Austral PAG,Showroom,NA,NA,13,NA
+20110058,B099091/005,Active,Intel DH55,PC,2011-02-03,Eagers Mitsubishi Newstead,803 Eagers Misubishi&Kia,Showroom,NA,NA,13,NA
+20110079,7A065000H,Active,PTSE1A-00K005,Notebook,2011-02-24,Porsche Centre Brisbane Newstead,805 Austral Porsche,Showroom,NA,NA,13,NA
+20110121,B099307/003,Active,Intel DH55,PC,2011-03-08,Austral Honda Newstead,807 Austral Honda-VW,Showroom,NA,NA,13,NA
+20110135,B099307/017,Active,Intel DH55,PC,2011-03-08,Metro Ford Fortitude Valley,808 Metro,Service,NA,NA,13,NA
+20110159,6A063048H,Active,PTSE1A-00K005,Notebook,2011-03-15,IT Darwin,IT,IT,NA,NA,13,NA
+20110195,6A063054H,Active,PTSE1A-00K005,Notebook,2011-04-19,Torque Ford North Lakes,820 Torque Ford,Sales,NA,NA,13,NA
+20110204,B099648/005,Active,Intel DH55,PC,2011-05-03,Austral Honda Newstead,807 Austral Honda-VW,Service,NA,NA,13,NA
+20110273,3B154735H,Active,PT525A-003019,Notebook,2011-06-03,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+20110274,3B154729H,Active,PT525A-003019,Notebook,2011-06-03,Southside Toyota Woolloongabba,801 Southside Toyota,Showroom,NA,NA,13,NA
+20110278,3B154732H,Active,PT525A-003019,Notebook,2011-06-03,Southside Toyota Mt Gravatt,801 Southside Toyota,Sales,NA,NA,13,NA
+20110282,B100193/013,Active,Intel DH55,PC,2011-06-09,Austral PAG Fortitude Valley,806 Austral PAG,Sales,NA,NA,13,NA
+20110285,B1001938/016,Active,Intel DH55,PC,2011-06-09,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+20110334,B100373/006,Active,Intel DH55,PC,2011-06-28,Austral PAG Fortitude Valley,806 Austral PAG,Parts,NA,NA,13,NA
+20110336,B100373/008,Active,Intel DH55,PC,2011-06-28,Austral VW Newstead,807 Austral Honda-VW,Admin,NA,NA,13,NA
+20110386,B100809/001,Active,Intel DH67,PC,2011-08-09,Torque Ford Strathpine,820 Torque Ford,Sales,NA,NA,13,NA
+20110390,B100809/005,Active,Intel DH67,PC,2011-08-09,Subaru Toowong,804 CAG Subaru,Service,NA,NA,13,NA
+20110430,B101028/002,Active,Intel DH67,PC,2011-08-25,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Showroom,NA,NA,13,NA
+20110437,B101026/007,Active,Intel DH67,PC,2011-09-09,Subaru City Newstead,804 CAG Subaru,Service,NA,NA,13,NA
+20110441,B101026/011,Active,Intel DH67,PC,2011-09-09,Austral VW Newstead,807 Austral Honda-VW,Warranty,NA,NA,13,NA
+20110464,7B122292H,Active,PT525A-003019,Notebook,2011-09-29,IT North Lakes,IT,IT,NA,NA,13,NA
+20110473,B101308/002,Active,Intel DH67,PC,2011-10-03,HVF Berrimah,815 AP Motor Group,Parts,NA,NA,13,NA
+20110474,B101341/001,Active,Zotac Zbox 1D36BR3D-E,PC,2011-10-03,Corporate Office Fortitude Valley,APGP258B Corporate,Admin,NA,NA,13,NA
+20110485,B101299/011,Active,Intel DH67,PC,2011-10-06,Austral PAG Fortitude Valley,806 Austral PAG,Sales,NA,NA,13,NA
+20110490,B101299/016,Active,Intel DH67,PC,2011-10-06,Metro Ford Fortitude Valley,808 Metro,Admin,NA,NA,13,NA
+20110501,B101460/001,Active,Intel DH67,PC,2011-10-21,Bridge Toyota Darwin,814 Bridge Toyota Darwin,Showroom,NA,NA,13,NA
+20110529,B101434/016,Active,Intel DH67,PC,2011-11-04,Infiniti Centre Brisbane,APGB863 Infiniti,Service,NA,NA,13,NA
+20110534,8B107483H,Active,PT525A-003019,Notebook,2011-10-31,Eagers Mazda Newstead,833 Eagers Mazda,Sales,NA,NA,13,NA
+20110537,8B120606H,Active,PT525A-003019,Notebook,2011-10-31,Southside Toyota Woolloongabba,801 Southside Toyota,Sales,NA,NA,13,NA
+20110538,7B122327H,Active,PT525A-003019,Notebook,2011-10-31,Metro Ford Fortitude Valley,808 Metro,Service,NA,NA,13,NA
+20110579,B101786/010,Active,Intel DH67,PC,2011-12-07,Austral VW Newstead,807 Austral Honda-VW,Pre Delivery,NA,NA,13,NA
+20120008,B102091/004,Active,Intel DH67,PC,2012-01-25,Adtrans Used Trucks Pinkenba,APGB862 QLD Used Trucks,Sales,NA,NA,13,NA
+20120023,7B076639H,Active,PTSE1A-00K005,Notebook,2012-01-25,WHOP Leaseline & General,WHOP258B Leaseline & General,Admin,NA,NA,13,NA
+20120024,7B095292H,Active,PTSE1A-00K005,Notebook,2012-01-25,Torque Subaru Brendale,804 CAG Subaru,Sales,NA,NA,13,NA
+20120034,G115021704026,Active,ID81 CELERON CULV857,PC,2012-02-01,IT Pinkenba,IT,IT,NA,NA,13,NA
+20120035,B102207/001,Active,Intel DQ67,PC,2012-02-06,BMA Pinkenba,810 Brisbane Motor Auction,Service,NA,NA,13,NA
+20120036,B102207/002,Active,Intel DQ67,PC,2012-02-06,Eagers Holden Windsor,836 Eagers Holden,Service,NA,NA,13,NA
+20120039,G120121703228,Active,ID81 CELERON CULV857,PC,2012-02-09,Carzoos BDC Wgabba,APZP258B CarZoos,Sales,NA,NA,13,NA
+20120043,G120121703235,Active,ID81 CELERON CULV857,PC,2012-02-09,Carzoos BDC Wgabba,APZP258B CarZoos,Sales,NA,NA,13,NA
+20120044,G120121703233,Active,ID81 CELERON CULV857,PC,2012-02-09,Carzoos BDC Wgabba,APZP258B CarZoos,Sales,NA,NA,13,NA
+20120045,G120121703232,Active,ID81 CELERON CULV857,PC,2012-02-09,Torque Toyota Brendale,809 Torque Toyota,Sales,NA,NA,13,NA
+20120059,8B114377H,Active,PT525A-00801901,Notebook,2012-02-23,Carzoos BDC Wgabba,APZP258B CarZoos,Sales,NA,NA,13,NA
+20120063,7B154937H,Active,PT525A-00801901,Notebook,2012-02-23,Corporate Payroll,APPP258B Payroll,Admin,NA,NA,13,NA
+20120093,B102313/003,Active,Intel DH67,PC,2012-02-29,Metro Parts Eagle Farm,808 Metro,Parts,NA,NA,13,NA
+20120098,B102313/008,Active,Intel DH67,PC,2012-02-29,Adtrans Used Trucks Pinkenba,APGB862 QLD Used Trucks,Sales,NA,NA,13,NA
+20120099,B102313/009,Active,Intel DH67,PC,2012-02-29,Torque Ford North Lakes,820 Torque Ford,Service,NA,NA,13,NA
+20120111,G115021704070,Active,ID81 CELERON CULV857,PC,2012-03-15,Torque Toyota North Lakes,809 Torque Toyota,Unknown,NA,NA,13,NA
+20120112,G115021704067,Active,ID81 CELERON CULV857,PC,2012-03-15,Carzoos BDC Wgabba,APZP258B CarZoos,Sales,NA,NA,13,NA
+20120113,G115021704066,Active,ID81 CELERON CULV857,PC,2012-03-15,Austral Honda Newstead,807 Austral Honda-VW,Sales,NA,NA,13,NA
+20120114,G115021704068,Active,ID81 CELERON CULV857,PC,2012-03-15,Porsche Centre Brisbane Newstead,805 Austral Porsche,Service,NA,NA,13,NA
+20120115,G115021704069,Active,ID81 CELERON CULV857,PC,2012-03-15,Carzoos BDC Wgabba,APZP258B CarZoos,Sales,NA,NA,13,NA
+20120117,G120121703213,Active,ID81 CELERON CULV857,PC,2012-03-15,Torque Ford North Lakes,820 Torque Ford,Showroom,NA,NA,13,NA
+20120118,G120121703196,Active,ID81 CELERON CULV857,PC,2012-03-15,Carzoos BDC Wgabba,APZP258B CarZoos,Admin,NA,NA,13,NA
+20120119,G120121703198,Active,ID81 CELERON CULV857,PC,2012-03-15,Torque Toyota Brendale,809 Torque Toyota,Service,NA,NA,13,NA
+20120120,G120121703211,Active,ID81 CELERON CULV857,PC,2012-03-15,Southside Honda Buranda,802 Southside Honda,Sales,NA,NA,13,NA
+20120217,ABCS27931,Active,IP100,PC,2012-06-20,Infiniti Centre Brisbane,APGB863 Infiniti,Sales,NA,NA,13,NA
+20120271,G122320604454 B103299/001,Active,ID82 HM65,PC,2012-07-17,Torque Toyota Brendale,809 Torque Toyota,Pre Delivery,NA,NA,13,NA
+20120274,G122320604455 B103299/004,Active,ID82 HM65,PC,2012-07-17,Torque Toyota North Lakes,809 Torque Toyota,Sales,NA,NA,13,NA
+20120275,G122320604452 B103299/005,Active,ID82 HM65,PC,2012-07-17,Torque Toyota Brendale,809 Torque Toyota,Service,NA,NA,13,NA
+20120278,4C056610H,Active,PT525A-00801901,Notebook,2012-07-25,Torque Toyota Brendale,809 Torque Toyota,Sales,NA,NA,13,NA
+20120290,4C056875H,Active,PT525A-00801901,Notebook,2012-07-25,Austral PAG Fortitude Valley,806 Austral PAG,Service,NA,NA,13,NA
+20120335,5C054182H,Active,PT525A-00801901,Notebook,2012-08-27,Corporate Office Fortitude Valley,APGP258B Corporate,Admin,NA,NA,13,NA
+20120347,G122420600249 B103585/003,Active,ID82 HM65,PC,2012-09-13,Torque Toyota Pre-delivery,809 Torque Toyota,Pre Delivery,NA,NA,13,NA
+20120348,G122420600248 B103585/004,Active,ID82 HM65,PC,2012-09-13,Torque Toyota North Lakes,809 Torque Toyota,Service,NA,NA,13,NA
+20120352,G122420600707 B103585/008,Active,ID82 HM65,PC,2012-09-13,Torque Honda North Lakes,821 Torque Honda,Sales,NA,NA,13,NA
+20120450,G123520601753 B103766/001,Active,ID82 HM65,PC,2012-10-09,Porsche Centre Brisbane Newstead,805 Austral Porsche,Service,NA,NA,13,NA
+20120452,G123520601754 B103766/003,Active,ID82 HM65,PC,2012-10-09,Porsche Centre Brisbane Newstead,805 Austral Porsche,Service,NA,NA,13,NA
+20120480,HP2191KC700014N,Active,XE7OOTIA-A03AU,PC,2012-10-25,Southside Honda Buranda,802 Southside Honda,Service,NA,NA,13,NA
+20120481,HP2191KC700139N,Active,XE7OOTIA-A03AU,PC,2012-10-25,Infiniti Centre Brisbane,APGB863 Infiniti,Sales,NA,NA,13,NA
+20120512,C02H61RYDV7N,Active,MacBook Pro,Notebook,1970-01-01,Corporate Office Fortitude Valley,APGP258B Corporate,Admin,NA,NA,13,NA
+20120610,4C058097H,Active,PT525A-00801901,Notebook,2012-12-20,HVF Berrimah,815 AP Motor Group,Showroom,NA,NA,13,NA
+20120648,7C034193H,Active,PT530A-00J001,Notebook,2012-12-20,Austral PAG Fortitude Valley,806 Austral PAG,Service,NA,NA,13,NA

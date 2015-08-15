@@ -1,0 +1,23 @@
+--2010-09-01 01:00:01--  http://ittools/asset/index.php?content=login&loginkey=7071
+Resolving ittools... 10.1.1.33
+Connecting to ittools|10.1.1.33|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `bar.out'
+
+     0K .......... .                                           93.7M=0s
+
+2010-09-01 01:00:01 (93.7 MB/s) - `bar.out' saved [11759]
+
+--2010-09-01 01:00:01--  http://ittools/asset/index.php?content=bulk
+Connecting to ittools|10.1.1.33|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `bar.out'
+
+     0K .......... .......... .                                4.40K=4.8s
+
+2010-09-01 01:00:06 (4.40 KB/s) - `bar.out' saved [21586]
+
+FINISHED --2010-09-01 01:00:06--
+Downloaded: 2 files, 33K in 4.8s (6.80 KB/s)

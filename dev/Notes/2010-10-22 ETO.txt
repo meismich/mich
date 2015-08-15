@@ -1,0 +1,44 @@
+Townsville Outage 2010-10-22
+-----------------------------------------
+
+Power outage at 8.05am
+Cause - Air Conditioner installer tripped power.
+Power restored by 8.30am (wheh I checked network)
+Approached by Leah at 9.20am 
+Toby experiencing issues with a beeping UPS
+Rang Toby
+Toby found beeping coming from Server
+Shutdown Server - Beeping Stopped
+Had Toby restart server
+20 sec later beeping started again
+Using this info I called Rob at Ocean
+Rob suggested that the Raid may have dropped a disk
+Beeps would be a warning for this
+Rob suggested to install Raid Web Console
+Downloaded RWC from Intel (45MB - approx 3 min)
+Got a coffee
+Started copying to ETOFS (which was on)
+Estimated time to copy was 17min
+Prepared to go to Toowong
+At around 30s to go I lost all contact with ETOFS
+I rang the main ETO phone number - no answer
+I rang Toby's number - no answer
+I rang Tony's number - no answer
+I gave up and went to Toowong
+While driving Toowong I got a call from Tony??
+I told him I was in the car driving to Toowong
+I told him I could not help him at that time
+He told me to drive safely
+I arrived at Toowong at approximately 10.45am
+I gained access to a computer at Toowong, ETOFS still down
+Assumedly Toby was sick of the noise and wanted it shut down
+.... Not my call, that was his
+Apparently there was a helpdesk call raised at 10.40am
+Call stated two other machines inoperable
+Have only just read this call at 1.45pm
+Have installed network switches and cabling for Toowong
+Have helped move computers into showroom for storage
+Have relocated Phonemastery systems
+Have disconnected old switch from network
+This has taken me up until this time to complete
+Yes, I have had lunch

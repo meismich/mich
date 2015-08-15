@@ -1,0 +1,2 @@
+# Nmap 4.76 scan initiated Tue Apr 15 11:14:00 2014 as: nmap -n -PN -p23 -oG /home/mspence/src/fndp/tmp/CDF_ALL_TTY.nmap -iL /home/mspence/src/fndp/rem/CDF.webhosts 
+# Nmap done at Tue Apr 15 11:14:00 2014 -- 0 IP addresses (0 hosts up) scanned in 0.03 seconds

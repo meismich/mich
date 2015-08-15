@@ -1,0 +1,25 @@
+# File:			esxs/cal.cfg
+# Date:			2012-01-21
+# Author:		Michael Spence
+
+#--- Host Definitions
+
+## hvy-esx1
+define host{
+        use             esx-server
+        host_name       hvy-esx1
+        alias           hvy-esx1
+        hostgroups      svr_esx
+	parents		hvy_core_hp2510_48p_1
+	address         10.52.0.101
+	}
+
+# hvy-esx1-rmm
+define host{
+        use             esx-server
+        host_name       hvy-esx1-rmm
+        alias           hvy-esx1-rmm
+        hostgroups      svr_esx
+	parents		hvy_core_hp2510_48p_1
+	address         10.52.0.100
+	}

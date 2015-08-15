@@ -1,0 +1,30 @@
+# Nmap 4.76 scan initiated Tue Apr  1 17:18:03 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 445 -oG /home/mspence/src/fndp/tmp/TWG_ALL_WIN.nmap 10.28.0.0/24 10.28.1.0/24 10.28.2.0/24 10.28.3.0/24 10.28.4.0/24 10.28.5.0/24 10.28.6.0/24 10.28.7.0/24 10.28.8.0/24 10.28.9.0/24 10.28.10.0/24 10.28.11.0/24 10.28.12.0/24 10.28.13.0/24 10.28.15.0/24 10.28.16.0/24 10.28.17.0/24 10.28.18.0/24 10.28.19.0/24 10.28.20.0/24 10.28.99.0/24 10.28.100.0/24 10.28.253.0/24 10.28.254.0/24 
+Host: 10.28.1.1 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.1.75 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.1.76 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.1.235 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.28.1.237 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.28.1.239 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.28.1.251 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.28.1.252 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.28.1.254 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.28.16.42 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.16.47 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.16.76 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.28.16.150 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.16.151 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.16.153 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.16.154 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.16.155 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.28.16.156 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.16.157 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.16.185 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.28.254.1 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.28.254.2 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.254.5 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.28.254.6 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.254.8 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.28.254.16 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.254.17 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.28.254.22 ()	Ports: 445/closed/tcp//microsoft-ds///
+# Nmap done at Tue Apr  1 17:18:31 2014 -- 6144 IP addresses (28 hosts up) scanned in 27.97 seconds

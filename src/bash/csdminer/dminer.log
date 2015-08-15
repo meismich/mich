@@ -1,0 +1,15 @@
+--2009-05-11 14:57:51--  http://www.carsales.com.au/all-cars/results.aspx?No=44850&N=1216+1247+1282+1252+4294965857&Nne=150
+Resolving www.carsales.com.au... 144.135.8.184, 144.135.8.174
+Connecting to www.carsales.com.au|144.135.8.184|:80... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: http://www.carsales.com.au/Tig/Errors/GeneralError.aspx?ExceptionID=69314076&Type=System.OverflowException&ErrorCode=0 [following]
+--2009-05-11 14:57:51--  http://www.carsales.com.au/Tig/Errors/GeneralError.aspx?ExceptionID=69314076&Type=System.OverflowException&ErrorCode=0
+Connecting to www.carsales.com.au|144.135.8.184|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21753 (21K) [text/html]
+Saving to: `a.out'
+
+     0K .......... .......... .                               100%  335K=0.06s
+
+2009-05-11 14:57:52 (335 KB/s) - `a.out' saved [21753/21753]
+

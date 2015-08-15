@@ -1,0 +1,37 @@
+# Nmap 4.76 scan initiated Tue Aug  6 10:40:19 2013 as: nmap --min-hostgroup 256 --max-rtt-timeout 100 --max-retries 1 -T5 -n -PS -p 80 -oG /home/mspence/src/fndp/tmp/TWG_ALL.nmap 10.28.0.0/24 10.28.1.0/24 10.28.2.0/24 10.28.3.0/24 10.28.4.0/24 10.28.5.0/24 10.28.6.0/24 10.28.7.0/24 10.28.8.0/24 10.28.9.0/24 10.28.10.0/24 10.28.11.0/24 10.28.12.0/24 10.28.13.0/24 10.28.15.0/24 10.28.16.0/24 10.28.17.0/24 10.28.18.0/24 10.28.19.0/24 10.28.20.0/24 10.28.99.0/24 10.28.100.0/24 10.28.253.0/24 10.28.254.0/24 
+Host: 10.28.1.1 ()	Ports: 80/open/tcp//http///
+Host: 10.28.1.235 ()	Ports: 80/open/tcp//http///
+Host: 10.28.1.237 ()	Ports: 80/open/tcp//http///
+Host: 10.28.1.239 ()	Ports: 80/open/tcp//http///
+Host: 10.28.1.251 ()	Ports: 80/open/tcp//http///
+Host: 10.28.1.252 ()	Ports: 80/open/tcp//http///
+Host: 10.28.1.254 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.16.26 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.16.41 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.16.42 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.16.43 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.16.47 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.16.56 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.16.76 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.16.88 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.16.140 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.16.150 ()	Ports: 80/open/tcp//http///
+Host: 10.28.16.151 ()	Ports: 80/open/tcp//http///
+Host: 10.28.16.153 ()	Ports: 80/open/tcp//http///
+Host: 10.28.16.154 ()	Ports: 80/open/tcp//http///
+Host: 10.28.16.155 ()	Ports: 80/open/tcp//http///
+Host: 10.28.16.156 ()	Ports: 80/open/tcp//http///
+Host: 10.28.16.157 ()	Ports: 80/open/tcp//http///
+Host: 10.28.16.159 ()	Ports: 80/open/tcp//http///
+Host: 10.28.254.1 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.254.2 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.254.5 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.254.8 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.254.9 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.254.10 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.254.11 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.254.13 ()	Ports: 80/open/tcp//http///
+Host: 10.28.254.15 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.254.17 ()	Ports: 80/closed/tcp//http///
+Host: 10.28.254.19 ()	Ports: 80/closed/tcp//http///
+# Nmap done at Tue Aug  6 10:40:42 2013 -- 6144 IP addresses (35 hosts up) scanned in 23.20 seconds

@@ -1,0 +1,9 @@
+use assets;
+
+select * from xassets left join interog8s
+                on xassets.id = interog8s.i_asset
+        where xassets.s_status = "Active"
+                and (xassets.id < 90000000 or xassets.id > 200700000)
+                and (interog8s.i_i8type = 8 or interog8s.i_i8type is null) 
+        order by i_asset
+        ;

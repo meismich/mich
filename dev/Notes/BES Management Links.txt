@@ -1,0 +1,10 @@
+BlackBerry Administration service
+https://APEAGERSBES.APEAGERS.COM.AU:443/webconsole/login
+
+
+BlackBerry MDS Integrated Service
+https://APEAGERSBES.APEAGERS.COM.AU:443/mdsisconsole/app
+
+
+BlackBerry Web Desktop Manager
+https://APEAGERSBES.APEAGERS.COM.AU:443/webdesktop/login

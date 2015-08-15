@@ -1,0 +1,6 @@
+QLD-BK2|Backup###'Cluster###Core'
+CAL-BK1|Backup###'cal-esx1.apeagers.com.au'
+TTB-BK1|Backup###'bre-esx1.apeagers.com.au'
+QLD-BKPROD|Backup###'Queensland###Cluster###Prod'
+ERP1-BK|Backup###'ERA-H894-Live-20121022'
+ERP2-BK|Backup###'ERA-H7146-Live-20121012'

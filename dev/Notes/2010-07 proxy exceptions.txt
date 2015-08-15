@@ -1,0 +1,38 @@
+Proxy Exceptions for APEagers (Brisbane Specific)
+2010-07-09
+Michael Spence
+
+
+Below is the current list of the proxy exceptions and to what they relate
+
+19.197.2.183				=> Autogrid
+61.9.209.*				=> ???
+136.8.154.176				=> Autogrid
+10.112.230.*				=> Audi
+10.1.*.*				=> APEagers Data Centre
+150.45.156.*				=> Toyota
+192.168.*.*				=> Toyota
+203.26.190.6				=> Porsche
+193.175.6.*				=> Porsche
+10.3.0.1				=> Mazda
+localhost
+*.w7146.eranet				=> Darwin ERA 
+*.w894*.eranet				=> Brisbane ERA
+*.tmca.com.au				=> Toyota
+*webapps.toyota.com.au			=> Toyota
+*.nipt.telstra.com			=> Telstra IP 
+*cpn.vwg				=> VW
+*.franchise.jaguar.com			=> Jag
+*.franchise.landrover.com		=> L/R
+dealer.prod.mazda.com.au		=> Mazda
+*.epandaau.ford.com			=> Ford/Autogrid
+bsp.liberty.com.au*			=> Liberty Finance 
+loanservices.libfin.com.au*		=> Liberty Finance
+goglobal.dealerlogic.com.au*		=> Dealer Logic 
+ppn.porsche.com				=> Porsche
+*.apeagers.com.au			=> *** SPECIAL see note
+tjunction.toyota.com.au*		=> Toyota
+
+
+(Note)
+*.apeagers.com.au is set so that laptops, which leave our network and use Wireless modems (for offsite sales etc), cannot access the internet, but can access sites such as citrix.apeagers.com.au and owa.apeagers.com.au .  This is an attempt to limit the usage of these wireless modems.  We have work arounds for managers who do more than simple off site work.

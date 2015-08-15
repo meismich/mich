@@ -1,0 +1,53 @@
+HP Green Screen Setup
+2010-10-06
+Michael Spence
+
+
+Audience:
+
+Currently this documentation is for Field Support officers only.  In the future, I do not foresee other appropriate persons to whom this document may apply.
+
+
+Preamble:
+
+This document applies to the Configuration of a HP Thin Client for use as a Workshop “Clocking” Terminal, referred to as “A Green Screen”.  Clocking terminals have Clocking Printers attached (via Parallel or Serial ports).  This document demonstrates the method required to setup the sessions and the required configurations in ERA for this system to work.
+
+This document DOES NOT apply to the imaging of a HP thin client.  This document DOES NOT apply to the setup of an “AP_Desktop” user.
+
+
+Steps to Follow:
+
+The following steps are required to be followed for a HP Green Screen Setup.
+
+1. Login as Administrator
+2. Check Printer is Connected
+3. Configure TEP
+4. Configure “User” for Application
+5. Have Helpdesk configure ERA User
+6. Test Application
+
+
+
+1. Login as Administrator
+From "Login" Button, press Alt-F4 and login as administrator.  Username is “administrator” and password is “woody”.
+
+
+2. Check Printer is Connected
+Press Control Panel and verify under "LPD Printers" that there is a generic printer.  (RDP/ICA Printers is useless for this job.)  Press "Ok" to continue and get out of Control Panel.
+
+3. Configure TEP
+Press advanced, and then "Add.."  Setup a Terminal Emulation Program.  Call it "ERA".  Terminal emulation should be "TVI955".  Host is "172.20.3.34" (or 172.20.3.40 for s2).  Untick Create Desktop Icon.  All else is default.
+4. Configure “User” for Application
+Under "User:" select "User".  Add the newly created application to their list of applications.  If this is only to be a green screen, remove all other applications and click the column "Auto", which will cause it to start as soon as the "Login" button is pressed.  Press "OK" button.
+
+Now that you are back at the Application selection page for Administrator, Press "Shutdown" and "Logout".  The "Login" Button will appear.
+
+5. Have Helpdesk configure ERA User
+ERA User has to be setup correctly.  User's workstation should be using Emulation type of R+R1000 and their workstation's printer should be R+R220 (with Paper type "Y").  <-- As field support you need to ask heldesk to set this up.
+
+6. Test Application
+There's a number of checks you can perform.  
+
+Once you press "Login" and the application loads, firstly go to "File" and "Print Screen".  This should cause the printer to print the entire screen through the clocking printer.  If this doesn't work, you may need to reboot either the terminal or the printer or both.  Do so and start again from the "Login" button.
+
+If the printer prints the screen, then obviously the terminal can talk to the printer.  Now have the user login to the terminal and go to an area where they would normally use the printer.  Get them to test print something to verify that ERA is talking to the printer correctly.  If this doesn't work, possibly this user isn't set correctly as stated above, have helpdesk check this.  Restart again from the "Login" button.

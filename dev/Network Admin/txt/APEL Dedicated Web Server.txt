@@ -1,0 +1,212 @@
+APEAGERS LTD Dedicated Web Server
+Mark Cross
+2010-05-14
+
+About this Document
+
+The AP Eagers Ltd Dedicated Web Server document contains the necessary information regarding the WebCentral dedicated server infrastructure, including an overview of the setup and configuration of the servers.
+
+The document assumes an understanding of network, virtualisation, and data backup and restoration technologies.  The target audience is restricted to Network, Ssytem, and Security engineers.
+
+Introduction
+
+This document is the primary guideline for the dedicated Web Server infrastructure provisions as related to the A.P. Eagers Ltd group.  This document includes information regarding the specific operating system and server installation.  Password and other secure information are not included in this document.  It is assumed the audience has a high level of system engineering skills related to the virtual infrastructure and associated technologies.
+
+Server Administration
+
+Infrastructure administration is broken into two areas of responsibility.
+
+Ther server and hardware infrastructure is supported, administred and managed by the A.P. Eagers Ltd Information Services Department's Systems Administrator.
+
+Mark Cross
+N/A
+
+The nominated account contacts for AP Eagers Ltd are:
+
+Primary Contact
+Shane Pearce
+
+Secondary Contact
+Stephen Best
+
+
+Server provisioning, backup and restoration and network infrasctructure is supported administered and managed by WebCentral.  Contact details are split into Account Management, Technical Management and Sales Support.
+
+Account Management
+Samantha Woolford
+Service Delivery Co-ordinator
+Log a jobe with MIssion Control or call Priority Line on 1800 000 691
+
+Stacey Fuller
+Team Leader, Service Delivery
+Work: +61 7 3230 7537
+Mobile: +61 438 785 406
+Email: stacey.fuller@webcentral.com.au
+
+Technical management
+Joe Seychell
+Technical Delivery Manager
+Work: 1800 662 226
+Log a job with Mission Control or call Priority LIne on 1800 000 691
+Email: joe.sechell@webcentral.com.au
+
+Andrew Ritchie
+Team Leader, Technical Delivery
+Work: +61 7 3230 7359
+Mobile: +61 401 985 224
+Email: andrew.ritchie@webcentral.com.au
+
+Sales Support
+Don McCourt
+Business Development Manager
+Work: +61 7 3230 7328
+Mobile: +61 421 588 058
+Email: don.mccourt@webcentral.com.au
+
+Mike McKeown
+State Sales Manager
+Work: +61 3 8624 2422
+Mobile: +61 404 842 881
+Email: mike.mckeown@webcentral.com.au
+
+Finance Team
+Email: accountsdedicated@webcentral.com.au
+
+
+Primary Site
+
+Webcentral is the primary site for the server and related infrastructure.
+
+The primary site is physically located at Webcentral's Brisbane data centre.
+
+
+Network environment
+
+***  Insert diagram here
+
+
+System Configuration
+
+Infomation Inventory
+
+
+bne3-0045d Server
+
+Server Name:		bne-0045d
+Server Role:		VM Guest
+Base IP Address:	210.247.230.33
+IP Addresses:		210.247.230.1 thru 210.247.230.30
+OS:			Windows 2003 Server Standard SP2
+ESX OS:			ESX 3.5.0 Build 143129
+Hardware:		ESX VM Guest
+CPU:			Quadcore AMD Opteron 8356 @ 2.30 GHz
+Memory:			3.75GB
+NICs:			1 Virtual
+Storage:		100GB (C: 10GB, D: 5GB, E: 85GB)
+
+
+bne-0045d Configuration
+
+
+***  To be added
+
+
+System Administration
+
+Service Level Agreement
+
+***  To be added
+
+Domain name management
+
+***  To be added
+
+Microsoft Internet Information Services 6
+
+*** To be added
+
+Additional software/services
+
+Persits software (www.persits.com)
+
+As requested by Phase New Media, Persits AspUpload and Psersits AspJpeg have been purchased and installed on the webserver.  The software is located on the desktop of the server under the eagers-admin user account.
+
+Order details as follows:
+
+Order Number:		90465175-1958
+Date:			16/06/2009 2027
+Product:		AspJpeg Single Server License
+Registration Key:	87541-26116-05477
+Quantity:		1
+Total Price:		US$195.00
+
+Order Number:		90465175-1958-2
+Date:			16/06/2009 2027
+Product:		AspUpload Single Server License
+Registration Key:	30017-03582-29223
+Quantity:		1
+Total Price:		US$200.00
+
+Intallation of both products is a simple point and click exercise.  When prompted, enter registration key as per above.  The registration informatin is recorded in plain text in the registry.  The key locations are:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Persits Software\AspJpeg\RegKey
+HKEY_LOCAL_MACHINE\SOFTWARE\Persits Software\AspUpload\RegKey
+
+jmail (www.dimac.net)
+
+As requested by Phase New Media, Dimac Developement AB w4 JMail has been installed on the webserver.  The free software (jmail_freww.msi) is located on the desktop of the server under the eagers-admin user account.
+
+Intallation of JMail is a simple point and click exercise,  and all hooks for the IIS6 are automatically created and configured during the install.
+
+
+System Backup Procedures
+
+***  To be added
+
+
+WebCentral procedures
+
+Mission Control
+
+The on-line Job system in mission control is the easiest way to lodge an inquiry.  You will then be alerted via e-mail when your on-line job has been completed (or if it requires further information). 
+
+All requests (and subsequent replies) made in the on-line job system are time, date and IP address stamped, providing an efficient audit trail and a complete history of the account and server configuration.  nce.
+
+To gain access to Mission Control and the On-Line Job system go to https://mc-au.server-secure.com and use the username and password listed below.
+
+u/n:			vs319836
+p/w:			RXBgo6896R
+
+
+Managed services control
+
+***  To be added
+
+
+Dedicated reporting
+
+***  To be added
+
+
+Server monitoring
+
+***  To be added
+
+
+Server patchine
+
+***  To be added
+
+
+Third party remote access 
+
+The A.P. Eagers Ltd I.S. Services Department are granted remote access to the base IP of the server through explicit firewall ACL rules.
+
+
+Phase New Media
+
+Phase New Media are the primary web development company for APEagers Ltd dealerships.
+
+The primary contact is: Andre F
+
+

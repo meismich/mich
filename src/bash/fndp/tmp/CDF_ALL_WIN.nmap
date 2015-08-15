@@ -1,0 +1,13 @@
+# Nmap 4.76 scan initiated Tue Apr 15 11:13:58 2014 as: nmap --min-hostgroup 256 --max-rtt-timeout 500 --max-retries 2 -T5 -n -PS -p 445 -oG /home/mspence/src/fndp/tmp/CDF_ALL_WIN.nmap 172.17.75.0/24 
+Host: 172.17.75.30 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 172.17.75.31 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 172.17.75.32 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 172.17.75.33 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 172.17.75.34 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 172.17.75.35 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 172.17.75.36 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 172.17.75.37 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 172.17.75.38 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 172.17.75.41 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 172.17.75.50 ()	Ports: 445/filtered/tcp//microsoft-ds///
+# Nmap done at Tue Apr 15 11:14:00 2014 -- 256 IP addresses (11 hosts up) scanned in 1.84 seconds

@@ -1,0 +1,74 @@
+From ttb-bk1@apeagers.com.au  Thu Apr 24 23:04:20 2014
+Return-Path: <ttb-bk1@apeagers.com.au>
+Received: from bne-nixwww.apeagers.com.au (localhost [127.0.0.1])
+	by bne-nixwww.apeagers.com.au (8.14.3/8.14.3) with ESMTP id s3OD4JEK024807
+	for <mspence@localhost>; Thu, 24 Apr 2014 23:04:19 +1000
+MIME-Version: 1.0
+Received: from outlook-apacsouth.office365.com [111.221.119.98]
+	by bne-nixwww.apeagers.com.au with IMAP (fetchmail-6.3.8)
+	for <mspence@localhost> (single-drop); Thu, 24 Apr 2014 23:04:19 +1000 (EST)
+Received: from SIXPR01MB253.apcprd01.prod.exchangelabs.com (10.242.148.155) by
+ HKXPR01MB245.apcprd01.prod.exchangelabs.com (10.242.120.144) with Microsoft
+ SMTP Server (TLS) id 15.0.921.12 via Mailbox Transport; Thu, 24 Apr 2014
+ 10:52:50 +0000
+Received: from SIXPR01CA008.apcprd01.prod.exchangelabs.com (10.242.58.18) by
+ SIXPR01MB253.apcprd01.prod.exchangelabs.com (10.242.148.155) with Microsoft
+ SMTP Server (TLS) id 15.0.929.12; Thu, 24 Apr 2014 10:52:49 +0000
+Received: from AM1FFO11FD018.protection.gbl (2a01:111:f400:7e00::198) by
+ SIXPR01CA008.outlook.office365.com (2a01:111:e400:2000::18) with Microsoft
+ SMTP Server (TLS) id 15.0.921.12 via Frontend Transport; Thu, 24 Apr 2014
+ 10:52:48 +0000
+Received: from qld-mx.ape1.local (165.228.157.90) by
+ AM1FFO11FD018.mail.protection.outlook.com (10.174.64.207) with Microsoft SMTP
+ Server id 15.0.929.8 via Frontend Transport; Thu, 24 Apr 2014 10:52:46 +0000
+Received: from ttb-bk1 ([10.1.1.10]) by qld-mx.ape1.local with Microsoft SMTPSVC(6.0.3790.1830);
+	 Thu, 24 Apr 2014 20:47:34 +1000
+From: <ttb-bk1@apeagers.com.au>
+To: <spearce@apeagers.com.au>
+CC: <issadmin@apeagers.com.au>, <mspence@apeagers.com.au>
+Date: Thu, 24 Apr 2014 20:52:32 +1000
+Subject: vRanger Backup & Replication Backup Job: 4 successful, 0 failed, 0 aborted, 0
+ canceled
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+Message-ID: <QLD-MXdzUK0Mbwv8tBP000a9cfb@qld-mx.ape1.local>
+X-OriginalArrivalTime: 24 Apr 2014 10:47:34.0492 (UTC) FILETIME=[99B579C0:01CF5FAA]
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-Organization-SCL: -1
+X-Forefront-Antispam-Report: CIP:165.228.157.90;CTRY:AU;IPV:CAL;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:SIXPR01MB253;H:qld-mx.ape1.local;FPR:;LANG:en;
+X-MS-Exchange-Organization-Network-Message-Id: 4c7c2c5c-acc8-4ac4-3ac8-08d12dc277ea
+X-MS-Exchange-Organization-AVStamp-Service: 1.0
+X-MS-Exchange-Organization-AuthSource: AM1FFO11FD018.protection.gbl
+X-MS-Exchange-Organization-AuthAs: Anonymous
+
+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJz
+ZXQ9dXRmLTgiPjxib2R5IHN0eWxlPSJmb250LWZhbWlseTphcmlhbCxzYW5zLXNlcmlmO2ZvbnQt
+c2l6ZTo5LjBwdCI+PHN0cm9uZz5Ib3N0IE5hbWU8L3N0cm9uZz46IFRUQi1CSzE8YnI+PHN0cm9u
+Zz5Kb2IgTmFtZTwvc3Ryb25nPjogQmFja3VwICdicmUtZXN4MS5hcGVhZ2Vycy5jb20uYXUnPGJy
+PjxzdHJvbmc+SW52ZW50b3J5IE5hbWU8L3N0cm9uZz46IGJyZS1lc3gxLmFwZWFnZXJzLmNvbS5h
+dTxicj48c3Ryb25nPlJlc3VsdDwvc3Ryb25nPjogQ29tcGxldGVkPGJyPjxzdHJvbmc+U3RhcnQg
+VGltZTwvc3Ryb25nPjogMjQvMDQvMjAxNCA3OjMwOjIwIFBNPGJyPjxzdHJvbmc+RW5kIFRpbWU8
+L3N0cm9uZz46IDI0LzA0LzIwMTQgODo1MjozMSBQTTxicj48c3Ryb25nPkR1cmF0aW9uPC9zdHJv
+bmc+OiA4MyBtaW51dGUocyk8YnI+PHN0cm9uZz5CYWNrdXAgVHlwZTwvc3Ryb25nPjogRnVsbDxi
+cj48YnI+PGJyPjxzdHJvbmc+Vk0gTmFtZTwvc3Ryb25nPjogYmRsLXJ0cjE8YnI+PHN0cm9uZz5S
+ZXN1bHQ8L3N0cm9uZz46IFN1Y2Nlc3NmdWw8YnI+PHN0cm9uZz5TdGFydCBUaW1lPC9zdHJvbmc+
+OiAyNC8wNC8yMDE0IDg6NDc6MDQgUE08YnI+PHN0cm9uZz5FbmQgVGltZTwvc3Ryb25nPjogMjQv
+MDQvMjAxNCA4OjUyOjMxIFBNPGJyPjxzdHJvbmc+RHVyYXRpb24gKG1pbnV0ZXMpPC9zdHJvbmc+
+OiA1PGJyPjxzdHJvbmc+QXJjaGl2ZSBTaXplPC9zdHJvbmc+OiAwLjE4NiBNQjxicj48YnI+PHN0
+cm9uZz5WTSBOYW1lPC9zdHJvbmc+OiBibmUtYXV0b3FvdXRlPGJyPjxzdHJvbmc+UmVzdWx0PC9z
+dHJvbmc+OiBTdWNjZXNzZnVsPGJyPjxzdHJvbmc+U3RhcnQgVGltZTwvc3Ryb25nPjogMjQvMDQv
+MjAxNCA3OjMwOjIzIFBNPGJyPjxzdHJvbmc+RW5kIFRpbWU8L3N0cm9uZz46IDI0LzA0LzIwMTQg
+ODowMjo1OSBQTTxicj48c3Ryb25nPkR1cmF0aW9uIChtaW51dGVzKTwvc3Ryb25nPjogMzI8YnI+
+PHN0cm9uZz5BcmNoaXZlIFNpemU8L3N0cm9uZz46IDI5LjIxMSBNQjxicj48YnI+PHN0cm9uZz5W
+TSBOYW1lPC9zdHJvbmc+OiBicmUtbHB0MTxicj48c3Ryb25nPlJlc3VsdDwvc3Ryb25nPjogU3Vj
+Y2Vzc2Z1bDxicj48c3Ryb25nPlN0YXJ0IFRpbWU8L3N0cm9uZz46IDI0LzA0LzIwMTQgODozNToz
+NCBQTTxicj48c3Ryb25nPkVuZCBUaW1lPC9zdHJvbmc+OiAyNC8wNC8yMDE0IDg6NDY6MzYgUE08
+YnI+PHN0cm9uZz5EdXJhdGlvbiAobWludXRlcyk8L3N0cm9uZz46IDExPGJyPjxzdHJvbmc+QXJj
+aGl2ZSBTaXplPC9zdHJvbmc+OiA3Ljg5MiBNQjxicj48YnI+PHN0cm9uZz5WTSBOYW1lPC9zdHJv
+bmc+OiB0dGItdHVuZTE8YnI+PHN0cm9uZz5SZXN1bHQ8L3N0cm9uZz46IFN1Y2Nlc3NmdWw8YnI+
+PHN0cm9uZz5TdGFydCBUaW1lPC9zdHJvbmc+OiAyNC8wNC8yMDE0IDg6MDM6MjUgUE08YnI+PHN0
+cm9uZz5FbmQgVGltZTwvc3Ryb25nPjogMjQvMDQvMjAxNCA4OjM1OjA5IFBNPGJyPjxzdHJvbmc+
+RHVyYXRpb24gKG1pbnV0ZXMpPC9zdHJvbmc+OiAzMjxicj48c3Ryb25nPkFyY2hpdmUgU2l6ZTwv
+c3Ryb25nPjogMjUuMzU1IE1CPGJyPjxicj48L2JvZHk+
+

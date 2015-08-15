@@ -1,0 +1,22 @@
+Installed Open Suse 11.3 x86 64bit
+
+Have installed using Kde Desktop option
+Have setup 3 primary partitions
+
+20GB partition mounted as /
+20GB partition mounted as /usr
+10GM partition as swap
+
+Root password has beed configured "it isn't very difficult"
+
+Have configured sshd to start on startup for RL's 3 and 5
+
+Have verified that ssh access is available
+
+Have not verified that ssh tunnelling of X11 is working.
+
+Have added new user "autoreg" with password "gerotua1" for "Registration Solutions"
+(am expecting user to change this password)
+
+Have added autoreg to sudoers list
+
