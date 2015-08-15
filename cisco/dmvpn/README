@@ -1,0 +1,12 @@
+#
+# FILE:   mich/cisco/dmvpn/README
+# AUTHOR: Michael Spence
+# DATE:   2015-08-14
+#
+Stuff to do with building a DMVPN.
+
+Particularly involves using 
+  - Cisco 819 Non Hardened LTE 4G router as spokes
+  - Cisco 1841 Router behind ADSL router as spokes
+  - Cisco CSR1000V acting as the HUB
+  
