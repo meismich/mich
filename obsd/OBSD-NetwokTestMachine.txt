@@ -1,0 +1,252 @@
+OpenBSD - Network Testing Machine
+2014-11-28
+Michael Spence
+
+
+Audience:
+
+This document is intended for the Author's benefit, incase he needs to rebuild
+a network testing machine in the future.  Count yourself lucky if you are
+reading this.
+
+
+Preamble:
+
+This document details the installation and configuration of the OpenBSD
+laptop.
+
+This document DOES NOT detail the procedures for testing.
+
+
+Topics of Discussion:
+
+1. Installation
+2. Tasks as Root
+	a. Installing packages
+		i. iperf
+		ii. net-snmp
+	b. Adding Users
+		i. issadmin
+		ii. apeadmin
+		iii. SuDoers
+	c. Other Items
+		i. script path
+		ii. loopback 0
+		iii. snmp client address
+3. Tasks as APEAdmin
+	a. Install Update Script
+	b. Initial Update
+	c. User Profile
+4. External Pre-requisites
+	a. Network Connectivity
+	b. Packages
+	c. Update Server
+
+
+Topics in Detail
+
+1. Installation
+
+The required OS for the laptops is OpenBSD.  This document has been based on
+OpenBSD 5.5, however, previous versions back at least to 4.5 would be likely
+to work as are future releases.
+
+The installation was a standard installation with out XWindows.  Only 50GB of
+HDD space was used, which was thought to aid in the replecation of the
+installation to a SSD drive if cheap alternatives became available.  [A 32Gb
+installation on a Raspberry Pi, would serve equally well for other purposes.]
+
+NOTE: the issadmin account was added at installation.
+
+
+2. Tasks as Root
+
+A number of simple tasks need to be performed as root after OS installation.
+
+2.a. Installing packages
+
+A number of packages must be installed from a package repository for the test
+scripts to function.  The AARNet repository was used for this purpose.
+
+	export
+PKG_PATH=http://mirror.aarnet.edu.au/pub/OpenBSD/5.5/packages/amd64/
+
+2.a.i. iperf
+
+The iPerf package will allow the testing of TCP/UDP throughput of the link.
+
+	pkg_add iperf
+
+2.a.ii. net-snmp
+
+The net-snmp package will allow the testing of monitoring requirements such as
+SNMP.
+
+	pkg_add net-snmp
+
+2.b. Adding Users
+
+A number of users need to be added to the system.  The following command is
+used for each user addition.
+
+	useradd -m -p <password> -c <fullname> <username>
+
+2.b.i. issadmin
+
+This user to be added at installation, but if not done the following info
+could be used:
+
+	username:	issadmin
+	fullname:	issadmin
+	password:	<clueless>	(<clueless!> if post install)
+
+2.b.ii. apeadmin
+
+This user can be added at any time using the following info
+
+	username:	apeadmin
+	fullname:	apeadmin
+	password:	<three!>
+
+2.b.iii. SuDoers
+
+Both these users need full sudoers access and as this laptop is not intended
+to be able to be used by just any user, the security risk of password less
+rights can be thought of as negligible.
+
+	vi /etc/sudoers
+
+Add lines:
+
+	issadmin	ALL=(ALL) NOPASSWD: SETENV: ALL
+	apeadmin	ALL=(ALL) NOPASSWD: SETENV: ALL
+
+
+2.c. Other Items
+
+A couple other items require attention as the root user.
+
+2.c.i. Script Path
+
+A location is required for common access to the test scripts.  The following
+lcation was thought to be an appropriate location:
+
+	codepath:	/usr/local/src
+
+The following commands were performed:
+
+	mkdir <codepath>
+	chown apeadmin:users <codepath>
+
+2.c.ii. SNMP Client Address
+
+For the purposes of duping the on-site router into believing an SNMP request
+has come from the Nagios server, SNMP requests must leave this test laptop as
+if they had come from IP address 10.1.1.49.  Thic can be done in the SNMP
+configuration file.
+
+	vi /etc/snmp/snmp.conf
+
+The following line was added
+
+	clientaddr	10.1.1.49
+
+
+2.c.iii. Loopback 0
+
+Naturally for the laptop to receive traffic as 10.1.1.49 it must believe that
+this IP address is one of its interfaces.  Since the primary interface will be
+somewhat dynamic, it makes sense to create a loopback interface.
+
+	vi /etc/hostname.lo0
+
+The following line was added
+
+	inet 10.1.1.49 255.255.255.255
+
+
+3. Tasks as APEAdmin
+
+It is appropriate to perform a number of tasks as APEAdmin for ease of
+permission maintenance.
+
+3.a. Install Update Script
+
+The same codepath, was used for the update script even though he update script
+was built without the intention of being updated itself and hence does not need
+to reside at the same location as the other scripts.  The script must be copied from the update server and must have a "tmp" directory created where it resides.  
+
+	updtpath:	<codepath>
+
+The following commands were performed:
+
+	mkdir <codepath>/updt
+	mkdir <codepath>/updt/tmp
+	scp issadmin@10.1.77.99:src/updt/updt.sh <codepath>/updt/tmp
+
+Further a symbolic link was created to the users home directory:
+
+	ln -s <codepath>/updt/updt.sh update_machine
+
+
+3.b. Initial Update
+
+To both add the most current version of scripts to the system and also test
+the update script, an initial update should be performed.
+
+From the users home directory:
+
+	update_machine
+
+
+3.c. Profile Changes
+
+A number of profile changes are useful for this user.  To change the profile:
+
+	vi .profile
+
+Add the following lines:
+
+	clear
+	cat <codepath>/ape.banner
+	export PS1="[$( hostname | sed 's/\..*$//' )]:\w> "
+
+
+4. External Pre-requisites
+
+For all this to be possible a number of pre-requisites must be valid and
+available.
+
+4.a. Network Connectivity
+
+The laptop after installation must have network connectivity.  Whilst
+possible, it is difficult to gain wireless access using OpenBSD insallations,
+particularly using RADIUS certificates.  Therefore, it is recommended to
+configure the ethernet port, which during all installations has been
+referenced as:
+
+	interface:	em0
+
+The network address and network must be capable of reaching the update server
+10.1.77.99.  Configure the following as root:
+
+	ifconfig <interface> inet <net_address> netmask <net_mask>
+	route add default <net_gateway>
+
+
+4.b. Packages
+
+The network must also have access to an appropriate package server; in this
+example, this was the AARNet server.  Firewall allowances are in place within
+APEagers for AARNet and also iiNet.
+
+
+4.c. Update Server
+
+The update server must be prepped with both the update script and the test
+scripts.  
+
+As the installation above suggests, the issadmin account must have the updt.sh file located within its "src/updt" directory.
+
+The test scripts are to reside within the "src/" directory of the apeadmin
+account.

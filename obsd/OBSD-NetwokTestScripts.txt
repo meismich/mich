@@ -1,0 +1,216 @@
+OpenBSD - Network Testing Scripts
+2014-11-28
+Michael Spence
+
+Audience:
+
+This document is intended for the Author's benefit, incase he needs to rebuild
+a network testing machine in the future.  Count yourself lucky if you are
+reading this.
+
+
+Preamble:
+
+This document details the intention, working and data structures of the
+testing scripts.
+
+This document DOES NOT detail the installation the OpenBSD laptop.
+
+This document DOES NOT detail the procedures for testing.
+
+
+Topics of Discussion:
+
+1. Update Script
+	a. Version Control
+	b. Source Files
+	c. Symbolic Links
+2. Network Test Script
+	a. Network Setup
+	b. Routing Protocol
+	c. Performance and Monitoring
+3. Switch Config Script
+	a. User Input
+	b. Switch Config
+	c. COM Port Transfer
+4. Additional Scripts
+
+
+
+Topics in Detail
+
+1. Update Script
+
+The update script was written to facilitate the upgrading of current scripts
+and also adding new scripts.  It performs this by accessing the update server,
+checking the current version, installing source files and generating symbolic
+links in the user directory.
+
+1.a. Version Control
+
+Version control is controlled by the "ver.txt" file located in both the
+on-machine source directory and update server's source directory.  The
+mechanism for verifying differences in version is simply done through a string
+difference check.  This implies that the version sequence is only for the
+benefit of the archiving process on the update server.
+
+The update script be given a parameter; if this is done the update script will
+ignore the current "ver.txt" and will grab all source files.
+
+
+1.b. Source Files
+
+Source files are always copied to the local machine into a temporary location.
+
+	scp -R apeadmin@src/. <templocation>/.
+
+This is done to eliminate the need for the user to retype the password to the
+update server.  Once the version difference is verified the source files are
+copied to the local source directory.
+
+	cp -r <templocation)/. <codebase>/.
+
+
+1.c. Symbolic Links
+
+The update script creates symbolic links within the user's home directory.
+This creation is controlled by a simple CSV file "links.txt".  The contents of
+the directory contain the script acronym and the symbolic name.  the following
+is performed with this information
+
+	ln -s <codebase>/<acronym>/<acronym>.sh <symbolic>
+
+
+2. Network Test Script
+
+The network testing script relies on the existence of an upto date campus
+list.  This list contains campus codes and aapt network details (including
+sub-net, APEagers ASN and AAPT ASN).  This file is retrieved during an update
+process.
+
+The network testing script runs three phases: network configuration, routing
+protocol configuration/tests, and performance/monitoring tests.
+
+The script identifies the current campus through user input of the campus
+code.
+
+2.a. Network Setup
+
+During the network setup phase, the script configures the primary interface of
+the laptop to match the network recorded for the campus.
+
+The script then requests that DHCP leases are gained for the sub-interfaces
+VLAN2, VLAN3 and VLAN4.  While it is not expected that VLAN4 should gain a
+DHCP lease, it has been demonstrated to be prudent to test if it will get this
+lease or not.
+
+The script records the status of the interfaces into the report file.
+
+
+2.b. Routing Protocol
+
+The script then performs the required actions to setup access to the network.
+These processes rely on the previous phase of configuring the network.
+Positive results in this phase will be dependant on positive results from the
+network configuration.
+
+The first action is to give the machine a default route to the on-site router.
+
+The using the BGP ASNs recorded for the campus, the script builds a bgpd
+configuration file and starts bgpd.
+
+The script records, into the report file, the status of the processes for BGP, the status of the neighborship with the AAPT router, and the Routing Information Base of the BGP process.
+
+
+2.c. Performance and Monitoring
+
+This script attempts to determine the bandwidth of the on-site link and verify
+that the on-site router is accessible by Nagios (the monitoring solution).  To
+do this requires positive results from previous two phases of the script.
+
+The performance test relies on the existence of a running iPerf instance on
+the EMP homed AAPT test server (at IP address 10.1.77.99).  The iPerf test
+runs five parallel pushes for thirty seconds with a window size of 50k to the 
+test server.  Measurement results are reported every five (5) seconds, with a
+summary average at the end.  This output is recorded in the report file.
+
+The monitoring test relies on the BGP peering from the past phase.  If peering
+has failed the on-site router will not be tricked into believing the test
+laptop is the Nagios server.  A simple SNMP query is requested from the
+on-site router, which is recorded in the report file.
+
+
+3. Switch Config Script
+
+A scipt has been designed to ease the configuration of switches within
+APEagers networks.  It is assumed that switches will have a standard and
+predictable configuration, and hence a configuration script is capable of
+repeating this task.
+
+3.a. User Input
+
+In this version of the script, the user must enter the appropriate details of
+the switch, including:
+
+	Campus Code
+	Purpose Code
+	IP Address
+	Model Number
+	Port Count
+	Rack Location
+
+This information is located on the network diagrams for each campus.  A switch
+has a standard name in the form:
+
+	<campus>_<purpose>_<model>_<ports>p
+
+The switches location is subjective and can be interpreted by the user of this
+script in any meaningful way.
+
+Since this version of the script was built, a standard IP addressing scheme
+has been created.  In future releases, it may not be necessary to enter this
+info.
+
+3.b. Switch Config
+
+The script uses the information gathered to compile the required switch
+configuration commands.  These commands are stored along with common
+configuration commands into an intermediary file.
+
+The commands included, involve the configuration of the following:
+
+	Access Passwords
+	SNMP Details
+	NTP Details
+	IP Address and Gateway
+	VLAN Configuration
+
+Before this version of the script was written, a full LAN QoS model had not
+been built.  In future releases, this switch configuration script is expected
+to include this.
+
+3.c. COM Port Transfer
+
+The laptop communicates with the switch via a console cable connected to the
+COM port of the laptop and the Console port of the switch.  To access the
+switch the application "cu" is used.  Noteably this application is capable of
+piping information from a filestream, effectively passing that file over the
+console cable.  This feature is being used to pass the configuration commands
+to the switch.
+
+During the testing phase of this script, it was noted that switches take some
+time to boot, must be in a state to be configured and must be at an enable
+prompt.  To ensure this "cu" needed to be run prior to this script to guage
+the switch's status.  Future releases of this script may address these issues.
+
+
+4. Additional Scripts
+
+As the update script caters for the addition of other scripts, other scripts
+ahve been considered.  These may include:
+
+	A Menu Script
+	Network Config Script
+	Wireless Config Script
+	Services Access Script
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="122.74px" height="111.401px" viewBox="-0.425 25.086 122.74 111.401"
+	 enable-background="new -0.425 25.086 122.74 111.401" xml:space="preserve">
+<symbol  id="glyph0-6" viewBox="0 0 0 0">
+	<path fill="#26FF3C" d="M0,0"/>
+</symbol>
+<g id="surface46">
+	<path fill="#B7DEE8" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M-0.425,47.846l82.189,45.775v42.016
+		L-0.425,90.243V47.846z"/>
+	<path fill="#FFFFFF" fill-opacity="0.302" d="M1.856,52.692L78.959,95.26v33.711L2.611,89L1.856,52.692z"/>
+	<path fill="#B7DEE8" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M38.654,25.086l82.812,46.16l-39.501,22.6
+		l-82.389-46L38.654,25.086z"/>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-376.2087" y1="1069.1016" x2="-456.6936" y2="1149.5864" gradientTransform="matrix(0.7088 0 0 0.7088 381.9423 -726.0353)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</linearGradient>
+	<path fill="url(#SVGID_1_)" d="M63.313,38.039l58.146,33.208L82.112,93.869c0,0,10.729-14.843,2.483-29.991
+		C76.356,48.729,63.313,38.039,63.313,38.039z"/>
+	<path fill="#B7DEE8" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M81.768,93.838l39.313-22.458v41.604
+		l-39.315,22.652L81.768,93.838z"/>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-394.6233" y1="1198.7471" x2="-394.6233" y2="1078.0684" gradientTransform="matrix(0.7088 0 0 0.7088 321.9384 -714.0353)">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#FFFFFF"/>
+	</linearGradient>
+	<path fill="url(#SVGID_2_)" d="M2.611,50.099l79.237,43.967l-0.083,41.57c0,0-3.723-15.959-13.319-32.129
+		C52.365,76.41,2.611,50.099,2.611,50.099z"/>
+</g>
+</svg>
