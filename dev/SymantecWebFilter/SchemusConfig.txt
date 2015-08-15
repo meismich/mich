@@ -1,0 +1,38 @@
+Symantec Web Filter - Schemus Configuration
+2011-10-10
+Michael Spence
+
+
+Group Configuration:
+
+
+
+User Configuration:
+
+Name:  Choose the Configuration Name.  This has been set at "Internet User Group Sync"
+
+Data Source: Allow multiple sources if multiple groups of users are to be configured.  This includes "sub-domains" which have been found to have strage behaviour when following links from parent to child.  This is believed to be caused by a lack of "authority" for the configured user.
+
+Give the source a meaningful name.  The source type will more than likely be "Active Directory".  
+
+Enter the appropriate LDAP credentials for the Tool be allowed to search through AD.  Also, change the "Advanced" options and change the Continuation References to "Ignore"; this will stop associated links to child domains, for which credentials of the parent do no work.
+
+Generally, the entire directory of users should be loaded.  The groups users are members of will filter these users' access.
+
+Search base: DC=apeagers,DC=com,DC=au
+Search scope: Sub-tree
+Search fileter: (&(objectCategory=person)(objectClass=user))
+Name: %DC[-1]\\%sAMAccountName%
+
+Data Repository:
+
+Repository Type: MessageLabs  (there is no other option)
+ClientNet - UserName: ape1248
+ClientNet - PassWord: <easy>
+
+Filters: (none)
+
+Limits: (none)
+
+
+

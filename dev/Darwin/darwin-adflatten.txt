@@ -1,0 +1,266 @@
+DARWIN - AD FLATTEN
+Michael Spence
+2012-11-29
+
+
+
+Topics of Discussion:
+
+	1. The MS ADMT Guide
+	2. Install ADMT and SQL Express
+	3. Configure Accounts
+	4. Preparation
+		4.a Universal Groups
+		4.b Drive Mapping
+		4.c External Access
+		4.d 
+	5. Procedure
+		5.a Create include files
+		5.b Migrate OUs and Subtrees
+		5.c Migrate Groups
+		5.d Migrate Accounts
+		5.e Translate Local profiles
+		5.f Migrate Workstations
+		5.g Migrate Servers
+		5.e Translate Securities on Servers
+	6. Tests and Post Migration
+		6.a Initial Migration
+
+
+Topics in Detail:
+
+1. The MS ADMT Guide
+
+Throughout this document the Microsoft Guide for Windows Server 2008 R2 "ADMT Guide: Migrating and Restructuring Active Directory Domains" will be referenced.  This guide was used to create the procedure for flattening the Darwin sub-domain into the APEagers parent domain.
+
+The following sections of the guide should be read and understood before undertaking the procedures detailed in this document.
+
+	Pages		Topic
+	14-16		Using an include file
+	49-53		Establishing Migration Accounts
+	168-234		Restructuring AD Domains within a Forrest
+
+
+2. Install ADMT and SQL Express
+
+Before ADMT 3.2 can be installed on a machine, there must exist a blank MS SQL database for ADMT to use.  It is recommended that SQL Express be installed with a blank database.  Ensure that Windows Authentication is used when installing the SQL instance.
+
+Using the ADMT 3.2 installer install the ADMT tool.  Be sure to reference the local database, which has been created for ADMT to use.  (Use the format ".\<DATABASE>" where "." means "localhost").  The installation is straight forward.
+
+
+3. Configure Accounts
+
+It is recommended that the operator of this procedure has administrator accounts in both domains.  The accounts should be delegated the rights to create users, computers and groups within the other domain.  Refer to "Establishing Migration Accounts" in the MS ADMT Guide.
+
+
+4. Preparation
+
+4.a Universal Groups
+
+All groups from the source domain have had to be converted to "Universal".  Without this option, the groups would not be contactible from the source domain after they were migrated.  (This may not have posed a problem if the users were also migrated at a similar time.)
+
+4.b Drive Mapping
+
+GPs exist to map the UNC paths to drives for particular sets of people.  These have been translated into the "Map Drive" PG within the APEAGERS domain.
+
+4.c External Access
+
+Immediately prior to the migration, all user access is  to be removed.  The external access to the TS will be cut off via commenting the firewall entries.  This is to be restored post migration.
+
+4.d Change DCs
+
+The DNS servers which all Darwin computers use (via IP address) must be changed for APEAGERS DCs prior to them being migrated.  DCs have been created to perform this already and are in-situ.
+
+DWN-DC1 will become 10.50.100.6
+HVFFS will become 10.52.100.2
+
+DWN-DC2 will become 10.50.0.6
+HVY-DC1 will become 10.52.1.2
+
+
+5. Procedure
+
+After performing a number of test migrations, the following procedure was formulated to work without errors or loss of resources to users.
+
+
+5.a Create include files
+
+Include files make the migration process capable of migrating large number of users, groups and computers without the painstaking need to select each object within AD.  
+
+These files need to be in one of a number particular formats.  The format which has been selected has the form for each line:
+
+	"CN=<Object Name>,OU=<org unit>,DC=darwin,DC=apeagers,DC=com,DC=au"
+
+There is no need for further information on a line.
+
+These files can easily be generated using the "csvde" application.  The following commands list how to create the required files:
+
+	csvde -l "DN" -r "(&(objectClass=user)(objectCategory=person)) -f admt_users.txt
+	csvde -l "DN" -r "(&(objectClass=user)(objectCategory=computer)) -f admt_comps.txt
+	csvde -l "DN" -r objectClass=group -f admt_groups.txt
+
+A further option can limit the OU to search under for these, which is useful for testing.  The option has the form:
+
+	-d "OU=<Test org>,DC=darwin,DC=apeagers,DC=com,DC=au"
+
+The created files need some simple editting which can be done with notepad.  It is recommeded that the first line ("DN",(null)) is removed; testing with this line remaining has not been performed and is assumed not to work.  It is recommended that all users and groups which are not required to migrate a removed from their corresponding files.  Also it is recommended that all servers are removed from the computers file; servers should be migrated individually.
+
+Only the Users file will be created and edited.  Commputers and Groups are easy enough to find and migrate at the time required.
+
+
+5.b Migrate OUs and Subtrees
+
+This will not be done.  This is a task which I would have hoped to perform, but the time required to create the include files prohibits its usefulness.
+
+
+5.c Migrate Groups
+
+A quick check should be performed to ensure that all groups are universal and ready to migrate.
+
+Using the ADMT from the Darwin domain, the group migration wizard is started.  Source domain is DARWIN and target is APEAGERS - this will be true for all following steps.
+
+Select the groups from the domain using the search functionality.  It is best to use the "Advanced" search and simply select the root of the domain and press "Find Now".  highlight all the groups and press "OK".
+
+When the list is populated within the wizard, search the list and remove all "Service Groups" and "Builtin Groups".  ADU&C may be required as a reference to perform this task.
+
+Select the Target OU within the APEAGERS domain named "DarwinOU".
+
+Group Options should have no other options checked except the greyed-out "Migrate Group SIDs to target domain" and "Fix Group Membership".  Ensure this is correct!  Do not migrate source objects if their is a conflict within the target.
+
+Using ADU&C check that all groups have moved across.  Do not proceed until all groups are moved.
+
+It is suggested that the Sites are Replicated at this time for both the DARWIN and APEAGERS domains; use ADS&S for this.
+
+
+5.d Migrate Accounts
+
+All accounts will be migrated at the same time, which will take some time; it has been estimated at around 10sec per user.  
+
+Using the ADMT from the Darwin domain, the user migration wizard is started.  
+
+Select the users  using the include file created in preparation.  This should load all users into the wizard.
+
+Select the TargetOU within the APEAGERS domain named "DarwinOU".
+
+User Options should have "Translate roaming profiles" and "Update User rights" selected.  "Migrate associated user groups" should NOT be selected, as all groups users were members of should already be moved.
+
+Do not migrate source object if a conflict is dected in the target domain.
+
+Take note of failed moves and determine if the account within the APEAGERS domain will be renamed or not.
+
+It is suggested that the Sites are Replicated at this time for both the DARWIN and APEAGERS domains; use ADS&S for this.
+
+
+5.e Translate Local profiles
+
+Local profiles on the computers which users use will now need to be transalted so that securities remain the same when they log on using the new domain.
+
+Using the ADMT from the Darwin domain, the security translation wizard is started.
+
+Choose computers from the DARWIN domain (by default this will read APEAGERS, which is incorrect).  It is suggested that ALL computers are selected at this step; this will help identify computers which are off and also not is use any longer.
+
+Translate Options should have ONLY "User Profiles" selected.
+
+Take note of all computers which could not be contacted during this process.  Attempt to contact these computer via other means, in person if necessary.
+
+
+5.f Migrate Workstations and File Servers
+
+The ADMT will perform the basic migration of computers from the DARWIN domain to the APEAGERS domain.  User profiles on these machines should already allow users to access the computers, but for consistency we want the computers in the APEAGERS domain also.  It should be noted that FR will not work at this time as the computers will not be in the APEAGERS domain as yet.
+
+Using the ADMT from the Darwin domain, the computer migration wizard is started.  
+
+Select the computers from the domain using the search functionality.  It is best to use the "Advanced" search and simply select the root of the domain and press "Find Now".  highlight all the computers and press "OK".
+
+Remove from the list DWN-TS1 server and all DCs.  The DCs will not be being migrated.
+
+
+5.g Translate Files', Folders' and Shares' securities
+
+For especially Windows7 this step is essential in restoring accessibility to servers' shares; this directly affects FR.
+
+Using the ADMT from the APEAGERS domain, the security translation wizard is started.
+
+Select the computers which have shares present, which should only be File Servers.  
+
+Translate Options should have "Files and Folders" and "Shares" selected.
+
+
+
+5.g Migrate Servers
+
+The only remaining server to be migrated is the terminal server DWN-TS1. 
+
+Ensure all GPs for the TS have been updated within the APEAGERS domain.
+
+
+
+
+6. Tests and Post Migration
+
+6.a Group Policy
+
+Checks should be done on random users and computers to determine if GPs are being applied correctly.  Without GPs the users will have substantially degraded functionality.  FR will not work without GPs.
+
+Perform "gpresult" from a command like and ensure that a list of the APEAGERS' GPs is returned.
+
+Check the Application Event Log to find out errors.
+
+Possible errors seen within the Test phase:
+
+	GPResult returns: "... NO RSOP data"	- possible MTU issue
+
+	event log 1054: "... DC name could not be found..." 	- MTU issue
+
+The GP replicator check to see if packets of size 2048 can be sent between it and the DC for the site.  If the computer thinks it should be talking to EMP then, the computer will likely have issue getting GPs as there is a MTU limitation of 1500 to the packet size across the VPN.
+
+
+6.b Folder Redirection
+
+Checks should be done on random users of Windows 7 and windows XP machines.  If securities have not been translated successfully on the file servers, folder redirection may not work as planned.
+
+Check to see if the user can write to their MyDocuments folders.  Navigate to the appropriate spot on the FS and check if that file is in their FR location on the server.
+
+Check the Application Event Log for FR events.
+
+Possible errors seen within the test phase:
+
+	event log 502: "... user SID is not the owner ..." 	- Translation issue
+
+
+6.c User Cannot Logon
+
+Users will likely inform IT staff when they cannot log on.  Users must ensure that they are using the correct domain to log on.
+
+Check to see if computer was in list of computers not contactible when performing migration.  Check to see if user is migrated correctly.
+
+
+Possible errors seen within the test phase:
+
+	computer not migrated:	perform manual migration
+
+	user not migrated: create new user account... copy user info accross manually
+
+6.d FR configuration
+
+The FR GP must be configured post the migration.  Due to the need to have access to the groups when configuring the FR, this must be done post migration.
+
+The following FR groups within the darwin domain have the following target FR locations:
+
+	Bridge Toyota City Folder Redirection Group		\\dwn-fs\bridgetoyotacityusers\
+	Hidden Valley Folder Redirection Group			\\hvyfs\hiddenvalleyfordusers\
+	Bridge Toyota Palmerston Redirection Group		\\btpfs\btp.users\
+
+6.e Mapped Drives
+
+The Mapped Drives Security group master, must have the groups which have mapped drives applied added to it.
+
+The following security groups must be added to "_DWN Shares"
+
+	
+
+
+6.f Restore External Access
+
+The commented line in the firewall rules is to be removed once valid access is confirmed.
+	

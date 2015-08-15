@@ -1,0 +1,488 @@
+#?top_version_3
+
+categoryname ac "Art/Culture/Heritage"
+categoryname al "Alcohol"
+categoryname an "Anonymizers"
+categoryname au "Anonymizing Utilities"
+categoryname bl "Blogs/Wiki"
+categoryname bu "Business"
+categoryname ch "Chat"
+categoryname cm "Public Information"
+categoryname cs "Criminal Activities"
+categoryname cv "Game/Cartoon Violence"
+categoryname dc "Digital Postcards"
+categoryname dr "Drugs"
+categoryname eb "Auctions/Classifieds"
+categoryname ed "Education/Reference"
+categoryname et "Entertainment"
+categoryname ex "Extreme"
+categoryname fb "Fashion/Beauty"
+categoryname fi "Finance/Banking"
+categoryname fk "For Kids"
+categoryname gb "Gambling"
+categoryname gm "Games"
+categoryname gr "Gambling Related"
+categoryname gv "Government/Military"
+categoryname hi "History"
+categoryname hk "Hacking/Computer Crime"
+categoryname hl "Health"
+categoryname hm "Humor/Comics"
+categoryname hr "Historical Revisionism"
+categoryname hs "Hate/Discrimination"
+categoryname hw "Software/Hardware"
+categoryname ia "Interactive Web Applications"
+categoryname il "Illegal Software"
+categoryname im "Instant Messaging"
+categoryname in "Stock Trading"
+categoryname io "Information Security"
+categoryname ir "Internet Radio/TV"
+categoryname is "Content Server"
+categoryname it "Internet Services"
+categoryname js "Job Search"
+categoryname mb "Forum/Bulletin Boards"
+categoryname md "Media Sharing"
+categoryname mg "Messaging"
+categoryname mk "Marketing/Merchandising"
+categoryname mm "Dating/Social Networking"
+categoryname mn "Incidental Nudity"
+categoryname mo "Mobile Phone"
+categoryname mp "Media Downloads"
+categoryname mr "Moderated"
+categoryname ms "Malicious Sites"
+categoryname na "Usenet News"
+categoryname nd "Nudity"
+categoryname np "Non-Profit/Advocacy/NGO"
+categoryname ns "Personal Network Storage"
+categoryname nw "General News"
+categoryname os "Online Shopping"
+categoryname pa "Provocative Attire"
+categoryname pd "Parked Domain"
+categoryname ph "Phishing"
+categoryname pm "Pharmacy"
+categoryname pn "P2P/File Sharing"
+categoryname po "Politics/Opinion"
+categoryname pp "Personal Pages"
+categoryname pr "Profanity"
+categoryname ps "Portal Sites"
+categoryname ra "Remote Access"
+categoryname rb "Restaurants"
+categoryname re "Real Estate"
+categoryname rh "Recreation/Hobbies"
+categoryname rl "Religion/Ideology"
+categoryname rs "Resource Sharing"
+categoryname sc "School Cheating Information"
+categoryname se "Search Engines"
+categoryname sm "Sexual Materials"
+categoryname sp "Sports"
+categoryname st "Streaming Media"
+categoryname su "Spam URLs"
+categoryname sw "Shareware/Freeware"
+categoryname sx "Pornography"
+categoryname sy "Spyware/Adware"
+categoryname tb "Tobacco"
+categoryname tf "Technical/Business Forums"
+categoryname tg "Gruesome Content"
+categoryname ti "Technical Information"
+categoryname to "Text/Spoken Only"
+categoryname tr "Travel"
+categoryname u0 "AP Eagers Websites"
+categoryname u1 "AP Eagers Manufacturers sites"
+categoryname u2 "AP Eagers Helper Sites"
+categoryname u3 "AP Eagers Sales"
+categoryname u4 "AP Eagers Parts"
+categoryname u5 "AP Eagers Service"
+categoryname u6 "AP Eagers Finance"
+categoryname u7 "Internet Whitelist"
+categoryname u8 "User Defined Category 8"
+categoryname u9 "User Defined Category 9"
+categoryname vi "Violence"
+categoryname vs "Visual Search Engine"
+categoryname wa "Web Ads"
+categoryname we "Weapons"
+categoryname wm "Web Mail"
+categoryname wp "Web Phone"
+categoryname 9000 "AP Social Marketing"
+
+err_trans wa
+
+
+
+
+log_option nt_all
+nt_log_text_dir "D:\SmartFilterLogs"
+nt_sql_user apeagers\siteservices
+nt_sql_password gabbasrvcs
+nt_odbc_dsn SmartFilter
+nt_odbc_table SmartFilterTable
+nt_log_type text
+log_server_state on
+
+dotteddecimal allow
+lookup_failure_default allow
+ip_rating off
+uncat_url_collection off
+url_feedback_submission_interval 7200
+
+control_list_access disk
+download_method http
+download_mode incremental
+http_port 80
+http_proxy_port 0
+http_path "/cgi-bin/updatelist"
+http_site list.smartfilter.com
+update_time 3
+update_freq daily
+
+exp_action allow_all
+serial_number sf74-nfnr-smbb-cd42
+
+log_server_address 127.0.0.1
+log_server_port 4200
+
+from_email smartfilter@apeagers.com.au
+use_enterprise_mail_settings on
+mail_server 10.1.1.32
+primary_email issadmin@apeagers.com.au
+
+enterprise_from_email smartfilter@apeagers.com.au
+enterprise_mail_server 10.1.1.32
+enterprise_primary_email issadmin@apeagers.com.au
+
+default_forbidden avi,ps,pdf,zip,gz,gzip,tar,exe,bat,com,txt,doc,rtf,jpg,gif,torrent
+
+start_policy
+name Internet_No_Access
+comment "No Internet Access"
+deny_all
+end_policy
+
+
+start_policy
+name Internet_Access
+comment "Allow managers greater access with warnings"
+deny ms "0-23" "Sun-Sat"
+coach gb "0-23" "Sun-Sat"
+coach hk "0-23" "Sun-Sat"
+deny ir "0-23" "Sun-Sat"
+deny sw "0-23" "Sun-Sat"
+deny an "0-23" "Sun-Sat"
+deny mm "0-23" "Sun-Sat"
+coach dr "0-23" "Sun-Sat"
+coach ph "0-23" "Sun-Sat"
+deny sm "0-23" "Sun-Sat"
+deny il "0-23" "Sun-Sat"
+deny gm "0-23" "Sun-Sat"
+coach tg "0-23" "Sun-Sat"
+coach gr "0-23" "Sun-Sat"
+coach hs "0-23" "Sun-Sat"
+deny su "0-23" "Sun-Sat"
+deny nd "0-23" "Sun-Sat"
+coach cs "0-23" "Sun-Sat"
+deny sx "0-23" "Sun-Sat"
+deny ns "0-23" "Sun-Sat"
+deny wm "0-23" "Sun-Sat"
+
+
+uncat_url_delay_time 20
+
+keyword_processing none
+force_safe_search off
+safe_search_only off
+embedded_url_checking on
+enforce_webrep on
+webrep_threshold 50
+end_policy
+
+
+start_policy
+name Internet_Whitelist
+comment "Whitelisted sites only"
+deny mn "0-23" "Sun-Sat"
+deny gb "0-23" "Sun-Sat"
+deny au "0-23" "Sun-Sat"
+deny dr "0-23" "Sun-Sat"
+deny il "0-23" "Sun-Sat"
+deny mo "0-23" "Sun-Sat"
+deny po "0-23" "Sun-Sat"
+deny pd "0-23" "Sun-Sat"
+deny tr "0-23" "Sun-Sat"
+deny ra "0-23" "Sun-Sat"
+deny pr "0-23" "Sun-Sat"
+deny ac "0-23" "Sun-Sat"
+deny mp "0-23" "Sun-Sat"
+deny hw "0-23" "Sun-Sat"
+deny ps "0-23" "Sun-Sat"
+deny mk "0-23" "Sun-Sat"
+deny et "0-23" "Sun-Sat"
+deny gv "0-23" "Sun-Sat"
+deny rb "0-23" "Sun-Sat"
+deny fk "0-23" "Sun-Sat"
+deny sx "0-23" "Sun-Sat"
+deny ns "0-23" "Sun-Sat"
+deny rh "0-23" "Sun-Sat"
+deny in "0-23" "Sun-Sat"
+deny hr "0-23" "Sun-Sat"
+deny se "0-23" "Sun-Sat"
+deny ti "0-23" "Sun-Sat"
+deny ms "0-23" "Sun-Sat"
+deny hk "0-23" "Sun-Sat"
+deny u9 "0-23" "Sun-Sat"
+deny sw "0-23" "Sun-Sat"
+deny io "0-23" "Sun-Sat"
+deny mm "0-23" "Sun-Sat"
+deny hi "0-23" "Sun-Sat"
+deny ph "0-23" "Sun-Sat"
+deny bl "0-23" "Sun-Sat"
+deny sm "0-23" "Sun-Sat"
+deny u8 "0-23" "Sun-Sat"
+deny gm "0-23" "Sun-Sat"
+deny cv "0-23" "Sun-Sat"
+deny sy "0-23" "Sun-Sat"
+deny al "0-23" "Sun-Sat"
+deny tg "0-23" "Sun-Sat"
+deny mg "0-23" "Sun-Sat"
+deny os "0-23" "Sun-Sat"
+deny hs "0-23" "Sun-Sat"
+deny it "0-23" "Sun-Sat"
+deny nd "0-23" "Sun-Sat"
+deny ed "0-23" "Sun-Sat"
+deny rs "0-23" "Sun-Sat"
+deny st "0-23" "Sun-Sat"
+deny mb "0-23" "Sun-Sat"
+deny tf "0-23" "Sun-Sat"
+deny wm "0-23" "Sun-Sat"
+deny sp "0-23" "Sun-Sat"
+deny ir "0-23" "Sun-Sat"
+deny fb "0-23" "Sun-Sat"
+deny wa "0-23" "Sun-Sat"
+deny np "0-23" "Sun-Sat"
+deny bu "0-23" "Sun-Sat"
+deny ch "0-23" "Sun-Sat"
+deny hm "0-23" "Sun-Sat"
+deny su "0-23" "Sun-Sat"
+deny cs "0-23" "Sun-Sat"
+deny pa "0-23" "Sun-Sat"
+deny hl "0-23" "Sun-Sat"
+deny md "0-23" "Sun-Sat"
+deny we "0-23" "Sun-Sat"
+deny fi "0-23" "Sun-Sat"
+deny nw "0-23" "Sun-Sat"
+deny tb "0-23" "Sun-Sat"
+deny js "0-23" "Sun-Sat"
+deny pp "0-23" "Sun-Sat"
+deny mr "0-23" "Sun-Sat"
+deny an "0-23" "Sun-Sat"
+deny rl "0-23" "Sun-Sat"
+deny wp "0-23" "Sun-Sat"
+deny na "0-23" "Sun-Sat"
+deny cm "0-23" "Sun-Sat"
+deny ia "0-23" "Sun-Sat"
+deny ex "0-23" "Sun-Sat"
+deny vs "0-23" "Sun-Sat"
+deny to "0-23" "Sun-Sat"
+deny im "0-23" "Sun-Sat"
+deny gr "0-23" "Sun-Sat"
+deny vi "0-23" "Sun-Sat"
+deny sc "0-23" "Sun-Sat"
+deny eb "0-23" "Sun-Sat"
+deny pn "0-23" "Sun-Sat"
+deny re "0-23" "Sun-Sat"
+deny dc "0-23" "Sun-Sat"
+deny is "0-23" "Sun-Sat"
+deny pm "0-23" "Sun-Sat"
+uncat_personal  "0-23" "Sun-Sat"
+
+uncat_url_action deny "0-23" "Sun-Sat"
+
+forbid_files bat,com,exe,gz,gzip,tar,torrent,zip "0-23" "Sun-Sat"
+
+keyword_processing none
+force_safe_search off
+safe_search_only off
+embedded_url_checking on
+enforce_webrep on
+webrep_threshold 15
+end_policy
+
+
+start_policy
+name Internet_Access_Manufacturer
+comment "Access to Manufacturer Sites Only"
+deny mn "0-23" "Sun-Sat"
+deny au "0-23" "Sun-Sat"
+deny dr "0-23" "Sun-Sat"
+deny mo "0-23" "Sun-Sat"
+deny pd "0-23" "Sun-Sat"
+deny po "0-23" "Sun-Sat"
+deny ra "0-23" "Sun-Sat"
+deny tr "0-23" "Sun-Sat"
+deny mp "0-23" "Sun-Sat"
+deny hw "0-23" "Sun-Sat"
+deny et "0-23" "Sun-Sat"
+deny rb "0-23" "Sun-Sat"
+deny u4 "0-23" "Sun-Sat"
+deny rh "0-23" "Sun-Sat"
+deny hr "0-23" "Sun-Sat"
+deny se "0-23" "Sun-Sat"
+deny ti "0-23" "Sun-Sat"
+deny sw "0-23" "Sun-Sat"
+deny u9 "0-23" "Sun-Sat"
+deny sm "0-23" "Sun-Sat"
+deny u8 "0-23" "Sun-Sat"
+deny al "0-23" "Sun-Sat"
+deny mg "0-23" "Sun-Sat"
+deny it "0-23" "Sun-Sat"
+deny hs "0-23" "Sun-Sat"
+deny nd "0-23" "Sun-Sat"
+deny wm "0-23" "Sun-Sat"
+deny ch "0-23" "Sun-Sat"
+deny su "0-23" "Sun-Sat"
+deny u7 "0-23" "Sun-Sat"
+deny cs "0-23" "Sun-Sat"
+deny fi "0-23" "Sun-Sat"
+deny tb "0-23" "Sun-Sat"
+deny pp "0-23" "Sun-Sat"
+deny an "0-23" "Sun-Sat"
+deny wp "0-23" "Sun-Sat"
+deny rl "0-23" "Sun-Sat"
+deny ia "0-23" "Sun-Sat"
+deny vs "0-23" "Sun-Sat"
+deny to "0-23" "Sun-Sat"
+deny u0 "0-23" "Sun-Sat"
+deny im "0-23" "Sun-Sat"
+deny sc "0-23" "Sun-Sat"
+deny eb "0-23" "Sun-Sat"
+deny pn "0-23" "Sun-Sat"
+deny pm "0-23" "Sun-Sat"
+deny gb "0-23" "Sun-Sat"
+deny il "0-23" "Sun-Sat"
+deny ac "0-23" "Sun-Sat"
+deny pr "0-23" "Sun-Sat"
+deny ps "0-23" "Sun-Sat"
+deny mk "0-23" "Sun-Sat"
+deny gv "0-23" "Sun-Sat"
+deny fk "0-23" "Sun-Sat"
+deny sx "0-23" "Sun-Sat"
+deny ns "0-23" "Sun-Sat"
+deny in "0-23" "Sun-Sat"
+deny ms "0-23" "Sun-Sat"
+deny hk "0-23" "Sun-Sat"
+deny mm "0-23" "Sun-Sat"
+deny io "0-23" "Sun-Sat"
+deny hi "0-23" "Sun-Sat"
+deny bl "0-23" "Sun-Sat"
+deny ph "0-23" "Sun-Sat"
+deny gm "0-23" "Sun-Sat"
+deny cv "0-23" "Sun-Sat"
+deny sy "0-23" "Sun-Sat"
+deny tg "0-23" "Sun-Sat"
+deny os "0-23" "Sun-Sat"
+deny ed "0-23" "Sun-Sat"
+deny rs "0-23" "Sun-Sat"
+deny st "0-23" "Sun-Sat"
+deny u6 "0-23" "Sun-Sat"
+deny mb "0-23" "Sun-Sat"
+deny tf "0-23" "Sun-Sat"
+deny sp "0-23" "Sun-Sat"
+deny u2 "0-23" "Sun-Sat"
+deny ir "0-23" "Sun-Sat"
+deny fb "0-23" "Sun-Sat"
+deny wa "0-23" "Sun-Sat"
+deny np "0-23" "Sun-Sat"
+deny bu "0-23" "Sun-Sat"
+deny u3 "0-23" "Sun-Sat"
+deny hm "0-23" "Sun-Sat"
+deny pa "0-23" "Sun-Sat"
+deny hl "0-23" "Sun-Sat"
+deny md "0-23" "Sun-Sat"
+deny we "0-23" "Sun-Sat"
+deny nw "0-23" "Sun-Sat"
+deny js "0-23" "Sun-Sat"
+deny mr "0-23" "Sun-Sat"
+deny na "0-23" "Sun-Sat"
+deny cm "0-23" "Sun-Sat"
+deny ex "0-23" "Sun-Sat"
+deny gr "0-23" "Sun-Sat"
+deny vi "0-23" "Sun-Sat"
+deny re "0-23" "Sun-Sat"
+deny dc "0-23" "Sun-Sat"
+deny is "0-23" "Sun-Sat"
+deny u5 "0-23" "Sun-Sat"
+
+
+keyword_processing none
+force_safe_search off
+safe_search_only off
+embedded_url_checking on
+enforce_webrep on
+webrep_threshold 50
+end_policy
+
+
+start_policy
+name Internet_Access_with_FB
+comment "Allow managers greater access with warnings"
+deny ms "0-23" "Sun-Sat"
+coach gb "0-23" "Sun-Sat"
+coach hk "0-23" "Sun-Sat"
+deny ir "0-23" "Sun-Sat"
+deny sw "0-23" "Sun-Sat"
+deny an "0-23" "Sun-Sat"
+deny mm "0-23" "Sun-Sat"
+coach dr "0-23" "Sun-Sat"
+coach ph "0-23" "Sun-Sat"
+deny sm "0-23" "Sun-Sat"
+deny il "0-23" "Sun-Sat"
+deny gm "0-23" "Sun-Sat"
+coach tg "0-23" "Sun-Sat"
+coach gr "0-23" "Sun-Sat"
+deny su "0-23" "Sun-Sat"
+coach hs "0-23" "Sun-Sat"
+deny sx "0-23" "Sun-Sat"
+coach cs "0-23" "Sun-Sat"
+deny nd "0-23" "Sun-Sat"
+deny ns "0-23" "Sun-Sat"
+deny wm "0-23" "Sun-Sat"
+
+
+uncat_url_delay_time 20
+
+keyword_processing none
+force_safe_search off
+safe_search_only off
+embedded_url_checking on
+enforce_webrep on
+webrep_threshold 50
+end_policy
+
+
+policy_default_name "Internet_Access"
+policy_merge_mode most_restrictive
+
+authserver_ao_port 9016
+authserver_auth_port 9017
+authserver_id 1
+authserver_address 10.1.1.18
+transauth_fail_action filter
+transauth on
+
+begin_transauth_exemptions
+end_transauth_exemptions
+override_user tharris notify_disable 3 15
+override_user mspence notify_disable 3 15
+override_user lbruce notify_disable 3 15
+override_user spadminold notify_disable 3 15
+override_user kbauer notify_disable 3 15
+warn_options 5 notify_multiple 3 15
+user_cache_size 5000
+user_cache_timeout 15
+
+start_directory_service
+server_type active_directory
+admin_dn "apeagers\siteservices"
+admin_password NlY0WxkjJBMFHg==
+base_dn "DC=apeagers,DC=com,DC=au"
+server_port 389
+server_name bne-dc1.apeagers.com.au
+uid_attribute sAMAccountName
+end_directory_service

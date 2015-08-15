@@ -1,0 +1,26 @@
+#
+# FILE:         pf/ape_std.pf
+# AUTHOR:       Michael Spence
+# DATE:         2013-06-13
+# VERSION:      BSD_Gateway 5.1 v0.1
+#
+
+#--- ALLOW REMOTE SSH ACCESS ---#
+pass quick on $if_ext proto tcp from <inet_ape> to ($if_ext:0) port ssh
+pass quick on $if_int proto tcp from <lans_ape> to ($if_int:0) port ssh
+pass quick on $if_int proto tcp to !($if_int:0) port ssh
+
+#--- ALLOW ICMP & DNS TRAFFIC --#
+pass in quick proto icmp
+pass out quick on $if_ext proto icmp nat-to ($if_ext:0)
+pass out quick on $if_int proto icmp
+
+
+pass in quick on $if_int proto { tcp, udp } to any port domain
+pass out quick on $if_int proto { tcp, udp } to any port domain
+pass out quick on $if_ext proto { tcp, udp } to any port domain nat-to ($if_ext:0)
+pass quick proto { tcp, udp } from any port domain
+
+#--- ALLOW APEAGERS CONNECTS ---#
+pass in quick on $if_int from $net_local to <lans_ape>
+pass out quick on $if_int from $net_local to <lans_ape> nat-to ($if_int:0)

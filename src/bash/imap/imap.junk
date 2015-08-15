@@ -1,0 +1,721 @@
+
+Starting Nmap 5.21 ( http://nmap.org ) at 2011-07-21 16:48 EST
+Nmap scan report for 172.17.104.5
+Host is up (0.023s latency).
+All 1000 scanned ports on 172.17.104.5 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.104.20
+Host is up (0.025s latency).
+All 1000 scanned ports on 172.17.104.20 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.22
+Host is up (0.032s latency).
+All 1000 scanned ports on 172.17.104.22 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Apple AirPort Extreme WAP (98%), D-Link DI-714P+ wireless broadband router (98%), D-Link DI-824VUP Wireless VPN Router (98%), FreeBSD 7.0-BETA4 (98%), Intel Express 510T switch (98%), Intel Express 510T, 520T, or 550T switch (98%), MOXA NPort 5210 serial device server (98%), 3Com Baseline Switch 2226-SFP Plus (98%), 3Com Baseline Switch 2924-SFP Plus (98%), 3Com SuperStack 3 Switch 3870 (98%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.23
+Host is up (0.023s latency).
+All 1000 scanned ports on 172.17.104.23 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.25
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.17.104.25 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.28
+Host is up (0.023s latency).
+All 1000 scanned ports on 172.17.104.28 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.29
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.104.29 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.32
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.104.32 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.33
+Host is up (0.023s latency).
+All 1000 scanned ports on 172.17.104.33 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.34
+Host is up (0.020s latency).
+All 1000 scanned ports on 172.17.104.34 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.35
+Host is up (0.022s latency).
+All 1000 scanned ports on 172.17.104.35 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.40
+Host is up (0.023s latency).
+All 1000 scanned ports on 172.17.104.40 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.42
+Host is up (0.024s latency).
+All 1000 scanned ports on 172.17.104.42 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.104.43
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.17.104.43 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.46
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.17.104.46 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.104.52
+Host is up (0.024s latency).
+All 1000 scanned ports on 172.17.104.52 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.56
+Host is up (0.025s latency).
+All 1000 scanned ports on 172.17.104.56 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.57
+Host is up (0.022s latency).
+All 1000 scanned ports on 172.17.104.57 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.58
+Host is up (0.025s latency).
+All 1000 scanned ports on 172.17.104.58 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.59
+Host is up (0.024s latency).
+All 1000 scanned ports on 172.17.104.59 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.104.62
+Host is up (0.017s latency).
+All 1000 scanned ports on 172.17.104.62 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.64
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.17.104.64 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.65
+Host is up (0.024s latency).
+All 1000 scanned ports on 172.17.104.65 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.104.69
+Host is up (0.028s latency).
+All 1000 scanned ports on 172.17.104.69 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.104.81
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.17.104.81 are open|filtered
+Device type: general purpose|storage-misc|firewall
+Running: FreeBSD 6.X|7.X|8.X, IronPort AsyncOS 6.X, m0n0wall FreeBSD 6.X
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.100
+Host is up (0.022s latency).
+All 1000 scanned ports on 172.17.104.100 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.101
+Host is up (0.028s latency).
+All 1000 scanned ports on 172.17.104.101 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.104.109
+Host is up (0.018s latency).
+All 1000 scanned ports on 172.17.104.109 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.198
+Host is up (0.018s latency).
+All 1000 scanned ports on 172.17.104.198 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.224
+Host is up (0.020s latency).
+All 1000 scanned ports on 172.17.104.224 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.225
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.104.225 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.226
+Host is up (0.017s latency).
+All 1000 scanned ports on 172.17.104.226 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.227
+Host is up (0.020s latency).
+All 1000 scanned ports on 172.17.104.227 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.228
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.17.104.228 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.229
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.104.229 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.230
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.104.230 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.231
+Host is up (0.023s latency).
+All 1000 scanned ports on 172.17.104.231 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.232
+Host is up (0.023s latency).
+All 1000 scanned ports on 172.17.104.232 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.234
+Host is up (0.024s latency).
+All 1000 scanned ports on 172.17.104.234 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.235
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.17.104.235 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.236
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.104.236 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.237
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.104.237 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.239
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.104.239 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.240
+Host is up (0.022s latency).
+All 1000 scanned ports on 172.17.104.240 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.241
+Host is up (0.024s latency).
+All 1000 scanned ports on 172.17.104.241 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.242
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.17.104.242 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.243
+Host is up (0.024s latency).
+All 1000 scanned ports on 172.17.104.243 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.244
+Host is up (0.020s latency).
+All 1000 scanned ports on 172.17.104.244 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.246
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.104.246 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.247
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.17.104.247 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.248
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.17.104.248 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.249
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.104.249 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.250
+Host is up (0.029s latency).
+All 1000 scanned ports on 172.17.104.250 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.252
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.104.252 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.104.254
+Host is up (0.025s latency).
+All 1000 scanned ports on 172.17.104.254 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.2
+Host is up (0.020s latency).
+All 1000 scanned ports on 172.17.105.2 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: terminal
+Running: Wyse embedded, Wyse Linux 2.6.X
+OS details: Wyse S10 or SX0 terminal, Wyse V10L or 1200LE thin client, Wyse V10L thin client, Wyse S50 thin client (Linux 2.6)
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.3
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.17.105.3 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.4
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.17.105.4 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.10
+Host is up (0.022s latency).
+All 1000 scanned ports on 172.17.105.10 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.11
+Host is up (0.020s latency).
+All 1000 scanned ports on 172.17.105.11 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: terminal
+Running: Wyse embedded, Wyse Linux 2.6.X
+OS details: Wyse S10 or SX0 terminal, Wyse V10L or 1200LE thin client, Wyse V10L thin client, Wyse S50 thin client (Linux 2.6)
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.13
+Host is up (0.020s latency).
+All 1000 scanned ports on 172.17.105.13 are open|filtered
+Device type: printer|general purpose
+Running: Lexmark embedded, Linux 2.4.X|2.6.X, Microsoft Windows 2008|7|Longhorn|Vista
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.17
+Host is up (0.022s latency).
+All 1000 scanned ports on 172.17.105.17 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: terminal
+Running: Wyse embedded, Wyse Linux 2.6.X
+OS details: Wyse S10 or SX0 terminal, Wyse V10L or 1200LE thin client, Wyse V10L thin client, Wyse S50 thin client (Linux 2.6)
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.20
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.105.20 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.22
+Host is up (0.017s latency).
+All 1000 scanned ports on 172.17.105.22 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: terminal
+Running: Wyse embedded, Wyse Linux 2.6.X
+OS details: Wyse S10 or SX0 terminal, Wyse V10L or 1200LE thin client, Wyse V10L thin client, Wyse S50 thin client (Linux 2.6)
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.28
+Host is up (0.018s latency).
+All 1000 scanned ports on 172.17.105.28 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: terminal
+Running: Wyse embedded, Wyse Linux 2.6.X
+OS details: Wyse S10 or SX0 terminal, Wyse V10L or 1200LE thin client, Wyse V10L thin client, Wyse S50 thin client (Linux 2.6)
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.32
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.105.32 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.33
+Host is up (0.17s latency).
+All 1000 scanned ports on 172.17.105.33 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.35
+Host is up (0.018s latency).
+All 1000 scanned ports on 172.17.105.35 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: terminal
+Running: Wyse embedded, Wyse Linux 2.6.X
+OS details: Wyse S10 or SX0 terminal, Wyse V10L or 1200LE thin client, Wyse V10L thin client, Wyse S50 thin client (Linux 2.6)
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.39
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.105.39 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: terminal
+Running: Wyse embedded, Wyse Linux 2.6.X
+OS details: Wyse S10 or SX0 terminal, Wyse V10L or 1200LE thin client, Wyse V10L thin client, Wyse S50 thin client (Linux 2.6)
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.40
+Host is up (0.020s latency).
+All 1000 scanned ports on 172.17.105.40 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.43
+Host is up (0.017s latency).
+All 1000 scanned ports on 172.17.105.43 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: terminal
+Running: Wyse embedded, Wyse Linux 2.6.X
+OS details: Wyse S10 or SX0 terminal, Wyse V10L or 1200LE thin client, Wyse V10L thin client, Wyse S50 thin client (Linux 2.6)
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.44
+Host is up (0.018s latency).
+All 1000 scanned ports on 172.17.105.44 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.45
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.105.45 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.46
+Host is up (0.018s latency).
+All 1000 scanned ports on 172.17.105.46 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.48
+Host is up (0.022s latency).
+All 1000 scanned ports on 172.17.105.48 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: terminal
+Running: Wyse embedded, Wyse Linux 2.6.X
+OS details: Wyse S10 or SX0 terminal, Wyse V10L or 1200LE thin client, Wyse V10L thin client, Wyse S50 thin client (Linux 2.6)
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.51
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.105.51 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: terminal
+Running: Wyse embedded, Wyse Linux 2.6.X
+OS details: Wyse S10 or SX0 terminal, Wyse V10L or 1200LE thin client, Wyse V10L thin client, Wyse S50 thin client (Linux 2.6)
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.52
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.105.52 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.54
+Host is up (0.020s latency).
+All 1000 scanned ports on 172.17.105.54 are open|filtered
+Device type: printer|general purpose
+Running: Lexmark embedded, Linux 2.4.X|2.6.X, Microsoft Windows 2008|7|Longhorn|Vista
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.59
+Host is up (0.020s latency).
+All 1000 scanned ports on 172.17.105.59 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: terminal
+Running: Wyse embedded, Wyse Linux 2.6.X
+OS details: Wyse S10 or SX0 terminal, Wyse V10L or 1200LE thin client, Wyse V10L thin client, Wyse S50 thin client (Linux 2.6)
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.60
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.105.60 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.61
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.105.61 are open|filtered
+Device type: printer|general purpose
+Running: Lexmark embedded, Linux 2.4.X|2.6.X, Microsoft Windows 2008|7|Longhorn|Vista
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.63
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.105.63 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.67
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.105.67 are open|filtered
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: terminal
+Running: Wyse embedded, Wyse Linux 2.6.X
+OS details: Wyse S10 or SX0 terminal, Wyse V10L or 1200LE thin client, Wyse V10L thin client, Wyse S50 thin client (Linux 2.6)
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.71
+Host is up (0.017s latency).
+All 1000 scanned ports on 172.17.105.71 are open|filtered
+Device type: printer|general purpose
+Running: Lexmark embedded, Linux 2.4.X|2.6.X, Microsoft Windows 2008|7|Longhorn|Vista
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.76
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.105.76 are open|filtered
+Device type: printer|general purpose
+Running: Lexmark embedded, Linux 2.4.X|2.6.X, Microsoft Windows 2008|7|Longhorn|Vista
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.78
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.105.78 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.86
+Host is up (0.017s latency).
+All 1000 scanned ports on 172.17.105.86 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.93
+Host is up (0.020s latency).
+All 1000 scanned ports on 172.17.105.93 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.105.97
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.105.97 are open|filtered
+Device type: printer|general purpose
+Running: Lexmark embedded, Linux 2.4.X|2.6.X, Microsoft Windows 2008|7|Longhorn|Vista
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.108
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.106.108 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.106.117
+Host is up (0.022s latency).
+All 1000 scanned ports on 172.17.106.117 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.106.118
+Host is up (0.018s latency).
+All 1000 scanned ports on 172.17.106.118 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.120
+Host is up (0.022s latency).
+All 1000 scanned ports on 172.17.106.120 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.121
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.106.121 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.130
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.106.130 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.131
+Host is up (0.017s latency).
+All 1000 scanned ports on 172.17.106.131 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.132
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.106.132 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.134
+Host is up (0.018s latency).
+All 1000 scanned ports on 172.17.106.134 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.135
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.106.135 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.139
+Host is up (0.018s latency).
+All 1000 scanned ports on 172.17.106.139 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.155
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.106.155 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.106.166
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.106.166 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.176
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.106.176 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.190
+Host is up (0.017s latency).
+All 1000 scanned ports on 172.17.106.190 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.193
+Host is up (0.016s latency).
+All 1000 scanned ports on 172.17.106.193 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.203
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.106.203 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.213
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.106.213 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.106.217
+Host is up (0.021s latency).
+All 1000 scanned ports on 172.17.106.217 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.107.4
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.107.4 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.107.5
+Host is up (0.017s latency).
+All 1000 scanned ports on 172.17.107.5 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.107.9
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.107.9 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+Nmap scan report for 172.17.107.50
+Host is up (0.019s latency).
+All 1000 scanned ports on 172.17.107.50 are open|filtered
+Too many fingerprints match this host to give specific OS details
+
+Nmap scan report for 172.17.107.178
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.17.107.178 are open|filtered
+Too many fingerprints match this host to give specific OS details
+Network Distance: 10 hops
+
+OS detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+Nmap done: 1024 IP addresses (113 hosts up) scanned in 920.98 seconds

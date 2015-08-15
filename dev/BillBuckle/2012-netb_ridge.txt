@@ -1,0 +1,81 @@
+Bill Buckle - Network Bridge
+2012-02-28
+Michael Spence
+
+
+
+Audience:
+
+This document is the thoughts and ideas of the author and is for people involved in the transition described.
+
+
+Preamble:
+
+Project for the clean-up, post install of Network Bridge between Toyota and Subaru at Bill Buckle's main sites.
+
+This document details the networks for the involved sites.
+This document summarizes the desired result for this project.
+This document outlines some of the possible solutions.
+
+
+Topics of Discussion
+
+1. Current Equipment in place
+
+Two sites Toyota and Subaru, currently each have a Telstra WAN lead in.  These sites also have an LG phone system which is interconnected via the WAN.  
+
+	Bill Buckle Toyota Details:
+
+		VLAN 1:		Network 172.17.150.0/24
+				Gateway 172.17.150.254
+
+		VLAN 200:	Network 10.x.x.x/24
+				Gateway 10.x.x.254 ??
+
+	Bill Buckle Subaru Details:  (needs verification)
+
+		VLAN 1:		Network 192.168.6.0/24
+				Gateway 192.168.6.254
+
+		VLAN 200:	Network 10.x.x.x/24
+				Gateway 10.x.x.254 ??
+
+
+A network bridge between the two LANs has been added, by using wireless technology.  
+
+The switches are generally not accessible to IT personnel within APEagers due to "lost" configuration passwords etc.
+
+The other sites within the Bill Buckle group also have LG systems located at these sites.  These all communicate with each other to transfer calls and make calls internally.
+
+
+
+
+
+2. Desired Result
+
+The desired result is for all WAN network traffic from the Subaru site to be passed through the WAN connection at the Toyota Site.  This includes all phone traffic, or standard inter-computer traffic (which is supposed to be quite minimal as primary traffic chatter would be between servers located at the primary Toyota site.)
+
+
+3. Proposed Solutions
+
+a. Two Voice VLANs - Router Reconfigured
+
+This solution requires that the router at the primary site advertises both the VLANs to the WAN.  This solution also requires that Telstra are involved to make the necessary changes to the router at the time that this is required.
+
+This solution is not viable due to the length of time required to plan the cut over with Telstra.
+
+
+b. Two Voice VLANs - Firewall between
+
+Assuming that the default route for the Voice traffic is still the primary site at Toyota, the default destination could be replaced with a firewall/router, which could be configured to pass traffic between to both VLANs based on destination.  This would take some development time, but would also require reconfiguration of the Toyota site equipment.
+
+This solution seems overly complicated and would in the author's opinion be difficult to maintain or explain in the future.
+
+
+c. One voice VLAN
+
+Knowing that the desired solution is one where the network on both sites is identical, it seems logical to make the voice VLAN identical on both sites.  This would require that the devices on the secondary site (Subaru) are reconfigured to an address range which is appropriate for the voice VLAN.  The LG server would also require reconfiguration.  Satellite sites may also need updating for the destination for these services (this is unknown).
+
+This solution seems the most natural and best fit.
+
+

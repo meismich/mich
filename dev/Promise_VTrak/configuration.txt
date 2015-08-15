@@ -1,0 +1,55 @@
+Promise VTrak - Configuration
+17/5/2012
+Michael Spence
+
+initial Network configuration:
+
+This has to be configured using the serial connection
+Hyperterminal using connection attributes as described on sticker on machine
+User name and password as known
+type menu and use network sub-menu to configure IP/Mask/GW
+
+
+configuration steps:
+
+User configuration
+create user logged in as administrator
+login as created user and delete admininstrator
+
+
+
+
+
+New user configured as:
+
+	u/n	issadmin
+	p/w	<yay!>
+
+Create Logical Drives
+1- Create Disk Array
+	name array 		<loc acronym>_jbod_[size]_[n]
+	associate disks		select disks and push to active side
+	press Next
+
+2- Create Logical Disk
+	name disk		<loc acronym>_vd_[size]_[n]
+	select RAID type	10 or 50 are most common
+	assign size		remember VMWare can only handle 2TB at a time
+	press Submit
+
+3- Finalise
+	press Next
+	press Submit
+
+
+
+Mapping Drives to LUN on Multiflex
+
+From Admin Tools -> Storage Services
+
+Select from top tab the down arrow next to "LUN Map" and select "Add LUN Map"
+
+Select the initiator for the Blade to associate the disk to.  Note there are two initiators per blade, both are visible if 2 SCMs are attached to VTrak.
+
+Fill in the LUN value for each disk displayed in the list.  Use the numeric value which describes the disk number this is to be.  Revise the already attached disks and count them starting at 0.
+

@@ -1,0 +1,5 @@
+
+Starting Nmap 4.76 ( http://nmap.org ) at 2010-08-08 13:22 EST
+Host bne-eranet.apeagers.com.au (10.1.11.9) appears to be up.
+Host 10.1.11.52 appears to be up.
+Nmap done: 256 IP addresses (2 hosts up) scanned in 1.69 seconds

@@ -1,0 +1,16 @@
+Location.txt
+Michael Spence
+2009-12-08
+
+
+This location Script is used to change the proxy for the user.  The intention is to change from "bne-isa" which is a work proxy to "no-proxy".  This script is particularly useful for laptops, which regularly go home with their users.  If these users use their own personal internet from their laptops, if the proxy is still set at the work settings, then their internet will not work.
+
+
+Installation:
+
+Typically, I create a directory on computers called "bin" (for binaries) on the root of "C:" and copy this script to this location.  I then create a shortcut to this script in a location which is convenient for the user; typically the "Quick Launch" toolbar.  I also typically change the icon to the "i" bubble icon.
+
+
+Usage:
+
+To use this program, the user simply needs to execute the script.  It will prompt the user to answer the simple question "Are you at work?".  Two options are available "Yes" or "No".  Selecting "Yes" changes the proxy to "bne-isa" and selecting "No" removes any set proxy.  The program informs the user of which changes are being made, to which they need to press "OK".

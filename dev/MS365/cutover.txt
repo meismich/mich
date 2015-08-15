@@ -1,0 +1,22 @@
+Microsoft 365 - Cutover Tasks
+2011-11-21
+Michael Spence
+
+
+
+1. Domain Register with 365
+2. Domain Autodiscover Set (internal & external)
+3. Create List of Users to migrate
+4. Start Migration
+5. Configure User on 365
+	- Add Licence
+	- Set Australia
+	- Set User Domain
+6. Configure Client
+	- Reset profiles with reg
+	- Attempt Outlook Setup
+	- if fails... try
+		- Install Patches
+		- Install Single Sign-on
+7. Add @apeagers.onmicrosoft.com to AD
+

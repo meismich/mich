@@ -1,0 +1,25 @@
+#
+# FILE:		pf/ape_vwg.pf
+# AUTHOR:	Michael Spence
+# DATE:		2013-06-14
+# VERSION:	BSD_Gateway v0.1 (client)
+#
+# PURPOSE:	Pass VW Group requests
+#
+
+table <xnet_vwg> const { 			\
+			10.112.198.0/24		\
+			10.112.199.0/24		\
+			10.112.230.0/24		\
+			10.152.15.0/24		\
+			172.16.61.0/24		\
+			210.193.223.156		\
+			}
+
+pass in quick on $if_int proto { tcp udp } from any to <xnet_vwg>
+pass out quick on $if_int proto { tcp udp } from any to <xnet_vwg> nat-to ($if_int:0)
+
+#pass quick on $if_int from <xnet_vwg> to any
+
+#pass in quick on $if_int proto {tcp udp} from any to 10.112.230.6 port 23
+#pass out quick on $if_int proto {tcp udp} from any to 10.112.230.6 port 23 nat-to ($if_int:0)

@@ -1,0 +1,5 @@
+
+table <inet_bad> const { 114.29.203.33 }
+
+block in quick on $if_int from any to <inet_bad>
+block out quick on $if_ext from any to <inet_bad>

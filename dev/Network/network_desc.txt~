@@ -1,0 +1,232 @@
+Network Description
+2013-10-09
+Michael Spence
+
+
+Audience
+
+This document is intended for Shane Pearce.
+
+
+Preamble
+
+This document is a brief run-down of the basic essentials of the more common OpenBSD configuration within APEagers
+
+This document does not go into details regarding specific configurations.
+
+
+
+Topics of Discussion
+
+1. Introduction
+	a. File Structure navigation
+	b. Editing Files
+	c. Interface Statistics
+2. OpenBSD 4.5 Firewalls
+	a. Router/Packet Filter
+	b. Router Only
+	c. Packet Filter Only
+3. OpenBSD 5.1 Firewalls
+	b. Router/Packet Filter Only
+	a. Router/Packet Filter/Squid
+4. Table of Firewalls with Type and Notes
+
+
+Topics in Detail
+
+1. Introduction
+
+This document details some of the important points to deal with on the OpenBSD firewalls throughout APEagers.
+
+It will be necessary to know how to navigate and edit the files on these systems.
+
+a. File Structure navigation
+
+Where am I? Present Working Directory:
+
+	pwd
+
+Change where I am.  Change Directory:
+
+	cd <location>
+
+location can be absolute like "/etc/squid/" or it could be relative like "squid/" (but if the present location is not "/etc" thiw will fail).
+
+b. Editing Files
+
+For peace of mind and logical ease, ensure the present location is the same as the file being edited.  Although it is possible to use absolute names for editting, this can be longwinded and cumbersome if many files need editing.
+
+Use the VI editor to edit files
+
+	vi <file>
+
+When VI is started, the editor is in "ACTION" mode.  Pressing "ACTION" keys perform actions; they do not add characters into the text.  The following are some interesting actions:
+
+	hjkl	move left, down, up or right (arrows may or may not work depending on emulation)
+	i	transition into INSERT mode before the present character
+	a	transition into INSERT mode after the present character
+	I	transition into INSERT mode before the first character of the line
+	A	transition into INSERT mode after the last character of the line
+	o	insert an empty line after the present line and transition into INSERT mode
+	O	insert an empty line before the present line and transition into INSERT mode
+	x	delete the present character
+	d	start delete follow with:
+		w	delete a word
+		d	delete a line
+	:	transition into COMMAND mode
+
+The following are some interesting commands:
+
+	:w	write the file (with current name)
+	:q	quit editting the file
+	:q!	quit editting without writing
+	:wq	write and quit editting
+
+To leave ACTION or COMMAND mode press ESC.  When in doubt, press ESC.
+
+c. Interface Statistics
+
+It may be necessary to examine the traffic across an interface or gain a summary of the load on interfaces.
+
+Tcpdump is useful for analysing traffic across an interface, so long as a destination or source is known.  Use the following command:
+
+	tcpdump -nettt -i <interface> 'host <host_ip>'
+
+To see a summary of traffic across interfaces, the following command refreshes the summary every second for the past one second's amount of data: 
+
+	systat -w 1 ifstat 1
+
+
+
+
+2. OpenBSD 4.5 Firewalls
+
+OpenBSD 4.5 Firewalls have been installed with all packages excluding Xwindows packages (i.e. "x*").  Minimal configuration options have been changed to effect the required outcomes of each installation.  Standard methods (which may or may not be industry best practices) have been used across these installations to create a familiar environment.  These are detailed below.
+
+For each installation the following user credentials, are valid and have sudo rights:
+
+	u/n	issadmin
+	p/w	<yay!>
+
+
+	a. Router/Packet Filter
+
+An OpenBSD installation designed for Routing and Packet Filtering has two primary files of interest: rc.local and pf.conf.  These files are located in "/etc/"
+
+The file containing the routes to be loaded:
+
+	rc.local
+
+The rc.local file is actually a script file which runs the included commands.  The standard method of deployment has been to include the required "add routes" command as detailed above within the rc.local file for each required route.
+
+The file containing the packet fileter rules:
+
+	pf.conf
+	or, <campus>.conf (in which case pf.conf will be empty or missing)
+
+The pf.conf file is a set of definitions for the 4.5 Packet Filter.  These rules a significantly different from the new 5.1 Packet Filter rules and online documentation for these older rules is becoming scarce.
+
+The standard method of deployment is intentionally strict and definitions must be placed in the correct position throughout the file.  
+
+Macros are typically used to define hosts.  Macros are rarely used in rules if they define more than one host.
+
+Tables define multiple hosts.  Tables provide greater efficiency when used instead of macros when there are many hosts or networks.
+
+NATs define how and what gets a NAT address.  The resulting NAT address is typically defined as ($ext_if:0) which is the 0th alias address for the defined interface, which is often "em0".  Interfaces can have additional aliases.
+
+RDRs define incoming rules typically.  These rules apply to a protocol (typically tcp or udp) and require target ports on both the firewall interface and the target host.
+
+PASS rules allow traffic to pass on the interface for which this rules applies.  These are required for RDR rules typically.
+
+BLOCK rules deny traffic.  The default rule is typically sufficient to block malicious traffic, although some exceptions may exist.
+
+
+	b. Router Only
+
+This type of configuration only involves the routing of network traffic.  The primary concern of this setup is the initial configuration of routes from the "rc.local" file as described above.
+
+
+	c. Packet Filter Only
+
+A simple Packet Filter configuration naturally still contains routes, however they are reduced to the set of internal (or non-routable) networks and all networks.  Internal networks are re-routed back to an internal router and all external networks are routed to the internet.
+
+The packet filter is configured through the pf.conf or <campus>.conf file as described above.
+
+
+
+3. OpenBSD 5.1 Firewalls
+
+With the introduction of the OpenBSD 4.8 Packet filter the rules definitions changed significantly.  It was not until version 5.1 that firewalls of this flavour were deployed.  Take note of the new packet filter rules, for which there is plenty of documentation on the internet.
+
+	a. Router/Packet Filter/Squid
+
+The routing loaded at boot is still located in the rc.local file.
+
+A new standard of packet filter writing has been introduced to assist in the documentation and deployment of rules.  The master file is still pf.conf (never <campus>.conf) and makes use of the new "include" term, which includes children files.  Children files are presently being placed in the "/etc/pf/" directory.  
+
+Children files of note:
+
+	ape_def.pf 
+		- Standard APEagers Definitions
+		- Defines APE WWW addresses
+		- Defines APE LAN addresses
+		- Defines APE MPLS groups (QLD, NT, BBU, PPT, ADT)
+	ape_std.pf
+		- Standard Rules
+		- Allows ICMP/DNS to WWW
+		- Allows APE LANS to Local
+		- Allows SSH from APE WWW
+	ape_dst.pf
+		- Destination Rules
+		- Pass without Proxy rules
+	ape_raw.pf
+		- Raw Access Rules
+		- Full un-hindered access to WWW!!
+	ape_sqd.pf
+		- Squid configuration
+		- Includes redirect to localhost!!
+	ape_rem.pf
+		- Remote access rules
+		- NOT actually in production (but this is where it should go)
+
+Squid configuration is controlled through the squid.conf located in "/etc/squid/".  
+
+Please Note that only Bill Buckle Auto Group uses squid proxy servers and their configurations are all identical.  Their setup uses two blacklists "./blacklists/squid-prime.acl" and "./blacklists/bb_blacklist".  The former is a downloaded blacklist of malicious sites and the later is a custom list of blacklisted sites accumulated over time.
+
+
+	b. Router/Packet Filter Only
+
+This type of configuration will be primarily concerned with inital routing settings contained in "rc.local" and the packet filter configuration controlled through "pf.conf".
+
+
+
+4. Table of Firewalls with Type and Notes
+
+
+	Common Name	IP Address	Type	Notes
+
+	QLD-RTR		10.1.1.253	4.5 (b)	Primary function to route
+						Routes 3 Networks (10.1/16, 10.40.1.32/27, 172.16.3.32/27)
+	QLD-PF		10.1.1.252	4.5 (c)	Primary function to Packet Filter
+						Incoming Rules
+	AUS-FW1		10.81.158.222	4.5 (a) incoming Rules
+						Handles AUS-CSP
+	AUS-FW2		10.81.158.221	4.5 (a) incoming Rules
+						Handles AUS-ISA
+	NSD-FW		10.10.1.253	4.5 (a) incoming Rules
+	DWN-FW		10.50.1.253	4.5 (a) Incoming Rules
+						Routes 3 Networks (10.50/16, 172.16.1.32/27, Internet)
+	KLO-FW		10.50.1.253	4.5 (a) Incoming Rules
+						Routes 3 Networks (10.50/16, 172.16.1.32/27, Internet)
+	BBU-FW		172.17.150.249	4.5 (a) Incoming Rules
+						Routes 3 Networks (10.50/16, 172.16.1.32/27, Internet)
+
+	BMA-FW		10.32.20.253	5.1 (b)	Connects Bid Online network
+
+	BRO-FW		172.17.150.249	5.1 (a) AAPT Internet
+	HRB-FW		172.17.158.253	5.1 (a) AAPT Internet
+	MON-FW		192.168.1.253	5.1 (a) AAPT Internet
+	OPR-FW		192.168.8.253	5.1 (a) AAPT Internet
+	PRB-FW		192.168.7.253	5.1 (a) AAPT Internet
+
+

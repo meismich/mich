@@ -1,0 +1,33 @@
+MICKS-NIX-MIB DEFINITIONS ::= BEGIN
+
+    IMPORTS
+        enterprises
+            FROM MICKS-BASIC-SMI;
+
+    ucdavis             OBJECT IDENTIFIER ::= { enterprises 2021 }
+
+    dskTable            OBJECT IDENTIFIER ::= { ucdavis 9 }
+    laTable             OBJECT IDENTIFIER ::= { ucdavis 10 }
+    systemStats         OBJECT IDENTIFIER ::= { ucdavis 11 }
+
+    dskEntry            OBJECT IDENTIFIER ::= { dskTable  1 }
+
+    dskTotalLow         OBJECT IDENTIFIER ::= { dskEntry 11 }
+    dskAvailLow         OBJECT IDENTIFIER ::= { dskEntry 13 }
+    dskUsedLow          OBJECT IDENTIFIER ::= { dskEntry 15 }
+
+    laEntry             OBJECT IDENTIFIER ::= { laTable  1 }
+
+    laLoadInt           OBJECT IDENTIFIER ::= { laEntry 5 }
+
+    ssCpuIdle           OBJECT IDENTIFIER ::= { systemStats 11 }
+    ssCpuRawUser        OBJECT IDENTIFIER ::= { systemStats 50 }
+    ssCpuRawNice        OBJECT IDENTIFIER ::= { systemStats 51 }
+    ssCpuRawSystem      OBJECT IDENTIFIER ::= { systemStats 52 }
+    ssCpuRawIdle        OBJECT IDENTIFIER ::= { systemStats 53 }
+    ssCpuRawWait        OBJECT IDENTIFIER ::= { systemStats 54 }
+    ssCpuRawKernel      OBJECT IDENTIFIER ::= { systemStats 55 }
+    ssCpuRawInterrupt   OBJECT IDENTIFIER ::= { systemStats 56 }
+
+    END
+

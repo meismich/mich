@@ -1,0 +1,81 @@
+
+
+Got IKE working between LAW and EMP
+
+... well partially
+
+Environment:
+
+I start a constant ping from BNE-BK to 10.128.1.230 (the WAP), which naturally is failing initially.
+
+As soon as I start up IKE on both VPNs using config on master (EMP) noted as (##CONFIG A##), the ping comes alive.
+
+I can also ping from LAW (using ping -I 10.128.1.254 x.x.x.x) and from the WAP.
+
+Have tested Telnet and HTTP to the WAP from EMP to LAW.
+
+So this seems all good... what the F is the issue...
+
+
+... when we stop the ping...
+
+
+
+
+
+
+So we restart the ping and restart IKEs.
+
+We get the following "ipsecctl -s all" output:
+
+
+EMP:
+FLOWS:
+flow esp in from 203.174.129.162 to 165.228.157.90 peer 203.174.129.162 srcid 10.1.100.254/32 dstid 203.174.129.162/32 type use
+flow esp out from 165.228.157.90 to 203.174.129.162 peer 203.174.129.162 srcid 10.1.100.254/32 dstid 203.174.129.162/32 type require
+flow esp in from 10.128.1.0/24 to 165.228.157.90 peer 203.174.129.162 srcid 10.1.100.254/32 dstid 203.174.129.162/32 type use
+flow esp out from 165.228.157.90 to 10.128.1.0/24 peer 203.174.129.162 srcid 10.1.100.254/32 dstid 203.174.129.162/32 type require
+flow esp in from 10.128.1.0/24 to 10.1.1.0/24 peer 203.174.129.162 srcid 10.1.100.254/32 dstid 203.174.129.162/32 type use
+flow esp out from 10.1.1.0/24 to 10.128.1.0/24 peer 203.174.129.162 srcid 10.1.100.254/32 dstid 203.174.129.162/32 type require
+flow esp in from 203.174.129.162 to 10.1.1.0/24 peer 203.174.129.162 srcid 10.1.100.254/32 dstid 203.174.129.162/32 type use
+flow esp out from 10.1.1.0/24 to 203.174.129.162 peer 203.174.129.162 srcid 10.1.100.254/32 dstid 203.174.129.162/32 type require
+
+SAD:
+esp tunnel from 203.174.129.162 to 10.1.100.254 spi 0x0b12fc21 auth hmac-sha2-256 enc aes
+esp tunnel from 203.174.129.162 to 10.1.100.254 spi 0x0f51ce91 auth hmac-sha2-256 enc aes
+esp tunnel from 10.1.100.254 to 203.174.129.162 spi 0x65bb84d5 auth hmac-sha2-256 enc aes
+esp tunnel from 203.174.129.162 to 10.1.100.254 spi 0x7f008333 auth hmac-sha2-256 enc aes
+esp tunnel from 10.1.100.254 to 203.174.129.162 spi 0x8712642b auth hmac-sha2-256 enc aes
+esp tunnel from 10.1.100.254 to 203.174.129.162 spi 0x9556ad5b auth hmac-sha2-256 enc aes
+esp tunnel from 10.1.100.254 to 203.174.129.162 spi 0xa6498431 auth hmac-sha2-256 enc aes
+esp tunnel from 203.174.129.162 to 10.1.100.254 spi 0xf0e97561 auth hmac-sha2-256 enc aes
+
+
+LAW:
+FLOWS:
+flow esp in from 10.1.100.254 to 203.174.129.162 peer 165.228.157.90 srcid 203.174.129.162/32 dstid 10.1.100.254/32 type use
+flow esp out from 203.174.129.162 to 10.1.100.254 peer 165.228.157.90 srcid 203.174.129.162/32 dstid 10.1.100.254/32 type require
+flow esp in from 10.1.100.254 to 10.128.1.0/24 peer 165.228.157.90 srcid 203.174.129.162/32 dstid 10.1.100.254/32 type use
+flow esp out from 10.128.1.0/24 to 10.1.100.254 peer 165.228.157.90 srcid 203.174.129.162/32 dstid 10.1.100.254/32 type require
+flow esp in from 10.1.1.0/24 to 10.128.1.0/24 peer 165.228.157.90 srcid 203.174.129.162/32 dstid 10.1.100.254/32 type use
+flow esp out from 10.128.1.0/24 to 10.1.1.0/24 peer 165.228.157.90 srcid 203.174.129.162/32 dstid 10.1.100.254/32 type require
+flow esp in from 10.1.1.0/24 to 203.174.129.162 peer 165.228.157.90 srcid 203.174.129.162/32 dstid 10.1.100.254/32 type use
+flow esp out from 203.174.129.162 to 10.1.1.0/24 peer 165.228.157.90 srcid 203.174.129.162/32 dstid 10.1.100.254/32 type require
+
+SAD:
+esp tunnel from 203.174.129.162 to 165.228.157.90 spi 0x0b12fc21 auth hmac-sha2-256 enc aes
+esp tunnel from 203.174.129.162 to 165.228.157.90 spi 0x0f51ce91 auth hmac-sha2-256 enc aes
+esp tunnel from 165.228.157.90 to 203.174.129.162 spi 0x65bb84d5 auth hmac-sha2-256 enc aes
+esp tunnel from 203.174.129.162 to 165.228.157.90 spi 0x7f008333 auth hmac-sha2-256 enc aes
+esp tunnel from 165.228.157.90 to 203.174.129.162 spi 0x8712642b auth hmac-sha2-256 enc aes
+esp tunnel from 165.228.157.90 to 203.174.129.162 spi 0x9556ad5b auth hmac-sha2-256 enc aes
+esp tunnel from 165.228.157.90 to 203.174.129.162 spi 0xa6498431 auth hmac-sha2-256 enc aes
+esp tunnel from 203.174.129.162 to 165.228.157.90 spi 0xf0e97561 auth hmac-sha2-256 enc aes
+
+
+ON EMP isakmpd starts output like:
+112251.295756 Default responder_recv_HASH_SA_NONCE: peer proposed invalid phase 2 IDs: initiator id 203.174.129.162, responder id 165.228.157.90
+112251.295908 Default dropped message from 203.174.129.162 port 4500 due to notification type INVALID_ID_INFORMATION
+112258.296492 Default responder_recv_HASH_SA_NONCE: KEY_EXCH payload without a group desc. attribute
+112258.296631 Default dropped message from 203.174.129.162 port 4500 due to notification type NO_PROPOSAL_CHOSEN
+

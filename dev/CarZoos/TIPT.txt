@@ -1,0 +1,37 @@
+Call Centre
+
+for each DNIS
+
+Add 
+the DNIS Name: "SouthsideHonda"
+the Phone Num: 738286442
+Change
+priority to Medium (only Carzoos on Highest)
+Tick
+Use custome Calling Line Name
+Add
+Calling line settings: (last) Honda (first) Southside
+Tick
+Use custom DNIS announcement settings
+
+
+Untick
+Play entrance message
+
+Untick 
+Enable estimated wait message for....
+
+Untick 
+Play Comfort Message
+
+
+Tick
+Enable music or video on hold for queued calls
+Select
+Custom and upload file "NonCarzoosOnHold_OfficeHours_35sec_ulaw.wav"
+
+
+Tick
+Play call whisper message
+Select 
+Custom and upload file for dealership "SSH_whisper_ulaw.wav"

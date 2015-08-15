@@ -1,0 +1,13 @@
+SWAP IP Address
+2010-09-09
+Michael Spence
+
+
+Place the .vbs script somewhere on local machine (I'd suggest c:\bin or c:\scripts).
+
+Place the .etc file (this is the configuration file) on the local machine.  Currently the config file is forced to be at C:\bin\etc.  (this is easily changed in the .vbs file by changing the 'Const K_cfg = "C:\bin\etc\chgip.etc"' line.)
+
+You will want to edit the .etc file to reflect the required IP addresses for the user.  DO NOT change the first line.  2nd & 5th lines are his/her locations (2nd is the default)  3rd & 6th are the IP addresses to change and 4th & 7th are the gateways (again 3rd and 4th lines are for the default).
+
+Simple??
+

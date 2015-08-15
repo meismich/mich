@@ -1,0 +1,15 @@
+
+
+nsdb_data_c1131_wap_6, 10.10.7.231,  FOC11276ZKY  Needs visual for Asset Number
+mtg_data_c2950_24p_1, 10.5.1.251, FOC0921Z2N3
+mtg_data_c1131_wap_1, 10.5.1.239, FOC114501G8
+grw_core_c2950_24_1, 10.24.1.253, FOC0741W0V8
+gab_data_hp4202_80p_1, 10.34.1.251, SG616VE01Q
+gab_data_hp2626_24p_1, 10.34.1.240, CN732PC031
+gab_data_c1131_wap_1, 10.34.9.232, FOC11461JMB
+gab_data_c1130_wap_4, 10.34.1.236, FOC11464QSK
+gab_data_c1130_wap_3, 10.34.1.237, FOC11464NR3
+ewn_data_c1131_wap_2, 10.12.3.238, FOC09144H1U
+dwn_data_hp2510_48p_1, 10.50.1.241, CN047YV0SR
+bur_core_hp2510_48p_1, 10.2.1.252, CN129YV0X1
+

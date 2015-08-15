@@ -1,0 +1,72 @@
+
+### spa2102, Lines 1 and 2, standard phone service. 
+
+### 10 Nov 2006, Version 1.0
+
+### 6 DEC 2006, Version 1.1
+
+# *** 
+# *** SPA2102 3.3.5 Configuration Parameters
+# *** 
+
+Line_Enable[1]                                  "No" ;     # No to disable second line.
+
+Proxy[1]                                        "as.nipt.telstra.com" ;
+Outbound_Proxy[1]                               "sbc-qld.nipt.telstra.com" ;
+
+
+Display_Name[1]                                 "" ;   # User name displayed1
+User_ID[1]                                      "p" ;   # Broadsoft user ID1
+Password[1]                                     "password1" ;     # Broadsoft Authentication Password1
+
+Auth_ID[1]                                      "" ;   # Broadsoft Authentication User Name1 
+
+
+
+Dial_Plan[1]                                    "(000S0|0[2-9]xxxxxxxxS0|10xS0|123xS0|130xxxxxxxS0|1800xxxxxxS0|190xxxxxxxS0|[2-9]xxxxxxxS0|x.|*xx|#x.)" ;
+
+Line_Enable[2]                                  "No" ;     # No to disable second line.
+
+Proxy[2]                                        "as.nipt.telstra.com" ;
+Outbound_Proxy[2]                               "sbc-qld.nipt.telstra.com" ;
+
+Display_Name[2]                                 "" ;   # User name displayed2
+User_ID[2]                                      "p" ;   # Broadsoft user ID2
+Password[2]                                     "password1" ;     # Broadsoft Authentication Password2
+
+Auth_ID[2]                                      "" ;   # Broadsoft Authentication User Name2
+
+
+Dial_Plan[2]                                    "(000S0|0[2-9]xxxxxxxxS0|10xS0|123xS0|130xxxxxxxS0|1800xxxxxxS0|190xxxxxxxS0|[2-9]xxxxxxxS0|x.|*xx|#x.)" ;
+
+
+
+Resync_Periodic                                 "0" ;
+Profile_Rule                                    "/spa$PSN.cfg" ;
+
+
+### If your State has Daylight Saving  ###
+
+### The SPA2102 needs a workaround to set the correct daylight savings time.
+
+### The values below will set the local time to GMT + 11 hours between last sunday in October at 2 am 
+
+### and last sunday in March at 3 am. The rest of the time it will be set to GMT + 10 hours.
+  
+
+Time_Zone                                       "GMT+11:00" ;  # options: GMT+10:30/SA&NT,GMT+09:00/WA
+
+Daylight_Saving_Time_Rule                       "start=3/-1/7/3:00:00;end=10/-1/7/2:00:00;save=-1" ;
+
+####################################################
+
+
+### If your State does not have Daylight Saving  ###
+
+
+Time_Zone                                       "GMT+10:00" ;  # options: GMT+09:30/SA&NT,GMT+08:00/WA
+
+Daylight_Saving_Time_Rule                       "" ;
+
+
+#####################################################

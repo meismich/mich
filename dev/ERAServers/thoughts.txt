@@ -1,0 +1,11 @@
+New ERA Servers - Thoughts on
+2011-11-29
+Michael Spence
+
+
+
+Thoughts on Backup:
+
+Databases are typically hard to backup using starndard backup techniquies.  For this reason, backups should be backed up with appropriate software.  (For example Exchange and SQL are backed up using Database interrogating tools, which enable the live database to be queried for data, without compromising data integrity)
+
+For this reason, the OS of the ERA servers 

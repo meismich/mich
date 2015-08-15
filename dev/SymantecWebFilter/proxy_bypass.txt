@@ -1,0 +1,59 @@
+Exception			pf macro	pf ips			fw route	Reason/Request
+
+10.*	 			n/a		n/a			n/a		APEagers WAN
+	 			audi		10.112.192.0/24		10.1.1.240	Audi
+	 			audi		10.112.230.0/24		10.1.1.240	Audi
+	 			audi		10.166.145.0/24		10.1.1.240	Audi
+	 			mazda		10.3.0.0/16		10.40.1.35	Mazda <- might need to be 10.3.*.* ???
+	 			mazda		10.4.0.0/16		10.40.1.35	Mazda <- might need to be 10.3.*.* ???
+				dealerlink	10.20-21.0.0/16		10.40.1.33	Dealerlink
+				dealerlink	10.30-31.0.0/16		10.40.1.33	Dealerlink
+				dealerlink	10.40.3-9.0/24		10.40.1.33	Dealerlink
+				dealerlink	10.41.0.0/16		10.40.1.33	Dealerlink
+				dealerlink	10.81.*.0/24		10.40.1.33	Dealerlink
+				dealerlink	10.82.6.0/24		10.40.1.33	Dealerlink
+				dealerlink	10.85.41.0/24		10.40.1.33	Dealerlink
+				dealerlink	10.100.12.0/24		10.40.1.33	Dealerlink
+				porsche		10.61.1.0/24		10.40.1.37	Porsche
+				porsche		10.61.248.65&66		10.40.1.37	Porsche
+172.17.*			n/a		n/a			n/a		Kloster/Bill Buckle WAN
+192.168.*.* 			NULL		NULL			NULL		Home use
+19.197.2.183 			autogrid	19.197.2.183		10.40.1.39	AutoGrid (Ford/Panda - experimental??)
+61.9.209.* 			NULL		NULL			NULL		JUNK??
+84.21.39.13  			porsche		84.21.39.0/24		10.40.1.37	Porsche "pcahats" (Ben Scherer - asked 2011-06-27)
+
+136.8.154.176 			volvo		136.8.154.0/24		default		Volvo
+150.45.156.* 			toyota		150.45.0.0/16		10.40.1.46	Toyota <- Should be 150.45.*.*
+193.175.6.* 			porsche		193.175.6.2		10.40.1.37	Porsche
+203.26.190.6 			porsche		203.26.190.6		10.40.1.37	Porsche
+localhost* 			n/a		n/a			n/a		For things like VIDA??  <- Should be localhost* ???
+*.w7146.eranet  		n/a		n/a			n/a		\_____ Change to *.eranet
+*.w894*.eranet  		n/a		n/a			n/a		/
+*.tmca.com.au   		toyota		192.168.*.0/24		10.40.1.46	Toyota DAN network
+*webapps.toyota.com.au   	toyota		192.168.*.0/24		10.40.1.46	Toyota DAN network
+*.nipt.telstra.com   		tipt		203.44.43.220		default		TIPT functionality
+*cpn.vwg  			vw		10.112.198.0/24		10.1.1.240	VolksWagen network
+*.franchise.jaguar.com    	NULL		NULL			NULL		Not Required???
+*.franchise.landrover.com    	NULL		NULL			NULL		Not Required???
+dealer.prod.mazda.com.au   	mazda		10.3.0.0		10.40.1.35	Over Mazda Network
+*epandaau.ford.com   		autogrid	19.197.2.183		10.40.1.39	AutoGrid (Ford Panda)
+bsp.liberty.com.au*            	liberty		202.45.13.124		default		\_____ Liberty Finance (Unused??)
+loanservices.libfin.com.au*   	liberty		202.45.13.114		default		/ 
+goglobal.dealerlogic.com.au*   	NULL		NULL			NULL		JUNK??
+ppn.porsche.com    		porsche		84.21.53.11		10.40.1.37	Porsche
+tjunction.toyota.com.au*   	toyota		192.168.109.0/24	10.40.1.46	Toyota (Showroom Direct)
+*.test.mazda.com.au   		NULL		NULL			NULL		Mazda Test (DONE??)
+hondaweb.honda.com.au    	honda		144.135.6.130		default		Hondaweb
+citrix.apeagers.com.au 		n/a		n/a			n/a		\
+owa.apeagers.com.au		n/a		n/a			n/a		 }--- For Internal/Home use
+servicedesk.apeagers.com.au	n/a		n/a			n/a		/
+*audiportal.com.au 		audi		10.166.145.0/24		10.1.1.240	Audi Portal (parts??) (Shannon Gray - asked 2011-06-27)
+
+*audi.net.au 			audi		10.112.230.0/24		10.1.1.240	Audi ??  (Shannon Gray - asked 2011-06-27)
+
+
+
+one.mazda.com.au*		mazda		10.3.0.0/16		10.40.1.35	Mazda One (Conrad Wunderlich - asked 2011-06-27)
+*jlrext.com			jaguar		80.231.29.29		default		Jaguar/Landrover for AS400 and Viking (Yiannis @ PAG - asked 2011-06-28)
+*.partner.toyota.com.au		toyota		192.168.109.0/24	10.40.1.46	Toyota Dealer Portal (Kathleen Owens - asked 2011-06-28)
+potal.volkswagen.net.au		vw		10.152.15.0/24		10.1.1.240	VW Portal (Tony Blake - asked 2011-06-28)

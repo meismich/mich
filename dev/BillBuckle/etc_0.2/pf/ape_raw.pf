@@ -1,0 +1,17 @@
+#
+# FILE:		ape_raw.pf
+# AUTHOR:	Michael Spence
+# DATE:		2013-05-16
+# VERSION:	BSD_Gateway v0.1 (client)
+#
+
+raw_client =	10.128.1.1
+
+table <int_raw> const { $raw_client }
+
+pass in log quick on $if_int proto { tcp, udp } from <int_raw> to any
+pass in log quick on $if_ext proto { tcp, udp } from any to <int_raw>
+
+pass out on $if_ext proto { tcp, udp } from <int_raw> to any nat-to ($if_ext:0)
+pass out on $if_int proto { tcp, udp } to <int_raw>
+

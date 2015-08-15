@@ -1,0 +1,53 @@
+/* global styles */
+BODY {font-family:"Arial,Helvetica,sans-serif";font-size:12px;}
+TD {font-family:"Arial,Helvetica,sans-serif";font-size:12px;}
+A {text-decoration:none;color:#00667C}
+
+
+H3 {font-family:"Arial,Helvetica,sans-serif";font-size:16px;font-weight:bold;}
+
+/* Row Selection */
+/*TD.unselected {color:#000000;background-color:#ffcc99;}*/
+TD.unselected {color:#000000;background-color:#ffffcc;}
+/*TD.selected {color:#000000;background-color:#CC9966;}*/
+TD.selected {color:#000000;background-color:#ffcc99;}
+
+A.selected {background-color:#CC9966;}
+A.unselected {color:black;}
+
+.username {font-size:20px;color:#ffffff;background-color:#76B576;}
+.notvisible {font-size: 12px; color:#ffffff;}
+
+.leftnav {font-size:11px;color:#009966;}
+.leftnav A {color:#000099;}
+.leftnav A:hover {color:#ff6633;}
+.leftnavon {font-size:11px;color:#ff6633;}
+
+.pagedesc {font-size:9px;color:#ffffff;}
+.colhead {font-size:10px;color:#ffffff;font-weight:bold;}
+.TUnsel {font-size:10px;}
+.icon {font-size:10px;font-weight:bold;}
+/* Use loginput only for passwords */
+.loginput {font-family:monospace;font-size:14px;}
+.loginadvisory {font-family:"Arial,Helvetica,sans-serif";font-size:12px;
+                color:white;font-weight:bold;text-align:center;vertical-align:top}
+
+/* error styles */
+A:hover {text-decoration:none;}
+.hr {background-color:#330066;}
+.bighead {font-size:16px;font-weight:bold;color:#330066;}
+.subhead {font-weight:bold;color:#330066;}
+.smaller {font-size:10px;}
+A.browser {color:#330066;}
+
+/* login screen */
+.login {background-color: #CCCCCC;}
+.loginbase {background-color: #CCCCCC;}
+.logintext {font-size:12px;font-weight:bold;color:#00667C;}
+.logintext2 {font-size:11px;font-weight:bold;color:#006666;}
+.logintext3 {font-size:16px;font-weight:bold;color:#00667C;}
+.loginerror {font-size:12px;font-weight:bold;color:red;}
+.logouttext {font-size:18px;font-weight:bold;color:#006666;}
+
+.copyright {font-size:11px;font-weight:bold;}
+.copyrighttext {font-size:9px;font-weight:normal;}

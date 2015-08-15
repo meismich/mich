@@ -1,0 +1,1216 @@
+IPAddress 10.6.10.11 is Machine AUVSVC5 has Serial 1108-B101026/014
+IPAddress 10.6.10.12 is Machine AUVSVC9 has Serial 1108-B101026/013
+IPAddress 10.6.10.20 is Machine AUJSVC1 has Serial B092035/011
+IPAddress 10.6.10.101 is Machine AUVSVC120293 has Serial 1207-B103298/003
+IPAddress 10.6.10.150 cannot be WMId
+IPAddress 10.6.12.78 is Machine AUVSVC120415 has Serial 1209-B103652/005
+IPAddress 10.6.17.120 is Machine CAPSVC7 has Serial 7A063780H
+IPAddress 10.6.17.152 cannot be WMId
+IPAddress 10.17.11.3 is Machine PORSCHEFS has Serial                                  
+IPAddress 10.17.11.10 is Machine AUPPTS1 has Serial                                 
+IPAddress 10.17.11.12 is Machine AUPSVC3 has Serial                                 
+IPAddress 10.17.11.13 is Machine AUPSVC9 has Serial                                  
+IPAddress 10.17.11.17 is Machine AUPSVC2 has Serial                                 
+IPAddress 10.17.11.29 is Machine AUPSVC6 has Serial 1105-B100193/004
+IPAddress 10.17.11.46 is Machine AUPSHO8 has Serial 8A063022H
+IPAddress 10.17.11.150 cannot be WMId
+IPAddress 10.17.11.153 cannot be WMId
+IPAddress 10.17.11.154 cannot be WMId
+IPAddress 10.17.11.157 cannot be WMId
+IPAddress 10.17.11.161 cannot be WMId
+IPAddress 10.17.100.3 is Machine PORSCHEFS-OLD has Serial                                 
+IPAddress 10.17.100.150 cannot be WMId
+IPAddress 10.17.254.10 is Machine AUPSMGR has Serial 4C056602H
+IPAddress 10.17.254.12 is Machine AUPSMGR has Serial 4C056602H
+IPAddress 10.17.254.14 is Machine AUPRCPT4 has Serial 5A112252H
+IPAddress 10.17.254.15 cannot be WMId
+IPAddress 10.17.254.17 is Machine AP120359 has Serial 6C082326H
+IPAddress 10.17.254.21 is Machine AUPSHO6 has Serial 8A063028H
+IPAddress 10.17.254.22 is Machine AUMGMGR2 has Serial 7B120625H
+IPAddress 10.17.254.25 is Machine AP120359 has Serial 6C082326H
+IPAddress 10.17.254.26 is Machine AUPSHO9 has Serial 7A063777H
+IPAddress 10.18.0.99 is Machine BDL-BK1 has Serial To be filled by O.E.M.
+IPAddress 10.18.1.11 is Machine TRQ-REG has Serial VMware-42 2e 51 7d ae 86 59 b1-39 a1 8c e3 a5 61 11 09
+IPAddress 10.18.2.2 is Machine TFSFS has Serial VMware-42 2e e4 ca cc 37 ce 33-40 6e 88 ca 20 46 36 0b
+IPAddress 10.18.2.3 is Machine TFSUMGR has Serial                                  
+IPAddress 10.18.2.12 is Machine TFSPTS3 has Serial                                  
+IPAddress 10.18.2.16 is Machine TFSSHO3 has Serial                                  
+IPAddress 10.18.2.17 is Machine TFSPTSA has Serial 1012-B098957/003
+IPAddress 10.18.2.20 is Machine TFSUSDA has Serial 1012-B098851/001
+IPAddress 10.18.2.27 is Machine MFSSHO2 has Serial                                  
+IPAddress 10.18.2.30 is Machine TFNUSD2 has Serial                                  
+IPAddress 10.18.2.36 is Machine TFSSVCB has Serial 3B154734H
+IPAddress 10.18.2.43 is Machine TFSADM130221 has Serial 1305-B104859/012
+IPAddress 10.18.2.46 is Machine TFSSVC1 has Serial                                  
+IPAddress 10.18.2.47 is Machine TFSSVC4 has Serial                                  
+IPAddress 10.18.2.50 is Machine TFMGR1 has Serial 1012-B098957/009
+IPAddress 10.18.2.51 is Machine TFSSHO2 has Serial                                  
+IPAddress 10.18.2.53 is Machine TFSCLK2 has Serial 1108-B101026/012
+IPAddress 10.18.2.66 is Machine TFSADM130156 has Serial 1`304-B104657/007
+IPAddress 10.18.2.69 is Machine TFSSVCD has Serial 4A139770H
+IPAddress 10.18.2.71 is Machine TFSSVC has Serial                                  
+IPAddress 10.18.2.79 is Machine TFSFIN1 has Serial 1105-B100193/009
+IPAddress 10.18.2.81 is Machine TADMIN120613 has Serial 1211-B104000/003
+IPAddress 10.18.2.83 is Machine TADMIN120248 has Serial 1206-B103127/007
+IPAddress 10.18.2.86 is Machine TADMIN120614 has Serial 1211-B104000/004
+IPAddress 10.18.2.87 is Machine TADMIN1201291 has Serial 1207-B103298/001
+IPAddress 10.18.2.88 is Machine TFSADM130077 has Serial 1302-B104484/002
+IPAddress 10.18.2.89 is Machine TADMINA has Serial                                  
+IPAddress 10.18.2.90 is Machine TFSADM120608 has Serial 9C099827H
+IPAddress 10.18.2.91 cannot be WMId
+IPAddress 10.18.2.150 cannot be WMId
+IPAddress 10.18.2.151 cannot be WMId
+IPAddress 10.18.2.153 cannot be WMId
+IPAddress 10.18.2.154 cannot be WMId
+IPAddress 10.18.2.156 cannot be WMId
+IPAddress 10.18.2.161 cannot be WMId
+IPAddress 10.18.2.163 cannot be WMId
+IPAddress 10.18.2.164 cannot be WMId
+IPAddress 10.18.2.165 cannot be WMId
+IPAddress 10.18.2.166 cannot be WMId
+IPAddress 10.18.2.168 cannot be WMId
+IPAddress 10.18.2.169 cannot be WMId
+IPAddress 10.18.2.170 cannot be WMId
+IPAddress 10.18.254.12 is Machine TFSSHO9 has Serial 5B087796H
+IPAddress 10.18.254.13 is Machine TADMIN130255 has Serial 1306-B105085/002
+IPAddress 10.18.254.15 is Machine TFSADM120608 has Serial 9C099827H
+IPAddress 10.18.254.17 is Machine TFSADM130076 has Serial 1302-B104484/001
+IPAddress 10.18.254.23 is Machine TPDSVC5 has Serial 7BKSB82603
+IPAddress 10.18.254.25 is Machine TFSSHOT has Serial 7B153363H
+IPAddress 10.18.254.26 cannot be WMId
+IPAddress 10.18.254.27 is Machine TFSSHO130248 has Serial 5D086419H
+IPAddress 10.18.254.28 cannot be WMId
+IPAddress 10.18.254.32 is Machine TADMIN120658 has Serial 1212-B104104/003
+IPAddress 10.18.254.37 is Machine TFSUSE130184 has Serial XC138425H
+IPAddress 10.18.254.38 is Machine TFSUSE130184 has Serial XC138425H
+IPAddress 10.18.254.41 is Machine TFSPTS110015 has Serial 1012-B098851/002
+IPAddress 10.36.0.99 is Machine TTB-BK1 has Serial g122320604454
+IPAddress 10.36.1.2 is Machine TTSFS has Serial                                
+IPAddress 10.36.1.5 is Machine BNE-AUTOQUOTE has Serial VMware-42 06 b6 cc 05 75 6c 0d-ac be 81 d5 d1 2f e4 05
+IPAddress 10.36.2.22 is Machine TTBSVC120416 has Serial 1209-B103652/006
+IPAddress 10.36.2.23 is Machine TTBPDF has Serial 1104-B099962/011
+IPAddress 10.36.2.25 is Machine TTBPD1 has Serial 1109-B101299/002
+IPAddress 10.36.2.92 is Machine TPDSVC120618 has Serial 1211-B104000/008
+IPAddress 10.36.2.150 cannot be WMId
+IPAddress 10.36.2.158 cannot be WMId
+IPAddress 10.36.4.2 is Machine TTB-TUNE1 has Serial VMware-42 06 e0 b8 27 cb 71 c1-64 46 ef d0 ac 66 5c c9
+IPAddress 10.36.4.7 is Machine BRE-LPT1 has Serial VMware-42 06 34 34 c1 3f e8 e9-46 cd f1 4a bb 4b 61 26
+IPAddress 10.36.4.21 is Machine TTBPTS6 has Serial 1109-B101299/004
+IPAddress 10.36.4.24 is Machine TTBPTS9 has Serial 1106-B100373/003
+IPAddress 10.36.4.37 is Machine TTBSVCA has Serial                                  
+IPAddress 10.36.4.39 is Machine TTBSVCE has Serial                                  
+IPAddress 10.36.4.60 is Machine TTBSVC120275 has Serial g122320604452
+IPAddress 10.36.4.79 is Machine MPBSVC3 has Serial 1111-B101786/002
+IPAddress 10.36.4.98 is Machine TTBFIN1 has Serial                                  
+IPAddress 10.36.4.112 is Machine TPD120347 has Serial g122420600249
+IPAddress 10.36.4.150 cannot be WMId
+IPAddress 10.36.4.154 cannot be WMId
+IPAddress 10.36.4.155 cannot be WMId
+IPAddress 10.36.4.160 cannot be WMId
+IPAddress 10.36.4.161 cannot be WMId
+IPAddress 10.36.4.163 cannot be WMId
+IPAddress 10.36.4.164 cannot be WMId
+IPAddress 10.36.4.165 cannot be WMId
+IPAddress 10.36.6.150 cannot be WMId
+IPAddress 10.36.16.21 is Machine TSBSHO7 has Serial 1106-B100373/002
+IPAddress 10.36.16.31 is Machine TSBSVC6 has Serial 1102-B099307/007
+IPAddress 10.36.16.151 cannot be WMId
+IPAddress 10.36.16.152 cannot be WMId
+IPAddress 10.36.254.3 is Machine TTBZOOS1 has Serial g120121703232
+IPAddress 10.36.254.4 is Machine TPD120292 has Serial 1207-B103298/002
+IPAddress 10.36.254.5 is Machine TTBSHON has Serial                                  
+IPAddress 10.36.254.6 is Machine TTBSHO120337 has Serial 6C082778H
+IPAddress 10.36.254.8 is Machine TTBSVC130161 has Serial 1304-B104657/012
+IPAddress 10.36.254.10 is Machine TTNSHOC has Serial 5B090749H
+IPAddress 10.36.254.12 is Machine TTBADM2 has Serial                                  
+IPAddress 10.36.254.13 is Machine TTBSHO20120332 has Serial 5C054174H
+IPAddress 10.36.254.15 is Machine TTBSHO120604 has Serial 9C099821H
+IPAddress 10.36.254.18 is Machine TTBFLT6 has Serial                                  
+IPAddress 10.36.254.19 is Machine TTBDP1 has Serial 4C056577H
+IPAddress 10.36.254.22 is Machine TTBSHO100082 has Serial 5A112254H
+IPAddress 10.36.254.23 is Machine SUCSHOT has Serial 8B121046H
+IPAddress 10.36.254.24 is Machine TTBDP1 has Serial 4C056577H
+IPAddress 10.36.254.25 is Machine TTBFLT120056 has Serial 7B152558H
+IPAddress 10.36.254.26 is Machine MPBSVC1 has Serial 1104-B099962/010
+IPAddress 10.36.254.27 is Machine TTBSHO120333 has Serial 6C081536H
+IPAddress 10.36.254.28 is Machine TTBSHO120284 has Serial 4C056587H
+IPAddress 10.36.254.29 is Machine TTBSVCF has Serial 1012-B098844/004
+IPAddress 10.36.254.31 is Machine TTBSHOT has Serial 7B152547H
+IPAddress 10.36.254.35 is Machine TSBSVC4 has Serial 5A111035H
+IPAddress 10.36.254.37 is Machine TPDSVCA has Serial 1105-B100193/017
+IPAddress 10.36.254.39 is Machine TTBSHO120339 has Serial 4C056559H
+IPAddress 10.36.254.40 is Machine TTBSVC120119 has Serial g120121703198
+IPAddress 10.36.254.42 is Machine TTBFLT130024 has Serial XC138399H
+IPAddress 10.36.254.43 is Machine TTBFLT120056 has Serial 7B152558H
+IPAddress 10.36.254.44 is Machine TTBFLT130024 has Serial XC138399H
+IPAddress 10.36.254.45 is Machine TFNSHOC has Serial 6A062503H
+IPAddress 10.36.254.46 is Machine TTBSVCH has Serial 1109-B101299/003
+IPAddress 10.36.254.51 is Machine TFNSHOC has Serial 6A062503H
+IPAddress 10.36.254.55 is Machine TCR01 has Serial                                  
+IPAddress 10.36.254.69 is Machine TTBSVCG has Serial 1101-B099091/010
+IPAddress 10.36.254.87 is Machine TTBSVCD has Serial                                  
+IPAddress 10.2.0.220 cannot be WMId
+IPAddress 10.2.7.1 is Machine SSHFS has Serial                                  
+IPAddress 10.2.7.3 is Machine SSHADM130085 has Serial 1302-B104484/010
+IPAddress 10.2.7.8 is Machine SSHPTS3 has Serial 1106-B100373/005
+IPAddress 10.2.7.11 is Machine SSHPTS2 has Serial 1109-B101299/007
+IPAddress 10.2.7.19 is Machine SSHSHO9X has Serial 1105-B100193/006
+IPAddress 10.2.7.21 is Machine SSHSVCA has Serial                                  
+IPAddress 10.2.7.27 is Machine SSHSHOY has Serial 1106-B100373/004
+IPAddress 10.2.7.28 is Machine SSHSHO6 has Serial 1104-B099962/016
+IPAddress 10.2.7.30 is Machine SSRSVC6X has Serial 1111-B101786/014
+IPAddress 10.2.7.36 is Machine SSHSHOZ has Serial 1110-B101434/002
+IPAddress 10.2.7.38 is Machine SSHSHOG has Serial 1109-B101299/006
+IPAddress 10.2.7.39 is Machine SSHSHOH has Serial 1011-B098598/008
+IPAddress 10.2.7.40 is Machine SSHSHOI has Serial 1106-B100373/001
+IPAddress 10.2.7.45 is Machine SSHUSED has Serial 1109-B101299/009
+IPAddress 10.2.7.47 is Machine SSHCRM1 has Serial                                  
+IPAddress 10.2.7.55 is Machine SSHPTS7 has Serial 1110-B101434/004
+IPAddress 10.2.7.66 is Machine SSHSVC120605 has Serial 9C099820H
+IPAddress 10.2.7.72 cannot be WMId
+IPAddress 10.2.7.77 is Machine SSVSVC130213 has Serial 1305-B104859/004
+IPAddress 10.2.7.86 is Machine SSHSHOFX has Serial 1105-B100193/010
+IPAddress 10.2.7.116 is Machine SSHSHOC has Serial 1201-B102091/008
+IPAddress 10.2.7.152 cannot be WMId
+IPAddress 10.2.7.153 cannot be WMId
+IPAddress 10.2.7.154 cannot be WMId
+IPAddress 10.2.7.155 cannot be WMId
+IPAddress 10.2.7.156 cannot be WMId
+IPAddress 10.2.7.157 cannot be WMId
+IPAddress 10.2.7.158 cannot be WMId
+IPAddress 10.2.7.161 cannot be WMId
+IPAddress 10.2.7.164 cannot be WMId
+IPAddress 10.2.7.166 cannot be WMId
+IPAddress 10.2.8.11 is Machine SSVSVC2 has Serial                                  
+IPAddress 10.2.8.24 is Machine SSRSVC4 has Serial 1201-B102091/001
+IPAddress 10.2.254.2 is Machine SSHSMGR has Serial 7B120573H
+IPAddress 10.2.254.3 is Machine SSHSVC4 has Serial 8B115710H
+IPAddress 10.2.254.4 is Machine SSHCZS1 has Serial To be filled by O.E.M.
+IPAddress 10.2.254.8 is Machine SSHSVC130242 has Serial 5D086399H
+IPAddress 10.2.254.9 is Machine SSHSVCE has Serial                                  
+IPAddress 10.2.254.10 is Machine SSHUSD1 has Serial 8B114324H
+IPAddress 10.2.254.12 is Machine SSHSHO8 has Serial 1010-B098370/005
+IPAddress 10.2.254.14 is Machine SSRSVC8 has Serial                                 
+IPAddress 10.2.254.17 is Machine SSRSVC130263 has Serial 1306-B105006/006
+IPAddress 10.2.254.27 is Machine SSHSVC120052 has Serial 7B154922H
+IPAddress 10.23.0.99 is Machine CAL-BK1 has Serial To be filled by O.E.M.
+IPAddress 10.23.1.38 is Machine CCHSVC9 has Serial                                  
+IPAddress 10.23.1.42 is Machine CCAADM120183 has Serial 1204-B102769/010
+IPAddress 10.23.1.43 is Machine CCMSHO5 has Serial S102330
+IPAddress 10.23.1.44 is Machine CCSSHO1 has Serial L3AAF2M
+IPAddress 10.23.1.47 cannot be WMId
+IPAddress 10.23.1.49 is Machine CCAPTS3 has Serial L3C6467
+IPAddress 10.23.1.51 is Machine CCAPTS4 has Serial L3C6498
+IPAddress 10.23.1.62 is Machine CCASVCA has Serial 1110-B101434/014
+IPAddress 10.23.1.63 cannot be WMId
+IPAddress 10.23.1.64 is Machine CCASVC3 has Serial                                  
+IPAddress 10.23.1.65 is Machine CCHSVC6 has Serial                                  
+IPAddress 10.23.1.67 is Machine CCAADME has Serial 1011-B098598/007
+IPAddress 10.23.1.69 is Machine CCADP1 has Serial 1110-B101434/017
+IPAddress 10.23.1.75 is Machine CCASHOWD has Serial                                  
+IPAddress 10.23.1.78 is Machine CCHSHO5 has Serial                                  
+IPAddress 10.23.1.79 is Machine CCAADMA has Serial                                  
+IPAddress 10.23.1.80 is Machine CCASVCD has Serial                                  
+IPAddress 10.23.1.87 is Machine CCAFIN7 has Serial 1104-B099962/018
+IPAddress 10.23.1.95 is Machine CCAHADM8 has Serial                                  
+IPAddress 10.23.1.97 is Machine CCAADMD has Serial 1010-B098370/002
+IPAddress 10.23.1.98 is Machine CCMSHOA has Serial 1108-B101026/003
+IPAddress 10.23.1.150 cannot be WMId
+IPAddress 10.23.1.151 cannot be WMId
+IPAddress 10.23.1.152 cannot be WMId
+IPAddress 10.23.1.153 cannot be WMId
+IPAddress 10.23.1.154 cannot be WMId
+IPAddress 10.23.1.155 cannot be WMId
+IPAddress 10.23.1.156 cannot be WMId
+IPAddress 10.23.1.157 cannot be WMId
+IPAddress 10.23.1.158 cannot be WMId
+IPAddress 10.23.1.159 cannot be WMId
+IPAddress 10.23.1.163 cannot be WMId
+IPAddress 10.23.1.165 cannot be WMId
+IPAddress 10.23.1.167 cannot be WMId
+IPAddress 10.23.1.170 cannot be WMId
+IPAddress 10.23.1.176 cannot be WMId
+IPAddress 10.23.1.179 cannot be WMId
+IPAddress 10.23.254.1 is Machine CCASVC130022 has Serial 7C032844H
+IPAddress 10.23.254.9 cannot be WMId
+IPAddress 10.23.254.10 is Machine CCASHOWE has Serial To Be Filled By O.E.M.
+IPAddress 10.23.254.11 cannot be WMId
+IPAddress 10.23.254.13 is Machine CCHSHO130249 has Serial 5D086404H
+IPAddress 10.23.254.15 cannot be WMId
+IPAddress 10.23.254.16 is Machine CCASHO130011 has Serial 7C032831H
+IPAddress 10.23.254.17 cannot be WMId
+IPAddress 10.23.254.19 is Machine CCASHO130009 has Serial 7C032820H
+IPAddress 10.23.254.21 is Machine CCAMIDS has Serial 1BKSA30472
+IPAddress 10.23.254.22 is Machine CCADP has Serial                                  
+IPAddress 10.23.254.26 cannot be WMId
+IPAddress 10.23.254.32 is Machine CCASHOQ has Serial 1107-B100809/008
+IPAddress 10.23.254.34 is Machine CCHSHO130249 has Serial 5D086404H
+IPAddress 10.23.254.38 is Machine CCASHO130008 has Serial 7C032814H
+IPAddress 10.23.254.39 is Machine CCASHO130072 has Serial XC138386H
+IPAddress 10.23.254.40 is Machine CCASHO130007 has Serial 7C032826H
+IPAddress 10.23.254.42 is Machine CCASHO130069 has Serial XC138410H
+IPAddress 10.35.1.1 is Machine AUSFS has Serial                                 
+IPAddress 10.35.1.114 is Machine AUSSHO130047 has Serial 1302-B104421/001
+IPAddress 10.35.1.115 cannot be WMId
+IPAddress 10.35.1.116 cannot be WMId
+IPAddress 10.35.1.121 is Machine CCAUSE100239 has Serial 7A063746H
+IPAddress 10.35.1.122 is Machine AUSSHO120662 has Serial 1212-B104104/007
+IPAddress 10.35.1.175 cannot be WMId
+IPAddress 10.35.18.14 is Machine AUSSHOD has Serial 1011-B098499/002
+IPAddress 10.35.18.21 is Machine AUSSVCE has Serial 1202-B102313/010
+IPAddress 10.35.18.22 is Machine AUSPTS130165 has Serial 1304-B104657/016
+IPAddress 10.35.18.23 is Machine AUSSVC9 has Serial                                  
+IPAddress 10.35.18.31 is Machine AUSPTS1 has Serial 1206-B103127/001
+IPAddress 10.35.18.32 is Machine AUSPTS2 has Serial                                  
+IPAddress 10.35.18.33 is Machine AUSUSE130048 has Serial 1302-B104421/002
+IPAddress 10.35.18.81 is Machine AUSADM7 has Serial 1103-B099648/002
+IPAddress 10.35.18.151 cannot be WMId
+IPAddress 10.35.18.152 cannot be WMId
+IPAddress 10.35.18.154 cannot be WMId
+IPAddress 10.35.18.156 cannot be WMId
+IPAddress 10.35.18.157 cannot be WMId
+IPAddress 10.27.1.70 is Machine CCPPRD1 has Serial                                  
+IPAddress 10.50.0.81 cannot be WMId
+IPAddress 10.50.0.99 is Machine DWN-BK1 has Serial To be filled by O.E.M.
+IPAddress 10.50.1.2 is Machine DWNIT_SPARE0700 has Serial                                 
+IPAddress 10.50.1.3 is Machine DWN-FS has Serial VMware-42 2c b9 5d 27 0c af fc-98 52 3a 21 b4 9b ce b6
+IPAddress 10.50.1.4 cannot be WMId
+IPAddress 10.50.1.6 is Machine DWN-DC1 has Serial VMware-42 2c b3 19 66 82 2e 27-5a 66 b7 be 74 ba d1 1b
+IPAddress 10.50.1.7 is Machine DWN-TS1 has Serial VMware-42 2c 0c 0d 02 b6 06 fe-2a 8b fb a3 03 b1 d3 d1
+IPAddress 10.50.1.8 is Machine DWN-CSP has Serial VMware-42 06 da 74 78 8c 34 cf-0d ad 44 8e af 10 89 3b
+IPAddress 10.50.1.9 is Machine DWN-ISSADM has Serial VMware-42 2c 2d 92 cd 5b 7f 56-8e 38 70 c3 f9 27 5f 05
+IPAddress 10.50.1.11 is Machine DWN-PS1 has Serial VMware-42 2c 30 02 53 89 ba 2d-1f 2d fc f3 60 81 39 70
+IPAddress 10.50.1.12 is Machine NT-TS1 has Serial VMware-42 2c e0 bb 10 ad f3 d3-92 60 03 1f c2 77 21 b0
+IPAddress 10.50.1.100 cannot be WMId
+IPAddress 10.50.1.103 cannot be WMId
+IPAddress 10.50.1.104 cannot be WMId
+IPAddress 10.50.1.107 cannot be WMId
+IPAddress 10.50.1.112 cannot be WMId
+IPAddress 10.50.1.115 cannot be WMId
+IPAddress 10.50.1.116 cannot be WMId
+IPAddress 10.50.1.117 cannot be WMId
+IPAddress 10.50.1.118 cannot be WMId
+IPAddress 10.50.1.119 cannot be WMId
+IPAddress 10.50.1.120 cannot be WMId
+IPAddress 10.50.1.121 cannot be WMId
+IPAddress 10.50.1.123 cannot be WMId
+IPAddress 10.50.1.124 cannot be WMId
+IPAddress 10.50.1.125 cannot be WMId
+IPAddress 10.50.253.9 is Machine BTDWORKSHOP02 has Serial 5D247547S
+IPAddress 10.50.253.10 is Machine BTDAD02 has Serial                                  
+IPAddress 10.50.253.13 is Machine BTDPTS130140 has Serial 1304-B104652/007
+IPAddress 10.50.253.15 is Machine BTDSALES110377 has Serial 6B113133H
+IPAddress 10.50.253.16 is Machine BTDSALES120486 has Serial 4C058073H
+IPAddress 10.50.254.6 cannot be WMId
+IPAddress 10.50.254.7 is Machine BTDSVR0800778 has Serial                                  
+IPAddress 10.50.254.9 is Machine BTDPTS130344 has Serial 1308-B105309/003
+IPAddress 10.50.254.10 is Machine BTDWORKSHOP03 has Serial XC329504R
+IPAddress 10.50.254.11 cannot be WMId
+IPAddress 10.50.254.12 cannot be WMId
+IPAddress 10.50.254.13 cannot be WMId
+IPAddress 10.50.254.15 cannot be WMId
+IPAddress 10.50.254.18 cannot be WMId
+IPAddress 10.50.254.19 is Machine BTDIT130053 has Serial 1302-B104421/007
+IPAddress 10.50.254.21 cannot be WMId
+IPAddress 10.50.254.32 cannot be WMId
+IPAddress 10.50.254.35 cannot be WMId
+IPAddress 10.50.254.36 is Machine BTDWKS0800782 has Serial                                  
+IPAddress 10.50.254.40 is Machine BTDSRV120637 has Serial 1212-B104107/002
+IPAddress 10.50.254.41 is Machine BTDPTS130284 has Serial 1307-B105127/005
+IPAddress 10.50.254.42 is Machine BTDACC130124 has Serial YC101560H
+IPAddress 10.50.254.43 is Machine BTDFMGR20120221 has Serial 1206-B103128/002
+IPAddress 10.50.254.46 cannot be WMId
+IPAddress 10.50.254.48 cannot be WMId
+IPAddress 10.50.254.49 is Machine BTDADMIN110218 has Serial 1104-B099963/001
+IPAddress 10.50.254.51 is Machine BTDDAP130342 has Serial 1308-B105309/001
+IPAddress 10.50.254.53 is Machine BTDSRVMGR120636 has Serial 1212-B104107/001
+IPAddress 10.50.254.54 is Machine BTDSVR100126 has Serial B097849/006
+IPAddress 10.50.254.56 cannot be WMId
+IPAddress 10.50.254.59 cannot be WMId
+IPAddress 10.50.254.62 cannot be WMId
+IPAddress 10.50.254.63 cannot be WMId
+IPAddress 10.50.254.66 is Machine BTDMGR130141 has Serial 1304-B104652/008
+IPAddress 10.50.254.69 is Machine BTDUSEDM100277 has Serial 1011-B098601/001
+IPAddress 10.50.254.74 cannot be WMId
+IPAddress 10.50.254.77 is Machine BTDSRV100127 has Serial B097849/007
+IPAddress 10.50.254.79 is Machine DARWINIT has Serial 1207-B103297/001
+IPAddress 10.50.254.81 is Machine BTDDAP120220 has Serial 1206-B103128/001
+IPAddress 10.50.254.82 is Machine BTDDAP20120191 has Serial 1205-B102966/002
+IPAddress 10.50.254.85 cannot be WMId
+IPAddress 10.50.254.88 is Machine BTDMGR110430 has Serial                                 
+IPAddress 10.50.254.89 is Machine BTDSRV120478 has Serial 1210-B103871/004
+IPAddress 10.50.254.92 cannot be WMId
+IPAddress 10.50.254.93 cannot be WMId
+IPAddress 10.50.254.105 cannot be WMId
+IPAddress 10.50.254.120 is Machine BTDSVC120003 has Serial 1201-B102101/001
+IPAddress 10.19.1.1 is Machine EFARM has Serial (null)
+IPAddress 10.19.2.20 is Machine MTPPTSC has Serial 1111-B101786/008
+IPAddress 10.19.2.22 is Machine MTPPTSA has Serial 1105-B100193/014
+IPAddress 10.19.2.25 is Machine MTPPTSL has Serial 1205-B102945/014
+IPAddress 10.19.2.27 is Machine MTPPTSD has Serial 1011-B098598/006
+IPAddress 10.19.2.29 is Machine MTPPTSP has Serial 1202-B102313/001
+IPAddress 10.19.2.31 cannot be WMId
+IPAddress 10.19.2.33 is Machine MTPPTSF has Serial B096290/002
+IPAddress 10.19.2.34 is Machine MTPPTSR has Serial 1105-B100193/016
+IPAddress 10.19.2.37 is Machine MTPPTSU has Serial 1104-B099962/015
+IPAddress 10.19.2.45 cannot be WMId
+IPAddress 10.19.2.51 is Machine MTPPTS5 has Serial 1202-B102313/006
+IPAddress 10.19.2.56 is Machine MTPPTSO has Serial 1010-B098370/007
+IPAddress 10.19.2.62 is Machine MTPPTS130056 has Serial 1302-B104421/010
+IPAddress 10.19.2.73 is Machine MTPPTS120619 has Serial 1211-B104000/009
+IPAddress 10.19.2.77 is Machine MTPPTSDX has Serial B102313/003
+IPAddress 10.19.2.80 is Machine EFAPTS130162 has Serial 1304-B104657/013
+IPAddress 10.19.2.81 is Machine EFAPTS130211 has Serial 1305-B104859/002
+IPAddress 10.19.2.82 is Machine EFAPTS130216 has Serial 1305-B104859/007
+IPAddress 10.19.2.84 is Machine EFAPTS130164 has Serial 1304-B104657/015
+IPAddress 10.19.2.86 is Machine EFAPTS130210 has Serial 1305-B104859/001
+IPAddress 10.19.2.87 is Machine EFAPTS0212 has Serial 1305-B104859/003
+IPAddress 10.19.2.88 is Machine EFAPTS0154 has Serial 1304-B104657/005
+IPAddress 10.19.2.150 cannot be WMId
+IPAddress 10.19.2.151 cannot be WMId
+IPAddress 10.19.2.152 cannot be WMId
+IPAddress 10.19.2.153 cannot be WMId
+IPAddress 10.19.2.155 cannot be WMId
+IPAddress 10.19.2.156 cannot be WMId
+IPAddress 10.19.2.157 cannot be WMId
+IPAddress 10.19.2.160 cannot be WMId
+IPAddress 10.19.2.163 cannot be WMId
+IPAddress 10.19.2.190 cannot be WMId
+IPAddress 10.19.10.13 is Machine AUVPTSZ has Serial 1106-B100373/011
+IPAddress 10.19.10.43 is Machine AUVPTS9 has Serial                                  
+IPAddress 10.19.15.70 is Machine CAGPTS1 has Serial B095758/004
+IPAddress 10.19.15.74 cannot be WMId
+IPAddress 10.19.15.78 is Machine CAGPTS8X has Serial 1108-B101026/016
+IPAddress 10.19.15.82 cannot be WMId
+IPAddress 10.19.15.150 cannot be WMId
+IPAddress 10.19.15.151 cannot be WMId
+IPAddress 10.19.254.3 is Machine EFAPTS130257 has Serial 1306-B105085/004
+IPAddress 10.19.254.7 is Machine MTPPTS1X has Serial 6B113094H
+IPAddress 10.19.254.8 is Machine MTPPTSREC has Serial B098034/006
+IPAddress 10.19.254.10 is Machine AUVPTS120050 has Serial 7B154951H
+IPAddress 10.19.254.13 is Machine EFA-APP has Serial VMware-42 06 9d 68 d0 45 71 20-91 31 3e 97 25 6c 0c 99
+IPAddress 10.19.254.14 is Machine MTPMGR1 has Serial 7B122275H
+IPAddress 10.19.254.15 is Machine MTPMGR1 has Serial 7B122275H
+IPAddress 10.19.254.17 is Machine AP100243 has Serial 7A062789H
+IPAddress 10.19.254.19 is Machine EFAPTS130259 has Serial 1306-B105006/002
+IPAddress 10.19.254.21 is Machine APTRN7 has Serial 8B121036H
+IPAddress 10.19.254.22 is Machine EFAPTS130218 has Serial 1305-B104859/009
+IPAddress 10.19.254.27 is Machine MTPPTSJ has Serial 3B154735H
+IPAddress 10.19.254.28 is Machine EFAPTS110403 has Serial 1107-B100809/018
+IPAddress 10.19.254.36 is Machine CAGPTS130219 has Serial 1305-B104859/010
+IPAddress 10.1.0.50 cannot be WMId
+IPAddress 10.1.0.81 cannot be WMId
+IPAddress 10.1.0.82 cannot be WMId
+IPAddress 10.1.0.83 cannot be WMId
+IPAddress 10.1.0.92 is Machine ERP1-BK has Serial VMware-42 06 87 9a d6 8f 68 18-77 ef ca 55 7d fc 7a 92
+IPAddress 10.1.0.93 is Machine ERP2-BK has Serial VMware-42 06 6b 08 f5 57 ed e1-b2 5c 9c d5 7c ea 66 ed
+IPAddress 10.1.0.98 cannot be WMId
+IPAddress 10.1.0.99 cannot be WMId
+IPAddress 10.1.1.8 cannot be WMId
+IPAddress 10.1.1.11 is Machine VEXECERA has Serial VMware-42 2c 42 06 29 43 dc 99-46 89 90 c8 1b a8 a2 4d
+IPAddress 10.1.1.14 is Machine BNE-DOCUSMART has Serial VMware-42 2c 67 4b 3e 62 64 f7-57 de 49 91 09 e1 cd a2
+IPAddress 10.1.1.18 is Machine EMP-GK1 has Serial VMware-42 06 42 3b 18 87 0a 68-77 04 e9 ff d5 9e 78 dc
+IPAddress 10.1.1.19 is Machine QLD-OIT has Serial VMware-42 06 b7 75 08 81 d7 6f-9c a6 e1 0a 9d 72 ff 1d
+IPAddress 10.1.1.23 is Machine BNE-PP has Serial VMware-42 2c c8 38 a5 99 56 fb-6a 25 b2 9d 21 04 53 5a
+IPAddress 10.1.1.26 is Machine BNE-RDP has Serial VMware-42 06 a3 65 ab 7c fc ef-46 62 b7 8b 3e b6 bd 2b
+IPAddress 10.1.1.29 is Machine BNE-LANDESK has Serial VMware-56 4d 45 23 ba 36 10 30-dd 42 e1 f6 98 43 2b 80
+IPAddress 10.1.1.31 is Machine BNE-EPO has Serial VMware-42 2c d8 a6 b8 86 66 a6-18 6a 51 97 41 47 1e 2a
+IPAddress 10.1.1.32 cannot be WMId
+IPAddress 10.1.1.80 cannot be WMId
+IPAddress 10.1.1.92 is Machine BNE-ISSADM has Serial VMware-42 2c e5 dd 0d bf 9d 05-e0 de 57 7d 83 b0 f1 be
+IPAddress 10.1.1.93 is Machine BNE-APPS has Serial VMware-42 2c c3 87 01 61 01 41-a4 c2 96 bd 72 04 4a 43
+IPAddress 10.1.1.98 is Machine BNE-SD has Serial VMware-42 2c 81 7a 96 c0 07 9d-4c ea a9 0a 07 dc 27 f4
+IPAddress 10.1.1.100 is Machine BNE-VC2 has Serial VMware-56 4d c3 9a 8c 9f cf a1-b0 84 de 6f 3e b0 aa 48
+IPAddress 10.1.1.113 cannot be WMId
+IPAddress 10.1.2.89 cannot be WMId
+IPAddress 10.1.3.89 cannot be WMId
+IPAddress 10.34.0.199 is Machine GAB-CCTV has Serial VMware-42 06 62 d4 a0 7a 08 12-4f 67 1b fc d6 d8 14 9f
+IPAddress 10.34.1.1 is Machine GABBAFS has Serial VMware-42 06 b5 5b 72 6c bd 5f-58 8e f5 52 fc ce 74 2c
+IPAddress 10.34.1.24 is Machine BNE-BROOKTROUT has Serial                
+IPAddress 10.34.2.20 is Machine SSFSVCL has Serial 1108-B101026/005
+IPAddress 10.34.2.32 is Machine SSFSVC120434 has Serial 1209-B103765/004
+IPAddress 10.34.2.33 is Machine SSFSVC1 has Serial 8B114379H
+IPAddress 10.34.2.36 is Machine SSFSVC120417 has Serial 1209-B103652/007
+IPAddress 10.34.2.47 is Machine SSFSVC130220 has Serial 1305-B104859/011
+IPAddress 10.34.2.49 is Machine SSFSVC9 has Serial 1110-B101434/007
+IPAddress 10.34.2.51 is Machine SSFSVC130270 has Serial 1306-B105006/013
+IPAddress 10.34.2.52 is Machine SSFSVCA has Serial 1011-B098598/002
+IPAddress 10.34.2.56 is Machine SSFWSHOP110004 has Serial 1012-B098844/001
+IPAddress 10.34.2.93 cannot be WMId
+IPAddress 10.34.2.154 cannot be WMId
+IPAddress 10.34.2.163 cannot be WMId
+IPAddress 10.34.2.165 cannot be WMId
+IPAddress 10.34.2.166 cannot be WMId
+IPAddress 10.34.4.1 is Machine SSTFS has Serial VMware-42 06 b4 c2 db 72 f4 11-0b 92 ce 91 13 28 9c 38
+IPAddress 10.34.4.10 is Machine SSTFIN has Serial 1105-B100193/008
+IPAddress 10.34.4.14 is Machine SSTSVC120616 has Serial 1211-B104000/006
+IPAddress 10.34.4.15 is Machine SSTSVC2 has Serial 1101-B099091/006
+IPAddress 10.34.4.16 is Machine SSTFLT0X has Serial 0803-B089340/003
+IPAddress 10.34.4.17 is Machine SSTADM6 has Serial 1204-B102769/001
+IPAddress 10.34.4.18 is Machine SSTSVCD has Serial 1012-B098851/008
+IPAddress 10.34.4.20 is Machine SSTSRCPT has Serial 1103-B099648/007
+IPAddress 10.34.4.21 is Machine SSTSTK2 has Serial 1008-B097858/009
+IPAddress 10.34.4.27 is Machine SSTADM8 has Serial 7B156852H
+IPAddress 10.34.4.31 is Machine SSTSVC4X has Serial 1201-B102091/010
+IPAddress 10.34.4.34 is Machine SSTSHOH has Serial 6A063037H
+IPAddress 10.34.4.37 is Machine SSTSVC8 has Serial 1101-B099091/013
+IPAddress 10.34.4.38 is Machine SSTSVC9 has Serial 1005-B096848/004
+IPAddress 10.34.4.44 is Machine SSTFLT130254 has Serial 1306-B105085/001
+IPAddress 10.34.4.47 is Machine SSTSVCB has Serial 1012-B098957/008
+IPAddress 10.34.4.49 is Machine SSTSVCF has Serial 1102-B099307/014
+IPAddress 10.34.4.50 is Machine SSTSVCG has Serial 1111-B101786/007
+IPAddress 10.34.4.56 is Machine SMTSHO5 has Serial 1011-B098499/005
+IPAddress 10.34.4.58 cannot be WMId
+IPAddress 10.34.4.64 is Machine SSTFLT2 has Serial 1104-B099962/005
+IPAddress 10.34.4.69 is Machine SSTBMGR1 has Serial 1111-B101786/017
+IPAddress 10.34.4.70 is Machine SSTSHO130054 has Serial 1302-B104421/008
+IPAddress 10.34.4.75 is Machine SSTADM1 has Serial 0803-B089228/004
+IPAddress 10.34.4.76 is Machine SSTADM4 has Serial 6B113148H
+IPAddress 10.34.4.78 is Machine SSTADM3 has Serial 1201-B102091/012
+IPAddress 10.34.4.82 is Machine SSTFLT5 has Serial 1201-B102091/002
+IPAddress 10.34.4.84 is Machine SSTUSD130086 has Serial 1302-B104484/011
+IPAddress 10.34.4.86 is Machine SSTPTS8 has Serial 1009-B098034/004
+IPAddress 10.34.4.88 is Machine SSTSHOK has Serial 3B154743H
+IPAddress 10.34.4.89 is Machine SSTSHOL has Serial 3B154729H
+IPAddress 10.34.4.91 is Machine SSTPTS5 has Serial 0911-B095289/008
+IPAddress 10.34.4.92 is Machine SSTPTS3 has Serial 1103-B099620/003
+IPAddress 10.34.4.93 is Machine SSTPTSA has Serial 1104-B099962/007
+IPAddress 10.34.4.96 is Machine SSTPTS has Serial 1007-B097468/009
+IPAddress 10.34.4.98 is Machine SSTPTS7 has Serial 1107-B100809/011
+IPAddress 10.34.4.99 is Machine SSTPTSF has Serial 1109-B101299/013
+IPAddress 10.34.4.100 is Machine SSTPTSG has Serial 1109-B101299/014
+IPAddress 10.34.4.102 is Machine SSTSTK1 has Serial 1105-B100193/002
+IPAddress 10.34.4.119 is Machine SSTRCPT has Serial 1108-B101026/004
+IPAddress 10.34.4.147 is Machine SSTUMGR2 has Serial                                  
+IPAddress 10.34.4.150 cannot be WMId
+IPAddress 10.34.4.152 cannot be WMId
+IPAddress 10.34.4.155 cannot be WMId
+IPAddress 10.34.4.157 cannot be WMId
+IPAddress 10.34.4.159 cannot be WMId
+IPAddress 10.34.4.160 cannot be WMId
+IPAddress 10.34.4.165 cannot be WMId
+IPAddress 10.34.4.166 cannot be WMId
+IPAddress 10.34.4.167 cannot be WMId
+IPAddress 10.34.4.168 cannot be WMId
+IPAddress 10.34.4.170 cannot be WMId
+IPAddress 10.34.4.175 cannot be WMId
+IPAddress 10.34.4.176 cannot be WMId
+IPAddress 10.34.4.177 cannot be WMId
+IPAddress 10.34.4.178 cannot be WMId
+IPAddress 10.34.4.179 cannot be WMId
+IPAddress 10.34.4.185 cannot be WMId
+IPAddress 10.34.4.188 cannot be WMId
+IPAddress 10.34.4.194 cannot be WMId
+IPAddress 10.34.7.1 is Machine SSHCCC130203 has Serial GXXXX246XXXXX
+IPAddress 10.34.9.10 is Machine AUWSHOF has Serial 1110-B101434/003
+IPAddress 10.34.9.20 is Machine AUWGAB130150 has Serial 1304-B104657/001
+IPAddress 10.34.9.150 cannot be WMId
+IPAddress 10.34.99.14 is Machine ZOO-BDC4 has Serial   
+IPAddress 10.34.99.15 is Machine ZOO-MGR1 has Serial 1111-B101786/015
+IPAddress 10.34.99.18 is Machine ZOOBDC130252 has Serial GXXXX246XXXXX
+IPAddress 10.34.99.21 is Machine ZOO-BDC0 has Serial GXXXX217XXXXX
+IPAddress 10.34.99.22 is Machine ZOO-BDC7 has Serial To be filled by O.E.M.
+IPAddress 10.34.99.150 cannot be WMId
+IPAddress 10.34.99.160 cannot be WMId
+IPAddress 10.34.254.1 is Machine SSTFIN130121 has Serial YC101566H
+IPAddress 10.34.254.4 is Machine SSTSVC6X has Serial 5A112257H
+IPAddress 10.34.254.8 cannot be WMId
+IPAddress 10.34.254.9 is Machine SSTGMGR has Serial 7B120606H
+IPAddress 10.34.254.15 cannot be WMId
+IPAddress 10.34.254.16 is Machine SSTADM8 has Serial 7B156852H
+IPAddress 10.34.254.17 cannot be WMId
+IPAddress 10.34.254.24 is Machine SSFIDSB has Serial 5A111727H
+IPAddress 10.34.254.25 is Machine SSFPTS130326 has Serial B105259/004
+IPAddress 10.34.254.27 is Machine SSFMGR has Serial 7B154945H
+IPAddress 10.34.254.28 is Machine SSTSVC110135 has Serial 1102-B099307/017
+IPAddress 10.34.254.31 is Machine ZOO-BDC6 has Serial To be filled by O.E.M.
+IPAddress 10.34.254.35 is Machine SSTSVCI has Serial 1111-B101786/005
+IPAddress 10.34.254.36 is Machine SSTUSD5 has Serial 7B120603H
+IPAddress 10.34.254.39 is Machine SSFMGR has Serial 7B154945H
+IPAddress 10.34.254.43 is Machine SSFSVC130181 has Serial XC136811H
+IPAddress 10.34.254.44 is Machine SSTFIN130243 has Serial 5D086391H
+IPAddress 10.34.254.45 is Machine SSTSVC110070 has Serial 1101-B099091/017
+IPAddress 10.34.254.49 cannot be WMId
+IPAddress 10.34.254.59 is Machine SSTSVCA has Serial 1110-B101434/018
+IPAddress 10.34.254.62 is Machine SSTUSD3 has Serial 8B121088H
+IPAddress 10.34.254.63 is Machine SSTSHO8 has Serial 3B154759H
+IPAddress 10.34.254.74 is Machine SSTSHOG has Serial 8A063039H
+IPAddress 10.24.1.12 is Machine GRWSHO3 has Serial G100911300405
+IPAddress 10.24.1.13 is Machine GRWSHO1 has Serial G100911300407
+IPAddress 10.24.1.54 is Machine GRWSHO8 has Serial G100911300408
+IPAddress 10.24.1.150 cannot be WMId
+IPAddress 10.7.6.10 is Machine EKESVC1 has Serial                                  
+IPAddress 10.7.6.12 is Machine EKESVC3 has Serial                                  
+IPAddress 10.7.6.13 is Machine EKESVC4 has Serial                                  
+IPAddress 10.7.6.16 is Machine EKEPTS1 has Serial                                  
+IPAddress 10.7.6.17 is Machine EKESVC9 has Serial                                  
+IPAddress 10.7.6.150 cannot be WMId
+IPAddress 10.7.6.151 cannot be WMId
+IPAddress 10.33.1.111 cannot be WMId
+IPAddress 10.33.1.112 is Machine PTC001 has Serial 1104-B099962/002
+IPAddress 10.33.1.115 is Machine ZOOS130155 has Serial 1304-B104657/006
+IPAddress 10.33.1.150 cannot be WMId
+IPAddress 10.33.4.250 is Machine SST-SVR1 has Serial To Be Filled By O.E.M.
+IPAddress 10.11.1.1 is Machine JSV-FS has Serial                                  
+IPAddress 10.11.7.10 is Machine ICBSHO2 has Serial 8B114367H
+IPAddress 10.11.7.14 cannot be WMId
+IPAddress 10.11.7.18 cannot be WMId
+IPAddress 10.11.7.150 cannot be WMId
+IPAddress 10.11.7.151 cannot be WMId
+IPAddress 10.11.7.152 cannot be WMId
+IPAddress 10.11.7.154 cannot be WMId
+IPAddress 10.11.254.1 cannot be WMId
+IPAddress 10.11.254.2 cannot be WMId
+IPAddress 10.14.6.1 is Machine EKEFS has Serial                                
+IPAddress 10.14.6.2 is Machine EKESHO4 has Serial 1012-B098844/008
+IPAddress 10.14.6.9 is Machine EKESHOK has Serial                                  
+IPAddress 10.14.6.14 is Machine EKESHO9 has Serial 5A112196H
+IPAddress 10.14.6.19 cannot be WMId
+IPAddress 10.14.6.33 is Machine EKESHON has Serial 1201-B102091/003
+IPAddress 10.14.6.36 is Machine EKESHOG has Serial 7A063717H
+IPAddress 10.14.6.70 is Machine EKESHO120353 has Serial 7B154918H
+IPAddress 10.14.6.72 is Machine EKEFIN3 has Serial 4A133465H
+IPAddress 10.14.6.74 is Machine EKESHO130114 has Serial YC099282H
+IPAddress 10.14.6.104 is Machine EKKSHO110380 has Serial 6B109900H
+IPAddress 10.14.6.153 cannot be WMId
+IPAddress 10.14.6.160 cannot be WMId
+IPAddress 10.38.2.1 is Machine APWSVR has Serial To Be Filled By O.E.M.
+IPAddress 10.38.2.51 is Machine APWSHO2 has Serial 6A063036H
+IPAddress 10.38.2.150 cannot be WMId
+IPAddress 10.15.10.23 is Machine AUMADM6 has Serial 1204-B102769/008
+IPAddress 10.15.10.40 cannot be WMId
+IPAddress 10.15.10.56 is Machine AUMADM130245 has Serial 6D048605H
+IPAddress 10.15.10.150 cannot be WMId
+IPAddress 10.15.100.151 cannot be WMId
+IPAddress 10.5.4.1 is Machine MTGFS has Serial                                  
+IPAddress 10.5.4.2 is Machine SMTSHO1 has Serial 1203-B102542/001
+IPAddress 10.5.4.3 is Machine SMTRCPT has Serial 1101-B099091/001
+IPAddress 10.5.4.10 is Machine SMTPD1 has Serial 1204-B102769/011
+IPAddress 10.5.4.15 is Machine SMTUSD1 has Serial 1201-B102091/005
+IPAddress 10.5.4.26 is Machine SMTFIN has Serial 1011-B098499/010
+IPAddress 10.5.4.27 is Machine SMTFIN2 has Serial                                  
+IPAddress 10.5.4.31 is Machine SMTSVC120420 has Serial 1209-B103652/010
+IPAddress 10.5.4.32 is Machine SMTSVC120211 has Serial 1205-B102945/012
+IPAddress 10.5.4.34 is Machine SMTSVC120413 has Serial 1209-B103652/003
+IPAddress 10.5.4.40 is Machine SMTPTS1 has Serial                                  
+IPAddress 10.5.4.42 is Machine SMTPTS3 has Serial 1107-B100809/015
+IPAddress 10.5.4.43 is Machine SMTPD6X has Serial 1109-B101299/017
+IPAddress 10.5.4.51 is Machine SMTSHOE has Serial 3B154732H
+IPAddress 10.5.4.53 is Machine SMTUSD3 has Serial 6B109904H
+IPAddress 10.5.4.55 is Machine SMTPD2 has Serial 1204-B102769/007
+IPAddress 10.5.4.57 is Machine SMTPD130163 has Serial 1304-B104657/014
+IPAddress 10.5.4.61 is Machine SMTSVC7 has Serial                                  
+IPAddress 10.5.4.76 is Machine SMTSHOH has Serial 7A064996H
+IPAddress 10.5.4.94 cannot be WMId
+IPAddress 10.5.4.151 cannot be WMId
+IPAddress 10.5.4.153 cannot be WMId
+IPAddress 10.5.4.154 cannot be WMId
+IPAddress 10.5.4.155 cannot be WMId
+IPAddress 10.5.4.159 cannot be WMId
+IPAddress 10.5.4.165 cannot be WMId
+IPAddress 10.5.4.180 cannot be WMId
+IPAddress 10.5.254.14 is Machine SMTSHO120282 has Serial 4C056605H
+IPAddress 10.5.254.16 is Machine SMTSHOZ has Serial 5B090643H
+IPAddress 10.5.254.23 is Machine SMTSVC1 has Serial 1204-B102769/003
+IPAddress 10.5.254.27 is Machine SMTSVCD has Serial 1103-B099648/008
+IPAddress 10.25.1.1 is Machine NLFS has Serial VMware-42 2c 1e 9f be df b8 9f-0d cd 7f a9 07 96 8d 36
+IPAddress 10.25.1.157 cannot be WMId
+IPAddress 10.25.2.1 is Machine TFRFS has Serial VMware-42 2c e0 73 27 46 b0 d0-26 3e f2 f7 b3 e5 41 15
+IPAddress 10.25.2.10 is Machine TFNFIN2 has Serial 1101-B099091/016
+IPAddress 10.25.2.11 is Machine TFNSHOG has Serial 1012-B098844/009
+IPAddress 10.25.2.18 is Machine TFNWSP1 has Serial 7A064991H
+IPAddress 10.25.2.26 is Machine TFNSHOF has Serial 8A062833H
+IPAddress 10.25.2.43 is Machine TFNSVCA has Serial 8A063027H
+IPAddress 10.25.2.45 is Machine TFNSVC5 has Serial                                  
+IPAddress 10.25.2.52 is Machine TFNTRN2 has Serial 1010-B098232/05
+IPAddress 10.25.2.53 cannot be WMId
+IPAddress 10.25.2.61 is Machine TFNPTS8 has Serial 1110-B101434/008
+IPAddress 10.25.2.62 is Machine TFNPTS7 has Serial 1107-B100809/013
+IPAddress 10.25.2.64 is Machine TFNSHOI has Serial 6B109933H
+IPAddress 10.25.2.66 is Machine TFNSVC130102 has Serial XC136578H
+IPAddress 10.25.2.68 cannot be WMId
+IPAddress 10.25.2.72 is Machine TFNSHO120657 has Serial 1212-B104104/002
+IPAddress 10.25.2.80 is Machine FCWSVC1 has Serial                                  
+IPAddress 10.25.2.87 is Machine TFNWSVC3 has Serial 1111-B101786/001
+IPAddress 10.25.2.88 is Machine TFNWSVC1 has Serial 1104-B099962/017
+IPAddress 10.25.2.110 cannot be WMId
+IPAddress 10.25.2.117 is Machine TCRA1 has Serial 1101-B099091/012
+IPAddress 10.25.2.151 cannot be WMId
+IPAddress 10.25.2.152 cannot be WMId
+IPAddress 10.25.2.154 cannot be WMId
+IPAddress 10.25.2.155 cannot be WMId
+IPAddress 10.25.2.156 cannot be WMId
+IPAddress 10.25.2.157 cannot be WMId
+IPAddress 10.25.2.158 cannot be WMId
+IPAddress 10.25.2.159 cannot be WMId
+IPAddress 10.25.4.1 is Machine TTRFS has Serial VMware-56 4d c6 a1 9f da f1 f8-22 65 3e ea cf 02 03 f9
+IPAddress 10.25.4.2 is Machine NLA-TUNE1 has Serial VMware-42 2c 4d ba 61 82 f0 5d-be 45 19 85 fe 44 9e 3d
+IPAddress 10.25.4.7 is Machine NLA-LPT1 has Serial VMware-42 2c 69 72 f5 60 87 d5-75 02 e9 4c 4b 33 21 08
+IPAddress 10.25.4.11 is Machine TTNADM3 has Serial                                  
+IPAddress 10.25.4.13 is Machine TTNPTSA has Serial                                  
+IPAddress 10.25.4.15 is Machine TTNFIN110211 has Serial 1103-B099648/012
+IPAddress 10.25.4.17 is Machine TCR07 has Serial 1111-B101786/012
+IPAddress 10.25.4.45 is Machine TTNSVCF has Serial                                  
+IPAddress 10.25.4.49 is Machine TTNSVCA has Serial 1012-B098844/003
+IPAddress 10.25.4.53 is Machine TTNSVC4 has Serial                                  
+IPAddress 10.25.4.54 is Machine TTNSVC5 has Serial                                  
+IPAddress 10.25.4.60 is Machine TTNPTS120246 has Serial 1206-B103127/005
+IPAddress 10.25.4.66 is Machine TTBSHOJ has Serial 7B122322H
+IPAddress 10.25.4.76 is Machine TTNPTSD has Serial 1107-B100809/012
+IPAddress 10.25.4.86 cannot be WMId
+IPAddress 10.25.4.89 is Machine TTNPTSE has Serial 1102-B099307/008
+IPAddress 10.25.4.99 is Machine TTNCZOOS1 has Serial g115021704070
+IPAddress 10.25.4.100 is Machine TTNSHOB has Serial 5A112244H
+IPAddress 10.25.4.112 is Machine TTNSVC120348 has Serial g122420600248
+IPAddress 10.25.4.150 cannot be WMId
+IPAddress 10.25.4.151 cannot be WMId
+IPAddress 10.25.4.152 cannot be WMId
+IPAddress 10.25.4.156 cannot be WMId
+IPAddress 10.25.4.157 cannot be WMId
+IPAddress 10.25.4.159 cannot be WMId
+IPAddress 10.25.4.161 cannot be WMId
+IPAddress 10.25.4.163 cannot be WMId
+IPAddress 10.25.4.165 cannot be WMId
+IPAddress 10.25.7.22 is Machine TFNSHOB has Serial 5A112192H
+IPAddress 10.25.7.27 is Machine THNFIN110035 has Serial 1012-B098957/005
+IPAddress 10.25.7.32 is Machine THNSVCD has Serial 5B090669H
+IPAddress 10.25.7.50 is Machine TTNSVCE has Serial 1109-B101299/001
+IPAddress 10.25.7.71 is Machine THNSHOD has Serial 7B156880H
+IPAddress 10.25.7.72 is Machine THNPTSA has Serial 1101-B099091/011
+IPAddress 10.25.7.81 is Machine THNSHOZ has Serial                                  
+IPAddress 10.25.7.83 is Machine THNSVCE has Serial 7B076659H
+IPAddress 10.25.7.88 is Machine THNCRM130256 has Serial 1306-B105085/003
+IPAddress 10.25.7.151 cannot be WMId
+IPAddress 10.25.7.152 cannot be WMId
+IPAddress 10.25.7.154 cannot be WMId
+IPAddress 10.25.7.155 cannot be WMId
+IPAddress 10.25.7.157 cannot be WMId
+IPAddress 10.25.254.12 is Machine TTNSVC20120274 has Serial g122320604455
+IPAddress 10.25.254.14 is Machine THNSVCA has Serial 7A065125H
+IPAddress 10.25.254.16 is Machine TTBSHOR has Serial 4A139779H
+IPAddress 10.25.254.22 is Machine TTNPTSC has Serial 1102-B099307/011
+IPAddress 10.25.254.25 is Machine TFSSHO130073 has Serial XC138409H
+IPAddress 10.25.254.27 is Machine THNSHO130112 has Serial YC099269H
+IPAddress 10.25.254.31 is Machine THTRN1 has Serial 1010-B098370/001
+IPAddress 10.25.254.35 is Machine TTNSHO130093 has Serial XC136810H
+IPAddress 10.25.254.37 is Machine THNSHOB has Serial 6A063050H
+IPAddress 10.25.254.40 is Machine TFNSHON has Serial 8B114351H
+IPAddress 10.25.254.41 is Machine THNSVCB has Serial 7A065130H
+IPAddress 10.25.254.43 is Machine TFNSVCD has Serial 1103-B099648/011
+IPAddress 10.25.254.45 is Machine TTNSHO130247 has Serial 5D086409H
+IPAddress 10.25.254.46 is Machine THNSHO130120 has Serial XC138369H
+IPAddress 10.25.254.47 is Machine TTBMKT1 has Serial 6A063072H
+IPAddress 10.25.254.49 is Machine APCORP11 has Serial 5A111728H
+IPAddress 10.25.254.50 is Machine TTBSHO120643 has Serial 7C027610H
+IPAddress 10.25.254.51 cannot be WMId
+IPAddress 10.25.254.54 is Machine TTNSHO110031 has Serial 1012-B098957/001
+IPAddress 10.25.254.55 cannot be WMId
+IPAddress 10.25.254.56 is Machine TFSPTS130026 has Serial XC138383H
+IPAddress 10.25.254.57 is Machine TFNSHO130068 has Serial XC138412H
+IPAddress 10.25.254.62 is Machine TTNSVC110034 has Serial 1012-B098957/004
+IPAddress 10.10.0.81 cannot be WMId
+IPAddress 10.10.0.99 is Machine NSD-BK1 has Serial To be filled by O.E.M.
+IPAddress 10.10.1.3 is Machine NSD-FS1 has Serial VMware-42 06 de 6c 41 15 f4 30-73 71 b3 1e 73 c9 e4 97
+IPAddress 10.10.1.4 is Machine NSD-ISSADM has Serial VMware-42 06 d2 a5 6c 2b 8a dd-b3 dc 7c 95 04 e6 18 b1
+IPAddress 10.10.1.6 is Machine NSD-DC2 has Serial VMware-42 06 cb 65 aa f0 d5 8a-9a 05 e4 bc be ba 91 6a
+IPAddress 10.10.1.8 cannot be WMId
+IPAddress 10.10.1.9 is Machine NSD-CSP has Serial VMware-42 06 da 74 78 8c 34 cf-0d ad 44 8e af 10 89 3b
+IPAddress 10.10.2.20 is Machine MFVADMX2 has Serial 1107-B100809/009
+IPAddress 10.10.2.22 is Machine MFVADM9 has Serial 1101-B099091/009
+IPAddress 10.10.2.24 is Machine MFNSHO4 has Serial 5A112194H
+IPAddress 10.10.2.26 is Machine MFVFIN1 has Serial 7A063763H
+IPAddress 10.10.2.42 is Machine MFVSHOC has Serial 1011-B098598/003
+IPAddress 10.10.2.46 is Machine MFNSHOK has Serial 1203-B102542/005
+IPAddress 10.10.2.47 is Machine MFVSHOM has Serial 1012-B098957/007
+IPAddress 10.10.2.55 is Machine MFNADM5 has Serial 1102-B099307/015
+IPAddress 10.10.2.68 is Machine MFNSHO1 has Serial 1A063690H
+IPAddress 10.10.2.69 is Machine MFVRCPT1 has Serial B097621/011
+IPAddress 10.10.2.72 is Machine MFVSVC2 has Serial B096091/001
+IPAddress 10.10.2.77 is Machine MFNSHO120664 has Serial 1212-B104104/009
+IPAddress 10.10.2.80 is Machine MFNSHO120243 has Serial 1206-B103127/002
+IPAddress 10.10.2.90 is Machine MFVPTS1 has Serial 1101-B099091/004
+IPAddress 10.10.2.95 is Machine MFNSVC130089 has Serial 1302-B104484/014
+IPAddress 10.10.2.98 is Machine MFNSVC7 has Serial B097386/007
+IPAddress 10.10.2.99 is Machine MFNIDS3 has Serial 5A112195H
+IPAddress 10.10.2.133 is Machine NSD-SUCCESS has Serial VMware-42 06 d2 a9 ad 6d a1 bf-c1 db 3e 24 83 d8 42 f3
+IPAddress 10.10.2.149 is Machine MFNSVC6 has Serial B096848/006
+IPAddress 10.10.2.151 cannot be WMId
+IPAddress 10.10.2.152 cannot be WMId
+IPAddress 10.10.2.153 cannot be WMId
+IPAddress 10.10.2.154 cannot be WMId
+IPAddress 10.10.2.155 cannot be WMId
+IPAddress 10.10.2.156 cannot be WMId
+IPAddress 10.10.2.159 cannot be WMId
+IPAddress 10.10.2.161 cannot be WMId
+IPAddress 10.10.3.1 is Machine NEWSTEADDC has Serial VMware-42 06 f3 3b 2e 88 7b 2d-53 fa 39 c5 38 b8 6f 31
+IPAddress 10.10.3.3 is Machine ENSPTS1 has Serial 1010-B098370/004
+IPAddress 10.10.3.15 is Machine ENSADMD has Serial                                 
+IPAddress 10.10.3.17 is Machine ENSPTS130087 has Serial 1302-B104484/012
+IPAddress 10.10.3.19 cannot be WMId
+IPAddress 10.10.3.21 is Machine ENSPTS130260 has Serial 1306-B105006/003
+IPAddress 10.10.3.22 is Machine ENSADM120440 has Serial 1209-B103765/010
+IPAddress 10.10.3.29 is Machine EMZREGO has Serial 1109-B101299/015
+IPAddress 10.10.3.33 is Machine ENSPTS120617 has Serial 1211-B104000/007
+IPAddress 10.10.3.34 is Machine ENSPTSBX has Serial 1012-B098957/006
+IPAddress 10.10.3.39 is Machine ENSPTS110490 has Serial 1109-B101299/016
+IPAddress 10.10.3.47 is Machine ENSPTSHX has Serial                                 
+IPAddress 10.10.3.48 is Machine ENSPTSI has Serial 1111-B101786/011
+IPAddress 10.10.3.53 is Machine ENSPTS130078 has Serial 1302-B104484/003
+IPAddress 10.10.3.54 is Machine ENSSVCA has Serial 1107-B100809/006
+IPAddress 10.10.3.55 is Machine ENSSVC6X has Serial 0801-B088339/001
+IPAddress 10.10.3.58 is Machine ENSADME has Serial                                 
+IPAddress 10.10.3.60 is Machine ENSPTST has Serial                                  
+IPAddress 10.10.3.62 is Machine ENSPTS8 has Serial 1110-B101434/005
+IPAddress 10.10.3.65 is Machine ENSSVCE has Serial                                  
+IPAddress 10.10.3.66 is Machine ENSADMH has Serial                                 
+IPAddress 10.10.3.75 is Machine ENSPTSV has Serial 1104-B099962/004
+IPAddress 10.10.3.76 is Machine ENSPTS120433 has Serial 1209-B103765/003
+IPAddress 10.10.3.77 is Machine ENSPTSJ has Serial 1205-B102945/006
+IPAddress 10.10.3.78 is Machine ENSPTS130152 has Serial 1304-B104657/003
+IPAddress 10.10.3.83 is Machine ENSPTSP has Serial 1107-B100809/010
+IPAddress 10.10.3.86 is Machine ENSSVCI has Serial 1109-B101299/008
+IPAddress 10.10.3.90 is Machine ENSPTS120432 has Serial 1209-B103765/002
+IPAddress 10.10.3.91 is Machine EMIADM120663 has Serial 1212-B104104/008
+IPAddress 10.10.3.92 is Machine ENSPTS130224 has Serial 1305-B104859/015
+IPAddress 10.10.3.95 is Machine ENSPTSA has Serial 1103-B099648/004
+IPAddress 10.10.3.96 is Machine ENSPTSM has Serial 1106-B100373/007
+IPAddress 10.10.3.97 is Machine ENSPTS120412 has Serial 1209-B103652/002
+IPAddress 10.10.3.149 cannot be WMId
+IPAddress 10.10.3.150 cannot be WMId
+IPAddress 10.10.3.152 cannot be WMId
+IPAddress 10.10.3.159 cannot be WMId
+IPAddress 10.10.3.162 cannot be WMId
+IPAddress 10.10.3.163 cannot be WMId
+IPAddress 10.10.3.167 cannot be WMId
+IPAddress 10.10.3.168 cannot be WMId
+IPAddress 10.10.3.170 cannot be WMId
+IPAddress 10.10.3.171 cannot be WMId
+IPAddress 10.10.3.174 cannot be WMId
+IPAddress 10.10.3.177 cannot be WMId
+IPAddress 10.10.3.185 cannot be WMId
+IPAddress 10.10.5.6 is Machine EMZSHO2 has Serial 1009-B098034/002
+IPAddress 10.10.5.7 cannot be WMId
+IPAddress 10.10.5.16 is Machine EMZSHO120601 has Serial 9C073740H
+IPAddress 10.10.5.17 is Machine EMZSVCA has Serial                                  
+IPAddress 10.10.5.40 is Machine EMZSVCB has Serial 1110-B101434/010
+IPAddress 10.10.5.45 is Machine EMZSVCC has Serial                                  
+IPAddress 10.10.5.95 is Machine EMZSVC3 has Serial 1110-B101434/012
+IPAddress 10.10.5.96 is Machine EMZRCPT has Serial                                  
+IPAddress 10.10.5.97 is Machine EMZMGR1 has Serial 1107-B100809/004
+IPAddress 10.10.5.98 is Machine EMZSVC1 has Serial                                  
+IPAddress 10.10.5.101 is Machine EMZSVC130226 has Serial 3BTSA57723
+IPAddress 10.10.5.150 cannot be WMId
+IPAddress 10.10.5.151 cannot be WMId
+IPAddress 10.10.5.152 cannot be WMId
+IPAddress 10.10.5.153 cannot be WMId
+IPAddress 10.10.5.156 cannot be WMId
+IPAddress 10.10.5.160 cannot be WMId
+IPAddress 10.10.5.169 cannot be WMId
+IPAddress 10.10.5.178 cannot be WMId
+IPAddress 10.10.7.9 is Machine AUHSHO7 has Serial 1206-B103127/003
+IPAddress 10.10.7.19 is Machine AUHPTS9 has Serial                                  
+IPAddress 10.10.7.20 is Machine AUHSVC1 has Serial 1102-B099307/018
+IPAddress 10.10.7.21 is Machine AUHSVC3 has Serial 1102-B099307/016
+IPAddress 10.10.7.23 is Machine AUHSVC5 has Serial 29025474H
+IPAddress 10.10.7.30 is Machine AUHSHO130081 has Serial 1302-B104484/006
+IPAddress 10.10.7.32 is Machine AUHSHOA has Serial 7A062796H
+IPAddress 10.10.7.41 is Machine AUHPTSC has Serial 1205-B102945/009
+IPAddress 10.10.7.43 is Machine AUHSHOL has Serial 1101-B099091/018
+IPAddress 10.10.7.44 is Machine AUHWSHOP1 has Serial 1205-B102945/003
+IPAddress 10.10.7.45 is Machine AUHSHOJ has Serial 1102-B099307/004
+IPAddress 10.10.7.50 is Machine AUHRCPT1 has Serial 1012-B098844/002
+IPAddress 10.10.7.55 is Machine AUHSHOK has Serial 1102-B099307/002
+IPAddress 10.10.7.71 is Machine AUHPTS130151 has Serial 1304-B104657/002
+IPAddress 10.10.7.72 is Machine AUHSVC120659 has Serial 1212-B104104/004
+IPAddress 10.10.7.73 is Machine AUHPTS120175 has Serial 1204-B102769/002
+IPAddress 10.10.7.75 is Machine AUHFIN1 has Serial 1102-B099307/013
+IPAddress 10.10.7.87 is Machine AUHPTS120436 has Serial 1209-B103765/006
+IPAddress 10.10.7.112 is Machine AUHSVCA has Serial 1107-B100809/003
+IPAddress 10.10.7.150 cannot be WMId
+IPAddress 10.10.7.151 cannot be WMId
+IPAddress 10.10.7.152 cannot be WMId
+IPAddress 10.10.7.154 cannot be WMId
+IPAddress 10.10.7.155 cannot be WMId
+IPAddress 10.10.7.157 cannot be WMId
+IPAddress 10.10.7.159 cannot be WMId
+IPAddress 10.10.7.162 cannot be WMId
+IPAddress 10.10.7.164 cannot be WMId
+IPAddress 10.10.9.7 is Machine AUWSHO2 has Serial 1101-B099091/008
+IPAddress 10.10.9.11 is Machine AUWSVC2 has Serial 1201-B102091/007
+IPAddress 10.10.9.28 cannot be WMId
+IPAddress 10.10.9.32 is Machine AUWSVC3 has Serial B096287/002
+IPAddress 10.10.9.35 is Machine AUWSVC7 has Serial                                  
+IPAddress 10.10.9.36 is Machine AUWSVC8 has Serial B094507/003
+IPAddress 10.10.9.43 is Machine AUWPTS1 has Serial 1205-B102945/013
+IPAddress 10.10.9.50 is Machine AUWSVCF has Serial 1203-B102542/002
+IPAddress 10.10.9.51 is Machine AUWRCPT has Serial B095941/007
+IPAddress 10.10.9.52 is Machine AUWREGO has Serial 1107-B100809/002
+IPAddress 10.10.9.54 is Machine AUWSVCN has Serial 1103-B099648/017
+IPAddress 10.10.9.56 is Machine AUWSHO120656 has Serial 1212-B104104/001
+IPAddress 10.10.9.59 is Machine AUWSVC20130079 has Serial 1302-B104484/004
+IPAddress 10.10.9.64 is Machine AUWSVCJ has Serial                                  
+IPAddress 10.10.9.66 is Machine AUWSVCR has Serial B097621/010
+IPAddress 10.10.9.69 is Machine AUWSVCL has Serial 1103-B099648/015
+IPAddress 10.10.9.72 is Machine AUWADM120620 has Serial 1211-B104000/010
+IPAddress 10.10.9.73 is Machine AUWSVC120660 has Serial 1212-B104104/005
+IPAddress 10.10.9.74 is Machine AUWSVC110010 has Serial 1012-B098844/007
+IPAddress 10.10.9.75 is Machine AUWSVCM has Serial 1103-B099648/013
+IPAddress 10.10.9.87 is Machine AUMADM1 has Serial                                  
+IPAddress 10.10.9.150 cannot be WMId
+IPAddress 10.10.9.151 cannot be WMId
+IPAddress 10.10.9.152 cannot be WMId
+IPAddress 10.10.9.153 cannot be WMId
+IPAddress 10.10.9.154 cannot be WMId
+IPAddress 10.10.9.155 cannot be WMId
+IPAddress 10.10.9.157 cannot be WMId
+IPAddress 10.10.9.160 cannot be WMId
+IPAddress 10.10.9.161 cannot be WMId
+IPAddress 10.10.9.170 cannot be WMId
+IPAddress 10.10.9.171 cannot be WMId
+IPAddress 10.10.9.177 cannot be WMId
+IPAddress 10.10.12.18 is Machine EMZWSHOP1 has Serial To Be Filled By O.E.M.
+IPAddress 10.10.15.1 is Machine NSD-ASA has Serial VMware-42 06 34 b0 3a 1e b5 74-1a 71 c3 ec 81 8d 9c 4d
+IPAddress 10.10.15.11 is Machine EMISHO1 has Serial 1011-B098499/009
+IPAddress 10.10.15.12 is Machine EMISHO2 has Serial 1110-B101434/013
+IPAddress 10.10.15.13 is Machine EMISHO8 has Serial 1103-B099648/006
+IPAddress 10.10.15.19 is Machine EMISHO9 has Serial 1101-B099091/003
+IPAddress 10.10.15.20 is Machine EMISHOA has Serial                                  
+IPAddress 10.10.15.24 is Machine EMISHO130099 has Serial XC138414H
+IPAddress 10.10.15.41 is Machine EMISVC8 has Serial                                  
+IPAddress 10.10.15.43 is Machine ENSPTS120431 has Serial 1209-B103765/001
+IPAddress 10.10.15.44 is Machine EMISVCA has Serial                                  
+IPAddress 10.10.15.47 is Machine EMISVC7 has Serial                                  
+IPAddress 10.10.15.72 is Machine ENSPTSS has Serial 1205-B102945/004
+IPAddress 10.10.15.150 cannot be WMId
+IPAddress 10.10.15.151 cannot be WMId
+IPAddress 10.10.15.154 cannot be WMId
+IPAddress 10.10.15.156 cannot be WMId
+IPAddress 10.10.15.167 cannot be WMId
+IPAddress 10.10.16.19 is Machine SUCRCPT has Serial 1105-B100193/001
+IPAddress 10.10.16.56 is Machine SUCSVC6X has Serial B101026/007
+IPAddress 10.10.16.58 is Machine SUCSVC8 has Serial 1103-B099648/016
+IPAddress 10.10.16.66 is Machine SUCSVC130084 has Serial 1302-B104484/009
+IPAddress 10.10.16.70 is Machine SUCPTS1X has Serial                                 
+IPAddress 10.10.16.76 is Machine CAGADM5 has Serial 1104-B099962/008
+IPAddress 10.10.16.80 cannot be WMId
+IPAddress 10.10.16.151 cannot be WMId
+IPAddress 10.10.16.155 cannot be WMId
+IPAddress 10.10.16.156 cannot be WMId
+IPAddress 10.10.16.160 cannot be WMId
+IPAddress 10.10.16.161 cannot be WMId
+IPAddress 10.10.16.166 cannot be WMId
+IPAddress 10.10.253.3 cannot be WMId
+IPAddress 10.10.253.4 is Machine EMZSHO5 has Serial 79043411H
+IPAddress 10.10.253.5 is Machine EMZSHOJ has Serial 6A063069H
+IPAddress 10.10.253.7 is Machine AUWWTY110441 has Serial B101026/011
+IPAddress 10.10.253.9 cannot be WMId
+IPAddress 10.10.253.13 cannot be WMId
+IPAddress 10.10.253.17 is Machine ENSSVCP has Serial 1002-B096091/007
+IPAddress 10.10.253.18 is Machine SUCADM1 has Serial 1A060184H
+IPAddress 10.10.253.19 is Machine AUWSHO3 has Serial 3B154740H
+IPAddress 10.10.253.20 is Machine EMZPTS120418 has Serial 1209-B103652/008
+IPAddress 10.10.253.21 is Machine SUCSVC110390 has Serial 1107-B100809/005
+IPAddress 10.10.253.22 is Machine AUWSHOU has Serial 3B154786H
+IPAddress 10.10.253.23 is Machine EMZSHO130310 has Serial 5D135520H
+IPAddress 10.10.253.24 cannot be WMId
+IPAddress 10.10.253.25 is Machine AUWSHOS has Serial 8B121068H
+IPAddress 10.10.253.26 is Machine TFSADM130066 has Serial XC137564H
+IPAddress 10.10.253.27 is Machine EMZFIN20130071 has Serial XC138415H
+IPAddress 10.10.253.28 cannot be WMId
+IPAddress 10.10.253.29 is Machine EMISHO120602 has Serial 9C099832H
+IPAddress 10.10.253.30 is Machine AUWSHO130100 has Serial XC136812H
+IPAddress 10.10.253.31 is Machine ENSADMF has Serial                                  
+IPAddress 10.10.253.32 is Machine FINSPR has Serial 4C056876H
+IPAddress 10.10.253.33 is Machine AUWSHO120647 has Serial 7C032877H
+IPAddress 10.10.253.34 is Machine AUMADM8 has Serial 4C056597H
+IPAddress 10.10.253.37 is Machine EWNADM7 has Serial 8B115726H
+IPAddress 10.10.253.38 is Machine MFNSVCA has Serial 7B129100H
+IPAddress 10.10.253.39 is Machine AUHPTS130153 has Serial 1304-B104657/004
+IPAddress 10.10.253.41 is Machine EMZSHOK has Serial 6A063044H
+IPAddress 10.10.253.42 is Machine AUHSHO130250 has Serial 5D086401H
+IPAddress 10.10.253.43 is Machine SUTSHOE has Serial 7A063719H
+IPAddress 10.10.253.48 is Machine MFNIDS4 has Serial 5A112191H
+IPAddress 10.10.253.52 cannot be WMId
+IPAddress 10.10.253.55 is Machine MFNSHO2 has Serial 2A135342H
+IPAddress 10.10.253.57 is Machine EWNADM120461 has Serial 7B154947H
+IPAddress 10.10.253.62 is Machine EMZSHO11 has Serial 1A108517H
+IPAddress 10.10.253.65 is Machine AUWSHOQ has Serial 7A063776H
+IPAddress 10.10.253.69 is Machine SUCSHO8 has Serial 7A062426H
+IPAddress 10.10.254.17 cannot be WMId
+IPAddress 10.10.254.28 is Machine TSBSHOA has Serial 7A063135H
+IPAddress 10.10.254.39 is Machine SUTSHOE has Serial 7A063719H
+IPAddress 10.10.254.45 cannot be WMId
+IPAddress 10.10.254.52 is Machine ENSPTSL has Serial 5A112186H
+IPAddress 10.10.254.56 cannot be WMId
+IPAddress 10.10.254.58 is Machine MFNSHOJ has Serial 1101-B099091/007
+IPAddress 10.10.254.60 cannot be WMId
+IPAddress 10.10.254.65 cannot be WMId
+IPAddress 10.10.254.73 cannot be WMId
+IPAddress 10.10.254.74 is Machine ENSPTS120172 has Serial 7B156863H
+IPAddress 10.10.254.78 cannot be WMId
+IPAddress 10.10.254.81 cannot be WMId
+IPAddress 10.10.254.82 is Machine AUHSHOO has Serial 1102-B099307/002
+IPAddress 10.10.254.87 is Machine MFNSVCB has Serial 7B102415H
+IPAddress 10.10.254.90 cannot be WMId
+IPAddress 10.10.254.91 is Machine EMISVCB has Serial                                  
+IPAddress 10.10.254.97 cannot be WMId
+IPAddress 10.10.254.98 is Machine SUTSHOC has Serial 7A064372H
+IPAddress 10.10.254.103 cannot be WMId
+IPAddress 10.10.254.109 is Machine AUMADM8 has Serial 4C056597H
+IPAddress 10.10.254.119 is Machine AUWSHOT has Serial 5A111931H
+IPAddress 10.10.254.125 cannot be WMId
+IPAddress 10.10.254.128 is Machine AUHSHOM has Serial 1102-B099307/005
+IPAddress 10.10.254.136 cannot be WMId
+IPAddress 10.10.254.151 cannot be WMId
+IPAddress 10.10.254.153 cannot be WMId
+IPAddress 10.10.254.156 is Machine MFNGMGR has Serial 4C056555H
+IPAddress 10.10.254.158 is Machine EWNADM120461 has Serial 7B154947H
+IPAddress 10.10.254.162 cannot be WMId
+IPAddress 10.10.254.175 cannot be WMId
+IPAddress 10.51.1.1 is Machine BTPFS has Serial                                  
+IPAddress 10.51.1.101 cannot be WMId
+IPAddress 10.51.253.20 is Machine BTPSHO120487 has Serial 7B153353H
+IPAddress 10.51.253.21 is Machine BTPSALES130125 has Serial YC101554H
+IPAddress 10.51.253.23 is Machine BTPMGR120485 has Serial 7B153357H
+IPAddress 10.51.253.24 is Machine BTPMGR120485 has Serial 7B153357H
+IPAddress 10.51.253.25 is Machine BTPPTS120640 has Serial 1212-B104107/005
+IPAddress 10.51.253.26 cannot be WMId
+IPAddress 10.51.253.27 is Machine BTPSHO120639 has Serial 1212-B104107/004
+IPAddress 10.51.253.28 cannot be WMId
+IPAddress 10.51.253.31 is Machine BTPPARTS130343 has Serial 1308-B105309/002
+IPAddress 10.32.1.1 is Machine PNK-FS has Serial VMware-42 06 ae ea d8 77 44 df-d4 d6 45 90 d4 1a 98 05
+IPAddress 10.32.1.2 is Machine AP-AUDIT has Serial VMware-42 06 07 cb d3 b5 b7 0d-d9 61 dd 96 60 a4 80 14
+IPAddress 10.32.1.10 is Machine EPDSVC2X has Serial                                 
+IPAddress 10.32.1.16 is Machine EPDSVC120296 has Serial 1207-B103298/006
+IPAddress 10.32.1.78 is Machine EPDSVCD has Serial                                  
+IPAddress 10.32.1.91 is Machine PNK-ISSADM has Serial VMware-42 06 c8 50 04 68 c9 d9-ec b2 57 05 8e 84 12 dc
+IPAddress 10.32.1.100 is Machine APCORPITQ has Serial 1001-B095700/001
+IPAddress 10.32.1.111 is Machine APCORPITK has Serial 7B120657H
+IPAddress 10.32.1.125 is Machine APCORPIT130020 has Serial 7C032838H
+IPAddress 10.32.1.149 is Machine APCORPITT has Serial 1109-B101299/012
+IPAddress 10.32.1.151 cannot be WMId
+IPAddress 10.32.1.155 cannot be WMId
+IPAddress 10.32.1.165 cannot be WMId
+IPAddress 10.32.1.168 cannot be WMId
+IPAddress 10.32.1.171 cannot be WMId
+IPAddress 10.32.1.201 is Machine AUPSVCA has Serial To be filled by O.E.M.
+IPAddress 10.32.3.10 is Machine BMA20120612 has Serial 1211-B104000/002
+IPAddress 10.32.3.12 is Machine EPDSVC120611 has Serial 1211-B104000/001
+IPAddress 10.32.3.13 is Machine EPDSVC4 has Serial 1104-B099962/013
+IPAddress 10.32.9.150 cannot be WMId
+IPAddress 10.32.20.2 is Machine BMA-SQL has Serial VMware-42 06 24 7c 0a ca 5a 32-89 5c 27 72 08 ec 42 78
+IPAddress 10.32.20.3 is Machine BMA-WWW has Serial VMware-42 06 1e 85 fc 53 93 07-ce 29 09 25 10 8e 56 51
+IPAddress 10.32.20.50 is Machine BMA050 has Serial 1107-B100809/014
+IPAddress 10.32.20.51 is Machine BMA051 has Serial 1101-B099091/014
+IPAddress 10.32.20.53 is Machine BMA053 has Serial                                 
+IPAddress 10.32.20.54 is Machine BMA054 has Serial                                  
+IPAddress 10.32.20.55 is Machine BMA055 has Serial 1203-B102542/003
+IPAddress 10.32.20.57 is Machine APEBMA120200 has Serial 1205-B102945/001
+IPAddress 10.32.20.59 is Machine BMA044 has Serial 1010-B098370/009
+IPAddress 10.32.20.62 is Machine BMA062 has Serial                                  
+IPAddress 10.32.20.63 is Machine BMA063 has Serial 1204-B102769/014
+IPAddress 10.32.20.66 cannot be WMId
+IPAddress 10.32.20.68 is Machine BMA078 has Serial 1010-B098370/003
+IPAddress 10.32.20.69 is Machine BMA045 has Serial 1010-B098370/008
+IPAddress 10.32.20.73 cannot be WMId
+IPAddress 10.32.20.89 is Machine BMA043 has Serial                                  
+IPAddress 10.32.20.92 cannot be WMId
+IPAddress 10.32.20.142 is Machine BMA060 has Serial 1111-B101786/018
+IPAddress 10.32.20.165 cannot be WMId
+IPAddress 10.32.99.151 cannot be WMId
+IPAddress 10.32.99.152 cannot be WMId
+IPAddress 10.32.99.153 cannot be WMId
+IPAddress 10.32.99.160 cannot be WMId
+IPAddress 10.32.100.170 cannot be WMId
+IPAddress 10.32.254.5 is Machine APCORPIT130020 has Serial 7C032838H
+IPAddress 10.32.254.16 is Machine APCORPITSSD has Serial 7A065131H
+IPAddress 10.32.254.18 is Machine AP120358 has Serial 6C082328H
+IPAddress 10.32.254.25 is Machine BMA130269 has Serial 1306-B105006/012
+IPAddress 10.32.254.27 is Machine BMACZS120356 has Serial 4C056566H
+IPAddress 10.32.254.28 is Machine APCORPITSSD has Serial 7A065131H
+IPAddress 10.32.254.29 is Machine BMACZS120355 has Serial 7B153360H
+IPAddress 10.32.254.34 is Machine BMA070 has Serial 1110-B101434/001
+IPAddress 10.32.254.38 is Machine PNK-BK1 has Serial To be filled by O.E.M.
+IPAddress 10.32.254.42 is Machine BMA130027 has Serial XC138378H
+IPAddress 10.32.254.43 is Machine BMA048 has Serial 1101-B099091/015
+IPAddress 10.32.254.46 is Machine APCORPITW has Serial 7A065139H
+IPAddress 10.32.254.47 is Machine APCORPITW has Serial 7A065139H
+IPAddress 10.32.254.48 cannot be WMId
+IPAddress 10.32.254.51 is Machine AUPSVCA has Serial To be filled by O.E.M.
+IPAddress 10.32.254.58 is Machine EPDSVC120419 has Serial 1209-B103652/009
+IPAddress 10.32.254.59 is Machine BMA020 has Serial 1010-B098370/010
+IPAddress 10.32.254.65 is Machine APCORP130074 has Serial YC033406H
+IPAddress 10.32.254.66 cannot be WMId
+IPAddress 10.32.254.67 is Machine APCORPITCBW has Serial 1205-B102961/001
+IPAddress 10.32.254.68 is Machine EPDCCC120295 has Serial 1207-B103298/005
+IPAddress 10.32.254.71 is Machine APCORP130074 has Serial YC033406H
+IPAddress 10.32.254.72 is Machine IT-FS has Serial VMware-42 06 72 0b 38 f3 62 ad-3b 2e 27 3e 5e f9 02 d3
+IPAddress 10.32.254.74 is Machine EKE-FS has Serial                                  
+IPAddress 10.32.254.80 is Machine DARC has Serial 1011-B098598/005
+IPAddress 10.32.254.81 is Machine APCORP120460 has Serial 7B153345H
+IPAddress 10.32.254.88 is Machine BMAPHOTO has Serial                                  
+IPAddress 10.32.254.90 is Machine DOCUSMARTPC has Serial                                  
+IPAddress 10.32.254.117 is Machine APCORPIT130335 has Serial R9YYT1C
+IPAddress 10.32.254.159 cannot be WMId
+IPAddress 10.32.254.161 is Machine AUP-BK1 has Serial GXXXX206XXXXX
+IPAddress 10.32.254.200 cannot be WMId
+IPAddress 10.26.13.11 is Machine MRTPTS1 has Serial                                  
+IPAddress 10.26.13.16 is Machine MRTPTS4 has Serial 1102-B099338/002
+IPAddress 10.13.1.1 cannot be WMId
+IPAddress 10.13.3.5 is Machine ETOPTS9 has Serial 1106-B100373/009
+IPAddress 10.13.3.21 is Machine ETOPTS6 has Serial 1106-B100373/015
+IPAddress 10.13.3.23 is Machine ETOPTS2 has Serial 1106-B100373/014
+IPAddress 10.13.3.33 is Machine ETOPTS130091 has Serial 1302-B104484/016
+IPAddress 10.13.3.34 is Machine ETOPTS130090 has Serial 1302-B104484/015
+IPAddress 10.13.3.60 is Machine ETOPTS7 has Serial                                  
+IPAddress 10.13.3.151 cannot be WMId
+IPAddress 10.13.3.152 cannot be WMId
+IPAddress 10.28.1.1 is Machine SUTFS has Serial                                 
+IPAddress 10.28.16.26 cannot be WMId
+IPAddress 10.28.16.41 is Machine SUTSVC2 has Serial 1109-B101299/018
+IPAddress 10.28.16.42 is Machine SUTSVC3 has Serial 1011-B098598/009
+IPAddress 10.28.16.43 is Machine SUTSVC130088 has Serial 1302-B104484/013
+IPAddress 10.28.16.47 is Machine SUCFIN2 has Serial                                  
+IPAddress 10.28.16.56 is Machine SUTSVC8 has Serial 1011-B098598/001
+IPAddress 10.28.16.88 is Machine AUTADM2 has Serial 1205-B102945/008
+IPAddress 10.28.16.150 cannot be WMId
+IPAddress 10.28.16.151 cannot be WMId
+IPAddress 10.28.16.153 cannot be WMId
+IPAddress 10.28.16.154 cannot be WMId
+IPAddress 10.28.16.157 cannot be WMId
+IPAddress 10.28.254.2 is Machine SUTSHOG has Serial 8B114349H
+IPAddress 10.28.254.3 is Machine SUTSHO130178 has Serial YC101664H
+IPAddress 10.28.254.7 cannot be WMId
+IPAddress 10.28.254.10 is Machine SUTADM has Serial 7B120656H
+IPAddress 10.28.254.11 is Machine SUTADM has Serial 7B120656H
+IPAddress 10.28.254.12 is Machine SUCFIN9 has Serial 5B090674H
+IPAddress 10.28.254.14 is Machine SUTSHO120607 has Serial 9C099825H
+IPAddress 10.28.254.18 is Machine SUTSHO130180 has Serial XC136614H
+IPAddress 10.28.254.20 is Machine SUTSHOH has Serial 4C056886H
+IPAddress 10.28.254.21 is Machine SUTSHO130311 has Serial YC101557H
+IPAddress 10.16.1.1 is Machine CORPFS has Serial VMware-42 2c 07 a1 76 11 b5 91-36 73 a7 9b 4e 88 d8 e6
+IPAddress 10.16.1.5 is Machine BBU-IBS has Serial VMware-42 2c 6b af 6b fa 86 3a-f7 fe 48 1b 08 0a e3 cb
+IPAddress 10.16.1.10 is Machine CORP-WORLDOX has Serial VMware-42 2c ac 94 75 6e ba 09-81 fc 4b 73 76 53 d7 da
+IPAddress 10.16.1.98 is Machine APCORPPAY7 has Serial 1109-B101299/005
+IPAddress 10.16.8.10 is Machine AURSVC1 has Serial 1106-B100373/012
+IPAddress 10.16.8.13 is Machine AURSVC6 has Serial                                  
+IPAddress 10.16.8.14 is Machine AURSVC9 has Serial 1103-B099648/010
+IPAddress 10.16.8.23 is Machine AURSVCD has Serial 1205-B102945/010
+IPAddress 10.16.8.30 is Machine AURSHO2 has Serial 1106-B100373/013
+IPAddress 10.16.8.31 is Machine AURSHO120188 has Serial 1204-B102769/015
+IPAddress 10.16.8.151 cannot be WMId
+IPAddress 10.16.8.153 cannot be WMId
+IPAddress 10.16.8.154 cannot be WMId
+IPAddress 10.16.8.159 cannot be WMId
+IPAddress 10.16.8.172 cannot be WMId
+IPAddress 10.16.10.10 is Machine AUMREGO has Serial 1102-B099307/012
+IPAddress 10.16.10.12 is Machine AUVSVC1 has Serial B092035/014
+IPAddress 10.16.10.14 is Machine AUVPTS4 has Serial 1105-B100193/012
+IPAddress 10.16.10.25 is Machine AUMSVC1 has Serial                                  
+IPAddress 10.16.10.26 is Machine AUVSVC2 has Serial 1106-B100373/016
+IPAddress 10.16.10.28 is Machine AUVRCPT130265 has Serial 1306-B105006/008
+IPAddress 10.16.10.33 is Machine AURSMGR has Serial 1109-B101299/011
+IPAddress 10.16.10.34 is Machine AUVSVC8 has Serial 1108-B101026/009
+IPAddress 10.16.10.40 is Machine AUMPTS0 has Serial 1202-B102313/004
+IPAddress 10.16.10.44 is Machine AUVSHO7 has Serial 1012-B098851/004
+IPAddress 10.16.10.50 is Machine AUVSHOD has Serial                                  
+IPAddress 10.16.10.55 is Machine AURSHOX has Serial 1109-B101299/010
+IPAddress 10.16.10.88 is Machine AUVSHO4 has Serial                                  
+IPAddress 10.16.10.90 is Machine AUVGMGR has Serial 1201-B102091/014
+IPAddress 10.16.10.99 is Machine CORPPAY6 has Serial 1101-B099091/002
+IPAddress 10.16.10.105 is Machine CORPPAY8 has Serial 1205-B102945/007
+IPAddress 10.16.10.126 is Machine AURSVCM has Serial                                  
+IPAddress 10.16.10.150 cannot be WMId
+IPAddress 10.16.10.151 cannot be WMId
+IPAddress 10.16.10.154 cannot be WMId
+IPAddress 10.16.10.156 cannot be WMId
+IPAddress 10.16.10.160 cannot be WMId
+IPAddress 10.16.10.161 cannot be WMId
+IPAddress 10.16.10.163 cannot be WMId
+IPAddress 10.16.12.8 is Machine AUJSVC4 has Serial                                  
+IPAddress 10.16.12.10 is Machine AUJSVCX has Serial 1108-B101026/010
+IPAddress 10.16.12.31 is Machine AUJSHO3 has Serial 1011-B098499/008
+IPAddress 10.16.12.33 is Machine AURSVCT has Serial 1201-B102091/013
+IPAddress 10.16.12.152 cannot be WMId
+IPAddress 10.16.100.6 is Machine APCORP2X has Serial 1111-B101786/016
+IPAddress 10.16.100.8 is Machine APCORP120414 has Serial 1209-B103652/004
+IPAddress 10.16.100.10 is Machine APCORP1 has Serial B094507/006
+IPAddress 10.16.100.15 is Machine CORPPAY4 has Serial 1012-B098844/010
+IPAddress 10.16.100.20 cannot be WMId
+IPAddress 10.16.100.23 is Machine APEPAY130325 has Serial B105259/003
+IPAddress 10.16.100.45 is Machine APCORPY has Serial 1103-B099648/009
+IPAddress 10.16.100.150 cannot be WMId
+IPAddress 10.16.100.151 cannot be WMId
+IPAddress 10.16.100.153 cannot be WMId
+IPAddress 10.16.100.154 cannot be WMId
+IPAddress 10.16.254.19 cannot be WMId
+IPAddress 10.16.254.21 cannot be WMId
+IPAddress 10.16.254.22 is Machine APCORPW has Serial 7B154934H
+IPAddress 10.16.254.25 is Machine AURFIN1 has Serial 8B115745H
+IPAddress 10.16.254.29 cannot be WMId
+IPAddress 10.16.254.31 is Machine APCORPW has Serial 7B154934H
+IPAddress 10.16.254.32 is Machine APCORPH has Serial 7B120648H
+IPAddress 10.16.254.33 is Machine AUJSHO9 has Serial 2A134152H
+IPAddress 10.16.254.40 is Machine AUJSVC3 has Serial                                  
+IPAddress 10.16.254.45 is Machine AURSHOA has Serial 1102-B099307/006
+IPAddress 10.16.254.46 cannot be WMId
+IPAddress 10.16.254.48 is Machine AURSHO7 has Serial 7A063773H
+IPAddress 10.16.254.50 is Machine AURSHO1X has Serial 1103-B099620/004
+IPAddress 10.16.254.52 is Machine AUVSVC130267 has Serial 1306-B105006/010
+IPAddress 10.16.254.56 is Machine APCORPC has Serial 6B113126H
+IPAddress 10.16.254.59 is Machine APCORP0 has Serial 1105-B100193/005
+IPAddress 10.12.3.1 is Machine EWNFS has Serial                                
+IPAddress 10.12.3.9 is Machine ENSADM130082 has Serial 1302-B104484/007
+IPAddress 10.12.3.16 is Machine EWNADM3 has Serial 1111-B101786/009
+IPAddress 10.12.3.21 is Machine EWNSVC1 has Serial B097621/009
+IPAddress 10.12.3.22 is Machine EWNSVC5 has Serial 1203-B102542/004
+IPAddress 10.12.3.23 is Machine EWNADM4X has Serial 1111-B101786/003
+IPAddress 10.12.3.25 is Machine EWNPTS1 has Serial 1107-B100809/016
+IPAddress 10.12.3.26 is Machine EWNSVCG has Serial B097621/005
+IPAddress 10.12.3.31 is Machine EWNSVC8 has Serial B097291/010
+IPAddress 10.12.3.40 is Machine EMNSMGR1 has Serial B097291/009
+IPAddress 10.12.3.43 is Machine EWNADM4 has Serial 1205-B102945/011
+IPAddress 10.12.3.44 cannot be WMId
+IPAddress 10.12.3.45 is Machine EWNWTY has Serial B095026/002
+IPAddress 10.12.3.55 is Machine EWNSVC130080 has Serial 1302-B104484/005
+IPAddress 10.12.3.66 is Machine EWNWTY130225 has Serial 1305-B104859/016
+IPAddress 10.12.3.67 is Machine EWNSVCD has Serial 1206-B103127/008
+IPAddress 10.12.3.68 is Machine EWNSVC0247 has Serial 1206-B103127/006
+IPAddress 10.12.3.69 is Machine EWNUSD120294 has Serial 1207-B103298/004
+IPAddress 10.12.3.73 is Machine ENSSVCF has Serial B095289/003
+IPAddress 10.12.3.76 is Machine EWNPTS120185 has Serial 1204-B102769/012
+IPAddress 10.12.3.85 is Machine EWNSHOT has Serial 1104-B099962/003
+IPAddress 10.12.3.88 cannot be WMId
+IPAddress 10.12.3.93 is Machine EWNSVC120615 has Serial 1211-B104000/005
+IPAddress 10.12.3.95 is Machine EWNWTY120519 has Serial 1110-B101434/006
+IPAddress 10.12.3.98 is Machine EWNRCPT1 has Serial 1104-B099962/006
+IPAddress 10.12.3.100 is Machine EWNSHOU has Serial 1104-B099962/009
+IPAddress 10.12.3.102 is Machine EWNSHO2 has Serial 1201-B102091/011
+IPAddress 10.12.3.105 is Machine EWNADM130083 has Serial 1302-B104484/008
+IPAddress 10.12.3.110 is Machine EWNSHOC has Serial 1103-B099648/014
+IPAddress 10.12.3.111 is Machine EWNSHOD has Serial 1103-B099648/003
+IPAddress 10.12.3.112 is Machine EWNSHOE has Serial 1011-B098499/003
+IPAddress 10.12.3.117 is Machine EWNSHOJ has Serial 1108-B101026/018
+IPAddress 10.12.3.151 cannot be WMId
+IPAddress 10.12.3.152 cannot be WMId
+IPAddress 10.12.3.153 cannot be WMId
+IPAddress 10.12.3.155 cannot be WMId
+IPAddress 10.12.3.156 cannot be WMId
+IPAddress 10.12.3.158 cannot be WMId
+IPAddress 10.12.3.160 cannot be WMId
+IPAddress 10.12.3.161 cannot be WMId
+IPAddress 10.12.3.162 cannot be WMId
+IPAddress 10.12.3.164 cannot be WMId
+IPAddress 10.12.3.170 cannot be WMId
+IPAddress 10.12.3.172 cannot be WMId
+IPAddress 10.12.3.173 cannot be WMId
+IPAddress 10.12.3.175 cannot be WMId
+IPAddress 10.12.3.177 cannot be WMId
+IPAddress 10.12.254.13 is Machine EWNSHOS has Serial 7B154297H
+IPAddress 10.12.254.18 is Machine EWNADM120289 has Serial 4C056560H
+IPAddress 10.12.254.23 is Machine EWNSHOY has Serial 7A064990H
+IPAddress 10.12.254.27 is Machine EWNSHO130103 has Serial XC136579H
+IPAddress 10.12.254.28 cannot be WMId
+IPAddress 10.12.254.31 is Machine EWNSHOA has Serial 7A062783H
+IPAddress 10.12.254.36 is Machine EWNSVCE has Serial B102207/002
+IPAddress 10.12.254.55 is Machine EWNSHOW has Serial 8B115737H

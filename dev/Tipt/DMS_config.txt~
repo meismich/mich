@@ -1,0 +1,107 @@
+Telstra TIPT - DMS Configuration Notes
+2013-09-02
+Michael Spence
+
+
+Preamble:
+
+Just Notes not a proper doc.
+
+Result of a 2hour discussion/demonstration by Richard on 2013-08-30
+
+
+Topics:
+
+1. Group Tags
+2. TIPT Codecs
+3. Device Configuration
+4. User Configuration
+5. Phone Configuration
+
+
+Topics in Note form:
+
+
+1. Group Tags
+
+Before phones can be configured in DMS they must have TAG assigned to them.  Now this can be done on the individual device, but this is laborious and it is more efficient to do this at the Group Level.
+
+There are Group level Tags for each model of phone.  Before you can enter DMS Tags for a phone type, there must exist a logical device with that DMS type in the group.  navigate to "Resources" -> "Identity/Device Profiles".  Either verify that a DMS model exists or add a new device with the DMS model.
+
+Once the DMS device exists, the Group level Tags for this device type can be created/added.  Navigate to "Utilities" -> (Advanced) "Configure Device" and select the DMS device to add Tags to.  This will display three (3) tabs: "Configure", "Files" and "Custom Tags".  Select "Custom Tags" to enter the specific Telstra Tags for the device.
+
+Presently the Tag values to add are different per device.  Following are the device types and their tags:
+
+IP 550
+
+	FIRMWARE		3.3.2
+	IFOLDER			2
+	TIPT_CODEC		g729
+	TIPT_STATE		qld
+
+VVX 500
+
+	FIRMWARE		4.1.3
+	IFOLDER			2
+	TIPT_CODEC		g729
+	TIPT_STATE		qld
+
+VVX 1500
+
+	FIRMWARE		3.3.2
+	IFOLDER			2
+	TIPT_CODEC		g722
+	TIPT_STATE		qld
+
+SPA 8000
+
+	FIRMWARE_LINKSYS8000	5-1-10
+	IFOLDER			2
+	TIPT_STATE		qld
+
+At present we have not been informed of the TAGS for IP 650 or SPA 2000 devices which are in production throughout APEagers.
+
+Once all the Custom Tags have been enetered for the device, make sure that the files are rebuilt.  If the files are not rebuilt, these Tags will not propogate to the physical phones and the configuration will fail.
+
+
+2. TIPT Codecs
+
+Richard explained that there are two levels of TIPT Codecs: Standard Def (g729) and High Def (g722 - aka g711 but don't use this code).  These are configured as demonstrated above, but should be considered for individual use if necessary.  In the above configurations, the VVX 1500 has been configured with the High Def Codec, because it is assumed that there will only be a few users of video phones and they will benefit from the higher throughput of the High Def Codec.
+
+The Standard Def Codec users approximately 40kbps per concurrent call and the High Def uses approximately 100kpbs per call.
+
+
+3. Device Configuration
+
+To configure a device using the DMS system, navigate to the "Resources" -> "Identity/Device Profiles" section of the TIPT Group.  
+
+If a device profile already exists for a phone number, this should be delted before creating the new DMS version, alternatively, a unique name must be used.  Beware, however, that Telstra has a strict method for creating device profiles and deviating from this standard may have support issues in the future.  It is the author's recommendation that devices are always named "d<phone number>", which matches the Telstra methodology.  
+
+A device must be disconnected from it user before it can be To deleted.  Navigate to "Profile" -> "Users" and select the user with the matching phone number.  From the user's profile page, select "Addresses", which will display the user's phone number, extension and connection method.  Typically users have the "Identity/Device Profile" radio button selected; move  this selection to "None" and apply the changes.  The device can now be deleted.
+
+To delete the device, navigate to "Resources" -> "Identity/Device Profiles", select the device and choose "Delete".
+
+To create a new device, navigate to 'Resources" -> "Identity/Device Profiles" and choose "Add".  A new device configuration page will be presented.  Enter the "Identity/Device Profile Name" as "d<phone number>" (including ths area code; i.e. 07 for QLD) and choose the DMS device from the "Identity/Device Profile Type" drop down list.  Unlike HCPE configuration, there is no need to enter the MAC address or serial numbers into this configuration; MAC address and serial number are irrelevant to the "logical device".
+
+After the DMS device has been selected, an "Authentication" section appears.  Select the "Use Custom Credentials" radio button and enter "<phone number>" for all three fields.  These details could be configured as whatever is appropriate, but it is the author's opinion that simply using a user's phone number to identify his phone is the simplest authentication method, although it may be somewhat insecure.
+
+Once all configuration details have been entered, okay the changes.  Find the newly created device and select it.  It is necessary to rebuild the configuration files for this device.  Choose the "Files" tab and select "Rebuild the files".
+
+The device is now ready to be associated with the user.
+
+
+4. User Configuration
+
+Once a device has been configured for use by a user, it must be attached to the user.  Find the user profile by navigating to "Profile" -> "Users" and selecting the appropriate user.  From the user's profile page, select "Addresses", which will display the user's phone number, extension and connection method.  Initially users have a connection method of "None"; for DMS, this is required to be "Identity/Device Profile".  Enter the device profile which is applicable for this user and ensure that the line port is also configured as "p<phone number>@apeagers.com.au".  Apply the changes and the user will be ready for use.
+
+If a new user is required, choose "Add" from the "Users" page.  Configure the necessary basic properties of the user.  Once basic configuration is done, ensure that the Addresses section for the user is configured with phone number and extension.
+
+
+5. Phone Configuration
+
+The physical phone can be configured to be used by any user with a DMS device profile attached.  Ensure that the phone is connected to a network with DMS DHCP settings.  As the phone boots for the first time, it will retrieve basic phone settings from the TFTP server.  Once this process is complete, the DMS phone will display a "QSetup" option; this option will ask for "Username" and "Password", which will match the Authentication options in the device profile attached to the user.  If these details are entered correctly, the phone will immediately reboot and then download the latest software and configurations specific to the Tags configured.  Once complete the phone will be fully operational.
+
+
+6. IAD Configuration
+
+At present it seems that Telstra must still configure IADs.

@@ -1,0 +1,322 @@
+ERA Server Refresh - Multiflex Proposals
+2011-08-12
+Michael Spence
+
+
+Audience
+
+This document is intended for staff of APEagers, including IT staff in the Applications Division, the IT Services Manager and the General Manager of IT.  This document may useful for the CIO, but it is the author's opinion that it will have limited value to him.
+
+
+Preamble
+
+This document details the cost and capability of a number of proposed multiflex solutions for ERA systems.
+
+This document is the opinion of the Services Department and results of tests have been performed by them with respect to hardware and the current ERA systems.
+
+This document discusses the requirements of solutions, before explaining valid solutions.  Invalid solutions ARE NOT discussed, including systems with limited capability, exaggerated redundancy, etc.
+
+
+
+Topics of Discussion
+
+1. Solution Overview
+2. Cost of Singular Items
+	a. Multiflex Chassis
+	b. Server Blade Module
+	c. Intel SSD Drives
+	d. JBOD Storage Systems
+3. Multiflex Limitations
+4. Results of Tests
+5. Solution Requirements
+6. Single Multiflex Solution
+	a. Without JBODs
+	b. With JBODs
+7. Dual Multiflex Solution
+	a. Without JBODs
+	b. With JBODs
+
+
+
+Topics in Detail
+
+1. Solution Overview
+
+Within this document, the Services Department has proposed a number of configuration possibilities using the Intel Multiflex System.  The components of this system have been listed and prices alongside the appropriate storage solutions available.  While it is understood that other options are available, it has been decided to examine only Solid State Drives due to their high performance capabilities.  With this in mind, the limitations of a multiflex system can easily be ascertained and are described for reference.
+
+Using equipment which is destined to be part of APEagers Core Infrastructure, tests have been carried out to determine the maximum throughput to the internal drives.  These results are summarized here to validate the solution with respect to the requirements of the current ERA systems.  Further testing of the current ERA systems was undertaken to gain insight into these reqauirements.  Where testing was assumed to be invalid, paramenters have been taken directly from Pentana's documentation given to us in the recent group discussion of their proposed solutions.
+
+Knowing the current requirements of the business, with respect to the number of users, a number of solution models are proposed.  These are further extended across a number of configuration types.  This document examines the cost and capability of four solutions; solutions using either one or two multiflexes with either internal storage or external JBOD storage.  Growth capabilities of the solutions are also commented upon.  (Further to this some extended solutions are discussed to cater for further growth. -- not yet)
+
+
+2. Cost of Singular Items
+
+	a. Multiflex Chassis
+
+The Intel Multiflex Chassis, MFSYS25 6U, has capacity for a total of six (6) server blade modules, two storage control modules, two ethernet switch modules, four power supply modules, three fan modules and one management module.  
+
+For this document includes the following components for the total price of $19965:
+
+	1x	Management Module
+	2x	Ethernet Switch Modules
+	2x	Storage Control Modules
+	4x	1000W Power Supply
+	2x 	Main Fan Modules
+	1x	I/O Fan Module
+	+ accessories (including rail kit and required Intel software, keys, etc)
+
+	b. Server Blade Module
+
+Each Server Blade Module, MFS5520SI, has capacity for two processors, twelve memory slots and space for network redundancy mezzanine.
+
+For this document the term "Server Blade Module" includes the following components for the total price of $8500
+
+	2x	Intel Xeon X5675 3.06 GHz (6 Cores)
+	12x	8GB DDR3-1333
+	1x	Dual Gigabit Ethernet I/O Mezzanine expansion
+
+
+	c. Intel SSD Drives
+
+A various number of SSD drives are available from Intel, which may or may not be suitable for the designs proposed within this document.  There are two varieties of SSDs; SLC and MLC.  The MLC style drives are cheaper and have a greater capacity limit over the SLC style, however due to their design have a far lower number of writes available to them.  [Refer to specification of drives as noted in Appendix]
+
+Intel MLC SSDs are priced as follows:
+	Intel SSD 320 Series 40GB		$132
+	Intel SSD 320 Series 80GB		$242
+	Intel SSD 320 Series 120GB		$297
+	Intel SSD 320 Series 160GB		$396
+	Intel SSD 320 Series 300GB		$737
+	Intel SSD 320 Series 600GB		$1430
+
+(Be aware that the specification for these drives notes that the lower capacity drives have a worse throughput than the larger drives and it would be recommended that the minimum MLC to buy would be the 300GB)
+
+Intel SLC SSDs are priced as follows:
+
+	Intel SSD X25-E 32GB			$495
+	Intel SSD X25-E 64GB			$913
+
+
+	d. JBOD Storage Systems
+
+The Promise VTrak E610 system provides an external storage system with additional capacity to cater for the limited drive bays of the Intel Multiflex System.
+
+The cost of the proposed Promise VTrak E610 is $10980
+
+
+3. Multiflex Limitations
+
+The multiflex system, as previously stated, has the capacity for six (6) server blade modules.  Each blade can easily be configured to work independently as a stand alone server.  This is achieved by attaching Virtual Disks from the storage enclose to each disk for use as per a standard server.
+
+Each blade (of the proposed style) has a limit of twelve (12) memory slots.  Using an appropriate 8GB DIMM the total memory limitation of a singular server blade module is 96GB of RAM.
+
+There are only two processor slots in each blade.  A wide variety of server CPUs can be used, however for the proposed solution the advice given by the supplier has adhered to.  The chosen processors for these solutions is the Intel Xeon X5675, which has six (6) cores and a clock frequency of 3.07GHz.  According to tests performed by IBM, the Spec INT 2006 result for a single core of this processor is 40.7 Spec Ints [Refer to reference document A in Appendix].  Using this information, it is expected that a server blade module populated with two such processors should have a Spec Int rating of no less than 450 SpecInts.  It should also be noted that attempts to install RedHat on these servers has revealed that HyperThreading must be turned off; only one thread per core is available - not two.
+
+The discs for the multiflex are all contained within one "enclosure".  This enclosure is controlled by upto two storage control modules, which as specifications state are connected to the enclosure at a rate of 3Gb/s.  Each storage control module is connected to each blade also connected at 3Gb/s (as specified).  Virtual Disks when used are assigned to a singular storage control module, however this can be configured to optimize performance.  Ultimately, the maximum throughput of the system at any given time is 6Gb/s.
+
+
+4. Results of Tests
+
+Some of the above limitations are demonstrable.  The storage connector limitations have been tested and confirmed.  The performed tests are believed to be more "real-world" than the specification allows and the results below should be taken as "best case" scenario.
+
+The graphs below show the Total Read and Write performance in IOPS for 5 different configurations of servers.  These tests were performed using the IOmeter software, regarded as the standard benchmarking tool for this job.  The legend for each graphs represent the following tests:
+
+Test Name	Test Details
+1-1-1		1 Virtual Machine 1 Server Blade Module 1 Storage Control Module
+2-1-1		2 Virtual Machine 1 Server Blade Module 1 Storage Control Module
+2-1-2		2 Virtual Machine 1 Server Blade Module 2 Storage Control Module
+2-2-1		2 Virtual Machine 2 Server Blade Module 1 Storage Control Module
+2-2-2		2 Virtual Machine 2 Server Blade Module 2 Storage Control Module
+
+[INSERT GRAPHS for TESTS here]
+
+The tests performed demonstrate for the Multiflex hardware it is essential to use both storage controllers at the same time, for optimum performance.  Compare the x-x-2 graphs with the x-x-1 graphs to confirm.  
+
+Also the block size improves the total throughput of the system in all tests performed.  Please be aware that the above graphs are IOPS throughput; capacity throughput can be calculated exactly as:
+
+	Capacity = BlockSize x IOPS
+
+
+Our own ERA servers were examined over a number of 24 hour periods to determine a real world requirement for Throughput and IOPS.  While it was difficult to determine exact figures for these as the granularity of the test was not fine enough, the results of the tests show feasible average requirements and potential maximums.
+
+[INSERT ERA IOP REQ's here]
+
+From the results of the tests, it must be assumed that the block size of the system is a 32K blocksize.  (No documentation at this stage has been given as to whether a 32K block size is actually being used.  Hence comparisons are given with both 4K and 32K results.)
+
+
+5. Solution Requirements
+
+From information given by Pentana and gained from testing the current system, on a per seat basis the following hardware needs are exptected to be required:
+
+	Performance		.255 spec Ints
+	Memory			52.6 MB
+	Network			??? MB/s
+	Storage			.35 GB
+	Throughput (MAX)	5.28 IOPS with block size ???
+	Throughput (AV)		0.84 IOPS with block size ???
+
+Therefore, for a machine to match the current S1 system, the following hardware needs are required:
+
+	Users			900
+	Performance		230 Spec Ints
+	Memory			48GB
+	Storage			315 GB
+	Throughput		4750 IOPS (Max)
+				760 IOPS (Av)
+
+And, for a machine to match the current S1 system, the following hardware needs are required:
+
+	Users			250
+	Performance		64 Spec Ints
+	Memory			14GB
+	Storage			90 GB
+	Throughput		1350 IOPS (Max)		<-- Note this is lower than the tested result of 1950
+				210 IOPS (Av)
+
+Similarly, it is expected that a machine with an averaged user load would require the following:
+
+	Users			575
+	Performance		150 Spec Ints
+	Memory			30GB
+	Storage			200 GB
+	Throughput		3000 IOPS (Max)
+				490 IOPS (Av)
+
+As there are no supplied requirements for Network capability, it must be assumed that the current 50MB connection to support standard network traffic and ERA requirements is sufficient.
+
+The proposed solution using the Intel Multiflex, as stated above, is expected to meet all the CPU and Memory requirements easily.  The following solutions will not take into account the CPU and Memory requirements due to this reasoning.
+
+
+6. Single Multiflex Solution
+
+In a proposed single Multiflex solution, it is suggested (by Pentana primarily) that the Multiflex be populated with pairs of blades for redundant systems.  Hence, to emulate the current setup of our ERA system, this requires a four (4) blade setup; two blades for each system, one of which will require more system resources due to its larger user count.
+
+	a. Without JBODs
+
+In a proposed system with no extermal storage media, due to the shared nature of the single multiflex design, the limited space for the internal drives poses a problem initially with capacity.  Each blade system requires 2 drives for redundant OS requirements.
+
+The total number of users, 1150, is expected to require a total of 515 GB.  With only 10 drive bays (remember 4 of the 14 are used for OS's), this requires that each disk provides 515/10 GB.  Splitting the drives into two logical groups for S1 and S2 and using Raid 50 technology to create the disks for the systems, this is increased to 515/8. This is approximately 64.5 GB per disc.
+
+Examining the proposed SSD drives, as noted previously, this capacity is achieved using the following discs:
+
+	Intel SSD 320 120GB (or of greater capacity)
+
+This solution suggests the use of the 300GB SSD, which would give a total capacity of 2400GB * .9, approximately 2100GB.
+
+Due to previous real-world testing performed using drives of similar IOPS throughput, it can be expected that the following throughput values will be available to each server (taken from 2-2-2 results):
+
+	Block Size	4K	32K
+	Read IOPS	11300	3400
+	Write IOPS	2000	1350
+	50/50 IOPS	3400	2000
+
+From this information, the following list of equipment and costs is required:
+
+	1x	Multiflex Core			$19965		$19965
+	4x	Server Blade Modules		$8500		$34000
+	10x	Intel SSD 320 300GB SSDs	$737		$ 7370
+	4x	Intel X25 32GB SSDs		$495		$ 1980
+						TOTAL		$63315
+	
+It should be noted however, that this solution utilizes the MLC SSD drives from Intel which have limited write operations available to them AND would need to be replaced regularly to remain operational.  It could be expected that the 10 production SSDs would need replacing every 6 months, adding $36850 cost over 3 years (at today's prices).
+
+While this system may meet the requirements of the solution, the throughput of the storage system is said to be at its limit with respect to the number of users catered for.  Further growth within a system such as this would lead to a bottle neck in the storage system and degraded performance would be evident.
+
+	b. With JBODs
+
+Using an attached JBOD system, the limitation posed on discs is reduced.  It is still expected however, that the multiflex will still contain discs for the OS of each system.
+
+Again the total capacity required will be 515 GB, but the available drive bays for the datastore has now grown to 16 bays.  If it is still assumed that a Raid 50 design is to be used to total capacity per disc is 515/14 GB.  This is approximately 36.8 GB.  However it may be noted that if a hot spare was assigned to each disc group the capacity per disc would be 515/12 GB; approximately 42.9 GB.
+
+Examining the proposed SSD drives, this capacity is achieved using the following discs:
+
+	Intel SSD 320 80GB (or greater)
+	Intel X25-E 64GB SSD
+
+This solution suggests the use of the X25-E 64GB SSD, which would give a total capacity of 768GB * .9, approximately 690GB.
+
+Due to previous real-world testing performed using drives of lesser IOPS throughput, it can be expected that the following throughput values will be available to each system.  For these results, it is assumed that the slight adjustment in disk breadth and performance increases throughput:
+
+	Block Size	4K	32K
+	Read IOPS	18000	6000
+	Write IOPS	3500	2300
+	50/50 IOPS	6000	3300
+
+From this information, the following list of equipment and costs is required:
+
+	1x	Multiflex Core			$19965		$19965
+	4x	Server Blade Modules		$8500		$34000
+	4x	Intel X25 32GB SSDs		$495		$ 1980
+	1x	Promise VTrak E-Class		$10980		$10980
+	16x	Intel X25 64GB SSDs		$913		$14608
+						TOTAL		$81533
+	
+This solution uses the Intel SLC SSDs, which have a far greater write expectancy.  Due to this they are not expected to be replaced within three (3) years and no further costs are expected.
+
+The throughput capacity increase in this solution should allow for some minor growth, however any solution would be bound to the two server solution proposed.  Futher growth to a three server solution, as the multiflex has capacity for, would probably be limited.
+
+
+7. Dual Multiflex Solution
+
+In a proposed single Multiflex solution, it is suggested that the Multiflexes be populated with pairs of blades for redundant systems.  Hence, to emulate the current setup of our ERA system, this require two (2) blades per multiflex setup.
+
+	a. Without JBODs
+
+Unlike the single multiflex design, the limited space for the internal drives is less of a concern in a dual multiflex solution.
+
+For an averaged system with a user count of 575, a total of 200 GB is expected.  With 12 drive bays (remember 2 of the 14 are used for the OS), this requires that each disk provides 200/12 GB.  It would be wise to have a number of discs within this disk set to be "hot spares" and with this in mind the required capacity for each disc could be as high as 200/10 GB, or approximately 20GB.
+
+Examining the proposed SSD drives, as noted previously, this capacity is achieved using the following discs:
+
+	Intel SSD 320 40GB (or of greater capacity)
+	Intel X25-E 32GB SSD
+
+This solution suggests the use of the X25-E 32GB SSD, which would give a total capacity of 320GB *.9, approximately 290GB.
+
+Due to previous real-world testing performed using drives of lesser IOPS throughput, it can be expected that the following throughput values will be available to each system.  For these results it is assumed that the increase in disk performance increases the write performance only:
+
+	Block Size	4K	32K
+	Read IOPS
+	Write IOPS
+
+From this information, the following list of equipment and costs is required:
+
+	2x	Multiflex Core			$19965		$39930
+	4x	Server Blade Modules		$8500		$34000
+	24x	Intel X25 32GB SSDs		$495		$11880
+	4x	Intel X25 32GB SSDs		$495		$ 1980
+						TOTAL		$87790
+	
+If this solution were to use the larger 64GB Intel X25 SSDs the solution would have sufficient storage capacity to handle moderate growth within any one system.
+
+	b. With JBODs
+
+A proposed dual multiflex system with a JBOD attached to each should expectedly have no capacity or throughput issues.
+
+Again for an averaged system with a user count of 575, a total of 200 GB is expected, per system.  With 16 drive bays per JBOD, this requires that each disk provides 200/16 GB.  It would be wise to have a number of discs within this disk set to be "hot spares" and with this in mind the required capacity for each disc could be as high as 200/14 GB, or approximately 14GB.
+
+Examining the proposed SSD drives, as noted previously, this capacity is achieved using the following discs:
+
+	Intel SSD 320 40GB (or of greater capacity)
+	Intel X25-E 32GB SSD
+
+This solution suggests the use of the X25-E 32GB SSD, which would give a total capacity of 448GB * .9, approximately 403GB.
+
+Due to previous real-world testing performed using drives of lesser IOPS throughput, it can be expected that the following throughput values will be available to each system.  For these results it is assumed that the increase in breadth of disks increases bandwidth:
+
+	Block Size	4K	32K
+	Read IOPS	33000	8000
+	Write IOPS	5800	4000
+	50/50 IOPS	10000	3700
+
+From this information, the following list of equipment and costs is required:
+
+	2x	Multiflex Core			$19965		$39930
+	4x	Server Blade Modules		$8500		$34000
+	4x	Intel X25 32GB SSDs		$495		$ 1980
+	1x	Promise VTrak E-Class		$10980		$21960
+	32	Intel X25 32GB SSDs		$495		$15840
+						TOTAL	       $113710
+
+The solution given here suggests that double the specified users could potentially be allocated to this system.  This is hardly surprising, given the solution as noted in 1.b above.
+
+

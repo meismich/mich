@@ -1,0 +1,687 @@
+<input type="hidden" name="buttonClicked" value="">
+<input type="submit" class="bwbutton" name="ok" value="OK"
+<input type="submit" class="bwbutton" name="apply" value="Apply"
+<input type="submit" class="bwbutton" name="delete" value="Delete"
+<input type="button" class="bwbutton" name="cancel" value="Cancel"
+<input type=hidden name="groupClid"   value="">
+<input type=hidden name="useHiragana"   value="false">
+<input type=hidden name="linkForward"   value="">
+<input type=hidden name="allowValidateOnDelete" value="true">
+<input type=hidden name="isUserClidEnabled" value="false">
+<input type=text name="unicodeLastName" id="unicodeLastName" value='Longworth' size=30 maxLength=30>
+<input type=text name="unicodeFirstName" id="unicodeFirstName" value='Jake' size=30 maxLength=30>
+<input type=text name="lastName" id="lastName" value='Longworth' size=30 maxLength=30>
+<input type=text name="firstName" id="firstName" value='Jake' size=30 maxLength=30>
+<select name="deptEncodedKey" id="deptEncodedKey">
+<option value="" selected>None
+<option value="G+N7018792R+N7001686R+Admin">Admin (N7001686R)
+<option value="G+N7018792R+N7001686R+Eagers">Eagers (N7001686R)
+<option value="G+N7018792R+N7001686R+General">General (N7001686R)
+<option value="G+N7018792R+N7001686R+Jaguar Sales">Jaguar Sales (N7001686R)
+<option value="G+N7018792R+N7001686R+Land Rover Sales">Land Rover Sales (N7001686R)
+<option value="G+N7018792R+N7001686R+Parts">Parts (N7001686R)
+<option value="G+N7018792R+N7001686R+Reception">Reception (N7001686R)
+<option value="E+N7018792R+Sales">Sales
+<option value="E+N7018792R+Service">Service
+<option value="G+N7018792R+N7001686R+Service">Service (N7001686R)
+<option value="G+N7018792R+N7001686R+Used Car Sales">Used Car Sales (N7001686R)
+<option value="G+N7018792R+N7001686R+Volvo Sales">Volvo Sales (N7001686R)
+<option value="G+N7018792R+N7001686R+Volvo Service">Volvo Service (N7001686R)
+<option value="G+N7018792R+N7001686R+Volvo Workshop">Volvo Workshop (N7001686R)
+</select>
+<select name="language" id="language">
+<option value="English" selected>English
+</select>
+<select name="timeZones" id="timeZones">
+<option value="Australia/Perth">(GMT+08:00) (AWST) Perth (WA)
+<option value="Australia/Darwin">(GMT+09:30) (ACST) Darwin (NT)
+<option value="Australia/Brisbane" selected>(GMT+10:00) (AEST) Brisbane (QLD)
+<option value="Australia/Broken_Hill">(GMT+10:30) (ACST) Broken Hill
+<option value="Australia/Adelaide">(GMT+10:30) (SAST) Adelaide (SA)
+<option value="Australia/Hobart">(GMT+11:00) (AEST) Hobart (TAS)
+<option value="Australia/Sydney">(GMT+11:00) (AEST) Melbourne Sydney Canberra (VIC NSW ACT)
+<option value="Australia/Victoria">(GMT+11:00) Australia/Victoria
+</select>
+<select name="ncos" id="ncos">
+<option value="" selected>None
+</select>
+<input type=text name="title" id="title" value='' size=50 maxLength=50>
+<input type=text name="pager" id="pager" value='' size=30 maxLength=30>
+<input type=text name="mobile" id="mobile" value='' size=30 maxLength=30>
+<input type=text name="email" id="email" value='' size=50 maxLength=80>
+<input type=text name="yahooID" id="yahooID" value='' size=50 maxLength=50>
+<input type=text name="location" id="location" value='' size=68 maxLength=80>
+<input type=text name="addressLine1" id="addressLine1" value='' size=68 maxLength=80>
+<td width='20'>
+<img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0">
+<input type=text name="addressLine2" id="addressLine2" value='' size=68 maxLength=80>
+<input type=text name="city" id="city" value='' size=50 maxLength=50>
+<select name="state" id="state">
+<option value="" selected>-- Select --
+<option value="Aust. Capital Territory (ACT)">Aust. Capital Territory (ACT)
+<option value="New South Wales (NSW)">New South Wales (NSW)
+<option value="Northern Territory (NT)">Northern Territory (NT)
+<option value="Queensland (QLD)">Queensland (QLD)
+<option value="South Aust. (SA)">South Aust. (SA)
+<option value="Tasmania (TAS)">Tasmania (TAS)
+<option value="Victoria (VIC)">Victoria (VIC)
+<option value="Western Aust. (WA)">Western Aust. (WA)
+</select>
+<input type=text name="zipOrPostalCode" id="zipOrPostalCode" value='' size=30 maxLength=50>
+<input type=text name="country" id="country" value='' size=30 maxLength=50>
+<input type="hidden" name="buttonClicked" value="">
+<input type="submit" class="bwbutton" name="ok" value="OK"
+<input type="submit" class="bwbutton" name="apply" value="Apply"
+<input type="submit" class="bwbutton" name="delete" value="Delete"
+<input type="button" class="bwbutton" name="cancel" value="Cancel"
+<input type="hidden" name="buttonClicked" value="">
+<input type="submit" class="bwbutton" name="ok" value="OK"
+<input type="submit" class="bwbutton" name="apply" value="Apply"
+<input type="button" class="bwbutton" name="cancel" value="Cancel"
+<input type=hidden name="extensionMinLength" value="4">
+<input type=hidden name="extensionMaxLength" value="4">
+<input type=hidden name="extensionDefaultLength" value="4">
+<input type=hidden name="readOnlyNumber"  value="false">
+<input type=hidden name="assignedDn"  value="null">
+<input type=hidden name="dnActivated"  value="false">
+<input type=hidden name="numActEnabled" value="false">
+<input type=hidden name="trunkGroupNameNone" value="true">
+<select name="phoneNumber" id="phoneNumber" onChange="populateExt(this.form)">
+<option value="" selected>None
+<option value="732503044">732503044
+<option value="732503045">732503045
+<option value="732503048">732503048
+<option value="732503053">732503053
+<option value="732503054">732503054
+<option value="732503056">732503056
+<option value="732503057">732503057
+<option value="732503058">732503058
+<option value="732503059">732503059
+<option value="732503068">732503068
+<option value="732503069">732503069
+<option value="732503072">732503072
+<option value="732503073">732503073
+<option value="732503074">732503074
+<option value="732503095">732503095
+</select>
+<input type=text name="extension" id="extension" value='' size=4 maxLength=4>
+<input type=hidden name="deviceType" value="">
+<input type=hidden name="linePort" value="">
+<input type=hidden name="staticSipUrl" value="">
+<input type=hidden name="linePortDomain" value="">
+<input type=hidden name="readOnlyDevice"  value="false">
+<input type=hidden name="isIMSMode" value="false">
+<input type=hidden name="useDevice" value="false">
+<input type=hidden name="useTrunk" value="false">
+<input type=hidden name="ipAddress" value="">
+<input type=hidden name="port" value="">
+<input type='radio' name="deviceChoice" value='Device Profile' onClick="displayFS()">Identity/Device Profile   
+<input type='radio' name="deviceChoice" value='Trunking' onClick="displayFS()">Trunking   
+<input type='radio' name="deviceChoice" value='None' onClick="displayFS()" checked>None   
+<select name="deviceName" id="deviceName" onChange="selectDevice()">
+<option value="d0732503001 (Group)" selected>d0732503001 (Group)
+<option value="d0732503002 (Group)">d0732503002 (Group)
+<option value="d0732503003 (Group)">d0732503003 (Group)
+<option value="d0732503004 (Group)">d0732503004 (Group)
+<option value="d0732503005 (Group)">d0732503005 (Group)
+<option value="d0732503006 (Group)">d0732503006 (Group)
+<option value="d0732503007 (Group)">d0732503007 (Group)
+<option value="d0732503008 (Group)">d0732503008 (Group)
+<option value="d0732503009 (Group)">d0732503009 (Group)
+<option value="d0732503010 (Group)">d0732503010 (Group)
+<option value="d0732503011 (Group)">d0732503011 (Group)
+<option value="d0732503012 (Group)">d0732503012 (Group)
+<option value="d0732503013 (Group)">d0732503013 (Group)
+<option value="d0732503014 (Group)">d0732503014 (Group)
+<option value="d0732503015 (Group)">d0732503015 (Group)
+<option value="d0732503016 (Group)">d0732503016 (Group)
+<option value="d0732503017 (Group)">d0732503017 (Group)
+<option value="d0732503019 (Group)">d0732503019 (Group)
+<option value="d0732503020 (Group)">d0732503020 (Group)
+<option value="d0732503021 (Group)">d0732503021 (Group)
+<option value="d0732503022 (Group)">d0732503022 (Group)
+<option value="d0732503023 (Group)">d0732503023 (Group)
+<option value="d0732503024 (Group)">d0732503024 (Group)
+<option value="d0732503025 (Group)">d0732503025 (Group)
+<option value="d0732503029 (Group)">d0732503029 (Group)
+<option value="d0732503030 (Group)">d0732503030 (Group)
+<option value="d0732503031 (Group)">d0732503031 (Group)
+<option value="d0732503032 (Group)">d0732503032 (Group)
+<option value="d0732503033 (Group)">d0732503033 (Group)
+<option value="d0732503034 (Group)">d0732503034 (Group)
+<option value="d0732503035 (Group)">d0732503035 (Group)
+<option value="d0732503036 (Group)">d0732503036 (Group)
+<option value="d0732503040 (Group)">d0732503040 (Group)
+<option value="d0732503041 (Group)">d0732503041 (Group)
+<option value="d0732503042 (Group)">d0732503042 (Group)
+<option value="d0732503043 (Group)">d0732503043 (Group)
+<option value="d0732503046 (Group)">d0732503046 (Group)
+<option value="d0732503047 (Group)">d0732503047 (Group)
+<option value="d0732503050 (Group)">d0732503050 (Group)
+<option value="d0732503051 (Group)">d0732503051 (Group)
+<option value="d0732503060 (Group)">d0732503060 (Group)
+<option value="d0732503061 (Group)">d0732503061 (Group)
+<option value="d0732503062 (Group)">d0732503062 (Group)
+<option value="d0732503063 (Group)">d0732503063 (Group)
+<option value="d0732503070 (Group)">d0732503070 (Group)
+<option value="New Device">New Identity/Device Profile (Group)
+</select>
+<input type=text name="newDeviceName" id="newDeviceName" value='' size=20 maxLength=20>
+<select name="newDeviceType" id="newDeviceType" onChange="displayNewDeviceLinePort()">
+<option value="2Wire HomePortal" selected>2Wire HomePortal
+<option value="ACT P103SLC">ACT P103SLC
+<option value="ACT P104SLD">ACT P104SLD
+<option value="Aastra 480i">Aastra 480i
+<option value="Aastra 480i CT">Aastra 480i CT
+<option value="Aastra 53i">Aastra 53i
+<option value="Aastra 55i">Aastra 55i
+<option value="Aastra 57i">Aastra 57i
+<option value="Aastra 57iCT">Aastra 57iCT
+<option value="Aastra 9112i">Aastra 9112i
+<option value="Aastra 9133i">Aastra 9133i
+<option value="Aastra Ascotel IntelliGate 150 300">Aastra Ascotel IntelliGate 150 300
+<option value="Aastra Ascotel IntelliGate 150 300 (sp)">Aastra Ascotel IntelliGate 150 300 (sp)
+<option value="Aastra Ascotel IntelliGate 20x5">Aastra Ascotel IntelliGate 20x5
+<option value="Aastra Ascotel IntelliGate 20x5 (sp)">Aastra Ascotel IntelliGate 20x5 (sp)
+<option value="Adtran TA604">Adtran TA604
+<option value="Adtran TA608">Adtran TA608
+<option value="Adtran TA612">Adtran TA612
+<option value="Adtran TA616">Adtran TA616
+<option value="Adtran TA624">Adtran TA624
+<option value="Adtran TA624 (sp)">Adtran TA624 (sp)
+<option value="Adtran TA900 Series-Trunk">Adtran TA900 Series-Trunk
+<option value="Adtran TA900 Series-Trunk (sp)">Adtran TA900 Series-Trunk (sp)
+<option value="Adtran TA900 Series-Trunk Reg">Adtran TA900 Series-Trunk Reg
+<option value="Adtran TA900 Series-Trunk Reg (sp)">Adtran TA900 Series-Trunk Reg (sp)
+<option value="Adtran TA904">Adtran TA904
+<option value="Adtran TA904 MGCP">Adtran TA904 MGCP
+<option value="Adtran TA908">Adtran TA908
+<option value="Adtran TA908 MGCP">Adtran TA908 MGCP
+<option value="Adtran TA912">Adtran TA912
+<option value="Adtran TA912 MGCP">Adtran TA912 MGCP
+<option value="Adtran TA916">Adtran TA916
+<option value="Adtran TA916 MGCP">Adtran TA916 MGCP
+<option value="Adtran TA924">Adtran TA924
+<option value="Adtran TA924 (sp)">Adtran TA924 (sp)
+<option value="Adtran TA924 MGCP">Adtran TA924 MGCP
+<option value="Arris 402P/502A/502G/602A/602G/632">Arris 402P/502A/502G/602A/602G/632
+<option value="Arris 504A/504G/604A/604G">Arris 504A/504G/604A/604G
+<option value="Arris 508/608">Arris 508/608
+<option value="Arris 512">Arris 512
+<option value="Arris TM401 TM501 SIP">Arris TM401 TM501 SIP
+<option value="Arris TM401 TM501 SIP INFO">Arris TM401 TM501 SIP INFO
+<option value="Arris TM401/TM501 NCS">Arris TM401/TM501 NCS
+<option value="Arris TM402 TM502 SIP">Arris TM402 TM502 SIP
+<option value="Arris TM402 TM502 SIP INFO">Arris TM402 TM502 SIP INFO
+<option value="Arris TM402/TM502 NCS">Arris TM402/TM502 NCS
+<option value="Arris TM402/TM502 NCS Payphone">Arris TM402/TM502 NCS Payphone
+<option value="Arris TM508 NCS">Arris TM508 NCS
+<option value="Arris TM508 SIP">Arris TM508 SIP
+<option value="Arris TM508 SIP INFO">Arris TM508 SIP INFO
+<option value="Arris TM512 NCS">Arris TM512 NCS
+<option value="Arris TM512 SIP">Arris TM512 SIP
+<option value="Arris TM512 SIP INFO">Arris TM512 SIP INFO
+<option value="AsteriskNOW">AsteriskNOW
+<option value="AsteriskNOW (sp)">AsteriskNOW (sp)
+<option value="AudioCodes MP-102">AudioCodes MP-102
+<option value="AudioCodes MP-104">AudioCodes MP-104
+<option value="AudioCodes MP-108">AudioCodes MP-108
+<option value="AudioCodes MP-112">AudioCodes MP-112
+<option value="AudioCodes MP-114">AudioCodes MP-114
+<option value="AudioCodes MP-118">AudioCodes MP-118
+<option value="AudioCodes MP-124">AudioCodes MP-124
+<option value="AudioCodes MP-124 (sp)">AudioCodes MP-124 (sp)
+<option value="AudioCodes MP-201">AudioCodes MP-201
+<option value="AudioCodes MP-202">AudioCodes MP-202
+<option value="AudioCodes MP-204">AudioCodes MP-204
+<option value="AudioCodes Mediant 1000-Trunk">AudioCodes Mediant 1000-Trunk
+<option value="AudioCodes Mediant 1000-Trunk (sp)">AudioCodes Mediant 1000-Trunk (sp)
+<option value="AudioCodes Mediant 1000-Trunk Reg">AudioCodes Mediant 1000-Trunk Reg
+<option value="AudioCodes Mediant 1000-Trunk Reg (sp)">AudioCodes Mediant 1000-Trunk Reg (sp)
+<option value="AudioCodes Mediant 2000-Trunk">AudioCodes Mediant 2000-Trunk
+<option value="AudioCodes Mediant 2000-Trunk (sp)">AudioCodes Mediant 2000-Trunk (sp)
+<option value="AudioCodes Mediant 2000-Trunk Reg">AudioCodes Mediant 2000-Trunk Reg
+<option value="AudioCodes Mediant 2000-Trunk Reg (sp)">AudioCodes Mediant 2000-Trunk Reg (sp)
+<option value="Avaya Quick Edition">Avaya Quick Edition
+<option value="Avaya Quick Edition (sp)">Avaya Quick Edition (sp)
+<option value="Azatel azacall 200">Azatel azacall 200
+<option value="BellSouth Softphone">BellSouth Softphone
+<option value="BroadWorks Communicator">BroadWorks Communicator
+<option value="BroadWorks Media Server">BroadWorks Media Server
+<option value="C&S Telecom CIP-6500">C&S Telecom CIP-6500
+<option value="CMS Generic SIP Int Proxy Domain GW">CMS Generic SIP Int Proxy Domain GW
+<option value="Carrier Access 3500">Carrier Access 3500
+<option value="Carrier Access 3500 (sp)">Carrier Access 3500 (sp)
+<option value="Carrier Access Adit 3104">Carrier Access Adit 3104
+<option value="Carrier Access Adit 600-48">Carrier Access Adit 600-48
+<option value="Carrier Access Adit 600-48 (sp)">Carrier Access Adit 600-48 (sp)
+<option value="Cisco 1760">Cisco 1760
+<option value="Cisco 1760-Trunk">Cisco 1760-Trunk
+<option value="Cisco 1760-Trunk (sp)">Cisco 1760-Trunk (sp)
+<option value="Cisco 2421-16">Cisco 2421-16
+<option value="Cisco 2421-8">Cisco 2421-8
+<option value="Cisco 2430-24">Cisco 2430-24
+<option value="Cisco 2430-24 (SIP)">Cisco 2430-24 (SIP)
+<option value="Cisco 2430-24 (SIP)(sp)">Cisco 2430-24 (SIP)(sp)
+<option value="Cisco 2430-24 (SIP-INFO)">Cisco 2430-24 (SIP-INFO)
+<option value="Cisco 2430-24 (SIP-INFO)(sp)">Cisco 2430-24 (SIP-INFO)(sp)
+<option value="Cisco 2430-24 (sp)">Cisco 2430-24 (sp)
+<option value="Cisco 2431-16">Cisco 2431-16
+<option value="Cisco 2431-16 (SIP)">Cisco 2431-16 (SIP)
+<option value="Cisco 2431-16 (SIP-INFO)">Cisco 2431-16 (SIP-INFO)
+<option value="Cisco 2431-8">Cisco 2431-8
+<option value="Cisco 2431-8 (SIP)">Cisco 2431-8 (SIP)
+<option value="Cisco 2431-8 (SIP-INFO)">Cisco 2431-8 (SIP-INFO)
+<option value="Cisco 2432-24">Cisco 2432-24
+<option value="Cisco 2432-24 (SIP)">Cisco 2432-24 (SIP)
+<option value="Cisco 2432-24 (SIP)(sp)">Cisco 2432-24 (SIP)(sp)
+<option value="Cisco 2432-24 (SIP-INFO)">Cisco 2432-24 (SIP-INFO)
+<option value="Cisco 2432-24 (SIP-INFO)(sp)">Cisco 2432-24 (SIP-INFO)(sp)
+<option value="Cisco 2432-24 (sp)">Cisco 2432-24 (sp)
+<option value="Cisco 243x-Trunk">Cisco 243x-Trunk
+<option value="Cisco 2600-Trunk">Cisco 2600-Trunk
+<option value="Cisco 2600-Trunk (sp)">Cisco 2600-Trunk (sp)
+<option value="Cisco 27xx-Trunk">Cisco 27xx-Trunk
+<option value="Cisco 27xx-Trunk (sp)">Cisco 27xx-Trunk (sp)
+<option value="Cisco 2801 (SIP-INFO)">Cisco 2801 (SIP-INFO)
+<option value="Cisco 2811 (SIP-INFO)">Cisco 2811 (SIP-INFO)
+<option value="Cisco 2811 CUBE (TIPT)">Cisco 2811 CUBE (TIPT)
+<option value="Cisco 2821 (SIP-INFO)">Cisco 2821 (SIP-INFO)
+<option value="Cisco 2851 (SIP-INFO)">Cisco 2851 (SIP-INFO)
+<option value="Cisco 28xx-Trunk">Cisco 28xx-Trunk
+<option value="Cisco 36xx-Trunk">Cisco 36xx-Trunk
+<option value="Cisco 36xx-Trunk (sp)">Cisco 36xx-Trunk (sp)
+<option value="Cisco 37xx-Trunk">Cisco 37xx-Trunk
+<option value="Cisco 37xx-Trunk (sp)">Cisco 37xx-Trunk (sp)
+<option value="Cisco 3825 (SIP-INFO)">Cisco 3825 (SIP-INFO)
+<option value="Cisco 3845 (SIP-INFO)">Cisco 3845 (SIP-INFO)
+<option value="Cisco 53xx-Trunk">Cisco 53xx-Trunk
+<option value="Cisco 53xx-Trunk (sp)">Cisco 53xx-Trunk (sp)
+<option value="Cisco 5400-Trunk">Cisco 5400-Trunk
+<option value="Cisco 5400-Trunk (sp)">Cisco 5400-Trunk (sp)
+<option value="Cisco 7905">Cisco 7905
+<option value="Cisco 7912">Cisco 7912
+<option value="Cisco 7940">Cisco 7940
+<option value="Cisco 7960">Cisco 7960
+<option value="Cisco ATA-186">Cisco ATA-186
+<option value="Cisco Call Manager">Cisco Call Manager
+<option value="Cisco Call Manager (sp)">Cisco Call Manager (sp)
+<option value="Cisco Call Manager Express">Cisco Call Manager Express
+<option value="Cisco Call Manager Express (sp)">Cisco Call Manager Express (sp)
+<option value="Cisco IOS-Trunk">Cisco IOS-Trunk
+<option value="Cisco IOS-Trunk Reg">Cisco IOS-Trunk Reg
+<option value="Cisco IOS-Trunk Reg (sp)">Cisco IOS-Trunk Reg (sp)
+<option value="Cisco VG224 (SIP-INFO)">Cisco VG224 (SIP-INFO)
+<option value="Citel CitelLink">Citel CitelLink
+<option value="Citel CitelLink (sp)">Citel CitelLink (sp)
+<option value="Citel Handset GW-TIG2">Citel Handset GW-TIG2
+<option value="Citel Handset GWIII">Citel Handset GWIII
+<option value="CounterPath eyeBeam">CounterPath eyeBeam
+<option value="CrystalVoice Remote Extension">CrystalVoice Remote Extension
+<option value="D-Link DG-102S">D-Link DG-102S
+<option value="DMS Bootstrap">DMS Bootstrap
+<option value="Dataflex ViNE Trunk">Dataflex ViNE Trunk
+<option value="Dataflex ViNE Trunk (sp)">Dataflex ViNE Trunk (sp)
+<option value="Dataflex Vine Trunk 2160p (TIPT)">Dataflex Vine Trunk 2160p (TIPT)
+<option value="Dataflex Vine Trunk 2404b (TIPT)">Dataflex Vine Trunk 2404b (TIPT)
+<option value="Dataflex Vine Trunk 2460p (TIPT)">Dataflex Vine Trunk 2460p (TIPT)
+<option value="Elite VP1000">Elite VP1000
+<option value="Empirix Hammer MGCP">Empirix Hammer MGCP
+<option value="Epygi Quadro2x_4x_16x">Epygi Quadro2x_4x_16x
+<option value="Generic MGCP">Generic MGCP
+<option value="Generic SIP Gateway - Trusted (sp)">Generic SIP Gateway - Trusted (sp)
+<option value="Generic SIP IP PBX Single Registration">Generic SIP IP PBX Single Registration
+<option value="Generic SIP IP-PBX Proxy">Generic SIP IP-PBX Proxy
+<option value="Generic SIP PBX">Generic SIP PBX
+<option value="Generic SIP PBX (sp)">Generic SIP PBX (sp)
+<option value="Generic SIP PBX Single Registration">Generic SIP PBX Single Registration
+<option value="Generic SIP PBX Single Registration (sp)">Generic SIP PBX Single Registration (sp)
+<option value="Generic SIP Phone">Generic SIP Phone
+<option value="Generic SIP Smart (Proxy Addr)">Generic SIP Smart (Proxy Addr)
+<option value="Generic SIP Static Registration">Generic SIP Static Registration
+<option value="Generic SIP Static Registration (sp)">Generic SIP Static Registration (sp)
+<option value="Generic SIP Std">Generic SIP Std
+<option value="Generic SIP Std (Proxy Addr)">Generic SIP Std (Proxy Addr)
+<option value="Generic SIP Std BW CWT (Proxy Addr)(sp)">Generic SIP Std BW CWT (Proxy Addr)(sp)
+<option value="Generic SIP Std BW CWT (sp)">Generic SIP Std BW CWT (sp)
+<option value="Generic SIP-Trunk">Generic SIP-Trunk
+<option value="Generic Sip Intelligent Mobile GW (sp)">Generic Sip Intelligent Mobile GW (sp)
+<option value="Generic TDM Overlay (Proxy Addr)(sp)">Generic TDM Overlay (Proxy Addr)(sp)
+<option value="Generic TDM Overlay (sp)">Generic TDM Overlay (sp)
+<option value="Generic Trusted_Registering IP-PBX">Generic Trusted_Registering IP-PBX
+<option value="Generic Wireless (sp)">Generic Wireless (sp)
+<option value="Grandstream BudgeTone">Grandstream BudgeTone
+<option value="Grandstream GXW-4004">Grandstream GXW-4004
+<option value="Grandstream GXW-4008">Grandstream GXW-4008
+<option value="Grandstream HT-502">Grandstream HT-502
+<option value="Grandstream Handytone-486_286">Grandstream Handytone-486_286
+<option value="Huawei MD5500 (sp)">Huawei MD5500 (sp)
+<option value="IPUnity Harmony 6000 (Proxy Addr)(sp)">IPUnity Harmony 6000 (Proxy Addr)(sp)
+<option value="IPUnity Harmony 6000 (sp)">IPUnity Harmony 6000 (sp)
+<option value="InnoMedia 3308">InnoMedia 3308
+<option value="InnoMedia 3328-1">InnoMedia 3328-1
+<option value="InnoMedia 3328-2">InnoMedia 3328-2
+<option value="InnoMedia 3328-4">InnoMedia 3328-4
+<option value="InnoMedia 3328-8">InnoMedia 3328-8
+<option value="InnoMedia 6328-2">InnoMedia 6328-2
+<option value="LG Electronics LDK-24 (sp)">LG Electronics LDK-24 (sp)
+<option value="LG Electronics LIP-6812">LG Electronics LIP-6812
+<option value="LG Electronics LIP-6830">LG Electronics LIP-6830
+<option value="Linksys PAP2">Linksys PAP2
+<option value="Linksys PAP2T">Linksys PAP2T
+<option value="Linksys RTP300_WRTP54G">Linksys RTP300_WRTP54G
+<option value="Linksys SPA-1000 1001">Linksys SPA-1000 1001
+<option value="Linksys SPA-2000 2002 2100">Linksys SPA-2000 2002 2100
+<option value="Linksys SPA-2102">Linksys SPA-2102
+<option value="Linksys SPA-2102 DMS">Linksys SPA-2102 DMS
+<option value="Linksys SPA-3000 3100">Linksys SPA-3000 3100
+<option value="Linksys SPA-3102">Linksys SPA-3102
+<option value="Linksys SPA-8000">Linksys SPA-8000
+<option value="Linksys SPA-8000 DMS">Linksys SPA-8000 DMS
+<option value="Linksys SPA-841">Linksys SPA-841
+<option value="Linksys SPA-9000">Linksys SPA-9000
+<option value="Linksys SPA-9000 (sp)">Linksys SPA-9000 (sp)
+<option value="Linksys SPA-901_921_922">Linksys SPA-901_921_922
+<option value="Linksys SPA-941_942">Linksys SPA-941_942
+<option value="Linksys SPA-961_962">Linksys SPA-961_962
+<option value="Local Exchange-Forwarding Override (sp)">Local Exchange-Forwarding Override (sp)
+<option value="MESSAGEmanager Fax Server">MESSAGEmanager Fax Server
+<option value="MediaTrix 1102">MediaTrix 1102
+<option value="MediaTrix 1104">MediaTrix 1104
+<option value="MediaTrix 1124">MediaTrix 1124
+<option value="MediaTrix 1124 (sp)">MediaTrix 1124 (sp)
+<option value="MediaTrix 2102">MediaTrix 2102
+<option value="Microsoft Office Communicator">Microsoft Office Communicator
+<option value="Mitel 5055">Mitel 5055
+<option value="Mitel 5212">Mitel 5212
+<option value="Mitel 5215">Mitel 5215
+<option value="Mitel 5220">Mitel 5220
+<option value="Mitel 5224">Mitel 5224
+<option value="Mitel 5235">Mitel 5235
+<option value="Mitel Navigator">Mitel Navigator
+<option value="Moimstone IP250C">Moimstone IP250C
+<option value="Motorola SBV5120">Motorola SBV5120
+<option value="Motorola SBV5121">Motorola SBV5121
+<option value="Motorola SBV5220">Motorola SBV5220
+<option value="Motorola SBV5220 Payphone">Motorola SBV5220 Payphone
+<option value="Nokia E Series Mobile">Nokia E Series Mobile
+<option value="Non-Intell Local Exchange Fwd-Ovrd (sp)">Non-Intell Local Exchange Fwd-Ovrd (sp)
+<option value="Occam BLC 1200-24">Occam BLC 1200-24
+<option value="Occam BLC 6000-24">Occam BLC 6000-24
+<option value="Occam BLC 6000-24 (sp)">Occam BLC 6000-24 (sp)
+<option value="Occam BLC 6000-48">Occam BLC 6000-48
+<option value="Occam BLC 6000-48 (sp)">Occam BLC 6000-48 (sp)
+<option value="Octtel SP1632-16">Octtel SP1632-16
+<option value="Octtel SP1632-16 (sp)">Octtel SP1632-16 (sp)
+<option value="Octtel SP1632-32">Octtel SP1632-32
+<option value="Octtel SP1632-32 (sp)">Octtel SP1632-32 (sp)
+<option value="Octtel SP1632-8">Octtel SP1632-8
+<option value="Octtel SP200-1">Octtel SP200-1
+<option value="Octtel SP200-2">Octtel SP200-2
+<option value="Octtel SP4220-1">Octtel SP4220-1
+<option value="Octtel SP4220-2">Octtel SP4220-2
+<option value="Octtel SP4220-3">Octtel SP4220-3
+<option value="Octtel SP4220-4">Octtel SP4220-4
+<option value="Octtel SP8440-4">Octtel SP8440-4
+<option value="Octtel SP8440-6">Octtel SP8440-6
+<option value="Octtel SP8440-8">Octtel SP8440-8
+<option value="OneAccess ONE Series-Trunk Reg">OneAccess ONE Series-Trunk Reg
+<option value="OneAccess ONE Series-Trunk Reg (sp)">OneAccess ONE Series-Trunk Reg (sp)
+<option value="Patton SmartNode 4112_4522">Patton SmartNode 4112_4522
+<option value="Patton SmartNode 4114_4524">Patton SmartNode 4114_4524
+<option value="Patton SmartNode 4116_4526">Patton SmartNode 4116_4526
+<option value="Patton SmartNode 4118_4528">Patton SmartNode 4118_4528
+<option value="Patton SmartNode 4912">Patton SmartNode 4912
+<option value="Patton SmartNode 4916">Patton SmartNode 4916
+<option value="Patton SmartNode 4924">Patton SmartNode 4924
+<option value="Patton SmartNode 4932">Patton SmartNode 4932
+<option value="Patton SmartNode Series-Trunk">Patton SmartNode Series-Trunk
+<option value="Patton SmartNode Series-Trunk (sp)">Patton SmartNode Series-Trunk (sp)
+<option value="Pingtel xpressa">Pingtel xpressa
+<option value="Polycom HDX 4000">Polycom HDX 4000
+<option value="Polycom HDX 4000 (TIPT)">Polycom HDX 4000 (TIPT)
+<option value="Polycom HDX 6000">Polycom HDX 6000
+<option value="Polycom HDX 7000">Polycom HDX 7000
+<option value="Polycom HDX 8000">Polycom HDX 8000
+<option value="Polycom HDX 9000">Polycom HDX 9000
+<option value="Polycom Kirk DECT KWS300 (TIPT)">Polycom Kirk DECT KWS300 (TIPT)
+<option value="Polycom Kirk DECT KWS600 (TIPT)">Polycom Kirk DECT KWS600 (TIPT)
+<option value="Polycom Kirk DECT KWS6000 (TIPT)">Polycom Kirk DECT KWS6000 (TIPT)
+<option value="Polycom Kirk DECT Phone (TIPT)">Polycom Kirk DECT Phone (TIPT)
+<option value="Polycom RMX (Trunk)">Polycom RMX (Trunk)
+<option value="Polycom RMX 1500">Polycom RMX 1500
+<option value="Polycom RMX 2000">Polycom RMX 2000
+<option value="Polycom RMX 4000">Polycom RMX 4000
+<option value="Polycom RMX2000 (TIPT)">Polycom RMX2000 (TIPT)
+<option value="Polycom SoundPoint IP 331 (TIPT)">Polycom SoundPoint IP 331 (TIPT)
+<option value="Polycom Soundpoint IP 200W">Polycom Soundpoint IP 200W
+<option value="Polycom Soundpoint IP 235 DMS">Polycom Soundpoint IP 235 DMS
+<option value="Polycom Soundpoint IP 300">Polycom Soundpoint IP 300
+<option value="Polycom Soundpoint IP 301 DMS">Polycom Soundpoint IP 301 DMS
+<option value="Polycom Soundpoint IP 320 330">Polycom Soundpoint IP 320 330
+<option value="Polycom Soundpoint IP 330 DMS">Polycom Soundpoint IP 330 DMS
+<option value="Polycom Soundpoint IP 331 DMS">Polycom Soundpoint IP 331 DMS
+<option value="Polycom Soundpoint IP 335 DMS">Polycom Soundpoint IP 335 DMS
+<option value="Polycom Soundpoint IP 4000">Polycom Soundpoint IP 4000
+<option value="Polycom Soundpoint IP 4000 DMS">Polycom Soundpoint IP 4000 DMS
+<option value="Polycom Soundpoint IP 430">Polycom Soundpoint IP 430
+<option value="Polycom Soundpoint IP 430 DMS">Polycom Soundpoint IP 430 DMS
+<option value="Polycom Soundpoint IP 450 (TIPT)">Polycom Soundpoint IP 450 (TIPT)
+<option value="Polycom Soundpoint IP 450 DMS">Polycom Soundpoint IP 450 DMS
+<option value="Polycom Soundpoint IP 500">Polycom Soundpoint IP 500
+<option value="Polycom Soundpoint IP 501 DMS">Polycom Soundpoint IP 501 DMS
+<option value="Polycom Soundpoint IP 550">Polycom Soundpoint IP 550
+<option value="Polycom Soundpoint IP 550 DMS">Polycom Soundpoint IP 550 DMS
+<option value="Polycom Soundpoint IP 560 (TIPT)">Polycom Soundpoint IP 560 (TIPT)
+<option value="Polycom Soundpoint IP 560 DMS">Polycom Soundpoint IP 560 DMS
+<option value="Polycom Soundpoint IP 600">Polycom Soundpoint IP 600
+<option value="Polycom Soundpoint IP 600 DMS">Polycom Soundpoint IP 600 DMS
+<option value="Polycom Soundpoint IP 6000 (TIPT)">Polycom Soundpoint IP 6000 (TIPT)
+<option value="Polycom Soundpoint IP 6000 DMS">Polycom Soundpoint IP 6000 DMS
+<option value="Polycom Soundpoint IP 601">Polycom Soundpoint IP 601
+<option value="Polycom Soundpoint IP 601 DMS">Polycom Soundpoint IP 601 DMS
+<option value="Polycom Soundpoint IP 650">Polycom Soundpoint IP 650
+<option value="Polycom Soundpoint IP 650 DMS">Polycom Soundpoint IP 650 DMS
+<option value="Polycom Soundpoint IP 670 (TIPT)">Polycom Soundpoint IP 670 (TIPT)
+<option value="Polycom Soundpoint IP 670 DMS">Polycom Soundpoint IP 670 DMS
+<option value="Polycom Soundpoint IP 7000 (TIPT)">Polycom Soundpoint IP 7000 (TIPT)
+<option value="Polycom Soundpoint IP 7000 DMS">Polycom Soundpoint IP 7000 DMS
+<option value="Polycom VVX 1500 (TIPT)">Polycom VVX 1500 (TIPT)
+<option value="Polycom VVX 1500 DMS">Polycom VVX 1500 DMS
+<option value="Quintum Tenor AF-2">Quintum Tenor AF-2
+<option value="Quintum Tenor AF-4">Quintum Tenor AF-4
+<option value="Quintum Tenor AF-6">Quintum Tenor AF-6
+<option value="Quintum Tenor AF-8">Quintum Tenor AF-8
+<option value="Quintum Tenor AS-2">Quintum Tenor AS-2
+<option value="Quintum Tenor AS-4">Quintum Tenor AS-4
+<option value="Quintum Tenor AX-16">Quintum Tenor AX-16
+<option value="Quintum Tenor AX-24">Quintum Tenor AX-24
+<option value="Quintum Tenor AX-24 (sp)">Quintum Tenor AX-24 (sp)
+<option value="Quintum Tenor AX-48">Quintum Tenor AX-48
+<option value="Quintum Tenor AX-48 (sp)">Quintum Tenor AX-48 (sp)
+<option value="Quintum Tenor AX-8">Quintum Tenor AX-8
+<option value="Quintum Tenor Trunk">Quintum Tenor Trunk
+<option value="Quintum Tenor Trunk (sp)">Quintum Tenor Trunk (sp)
+<option value="Radvision Scopia - Not for Sale">Radvision Scopia - Not for Sale
+<option value="SIP Intelligent Gateway (sp)">SIP Intelligent Gateway (sp)
+<option value="SIP Non-Registering Gateway (sp)">SIP Non-Registering Gateway (sp)
+<option value="SIP Registering Gateway (sp)">SIP Registering Gateway (sp)
+<option value="SIPquest Mobile Console">SIPquest Mobile Console
+<option value="SNOM 320">SNOM 320
+<option value="SNOM 320_360">SNOM 320_360
+<option value="Samsung SMT-i8000">Samsung SMT-i8000
+<option value="Samsung SSX5000">Samsung SSX5000
+<option value="Scientific Atlanta DPC2203/C/C2 NCS">Scientific Atlanta DPC2203/C/C2 NCS
+<option value="Scientific Atlanta DPC2434 NCS">Scientific Atlanta DPC2434 NCS
+<option value="Scientific Atlanta DPX2213 NCS">Scientific Atlanta DPX2213 NCS
+<option value="Sentito NSS19">Sentito NSS19
+<option value="Sentito NSS19 (sp)">Sentito NSS19 (sp)
+<option value="Siemens Optipoint 410 Advanced">Siemens Optipoint 410 Advanced
+<option value="Siemens Optipoint 410 Economy">Siemens Optipoint 410 Economy
+<option value="Siemens Optipoint 410 Economy Plus">Siemens Optipoint 410 Economy Plus
+<option value="Siemens Optipoint 410 Entry">Siemens Optipoint 410 Entry
+<option value="Siemens Optipoint 410 Standard">Siemens Optipoint 410 Standard
+<option value="Siemens Optipoint 420 Advanced">Siemens Optipoint 420 Advanced
+<option value="Siemens Optipoint 420 Economy">Siemens Optipoint 420 Economy
+<option value="Siemens Optipoint 420 Economy Plus">Siemens Optipoint 420 Economy Plus
+<option value="Siemens Optipoint 420 Standard">Siemens Optipoint 420 Standard
+<option value="Siemens Speedstream 3010_7010">Siemens Speedstream 3010_7010
+<option value="Siemens Speedstream 3540_7500">Siemens Speedstream 3540_7500
+<option value="Siemens Speedstream 3550_7510">Siemens Speedstream 3550_7510
+<option value="Siemens optiPoint 150S">Siemens optiPoint 150S
+<option value="Siemens optiPoint 400">Siemens optiPoint 400
+<option value="Siemens optiPoint 600">Siemens optiPoint 600
+<option value="Sonus GSX (sp)">Sonus GSX (sp)
+<option value="Sonus PSX (sp)">Sonus PSX (sp)
+<option value="SwissVoice IP 10S">SwissVoice IP 10S
+<option value="Talkswitch">Talkswitch
+<option value="Talkswitch (sp)">Talkswitch (sp)
+<option value="Telco Systems Access201_211">Telco Systems Access201_211
+<option value="Telco Systems EdgeGate 232">Telco Systems EdgeGate 232
+<option value="Telco Systems GW-282-2">Telco Systems GW-282-2
+<option value="Telco Systems GW-282-4">Telco Systems GW-282-4
+<option value="Telco Systems GW-282-8">Telco Systems GW-282-8
+<option value="Thomson ST2022-SG">Thomson ST2022-SG
+<option value="Thomson ST2030-SG">Thomson ST2030-SG
+<option value="Thomson Telecom ST284">Thomson Telecom ST284
+<option value="U4EA ICAD40">U4EA ICAD40
+<option value="U4EA ICAD80">U4EA ICAD80
+<option value="UTStarcom F1000">UTStarcom F1000
+<option value="UTStarcom iAN-02EX">UTStarcom iAN-02EX
+<option value="UniData WIP-5000">UniData WIP-5000
+<option value="Uniden DTA-200">Uniden DTA-200
+<option value="Uniden UIP-1868">Uniden UIP-1868
+<option value="Uniden UIP200">Uniden UIP200
+<option value="VegaStream Vega 50">VegaStream Vega 50
+<option value="Verilink 8000 12 port">Verilink 8000 12 port
+<option value="Verilink 8000 16 port">Verilink 8000 16 port
+<option value="Verilink 8000 24 port">Verilink 8000 24 port
+<option value="Verilink 8000 24 port (sp)">Verilink 8000 24 port (sp)
+<option value="Verilink 8000 4 port">Verilink 8000 4 port
+<option value="Verilink 8000 8 port">Verilink 8000 8 port
+<option value="Verilink 8x04s (SIP)">Verilink 8x04s (SIP)
+<option value="Verilink 8x08s (SIP)">Verilink 8x08s (SIP)
+<option value="Verilink 8x12s (SIP)">Verilink 8x12s (SIP)
+<option value="Verilink 8x16s (SIP)">Verilink 8x16s (SIP)
+<option value="Verilink 8x24s (SIP)">Verilink 8x24s (SIP)
+<option value="Verilink 8x24s (SIP) (sp)">Verilink 8x24s (SIP) (sp)
+<option value="Verilink NetEngine 6x02-2">Verilink NetEngine 6x02-2
+<option value="Verilink NetEngine 6x04-4">Verilink NetEngine 6x04-4
+<option value="Verilink NetEngine 6x08-8">Verilink NetEngine 6x08-8
+<option value="Verilink NetEngine 7x16-16">Verilink NetEngine 7x16-16
+<option value="Verilink NetEngine 7x24-24">Verilink NetEngine 7x24-24
+<option value="Verilink NetEngine 7x24-24 (sp)">Verilink NetEngine 7x24-24 (sp)
+<option value="WEBCC IP-PBX (WebCC)">WEBCC IP-PBX (WebCC)
+<option value="Windows Messenger Soft Client">Windows Messenger Soft Client
+<option value="Wooksung WVP1100">Wooksung WVP1100
+<option value="Wooksung WVP1200">Wooksung WVP1200
+<option value="Wooksung WVP2100">Wooksung WVP2100
+<option value="Wooksung WVP2200">Wooksung WVP2200
+<option value="Wooksung WVP2210">Wooksung WVP2210
+<option value="Xten Soft Client">Xten Soft Client
+<option value="Zhone MALC">Zhone MALC
+<option value="Zhone Z-Edge 6100-12">Zhone Z-Edge 6100-12
+<option value="Zhone Z-Edge 6100-24">Zhone Z-Edge 6100-24
+<option value="Zhone Z-Edge 6200">Zhone Z-Edge 6200
+<option value="ZyXEL P2002">ZyXEL P2002
+<option value="i3 micro Vood 111_121">i3 micro Vood 111_121
+<option value="i3 micro Vood 142_322_422_423_453w">i3 micro Vood 142_322_422_423_453w
+</select>
+<input type=text name="ipAddressRequired" id="ipAddressRequired" value='' size=40 maxLength=80 onChange="setIpAddress(this)">
+<input type=text name="portRequired" id="portRequired" value='' size=10 maxLength=10 onChange="setPort(this)">
+<input type=text name="ipAddressOptional" id="ipAddressOptional" value='' size=40 maxLength=80 onChange="setIpAddress(this)">
+<input type=text name="portOptional" id="portOptional" value='' size=10 maxLength=10 onChange="setPort(this)">
+<input type=text name="macAddress" id="macAddress" value='' size=12 maxLength=12>
+<input type=text name="physicalLocation" id="physicalLocation" value='' size=18 maxLength=1024>
+<input type=text name="deviceLinePort" id="deviceLinePort" value='' size=32 maxLength=80 onBlur="setLinePort(this)">
+<input size=32 maxLength=80 type=text name="deviceLinePortDomain" value='' onBlur="setLinePort(this)">@
+<select name='deviceDomain' onChange='setLinePortDomain(this)'>
+<option value='apeagers.com.au' selected>apeagers.com.au
+</select>
+<input type=text name="deviceStaticSipUrl" size=40 maxlength=1020 value='' onblur="setStaticSipUrl(this)">
+<select name="trunkGroupName" id="trunkGroupName" onChange="selectTrunkGroup()">
+<option value="None" selected>None
+</select>
+<input type=text name="trunkGroupLinePort" id="trunkGroupLinePort" value='' size=32 maxLength=32 onBlur="setLinePort(this)">
+<input type=text name="trunkGroupLinePortReq" id="trunkGroupLinePortReq" value='' size=32 maxLength=32 onBlur="setLinePort(this)">
+<input size=32 maxlength=32 type=text name="trunkGroupLinePortDomain" value='' onBlur="setLinePort(this)">@
+<select name='trunkGroupDomain' onChange='setLinePortDomain(this)'>
+<option value='apeagers.com.au'>apeagers.com.au
+</select>
+<input size=32 maxlength=32 type=text name="trunkGroupLinePortDomainReq" value='' onBlur="setLinePort(this)">@
+<select name='trunkGroupDomainReq' onChange='setLinePortDomain(this)'>
+<option value='apeagers.com.au'>apeagers.com.au
+</select>
+<input type=text name="trunkGroupStaticSipUrl" size=40 maxlength=1020 value='' onblur="setStaticSipUrl(this)">
+<input type=text name="alternateTrunkIdentity" id="alternateTrunkIdentity" value='' size=20 maxLength=80>
+<select name="enterpriseTrunk" id="enterpriseTrunk" onChange="">
+<option value="" selected>None
+</select>
+<input size=40 maxlength=80 type=text name='alias1' value=''> @ 
+<select name='alias1Domain'>
+<option value='apeagers.com.au' selected>apeagers.com.au
+</select>
+<input size=40 maxlength=80 type=text name='alias2' value=''> @ 
+<select name='alias2Domain'>
+<option value='apeagers.com.au' selected>apeagers.com.au
+</select>
+<input size=40 maxlength=80 type=text name='alias3' value=''> @ 
+<select name='alias3Domain'>
+<option value='apeagers.com.au' selected>apeagers.com.au
+</select>
+<input type="hidden" name="buttonClicked" value="">
+<input type="submit" class="bwbutton" name="ok" value="OK"
+<input type="submit" class="bwbutton" name="apply" value="Apply"
+<input type="button" class="bwbutton" name="cancel" value="Cancel"
+<input type="hidden" name="buttonClicked" value="">
+<input type="submit" class="bwbutton" name="ok" value="OK"
+<input type="submit" class="bwbutton" name="apply" value="Apply"
+<input type="button" class="bwbutton" name="cancel" value="Cancel"
+<input name="action" value="" TYPE=HIDDEN>
+<input name="toAdd" value="" TYPE=HIDDEN>
+<input name="toRemove" value="" TYPE=HIDDEN>
+<input name="packToAdd" value="" TYPE=HIDDEN>
+<input name="packToRemove" value="" TYPE=HIDDEN>
+<td align="center">
+<select size=11 multiple name="availablePackList">
+<option value="TIPT Basic Pack V8">TIPT Basic Pack V8
+<option value="TIPT Call Centre Standard V7">TIPT Call Centre Standard V7
+<option value="TIPT Executive Pack V8">TIPT Executive Pack V8
+<option value="TIPT miReception Console V7">TIPT miReception Console V7
+<option value="TIPT Standard Pack V8">TIPT Standard Pack V8
+<option value="TIPT v6v7 Basic Delta Pack">TIPT v6v7 Basic Delta Pack
+<option value="TIPT v6v7 Standard Delta Pack">TIPT v6v7 Standard Delta Pack
+</select>
+<input class="bwbutton" type="button" value="Add &#062;" onclick="javascript:addServicePack(document.mainForm)">
+<input class="bwbutton" type="button" value="Remove &#060;" onclick="javascript:removeServicePack(document.mainForm)">
+<input class="bwbutton" type="button" value="Add All &#062;&#062;" onclick="javascript:selectAllServicePack(document.mainForm)">
+<input class="bwbutton" type="button" value="Remove All &#060;&#060;" onclick="javascript:removeAllServicePack(document.mainForm)">
+<td align="center">
+<select size=11 multiple onChange="this.options[0].selected=false;">
+<option>                                               
+</select>
+<td align="center">
+<select size=11 multiple name="availableList">
+<option value="Call Center - Standard">Call Center - Standard
+<option value="Call Forwarding Always">Call Forwarding Always
+<option value="Call Forwarding Busy">Call Forwarding Busy
+<option value="Call Forwarding Selective">Call Forwarding Selective
+<option value="Client Call Control">Client Call Control
+<option value="Voice Messaging User">Voice Messaging User
+</select>
+<input class="bwbutton" type="button" value="Add &#062;" onclick="javascript:addService(document.mainForm)">
+<input class="bwbutton" type="button" value="Remove &#060;" onclick="javascript:removeService(document.mainForm)">
+<input class="bwbutton" type="button" value="Add All &#062;&#062;" onclick="javascript:selectAllService(document.mainForm)">
+<input class="bwbutton" type="button" value="Remove All &#060;&#060;" onclick="javascript:removeAllService(document.mainForm)">
+<td align="center">
+<select size=11 multiple onChange="this.options[0].selected=false;">
+<option>                                                           
+</select>
+<input type="hidden" name="buttonClicked" value="">
+<input type="submit" class="bwbutton" name="ok" value="OK"
+<input type="submit" class="bwbutton" name="apply" value="Apply"
+<input type="button" class="bwbutton" name="cancel" value="Cancel"
+<input type="hidden" name="buttonClicked" value="">
+<input class="bwbutton" type="button" name="ok" value="OK"
+<input type="hidden" name="buttonClicked" value="">
+<input class="bwbutton" type="button" name="ok" value="OK"

@@ -1,0 +1,210 @@
+#############################
+# AP Eagers Local Config
+#
+# Author: Mark Cross - Senior Systems Engineer - AP Eagers Ltd
+#
+# Last change: 30/09/09
+#############################
+
+echo -n 'starting local daemons:'
+
+# Default routes internal
+route -n add -net 10.10.0.0/16 10.1.1.254
+route -n add -net 10.11.0.0/16 10.1.1.254
+route -n add -net 10.12.0.0/16 10.1.1.254
+route -n add -net 10.13.0.0/16 10.1.1.254
+route -n add -net 10.14.0.0/16 10.1.1.254
+route -n add -net 10.15.0.0/16 10.1.1.254
+route -n add -net 10.16.0.0/16 10.1.1.254
+route -n add -net 10.17.0.0/16 10.1.1.254
+route -n add -net 10.18.0.0/16 10.1.1.254
+route -n add -net 10.19.0.0/16 10.1.1.254
+route -n add -net 10.2.0.0/16 10.1.1.254
+route -n add -net 10.22.0.0/16 10.1.1.254
+route -n add -net 10.23.0.0/16 10.1.1.254
+route -n add -net 10.24.0.0/16 10.1.1.254
+route -n add -net 10.25.0.0/16 10.1.1.254
+route -n add -net 10.26.0.0/16 10.1.1.254
+route -n add -net 10.27.0.0/16 10.1.1.254
+route -n add -net 10.28.0.0/16 10.1.1.254
+route -n add -net 10.29.0.0/16 10.1.1.254
+route -n add -net 10.32.0.0/16 10.1.1.254
+route -n add -net 10.33.0.0/16 10.1.1.254
+route -n add -net 10.34.0.0/16 10.1.1.254
+route -n add -net 10.35.0.0/16 10.1.1.254
+route -n add -net 10.36.0.0/16 10.1.1.254
+route -n add -net 10.37.0.0/16 10.1.1.254
+route -n add -net 10.5.0.0/16 10.1.1.254
+route -n add -net 10.50.0.0/16 10.1.1.254
+route -n add -net 10.51.0.0/16 10.1.1.254
+route -n add -net 10.52.0.0/16 10.1.1.254
+route -n add -net 10.6.0.0/16 10.1.1.254
+route -n add -net 10.7.0.0/16 10.1.1.254
+route -n add -net 10.8.0.0/16 10.1.1.254
+
+# Audi Routes
+route -n add -net 10.112.192.0/24 10.1.1.240
+#route -n add -net 10.112.192.0/24 10.1.1.250
+route -n add -net 10.112.230.0/24 10.1.1.240
+route -n add -host 10.112.230.8 10.1.1.240
+#route -n add -net 10.112.230.0/24 10.1.1.250
+route -n add -net 10.166.145.0/24 10.1.1.240
+
+# Test Autogrid Route
+route -n add 19.110.66.48 10.40.1.39
+
+# Autogrid Routes Old
+route -n add 19.197.2.93 10.40.1.39
+route -n add 19.197.2.171 10.40.1.39
+route -n add 19.197.2.183 10.40.1.39
+route -n add 19.197.6.35 10.40.1.39
+route -n add -net 136.8.159.0/24 10.40.1.39
+route -n add -net 136.9.242.0/24 10.40.1.39
+route -n add -net 136.9.246.0/24 10.40.1.39
+route -n add -net 136.9.249.0/24 10.40.1.39
+route -n add -net 136.9.252.0/24 10.40.1.39
+route -n add -net 136.130.208.0/24 10.40.1.39
+route -n add -net 192.28.103.0/24 10.40.1.39
+route -n add 193.129.10.228 10.40.1.39
+
+# Autogrid Routes New
+#route -n add 19.197.2.93 10.1.1.246
+#route -n add 19.197.2.171 10.1.1.246
+#route -n add 19.197.2.183 10.1.1.246
+#route -n add 19.197.6.35 10.1.1.246
+#route -n add -net 136.8.159.0/24 10.1.1.246
+#route -n add -net 136.9.242.0/24 10.1.1.246
+#route -n add -net 136.9.246.0/24 10.1.1.246
+#route -n add -net 136.9.249.0/24 10.1.1.246
+#route -n add -net 136.9.252.0/24 10.1.1.246
+#route -n add -net 136.130.208.0/24 10.1.1.246
+#route -n add -net 192.28.103.0/24 10.1.1.246
+#route -n add 193.129.10.228 10.1.1.246
+
+# Bill Buckles LAN
+route -n add -net 172.17.150.0/24 10.1.1.254
+route -n add -net 172.17.158.0/24 10.1.1.254
+route -n add -net 192.168.1.0/24 10.1.1.254
+route -n add -net 192.168.5.0/24 10.1.1.254
+route -n add -net 192.168.6.0/24 10.1.1.254
+
+
+# Dealerlink Routes
+route -n add -net 10.20.0.0/16 10.40.1.33
+route -n add -net 10.21.0.0/16 10.40.1.33
+route -n add -net 10.30.0.0/16 10.40.1.33
+route -n add -net 10.31.0.0/16 10.40.1.33
+route -n add -net 10.40.3.0/24 10.40.1.33
+route -n add -net 10.40.5.0/24 10.40.1.33
+route -n add -net 10.40.6.0/24 10.40.1.33
+route -n add -net 10.40.7.0/24 10.40.1.33
+route -n add -net 10.40.9.0/24 10.40.1.33
+route -n add -net 10.41.0.0/16 10.40.1.33
+route -n add -net 10.81.7.0/24 10.40.1.33
+route -n add -net 10.81.12.0/24 10.40.1.33
+route -n add -net 10.81.34.0/24 10.40.1.33
+route -n add -net 10.81.51.0/24 10.40.1.33
+route -n add -net 10.81.60.0/24 10.40.1.33
+route -n add -net 10.81.80.0/24 10.40.1.33
+route -n add -net 10.81.105.0/24 10.40.1.33
+route -n add -net 10.81.114.0/24 10.40.1.33
+route -n add -net 10.81.122.0/24 10.40.1.33
+route -n add -net 10.81.127.0/24 10.40.1.33
+route -n add -net 10.81.137.0/24 10.40.1.33
+route -n add -net 10.81.142.0/24 10.40.1.33
+route -n add -net 10.81.168.0/24 10.40.1.33
+route -n add -net 10.81.174.0/24 10.40.1.33
+route -n add -net 10.81.205.0/24 10.40.1.33
+route -n add -net 10.81.241.0/24 10.40.1.33
+route -n add -net 10.82.6.0/24 10.40.1.33
+route -n add -net 10.85.41.0/24 10.40.1.33
+route -n add -net 10.100.12.0/24 10.40.1.33
+route -n add -net 100.100.150.0/24 10.40.1.33
+route -n add 122.122.125.5 10.40.1.33
+route -n add 122.122.125.30 10.40.1.33
+route -n add 172.20.3.66 10.40.1.33
+route -n add 172.20.3.98 10.40.1.33
+route -n add 172.20.3.132 10.40.1.33
+route -n add 172.20.3.162 10.40.1.33
+route -n add 172.20.3.194 10.40.1.33
+route -n add 172.20.4.34 10.40.1.33
+route -n add 192.168.0.5 10.40.1.33
+route -n add -net 192.168.3.0/24 10.40.1.33
+route -n add -net 192.168.24.0/24 10.40.1.33
+route -n add -net 192.168.30.0/24 10.40.1.33
+route -n add -net 203.13.244.0/24 10.40.1.33
+route -n add -net 203.23.31.0/24 10.40.1.33
+route -n add -net 203.25.41.0/24 10.40.1.33
+route -n add -net 203.25.42.0/24 10.40.1.33
+route -n add 203.53.30.232 10.40.1.33
+route -n add 203.166.118.195 10.40.1.33
+
+# Klosters LAN
+route -n add -net 172.17.104.0/22 10.1.1.254
+route -n add -net 172.17.8.0/24 10.1.1.254
+route -n add -net 172.17.48.0/24 10.1.1.254
+route -n add -net 172.17.74.0/24 10.1.1.254
+route -n add -net 172.17.75.0/24 10.1.1.254
+route -n add -net 172.17.128.0/24 10.1.1.254
+route -n add -net 172.17.208.0/24 10.1.1.254
+
+# Management LAN
+route -n add -net 192.168.248.0/24 10.1.1.239
+
+# Mazda Routes
+route -n add -net 10.3.0.0/16 10.40.1.35
+route -n add -net 10.4.0.0/16 10.40.1.35
+route -n add -net 136.133.248.0/24 10.40.1.35
+route -n add -net 19.190.18.0/24 10.40.1.35
+#route -n add -net 19.190.18.0/24 10.1.1.246
+route -n add 19.197.2.141 10.40.1.35
+
+# Porsche Routes
+route -n add -net 10.61.1.0/24 10.40.1.37
+route -n add 10.61.248.65 10.40.1.37
+route -n add 10.61.248.66 10.40.1.37
+route -n add -net 84.21.39.0/24 10.40.1.37
+route -n add 84.21.52.11 10.40.1.37
+route -n add 84.21.53.11 10.40.1.37
+route -n add 141.36.132.85 10.40.1.37
+route -n add 192.168.200.34 10.40.1.37
+route -n add 193.175.6.2 10.40.1.37
+route -n add 203.26.190.6 10.40.1.37
+route -n add 203.26.190.226 10.40.1.37
+
+# Subaru Inchape Routes
+# route -n add -net 172.16.211.0/24 ????
+# route -n add -net 172.17.132.0/24 ????
+# route -n add 192.168.3.3 ????
+
+# Toyota Routes
+route -n add -net 10.9.100.0/24 10.40.1.46
+route -n add -net 132.147.0.0/16 10.40.1.46
+route -n add -net 150.45.0.0/16 10.40.1.46
+route -n add -net 192.168.42.0/24 10.40.1.46
+route -n add -net 192.168.101.0/24 10.40.1.46
+route -n add -net 192.168.108.0/24 10.40.1.46
+route -n add -net 192.168.109.0/24 10.40.1.46
+route -n add -net 192.168.206.0/24 10.40.1.46   
+
+# VW Routes
+#route -n add -net 10.112.198.0/24 10.1.1.250
+route -n add -net 10.112.198.0/24 10.1.1.240
+#route -n add -net 10.152.15.0/24 10.1.1.250
+route -n add -net 10.152.15.0/24 10.1.1.240
+#route -n add -net 172.16.61.0/24 10.1.1.250
+route -n add -net 172.16.61.0/24 10.1.1.240
+#route -n add 210.193.223.156 10.1.1.250
+route -n add 210.193.223.156 10.1.1.240
+
+# Start ftpproxy
+ftpproxy_flags=""
+
+# Start squiddy
+
+# if [ -x /usr/local/sbin/squid ]; then
+#        echo -n ' squid';       /usr/local/sbin/squid
+#    fi
+
+echo '.'
+

@@ -1,0 +1,493 @@
+APEagers 8-port IAD devices
+
+01 Device with MAC = 001c-105a-f2f4
+  01 Port 1 = 0738732307
+  01 Port 2 = 0738732304
+  01 Port 3 = 0738732302
+  01 Port 4 = 0738732309
+  01 Port 5 = 0738732303
+  01 Port 6 = jo92DQ89
+  01 Port 7 = 0738732310
+  01 Port 8 = K0e3xe2K
+
+02 Device with MAC = 001c-105c-5aac
+  02 Port 1 = 0731096713
+  02 Port 2 = 0731096714
+  02 Port 3 = 0731096715
+  02 Port 4 = 0731096716
+  02 Port 5 = 0731096730
+  02 Port 6 = 0731096719
+  02 Port 7 = 0731096720
+  02 Port 8 = 0731096717
+
+03 Device with MAC = 001c-105c-5afc
+  03 Port 1 = 0738286177
+  03 Port 2 = 0738286178
+  03 Port 3 = 0738286179
+  03 Port 4 = 0738286180
+  03 Port 5 = 0738286181
+  03 Port 6 = 0738286182
+  03 Port 7 = 0738286183
+  03 Port 8 = 0738286184
+
+04 Device with MAC = 001c-105c-5b30
+  04 Port 1 = 0730007293
+  04 Port 2 = 0000000002
+  04 Port 3 = 0730007261
+  04 Port 4 = 0730007262
+  04 Port 5 = 0730007269
+  04 Port 6 = 0730007248
+  04 Port 7 = 0730007256
+  04 Port 8 = 0000000008
+
+05 Device with MAC = 001c-105c-5b8c
+  05 Port 1 = 0730007239
+  05 Port 2 = 0730007277
+  05 Port 3 = %BWAUTHUSER-3%
+  05 Port 4 = 0730007247
+  05 Port 5 = 0730007211
+  05 Port 6 = 0730007259
+  05 Port 7 = 0730007283
+  05 Port 8 = 0730007240
+
+06 Device with MAC = 001c-105c-5b98
+  06 Port 1 = 0730007288
+  06 Port 2 = 0000000002
+  06 Port 3 = 0730007267
+  06 Port 4 = 0730007237
+  06 Port 5 = 0730007260
+  06 Port 6 = 0000000006
+  06 Port 7 = 0730007257
+  06 Port 8 = 0730007205
+
+07 Device with MAC = 001c-105c-5c98
+  07 Port 1 = 0000000001
+  07 Port 2 = 0730007235
+  07 Port 3 = 0730007219
+  07 Port 4 = 0000000004
+  07 Port 5 = 0730007208
+  07 Port 6 = 0734262004
+  07 Port 7 = 0734262005
+  07 Port 8 = 0734262006
+
+08 Device with MAC = 001c-105c-5ccc
+  08 Port 1 = 0000000001
+  08 Port 2 = 0000000002
+  08 Port 3 = 0000000003
+  08 Port 4 = 0000000004
+  08 Port 5 = 0730007271
+  08 Port 6 = 0730007273
+  08 Port 7 = 0730007206
+  08 Port 8 = 0000000008
+
+09 Device with MAC = 001c-105c-5d14
+  09 Port 1 = 0731096604
+  09 Port 2 = 0731096605
+  09 Port 3 = 0731096613
+  09 Port 4 = 0731096614
+  09 Port 5 = 0731096631
+  09 Port 6 = 0731096615
+  09 Port 7 = 0731096620
+  09 Port 8 = 0731096616
+
+10 Device with MAC = 0021-290d-522c
+  10 Port 1 = 0733845040
+  10 Port 2 = 0733845042
+  10 Port 3 = 0733845041
+  10 Port 4 = 0733845071
+  10 Port 5 = 0733845068
+  10 Port 6 = 0733845073
+  10 Port 7 = 0733845078
+  10 Port 8 = 0733845076
+
+11 Device with MAC = 0021-290d-5240
+  11 Port 1 = 0733845009 
+  11 Port 2 = 0733845007
+  11 Port 3 = 0733845011
+  11 Port 4 = 0733845018
+  11 Port 5 = 0733845050
+  11 Port 6 = 0733845017
+  11 Port 7 = 0000000007
+  11 Port 8 = 0000000008
+
+12 Device with MAC = 0021-290d-5248
+  12 Port 1 = 0733845045
+  12 Port 2 = 0733845079
+  12 Port 3 = 0733845077
+  12 Port 4 = 0733845021
+  12 Port 5 = 0733845023
+  12 Port 6 = 0733845024
+  12 Port 7 = 0733845025
+  12 Port 8 = 0733845027
+
+13 Device with MAC = 0021-290d-526c
+  13 Port 1 = 0733845530
+  13 Port 2 = 0733845531
+  13 Port 3 = 0733845521
+  13 Port 4 = 0733845538
+  13 Port 5 = 0733845539
+  13 Port 6 = GXvneIs8
+  13 Port 7 = 0000000007
+  13 Port 8 = 0000000008
+
+14 Device with MAC = 0021-290d-528c
+  14 Port 1 = 0733845550
+  14 Port 2 = 0733845552
+  14 Port 3 = 0733845551
+  14 Port 4 = 0733845503
+  14 Port 5 = 0733845559
+  14 Port 6 = 0733845500
+  14 Port 7 = 0733845502
+  14 Port 8 = 0733845553
+
+15 Device with MAC = 0021-290d-530c
+  15 Port 1 = 0733845514
+  15 Port 2 = 0733845512
+  15 Port 3 = 0733845529
+  15 Port 4 = 0000000004
+  15 Port 5 = 0733845520
+  15 Port 6 = 0733845522
+  15 Port 7 = 0733845523
+  15 Port 8 = 0733845524
+
+16 Device with MAC = 0021-290d-5324
+  16 Port 1 = 0733845705
+  16 Port 2 = 0733845776
+  16 Port 3 = 0733845799
+  16 Port 4 = 0733845730
+  16 Port 5 = 0733845721
+  16 Port 6 = 0733845722
+  16 Port 7 = 0733845720
+  16 Port 8 = 0000000008
+
+17 Device with MAC = 0021-290d-70e0
+  17 Port 1 = 0733848809
+  17 Port 2 = 0733848851
+  17 Port 3 = 0733848813
+  17 Port 4 = 0733848833
+  17 Port 5 = 0000000005
+  17 Port 6 = 0733848835
+  17 Port 7 = 0000000007
+  17 Port 8 = 0733848834
+
+18 Device with MAC = 0021-290d-7124
+  18 Port 1 = 0733847319
+  18 Port 2 = 0733847377
+  18 Port 3 = 0733847313
+  18 Port 4 = 0733847366
+  18 Port 5 = 0733847321
+  18 Port 6 = 0733847302
+  18 Port 7 = 0733847388
+  18 Port 8 = 0733847306
+
+19 Device with MAC = 0021-290d-7130
+  19 Port 1 = 0733847339
+  19 Port 2 = 0733847338
+  19 Port 3 = 0733847345
+  19 Port 4 = 0733847392
+  19 Port 5 = 0733847327
+  19 Port 6 = 0733847391
+  19 Port 7 = 0733847909
+  19 Port 8 = 0733847346
+
+20 Device with MAC = 0021-290d-7134
+  20 Port 1 = 0731096750
+  20 Port 2 = 0731096745
+  20 Port 3 = 0731096760
+  20 Port 4 = 0731096746
+  20 Port 5 = 0731096763
+  20 Port 6 = %BWAUTHUSER-6%
+  20 Port 7 = %BWAUTHUSER-7%
+  20 Port 8 = %BWAUTHUSER-8%
+
+21 Device with MAC = 0021-290d-7150
+  21 Port 1 = 0731096761
+  21 Port 2 = 0731096747
+  21 Port 3 = 0731096762
+  21 Port 4 = 0731096748
+  21 Port 5 = %BWAUTHUSER-5%
+  21 Port 6 = %BWAUTHUSER-6%
+  21 Port 7 = %BWAUTHUSER-7%
+  21 Port 8 = %BWAUTHUSER-8%
+
+22 Device with MAC = 0021-290d-7160
+  22 Port 1 = 0733848846
+  22 Port 2 = 0733848836
+  22 Port 3 = 0733848839
+  22 Port 4 = 0733848864
+  22 Port 5 = 0733848850
+  22 Port 6 = 0733848849
+  22 Port 7 = 0733848859
+  22 Port 8 = 0733848855
+
+23 Device with MAC = 0021-290d-7184
+  23 Port 1 = 0738286145
+  23 Port 2 = 0738286146
+  23 Port 3 = 0738286147
+  23 Port 4 = 0738286142
+  23 Port 5 = 0000000005
+  23 Port 6 = 0000000006
+  23 Port 7 = 0000000007
+  23 Port 8 = 0000000008
+
+24 Device with MAC = 0021-290d-71c8
+  24 Port 1 = 0733847398
+  24 Port 2 = 0733847328
+  24 Port 3 = 0733847332
+  24 Port 4 = %BWAUTHUSER-4%
+  24 Port 5 = %BWAUTHUSER-5%
+  24 Port 6 = %BWAUTHUSER-6%
+  24 Port 7 = %BWAUTHUSER-7%
+  24 Port 8 = %BWAUTHUSER-8%
+
+25 Device with MAC = 0021-290d-71d0
+  25 Port 1 = 0733847920
+  25 Port 2 = 0733847340
+  25 Port 3 = 0733847314
+  25 Port 4 = 0733847994
+  25 Port 5 = 0733847995
+  25 Port 6 = 0733847996
+  25 Port 7 = 0733847344
+  25 Port 8 = %BWAUTHUSER-8%
+
+26 Device with MAC = 0021-290d-71ec
+  26 Port 1 = 0733845731
+  26 Port 2 = sS0arZ5C
+  26 Port 3 = 0733845713
+  26 Port 4 = 0733845771
+  26 Port 5 = 0733845750
+  26 Port 6 = 0733845752
+  26 Port 7 = 0000000007
+  26 Port 8 = r0mMVTHw
+
+27 Device with MAC = 0021-290d-71f4
+  27 Port 1 = 0733848811
+  27 Port 2 = 0733848804
+  27 Port 3 = 0733848822
+  27 Port 4 = 0733848806
+  27 Port 5 = 0733848847
+  27 Port 6 = 0733848848
+  27 Port 7 = 0733848844
+  27 Port 8 = 0733848830
+
+28 Device with MAC = 0021-290d-723c
+  28 Port 1 = 0736343322
+  28 Port 2 = 0736343301
+  28 Port 3 = 0736343306
+  28 Port 4 = 0736343302
+  28 Port 5 = %BWAUTHUSER-5%
+  28 Port 6 = 0736343305
+  28 Port 7 = 0736343321
+  28 Port 8 = 0736343306
+
+29 Device with MAC = 0021-290d-8fb8
+  29 Port 1 = 0731096666
+  29 Port 2 = 0731096608
+  29 Port 3 = 0731096678
+  29 Port 4 = 0731096609
+  29 Port 5 = 0731096679
+  29 Port 6 = 0731096627
+  29 Port 7 = 0731096628
+  29 Port 8 = 0731096619
+
+30 Device with MAC = 0021-290d-8fc0
+  30 Port 1 = 0731096630
+  30 Port 2 = 0731096629
+  30 Port 3 = 0000000003
+  30 Port 4 = 0731096626
+  30 Port 5 = 0000000005
+  30 Port 6 = 0000000006
+  30 Port 7 = 0000000007
+  30 Port 8 = 0000000008
+
+31 Device with MAC = 0025-9c6b-f4e4
+  31 Port 1 = 0731096790
+  31 Port 2 = 0731096787
+  31 Port 3 = 0731096791
+  31 Port 4 = 0731096792
+  31 Port 5 = 0731096793
+  31 Port 6 = 0000000006
+  31 Port 7 = 0000000007
+  31 Port 8 = 0000000008
+
+32 Device with MAC = 0025-9c6b-f4f0
+  32 Port 1 = 0732503070
+  32 Port 2 = 0732503071
+  32 Port 3 = 0000000003
+  32 Port 4 = 0732503075
+  32 Port 5 = 0000000005
+  32 Port 6 = 0000000006
+  32 Port 7 = 0000000007
+  32 Port 8 = 0000000008
+
+33 Device with MAC = 0025-9c6b-f514
+  33 Port 1 = 0732508981
+  33 Port 2 = 0732508905
+  33 Port 3 = 0732508951
+  33 Port 4 = 0000000004
+  33 Port 5 = 0000000005
+  33 Port 6 = 0000000006
+  33 Port 7 = 0000000007
+  33 Port 8 = 0000000008
+
+34 Device with MAC = 0025-9c6b-f5b0
+  34 Port 1 = 0732508912
+  34 Port 2 = 0732508913
+  34 Port 3 = 0732508914
+  34 Port 4 = 0732508915
+  34 Port 5 = 0732508916
+  34 Port 6 = 0732508917
+  34 Port 7 = 0732508982
+  34 Port 8 = 0732508918
+
+35 Device with MAC = 0025-9c6b-f5b8
+  35 Port 1 = N1BhbKpC
+  35 Port 2 = 3JQlQvcT
+  35 Port 3 = 1p3EokBh
+  35 Port 4 = cgzQkf0Y
+  35 Port 5 = 0000000005
+  35 Port 6 = 4qx0EWHE
+  35 Port 7 = 0000000007
+  35 Port 8 = 62UQof3g
+
+36 Device with MAC = 0025-9c6c-1160
+  36 Port 1 = 0732508980
+  36 Port 2 = 0732508936
+  36 Port 3 = 0732508938
+  36 Port 4 = 0732508906
+  36 Port 5 = 0732508983
+  36 Port 6 = 0732508939
+  36 Port 7 = 0732508950
+  36 Port 8 = 0732508935
+
+37 Device with MAC = 0025-9c6c-129c
+  37 Port 1 = 0732503050
+  37 Port 2 = 0732503052
+  37 Port 3 = 0732503028
+  37 Port 4 = 0732503038
+  37 Port 5 = 0732503049
+  37 Port 6 = 0000000006
+  37 Port 7 = 0000000007
+  37 Port 8 = 0000000008
+
+38 Device with MAC = 0025-9c6c-12a4
+  38 Port 1 = 0732503051
+  38 Port 2 = 0732503018
+  38 Port 3 = 0732503055
+  38 Port 4 = 0732503037
+  38 Port 5 = 0732503039
+  38 Port 6 = 0000000006
+  38 Port 7 = 0000000007
+  38 Port 8 = 0000000008
+
+39 Device with MAC = 0025-9c6d-fa38
+  39 Port 1 = 0736343330
+  39 Port 2 = 0736343332
+  39 Port 3 = 0736343331
+  39 Port 4 = 0736343334
+  39 Port 5 = 0736343335
+  39 Port 6 = 0736343336
+  39 Port 7 = 0000000007
+  39 Port 8 = 0000000008
+
+40 Device with MAC = 0025-9c6d-fb00
+  40 Port 1 = 0730007203
+  40 Port 2 = 0730007218
+  40 Port 3 = 0730007215
+  40 Port 4 = 0730007204
+  40 Port 5 = 0730007287
+  40 Port 6 = 0000000006
+  40 Port 7 = 0000000007
+  40 Port 8 = 0000000008
+
+41 Device with MAC = 0025-9c6e-1ce4
+  41 Port 1 = 0LO43soz
+  41 Port 2 = 5U6qG63C
+  41 Port 3 = 8mYmDvkx
+  41 Port 4 = MaBkUy3o
+  41 Port 5 = 0000000005
+  41 Port 6 = 0000000006
+  41 Port 7 = 0000000007
+  41 Port 8 = 0000000008
+
+42 Device with MAC = 687f-7458-1ce8
+  42 Port 1 = WgrOqv0t
+  42 Port 2 = 27kgtZLU
+  42 Port 3 = zoWb230w
+  42 Port 4 = POs2Eng6
+  42 Port 5 = 5ZLLxb0g
+  42 Port 6 = 0000000006
+  42 Port 7 = 0000000007
+  42 Port 8 = 0000000008
+
+43 Device with MAC = 687f-7458-64cc
+  43 Port 1 = i909BZA4
+  43 Port 2 = Vj5d1JRk
+  43 Port 3 = UKA0Nef4
+  43 Port 4 = N1fwhBdS
+  43 Port 5 = 0000000005
+  43 Port 6 = 0000000006
+  43 Port 7 = 0000000007
+  43 Port 8 = 0000000008
+
+44 Device with MAC = 687f-7458-64e8
+  44 Port 1 = 8WV46pTM
+  44 Port 2 = 0000000002
+  44 Port 3 = yTB41sTp
+  44 Port 4 = e0PTD429
+  44 Port 5 = 28pbK8T6
+  44 Port 6 = 0000000006
+  44 Port 7 = 0000000007
+  44 Port 8 = 0000000008
+
+45 Device with MAC = 687f-7458-652c
+  45 Port 1 = x9SFKCbQ
+  45 Port 2 = 625Pv3d6
+  45 Port 3 = 0YK6RQ4g
+  45 Port 4 = LuNzq9L9
+  45 Port 5 = 197Ar1i7
+  45 Port 6 = 0000000006
+  45 Port 7 = 0000000007
+  45 Port 8 = 0000000008
+
+46 Device with MAC = 687f-7458-88fc
+  46 Port 1 = WK0waJZ7
+  46 Port 2 = nHWHiL9t
+  46 Port 3 = 2jx7oOWu
+  46 Port 4 = Bemyu4cK
+  46 Port 5 = FEyxLW05
+  46 Port 6 = 0000000006
+  46 Port 7 = 0000000007
+  46 Port 8 = 0000000008
+
+47 Device with MAC = 687f-7458-8a7c
+  47 Port 1 = tpsdTZ95
+  47 Port 2 = pOr6jfc8
+  47 Port 3 = zo5s0jeD
+  47 Port 4 = YzWRHk5g
+  47 Port 5 = 0000000005
+  47 Port 6 = 0000000006
+  47 Port 7 = 0000000007
+  47 Port 8 = 0000000008
+
+48 Device with MAC = 687f-7458-8b4c
+  48 Port 1 = u8ZljvoY
+  48 Port 2 = 0000000002
+  48 Port 3 = P2jJwyju
+  48 Port 4 = 0000000004
+  48 Port 5 = 0000000005
+  48 Port 6 = 0000000006
+  48 Port 7 = 0000000007
+  48 Port 8 = 0000000008
+
+49 Device with MAC = 687f-7459-26e4
+  49 Port 1 = 0733847303
+  49 Port 2 = 0733847304
+  49 Port 3 = 0733847307
+  49 Port 4 = 0733847308
+  49 Port 5 = 0000000005
+  49 Port 6 = 0733847330
+  49 Port 7 = 0733847905
+  49 Port 8 = %BWAUTHUSER-8%
+
+APEagers 2-port IAD devices

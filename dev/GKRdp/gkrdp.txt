@@ -1,0 +1,144 @@
+Gatekeeper Remote Desktop Access
+2014-03-26
+Michael Spence
+
+
+Preamble:
+
+NOTE: this document written one year late and hence is missing items which cannot be remembered.
+
+
+Topics of Discussion
+
+1. Introduction and Purpose
+2. Configuration of GK Server
+3. Preparation for Certificates
+4. Root Certificate Creation
+5. Sub-CA Certificate Creation
+6. GK Certificate Creation
+7. Installation of Certificates
+
+
+Topics in Detail
+
+1. Introduction and Purpose
+
+Microsoft have provided a method for allowing RDP access to machines within a corporate network via a HTTPS interface.  Microsoft call this technology "Remote Desktop Gateway".  The technology uses IIS to handle the presentation of HTTPS to clients through which the RDP protocol is encapsulated.  This method is analogous with the "Gatekeeper" method of old; access was only granted to the palace after talking with the gatekeeper who authenticated this access before allowing it.
+
+The purpose for installing a Gatekeeper is to give single points of access for employees to the internal machines which need to be accessed from the internet.  Within this requirement is a need for an easy deployment method and easy on going support for users and their machines.
+
+
+2. Configuration of GK Server
+
+Add roles:
+	Web Server (IIS)
+	Remote Desktop Services - RD Gateway Manager
+	Remote Desktop Services - RD Session Host Config
+	Remote Desktop Services - Remote Desktop Services Manager
+
+Configure IIS
+	Details of configuration are lost although this should be according to Microsoft best practices
+
+Configure RD Gateway
+	Details of configuration are lost although this should be according to Microsoft best practices
+
+
+3. Preparation for Certificates
+
+A certificate store was created on Michael's Linux machine (aka Cen).  The store has been built as a repository for the building of certificates.
+
+The following directory structure was configured
+
+	dev/GKRdp/certs
+		|
+		+--- /root
+		|	|
+		|	+--- /certs
+		|	|
+		|	+--- /crl
+		|	|
+		|	+--- /newcerts
+		|	|
+		|	+--- /private
+		|
+		+-- /sub
+			|
+			+--- /certs
+			|
+			+--- /crl
+			|
+			+--- /newcerts
+			|
+			+--- /private
+
+The following blank files were created:
+
+	.../root/index.txt
+	.../root/serial
+	.../root/crlnumber
+	.../sub/index.txt
+	.../sub/serial
+	.../sub/crlnumber
+
+The files named serial and crlnumber were editted and the text "0100" was added to them.
+
+From /etc/ssl, the file openssl.cnf was copied to both .../root and .../sub.  This file was editted in the following way for both copies of the file:
+
+	"randdir" was removed
+
+	"dir" was set to "."
+
+
+4. Initial Setup and Root Certificate Creation
+
+From within the .../root directory, the Root CA is created using the following:
+
+	openssl rand -out private/.rand 1024
+	openssl genrsa -out private/cakey.pem -des3 -rand private/.rand 2048
+	openssl req -x509 -new -key private/cakey.pem -out cacert.pem -config openssl.cnf
+
+From within the .../sub directory, the basis for a Sub-CA is created using:
+
+	openssl rand -out private/.rand 1024
+	openssl genrsa -out private/cakey.pem -des3 -rand private/.rand 2048
+	openssl req -new -key private/cakey.pem -out subcareq.pem -config openssl.cnf
+
+The following steps need to be repeated when ever a new sub-CA is required.  Prior to a repeated remake, the index.txt* files need to be removed and a new index.txt file created.
+
+Back in the .../root directory, the sub information can be signed by the CA:
+
+	openssl ca -in ../sub/subcareq.pem -extensions v3_ca -config openssl.cnf
+
+The output is placed in "newcerts" with a file name according to the "serial" value.  This file is to be copied to .../sub/cacert.pem; for example:
+
+	cp .../root/newcerts/0101.pem .../sub/cacert.pem
+
+
+
+5. GK Certificate Creation
+
+The following steps need to be repeated when ever a new GK certificate is required.  Prior to a repeated remake, the index.txt* files need to be removed and a new index.txt file created.
+Before generating a certificate for the GK, a Certificate Request must be generated frm the GK server.  This can be done through the IIS or MMC interfaces.
+
+The CSR should be copied to .../sub and an appropriate name should be given to it.
+
+The following steps need to be executed to create the response certificate:
+
+	openssl x509 -req -in <GK_NAME>.csr  -out <GK_NAME>-inter.pem \
+		-signkey private/<GK_NAME>-key.pem -CA cacert.pem \
+		-CAkey private/cakey.pem -CAcreateserial -days 365
+
+	openssl x509 -x509toreq -in <GK_NAME>-inter.pem -out <GK_NAME>-inter.csr \
+		-signkey private/<GK_NAME>-key.pem
+
+	openssl ca -in <GK_NAME>-inter.csr -out <GK_NAME>.pem \
+		-keyfile private/cakey.pem -cert cacert.pem \
+		-config openssl.cnf -extensions serverAuth -policy policy
+
+	openssl pkcs12 -export -in <GK_NAME>.pem -out <GK_NAME>.p12 \
+		-inkey private/<GK_NAME>-key.pem
+
+
+6. Installation of Certificates
+
+The certificates are loaded into the GK using MMC and then the RD Gateway manager is configured to use the certificate.

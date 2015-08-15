@@ -1,0 +1,117 @@
+APEagers Domain - 2008 R2 AD DS Upgrade
+2013-08-16
+Michael Spence
+
+
+Audience:
+
+This document is written for the use of the project manager, system engineer and support staff (including field support).  This document will be assumed to be referenced by the IT General Manager for the purposes of explaining the reasons and demonstrating competency.
+
+
+Preamble:
+
+This document details the current Active Directory deployment within the APEagers domain.  With this detail, reasons for its required upgrade are given.
+
+This document explains the tasks required before the implementation of the upgrade is performed.  This will be achievable prior to the implementation date.
+
+This document explains the tasks required to implement the upgrade.
+
+This document DOES NOT describe any improvements in the Active Directory system, but may elude to some percieved benefits.
+
+This document DOES NOT describe the planned Group Policy upgrades which are required for controlling PCs and their software on the domain.
+
+This document assesses the time required and the potential risks of this project and proposes the mitigations required to achieve this project without outage.
+
+This document references the Microsoft technical paper "Windows Server  2008 R2: Upgrading Active Directory Domains to Windows Server 2008 and Windows Server 2008 R2 AD DS Domains".  A copy of this paper has been saved alongside this document; text within this copy has been highlighted yellow to demonstrate what are deemed to be the appropriate sections applicable to this project.
+
+
+Topics of Discussion:
+
+	1. Present Configuration
+	2. Rationale for Upgrade
+	3. Pre-upgrade Considerations
+		a. DC Functionality Tests
+		b. Backup Domain Data
+		c. Assess Hardware Requirements
+		d. Assign Appropriate Credentials
+	4. Upgrade Tasks
+		a. Prep Domain with adprep
+		b. Install New 08R2 DCs
+		c. Transfer PDC to New 08R2 PDC
+		d. Decom Old 03 DCs
+		e. Raise Functional Level
+		f. Cleanup
+	5. Timeline and Resources
+	6. Risks and Mitigations
+
+
+Topics in Detail
+
+1. Present Configuration
+
+Presently the Acitive Directory deployed throughout APEagers Ltd in QLD and NT has a funcitonal level of 2003.  This can be verified by checking the properties of the domain in "AD Users and Computers".
+
+This level of domain allows us to control Windows based computers within the domain that have an operating system of XP or below.  Machines on the domain which have Windows Vista or Windows 7 can only be partially controlled.  Machines not on the domain or not using Windows as an OS are fully uncontrollable.
+
+The IT team over many years has developed a rich set of Group Policies which control computer usage and settings.  These policies allow for rapid deployment of features to uses and also give a uniform configuration to each machine.  These policies apply only to the OS and Software types for which they are written.
+
+
+2. Rationale for Upgrade
+
+If the IT team is to maintain a consistent configuration across all machines, which has demonstrated itself in the past to reduce deployment times, full control of the latest operating systems and software is necessary.  The most obvious path for achieving this goal is to upgrade the current Active directory system and then upgrade the policies to suit these new systems.
+
+
+3. Pre-upgrade Considerations
+
+3.a. DC Functionality Tests
+
+Due to the past history of the APEagers domain, it will be necesasry to determine the state of all domain controllers within the forest.  This will include all old DCs which may not have been demoted correctly at the time of their decommisioning.  
+
+Also the 5 schema roles which are necessary for an Active Directory will need to be found and mapped to their respective DCs.
+
+Finally, tests should be performed within the current AD to assess its performance of necessary tasks.  If the system is not functional, it may be necessary to abort this project in favour of a completely new AD roll out.
+
+
+3.b. Backup Domain Data
+
+The present state of the domain can be replicated between a second Domain Controller.  It will be necessary before upgrading the domain to verify that this replication has been achieved.  In the case of an emergency due to a failed upgrade, it may be necessary to rely on this backup domain controller.
+
+
+3.c. Assess Hardware Requirements
+
+It is the author's opinion that the target functional level that will be needed will be 2008 R2.  If this is the case, the domain controllers must be Windows Server 2008 R2 also, which has predefined required disk needs.  Refer to the Microsoft Documentation for the exact requirements.
+
+Due to this level of AD, the existing Windows 2003 DCs will not be able to be upgraded.  Hence all existing DCs will be demoted at the time of implementation.
+
+
+3.d. Assign Appropriate Credentials
+
+The persons performing the upgrade will require specific credentials to perform this upgrade.  Refer to the Microsoft Documentation for the exact requirements.
+
+
+4. Upgrade Tasks
+
+4.a. Prep Domain with adprep
+
+Before a new 2008 R2 DC can be introduced into the domain, the domain must first be prepared.  The adprep tool is required for this and can be found on the installation media for 2008 R2 under the directory "\support\adprep" named "adprep32.exe" (for use on x86 2003 servers).
+
+Refer to the Microsoft Documentation for procedures on performing this preparation.  It is suggested that only Forest Preperation and Domain Preparation are required.  It is assumed that Read Only DCs will not be deployed at this time.
+
+
+4.b. Install New 08R2 DCs
+
+For each DC that exists a new 2008 R2 DC will be built.  After installation of the Operating system and performing the necessary tasks of joining the system to the domain, each server will promoted to the role of DC.
+
+
+4.c. Transfer PDC to New 08R2 PDC
+
+Since the PDC role cannot reside on an existing 2003 server, one of the new 2008 R2 DCs will need to sieze these roles.  This transfer can be achieved easily using the ntdsutil utility.  Follow the instructions at "http://support.microsoft.com/kb/255504"
+
+
+4.d. Decom Old 03 DCs
+4.e. Raise Functional Level
+4.f. Cleanup
+5. Timeline and Resources
+6. Risks and Mitigations
+
+

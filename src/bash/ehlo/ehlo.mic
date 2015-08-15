@@ -1,0 +1,4 @@
+EHLO test.com
+MAIL FROM:admin@test.com
+RCPT TO:drew@northfieldmoorooka.com.au
+QUIT

@@ -1,0 +1,22 @@
+Darwin PST Build
+
+
+
+files in bris, all HVF and small BTD users
+
+Missing files are large BTD users who are:
+
+
+
+
+To create the large BTD users:
+	All the 2GB PSTs which are the only copy of the "deleted"/"archived" emails exist in Darwin.
+		-> File A (upto four for each user)
+	Truncate all 2GB PSTs by x? to make file less than 2GB (around 40-70MB) 
+		-> File B
+	Scan this created PST with scanning tool
+		-> File C
+	
+
+Issue with PST upload tool; duplicate entries for items already uploaded.
+

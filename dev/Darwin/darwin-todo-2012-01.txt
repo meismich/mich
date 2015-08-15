@@ -1,0 +1,82 @@
+Darwin - To Do List
+2011-12-28
+Michael Spence
+
+
+Outstanding Jobs:
+
+1- Complete Merge of Exchange mailboxes to Office 365
+2- Replace outdated thin clients
+3- Replace Wireless Access Points
+4- Merge Sub-domain
+5- Decommission Servers: TS, MX, ISA, 
+6- Build CSP (incl GP)
+7- Build Backup Solution
+
+Additional Jobs:
+
+1- Remove Virus from HVF
+2- Deploy Radius across WAPs
+3- Deploy Updated remoting technology
+
+
+Outstanding Jobs in Detail:
+
+1- Complete Merge of Exchange mailboxes to Office 365
+
+The data already merged into 365 needs to be compared with the data held in PST files captured from the exchange server.  Users noted as not having their complete informaiton from exchange, will need to have their PST re-merged with 365.  The first merge was done using Outlook, which has had issues merging with 365 in some instances (especially large pst files).  A new tool is expected to be available in the coming days to merge PST in a more robust manner.  This tool will be used to individually merge pst files with 365.
+
+
+2- Replace outdated thin clients
+
+There are a number of thin clients which are currently in use in a number of departements in Darwin which cannot access the new Terminal Server due to outdated software, which cannot be upgraded.  As the desire is to remove the TS server from production, the need exists that these thin clients are also removed from production.  New HP thin clients have already been shipped to Darwin in preparation for this replacement.  These devices will need configuration performed on them.
+ 
+
+3- Replace Wireless Access Points
+
+The wireless access points in use thoughout Darwin are not the standard Cisco 1131, which is employed thoughout Queensland dealerships.  The existing WAPs vary in capability and reliability.  These will be replaced with the standard, which has already been shipped to Darwin for this purpose.  Configuration must be performed on each of these replacement devices.  Initially, it may be wise to simply configure these devices to emulate the existing wireless setup, instead of moving directly to a Radius solution.  Investigation of device capability will be required before moving to this.
+
+
+4- Merge Sub-domain
+
+Historically, the darwin sub-domain has proven to be a good method to segregate the remote network and isolate the unique configurations required for these sites.  Currently the sub-domain enforces restrictions in administration between the parent and child domains.  Additionally, the apeagers domain is also to be altered to replace the .com.au with .local; to perform this easily, merging the darwin domain needs to occur.  Research into the ADMT and how best to achieve this merge is required.
+
+Each PC and server will be migrated to the new domain in one movement (as is the current understanding of the tool).  As each computer is turned on the machine will join the new domain.  Servers to not go accross will be TS, MX, ISA and FW.
+
+
+5- Decommission Servers: TS, MX, ISA, 
+
+After the migration, the old TS, MS, ISA and FS will not be contactable/useable, and will be available for decomissioning.  The servers will have their disks checked for vital information which needs to be migrated into the new systems.  Subsequently, they will be powered down and removed from the rack and shipped back to Brisbane.  The exception to this will be the MX server which is destined to play a role in the backup solution for Darwin. 
+
+
+6- Build CSP (incl GP)
+
+Post the migration, the users from the Darwin subdomain will inherit the GPs of the apeagers domain, including the internet usage policy.  The default will cause users to proxy internet traffic via QLD-CSP.  Similar to the NSD-CSP GP which proxies newstead users through the internet connection at newstead, a GP and CSP will need to be created specifically for the use of darwin users.
+
+
+7- Build Backup Solution
+
+The present backup solution in darwin is designed to backup the old systems.  The old FS was originally destined to become the backup solution for the new systems, but as it was not completely decommissioned, this never eventuated.  It is the author's opinion that the new backup system will replicate the backup technologies used in the Primary Datacentre and at Kloster's.  Possibly, without the need for a tape drive the system could backup to external HDDs for long term storage.  
+
+
+
+Additional Jobs:
+
+1- Remove Virus from HVF
+
+For the past few months there has been a virus at the Berrimah site, which has infected nearly every XP machine there.  This has not spread to other sites, to the author's knowledge.  Recent efforts involving re-installing the McAfee virus software on these systems may have infact removed this threat from the site, but this is yet to be 100% confirmed.
+
+
+2- Deploy Radius across WAPs
+
+As is standard practice throughout QLD sites, wireless access points are configured to enable access to the network only via authentication with a radius server.  It is hoped that this is also possible for devices throughout darwin, without too much interference or later configuration issues.  It may also be necessary to include a radius server within the VM environment at Darwin.  Research will need to be done to ensure this communicates effectively with the existing PRIMARY radius server.
+
+
+3- Deploy Updated remoting technology
+
+The existing method within Darwin to remote to computers has been to use VNC.  At present, QLD administrators use Landesk to perform this function.  As part of the servicedesk system, software bundled with this system performs this function also.  Due to this software's integration into the servicedesk system, it seems useful (and possibly beneficial) to deploy this technology to all machines within the apeagers network, inluding (and especially) darwin.
+
+
+4- Standardise IP addresses
+
+A heavy reliance on DHCP exists within all of the Darwin sites.  In the opinion of the services team, this reliance is fraught with issues, and goes against their standard practices.  It would be preferrable that all devices, which do not require DHCP, are given IP addresses in-line with the document "Standard IP Addressing Scheme".  This MUST INCLUDE printers, scanners, wireless access points.  DHCP scopes can then be reduced and refined.

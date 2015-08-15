@@ -1,0 +1,7 @@
+
+Starting Nmap 4.76 ( http://nmap.org ) at 2010-07-15 11:44 EST
+Host bne-eranet.apeagers.com.au (10.1.11.9) appears to be up.
+MAC Address: 00:50:56:8D:23:D8 (VMWare)
+Host 10.1.11.52 appears to be up.
+MAC Address: 00:22:75:01:87:6C (Unknown)
+Nmap done: 256 IP addresses (2 hosts up) scanned in 1.37 seconds

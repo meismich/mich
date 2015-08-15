@@ -1,0 +1,67 @@
+
+option explicit
+
+dim oWsh, sCmd
+Set oWsh = CreateObject("WScript.Shell")
+
+dim sDesk, sUname, sServer, sString
+
+sDesk = oWsh.SpecialFolders("Desktop")
+msgbox sDesk
+
+sUname = InputBox("Please enter USERNAME (eg 'apeagers\jblogs')")
+sServer = InputBox("Please enter Target COMPUTER")
+
+sString = 	"screen mode id:i:2" & vbcrlf & _
+		"desktopwidth:i:1280" & vbcrlf & _
+		"desktopheight:i:1024" & vbcrlf & _
+		"session bpp:i:32" & vbcrlf & _
+		"winposstr:s:0,3,67,148,1219,754" & vbcrlf & _
+		"compression:i:1" & vbcrlf & _
+		"keyboardhook:i:2" & vbcrlf & _
+		"displayconnectionbar:i:1" & vbcrlf & _
+		"disable wallpaper:i:1" & vbcrlf & _
+		"disable full window drag:i:1" & vbcrlf & _
+		"allow desktop composition:i:0" & vbcrlf & _
+		"allow font smoothing:i:0" & vbcrlf & _
+		"disable menu anims:i:1" & vbcrlf & _
+		"disable themes:i:0" & vbcrlf & _
+		"disable cursor setting:i:0" & vbcrlf & _
+		"bitmapcachepersistenable:i:1" & vbcrlf & _
+		"full address:s:" & sServer & vbcrlf & _
+		"audiomode:i:0" & vbcrlf & _
+		"redirectprinters:i:1" & vbcrlf & _
+		"redirectcomports:i:0" & vbcrlf & _
+		"redirectsmartcards:i:1" & vbcrlf & _
+		"redirectclipboard:i:1" & vbcrlf & _
+		"redirectposdevices:i:0" & vbcrlf & _
+		"autoreconnection enabled:i:1" & vbcrlf & _
+		"authentication level:i:0" & vbcrlf & _
+		"prompt for credentials:i:1" & vbcrlf & _
+		"negotiate security layer:i:1" & vbcrlf & _
+		"remoteapplicationmode:i:0" & vbcrlf & _
+		"gatewayhostname:s:tmp.apeagers.com.au" & vbcrlf & _
+		"gatewayusagemethod:i:1" & vbcrlf & _
+		"gatewaycredentialssource:i:0" & vbcrlf & _
+		"gatewayprofileusagemethod:i:1" & vbcrlf & _
+		"promptcredentialonce:i:1" & vbcrlf & _
+		"use multimon:i:0" & vbcrlf & _
+		"audiocapturemode:i:0" & vbcrlf & _
+		"videoplaybackmode:i:1" & vbcrlf & _
+		"connection type:i:2" & vbcrlf & _
+		"redirectdirectx:i:1" & vbcrlf & _
+		"use redirection server name:i:0" & vbcrlf & _
+		"drivestoredirect:s:" 
+
+if sUname <> "" then sString = sString & vbcrlf & "username:s:" & sUname
+
+if sServer = "" then sServer = "Blank"
+
+dim oFso, oFile
+
+set oFso = CreateObject("Scripting.FileSystemObject")
+set oFile = oFso.OpenTextFile(sDesk & "\" & sServer & ".rdp", 2, True)
+
+oFile.Write(sString)
+oFile.Close
+

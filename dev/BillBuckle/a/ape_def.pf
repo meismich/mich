@@ -1,0 +1,289 @@
+#
+# FILE:		ape_def.pf
+# AUTHOR:	Michael Spence
+# DATE:		2013-05-16
+# VERSION:	BSD_Gateway v0.1 (client)
+#
+# PURPOSE:	Define APEagers networks/hosts
+
+#-- EXTERNAL ACCESS POINTS --#
+ape_bro =	"203.43.230.186"
+ape_klo =	"203.38.221.86"
+ape_sci =	"210.56.85.111 210.56.85.112"
+ape_dwn =	"203.43.230.178"
+ape_nsd =	"139.130.41.14"
+ape_qld =	"165.228.157.90"
+ape_adt =	"210.8.187.102"
+
+table <inet_ape> const { 		\
+			$ape_bro 	\
+			$ape_klo 	\
+			$ape_sci 	\
+			$ape_dwn 	\
+			$ape_nsd 	\
+			$ape_qld 	\
+			$ape_adt 	\
+			}
+
+#-- INTERNAL ACCESS POINTS --#
+#---- Bill Buckles
+lan_bro =	"172.17.150.0/24"
+lan_hrb =	"172.17.158.0/24"
+lan_mon =	"192.168.1.0/24"
+lan_prb =	"192.168.7.0/24"
+lan_opr =	"192.168.8.0/24"
+
+table <lans_bbu> const {		\
+			$lan_bro	\
+			$lan_hrb	\
+			$lan_mon	\
+			$lan_prb	\
+			$lan_opr	\
+			}
+
+#---- Northern Territory
+lan_dwn =	"10.50.0.0/16"
+lan_plm =	"10.51.0.0/16"
+lan_hvy =	"10.52.0.0/16"
+
+table <lans_ntd> const {		\
+			$lan_dwn	\
+			$lan_plm	\
+			$lan_hvy	\
+			}
+
+#---- Kloster Group
+lan_ham =	"172.17.8.0/24"
+lan_nfi =	"172.17.9.0/24"
+lan_rfd =	"172.17.48.0/24"
+lan_car =	"172.17.74.0/24"
+lan_wik =	"172.17.75.0/24"
+lan_klo =	"172.17.104.0/22"
+lan_ray =	"172.17.128.0/24"
+lan_ghd =	"172.17.142.0/24"
+lan_ces =	"172.17.208.0/24"
+
+table <lans_klo> const {		\
+			$lan_ham	\
+			$lan_nfi	\
+			$lan_rfd	\
+			$lan_car	\
+			$lan_wik	\
+			$lan_klo	\
+			$lan_ray	\
+			$lan_ghd	\
+			$lan_ces	\
+			}
+
+#---- AdTrans Dealerships
+lan_abn =	"10.8.0.0/24"
+lan_kes =	"10.9.0.0/24"
+lan_glg =	"172.16.1.0/24"
+lan_sti =	"172.16.2.0/24"
+lan_mic =	"172.16.3.0/24"
+lan_ang =	"172.16.4.0/24"
+lan_spk =	"172.16.5.0/24"
+lan_ptw =	"172.16.6.0/24"
+lan_adu =	"172.16.7.0/24"
+lan_ifm =	"172.16.9.0/24"
+lan_ive =	"172.16.10.0/24"
+lan_prs =	"172.16.11.0/24"
+lan_tsv =	"172.16.12.0/24"
+lan_cc4 =	"172.16.14.0/24"
+lan_rha =	"172.16.15.0/24"
+lan_rhs =	"172.16.16.0/24"
+lan_dan =	"172.16.18.0/24"
+lan_kil =	"172.16.19.0/24"
+lan_adk =	"172.16.21.0/24"
+lan_dng =	"172.16.22.0/24"
+lan_lav =	"172.16.23.0/24"
+lan_wtb =	"172.16.24.0/24"
+lan_stl =	"172.16.25.0/24"
+lan_mas =	"172.16.26.0/24"
+lan_sth =	"172.16.29.0/24"
+lan_apo =	"172.16.30.0/24"
+lan_hin =	"172.16.31.0/24"
+lan_wyo =	"172.16.32.0/24"
+lan_med =	"172.16.33.0/24"
+lan_rpk =	"172.16.34.0/24"
+lan_apk =	"172.16.35.0/24"
+
+table <lans_adt> const {		\
+			$lan_abn	\
+			$lan_kes	\
+			$lan_glg	\
+			$lan_sti	\
+			$lan_mic	\
+			$lan_ang	\
+			$lan_spk	\
+			$lan_ptw	\
+			$lan_adu	\
+			$lan_ifm	\
+			$lan_ive	\
+			$lan_prs	\
+			$lan_tsv	\
+			$lan_cc4	\
+			$lan_rha	\
+			$lan_rhs	\
+			$lan_dan	\
+			$lan_kil	\
+			$lan_adk	\
+			$lan_dng	\
+			$lan_lav	\
+			$lan_wtb	\
+			$lan_stl	\
+			$lan_mas	\
+			$lan_sth	\
+			$lan_apo	\
+			$lan_hin	\
+			$lan_wyo	\
+			$lan_med	\
+			$lan_rpk	\
+			$lan_apk	\
+			}
+
+#---- Queensland Dealerships
+lan_emp =	"10.1.0.0/16"
+lan_bur =	"10.2.0.0/16"
+lan_mtg =	"10.5.0.0/16"
+lan_asn =	"10.6.0.0/16"
+lan_gsk =	"10.7.0.0/16"
+lan_nsd =	"10.10.0.0/16"
+lan_jsv =	"10.11.0.0/16"
+lan_win =	"10.12.0.0/16"
+lan_tns =	"10.13.0.0/16"
+lan_ked =	"10.14.0.0/16"
+lan_msv =	"10.15.0.0/16"
+lan_vly =	"10.16.0.0/16"
+lan_bcr =	"10.17.0.0/16"
+lan_bdl =	"10.18.0.0/16"
+lan_efm =	"10.19.0.0/16"
+#lan_undef =	"10.22.0.0/16"
+lan_cal =	"10.23.0.0/16"
+lan_grk =	"10.24.0.0/16"
+lan_nla =	"10.25.0.0/16"
+lan_tmb =	"10.26.0.0/16"
+lan_asc =	"10.27.0.0/16"
+lan_twg =	"10.28.0.0/16"
+#lan_undef =	"10.29.0.0/16"
+lan_pnk =	"10.32.0.0/16"
+lan_irg =	"10.33.0.0/16"
+lan_gab =	"10.34.0.0/16"
+lan_cur =	"10.35.0.0/16"
+lan_bre =	"10.36.0.0/16"
+lan_3gs =	"10.37.0.0/16"
+lan_var2 =	"10.38.2.0/24"
+lan_aus =	"10.81.158.192/27"
+
+table <lans_qld> const {		\
+			$lan_emp	\
+			$lan_bur	\
+			$lan_mtg	\
+			$lan_asn	\
+			$lan_gsk	\
+			$lan_nsd	\
+			$lan_jsv	\
+			$lan_win	\
+			$lan_tns	\
+			$lan_ked	\
+			$lan_msv	\
+			$lan_vly	\
+			$lan_bcr	\
+			$lan_bdl	\
+			$lan_efm	\
+			$lan_cal	\
+			$lan_grk	\
+			$lan_nla	\
+			$lan_tmb	\
+			$lan_asc	\
+			$lan_twg	\
+			$lan_pnk	\
+			$lan_irg	\
+			$lan_gab	\
+			$lan_cur	\
+			$lan_bre	\
+			$lan_3gs	\
+			$lan_var2	\
+			$lan_aus	\
+			}
+
+#table <lans_ape> const { "172.17.150.0/24" "10.1.0.0/16" "10.32.0.0/16" "10.10.0.0/16" }
+table <lans_ape> const { 		\
+			$lan_bro	\	# BBU
+			$lan_hrb	\
+			$lan_mon	\
+			$lan_prb	\
+			$lan_opr	\
+			$lan_dwn	\	# NT
+			$lan_plm	\
+			$lan_hvy	\
+			$lan_ham	\	# KLO
+			$lan_nfi	\
+			$lan_rfd	\
+			$lan_car	\
+			$lan_wik	\
+			$lan_klo	\
+			$lan_ray	\
+			$lan_ghd	\
+			$lan_ces	\
+			$lan_abn	\	# ADT
+			$lan_kes	\
+			$lan_glg	\
+			$lan_sti	\
+			$lan_mic	\
+			$lan_ang	\
+			$lan_spk	\
+			$lan_ptw	\
+			$lan_adu	\
+			$lan_ifm	\
+			$lan_ive	\
+			$lan_prs	\
+			$lan_tsv	\
+			$lan_cc4	\
+			$lan_rha	\
+			$lan_rhs	\
+			$lan_dan	\
+			$lan_kil	\
+			$lan_adk	\
+			$lan_dng	\
+			$lan_lav	\
+			$lan_wtb	\
+			$lan_stl	\
+			$lan_mas	\
+			$lan_sth	\
+			$lan_apo	\
+			$lan_hin	\
+			$lan_wyo	\
+			$lan_med	\
+			$lan_rpk	\
+			$lan_apk	\
+			$lan_emp	\	# QLD
+			$lan_bur	\
+			$lan_mtg	\
+			$lan_asn	\
+			$lan_gsk	\
+			$lan_nsd	\
+			$lan_jsv	\
+			$lan_win	\
+			$lan_tns	\
+			$lan_ked	\
+			$lan_msv	\
+			$lan_vly	\
+			$lan_bcr	\
+			$lan_bdl	\
+			$lan_efm	\
+			$lan_cal	\
+			$lan_grk	\
+			$lan_nla	\
+			$lan_tmb	\
+			$lan_asc	\
+			$lan_twg	\
+			$lan_pnk	\
+			$lan_irg	\
+			$lan_gab	\
+			$lan_cur	\
+			$lan_bre	\
+			$lan_3gs	\
+			$lan_var2	\
+			$lan_aus	\
+			}

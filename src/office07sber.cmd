@@ -1,0 +1,1 @@
+if not exist "c:\Program Files\Microsoft Office\Office12\winword.EXE" "\\gabbafs\office\apinstall.cmd"

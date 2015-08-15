@@ -1,0 +1,308 @@
+### Calomel.org  /etc/sysctl.conf
+
+## NOTES:
+# 
+# low latency is important so we highly recommend that you disable hyper
+# threading on Intel CPUs as it has an unpredictable affect on latency and
+# causes a lot of problems with CPU affinity.
+#
+# These settings are specifically tuned for a low latency FIOS (300/65) and
+# gigabit LAN connections. If you have 10gig or 40gig you will notice these
+# setting work quite well and can even allow the machine to saturate the
+# network.
+#
+
+# set to at least 16MB for 10GE hosts. Default "2097152" is fine for 1Gb. If
+# you wish to increase you TCP window size to 65535 and window scale to 9 then
+# set this directive to 16m.
+kern.ipc.maxsockbuf=16777216
+
+# set auto tuning maximum to at least 16MB for 10GE hosts. The default of
+# "2097152" is fine for 1Gb.
+net.inet.tcp.sendbuf_max=16777216
+net.inet.tcp.recvbuf_max=16777216
+
+# use the H-TCP congestion control algorithm which is more aggressive pushing
+# up to max bandwidth (total BDP) and favors hosts with lower TTL / VARTTL then
+# the default "newreno". Understand "newreno" works really well in all
+# conditions and enabling HTCP may only gain a you few percentage points of
+# throughput. We suggest testing both. On our networks we found the default
+# "newreno" was faster at large file transfers and HTCP was better with small
+# data bursts (less than 1MB) as long as your slowstart_flightsize was set to
+# at least 10 or up to as high of 32.
+# http://www.sigcomm.org/sites/default/files/ccr/papers/2008/July/1384609-1384613.pdf
+# make sure to also add 'cc_htcp_load="YES"' to /boot/loader.conf then check
+# available congestion control options with "sysctl net.inet.tcp.cc.available"
+#net.inet.tcp.cc.algorithm=htcp
+
+# Ip Forwarding to allow packets to traverse between interfaces and is used for
+# firewalls, bridges and routers. When fast IP forwarding is also enabled, IP packets
+# are forwarded directly to the appropriate network interface with direct
+# processing to completion, which greatly improves the throughput. All packets
+# for local IP addresses, non-unicast, or with IP options are handled by the
+# normal IP input processing path. All features of the normal (slow) IP
+# forwarding path are supported by fastforwarding including firewall (through
+# pfil(9) hooks) checking, except ipsec tunnel brokering. The IP fast
+# forwarding path does not generate ICMP redirect or source quench messages
+# though. Compared to normal IP forwarding, fastforwarding can give a speedup
+# of 40 to 60% in packet forwarding performance. This is great for interactive
+# connections like online games or VOIP where low latency is critical.
+net.inet.ip.forwarding=1
+net.inet.ip.fastforwarding=1
+
+# NOTE: Large Receive Offload (LRO) is enabled by default on some network
+# cards. LRO _might_ interfere with forwarding TCP traffic. If you plan to
+# forward TCP traffic as a router or bridge you should test LRO on the NIC.
+# LRO provides a significant receive (rx) performance improvement. However it
+# is incompatible with packet-forwarding workloads. You should carefully
+# evaluate the environment and enable when possible. To enable: ifconfig
+# interface lro OR It can be disabled by using: ifconfig interface -lro Use
+# "ifconfig -m" to check the nic's "options" for currently active directives
+# and "capabilities" for supported directives. Use "ifconfig igb0 -lro" to
+# disable LRO hardware support if "LRO" is seen in "options" or "ifconfig igb0
+# -lro" if you find LRO works well with your setup.
+
+# host cache is used to cache connection details and metrics (like TTL and
+# VARTTL) to improve future performance of connections between the host we have
+# seen before. view host cache stats using "sysctl net.inet.tcp.hostcache.list"
+# http://caia.swin.edu.au/reports/070717B/CAIA-TR-070717B.pdf . We increase
+# expire time for clients who connect hourly or so to our RSS feed.
+net.inet.tcp.hostcache.expire=5400
+
+# maximum segment size (MSS) specifies the largest amount of data in a single TCP segment
+# 1460 for a IPv4 1500 MTU network (MTU - 20 IPv4 header - 20 TCP header) 
+# 1440 for a IPv6 1500 MTU network (MTU - 40 IPv4 header - 20 TCP header) 
+# 8960 for a IPv4 9000 MTU network (MTU - 20 IPv4 header - 20 TCP header) and switch ports set at 9216
+# 8940 for a IPv6 9000 MTU network (MTU - 40 IPv6 header - 20 TCP header) and switch ports set at 9216
+# For most networks 1460 is optimal, but you may want to be cautious and use
+# 1440. This smaller MSS allows an extra 20 bytes of space for those client which are on a
+# DSL line which may use PPPoE. These networks have extra header data stored in
+# the packet and if there is not enough space, must be fragmented over additional 
+# partially filled packets. Fragments cause extra processing which wastes
+# time getting the data out to the remote machines.
+# http://www.wand.net.nz/sites/default/files/mss_ict11.pdf
+# We choose IPv4 network 1500 MTU - 60 bytes which includes the 20 bytes safety buffer
+net.inet.tcp.mssdflt=1440
+
+# Does not create a socket or compressed tcpw for TCP connections restricted to
+# the local machine. Basically, connections made internally to the FreeBSD box
+# itself. An example would be a web server and a database server running on
+# the same machine. If the web server queries the local database server then no
+# states would be made for that connection. If you do not have a lot of
+# internal communication between programs this directive will not make much
+# difference.
+net.inet.tcp.nolocaltimewait=1
+
+# SlowStart Flightsize, TCP initial congestion window start size in number of packets.
+# Google recommends at least 10, but we recommend testing higher values. an MTU
+# of 1440 bytes MTU * 10 initial congestion window = 14.4KB data burst.
+# http://www.igvita.com/2011/10/20/faster-web-vs-tcp-slow-start/ . Though it is
+# aggressive, we found a value of 32 works well for most internet clients.
+net.inet.tcp.local_slowstart_flightsize=32
+net.inet.tcp.slowstart_flightsize=32
+
+# Make sure time stamps are enabled for slowstart_flightsize
+net.inet.tcp.rfc1323=1
+
+# Make sure rfc3390 is DISABLED so the slowstart flightsize values are used.
+net.inet.tcp.rfc3390=0
+
+# size of the TCP transmit and receive buffer. If you are running the machine
+# as a dedicated web server and do not accept large uploads you may want to
+# decrease net.inet.tcp.recvspace to 8192 to resist DDoS attacks from using up
+# all your RAM for false connections. In nginx make sure to set "listen 80
+# default rcvbuf=8k;" as well. Generally, we suggest setting both send and
+# receive space to 65535 if you have a good amount of RAM; 8 gig or more. If
+# running a web server and you have a lot of spare ram then set the send space
+# to the total size in bytes of a standard user request. For example, if a user
+# requests your home page and it has 2 pictures, css and index.html equaling
+# 212 kilobytes then set the sendspace to something like 262144 (256K). This
+# will let the web server dump the entire requested page set into the network
+# buffer getting more data on the wire faster and freeing web server resources.
+# By increasing the sendspace to a value larger then the whole page requested
+# we saved 200ms on the web server client response time. Every millisecond counts.
+net.inet.tcp.sendspace=262144 # default 65536
+#net.inet.tcp.recvspace=32768 # default 32768
+
+# Increase auto-tuning TCP step size of the TCP transmit and receive buffers.
+# The buffer starts at "net.inet.tcp.sendspace" and "net.inet.tcp.recvspace"
+# and increases by this increment as needed.
+# http://fasterdata.es.net/host-tuning/freebsd/ . We will increase the
+# recvbuf_inc since we can receive data at 1gig/sec. We only send 256K web page
+# data sets at a time and the net.inet.tcp.sendspace is already big enough.
+#net.inet.tcp.sendbuf_inc=16384  #  8192 default
+net.inet.tcp.recvbuf_inc=524288  # 16384 default
+
+# somaxconn is the buffer or backlog queue depth for accepting new TCP
+# connections. This is NOT the total amount of connections the server can
+# receive. Lets say your web server can accept 1000 connections/sec and your
+# clients are temporarily bursting in at 1500 connections per/sec. You may want
+# to set the somaxconn at 1500 to be a 1500 deep connection buffer so the extra
+# 500 clients do not get denied service. Also, a large listen queue will do a
+# better job of avoiding Denial of Service (DoS) attacks, _IF_ your application
+# can handle the TCP load and at the cost of a bit more RAM. 
+kern.ipc.somaxconn=1024 # 128 default
+
+# Reduce the amount of SYN/ACKs we will _retransmit_ to an unresponsive initial
+# connection. On the initial connection our server will always send a SYN/ACK
+# in response to the clients initial SYN. Limiting retransmitted SYN/ACKS
+# reduces local cache size and a "SYN flood" DoS attack's collateral damage by
+# not sending SYN/ACKs back to spoofed ips. If we do continue to send SYN/ACKs
+# to spoofed IPs they may send RST back to us and an "amplification" attack
+# would begin against our host.
+# http://people.freebsd.org/~jlemon/papers/syncache.pdf
+# http://www.ouah.org/spank.txt
+# If the client does not get our original SYN/ACK we will retransmit one more
+# SYN/ACK, but no more. It is up to the client to ask again for our service if
+# they can not connect in three(3) seconds. An additional retransmit
+# corresponds to 1 (original) + 2 (retransmit) = 3 seconds, and the odds are
+# that if a connection cannot be established by then, the user has given up. 
+net.inet.tcp.syncache.rexmtlimit=1
+
+# Syncookies have a certain number of advantages and disadvantages. Syncookies
+# are useful if you are being DoS attacked as this method helps filter the
+# proper clients from the attack machines. But, since the TCP options from the
+# initial SYN are not saved in syncookies, the tcp options are not applied to
+# the connection, precluding use of features like window scale, timestamps, or
+# exact MSS sizing. As the returning ACK establishes the connection, it may be
+# possible for an attacker to ACK flood a machine in an attempt to create a
+# connection. Another benefit to overflowing to the point of getting a valid
+# SYN cookie is the attacker can include data payload. Now that the attacker
+# can send data to a FreeBSD network daemon, even using a spoofed source IP
+# address, they can have FreeBSD do processing on the data which is not
+# something the attacker could not do without having SYN cookies. Even though
+# syncookies are helpful, we are going to disable them at this time.
+net.inet.tcp.syncookies=0
+
+# General Security and DoS mitigation.
+net.inet.ip.check_interface=1         # verify packet arrives on correct interface
+net.inet.ip.portrange.randomized=1    # randomize outgoing upper ports
+net.inet.ip.process_options=0         # IP options in the incoming packets will be ignored
+net.inet.ip.random_id=1               # assign a random IP_ID to each packet leaving the system
+net.inet.ip.redirect=0                # do not send IP redirects
+net.inet.ip.accept_sourceroute=0      # drop source routed packets since they can not be trusted
+net.inet.ip.sourceroute=0             # if source routed packets are accepted the route data is ignored
+net.inet.ip.stealth=1                 # do not reduce the TTL by one(1) when a packets goes through the firewall
+net.inet.icmp.bmcastecho=0            # do not respond to ICMP packets sent to IP broadcast addresses
+net.inet.icmp.maskfake=0              # do not fake reply to ICMP Address Mask Request packets
+net.inet.icmp.maskrepl=0              # replies are not sent for ICMP address mask requests
+net.inet.icmp.log_redirect=0          # do not log redirected ICMP packet attempts
+net.inet.icmp.drop_redirect=1         # no redirected ICMP packets
+#net.inet.icmp.icmplim=50             # 50 ICMP packets per second. a reasonable number for a small office.
+net.inet.tcp.delayed_ack=1            # delay acks so they can be combined into other packets to increase bandwidth
+net.inet.tcp.drop_synfin=1            # SYN/FIN packets get dropped on initial connection
+net.inet.tcp.ecn.enable=1             # explicit congestion notification (ecn) warning: some ISP routers abuse it
+net.inet.tcp.fast_finwait2_recycle=1  # recycle FIN/WAIT states quickly (helps against DoS, but may cause false RST)
+net.inet.tcp.icmp_may_rst=0           # icmp may not send RST to avoid spoofed icmp/udp floods
+net.inet.tcp.maxtcptw=15000           # max number of tcp time_wait states for closing connections
+net.inet.tcp.msl=5000                 # 5 second maximum segment life (helps a bit against DoS)
+net.inet.tcp.path_mtu_discovery=0     # disable MTU discovery since most ICMP packets are dropped by others
+#net.inet.tcp.sack.enable=0           # sack disabled? http://www.ibm.com/developerworks/linux/library/l-tcp-sack/index.html
+net.inet.udp.blackhole=1              # drop udp packets destined for closed sockets
+net.inet.tcp.blackhole=2              # drop tcp packets destined for closed ports
+#net.route.netisr_maxqlen=4096        # route queue length defaults 4096 (rtsock using "netstat -Q")
+security.bsd.see_other_uids=0         # hide processes for root from user uid's
+
+
+# security settings for jailed environments. it is generally a good idea to
+# separately jail any service which is accessible by an external client like
+# you web or mail server. This is especially true for public facing services.
+# take a look at ezjail, http://forums.freebsd.org/showthread.php?t=16860
+security.jail.allow_raw_sockets=1
+security.jail.enforce_statfs=2
+security.jail.set_hostname_allowed=0
+security.jail.socket_unixiproute_only=1
+security.jail.sysvipc_allowed=0
+security.jail.chflags_allowed=0
+
+# Spoofed packet attacks may be used to overload the kernel route cache. A
+# spoofed packet attack using a random source IP will cause the kernel to
+# generate a temporary cached route in the route table, Setting rtexpire and
+# rtminexpire to two(2) seconds should be sufficient to protect the route table
+# from attack. 
+# http://www.freebsd.org/doc/en/books/handbook/securing-freebsd.html
+net.inet.ip.rtexpire=60      # 3600 secs
+net.inet.ip.rtminexpire=2    # 10 secs
+net.inet.ip.rtmaxcache=1024  # 128 entries
+
+######### OFF BELOW HERE #########
+#
+# Other options not used, but included for future reference. We found the
+# following directives did not increase the speed or efficiency of our firewall
+# over the defaults set by the developers. 
+
+# ZFS - Set TXG write limit to a lower threshold. This helps "level out" the
+# throughput rate (see "zpool iostat").  A value of 256MB works well for
+# systems with 4 GB of RAM, while 1 GB works well for us w/ 8 GB on disks which
+# have 64 MB cache.
+#vfs.zfs.write_limit_override=1073741824
+
+# Time before a delayed ACK is sent (default 100ms). By default, the ack is
+# delayed 100 ms or sent every other packet in order to improve its chances of
+# being added to a return data packet. This method can cut the number of tiny
+# packets flowing across the network in half and is efficient. Setting
+# delayed_ack to zero(0) will produce twice as many small packets on the
+# network without much benefit. Setting delacktime higher then 100 seems to
+# slow down downloads as ACKs are queued too long.
+#net.inet.tcp.delayed_ack=1   # 1 default
+#net.inet.tcp.delacktime=100  # 100 default
+
+# maximum incoming and outgoing ip4 network queue sizes. if, and only if,
+# "sysctl net.inet.ip.intr_queue_drops" is greater
+# then zero increase these values till queue_drops is always zero(0).
+#net.inet.ip.intr_queue_maxlen=4096
+#net.route.netisr_maxqlen=4096
+
+# increase buffers for communicating across localhost. If you run many high
+# bandwidth services on lo0 like a local DB server or many jails on lo0 then
+# these might help. 
+#net.local.stream.sendspace=163840    # lo0 mtu 16384 x 10
+#net.local.stream.recvspace=163840    # lo0 mtu 16384 x 10
+
+# UFS hard drive read ahead equivalent to 4 MiB at 32KiB block size. Easily
+# increases read speeds from 60 MB/sec to 80 MB/sec on a single spinning hard
+# drive.  OCZ Vertex 4 SSD drives went from 420 MB/sec to 432 MB/sec (SATA 6).
+# use bonnie to performance test file system I/O
+#vfs.read_max=128
+
+# global limit for number of sockets in the system. If kern.ipc.numopensockets
+# plus net.inet.tcp.maxtcptw is close to kern.ipc.maxsockets then increase this
+# value
+#kern.ipc.maxsockets = 25600
+
+# spread tcp timer callout load evenly across cpus. We did not see any speed
+# benefit from enabling per cpu timers. The default is off(0)
+#net.inet.tcp.per_cpu_timers = 0
+
+# disable harvesting entropy for /dev/random from the following devices.
+# Truthfully, disabling entropy harvesting does _not_ save much CPU or
+# interrupt time. We noticed setting the following to zero(off) increased
+# bandwidth by 0.5% or 2Mb/sec on a 1Gb link. We prefer the entropy and leave
+# these on(1).
+#kern.random.sys.harvest.interrupt = 1
+#kern.random.sys.harvest.ethernet = 1
+#kern.random.sys.harvest.point_to_point = 1
+
+# Increase maxdgram length for jumbo frames (9000 mtu) OSPF routing. Safe for
+# 1500 mtu too.
+#net.inet.raw.maxdgram=9216
+#net.inet.raw.recvspace=9216 
+
+# IPv6 Security
+# For more info see http://www.fosslc.org/drupal/content/security-implications-ipv6
+# Disable Node info replies
+# To see this vulnerability in action run `ping6 -a sglAac ::1` or `ping6 -w ::1` on unprotected node
+#net.inet6.icmp6.nodeinfo=0
+# Turn on IPv6 privacy extensions
+# For more info see proposal http://unix.derkeiler.com/Mailing-Lists/FreeBSD/net/2008-06/msg00103.html
+#net.inet6.ip6.use_tempaddr=1
+#net.inet6.ip6.prefer_tempaddr=1
+# Disable ICMP redirect
+#net.inet6.icmp6.rediraccept=0
+# Disable acceptation of RA and auto linklocal generation if you don't use them
+##net.inet6.ip6.accept_rtadv=0
+##net.inet6.ip6.auto_linklocal=0
+
+#
+### EOF ###
+

@@ -1,0 +1,189 @@
+APEagers Radius Setup Guide
+2011-04-21
+Michael Spence
+
+
+Preamble:
+
+
+Steps to Follow:
+
+1- Install BSD
+2- Configure Other BSD items
+3- Install FreeRadius Package
+3- Configure FreeRadius
+5- Install Certificates
+6- Generate Client Certificates
+7- Configure WAPs
+9- Configure Clients
+9- Configure "radadmin" account
+10- Install Michael's "Radius Admin" Menu
+
+
+Steps in Detail:
+
+1- Install BSD
+
+From a fresh machine, install OpenBSD 4.8 from the install48.iso.  If using a physical machine, make a CD of this ISO.  If using a VM in VMWare, connect this iso to the CD drive.  There is a copy of this in the standard ISO area for the VMWare environment.
+
+Configure the root password as <is a!>
+
+Build a file system with 17GB connected as "/"
+Build a file system with 3GB connected as "swap"
+
+Configure the network (em0 or eth0)
+
+Set the Time Zone as "Australia/Brisbane" (note that this doesnt' set the time correctly - see Configure Other BSD Items
+
+Add a "issadm" user, password <is a!>
+
+
+2- Configure Other BSD items
+
+Login as root
+
+(see note in "Install FreeRadius Package" about configuring .profile do it here)
+
+Add issadm to sudoers "ALL"
+Add radadmin user using "adduser"
+
+Set the time using "config -ef /bsd" at the prompt type "timezone -600" and the "quit"  then restart the machine using "shutdown -r now"
+
+Login as root again
+
+3- Install FreeRadius Package
+
+To install the FreeRadius Package this machine must have access to the internet.  Make sure that the firewall allows this access.  To use the package add utility, you must have the PKG_PATH environment variable set.  YOu can do this in one of two ways, using the profile or setting it manually at the prompt.
+
+To set this in the profile by edit the ".profile" file in the home directory by adding:
+	PKG_PATH=http://mirror.aarnet.edu.au/pub/OpenBSD/4.8/packages/i386/
+	export PKG_PATH
+
+To set it manually at the command prompt, enter:
+	PKG_PATH=http://mirror.aarnet.edu.au/pub/OpenBSD/4.8/packages/i386/
+but this must be done everytime you logon and need to install a package.
+
+Now add the package.  To do this, use the pkg_add utility.  Enter:
+	pkg_add freeradius
+This will go and fetch the install and all its dependencies from aarnet and install it into the machine.
+
+At the end of installation, a message displays itself on how to automate the startup of this service.  This needs to be copied into the "rc.local" file in /etc.  Edit the /etc/rc.local and add at the end:
+	if [ -x /usr/local/sbin/radiusd ]; then
+		install -d -o _freeradius /var/run/radiusd
+		echo "  --> Radius Server"; /usr/local/sbin/radiusd
+	fi
+
+The FreeRadius system is now installed.
+
+3- Configure FreeRadius
+
+a- configure radiusd.conf
+Most of the default configuration values are 100% correct.  "max_requests" controls the number of requests to be prepared for based on the number of expected users.  The calculation is "256 x <Number of Users>".  It is suggested that, APEagers may have 500 users of this service, so set this vaue to be 12800.
+
+b- configure clients.conf
+There only needs to be the following in the clients.conf file.  All other information is unnecessary:
+	client localhost {
+		ipaddr 		= 127.0.0.1
+		secret		= testing123
+		require_message_authenticator = no
+		nastype		= other
+	}
+	client 10.0.0.0/8 {
+		secret		= <clueless>
+		shortname	= APEagersNAS
+		nastype		= cisco
+	}
+
+This file can be copied from the appendix verbatim.
+
+c- configure eap.conf
+This file configures the "EAP-TLS" methods of talking with certificates between clients and the radius server (via WAPs or NASs).  It is not necessary to delete the other methods of authentication, but it is advisable.  Change the default type though:
+	default_eap_type	= tls
+Leave the "tls" section as is, but change:
+	private_key_password 	= <woody>
+And make sure you delete the option named "make_cert_command"
+
+d- configure modules/files
+This file is used to correlate entries against.  It is used in this setup to verify MAC addresses.  Enter the following:
+	files good_macs {
+		key = "%{Calling-Station-Id}"
+		userfile = ${confdir}/macs/good_macs
+		compat = no
+	}
+	files baad_macs {
+		key = "%{Calling-Station-Id}"
+		userfile = ${confdir}/macs/baad_macs
+		compat = no
+	}
+Now create a directory /etc/raddb/macs and create two files "good_macs" and "baad_macs".  These files can be edited and have "Valid" (good) and "Invalid" (baad) MAC addresses added to them.  The next item will validate against these files.
+
+e- configure sites-available/default
+This file contains psuedo code to "authorize" and "authenticate" requests.  Immediately after "preprocess", enter the following MAC address verifying code:
+	good_macs
+	if (ok) {
+		update control {
+			Auth-Type := Accept
+		}
+	}
+	else {
+		reject
+	}
+	baad_macs
+	if (ok) {
+		reject
+	}
+In the current setup the following piece of code was moved from its natural position to immediately following the above:
+	eap {
+		ok = return
+	}
+
+
+5- Install Certificates
+Now since this is now a live system, it is now impossible to generate a new "CA"certificate.  If this was done, all computers with the old CA would fail to verify the server certificate and their client certificates would also be invalid.  So it is MANDATORY, that the CA (and associated files) created on 2011-04-20 are copied to the "/etc/raddb/certs" directory.  Change the permissions on these files using "chmod 444 *" so that they cannot be overwritten.  These files can be located as a backup on "bne-nixwww" under /home/mspence/backups/qld-ras1  
+
+6- Generate Client Certificates
+
+Once all the valid CA and server files are installed, change the permissions for the client and index files.  This can be done using:
+	chmod 644 client*
+	chmod 644 index*
+Delete all the index files (rm index*) and edit the client.cnf.  Make the appropriate changes to this current configuration (change commonName or default_days).  Ensure that the "CountryName", "stateOrProvince" and "localityName" fields are NOT changed as these are used to match against.
+
+Now generate the files using the following:
+	make clients
+
+*** WARNING *** DO NOT simply type "make" as this will attempt to recreate the CA and the server certificates.
+
+Keep a copy of the current CA.der and Client.p12 for use on the clients below.  Use scp to copy the files to another server accessible to Windows machines.  (Or alternatively use pscp.exe from NSD-ISSADM to copy from here to there.)
+
+
+7- Configure WAPs
+
+A setup description for the Cisco 1130AG Wireless access points has been created external to this setup guide.  But you must ensure that you setup:
+	a- IP address
+	b- ssid
+	c- rad_eap (eap_methods)
+	d- radius-server pointing to this server
+	e- turn on the radios
+There are other setup items which are useful, but may not be "necessary"
+
+8- Configure Clients
+It is expected that the clients that will use this wireless methods will be laptops and also iPads/iPhones.  
+
+Hopefully all Laptops will in the near future have these certificates installed by default, or be located on the computer for easy installation.  Until that time, the CA.der and client.p12 certificates need to be copied to the computer and installed.  Install the CA first and ensure that you direct it to install it into the "Trusted Root Certificate Authority" repository.  Second install the client certificate.  The password to install this is <woody>.
+If the laptop is in range of the "apeagers" wireless network, go into "Network Connections" and configure the ssid "apeagers".  Set the connection to use a certificate and point the validation to "APEagers CA" certificate.
+
+On iDevices, it is necessary to email the certificates to the device before installing them.  Again install the CA certificate first (a prompt for the devices "key" may appear).  Secondly install the client certificate.  Under WiFi options, choose the "apeagers" ssid, under "Authentication" choose "EAP-TLS", press back button and choose "Identity".  From here choose the client certificate, press back and press "Join".  It will ask you to "accept" the server sertificate.
+
+9- Configure "radadmin" account
+
+As root, configure a new user "radadmin" to act as the "Field Support" tool to add and delete MAC addresses.  In sudoers add:
+	radadmin	ALL = (root) NOPASSWD: /bin/kill, /bin/ps, /usr/local/sbin/radiusd
+
+10- Install Michael's "Radius Admin" Menu
+
+Michael created a number of shell scripts to act as the menu system for the administration of the Radius Server.  These are held in /home/mspence/backups/radius/menu.  Place these files under /home/radadmin/bin.  Also create /home/radadmin/bup and /home/radadmin/tmp for use by the menu.
+
+Now edit the .profile for radadmin and enter at the end:
+	bin/menu.sh
+	exit
+This will run the menu as soon as the user radadmin logs in and will exit as soon as they leave the menu.

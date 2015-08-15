@@ -1,0 +1,35 @@
+TIPT Meeting - 2013-08-05
+Michael Spence
+
+
+Preamble
+
+This is the proposed agenda for the meeting and the topics of discussion.
+
+
+Invitees
+
+Richard Barndard	(Telstra)
+Shane Pearce		(APEagers)
+Matthew McCracken	(APEagers)
+Michael Spence		(APEagers)
+
+
+Topics of Discussion
+
+	1. IADs and their use
+	2. DMS and phone roll out methods
+	3. Dealership Rollouts
+		a. Austral Honda
+		b. Austral VW
+		c. Eagers Kia
+		d. Metro Parts
+		e. Porsche
+		f. Corporate
+		g. Southside Honda
+		h. Southside Toyota?
+		i. Bill Buckle Auto Gorup?
+	    with subtopics
+		i. Detailing
+		ii. Timeline
+		iii. Techniques

@@ -1,0 +1,11 @@
+[root]:/root> export PKG_PATH=http://mirror.aarnet.edu.au/pub/OpenBSD/4.8/packages/i386                                                                                 
+[root]:/root> pkg_add libiconv
+libiconv-1.13p1: ok                                                                                                                                                      
+[root]:/root> pkg_add gettext
+gettext-0.18.1: ok                                                                                                                                                       
+[root]:/root> pkg_add pcre
+pcre-8.02p1: ok                                                                                                                                                          
+[root]:/root> pkg_add libltdl
+libltdl-1.5.26p0: ok                                                                                                                                                     
+[root]:/root> pkg_add nagios-plugins
+nagios-plugins-1.4.14p0: ok                                                                                                                                              

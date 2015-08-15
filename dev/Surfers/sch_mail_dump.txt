@@ -1,0 +1,577 @@
+DISTRO GROUPS -----------------------------------------------------------------
+
+
+Module Index
+Help..
+ Mail Aliases  
+
+Warning: 
+
+when the first field is not empty, the default Postfix aliases-generation command is used to build up the corresponding databases ; 
+else the Sendmail compatibility command "newaliases" is used, this will use the second field's databases.
+Aliases Options 
+Alias databases used by the local delivery agent  No map set 
+ Map specifications  
+Alias databases built by "newaliases" command  No map set 
+ Map specifications  
+ 
+ 
+  
+
+
+
+--------------------------------------------------------------------------------
+
+Select all. | Invert selection. | Create a new alias
+    Alias from..    Alias to..    
+  root Address me@my.domain
+ 
+  MAILER-DAEMON Address postmaster
+ 
+  postmaster Address root
+ 
+  _dhcp Address root
+ 
+  _pflogd Address root
+ 
+  bin Address root
+ 
+  bind Address root
+ 
+  daemon Address root
+ 
+  games Address root
+ 
+  kmem Address root
+ 
+  mailnull Address postmaster
+ 
+  man Address root
+ 
+  news Address root
+ 
+  nobody Address root
+ 
+  operator Address root
+ 
+  pop Address root
+ 
+  proxy Address root
+ 
+  smmsp Address postmaster
+ 
+  sshd Address root
+ 
+  system Address root
+ 
+  toor Address root
+ 
+  tty Address root
+ 
+  usenet Address news
+ 
+  uucp Address root
+ 
+  manager None  
+  dumper None  
+  info None  
+  marketing None  
+  support None  
+  abuse Address root
+ 
+  noc Address root
+ 
+  security Address root
+ 
+  ftp Address root
+ 
+  ftp-bugs Address ftp
+ 
+  hostmaster Address root
+ 
+  webmaster Address root
+ 
+  www Address webmaster
+ 
+  NOTE File /var/msgs
+Address and
+File /var/msgs/bounds
+Address must
+Address be
+Address owned
+Address by
+Address sendmail's
+Address DefaultUser
+Address (defaults
+Address to
+Address mailnull)
+Address for
+Address the
+Address msgs
+Address alias
+Address to
+Address work.
+ 
+  msgs Program /usr/bin/msgs -s
+ 
+  bit-bucket File /dev/null
+ 
+  dev-null Address bit-bucket
+ 
+  sales Address mbielby
+Address dpurcell
+ 
+  parts Address sdavy
+ 
+  val Address mdowding
+ 
+  hsv Address sales
+ 
+  pcoomer Address nclarke
+ 
+  lcostello Address bmcaleer
+ 
+  ifoldi Address jkirk
+ 
+  comeara Address dharris
+ 
+  saab Address mbielby@surferscity.com.au
+Address dpurcell@surferscity.com.au
+ 
+  cbuitenhaus Address sales
+ 
+  dpapanicolaou Address sales
+ 
+  pholland Address jmccaughey
+ 
+  stavros Address stavros@staff.esc.net.au
+ 
+  no-reply File /dev/null
+ 
+  postmaster File /dev/null
+ 
+  cp Address mdowding
+ 
+  yclancy Address mdowding
+ 
+  remo Address lgregory
+ 
+  sgarrett Address mareei
+ 
+  bradw Address sales
+ 
+  cchilvers Address jkirk
+ 
+  dmildon Address sales
+ 
+  lreid Address sales
+ 
+  bpartridge Address mbielby
+ 
+  lreynolds Address kperelini
+Address lreynolds
+ 
+  ryandb Address jmccaughey
+ 
+  pa Address mdowding
+ 
+  thibbard Address carlak
+ 
+  accounts Address fwalker@surferscity.com.au
+Address cgroves@surferscity.com.au
+Address jwoodall@surferscity.com.au
+ 
+  chrism Address chrism@apeagers.com.au
+ 
+  jnewbery Address service@surferscity.com.au
+Address rnicolson@surferscity.com.au
+Address ndurre@surferscity.com.au
+ 
+  gbeggs Address service
+ 
+  nford Address hayleyb
+ 
+  hbattaglene Address hayleyb
+ 
+  vmcfarland Address vmcfarland
+Address bcording
+ 
+  hward Address mbielby
+ 
+  cheppell Address broyston
+ 
+  kcanning Address mbielby
+Address jyoung
+ 
+  cryan Address mbielby
+Address sales
+ 
+  cwilson Address jmccaughey
+ 
+ 
+     Alias from..    Alias to..    
+  asalvatore Address showlett
+ 
+  lgregory Address fwalker@surferscity.com.au
+ 
+  backup Address fwalker@surferscity.com.au
+Address dpurcell@surferscity.com.au
+ 
+  rcampbell Address rcampbell
+Address mbielby
+ 
+  jkirk Address jsmith
+ 
+  it Address remo@esc.net.au;mdowding@surferscity.com.au
+ 
+  rdarxbrown Address jmccaughey
+ 
+  bsmeeton Address mbielby@surferscity.com.au
+Address bsmeeton
+ 
+  mareei Address fwalker@surferscity.com.au
+Address bmcaleer@surferscity.com.au
+ 
+  jsmith Address hshort@surferscity.com.au
+ 
+  kmaher Address kperelini
+Address kmaher
+Address mbielby
+ 
+  ryand Address jmccaughey
+ 
+  used Address drussell
+ 
+  showlett Address showlett@billbuckle.com.au
+ 
+  dburgess Address jwoodall
+ 
+  mmorland Address sdavy
+ 
+  pflack Address tierney
+ 
+  mrawlins Address gelwin
+Address mkirk
+ 
+  dharris Address ajohnson
+ 
+  hshort Address schilds@surferscity.com.au
+ 
+  cbirch Address sfiebig
+ 
+  amorgan Address mbielby
+Address amorgan
+ 
+  jmitchell Address mbielby
+Address jmitchell
+ 
+  bmcaleer Address ajones@surferscity.com.au
+ 
+  rreid Address bcollinge
+ 
+  schilds Address mbielby@surferscity.com.au
+Address kcanning@surferscity.com.au
+ 
+  fleet Address mbielby@surferscity.com.au
+Address ggiaccio@surferscity.com.au
+ 
+  ksvensson Address fwalker@surferscity.com.au
+ 
+  ggiaccio Address mbielby
+Address dkrenek
+ 
+  ajones Address cgroves@surferscity.com.au
+ 
+  pwalker Address pwalker
+Address kperelini
+ 
+  kclarke Address kclarke
+Address mbielby
+ 
+  jgryparis Address jgryparis
+Address kperelini
+ 
+  ndurre Address ncrompton
+ 
+  mkirk Address warranty
+ 
+  sgarland Address sgarland
+Address drussell
+ 
+  tleventhal Address mbielby
+Address dpurcell
+ 
+  jyoung Address jyoung
+Address mbielby
+ 
+  carzooappt01 Address drussell
+Address rtierney
+Address reception
+Address bcording
+Address jbovey
+Address dpurcell
+Address kengberg@apeagers.com.au
+ 
+  service Address warranty
+Address service
+Address ndurre
+ 
+  lborg Address bcording
+Address lborg
+ 
+  predelivery Address ajohnson
+ 
+  jmccaughey Address mbielby
+Address jmccaughey
+ 
+  ataylor Address warranty
+ 
+  rnicolson Address rnicolson@surferscity.com.au
+Address bcollinge@surferscity.com.au
+ 
+  amusgrave Address drussell@surferscity.com.au
+Address amusgrave@surferscity.com.au
+ 
+  allservice Address jnewbery
+Address rnicolson
+Address foreman
+Address controller
+Address agrigg
+Address bparkin
+Address stacyr
+Address ncrompton
+Address ataylor
+ 
+  mtrimble Address bcording@surferscity.com.au
+Address mtrimble@surferscity.com.au
+ 
+  finance Address rtierney@surferscity.com.au
+Address jbovey@surferscity.com.au
+ 
+  unsubscribe Address dpurcell@surferscity.com.au
+ 
+  dkrenek Address mbielby@surferscity.com.au
+Address dkrenek@surferscity.com.au
+ 
+  agrigg Address csullivan@surferscity.com.au
+ 
+  carzooappt02 Address drussell
+Address rtierney
+Address reception
+Address bcording
+Address jbovey
+Address dpurcell
+Address kengberg@apeagers.com.au
+ 
+  mbielby Address bcording@surferscity.com.au
+ 
+  bfalvey Address bcording
+Address bfalvey
+ 
+  cburton Address bcording
+Address cburton
+ 
+  jwillis Address drussell
+Address jwillis
+ 
+ 
+ 
+ 
+Select all. | Invert selection. | Create a new alias
+  
+
+  Return to Postfix configuration 
+
+
+
+
+REDIRECTS -----------------------------------------------------------------
+
+Module Index
+Help..
+ Virtual Domains  
+
+Virtual Domains 
+Domain mapping lookup tables  No map set 
+ Map specifications  
+Domains to perform virtual mapping for  From domain mapping tables   
+ 
+ 
+  
+
+
+
+--------------------------------------------------------------------------------
+Click on any mapping to edit its properties: What format should I use?
+ Select all. | Invert selection. | Add a new mapping.
+    Name    Maps to...    
+  asteward@surferscity.com.au srangiawha 
+  julie@costlesscarrental.com.au julie 
+  res@costlesscarrental.com.au res 
+  reservations@costlesscarrental.com.au res 
+  info@costlesscarrental.com.au infoccr 
+  accounts@costlesscarrental.com.au avonkanel 
+  admin@costlesscarrental.com.au adminccr 
+  marketing@costlesscarrental.com.au marketingccr 
+  avonkanel@costlesscarrental.com.au avonkanel 
+  rmadden@costlesscarrental.com.au rmadden 
+  tsmith@costlesscarrental.com.au tsmith 
+  tegansmith@costlesscarrental.com.au tsmith 
+  accounts@surferscity.com.au mareei 
+  rnicolson@surferscity.com.au rnicolson 
+ 
+     Name    Maps to...    
+  bcollinge@surferscity.com.au rnicolson 
+  info@goldcoastopel.com.au bcording,dpurcell,vmcfarland 
+  bcording@goldcoastopel.com.au bcording@surferscity.com.au 
+  fwalker@goldcoastopel.com.au fwalker@surferscity.com.au 
+  dpurcell@goldcoastopel.com.au dpurcell@surferscity.com.au 
+  ajohnson@goldcoastopel.com.au ajohnson@surferscity.com.au 
+  mtrimble@goldcoastopel.com.au mtrimble@surferscity.com.au 
+  jglasson@goldcoastopel.com.au jglasson@surferscity.com.au 
+  finance@goldcoastopel.com.au rtierney@surferscity.com.au 
+  finance@goldcoastopel.com.au jbovey@surferscity.com.au 
+  finance@goldcoastopel.com.au finance@surferscity.com.au 
+  vmcfarland@goldcoastopel.com.au vmcfarland@surferscity.com.au 
+  kperelini@goldcoastopel.com.au kperelini@surferscity.com.au 
+ 
+ 
+ 
+Select all. | Invert selection. | Add a new mapping.
+  
+
+
+
+USER ACCOUNTS ---------------------------------------------------------------------
+
+
+Help..
+Module Config
+ Users and Groups  
+
+  
+    Local Users   
+  
+  
+ Select all. | Invert selection. | Create a new user.
+ Export to batch file.
+ 
+ 
+    Username    User ID    Group    Real name    Home directory    Shell    
+  dhcpd 1002 dhcpd DHCP Daemon /nonexistent /usr/sbin/nologin 
+  jmccroarey 1036 surferscity John McCroarey /home/jmccroarey /sbin/nologin 
+  rreid 1046 surferscity Rodney Reid /home/rreid /sbin/nologin 
+  bmcaleer 1054 surferscity Belinda McAleer /home/bmcaleer /sbin/nologin 
+  jhalliwell 1060 surferscity James Halliwell /home/jhalliwell /sbin/nologin 
+  foreman 1069 surferscity foreman /home/foreman /sbin/nologin 
+  service 1071 surferscity service /home/service /sbin/nologin 
+  mdowding 1057 surferscity Marissa Dowding /home/mdowding /sbin/nologin 
+  reception 1072 surferscity Reception /home/reception /sbin/nologin 
+  saab.foreman 1077 surferscity Saab Foreman Main /home/saab.foreman /sbin/nologin 
+  ncrompton 1078 surferscity Nikki Crompton /home/ncrompton /sbin/nologin 
+  pa 1042 surferscity pa /home/pa /sbin/nologin 
+  stacyr 1048 surferscity Stacy Hepi /home/stacyr /sbin/nologin 
+  kquinlivan 1066 surferscity Kelly Quinlivan /home/kquinlivan /sbin/nologin 
+  infoccr 1121 surferscity Info CCR /home/infoccr /sbin/nologin 
+  adminccr 1122 surferscity Admin CCR /home/adminccr /sbin/nologin 
+  marketingccr 1120 surferscity Marketing CCR /home/marketingccr /sbin/nologin 
+  dcsnet 1092 surferscity dcsnet /home/dcsnet /sbin/nologin 
+  workshop1 1039 surferscity Workshop 1 /home/workshop1 /sbin/nologin 
+  pacereports 1097 surferscity Pace Reports /home/pacereports /sbin/nologin 
+  jkilpatrick 1098 surferscity Jodie Kilpatrick /home/jkilpatrick /sbin/nologin 
+  mbielby 1105 surferscity Mathew Bielby /home/mbielby /sbin/nologin 
+  testunits 1106 surferscity testunits /home/testunits /sbin/nologin 
+  sdavy 1110 surferscity Scott Davy /home/sdavy /sbin/nologin 
+  lmstraining 1111 surferscity LMS Training Computer /home/lmstraining /sbin/nologin 
+  broyston 1112 surferscity Brooke Royston /home/broyston /sbin/nologin 
+  jnewbery 1115 surferscity Jeff Newbery /home/jnewbery /sbin/nologin 
+  ts 1044 surferscity ts /home/ts /sbin/nologin 
+  fwalker 1103 surferscity Fiona Walker /home/fwalker /sbin/nologin 
+  backup 1116 surferscity Backup /home/backup /sbin/nologin 
+  hayley 1006 surferscity Hayley /home/hayley /sbin/nologin 
+  eagersstock 1008 surferscity eagers parts stock listing /home/eagersstock /sbin/nologin 
+  dpurcell 1009 surferscity Damien Purcell /home/dpurcell /sbin/nologin 
+  bsmeeton 1010 surferscity Bernie Smeeton /home/bsmeeton /sbin/nologin 
+  amorgan 1011 surferscity Antonio Morgan /home/amorgan /sbin/nologin 
+  admin2 1012 surferscity admin2 /home/admin2 /sbin/nologin 
+  ryand 1017 surferscity Ryan D'arx Brown /home/ryand /sbin/nologin 
+  controller 1018 surferscity Gordan Turner /home/controller /sbin/nologin 
+  partsreceipts 1020 surferscity partsreceipts /home/partsreceipts /sbin/nologin 
+  sales 1021 surferscity sales /home/sales /sbin/nologin 
+  jwoodall 1022 surferscity Julie Woodall /home/jwoodall /sbin/nologin 
+  workshop 1024 surferscity workshop /home/workshop /sbin/nologin 
+  accounts 1025 surferscity accounts /home/accounts /sbin/nologin 
+  ajohnson 1026 surferscity Angela Johnson /home/ajohnson /sbin/nologin 
+  rtierney 1027 surferscity Rick Tierney /home/rtierney /sbin/nologin 
+  gelwin 1028 surferscity Graeme Elwin /home/gelwin /sbin/nologin 
+  mkirk 1031 surferscity Monique Kirk /home/mkirk /sbin/nologin 
+  parts 1032 surferscity Parts /home/parts /sbin/nologin 
+  schilds 1033 surferscity Simon Childs /home/schilds /sbin/nologin 
+  sfiebig 1005 surferscity Sasha Fiebig /home/sfiebig /sbin/nologin 
+  ataylor 1019 surferscity Aaron Taylor /home/ataylor /sbin/nologin 
+  jthurston 1003 surferscity John Thurston /home/jthurston /sbin/nologin 
+  predelivery 1004 surferscity Pre Delivery /home/predelivery /sbin/nologin 
+  jmitchell 1013 surferscity Julian Mitchell /home/jmitchell /sbin/nologin 
+  lreynolds 1015 surferscity Lee Reynolds /home/lreynolds /sbin/nologin 
+  kperelini 1023 surferscity Kia Perelini /home/kperelini /sbin/nologin 
+  ajones 1029 surferscity Aimee Jones /home/ajones /sbin/nologin 
+  bcollinge 1030 surferscity Bruce Collinge /home/bcollinge /sbin/nologin 
+  mdegabriele 1034 surferscity Michael Degabriele /home/mdegabriele /sbin/nologin 
+  fleet 1035 surferscity Fleet /home/fleet /sbin/nologin 
+  jglasson 1037 surferscity Jenna Glasson /home/jglasson /sbin/nologin 
+  ksvensson 1038 surferscity Kristene Svensson /home/ksvensson /sbin/nologin 
+  ggiaccio 1041 surferscity Gabe Giaccio /home/ggiaccio /sbin/nologin 
+  cgroves 1043 surferscity Candice Groves /home/cgroves /sbin/nologin 
+  crm 1045 surferscity Sandra Alymer /home/crm /sbin/nologin 
+  kclarke 1047 surferscity Kelsie Clarke /home/kclarke /sbin/nologin 
+  jgryparis 1049 surferscity Jake Gryparis /home/jgryparis /sbin/nologin 
+  twhitehouse 1050 surferscity Tom Whitehouse /home/twhitehouse /sbin/nologin 
+  sgarland 1052 surferscity Stewart Garland /home/sgarland /sbin/nologin 
+  warranty 1053 surferscity warranty /home/warranty /sbin/nologin 
+  bparkin 1055 surferscity Brett Parkin /home/bparkin /sbin/nologin 
+  tleventhal 1056 surferscity Tony Leventhal /home/tleventhal /sbin/nologin 
+  jyoung 1058 surferscity Jarni Young /home/jyoung /sbin/nologin 
+  itl 1059 surferscity itl /home/itl /sbin/nologin 
+  jbovey 1061 surferscity Jason Bovey /home/jbovey /sbin/nologin 
+  carzoosappt01 1014 surferscity carzooappt01 /home/carzoosappt01 /sbin/nologin 
+  jspiller 1007 surferscity John Spiller /home/jspiller /sbin/nologin 
+  jmccaughey 1016 surferscity jmccaughey /home/jmccaughey /sbin/nologin 
+  lborg 1040 surferscity Luke Borg /home/lborg /sbin/nologin 
+  autoit 1062 surferscity autoit /home/autoit /sbin/nologin 
+  bcording 1063 surferscity Blair Cording /home/bcording /sbin/nologin 
+  rnicolson 1064 surferscity Richard Nicolson /home/rnicolson /sbin/nologin 
+  agrigg 1065 surferscity Anita Grigg /home/agrigg /sbin/nologin 
+  amusgrave 1067 surferscity Andrew Musgrave /home/amusgrave /sbin/nologin 
+  allservice 1068 surferscity All Service /home/allservice /sbin/nologin 
+  mtrimble 1070 surferscity Michael Trimble /home/mtrimble /sbin/nologin 
+  finance 1073 surferscity Finance /home/finance /sbin/nologin 
+  vmcfarland 1074 surferscity Vicki McFarland /home/vmcfarland /sbin/nologin 
+  unsubscribe 1075 surferscity unsubscribe /home/unsubscribe /sbin/nologin 
+  dkrenek 1076 surferscity David Krenek /home/dkrenek /sbin/nologin 
+  csullivan 1079 surferscity Christian Sullivan /home/csullivan /sbin/nologin 
+  carzooappt02 1080 surferscity carzooappt02 /home/carzooappt02 /sbin/nologin 
+  bfalvey 1081 surferscity Ben Falvey /home/bfalvey /sbin/nologin 
+  jwillis 1082 surferscity Jared Willis /home/jwillis /sbin/nologin 
+  rflowers 1083 surferscity Rachel Flowers /home/rflowers /sbin/nologin 
+  cburton 1084 surferscity Christian Burton /home/cburton /sbin/nologin 
+  aradakovic 1085 surferscity Andrija Radakovic /home/aradakovic /sbin/nologin 
+  drussell 1051 surferscity Danny Russell /home/drussell /sbin/nologin 
+ 
+Select all. | Invert selection. | Create a new user.
+   
+
+ Export to batch file.
+ 
+ 
+  
+ 
+
+
+
+--------------------------------------------------------------------------------
+  All users  Only user    Show recent logins some one or all Unix users who have connected via SSH or Usermin. 
+
+
+
+
+

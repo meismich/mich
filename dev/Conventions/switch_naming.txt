@@ -1,0 +1,49 @@
+Convention - Switch Naming
+2013-09-20
+Michael Spence
+
+
+Audience: 
+
+Advanced Field Support and network administrtors.
+
+
+Preamble:
+
+What hostname to give a switch
+
+
+
+Topics of discussion
+
+1. Campuses and sub-campuses
+2. Switch Roles
+3. Model Numbers
+4. Switch Numbers
+5. Hostname Generation
+
+
+Topics in Detail
+
+1. Campuses and sub-campuses
+
+The first identifier of a switch is its campus.  A campus is the physical site where the switch will be located and this is denoted by the network provided (at present) by the Telstra WAN connection.  The list of networks should be known but if not can be referenced in the document "networks.txt".  Take note of the Campus Name and the Campus Code (aka initials) as these will be necessary for naming a switch.
+
+Throughout APEagers networks, it has been the strategy to deploy campus networks in a Star Topology, meaning one switch gives connectivity to a single further layer of switches to provide access to hosts and devices.  All networks which fit this methodology do not have sub-campuses.
+
+Sometimes, however, it becomes necessary to deploy Extended Star (aka Snowflake) Topologies.  In these networks, switches connected to the core switch form further Star-like connections to additional switches.  It is like a set of Star Topologies connected together into a Star.  In these cases it becomes necessary to define each branch of the greater star into sub-campuses
+
+
+2. Switch Roles
+
+
+3. Model Numbers
+
+
+4. Switch Numbers
+
+
+5. Hostname Generation
+
+
+

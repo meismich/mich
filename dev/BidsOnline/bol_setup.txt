@@ -1,0 +1,133 @@
+Bids Online Setup
+2012-10-20
+Michael Spence
+
+
+Audience:
+
+This document is intended for the Systems Administrator of APEAgers and BidsOnline.  This document may be helpful to the Field Support Officers supporting this site.
+
+
+Preamble:
+
+This document details the workings of the BidsOnline system as understood by the Systems Administrator
+
+This document DOES NOT detail how the system is used, except where it relates to the network and its required functionality.
+
+This document details how the systems connect to each other across the networks: APEagers Internal and Bids Online WAN
+
+
+
+Topics os Discussion
+
+	Bids Online Systems
+		- Cars Plus
+		- Handheld Devices
+		- Photobay
+		- Simulcast
+		- Fileshare
+		- Printers
+		- SQL Database
+		- Replicator
+		- PPRS
+	Network Layout
+		- BidsOnline
+		- APEagers
+		- Firewall
+		- Switches
+	Servers
+		- PNK-ESX
+		- BMA-SQL
+		- BMA-WWW
+	
+
+Topics in Detail
+
+1. Bids Online Systems
+
+The BMA Bids Online systems can be categorised into three groups: User Applications, Local Resources, and External Resources.
+
+1.a. Cars Plus
+
+The primary application is the CarsPlus application.  This system is the front end to the database through which users can perform the business functions.  It is installed on every users' machine.   These PCs are connected to the APEagers network and are part of the WAN and APEagers Active Directory domain.
+
+1.b. Handheld Devices
+
+Throughout the BMA site handheld devices are used to quickly gain information regarding cars from the database.  These devices are wireless and attach to the APEagers Network.  These devices are not sophisticated enough to be able to use certificates and therefore the wireless network at BMA uses simple WPA authentication.
+
+1.c. Photobay
+
+The Photobay computer is configured with a number of cameras to simultaneously capture multiple angles of a car.  These images are to be uploaded into the system for display on the web or through the simulcast system.  This PC is wireless and part of the APEagers network and domain.
+
+1.d. Simulcast
+
+The simulcast computers (one for each lane) transport video of cars and audio of the auctioneer to the simulcast system.  At present these PCs are part of the APEagers network, but are not part of the domain.  Special rules exist on the EMP firewall to allow these computers access to the web facing interface of the BidsOnline simulcast receiver.
+
+1.e. Fileshare
+
+All users have access to the BidsOnline fileshare.  This fileshare resides on the BMA-WWW machine and is to be used for the purpose of storing BMA files only.  *** NOTE: this is not the server which contains users' documents or desktops ***
+
+1.f. Printers
+
+Printers are accessed from the cars plus system via shared printers which reside on BMA-WWW.  These printers are referenced via data looked up from the SQL server.
+
+1.g. SQL Database
+
+The SQL Database resides on the BMA-SQL machine.  This function has been separated from other services due to its critical nature and it also allows it to be backed up more efficiently.
+
+1.h. Replicator
+
+The BidsOnline Replicator resides on the BidsoOnline network at the BidsOnline Data Centre.  Its function is to receive images from the BMA-WWW server and also to query the BMA-SQL server for relevant data.  It is assumed that it then replicates this data into the appropriate servers within the Bids Online system for access by customers.
+
+1.i. PPRS
+
+Not alot is known about the PPRS system.  It is a government bases system for registrations.  Special rules on the firewall had to be created to allow access to this system.  BMA-WWW is sent data from the users and from there the PPRS system is contacted and updated.  This is the assumptions made and should be verified before relied upon.
+
+
+2. Network Layout
+
+2.a. BidsOnline
+
+The BidsOnline network is supplied via a BDSL connection at BMA (this is to be replaced by fibre) supplied by AAPT?.  The BMA site has the network address of 192.168.13.0/24 and the router's address is 192.168.13.254.
+
+The BidsOnline servers at the BidsOnline data centre have a network address of 192.168.2.0/24.
+
+The only devices on the BidsOnline network at BMA are:
+	1. Router		192.168.13.254
+	2. Robert Joiner's PC	192.168.13.131
+	3. Firewall BMA-FW1	192.168.13.253
+
+2.b. APEagers
+
+The APEagers network at BMA is supplied by a fibre connection to the Telstra supplied WAN.  The BMA site has the network address of 10.32.0.0/16 and devices owned by BMA are encouraged to have 20 as their third octet.  The default gateway for standard machines is the router's address 10.32.3.254.
+
+The two servers BMA-SQL and BMA-WWW are intended to talk to the BidsOnline network and as such their gateway has been set to the firewall between the two networks.
+
+2.c. Firewall
+
+A purpose built firewall has been built to allow connectivity between the APEAgers and BidsOnline network.  This firewall allows the servers BMA-SQL and BMA-WWW to connect to BidsOnline servers.  
+
+The default route for this firewall is the router on the BidsOnline network.  An additional route has been added for 10.0.0.0/8 which is routed to the 10.32.3.254 router on the APEagers network.
+
+Although the firewall also has an alias on its BidsOnline interface.  This alias is 192.168.13.5 and the firewall redirects all traffic to this address to the BMA-SQL server.  Using this technique all devices on the BidsOnline network can reach the BMA-SQL server.  No port or source blocking has been done to enable this functionality, but this can be done if necessary. 
+
+2.d. Switches
+
+Between the firewall and the BidsOnline network there are a number of switches.  A purpose built VLAN has been configured between these; the VLAN ID is 20.
+
+
+3. Servers
+
+3.a. PNK-ESX
+
+The PNK-ESX host is a VMWare installation and contains the virtual guests BMA-SQL, BMA-WWW and BMA-FW1.  The network on this installation has been modified to include the VLAN 20 so that the firewall can connect to the BidsOnline network.
+
+This server has sufficient space and capacity for upgrades to the supplied virtual guests within the coming years if necessary.
+
+3.a. BMA-SQL
+
+The BMA-SQL server is a windows 2008 R2 installation with MS SQL 2005 installed as its primary role.  The server has four (4) disk strictly for the roles of OS, data, logs and backup.  This server has been configured with three (3) databases jlBrisbane, jlBrisbaneTest, and jhcarsbork?.   Also on request by BidsOnline the SA password for the database system is (blank) [I have been promised that this will be changed in due course].
+
+3.a. BMA-WWW
+
+The BMA-WWW server is a Windows 2003 installation with IIS added as a role.   The server has two (2) disks for the roles of OS/WWW and data.  A small website has been configured for the purpose of PPSR (it is assumed?).  Also this server has the fileshare contained on the data disk.  Sufficient space has been made available for the growth of the fileshare system beyond its current use.

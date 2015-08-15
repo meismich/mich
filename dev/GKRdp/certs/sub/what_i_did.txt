@@ -1,0 +1,109 @@
+MADE root/
+MADE sub/
+
+INSIDE BOTH root/ and sub/
+
+MADE certs/
+MADE crl
+MADE newcerts/
+MADE private
+TOUCHED index.txt
+ECHOED 0100 TO FILE serial
+ECHOED 0100 TO FILE crlnumber
+COPIED openssl.cnf FROM /etc/ssl
+REMOVED randdir WITHIN openssl.cnf
+ALTERED dir WITHIN openssl.cnf SET TO .
+
+FROM root/
+
+openssl rand -out private/.rand 1024
+openssl genrsa -out private/cakey.pem -des3 -rand private/.rand 2048
+openssl req -x509 -new -key private/cakey.pem -out cacert.pem -config openssl.cnf
+
+FROM sub/
+
+openssl rand -out private/.rand 1024
+openssl genrsa -out private/cakey.pem -des3 -rand private/.rand 2048
+openssl req -new -key private/cakey.pem -out subcareq.pem -config openssl.cnf
+
+FROM root/
+
+openssl ca -in ../sub/subcareq.pem -extensions v3_ca -config openssl.cnf
+
+COPIED root/newcerts/0100.pem sub/cacert.pem
+
+COPIED CSR TO sub/
+
+FROM sub/
+
+openssl rsa -in private/cakey.pem -out private/emp-gk-key.pem
+
+ATTEMPT #1
+
+openssl x509 -req -in emp-gk.csr  -out emp-gk.pem -signkey private/emp-gk-key.pem -CA cacert.pem -CAkey private/cakey.pem -CAcreateserial -days 365
+
+openssl pkcs12 -export -in emp-gk.pem -out emp-gk.p12 -inkey private/emp-gk-key.pem
+
+THIS FAILED .p12 HAS private key BUT IS NOT serverAuth Marked
+
+SO... ATTEMPT #2
+
+openssl x509 -req -in emp-gk.csr  -out emp-gk-inter.pem -signkey private/emp-gk-key.pem -CA cacert.pem -CAkey private/cakey.pem -CAcreateserial -days 365
+
+openssl x509 -x509toreq -in emp-gk-inter.pem -out emp-gk-inter.csr -signkey private/emp-gk-key.pem
+
+openssl ca -in emp-gk-inter.csr -out emp-gk.pem -keyfile private/cakey.pem -cert cacert.pem -config openssl.cnf -policy policy_anything -selfsign
+
+openssl pkcs12 -export -in emp-gk.pem -out emp-gk.p12 -inkey private/emp-gk-key.pem
+
+AND ... ATTEMPT #3
+
+openssl x509 -req -in emp-gk.csr  -out emp-gk-inter.pem -signkey private/emp-gk-key.pem -CA cacert.pem -CAkey private/cakey.pem -CAcreateserial -days 365
+
+openssl x509 -x509toreq -in emp-gk-inter.pem -out emp-gk-inter.csr -signkey private/emp-gk-key.pem
+
+openssl ca -in emp-gk-inter.csr -out emp-gk.pem -keyfile private/cakey.pem -cert cacert.pem -config openssl.cnf -extensions serverAuth -policy policy
+
+openssl pkcs12 -export -in emp-gk.pem -out emp-gk.p12 -inkey private/emp-gk-key.pem
+
+
+
+============================
+
+
+CN = emp.gk.apeagers.com.au
+OU = RDP-GK
+O = APEagers Ltd
+L = Australia
+S = Australia
+C = AU
+
+
+From above assuming that I don't need to redo all the directgory makes etc.
+
+Also since the Primary Root CA is valid for 10 years don't have to recreated the root cert.
+Also the initial sub-ca keys and files don't need to be recreated.
+
+So steps in recreating the emp-gk certificate would be:
+
+1. openssl ca -in ../sub/subcareq.pem -extensions v3_ca -config openssl.cnf
+	a. <easy>
+2. copy the new pem to sub/cacert.pem [THIS  IS THE NEW SUB-CA certificate.  AKA APE-CA]
+3. generate a new CSR on the gk server
+	a. need details as above
+	b. assuming bit-length of 2048 (not sure)
+(skipped over step "openssl rsa -in private/cakey.pem -out private/emp-gk-key.pem")
+4. openssl x509 -req -in emp-gk_2014.csr  -out emp-gk-inter.pem -signkey private/emp-gk-key.pem -CA cacert.pem -CAkey private/cakey.pem -CAcreateserial -days 365
+	a. <isa!>
+5. openssl x509 -x509toreq -in emp-gk-inter.pem -out emp-gk-inter.csr -signkey private/emp-gk-key.pem
+6. openssl ca -in emp-gk-inter.csr -out emp-gk.pem -keyfile private/cakey.pem -cert cacert.pem -config openssl.cnf -extensions serverAuth -policy policy_anything
+	a. <isa!>
+7. openssl pkcs12 -export -in emp-gk.pem -out emp-gk.p12 -inkey private/emp-gk-key.pem
+	a. <clueless>
+8. openssl x509 -in cacert.pem -outform DER -out cacert.crt
+9. Using MMC on GK, remove the APE-CA certificate from the Trusted Root Certs
+10. Using MMC on GK, removee the GK certificate from the Personal Certs
+11. Import the new certificates SUB-CA goes in the Trusted Root, GK goes in Personal
+12. Using the RD Gateway Manager, Configure the certificate to be used.
+
+

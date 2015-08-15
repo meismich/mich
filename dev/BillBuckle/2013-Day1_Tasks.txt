@@ -1,0 +1,53 @@
+BB Tasks for Day 1
+
+
+Further Investigate the Phone System
+	- VLAN ?
+	- Patching - Piggyback
+	- Handset config/operation
+	- Receptionist
+	- How is a handset added/replaced/decomed?
+	- Support Agreement
+	- Vendor Details
+
+Identify AirOS Vendor and support agreement
+
+Expander Usage?  
+	- is it inline?
+	- active at remote sites?
+	- Supported by AutoIT??
+
+Test Internet performance
+	- Parts in particular
+	- Parts usage of Apps
+	- Microcat integration with Units
+	- 4G Test at parts
+	- Interview Parts Manager/users
+	- Where is the issue?
+
+File Servers
+	- Michael to explain define expectation
+	- current usage methods there
+	- Likes and Dislikes
+
+PC and Computer Models
+	- how is the wireless?
+	- number of non-AD computers
+	- Profile usage (sharing computers?)
+	- Remote technology? vnc? landesk?
+	- anti-virus (Tash? Kapersky)
+	- IP addresses/DHCP etc
+	- Units AD rollout extent
+
+Units
+	- how is it used?
+	- remote desktop to TS
+	- how bout remote application?
+	- active directory management
+
+Servers and Backups
+	- virtual WWW server??
+	- how does backup occur?
+	- Where are tapes stored?
+
+Extras from Dealership?

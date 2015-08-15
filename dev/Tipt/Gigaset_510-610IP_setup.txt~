@@ -1,0 +1,138 @@
+TIPT - Gigaset IP Setup
+2014-03-17
+Michael Spence
+
+
+Audience
+
+This document is intended for use by the Field Support team.
+
+
+Preamble
+
+This document details the basic configuration of a Gigaset 510/610 IP phone for intregration with the Telstra TIPT system.
+
+This document details the basic configuration items of a TIPT User and Device profiles for integration with a Gigaset IP phone.
+
+This document DOES NOT detail the configuration of a landline connected to the Gigaset IP phone.
+
+This document DOES NOT detail the additional configuration items for a TIPT User or Device profiles.
+
+
+Topics of Discussion:
+
+	1. Intro and Purpose
+	2. User Configuration
+		a. Device Configuration
+		b. User Configuration
+		b. User Authentication
+	3. Phone Configuration
+		a. Local Access
+		b. Connections
+		c. Number Assignment
+		d. Option items
+			i. NTP
+			ii. Static IP
+
+
+
+Topics of Discussion:
+
+1. Intro and Purpose
+
+The Gigaset IP phones, models 510 and 610, are capable of delivering TIPT directly to the cordless phone without the need for an IAD.  The device is made up of two parts, the base station and the handset.
+
+
+
+2. User & Phone Configuration
+
+As with any phone configuration, within the TIPT system the phone and user need to be configured.  
+
+2.a. Device Configuration
+
+Within the Group configuration, choose the Resources menu.  This menu displays various resources for the group including, "Identity/Device Profiles".   Using this sub-menu item, Add a new device.  (It may be necessary to edit a pre-existing device, which can be done after searching for the device.)  
+
+The standard "Device Profile Name" follows the following formula:
+
+	DeviceProfileName = "d" & <phonenumber> 		(for example "d0738286140")
+
+The "Device Profile Type" for this phone is "Generic SIP Phone".  Fill in the "MAC Address" ans "Serial Number" fields for later identification.  Verify that the "Protocol" is "SIP 2.0" and "Transport" is "Unspecified".
+
+Ensure that the changes are saved, which will complete the device configuration.  The User account can now be connected to the device.
+
+2.b. User Configuration
+
+It may be necessary to create a new user account within the TIPT system.  This process is straightforward and not covered here.
+
+Within the user profile, the "Addresses" item links the user profile to both a phone number and a phone device.  
+
+Initially, choose the appropriate phone number and extension for the user; this will assign the phone number to the user.
+
+The radio buttons on the "Addresses" page allow different access for users; in this case the "Identity/Device Profile" option is appropriate for this handset.  Choose this radio button and select the "Device Profile Name", which was created (or altered) in the previous step, from the drop down.  
+
+finally, type the "Line/Port" into the provided location.  The "Line/Port" number follows the following formula:
+
+	LinePort = "p" & <phonenumber>			(for example "p0738286140")
+
+
+2.c. User Authentication
+
+The final user configuration item, includes setting up authentication for the phone to use to access the TIPT system.  
+
+From the user's Utilities menu system, select "Authentication".  There will be prompts for a User Name and a Password.  It is recommended that the User Name should be the phone number and the password be the MAC address of the device.
+
+
+
+3. Phone Configuration
+
+Because the Gigaset does not support automatic configuration from the TIPT platform, the configuration must be done on the handset before deployment.
+
+
+3.a. Local Access
+
+To access the configuration system of the phone, the system must be connected to a network which has a monitorable DHCP server.  Once the obtained IP address is ascertained, from the network local to the phone, using a browser, the configuration web-page can be brought up.  (It may be necessary to type "http://<IPaddress>/" in full in some circumstances; also proxy server settings may also be required to be turned off.)
+
+Once access to the configuration portal has been obtained, login is required.  The default login passkey is "0000", which it is advised should not be changed.
+
+
+3.b. Connections
+
+Under the "Settings" tab, the menu item "Telephony" contains the configuration item "Connections".  In its initial state, this page displays six (6) configurable connections named "IPx" (where "x" is a number 1 thru 6).  To configure TIPT edit one of these connections.
+
+In each configuration, there are both simple and advanced configuration items.  To reach the advanced configuration items, press the "Show Advanced Settings" button.
+
+Within the simple settings, the options "Name", "Authentication Name", "Authentication Password", and "User Name" need to configured.  It is recommended that the name of the connection be changed to "TIPT" to identify its use.  The Authentication details are the authentication settings as configured within the TIPT system previously (see step 2.c).  Finally the "Username" is the "LinePort" number as configured in the TIPT system (see step 2.b).
+
+Under the advanced settings, the following three (3) items need to be configured: "Domain", "Proxy Server Address" and "Outbound Server Address".  The values for these settings should be:
+
+	Domain = "as.nipt.telstra.com"
+	ProxyServerAddress = "sbc-qld.nipt.telstra.com"
+	OutboundServerAddress = "sbc-qld.nipt.telstra.com"
+
+Ensure that the settings are recorded by pressing "Set".  When the "Connections" page is returned, ensure that the "TIPT" profile is activated by ticking the "Active" checkbox for the profile.  Press "Set" to update the configuration for the phone.
+
+
+3.c. Number Assignment
+
+To enable the use of the newly created profile, access the "Number Assignment" sub-menu item under "Telephony".
+
+In this page, ensure that "TIPT" is selected as the "Outbound" destination and is also ticked "for Inbound calls".  It is not necessary to untick other connections for inbound calls, but this is recommended.
+
+Although not necessary, it is recommended that the "Automatic Fallback to Fixed Line" is set to "No".
+
+Ensure that the settings are recorded by pressing "Set".
+
+
+3.d. Option items
+
+At the time of writing this document, not all the features of the Gigaset IP phones has been evaultated.  However, some features have been noted and may be useful as configuration items in the future.
+
+
+3.d.i. NTP
+
+The time of the phone can be configured by using a NTP time server.  This setting includes a timezone field.  These settings can be found within the "Date & Time" sub-menu under the "Management" menu item.
+
+
+3.d.ii. Static IP
+
+There may be some network setups which require the use of a static IP address.  This can be configured within the "IP Configuration" sub-men under the "Network" menu item.

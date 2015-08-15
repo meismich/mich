@@ -1,0 +1,75 @@
+select xassets.id, xassets.s_serialno
+	from xassets
+	where (xassets.id < 90000000 or xassets.id > 200700000)
+		and xassets.s_devicetype in ("PC", "Notebook")
+		and xassets.s_status = "Active"
+		and xassets.id not in (
+			select i_asset
+				from interog8s
+				where interog8s.i_i8type = 8
+					and str_to_date(interog8s.s_interog8, '%Y-%m-%d') > subdate(curdate(), INTERVAL 61 DAY)
+			)
+	order by xassets.id
+	;
+
+select distinct(xassets.id), xassets.s_serialno, interog8s.s_interog8, xassets.s_devicetype
+	from xassets left join interog8s 
+		on xassets.id = interog8s.i_asset
+	where xassets.s_status <> "Active"
+		and (xassets.id < 90000000 or xassets.id > 200700000)
+		and xassets.s_devicetype in ("PC", "Notebook", "Thin Client", "Zbox", "Tablet PC", "Printer") 
+		and interog8s.i_i8type = 8
+		and str_to_date(interog8s.s_interog8, '%Y-%m-%d') > subdate(curdate(), INTERVAL 32 DAY)
+	;
+
+select distinct(xassets.id), xassets.s_serialno, interog8s.s_interog8, xassets.s_devicetype
+	from xassets left join interog8s 
+		on xassets.id = interog8s.i_asset 
+	where xassets.s_status = "Active" 
+		and (xassets.id < 90000000 or xassets.id > 200700000)
+		and xassets.s_devicetype in ("PC", "Notebook", "Thin Client", "Zbox", "Printer", "Tablet PC") 
+		and (interog8s.i_i8type is null 
+			or (
+				interog8s.i_i8type = 8 
+					and str_to_date(interog8s.s_interog8, '%Y-%m-%d') < subdate(curdate(), INTERVAL 61 DAY)
+				)
+			)
+	order by xassets.id
+	;
+
+
+select * from xdescs 
+	where s_desctype = "Name" 
+		and i_asset in ( 
+			select distinct(xassets.id)
+				from xassets left join interog8s
+                			on xassets.id = interog8s.i_asset
+        			where xassets.s_status = "Active"
+                			and xassets.s_devicetype in ("PC", "Notebook", "Thin Client", "Zbox", "Printer")
+                			and (interog8s.i_i8type is null
+                        			or ( interog8s.i_i8type =8
+                                        		and str_to_date(interog8s.s_interog8, '%Y-%m-%d') < subdate(curdate(), INTERVAL 61 DAY)
+			                                )
+                			        )
+			)
+	order by i_asset
+	;
+
+select * from xassets where id in (select distinct(i_asset) from interog8s where i_i8type=8 and str_to_date(s_interog8, '%Y-%m-%d') > subdate(curdate(), INTERVAL 61 DAY));
+
+
+select * from xassets where s_status = "Active" and s_devicetype in ("PC", "Notebook", "Thin Client", "Zbox", "Printer", "Tablet PC");
+
+select * from xassets left join interog8s
+                on xassets.id = interog8s.i_asset
+        where xassets.s_status <> "Active"
+                and (xassets.id < 90000000 or xassets.id > 200700000)
+                and (interog8s.i_i8type = 8 or interog8s.i_i8type = NULL)
+        order by i_asset
+	;
+
+# Ratio of Distinct assets of particular model type to the entire population of assets  (Assets being only active assets)
+select s_model, 100* count(distinct id) / (select count(*) from xassets where s_status="Active") from xassets where s_status="Active" group by s_model;
+
+
+

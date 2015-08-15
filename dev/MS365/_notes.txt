@@ -1,0 +1,161 @@
+
+GP's built to help migrate and configure MS365 users
+
+On first use Outlook has to have profiles cleared and a new one configured.  GP created to manage New Users:
+
+	"Microsoft 365 - New Users"
+
+which is security filtered to the Security group "MS 365 Outlook Reset".  This GP currently performs a registry hack to delete profiles
+
+	"resetprofile.reg"
+
+Plan to replace this with a vbs as the registry is not being altered as hoped.
+
+
+All Outlook clients need to have caching mode turned on for best performace.  GP created to manage all 365 Users:
+
+	"Microsoft 365 - Permanent"
+
+which is security filtered to the Security group "MS 365 Users".  This GP currently only configures the Outlook client using a Outlook template.  In the future this group may also be used to set other 365 properties.
+
+
+
+
+POWER SHELL
+
+*** First thing once you have installed the two required MSI's for the version of Win7 you are using (32 or 64) *** you must set the execution policy for powershell
+
+Set-ExecutionPolicy RemoteSigned
+
+
+Logging onto 365 Powershell:
+
+$c = Get-Credential
+
+Connect-MsolService -Credential $c  		# NECESSARY FOR msol LIBRARY 
+						# ALSO CSP PROXY NOT FUNCTIONING 2012-01-03
+
+$s = New-PSSession -ConfigurationName Microsoft.Exchange |
+		   -ConnectionUri https://ps.outlook.com/powershell |
+		   -Credential $c |
+		   -Authentication Basic |
+		   -AllowRedirect
+Import-PSSession $s
+
+
+Some useful PowerShell commands:
+
+get-msolcompanyinformation
+
+get-msoluser
+	-licensereconciliationneededonly	Shows unlicencsed
+	-domain <domainname>			Shows Domain users (primary email address sort)
+
+get-command -module <modulename>
+
+
+Listing Users:
+
+get-mailbox [-resultsize unlimited]
+	| select-object -Property Office,CustomAttribute1,UserPrincipalName,primarySmtpAddress 
+	| ConvertTo-csv > somefile.csv
+
+(The first line of the output is the headings so if no "select-object" is done, then you can just read the headings)
+
+Setting a Mailbox to be opened by another user:
+
+Add-MailboxPermission -Identity <ToOpenUser> -User <OpeningUser> -AccessRights FullAccess -InheritanceType All
+	(for example if "Borko" wants to open user "Bingo"s mailbox the following would be used:
+		
+Add-MailboxPermission -Identity Bingo |
+			-User Borko |
+			-AccessRights FullAccess |
+			-InheritanceType All
+	you may find it easier to use email addresses... I did!)
+
+
+Allowing User to SendAs another user:
+
+Add-RecipientPermission -Identity <WhoToSendAsUser> -AccessRights SendAs -Trustee <RealSender>
+	(for example if "Borko" wants to SendAs "Bingo" the following would be used:
+Add-RecipientPermission -Identity Bingo |
+			-AccessRights SendAs |
+			-Trustee Borkoi
+	you may find it easier to use email addresses... I did!)
+
+
+
+Password Expiry On or Off:
+
+get-msoluser | where-object { $_.passwordneverexpires -ne "TRUE" } | set-msoluser -passwordneverexpire $true
+
+
+
+Set password for user:
+
+set-msoluserpassword -userprincipalname user@domain -newpassword pa`$`$w0rd -forcechangepassword $false
+
+Note  the "`" (backticks) to escape the special symbol "$".  Also setting the forcechangepassword to $false on a new account should disable the change password first screen.
+
+
+Calendar Permissions:
+
+Some "Folders" within a mailbox may want to be shared with other users.  Most commonly this is the "Calendar" folder, which also requires additional rights for users to be able to add/update events within this calendar.
+
+Use the following command to set folder permissions for a user:
+
+	set-mailboxfolderpermission -identity <UserWhoOwnsFolder> -user <OtherUser> -AccessRights <LevelOfAccess>
+
+For example if Borko wants to Access Bingo's Calendar with permission to Create and Delete anything, but not own it:
+
+	set-mailboxfolderpermission -identity Bingo:\Calendar -user Borko -AccessRights PublishingEditor
+
+The levels of access are (all have Folder Visible):
+
+	Contributer - Creates All Items
+	Reviewer - Read All Items
+	NonEditingAuthor - Creates and Reads All Items
+	Author - Creates And Reads All Items, Edits and Deletes Own Items
+	PublishingAuthor - Creates and Reads All, Edits and Deletes Own, Creates Subfolders
+	Editor - Creates and Reads All, Edits and Deletes All
+	PublishingEditor - Creates and Reads All, Edits and Deletes All, Creates Subfolders
+	Owner - Creates and Reads All, Edits and Deletes All, Creates Subfolders, Folder Owner, Folder Contact
+	None - .
+	
+(ref http://technet.microsoft.com/en-us/library/dd298062.aspx )	
+
+
+
+Clearing the screen:
+
+Clear-Host
+
+
+
+Case statements:
+
+
+switch ($a) {
+
+	1 { print "This is case 1" }
+	default { print "This is the default" }
+
+	}
+
+
+
+funcitons:
+
+
+Function MyFunc ($p1, $p2, .... )
+{
+
+	do shit with $p1 and $p2 etc
+
+}
+
+Specifying THE email addresses for a distribution group via PS
+
+	set-distributiongroup -identity <distro group> -emailaddres SMTP:<email addresses (comma separated)>
+
+the first email address becomes the default for the group

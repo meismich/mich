@@ -1,0 +1,6 @@
+http://vnkn-bws-002.nipt.telstra.com/servlet/Login?EnteredUserID=admpag@apeagers.com.au&UserID=admpag@apeagers.com.au&domain=&Password=tamwood
+http://vnkn-bws-002.nipt.telstra.com/Common/folder_contents.jsp?menuId=1
+http://vnkn-bws-002.nipt.telstra.com/Group/Members
+http://vnkn-bws-002.nipt.telstra.com/Common/page.jsp?returnPage=/Group/Members/&tableName=groupUserList&value=1
+http://vnkn-bws-002.nipt.telstra.com/Common/page.jsp?returnPage=/Group/Members/&tableName=groupUserList&value=2
+http://vnkn-bws-002.nipt.telstra.com/Common/page.jsp?returnPage=/Group/Members/&tableName=groupUserList&value=3

@@ -1,0 +1,62 @@
+Certificate Request:
+    Data:
+        Version: 0 (0x0)
+        Subject: C=AU, ST=Australia, L=Australia, O=APEagers Ltd, OU=RDP-GK, CN=emp.gk.apeagers.com.au
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (2048 bit)
+                Modulus (2048 bit):
+                    00:d8:74:de:cb:7c:3d:90:32:3f:c3:d4:19:e5:fa:
+                    9b:cb:75:c3:92:6f:db:27:cf:f4:b8:b5:27:e8:5a:
+                    a2:64:d0:8d:94:ec:22:c3:40:cf:de:8e:7b:68:df:
+                    19:42:35:d1:d3:95:61:13:05:e8:a1:3a:ff:ee:6b:
+                    fc:3d:d7:aa:b4:c2:42:ea:9f:97:c5:a8:b0:05:93:
+                    dc:a9:25:32:8c:64:8f:b4:8d:05:15:ca:fd:30:06:
+                    26:39:12:86:f1:5c:d0:e0:ce:21:ee:09:1d:3a:8d:
+                    1a:ee:01:27:b8:03:de:6a:ac:8d:57:8f:9b:ba:74:
+                    3b:e7:ba:50:1b:20:ec:db:ec:8e:98:b4:32:06:93:
+                    39:b8:33:96:8a:8f:04:f3:1b:d6:b5:8e:90:e2:29:
+                    73:71:12:6a:57:39:5b:49:37:06:85:50:7d:9f:2d:
+                    ef:ba:4f:ad:c2:ed:2d:a7:18:76:50:e0:4c:17:de:
+                    fc:7d:f9:e8:7d:fb:75:7a:99:32:d5:bd:52:37:22:
+                    da:50:c4:5b:89:cb:24:e6:4f:eb:29:94:11:6b:fc:
+                    e9:fd:b8:83:f9:38:8a:54:06:b0:11:a6:ee:7d:e6:
+                    d5:4b:73:4e:5d:b9:88:97:02:b8:ab:23:d1:a4:e7:
+                    a6:6e:c9:25:98:a1:00:95:11:73:05:0c:25:03:04:
+                    9f:05
+                Exponent: 65537 (0x10001)
+        Attributes:
+            a0:00
+    Signature Algorithm: sha1WithRSAEncryption
+        56:86:e7:e1:21:78:f0:b4:af:e8:32:49:87:de:69:93:10:c3:
+        a3:b3:ea:4d:57:d7:88:d3:1e:f6:3b:2e:82:22:bc:34:e5:04:
+        97:af:b9:c8:b7:cf:45:c3:0f:0d:36:ce:86:1e:08:31:1a:e7:
+        86:33:e2:57:e8:c4:59:b6:fc:ee:fe:75:28:4d:b6:da:5b:1f:
+        eb:36:73:6d:d1:e2:88:67:50:bc:5a:e6:9f:28:1a:b9:b4:6d:
+        c4:20:e4:79:f2:a1:a4:30:0b:5a:f8:83:31:75:af:ed:1e:f4:
+        0d:e5:40:45:52:1b:9f:b0:60:fd:51:e4:5a:a0:6d:85:b1:cc:
+        78:55:09:08:ec:19:ce:5a:54:3d:ad:3a:7d:71:50:b5:73:09:
+        97:f9:19:76:c4:2e:86:52:44:50:d7:d2:4b:81:9e:c6:fe:d2:
+        07:39:c8:0e:a0:c4:d0:96:19:ac:fe:93:58:f8:44:55:df:69:
+        19:9f:58:1a:52:6a:a5:eb:e6:92:37:9e:4c:e6:08:f8:3d:f3:
+        5d:c5:70:d3:cf:b9:90:d3:d2:90:2d:68:5f:71:6a:95:40:9a:
+        d8:73:01:1f:4e:f0:b6:32:92:a0:7d:26:d4:56:79:25:de:92:
+        59:ae:c5:b1:ea:78:0d:55:76:2b:0a:ab:2e:db:3f:11:50:64:
+        dc:7e:de:14
+-----BEGIN CERTIFICATE REQUEST-----
+MIICwzCCAasCAQAwfjELMAkGA1UEBhMCQVUxEjAQBgNVBAgMCUF1c3RyYWxpYTES
+MBAGA1UEBwwJQXVzdHJhbGlhMRUwEwYDVQQKDAxBUEVhZ2VycyBMdGQxDzANBgNV
+BAsMBlJEUC1HSzEfMB0GA1UEAwwWZW1wLmdrLmFwZWFnZXJzLmNvbS5hdTCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANh03st8PZAyP8PUGeX6m8t1w5Jv
+2yfP9Li1J+haomTQjZTsIsNAz96Oe2jfGUI10dOVYRMF6KE6/+5r/D3XqrTCQuqf
+l8WosAWT3KklMoxkj7SNBRXK/TAGJjkShvFc0ODOIe4JHTqNGu4BJ7gD3mqsjVeP
+m7p0O+e6UBsg7Nvsjpi0MgaTObgzloqPBPMb1rWOkOIpc3ESalc5W0k3BoVQfZ8t
+77pPrcLtLacYdlDgTBfe/H356H37dXqZMtW9Ujci2lDEW4nLJOZP6ymUEWv86f24
+g/k4ilQGsBGm7n3m1UtzTl25iJcCuKsj0aTnpm7JJZihAJURcwUMJQMEnwUCAwEA
+AaAAMA0GCSqGSIb3DQEBBQUAA4IBAQBWhufhIXjwtK/oMkmH3mmTEMOjs+pNV9eI
+0x72Oy6CIrw05QSXr7nIt89Fww8NNs6GHggxGueGM+JX6MRZtvzu/nUoTbbaWx/r
+NnNt0eKIZ1C8WuafKBq5tG3EIOR58qGkMAta+IMxda/tHvQN5UBFUhufsGD9UeRa
+oG2Fscx4VQkI7BnOWlQ9rTp9cVC1cwmX+Rl2xC6GUkRQ19JLgZ7G/tIHOcgOoMTQ
+lhms/pNY+ERV32kZn1gaUmql6+aSN55M5gj4PfNdxXDTz7mQ09KQLWhfcWqVQJrY
+cwEfTvC2MpKgfSbUVnkl3pJZrsWx6ngNVXYrCqsu2z8RUGTcft4U
+-----END CERTIFICATE REQUEST-----

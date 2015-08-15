@@ -1,0 +1,85 @@
+Microsoft 365 - Client Update Method
+2011-06-10
+Michael Spence
+
+
+Audience:
+
+This document is for the use of Field Support Officers.  This document may also be useful (in part) for use as documentation to users.
+
+
+Preamble:
+
+This document describes the methods used for removing a Client User's current Outlook profile and subsequently adding the Client's new Microsoft 365 profile.
+
+This document DOES NOT describe the methods for creation of user accounts.  This document DOES NOT describe how to synchronise users with the Microsoft 365 system.
+
+The methods described MAY be applicable after the initial setup of Microsoft 365, but in the author's opinion probably WON'T BE.
+
+
+Steps:
+
+1- Shut down Outlook
+2- Run Registry Hack
+3- Start Outlook
+4- Configure User Settings
+5- Allow Outlook to Connect
+
+
+Steps in Detail:
+
+1- Shut down Outlook
+
+This step assumes the computer is powered on and is being used.  
+
+For the profile for Outlook to be changed, no instances of Outlook can be running.  If Outlook remains open, there is possibility that the following steps will be undone and the method will fail.
+
+Quit Outlook, and verify that all mail messages, calandar items, notes, etc are closed.
+
+
+2- Run Registry Hack
+
+A registry hack has been designed to remove the outlook profiles on the machine and start a new profile instance ready to be configured at Outlook's next startup.
+
+This registry hack can be located at the following locations:
+
+	\\gabbafs\xfer\Outlook 365\resetprofile.reg
+	http://ittools/hacks/reg/resetprofile.reg
+
+If these locations are unavailable and you are forced to performe the registry editting manually, use the code for the hack is as follows:
+
+===============================================================================================================================
+Windows Registry Editor Version 5.00
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles]
+"DefaultProfile"="Outlook365"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles\Outlook365]
+===============================================================================================================================
+
+
+3- Start Outlook
+
+Once the profiles have been removed from the registry, Outlook can be started again.  There will be no profiles currently configured and mail funcionality will be non existent at this point.  The Outlook profile added in registry will need to be configured appropriately.  Hopefully if the DNS settings have been adjusted correctly, this process will be relatively simple and relatively automated.
+
+
+4- Configure User Settings
+
+(Please refer to the document "Microsoft 365 - Configuring Your Outlook" document, which will be supplied to each user before their cutover.)
+
+When Outlook starts a configuration wizard starts and asks "... do you want to configure an email account?"  Click the "Yes" radio button and Click "Next".
+
+If the users profile and DNS settings are correct, the next step should be completely automated, and outlook will connect to the Microsoft 365 system and fetch the users account details (based on AD account).  Click "Next" to continue.
+
+At this stage Outlook will fetch other account details, however to complete this step, the user needs to login.  A login box will appear with the user name already pre-filled.  This user name should be like "user@apeagers.com.au" (NOTE: this may change in later deployments to be simply the usesr email address)  The user will have to enter their Microsoft 365 password to continue.  By default all email accounts have their password set to "pa$$w0rd".  Click "OK" and allow Outlook continue its account details fetch.  Click "Next" after completion.
+
+Finally, Click "Finish" on the last step of the setup.
+
+
+5- Allow Outlook to Connect
+
+Once the profile is configured, Outlook will continue to gather details from the account such as emails, contacts, calandar, etc.  This can take some time, but should become available quickly.
+
+This completes the Client configuration for Microsoft 365.

@@ -1,0 +1,3 @@
+
+
+nmap -Pn -p161 -oG $TEMP_DIR/scan_nsd.txt 10.10.0.0/16

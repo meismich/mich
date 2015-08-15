@@ -1,0 +1,94 @@
+Radius - Administration
+2011-08-30
+Michael Spence
+
+Audience:
+
+This document is intended for field support officers at APEagers.  This document may be helpful in enabling Helpdesk to aide a user in installing the required certificates onto a device.
+
+
+Preamble:
+
+This document describes how to install the required certificates on wireless devices to access the network using the Radius system.
+
+This document describes the necessary configuration of the Radius system to allow access for wireless devices.
+
+This document DOES NOT detail how to configure the WAPs to use Radius.
+
+This document DOES NOT detail how to install or configure the Radius system.
+
+This document describes how to generate the required certificates and the timeframe at which to perform this function.
+
+
+Topics of Discussion
+
+	1. Installing Certificates
+		a. iPad/iPhone
+		b. Windows 7
+		c. Windows XP
+	2. Michael's RAD Menu System
+		a. Good MACs
+		b. Bad MACs
+		c. Restart Service
+	3. Create New Certificates
+
+
+Topics in Detail
+
+1. Installing Certificates
+
+Each device can authenticate with the network without the use of Logins or passwords.  Authentication is performed using certificates, which is why EAP-TLS is considered the strongest of encryption methods for wireless networks.  The problem is installing these certificates on all the wireless devices within the network.  The following procedures demonstrate how to install certificates on Apple iPads or iPhones, on Windows 7 machines and also on Windows XP machines.
+
+	a. iPad/iPhone
+
+
+	b. Windows 7
+
+
+	c. Windows XP
+
+By default XP performs authentication with RADIUS using personal credentials.  The configuration of our RADIUS requires that the network is accessed prior to login and therefore authentication with RADIUS must be done using the computer account.  To achieve this the registry must be altered to force XP to perform computer account authentication.  The following Key must be changed (or added):
+
+	[Insert from email sent to Matt 19/8/2011]
+
+The computer will need to be restarted before this change takes effect.  If there is third party software controlling the wireless interface, it is recommended that this is disabled so that Windows handles the entire process; complications arising from software like these is untested.
+
+The most foolproof method to install certificates onto a Windows XP machine into the correct certificate location, is to use the "mmc" tool.  Start "mmc" from the "run" window.  The correct certificate snap-in needs to be added.  When adding the snap-in be sure to select "Computer Account" -> "Local Computer".
+
+Select the "Trusted Root Certificate Authority" folder of the attached Snap-in and "Import..." the CA certificate.
+
+Select the "Personal" folder and "Import..." the client certificate.  The password will be requested for install.
+
+
+2. Michael's RAD Menu System
+
+Michael's RAD Menu allows the addition and removal of MAC addresses from both the allow lists and block lists.  It also allows the restarting of the RADIUS service.
+
+Access to the menu can be gained by using SSH to qld-ras1.  The user "radadmin" has the password <clueless> and once logged in, the menu begins automatically.  Upon exitting the menu, the connection is closed with the host.  For ease of access, on the desktop of bne-isdept, a shortcut has been created pre-filling server destination and username, only password is required.
+
+	a. Good/Bad MACs
+
+The RADIUS system is configured to allow or deny access to the network if the MAC address of the system is contained in the lists for good MACs or bad MACs.  Denied access takes precedence over allowed access.  The menu allows the choice between Allowed or Denied access through the use of the terms Good MACs or Bad MACs and changes will be to the lists associated with these.
+
+	b. Adding/Removing MACs
+
+Each of the sub-menus "Good MACS" or "Bad MACS" has the ability to add or remove a MAC address.  These options will accept any characters, removing invalid characters to generate the MAC address.  Valid characters are "0-9a-f"; capitals are not accepted.  If the program does not display a "translated" MAC address there were insufficient valid characters to form a MAC address from.
+
+	c. Restart Service
+
+The RADIUS service only gains its configuration when it is started.  After changes have been made to the list of MACs, the service needs to be reloaded.
+
+
+3. Create New Certificates
+
+Making new client certificates:
+
+in /etc/raddb/certs
+(ca and server certificates have been made unwritable so they DO NOT get overwritten - if these ARE damaged then they MUST be replaced with the originals stored in bup/2011-04 - unless you feel like touching ever computer connected to the network... I didn't think so)
+to create new client certificates, edit client.cnf and make necessary changes
+(suggest changing "commonName" to "client{YYYY}{MM}@apeagers.com.au") but could change valid time, etc
+remove all index.txt* files
+type "make client"
+copy "client.p12" to whereever you use it from  (use pscp.exe from nsd-issadm) or scp from qld-ras1 to another nix box.
+
+

@@ -1,0 +1,1051 @@
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<html>
+<head>
+      <link rel="stylesheet" type="text/css" href="/Common/styles.css">
+      <link rel="stylesheet" type="text/css" href="/Graphics/Telstra/styles.css">
+      <script language="JavaScript" src="/Scripts/graphics.js"></script>
+      <script language="JavaScript">
+        <!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+
+
+// Define standard error strings.
+//
+// This method is not normally invoked outside this file.
+//
+// Values <n> are replaced by argument #n in the errorText() function call.
+// For example, <1> is replaced by the first argument, <2> by the second, etc.
+//
+function lookUpError(index)
+{
+  switch(index)
+  {
+    //---------------------------------------------
+    // Page-specific errors
+    //---------------------------------------------
+
+    case 2: return "This device was added at either system or service provider level and may not be configured by a service provider or group administrator.";
+    case 3: return "<1> : " + "Must specify a phone number";
+    case 7: return "The end date/time must be after the start/time date.";
+    case 9: return "Invalid character" + " ( <1> ):\n" + "Please enter the time as HH:MM (example: 10:30)";
+    case 10: return "The holiday name, start date and start time are all required.";
+    case 11: return "The holiday name, start date and end date are all required.";
+    case 12: return "The start day and time and the end day and time cannot be the same.";
+    case 13: return "The end time must be later than the start time.  For the time range to span midnight, you must save two settings.";
+    case 14: return "The end date must be after the start date.";
+    case 15: return "The holiday name and start date are both required.";
+    case 16: return "The start day, start time, end day and end time are all required fields.";
+    case 17: return "The start date and time are required.";
+    case 18: return "The end date and time are required.";
+    case 19: return "Host Name/IP Address is required to configure the device.";
+    case 21: return "Passwords do not match";
+    case 23: return "Please select a phone number to be used for the Calling Line ID.";
+    case 24: return "Start Date is required to get status and statistics.";
+    case 25: return "End Date is required to get status and statistics.";
+    case 26: return "End Date/Time can not be earlier than Start Date/Time.";
+    case 27: return "Changing the number of digits will remove all the existing account/authorization codes. Do you want to continue?";
+    case 32: return "You must upload a configuration file";
+    case 37: return "You must upload a custom configuration file";
+    case 38: return "Priority is required for Call Center :" + " <1>";
+    case 39: return "Please enter a positive float or integer as priority for Call Center :" + " <1>";
+    case 40: return "Number of rings is required.";
+    case 41: return "Number of rings should be integer between 1 and 20.";
+    case 42: return "Schedule Date";
+    case 43: return "Schedule Time";
+    case 44: return "Report Start Date";
+    case 47: return "Report Start Time";
+    case 48: return "Report End Date";
+    case 49: return "Report End Time";
+    case 50: return "If you change from a System Provider Mail Server to a Group Mail Server, you cannot switch back to System Provider Mail Server system later. Only the System Provider can perform that function. Do you want to continue?";
+    case 52: return "Voice Portal Password can only contain numeric digits";
+    case 64: return "Start Time is not valid. Please enter the time as HH:MM (example: 10:30) 0<HH<=12 00<=MM<=59";
+    case 65: return "End Time is not valid. Please enter the time as HH:MM (example: 10:30) 0<HH<=12 00<=MM<=59";
+    case 66: return "Time is not valid. Please enter the time as HH:MM (example: 10:30) 0<HH<=12 00<=MM<=59";
+    case 67: return "Start Time is not valid. Please enter the time as HH:MM (example: 10:30) 0<=HH<24 00<=MM<=59";
+    case 68: return "End Time is not valid. Please enter the time as HH:MM (example: 10:30) 0<=HH<24 00<=MM<=59";
+    case 69: return "Time is not valid. Please enter the time as HH:MM (example: 10:30) 0<=HH<24 00<=MM<=59";
+    case 75: return "Please enter a starting phone number to add a phone number range in the phone number range start field";
+    case 76: return "Please enter a ending phone number to add a phone number range in the phone number range end field";
+    case 77: return "Please enter a starting extension to add a extension range in the extension range start field";
+    case 78: return "Please enter a ending extension to add a extension range in the extension range end field";
+    case 81: return "The starting phone number can not be greater than ending phone number.";
+    case 82: return "The starting extension can not be greater than ending extension.";
+    case 84: return "Extension is not valid, extension minimum length is" + " <1>";
+    case 85: return "Starting extension is not valid, extension minimum length is" + " <1>";
+    case 86: return "Ending extension is not valid, extension minimum length is" + " <1>";
+    case 94: return "When you selected to have your voice messages forwarded the e-mail address is required.";
+    case 95: return "When you selected to receive a voice message notification the e-mail address is required.";
+    case 96: return "When you selected to transfer on 0 the phone number is required.";
+    case 97: return "When you selected to use external routing an external routing address is required.";
+    case 99: return "When you selected to send a carbon copy of the voice message the e-mail address is required.";
+    case 100: return "Warning:  Advanced Settings are required when voice messaging is enabled and unified voice messaging is used.  Please configure your Advanced Settings as soon as possible.";
+    case 101: return "The default domain cannot be unassigned.";
+    case 104: return "Must specify a name for the New IP Phone.";
+    case 107: return "Invalid Public Identity: Can not have '@' in Public Identity";
+    case 108: return "Invalid Line/Port: Can not have '@' in Line/Port";
+    case 111: return "Must have a IP phone type to add a new IP Phone.";
+    case 112: return "At least one email address should be specified.";
+    case 113: return "Call Completion Parameter";
+    case 114: return "Short Duration Parameter";
+    case 115: return "Service Level Parameter";
+    case 116: return "Abandoned Calls except in interval";
+    case 117: return "Service Level Objective";
+    case 118: return "Abandoned Call";
+    case 119: return "Agent list is required for this report template.";
+    case 120: return "Call Center or DNIS list is required for this report template.";
+    case 121: return "One Call Center need to be selected to include all DNIS.";
+    case 122: return "Number of time unit is required for report timeframe.";
+    case 123: return "Call Center list is required for this report template.";
+    case 124: return "Calling Line ID Group Name has not been filled out under Group Profile.";
+    case 129: return "The service pack quantity exceeds the maximum quantity allowed.";
+    case 131: return "The service pack quantity cannot be zero and must be a valid number.";
+    case 132: return "The service pack must contain at least one service.";
+    case 137: return "Must specify the Public Identity for using a identity profile.";
+    case 138: return "Must specify the Line/Port for using a device profile.";
+    case 139: return "Must specify a device, or set the category of device to 'None'.";
+    case 140: return "Must specify a user part in the identity.";
+    case 149: return "Authentication user name and password must both be filled in when authentication is enabled.";
+    case 150: return "Authentication user name and password must both be filled in.";
+    case 314: return "Minimum password length should not be less than the sum of all the required numbers, uppercase, lowercase and non-alphanumeric characters which is <1>.";
+    case 315: return "Password must be at least" + " <1> " + "characters";
+    case 316: return "digits";
+    case 380: return "No value entered";
+    case 381: return "Invalid character" + ": <1>";
+    case 382: return "Value must be >=" + " <1>";
+    case 383: return "Value must be <=" + " <1>";
+    case 386: return "<1>: " + "Value must be >=" + " <2> " + "and <=" + " <3>";
+    case 608: return "This user is unable to make calls because there is no phone number or group calling line ID (CLID) configured. Click OK to continue or CANCEL to return to the configuration screen to make changes.";
+    case 610: return "Must specify at least one simultaneous ring number to turn the service on.";
+    case 613: return "Once an extension length has been increased, it can not be decreased if any users have extensions. It is possible that extensions and the existing feature access codes if numeric and of the same length may be identical so that extension dialing may not work for those extensions.  Feature access codes can be viewed and modified on the Feature Access Codes screen.  Click OK to increase the extension length or CANCEL to return to the configuration screen.";
+    case 620: return "The inventory report is about to be sent to" + " <1>" + ". This can be a resource intensive operation. Click OK to continue or CANCEL to return to the screen.";
+
+    //error messges for CommPilot_Express - left separate for CPE usability reasons
+    case 700: return "Available - In the office: The busy forward to phone number is required.";
+    case 701: return "Available - In the office: The no answer forward to phone number is required.";
+    case 702: return "Available - Out of the office: The forward to number is required.";
+    case 703: return "Available - Out of the office: The e-mail address is required.";
+    case 704: return "Busy: The e-mail address is required.";
+    case 705: return "Busy: The forward to number is required.";
+    case 706: return "Busy: The send all calls to Voice Messaging except calls from these Phone numbers must provide at least one restricted number.";
+    case 707: return "Unavailable: Send all calls to Voice Messaging except calls from these Phone numbers must provide at least one restricted number";
+    case 708: return "Unavailable: The forward to number is required.";
+
+    //voice vpn messages
+    case 720: return "Location Code can only contain digits.";
+    case 721: return "Min Extension Length cannot be greater than Max Extension Length.";
+    case 722: return "Group must be specified when the selector is route.";
+    case 723: return "Treatment must be specified when the selector is treatment.";
+
+    // custom ringback
+    case 724: return "URL cannot be selected if no URL is filled in.";
+    case 725: return "Personal Ringback cannot be selected if no file is uploaded.";
+
+    // DTN
+    case 726: return "At least one specific phone number must be specified.";
+
+    // Answer Confirmation
+    case 727: return "Custom Announcement cannot be selected if no file is uploaded.";
+           
+    // Pre Alerting Announcement
+    case 728: return "Interrupt with digit sequence cannot be selected if no digits are specified.";
+    
+    // Call Center Agent Unavailable Codes
+    case 730: return "Code must be specified.";
+
+    // Authorize service
+    case 901: return "Services that have been allocated cannot be unauthorized. To unauthorize these services, first remove them from the group.";
+    case 902: return "Invalid character in limit for service" + " : <1>.";
+    case 903: return "The new" + " <1> " + "limit exceeds the services that are available for allocation.";
+    case 904: return "The number of" + " <1> " + "services in use exceeds the new limit.";
+    case 905: return "Limit for service" + " <1> : " + "0 is an invalid value.";
+    case 906: return "The number of" + " <1> " + "services allocated exceeds the new limit.";
+
+    //remove these
+    case 1: return "At least one key should transfer to the operator";
+    case 45: return "You need to enter a Greeting Name to upload an Alternate Greeting";
+    case 46: return "Greeting Name can not be empty";
+    case 55: return "Date is invalid";
+    case 56: return "Time is invalid";
+
+    //cleanup to belong below
+    case 300: return "Page cannot be submitted";
+    case 1000: return "<1> " + "is a required field";
+    case 1001: return "<1> " + "must be an integer";
+    case 1002: return "A" + " <1> " + "file must be uploaded for the" + " <2>";
+    case 1003: return "<1> " + "cannot be the same";
+    case 1004: return "<1> " + "must contain a value when selected as the Search Attribute";
+    case 1005: return "<1> " + "must be an integer >=" + " <2>";
+    case 1006: return "must contain";
+
+    // Field names
+    case 2000: return "User Limit";
+    case 2001: return "Department";
+    case 2002: return "Digit String";
+    case 2003: return "Queue Length";
+    case 2004: return "Time between messages";
+    case 2005: return "Password expiration days";
+    case 2006: return "Quantity";
+    case 2008: return "Phone Number";
+    case 2009: return "Play new Phone Number";
+    case 2010: return "Transfer on '0' to Phone Number";
+    case 2011: return "First Name";
+    case 2012: return "Last Name";
+    case 2013: return "Calling Line ID First Name";
+    case 2014: return "Calling Line ID Last Name";
+    case 2015: return "Hiragana First Name";
+    case 2016: return "Hiragana Last Name";
+    case 2017: return "User ID";
+    case 2018: return "Name";
+    case 2019: return "Administrator ID";
+    case 2020: return "E-mail Address";
+    case 2021: return "Password";
+    case 2022: return "Mail Server ID";
+    case 2023: return "Voice Mail Delivery Default from E-mail Address";
+    case 2024: return "Voice Message Notification Default from E-mail Address";
+    case 2025: return "Default From E-mail Address";
+    case 2026: return "Device Name";
+    case 2027: return "Host Name/IP Address";
+    case 2028: return "Maximum Number of Ports";
+    case 2029: return "Allocated Ports to This Group";
+    case 2030: return "Allocated Ports to This Bridge";
+    case 2031: return "Bridge Name";
+    case 2032: return "Service Provider ID";
+    case 2033: return "Group ID";
+    case 2034: return "Main Feature Access Code";
+    case 2035: return "Extension";
+    case 2036: return "Service Pack Name";
+    case 2037: return "IP Address/Range";
+    case 2038: return "Description";
+    case 2039: return "Contact";
+    case 2040: return "Domain";
+    case 2041: return "SIP-URI";
+    case 2042: return "Maximum task duration";
+    case 2043: return "Error threshold";
+    case 2044: return "Holiday Schedule Name";
+    case 2045: return "Start Date";
+    case 2046: return "Time Schedule Name";
+    case 2047: return "End Date";
+    case 2048: return "Leader Phone Number";
+    case 2049: return "Participant Phone Number";
+    case 2050: return "Title";
+    case 2051: return "You must select a file to upload";
+    case 2052: return "Day of the month";
+    case 2053: return "Daily Interval";
+    case 2054: return "Weekly Interval";
+    case 2055: return "Monthly Interval";
+    case 2056: return "Day(s) of the week";
+    case 2057: return "User Specific Voice Mail Server";
+    case 2058: return "Notify E-mail Address";
+    case 2059: return "Voice Portal Lockout Default from E-mail Address";
+    case 2060: return "Association Limit";
+    case 2061: return "Association Timeout";
+    case 2062: return "Only one host can be associated with a guest";
+    case 2063: return "Voice Messaging MWI sending delay";
+    case 2064: return "Maximum Number of Trunking Simultaneous Calls";
+    case 2065: return "Conference-URI for Service Provider";
+    case 2066: return "Line/Port";
+    case 2067: return "Maximum Call Time Minutes";
+    case 2068: return "Percentage weight must total 100";
+    case 2069: return "Percentage value";
+    case 2070: return "Identity/Device Profile Type";
+    case 2071: return "CPE System File Name";
+    case 2072: return "Device File Format";
+    case 2073: return "Reset Event";
+    case 2074: return "Configuration Type";
+    case 2075: return "Task Name";
+    case 2076: return "Extension Range";
+    case 2077: return "Cannot create a task. Trunk group does not have a device configured";
+    case 2078: return "Clicking OK will start the user creation task";
+    case 2079: return "Unreachable Destination Forward Phone Number / SIP-URI";
+    case 2080: return "Unreachable Destination Reroute Trunk Group";
+    case 2081: return "Capacity Exceeded Forward Phone Number / SIP-URI";
+    case 2082: return "Capacity Exceeded Reroute Trunk Group";
+    case 2083: return "Invitation Timeout";
+    case 2084: return "Bursting Maximum Number of Trunking Simultaneous Calls";
+    case 2088: return "Bursting Maximum Incoming Calls should be equal or less than Bursting Maximum Total Calls";
+    case 2089: return "Bursting Maximum Outgoing Calls should be equal or less than Bursting Maximum Total Calls";
+    case 2090: return "Cannot configure Bursting Maximum Incoming Calls without configuring Maximum Incoming Calls";
+    case 2091: return "Cannot configure Bursting Maximum Outgoing Calls without configuring Maximum Outgoing Calls";
+    case 2092: return "Bursting Maximum Active Calls";
+    case 2093: return "Bursting Maximum Active Incoming Calls";
+    case 2094: return "Bursting Maximum Active Outgoing Calls";
+    case 2095: return "Capacity Exceeded Initial Value";
+    case 2096: return "Capacity Exceeded Offset Value";
+    case 2097: return "Unreachable Destination Exceeded Initial Value";
+    case 2098: return "Unreachable Destination Exceeded Offset Value";
+    case 2100: return "Call Pickup Group Name";
+    case 2101: return "LDAP Directory Address";
+    case 2102: return "LDAP Directory Search Base";
+    case 2103: return "LDAP Authenticated DN";
+    case 2104: return "LDAP Authenticated Password";
+    case 2105: return "Hunt Group ID";
+    case 2106: return "Call Center ID";
+    case 2107: return "Call Capacity Group Name";
+    case 2108: return "Maximum Active Calls";
+    case 2109: return "Series Completion Group Name";
+    case 2110: return "Speed Dial 100 Prefix";
+    case 2111: return "Account/Authorization Code";
+    case 2112: return "Authorization Code";
+    case 2113: return "Report Generation Criteria";
+    case 2114: return "Maximum Active Incoming Calls";
+    case 2115: return "Maximum Active Outgoing Calls";
+    case 2116: return "Maximum Active Incoming Calls can not be greater than Maximum Active Calls";
+    case 2117: return "Maximum Active Outgoing Calls can not be greater than Maximum Active Calls";
+    case 2118: return "New User ID";
+    case 2119: return "LDAP Column 1 Attribute Name";
+    case 2120: return "LDAP Column 2 Attribute Name";
+    case 2121: return "LDAP Column 3 Attribute Name";
+    case 2122: return "LDAP Column 4 Attribute Name";
+    case 2123: return "LDAP Directory Port";
+    case 2124: return "Trunk Group Name";
+    case 2125: return "Call Park Group Name";
+    case 2126: return "Escape Digit";
+    case 2127: return "Office Zone";
+    case 2128: return "Primary Zone";
+    case 2131: return "Schedule Name";
+    case 2132: return "Schedule's Event Name";
+    case 2141: return "Start Time";
+    case 2142: return "End Time";
+    case 2143: return "Yearly Interval";
+    case 2144: return "At least one day should be chosen for weekly recurrence";
+    case 2145: return "End Occurrence";
+    case 2146: return "Recurrence End Date";
+    case 2147: return "The end date can not be before the recurrence end date.";
+    case 2148: return "The recurrence is invalid. The duration must be shorter than how frequently it occurs. Shorten the duration or change the recurrence.";
+    case 2149: return "Some months have less than 29, 30 or 31 days. For these months, the occurrence will fall on the last day of the month.";
+    case 2150: return "Some years have lesser than 29 days in February. For these years, the occurrence will fall on the last day of February.";
+    case 2200: return "Remote Phone Number";
+    case 2201: return "Call Forward Phone Number";
+    case 2202: return "Authentication User Name";
+    case 2203: return "Call Forwarding Selective can not be set to On unless there is at least 1 active criteria.";
+    case 2204: return "Pre-alerting Announcement can not be set to On unless there is at least 1 active criteria.";
+    case 2210: return "Message Desk Number";
+    case 2211: return "Name";
+    case 2212: return "Address";
+    case 2213: return "Port";
+    case 2220: return "Maximum Number of concurrent sessions";
+    case 2221: return "Maximum Number of concurrent user originating sessions";
+    case 2222: return "Maximum Number of concurrent user terminating sessions";
+    case 2223: return "Reserved Number of concurrent sessions";
+    case 2224: return "Reserved Number of concurrent user originating sessions";
+    case 2225: return "Reserved Number of concurrent user terminating sessions";
+    case 2226: return "The sum of the reserved originating sessions and the reserved terminating sessions can not exceed the reserved sessions.";
+    case 2250: return "Location Code";
+    case 2251: return "Forward to";
+    case 2252: return "Forward to another number field can not be empty";
+    case 2253: return "Carrier";
+    case 2254: return "Carrier Identification Code";
+    case 2255: return "Treatment";
+    case 2256: return "Transfer Number";
+    case 2257: return "Mobile Phone Number";
+    case 2258: return "Mobility Manager Provisioning URL";
+    case 2259: return "Mobility Manager Provisioning UserName";
+    case 2260: return "Mobility Manager Provisioning Password";
+    case 2261: return "Mobility Manager Provisioning Re-Type Password";
+    case 2262: return "Password should be between 6 and 8 characters";
+    case 2263: return "Mobility Manager Default Originating Service Key";
+    case 2264: return "Mobility Manager Default Terminating Service Key";
+    case 2265: return "Dual-Mode VCC Subscriber Password";
+    case 2266: return "Dual-Mode VCC Re-Type Password";
+    case 2267: return "Originating Service Key";
+    case 2268: return "Terminating Service Key";
+    case 2269: return "Association limit is enforced by Hoteling Host therefore it must be enabled";
+    case 2270: return "Busy Camp On Timer";
+    case 2271: return "Recall Timer";
+    case 2272: return "Directory Name";
+    case 2273: return "Tag Set Name";
+    case 2274: return "Tag Name";
+    case 2275: return "Device Access User Name";
+    case 2276: return "Device Access Password";
+    case 2277: return "Enterprise Trunk Name";
+    case 2278: return "Cannot configure Bursting Maximum Incoming Calls without configuring Bursting Maximum Total Calls";
+    case 2279: return "Cannot configure Bursting Maximum Outgoing Calls without configuring Bursting Maximum Total Calls";
+    case 2280: return "Authorization code must be at least 2 digits";
+    case 2281: return "Non numerical value in time fields";
+    case 2282: return "Maximum Duration is out of range. The value must be between 60 seconds and 24 hours.";
+    case 2283: return "Route to Phone Number";
+    case 2284: return "Default Guard Timer";
+    case 2285: return "Number of Consecutive Bounced Calls to Force Agent Unavailable";
+    case 2286: return "Lockout Duration";
+    case 2287: return "Current pin code is a required field if changing the pin code";
+    case 2288: return "Pin codes do not match";
+    case 2289: return "Pin code can only contain numeric digits";
+    case 2290: return "Alert Agent Timer";
+    case 2291: return "Bounce Call Timer";
+	case 2292: return "Automatically answer calls after waiting: " +" <1>";
+	
+    // File Names
+    case 2400: return "WAV or WMA";
+    case 2401: return "CSV";
+    case 2403: return "MOV or 3GP";
+    case 2404: return "WAV, WMA, MOV or 3GP";
+    case 2410: return "Personal Greeting";
+    case 2411: return "Personalized Name";
+    case 2412: return "Personal Busy Greeting";
+    case 2413: return "No Answer Greeting";
+    case 2414: return "phone list import";
+    case 2415: return "Personal Voice Portal Greeting";
+    case 2416: return "Personal Voice Message Greeting";
+    case 2417: return "Custom Music File";
+    case 2418: return "Personal Intercept Announcement";
+
+    case 2419: return "Duration must be greater than 0";
+
+    case 2424: return "Prefix Digits must contain only digits";
+    case 2425: return "Server Port must be an integer between 1025 and 65535";
+    case 2426: return "Custom Music/Video File";
+    case 2427: return "A WAV or WMA file must be uploaded for the Audio";
+    case 2428: return "A MOV or 3GP file must be uploaded for the Video";
+    
+    case 2429: return "Starting extension ";
+    case 2430: return "Ending extension ";
+
+    // Call Processing Policy
+    case 2500: return "Maximum Number of simultaneous calls";
+    case 2501: return "Maximum call time for answered calls";
+    case 2502: return "Maximum call time for unanswered calls";
+    case 2503: return "Maximum number of simultaneous video calls";
+    case 2504: return "Maximum number of concurrent redirected calls";
+    case 2505: return "Maximum number of find me/follow me depth";
+    case 2506: return "Maximum number of redirection depth";
+    case 2507: return "Maximum number of concurrent find me/follow me invocations";
+
+    // Authorization Code
+    case 2550: return "Invalid Account/Authorization Code length";
+    // Enhanced Call Log
+    case 2551: return "Maximum number of call logs per call type";
+    case 2552: return "Call logs expiry period";
+
+    // Delete Confirmation
+    case 2560: return "You are about to delete this user. This will result in losing all associated configuration. This action cannot be undone. Are you sure you want to delete this user?";
+    case 2561: return "You are about to delete this group. This will result in losing all associated configuration. This action cannot be undone. Are you sure you want to delete this group?";
+    case 2562: return "You are about to delete this enterprise trunk. This will result in losing all associated configuration. This action cannot be undone. Are you sure you want to delete this enterprise trunk?";
+    
+    // Dial Plan Policy
+    case 2570: return "Private Digit Map is required because one of more policy access codes have 'Secondary Dial Tone' flag enabled.";
+    case 2571: return "Public Digit Map is required because group's policy setting is selected.";
+    case 2572: return "The access code can only contain one of the following characters: 0 through 9, * or #.";
+    case 2573: return "Access Code";
+    case 2574: return "Number of Trunk Groups assigned to an Ordered Routing Enterprise Trunk cannot exceed 10";
+    case 2575: return "Number of Trunk Groups assigned to a Weighted Routing Enterprise Trunk cannot exceed 100";
+    
+     // Network Class of Service
+    case 2580: return "Select a different Network Class of Service as Default, before unassigning the current default.";
+    case 2581: return "Missing default Network Class of Service, please select one.";
+
+    // Virtual On-Net
+    case 2590: return "Virtual On-Net Call Type";
+
+     // Office Zones
+    case 2600: return "Select a different Office Zone as Default, before unassigning the current default.";
+    case 2601: return "Missing default Office Zone, please select one.";    
+
+    //Calendar Element
+    case 3000: return "Invalid date format:" + " <1> " +
+    "Format accepted is" + " <2> " +
+    ".";
+    case 3001: return "Invalid date format:" + " <1> " +
+    "No day of month value can be found.";
+    case 3002: return "Invalid day of month value:" + " <1> " +
+    "Allowed values are unsigned integers.";
+    case 3003: return "Invalid date format:" + " <1> " +
+    "No month value can be found.";
+    case 3004: return "Invalid month value:" + " <1> " +
+    "Allowed values are unsigned integers.";
+    case 3005: return "Invalid date format" + " <1> " +
+    "No year value can be found.";
+    case 3006: return "Invalid year value:" + " <1> " +
+    "Allowed values are unsigned integers.";
+    case 3007: return "Invalid month value:" + " <1> " +
+    "Allowed range is 01-12.";
+    case 3008: return "Invalid day of month value:" + " <1> " +
+    "Allowed range is 01-" + " <2> " +
+    ".";
+    case 3009: return "Invalid year value:" + " <1> " +
+    "Year must be two or four digits.";
+    case 3010: return "Mail server ID is required when third party voicemail is on";
+    case 3011: return "Number of Ports is a required field when 'Limited To' option is selected";
+    case 3012: return "Limit for number of ports field must contain only digits";
+    case 3013: return "Limit for number of ports field: 0 is an invalid value";
+    case 3100: return "File Type";
+    case 3101: return "Device Access File Format";
+    case 3102: return "Repository File Format";
+    case 3103: return "HTTP Header with Following Format";
+    case 3110: return "Maximum reroute attempts within a priority must be less than or equal to maximum reroute attempts for an enterprise trunk.";
+    case 3111: return "Trunk Group Weight must be an Integer between 1 and 65536";
+    case 4001: return "Flash Activation DTMF Digits";
+    case 4002: return "Call Transfer Activation DTMF Digits";
+    case 4010: return "Allowed range is 2-30.";
+    case 4020: return "Valid escape digits are: 0-9,*,#.";
+    case 4050: return "Time between Comfort Messages";
+    case 4051: return "Overflow timeout seconds";
+    case 4052: return "Bypass comfort message estimated wait time";
+    case 4053: return "Play announcement ring time ";
+    case 4059: return "Phone number / SIP-URI is required. ";
+    case 4060: return "Phone number / SIP-URI is required when action is set to Transfer.";
+    case 4061: return "DNIS Name";
+    case 4062: return "Promote Priority 1 to 0 seconds";
+    case 4063: return "Promote Priority 2 to 1 seconds";
+    case 4064: return "Promote Priority 3 to 2 seconds";
+    case 4070: return "Outgoing Call Center is required when make outgoing call as call center is enabled.";
+    case 4071: return "Callers in queue position";
+    case 4072: return "Callers wait time";
+    case 4073: return "Default handling time";
+    case 4074: return "Handling Sampling Period";
+    case 4075: return "Minimum Sampling Size";
+    case 4076: return "Number of calls in queue";
+    case 4077: return "Longest waiting time";
+    case 4080: return "At least one assigned zone is required when adding an Office Zone.";
+    case 4081: return "A primary zone must be selected from the list of assigned zones.";
+    case 4082: return "A maximum of 10 zones can be assigned to an office zone.";
+    case 4100: return "A default disposition code is required when the use of codes is forced.";
+    case 4101: return "Switching to use group codes in addition to call center codes will delete any call center codes that exist in the group already. Do you want to continue?";
+    case 4102: return "Switching to use enterprise codes in addition to call center codes will delete any call center codes that exist in the enterprise already. Do you want to continue?";
+    case 4103: return "Supervisor should be selected in order to Assign Agents";
+    case 4104: return "Switching to use group codes in addition to route point codes will delete any route point codes that exist in the group already. Do you want to continue?";
+    case 4105: return "Switching to use enterprise codes in addition to route point codes will delete any route point codes that exist in the enterprise already. Do you want to continue?";
+    case 4106: return "No unavailable code was selected for the agent when automatically changing the agent state to unavailable, therefore a default code might be used, Would you like to proceed?";
+    case 4107: return "A default unavailable code is required when the use of codes is forced.";
+    case 4110: return "Wrap-up timer is required when Route Point wrap-up is enabled. ";
+    case 4111: return "Automatic answer timer is requred when automatic answer is enabled.";
+    case 4112: return "Route Point External System is required when failover support is enabled.";
+    case 4113: return "Failover phone number/SIP-URI is required when failover support is enabled.";
+    case 4114: return "Per-Call Failover phone number/SIP-URI is required when per-call failover support is enabled.";
+    case 4115: return "Call failure timeout";
+    case 4116: return "Outbound call failure timeout";
+    case 4117: return "Automatic answer timer";
+    case 4118: return "Route Point wrap-up timer minutes";
+    case 4119: return "Route Point wrap-up timer seconds";
+    case 4120: return "Route Point wrap-up timer";
+    case 4121: return "Route Point ID";
+    case 4130: return "Wrap-up timer is required when ACD wrap-up is enabled.";
+    case 4131: return "ACD wrap-up timer minutes";
+    case 4132: return "ACD wrap-up timer seconds";
+    case 4133: return "ACD wrap-up timer";
+    case 4140: return "Calling Line ID Last Name and First Name are required when Use custom Calling Line name settings is enabled. ";
+    case 4150: return "Filter Number";
+    case 4151: return "Style Template";
+    case 4152: return "Custom branding cannot be selected if no file is uploaded.";
+    case 4160: return "Digit Pattern";
+    case 4161: return "Name";
+
+    case 4170: return "Priority is required";
+    case 4171: return " <1> " + "is invalid, please enter a positive number as the priority, lower or equal to" + " <2>.";
+    case 4172: return "Transfer Number is required";
+    case 4173: return "Must select a profile if not using the default Sservice Provider Communication Barring Profile";
+  }
+
+  return null;  // code not found
+}
+
+// Standard entry point for other script files
+// that need to access error text.
+//
+// Usage: errorText(<index> [, arg ]* )
+//
+//   Supply as many arguments as required for the particular
+//   text message you are looking up.
+//
+function errorText(index)
+{
+  var s = lookUpError(index);
+  if (s == null) return "Error #" + index;
+
+  var i;
+  var expr;
+
+  for (i=1; i<arguments.length; i++)
+  {
+    expr = new RegExp("<"+i+">", "g");
+    s = s.replace(expr, arguments[i]);
+  }
+
+  return s;
+}
+
+// Returns a string that combines multiple error
+// messages for display in a single dialog.
+//
+// Parameter: list (an Array)
+//
+//   Each element in the list is a string obtained
+// by calling errorText(n).
+//
+function errorTextList(list)
+{
+  if (list.length <= 0) return "";
+  if (list.length == 1) return list[0];
+
+  var s = lookUpError(300)+":\n"; // heading for list of errors
+  var i;
+
+  for (i=0; i<list.length; i++)
+  {
+    s = s.concat("  ", list[i], "\n");
+  }
+
+  return s;
+}
+
+</script>
+      <script language="JavaScript" src="/Scripts/validate.js"></script>
+      <title>Newton,Paul: Voice Management</title>
+    </head>
+  <body topmargin="10" leftmargin="30" marginheight="10" marginwidth="30"
+       bgproperties="fixed" onLoad="initSelection();doThisOnLoad();">
+    <!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<script src="/Scripts/deployJava.js"></script>
+<script language="JavaScript">
+var commpilot = null;
+var ac = null;
+var revisedCallManager = null;
+var onlineHelp = null;
+var helpFile = "/Help/en_US/User/User_VMsging_GeneralInfo.htm";
+
+// Launch the combined Call Manager / Attendant Console client
+function launchCallManagerClient()
+{
+  var uniqueId = '';
+  var spId = 'N7018792R';
+
+  if ((revisedCallManager) && !(revisedCallManager.closed))
+  {
+    revisedCallManager.focus();
+  }
+  else
+  {
+    revisedCallManager=window.open("/CallManager/CallManagerDownload.jsp?serviceProvID=" + spId, uniqueId,
+                                   "width=505,height=360,resizable=1,status=0,scrollbars=no");
+    revisedCallManager.focus();
+  }
+}
+
+function launchHelp()
+{
+   help = window.open(helpFile,"onLineHelp");
+   help.focus();
+}
+
+function launchClientApplication(url)
+{
+  window.open(url);
+}
+
+function launchClientApplicationJWS(url)
+{
+  if(!deployJava.isWebStartInstalled("1.6.0_19"))
+  {
+  	if(deployJava.installJRE("1.6.0_19"))
+    {
+      deployJava.launch(url);
+    }
+  }
+  else
+  {
+    deployJava.launch(url);
+  }
+}
+
+function selectedLinkChanged(selectedLink, ccUsesJWS, recUsesJWS) 
+{
+  var choice = selectedLink.options[selectedLink.selectedIndex].value;
+
+  if (choice == "callmanager")
+  {
+    launchCallManagerClient();
+  }
+  else if(choice == "callcenter")
+  {
+    if (ccUsesJWS) 
+    { 
+      launchClientApplicationJWS("/servlet/jws/callcenter/callcenter.jnlp");
+    }
+    else
+    {
+      launchClientApplication("/servlet/ClientApplicationLaunch?application=callcenter");
+    }
+  }
+  else if(choice == "receptionist")
+  {
+    if (recUsesJWS) 
+    { 
+      launchClientApplicationJWS("/servlet/jws/receptionist/receptionist.jnlp");
+    }
+    else
+    {
+      launchClientApplication("/servlet/ClientApplicationLaunch?application=receptionist");
+    }
+  }
+
+  selectedLink.selectedIndex = 0;
+}
+</script>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="100%" colspan="3"><br></td>	
+</tr>
+<tr>
+<td rowspan="2" width="5%"><img src="/Graphics/Telstra/telstra_logo.png" width="375" height="55"></td>
+
+</tr>	
+
+<tr>
+  <td colspan="3" align="center" width="100%" valign="middle">
+  <!-- client banner -->
+  </td>
+</tr>
+
+<tr>
+  <!-- header -->
+  <td colspan=3 width="100%">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+     
+    <td valign="middle" align="right" class="hd1" colspan=3>
+
+       <a  class="headerLink" href="javascript:launchHelp()">Help</a>
+
+      &nbsp;-&nbsp;<a class="headerLink" href="/Common/folder_contents.jsp?menuId=1">Home</a>
+      </td>
+    <td class="hd"><img src="/Graphics/onepx.gif" width="2" height="1" alt="" border="0"></td>
+  </tr>
+  <tr>
+    <td class="hd1" colspan="3"><img src="/Graphics/onepx.gif" width="2" height="5" alt="" border="0"></td>
+  </tr>
+  <tr>
+   
+<td class="headerBar" width="230"><img src="/Graphics/Telstra/hd_strip.gif" alt=" " border="0" width="230" height="36"></td>
+<td class="headerBar"><img src="/Graphics/onepx.gif" width="2" height="1" alt="" border="0"><a class="headerAuthLevelLink" href="/Common/folder_contents.jsp?menuId=1">
+          Group</a>
+        &#062;<a class="headerAuthLevelLink" href="/Group/Members/">
+          Users</a>
+        :<SPAN dir='ltr' class=headerAuthLevel>
+                0732503004@apeagers.com.au</SPAN>
+        </td>
+    <td class="headerBar" align="right">
+        <SPAN class="hd1Welcome"><font size="2">Welcome&nbsp;<strong>Shane Pearce&nbsp;</strong></font></SPAN>
+          <!-- Display Sign Out button -->
+           <a class="headerLink" href="/servlet/Logout"><font color="#FFFFFF">[Logout]</a>
+    </td>
+    <td class="headerBar"><img src="/Graphics/onepx.gif" width="2" height="1" alt="" border="0"></td>
+  </tr>
+  <tr>
+    <td class="hd1" colspan="3"><img src="/Graphics/onepx.gif" width="2" height="2" alt="" border="0"></td>
+  </tr>
+  </table>
+  </td>
+ </tr>
+</table>
+
+  <script language="JavaScript">
+// Try to close the window.  If we can't, logout.
+// Scripts aren't legally allowed to close a window that was not opened by a script,
+// but IE seems to allow it.  Firefox (Mozilla) doesn't.
+function userLogout ()
+{
+  window.close();   // IE will return here if user opts not to close window,
+  if (document.all) // and Mozilla browsers will return here because you can't close the window.
+    return;         // If we're running an IE browser.
+  top.location.replace("/servlet/Logout");
+}
+</script>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+      <tr>
+        <td colspan="4" class="headandfoot" height="12"></td>
+      </tr>
+      <tr>
+
+<!----------COMMON NAVIGATION CODE------------------------------------------------->
+      <!----------LEFT NAVIGATION BAR------------------------------------------------->
+
+      <td width="18%" valign="top" class="headandfoot"><!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<form name="leftNavForm" method="post">
+<b>
+
+<script language="JavaScript">function addAltText(img, altText) {  img.alt = altText;}</script><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%"><TR><TD class="navOptions">Options:</TD></TR><TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U0&amp;menuId=0">Profile</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U2&amp;menuId=0">Incoming Calls</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U3&amp;menuId=0">Outgoing Calls</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U4&amp;menuId=0">Call Control</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U35&amp;menuId=0">Calling Plans</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U40&amp;menuId=0">Client Applications</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolderopen" nowrap>
+<img border=0 alt="" src="/Graphics/Telstra/ar.gif">&nbsp;&nbsp;<A class="leftnavfolderopen" HREF="/Common/folder_contents.jsp?folder=U5&amp;menuId=0">Messaging</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U7&amp;menuId=0">Utilities</A>
+</TD>
+</TR>
+</TABLE></b>
+</form>
+
+</td>
+      <td class="headandfoot">
+        <img src="/Graphics/onepx.gif" width="10" height="1" alt="" border="0">
+      </td>
+      <td valign="top">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tr>
+      <td class=headandfoot><img src="/Graphics/round-corner.gif" width=5 height=5></td>
+      </tr>
+        </table>
+      </td>
+
+
+<!----------MAIN BODY------------------------------------------------------------------->
+
+        <td valign="top" width="82%">
+
+        <script language="JavaScript">
+          //This variable is reset when the page is refreshed.
+          var deleteCount = 0;
+          function validateForm(form)
+          {
+            if (form.buttonClicked[0].value == "delete"){
+              deleteCount += 1;
+              //This code prevents the form from being submitted if the user clicks delete multiple times
+              if (deleteCount > 1){
+                // returning false will prevent the form submission.
+               return false;
+              }
+              if(form.allowValidateOnDelete && form.allowValidateOnDelete.value == "true")
+              {
+                deleteCount = 0;
+                return validate(form);
+              }
+              else
+              {
+                return true;
+              }
+            }
+            else{
+              return validate(form);
+            }
+          }
+        </script>
+
+        <form name="mainForm" id="mainForm" method="post"
+          
+            onSubmit="return validateForm(this);"
+          
+           >
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr><td height="10"></td></tr>
+            <tr>
+              <td class="screenName">Voice Management</td>
+              </tr>
+            <tr><td height="5"></td></tr>
+            <tr>
+              <td class="tip">Voice Management allows you to specify how to handle your messages.  Use Unified messaging if you want to use your phone to retrieve messages.  You can also just choose to send the message to your e-mail and not use the phone for messaging.  Note that the message settings here also apply to other types of messaging such as fax if enabled.</td>
+              </tr>
+            <tr><td height="5"></td></tr>
+            <tr>
+            </tr>
+            <tr><td height="5"></td></tr>
+            <tr id="buttonbartop">
+              <td class="buttonbar">&nbsp;&nbsp;<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<input type="hidden" name="buttonClicked" value="">
+<input type="submit" class="bwbutton" name="ok" value="OK">
+                  &nbsp;&nbsp;<input type="submit" class="bwbutton" name="apply" value="Apply">
+                 &nbsp;&nbsp;<input type="button" class="bwbutton" name="cancel" value="Cancel"
+                  onclick='top.location.replace("/Common/folder_contents.jsp?folder=U5&menuId=0");'>
+
+</td>
+            </tr>
+            <tr>
+              <td class="enduserbody"><!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<script language="JavaScript" src="/Scripts/build.js"></script>
+<script language="JavaScript" src="validate.js"></script>
+<input type=hidden name="useDefaultMailServer" value="true">
+<input type=hidden name=chkFlg value="">
+<input type=hidden name="emailAddressOnDefaultMS" value="0732503004ATapeagers.com.au@nipt.telstra.com">
+<input type=hidden name="emailAddressOnAlternateMS" value="null">
+<INPUT NAME="linkForward" VALUE="" TYPE=HIDDEN>
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+
+<table class="enduserbody">
+  <tr>
+    <td width="20"><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td>
+    <td width="100%">
+
+
+<table>
+        <tr>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+
+<!----------YOUR CODE GOES IN HERE (BEGIN)------------------------------------------------------------------->
+
+<TR>
+<TD align="right">Voice Messaging: </TD>
+<TD align="left" colspan="2"><input type='radio' name="vm_active" value='true' >On<input type='radio' name="vm_active" value='false' checked >Off</TD>
+</TR>
+
+<TR>
+<TD align="right"><input type='checkbox' name="fwdAllCalls" value="" ></TD><TD align="left">Send All Calls to Voice Mail</TD>
+</TR>
+
+<TR>
+<TD align="right"><input type='checkbox' name="fwdOnBusy" value="" checked ></TD><TD align="left">Send Busy Calls to Voice Mail</TD>
+</TR>
+
+<TR>
+<TD align="right"><input type='checkbox' name="fwdOnNoAnswer" value="" checked ></TD><TD align="left">Send Unanswered Calls to Voice Mail</TD>
+</TR>
+
+<TR><TD align="right" colspan="3">&nbsp</TD></TR>
+
+</table>
+<table>
+
+<TR>
+<TD align="left" colspan="4">When a message arrives...: </TD>
+</TR>
+
+<TR>
+<td width='20'><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td><TD align="left" colspan="3"><input type='radio' name="vm_storage" value='voicePortal' checked >Use unified messaging</TD>
+<TD align="left"><a class='nestedLink' href='javascript:formSubmitLinkForward("advanced");'>Advanced Settings (Also saves current screen data)</a></TD>
+</TR>
+
+<TR>
+<td width='20'><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td><td width='20'><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td><TD align="right"><input type='checkbox' name="vmIndicator" value="true" checked ></TD><TD align="left">Use Phone Message Waiting Indicator</TD>
+</TR>
+
+<TR>
+<td width='20'><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td><TD align="left" colspan="3"><input type='radio' name="vm_storage" value='email' >Forward it to this e-mail address: <input type=text name="privateMailAddress" id="privateMailAddress" value='' size=30 maxLength=80></TD>
+</TR>
+
+<TR><TD align="right" colspan="4">&nbsp</TD></TR>
+
+<TR>
+<TD align="left" colspan="4">Additionally...: </TD>
+</TR>
+
+</table>
+<table>
+
+<TR>
+<td width='20'><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td><TD align="right"><input type='checkbox' name="voiceMessagingMail" value="true" ></TD><TD align="left" colspan="2">Notify me by e-mail of the new message at this address <input type=text name="voiceMessagingMailAddress" id="voiceMessagingMailAddress" value='' size=30 maxLength=80></TD>
+</TR>
+
+<TR>
+<td width='20'><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td><TD align="right"><input type='checkbox' name="isCarbonCopy" value="true" ></TD><TD align="left" colspan="2">E-mail a carbon copy of the message to <input type=text name="carbonCopyAddr" id="carbonCopyAddr" value='' size=30 maxLength=80></TD>
+</TR>
+
+<TR>
+<td width='20'><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td><TD align="right"><input type='checkbox' name="transferToAA" value="true" checked ></TD><TD align="left" colspan="2">Transfer on '0' to  Phone Number <input type=text name="attendantNumber" id="attendantNumber" value='3000' size=30 maxLength=30></TD>
+</TR>
+
+<!----------YOUR CODE GOES IN HERE (END)------------------------------------------------------------------->
+
+        <tr>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+      </table>
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+    </td>
+  </tr>
+</table>
+
+
+</td>
+            </tr>
+            <tr id="buttonbarbottom">
+              <td class="buttonbar">&nbsp;&nbsp;<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<input type="hidden" name="buttonClicked" value="">
+<input type="submit" class="bwbutton" name="ok" value="OK">
+                  &nbsp;&nbsp;<input type="submit" class="bwbutton" name="apply" value="Apply">
+                 &nbsp;&nbsp;<input type="button" class="bwbutton" name="cancel" value="Cancel"
+                  onclick='top.location.replace("/Common/folder_contents.jsp?folder=U5&menuId=0");'>
+
+</td>
+            </tr>
+            </table>
+          </form>
+        </td>
+     </tr>
+  </table>
+  <!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--NIPT Global Footer-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tbody><tr>
+		<td class="hd3" colspan="3" bgcolor="#ffffff"><img src="/Graphics/onepx.gif" width="1" height="1" alt=" "></td>
+	</tr>
+	<tr>
+		<td rowspan="3" bgcolor="#ffffff"><img src="/Graphics/onepx.gif" width="10" height="1" alt=" "></td>
+		<td rowspan="3" valign="top" bgcolor="#ffffff"><!--<a href="http://telstra.com/" target="_parent">--><img src="/Graphics/Telstra/telstra_logo3.gif" width="39" height="39" alt="telstra.com" border="0"><!--</a>--></td>
+		<td width="100%" align="center" class="hd1" bgcolor="#ffffff">
+			<img src="/Graphics/onepx.gif" width="49" height="20" alt=" " align="middle">
+		</td>
+	</tr>
+	<tr>
+
+	</tr>
+	<tr>
+		<td bgcolor="#ffffff"><img src="/Graphics/onepx.gif" width="1" height="17"></td>
+	</tr>
+	<tr>
+		<td class="ft1" colspan="3" bgcolor="#ffffff"><img src="/Graphics/onepx.gif" width="1" height="1" alt=" "></td>
+	</tr>
+</tbody></table>
+<br /><br />
+<!--/NIPT End Global Footer-->
+
+
+</body>
+</html>

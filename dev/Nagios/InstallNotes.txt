@@ -1,0 +1,141 @@
+[root]:/root> export PKG_PATH=http://mirror.aarnet.edu.au/pub/OpenBSD/4.8/packages/i386                                                                                 
+[root]:/root> pkg_add libiconv
+libiconv-1.13p1: ok                                                                                                                                                      
+[root]:/root> pkg_add gettext
+gettext-0.18.1: ok                                                                                                                                                       
+[root]:/root> pkg_add pcre
+pcre-8.02p1: ok                                                                                                                                                          
+[root]:/root> pkg_add libltdl
+libltdl-1.5.26p0: ok                                                                                                                                                     
+[root]:/root> pkg_add nagios-plugins
+nagios-plugins-1.4.14p0: ok                                                                                                                                              
+--- +nagios-plugins-1.4.14p0 -------------------
+The check_dhcp and check_icmp plugins need to run with superuser
+privileges. For security reasons they are not installed suid root
+by default. If you want to use them, you have to either change
+their mode manually or use systrace's privilege elevation feature.
+
+For further details see /usr/local/share/doc/nagios-plugins/README.OpenBSD.
+[root]:/root> pkg_add nagios-3.2.0-chroot
+nagios-3.2.0-chroot:libxml-2.7.6: ok                                                                                                                                     
+nagios-3.2.0-chroot:php5-core-5.2.13p0: ok                                                                                                                               
+useradd: Warning: home directory `/var/www/nagios' doesn't exist, and -m was not specified                                                                               
+nagios-3.2.0-chroot: ok                                                                                                                                                  
+--- +nagios-3.2.0-chroot -------------------
+Sample configuration files and web server configuration can be found in
+/usr/local/share/examples/nagios.
+
+Beware that Nagios might or might not work correctly on 64bit machines.
+
+To start nagios automatically, add these lines to /etc/rc.local
+
+if [ -x /usr/local/sbin/nagios ]; then
+        install -d -o _nagios /var/run/nagios
+        echo -n ' nagios'; /usr/local/sbin/nagios -d /etc/nagios/nagios.cfg
+fi
+--- +php5-core-5.2.13p0 -------------------
+To enable the php5 module please create a symbolic
+link from /var/www/conf/modules.sample/php5.conf
+to /var/www/conf/modules/php5.conf.
+
+ln -s /var/www/conf/modules.sample/php5.conf \
+        /var/www/conf/modules
+
+The recommended php configuration has been installed
+to /var/www/conf/php.ini.
+[root]:/root> pkg_add nagios-web-3.2.0-chroot
+nagios-web-3.2.0-chroot: ok
+
+[root]:/root> htpasswd -c /var/www/users/nagios.passwd nagiosadmin
+New password: 
+Re-type new password: 
+Adding password for user nagiosadmin
+[root]:/root> openssl genrsa -des3 -out server.3des-key 1024
+Generating RSA private key, 1024 bit long modulus
+......++++++
+...................................++++++
+e is 65537 (0x10001)
+Enter pass phrase for server.3des-key:
+Verifying - Enter pass phrase for server.3des-key:
+[root]:/root> openssl rsa -in server.3des-key -out server.key
+Enter pass phrase for server.3des-key:
+writing RSA key
+[root]:/root> openssl req -new -key server.key -x509 -out server.crt -days 1095
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) []:AU
+State or Province Name (full name) []:Queensland
+Locality Name (eg, city) []:Brisbane
+Organization Name (eg, company) []:APEagers
+Organizational Unit Name (eg, section) []:IT
+Common Name (eg, fully qualified host name) []:qld-nag.apeagers.com.au
+Email Address []:issadmin@apeagers.com.au
+[root]:/root> ls -la
+total 40
+drwx------   2 root  wheel   512 Aug 31 13:54 .
+drwxr-xr-x  14 root  wheel   512 Aug 31 13:35 ..
+-rw-r--r--   1 root  wheel    22 Aug 17  2010 .Xdefaults
+-rw-r--r--   1 root  wheel   578 Aug 17  2010 .cshrc
+-rw-------   1 root  wheel   125 Aug 17  2010 .klogin
+-rw-r--r--   1 root  wheel   328 Aug 17  2010 .login
+-rw-r--r--   1 root  wheel   473 Aug 31 13:39 .profile
+-rw-r--r--   1 root  wheel   951 Aug 31 13:52 server.3des-key
+-rw-r--r--   1 root  wheel  1005 Aug 31 13:54 server.crt
+-rw-r--r--   1 root  wheel   887 Aug 31 13:53 server.key
+[root]:/root> rm server.3des-key                                                                                                                                         
+[root]:/root> chmod 600 server.key                                                                                                                                       
+[root]:/root> mv server.crt /etc/ssl/.
+[root]:/root> mv server.key /etc/ssl/private/.                                                                                                                           
+
+--<edited rc.conf>------------
+httpd_flags="-DSSL"
+pf=NO
+------------------------------
+
+--<edited httpd.conf>---------[ refer to HTTPDchanges.txt ]
+Added /cgi-bin/nagios & /nagios 
+Added Authentication
+SSL wasn't working so turned it off in httpd.conf
+Added php in (copied php5.conf into httpd.conf)
+------------------------------
+
+[root]:/root> pkg_add mrtg
+mrtg-2.16.4:p5-SNMP_Session-1.13p1: ok
+mrtg-2.16.4:p5-Digest-SHA1-2.12: ok
+mrtg-2.16.4:p5-Digest-HMAC-1.02: ok
+mrtg-2.16.4:p5-Crypt-DES-2.05p1: ok
+mrtg-2.16.4:p5-Net-SNMP-6.0.0: ok
+mrtg-2.16.4:p5-Socket6-0.23: ok
+mrtg-2.16.4:p5-IO-Socket-INET6-2.65: ok
+mrtg-2.16.4:jpeg-8b: ok
+mrtg-2.16.4:png-1.2.44: ok
+mrtg-2.16.4:gd-2.0.35p0: ok
+mrtg-2.16.4:libart-2.3.21: ok
+mrtg-2.16.4:rrdtool-1.2.30p0: ok
+mrtg-2.16.4:p5-RRD-1.2.30: ok
+mrtg-2.16.4: ok
+[root]:/root> pkg_add net-snmp
+net-snmp-5.4.2.1p5: ok
+--- +net-snmp-5.4.2.1p5 -------------------
+To have snmpd start at boot time, you must edit /etc/snmp/snmpd.conf
+and add the following lines to /etc/rc.local:
+
+if [ -x /usr/local/sbin/snmpd ]; then
+        echo -n ' snmpd';       /usr/local/sbin/snmpd
+fi
+
+This will start snmpd and use /etc/snmp/snmpd.conf for the configuration. 
+The snmpconf tool can be used to help edit your configuration files.  See 
+snmpconf(1), snmpd(8), and snmpd.conf(5) for more options.
+[root]:/var/www> mkdir mrtg
+
+--<edited httpd.conf>---------[ refer to HTTPDchanges.txt ]
+Added /mrtg
+------------------------------
+
+

@@ -1,0 +1,13 @@
+#
+# FILE:		pf/ape_dan.pf
+# AUTHOR:	Michael Spence
+# DATE:		2013-06-11
+# VERSION:	BSD_Gateway v0.1 (client)
+#
+# PURPOSE:	Pass Remote Desktop
+#
+
+int_ts1 = 172.17.150.10
+
+pass in on $if_int proto {tcp udp} from $net_local to $int_ts1 port 3389
+pass out on $if_int proto {tcp udp} from $net_local to $int_ts1 port 3389 nat-to ($if_int:0)

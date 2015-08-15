@@ -1,0 +1,47 @@
+Zotac - Serial Update Procedure
+2013-02-07
+Michael Spence
+
+
+
+Audience:
+
+This document is designed for all field support personnel.
+
+
+Preamble:
+
+This document details how to insert the Serial number into the BIOS on a Zotac machine
+
+This procedure requires the use of "Mick's BIOS Boot USB Key" - MBUK for short.
+
+
+
+
+Procedure:
+
+	1. Verify that the Zotac to be updated is using American Megatrends (AMI) Bios.  Do this by going into BIOS.  
+
+		*** DO NOT PROCEED IF THIS IS NOT AN AMI BIOS!! ***
+
+	2. Insert MBUK into the Zotac and reset.
+
+	3. While Zotac is starting press F8 to bring up the "Boot Device Menu"
+
+	4. Select "SanDisk Cruzer" as boot device; this is MBUK
+
+	5. Press enter when asked to boot USB.
+
+	6. Select a Keyboard.  Either will do; they both work.
+
+	7. Find the serial number of the device on its rear side.  It may look like "G####206####" and have a barcode above it.  Do not use the Ocean Serial number.
+
+	8. At the dos prompt type "a.bat <serial no>" where <serial no> is the serial number for the Zotac.  Press Enter.
+
+	9. This script will attempt to add the serial number to the BIOS and then will ask to be restarted.  Press any key.
+
+	10. Again boot MBUK using the above procedure.
+
+	11. At the dos prompt type "b.bat", which will display the serial number as recorded in BIOS.  Confirm that the serial number is correct.
+
+	12. Record the Asset number and serial number and report these combinations to Michael or Shane.

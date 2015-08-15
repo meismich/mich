@@ -1,0 +1,10 @@
+:%s/^  *$//
+:g/^$/d
+:1,/Item.*Itemised/d
+:/Service Summary/,$d
+:1,3d
+:$,$d
+:%s/,//g
+:%s/   */,/g
+:g/^,[^,]*$/d
+:wq

@@ -1,0 +1,80 @@
+Car Zoos - Call Centre
+2012-08-24
+Michael Spence
+
+
+Topics of Discussion
+
+Configuration
+	- Time Schedule
+	- Avanser 1300 Numbers
+	- Lead Ins
+	- ID Numbers (DNIS)
+
+Recording Prompts
+	- During Hours
+	- After Hours
+	- Whispers
+
+External Usage
+
+Message System
+
+Statistics
+
+
+
+Configuration
+
+Time Schedule
+
+The time schedule for the Call Centre has been configured to be between 8am and 8pm Monday through Saturday.  During this time calls have been configured to be passed on to the Active agents within the system.  After these hours, incoming calls have been configured to go to messagebank.
+
+
+1300 Numbers
+
+Avanser is control of the recording of the calls made to the call centre.  They also provide the 1300 numbers which are advertised on external media for the dealerships and the Car Zoos brand.  Their system allows the redirection of calls from these 1300 numbers to the Telstra Call Centre solution, which we have control of.
+
+Please refer to the Appendix for the current list of 1300 numbers.
+
+
+Hunt Group Lead Ins
+
+The 1300 numbers have been configured to corresponding Hunt Group Lead Ins.  These Lead Ins provide us the functionality to: control time schedules on a per dealership level; provide distict identifiers to the users in the call centre detailing which dealership is being called (text on phone); and allows us to easily configure the destinations within the call centre for a dealership.
+
+
+ID Numbers (DNIS)
+
+The DNIS numbers within the Call Centre are essentially the channels within the Call Centre.  Each can be configured with its own set of recordings including "Entrance Message", "Comfort Message", "On Hold Message" and "Whisper" message.  For our purposes, on the "On Hold Meessage" and "Whisper" messages are used.  The "On Hold Message" is configured to be one of two messages: Carzoos OR generic dealership.  [note: the On Hold Message performs as an entrance message]
+
+
+Recording Prompts
+
+During Hours
+
+The during hours prompts are the messages which are loaded into the On Hold Message as detailed above.  There are two types of During Hours messages: Carzoos AND generic dealership.
+
+
+After Hours
+
+The After Hours prompts are used for the message bank systems.  Again there are two types of After Hours messages: Carzoos AND generic dealership.
+
+
+Whispers
+
+Each DNIS is configured with its own whisper.  These are played as a call is passed through to an operator and idetify the dealership being called.  These whispers are essential when the iPhones are being used.
+
+
+External Usage
+
+Each operator to the call centre has been configured to have "Simultaneous Ring" with their company provided iPhone.  This phone is for use outside of business hours (different to Call Centre hours) which are 8 to 5pm.  It is our understanding that these phones will primarily be used "at home".
+
+
+Message Bank
+
+There are two message banks configured for the Car Zoos system, one for Carzoos and one for generic dealerships.  These messgae banks have distinct recordings identifying their purpose when called.  Each messagebank records messages from customers and emails the recording as an attachment to enquiries@carzoos.com.au.
+
+
+Statistics
+
+The system provides "incoming call" statistics for the call centre.  This report contains details on the number of operators live in the system; the number of calls answered, missed, abandoned; the amount of time callers waited.   Please see the attachment as an example of these statistics.

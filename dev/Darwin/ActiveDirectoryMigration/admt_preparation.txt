@@ -1,0 +1,98 @@
+Active Directory Migration Tool - Preparation
+2012-11-19
+Michael Spence
+
+
+
+Topics of Discussion:
+
+	Evalutate the new AD forest structure
+	Assign Domain Object Roles and Locations
+	Plan for group migration
+	Plan for text migrations
+	Create a rollback Plan
+	Create and End-user communication path
+	Create Migration Account Groups
+	Install ADMT
+	Plan for Service Account Transistioning
+
+
+Topics in Details:
+
+1. Evalutate the new AD forest structure
+
+	Source Domain:		darwin.apeagers.com.au
+
+	Target Domain:		apeagers.com.au
+
+	Target OU:		CN=Darwin
+
+	Target Structure:	All OUs from source replicated to Target OU
+
+
+2. Assign Domain Object Roles and Locations
+
+	Roles for basic items to remain same.
+
+	DC's to be decommissioned.
+
+	New DC's to be built to replace
+
+	FS's to be migrated manually
+
+3. Plan for group migration
+
+	All Groups in Darwin domain to become universal
+
+	Distribution Groups to be deleted
+
+4. Plan for test migrations
+
+	Test migration will include a FS and 2x PCs on darwin and 1xPC on apeagers
+	A number (two) of Test Users and some security groups
+	FS will have security group'ed shares
+	First migration test will be to migrate the groups, the users
+	Check to see if users can log on to apeagers and if FS still available
+ 	Second migratoin test with one PC off and one on migrate the PC's
+	Check to see if computer migrates at boot or reboot
+	Checks to see if users can still access shared folders
+	Third migration to migrate the FS
+	Check again to see if users can access shared folders
+	Test to check re-migration from APEagers back to Darwin
+	
+
+5. Create a rollback Plan
+
+	Migrate FS's back to Darwin
+	Migrate PC's back to Darwin
+	Migrate Users back to Darwin
+	Finally Migrate Groups Back to Darwin
+
+
+6. Create and End-user communication path
+
+	Personnell to be on-siet:
+		Hup-Ming
+		James Peter
+		Michael Spence
+
+	Memo to all staff describing that Monday users will log onto APEagers domain
+	Computers to be left on, on the Friday or Saturday night, whichever is their last day before Sunday
+	Personal communication with DP and FC when cutover is complete and successful (or if failed)
+
+
+7. Create Migration Account Groups
+
+	There will only be one account performing the migration... mine
+
+
+8. Install ADMT
+
+	Download "SQL Server 2005 Express" (ensure SP3 version)
+	Install "SQL Server" 
+	Add an instance ADMT (using admtdb.exe??)
+
+
+9. Plan for Service Account Transistioning
+
+	No Service Accounts are expected to exist.  This step will be skipped

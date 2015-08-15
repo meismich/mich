@@ -1,0 +1,1654 @@
+
+Starting Nmap 5.00 ( http://nmap.org ) at 2010-08-24 14:28 EST
+Interesting ports on cca-esx1.apeagers.com.au (10.23.1.1):
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+427/tcp  open  svrloc
+443/tcp  open  https
+902/tcp  open  iss-realsecure
+5989/tcp open  unknown
+8000/tcp open  http-alt
+8100/tcp open  unknown
+Device type: storage-misc
+Running: FreeBSD 6.X
+OS details: FreeNAS 0.686 (FreeBSD 6.2-RELEASE)
+Network Distance: 4 hops
+
+Interesting ports on cca-fs.apeagers.com.au (10.23.1.2):
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1040/tcp open  netsaint
+1056/tcp open  unknown
+3389/tcp open  ms-term-serv
+5666/tcp open  nrpe
+8081/tcp open  blackice-icecap
+Device type: general purpose
+Running: Microsoft Windows 2003
+OS details: Microsoft Windows Server 2003 SP1 or SP2
+Network Distance: 4 hops
+
+Interesting ports on cca-app1.apeagers.com.au (10.23.1.3):
+Not shown: 993 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1032/tcp open  iad3
+3389/tcp open  ms-term-serv
+5666/tcp open  nrpe
+8081/tcp open  blackice-icecap
+Device type: general purpose
+Running: Microsoft Windows 2003
+OS details: Microsoft Windows Server 2003 SP1 or SP2
+Network Distance: 4 hops
+
+Interesting ports on cca-sql.apeagers.com.au (10.23.1.4):
+Not shown: 993 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1037/tcp open  unknown
+1433/tcp open  ms-sql-s
+3389/tcp open  ms-term-serv
+Device type: general purpose
+Running: Microsoft Windows 2003
+OS details: Microsoft Windows Server 2003 SP1 or SP2
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.8:
+Not shown: 970 closed ports
+PORT     STATE SERVICE
+25/tcp   open  smtp
+53/tcp   open  domain
+80/tcp   open  http
+88/tcp   open  kerberos-sec
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+389/tcp  open  ldap
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+464/tcp  open  kpasswd5
+593/tcp  open  http-rpc-epmap
+636/tcp  open  ldapssl
+1026/tcp open  LSA-or-nterm
+1029/tcp open  ms-lsa
+1043/tcp open  boinc
+1044/tcp open  unknown
+1046/tcp open  unknown
+1058/tcp open  nim
+1060/tcp open  polestar
+1061/tcp open  unknown
+1082/tcp open  unknown
+2638/tcp open  sybase
+3268/tcp open  globalcatLDAP
+3269/tcp open  globalcatLDAPssl
+3389/tcp open  ms-term-serv
+4899/tcp open  radmin
+5800/tcp open  vnc-http
+5900/tcp open  vnc
+6667/tcp open  irc
+6668/tcp open  irc
+Device type: general purpose
+Running: Microsoft Windows 2000
+OS details: Microsoft Windows 2000 SP4
+Network Distance: 4 hops
+
+Interesting ports on cca-issadm.apeagers.com.au (10.23.1.9):
+Not shown: 988 closed ports
+PORT     STATE SERVICE
+25/tcp   open  smtp
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1039/tcp open  unknown
+1040/tcp open  netsaint
+1041/tcp open  unknown
+1045/tcp open  unknown
+3389/tcp open  ms-term-serv
+5666/tcp open  nrpe
+8081/tcp open  blackice-icecap
+Device type: general purpose
+Running: Microsoft Windows 2003
+OS details: Microsoft Windows Server 2003 SP1 or SP2
+Network Distance: 4 hops
+
+Interesting ports on cca-bk.apeagers.com.au (10.23.1.10):
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1071/tcp open  unknown
+3389/tcp open  ms-term-serv
+5666/tcp open  nrpe
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2, Microsoft Windows XP SP2 or SP3
+Network Distance: 4 hops
+
+Interesting ports on ccaadm7.apeagers.com.au (10.23.1.21):
+Not shown: 990 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1033/tcp  open  netinfo
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccasho3.apeagers.com.au (10.23.1.23):
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+5800/tcp open  vnc-http
+5900/tcp open  vnc
+8081/tcp open  blackice-icecap
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccasho4.apeagers.com.au (10.23.1.24):
+Not shown: 993 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-term-serv
+5800/tcp open  vnc-http
+5900/tcp open  vnc
+8081/tcp open  blackice-icecap
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccasho5.apeagers.com.au (10.23.1.25):
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1037/tcp  open  unknown
+3389/tcp  open  ms-term-serv
+4899/tcp  open  radmin
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2, Microsoft Windows XP SP2 or SP3
+Network Distance: 4 hops
+
+Interesting ports on ccasho1.apeagers.com.au (10.23.1.26):
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1031/tcp  open  iad2
+3071/tcp  open  unknown
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccasho6.apeagers.com.au (10.23.1.27):
+Not shown: 984 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1043/tcp  open  boinc
+2002/tcp  open  globe
+4899/tcp  open  radmin
+5800/tcp  open  vnc-http
+5801/tcp  open  vnc-http-1
+5900/tcp  open  vnc
+5901/tcp  open  vnc-1
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on cchsho2.apeagers.com.au (10.23.1.28):
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1030/tcp  open  iad1
+4899/tcp  open  radmin
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8081/tcp  open  blackice-icecap
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on cchsho3.apeagers.com.au (10.23.1.29):
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-term-serv
+4899/tcp open  radmin
+5800/tcp open  vnc-http
+5900/tcp open  vnc
+8081/tcp open  blackice-icecap
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on cchsho1.apeagers.com.au (10.23.1.30):
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1032/tcp  open  iad3
+1175/tcp  open  unknown
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2, Microsoft Windows XP SP2 or SP3
+Network Distance: 4 hops
+
+Interesting ports on cchsvc1.apeagers.com.au (10.23.1.37):
+Not shown: 982 closed ports
+PORT      STATE SERVICE
+25/tcp    open  smtp
+80/tcp    open  http
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+443/tcp   open  https
+445/tcp   open  microsoft-ds
+1037/tcp  open  unknown
+1069/tcp  open  cognex-insight
+3306/tcp  open  mysql
+4899/tcp  open  radmin
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on cchsvc2.apeagers.com.au (10.23.1.39):
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1038/tcp  open  unknown
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on cchsvc3.apeagers.com.au (10.23.1.40):
+Not shown: 990 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1038/tcp  open  unknown
+4899/tcp  open  radmin
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on cchsvc4.apeagers.com.au (10.23.1.41):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1038/tcp  open  unknown
+2179/tcp  open  unknown
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccmsho1.apeagers.com.au (10.23.1.42):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1031/tcp  open  iad2
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccmsho5.apeagers.com.au (10.23.1.43):
+Not shown: 984 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+5357/tcp  open  unknown
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49156/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows Vista|2008|7
+OS details: Microsoft Windows Vista SP0 or SP1, Server 2008, or Windows 7 Ultimate (build 7000)
+Network Distance: 4 hops
+
+Interesting ports on ccssho1.apeagers.com.au (10.23.1.44):
+Not shown: 990 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1037/tcp  open  unknown
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccmsho2.apeagers.com.au (10.23.1.45):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1034/tcp  open  zincite-a
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccashob.apeagers.com.au (10.23.1.46):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1042/tcp  open  unknown
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows 2000|XP|2003
+OS details: Microsoft Windows 2000 SP2 - SP4, Windows XP SP2 - SP3, or Windows Server 2003 SP0 - SP2
+Network Distance: 4 hops
+
+Interesting ports on ccashoc.apeagers.com.au (10.23.1.47):
+Not shown: 986 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1036/tcp  open  unknown
+3389/tcp  open  ms-term-serv
+4899/tcp  open  radmin
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccapts2.apeagers.com.au (10.23.1.48):
+Not shown: 986 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1042/tcp  open  unknown
+1064/tcp  open  unknown
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8009/tcp  open  ajp13
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccapts3.apeagers.com.au (10.23.1.49):
+Not shown: 986 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1035/tcp  open  multidropper
+1064/tcp  open  unknown
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8009/tcp  open  ajp13
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccapts4.apeagers.com.au (10.23.1.51):
+Not shown: 985 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1041/tcp  open  unknown
+1064/tcp  open  unknown
+3737/tcp  open  unknown
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8009/tcp  open  ajp13
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccasv6new.apeagers.com.au (10.23.1.52):
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1036/tcp  open  unknown
+1721/tcp  open  unknown
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3
+Network Distance: 4 hops
+
+Interesting ports on ccapts1.apeagers.com.au (10.23.1.53):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1031/tcp  open  iad2
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccapts5.apeagers.com.au (10.23.1.54):
+Not shown: 986 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1042/tcp  open  unknown
+1310/tcp  open  unknown
+1433/tcp  open  ms-sql-s
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccapts6.apeagers.com.au (10.23.1.55):
+Not shown: 986 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1031/tcp  open  iad2
+3389/tcp  open  ms-term-serv
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8009/tcp  open  ajp13
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccaadm2.apeagers.com.au (10.23.1.56):
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1033/tcp  open  netinfo
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccaadm3.apeagers.com.au (10.23.1.57):
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1044/tcp  open  unknown
+1069/tcp  open  cognex-insight
+4899/tcp  open  radmin
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+No exact OS matches for host (If you know what OS is running on it, see http://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=5.00%D=8/24%OT=135%CT=1%CU=40531%PV=Y%DS=4%G=Y%TM=4C734A9D%P=x86_
+OS:64-slackware-linux-gnu)SEQ(SP=102%GCD=1%ISR=10D%TI=I%CI=I%II=I%SS=S%TS=U
+OS:)SEQ(SP=103%GCD=1%ISR=10D%TI=I%CI=I%II=I%SS=S%TS=U)SEQ(SP=103%GCD=4%ISR=
+OS:10D%TI=I%CI=I%II=I%SS=S%TS=U)OPS(O1=M5B4NW0NNS%O2=M5B4NW0NNS%O3=M5B4NW0%
+OS:O4=M5B4NW0NNS%O5=M5B4NW0NNS%O6=M5B4NNS)WIN(W1=FC00%W2=FC00%W3=FC00%W4=FC
+OS:00%W5=FC00%W6=FC00)ECN(R=Y%DF=Y%T=80%W=FC00%O=M5B4NW0NNS%CC=N%Q=)T1(R=Y%
+OS:DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=N%T=80%W=0%S=Z%A=S%F=AR%O=%RD=
+OS:0%Q=)T3(R=Y%DF=Y%T=80%W=FC00%S=O%A=S+%F=AS%O=M5B4NW0NNS%RD=0%Q=)T4(R=Y%D
+OS:F=N%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T5(R=Y%DF=N%T=80%W=0%S=Z%A=S+%F=AR%O
+OS:=%RD=0%Q=)T6(R=Y%DF=N%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=N%T=80%W
+OS:=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=80%IPL=B0%UN=0%RIPL=G%RID=G%RI
+OS:PCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=S%T=80%CD=Z)
+
+Network Distance: 4 hops
+
+Interesting ports on ccasvc1.apeagers.com.au (10.23.1.58):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1031/tcp  open  iad2
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccasvc7.apeagers.com.au (10.23.1.59):
+Not shown: 987 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1043/tcp  open  boinc
+1067/tcp  open  instl_boots
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccasvc9.apeagers.com.au (10.23.1.61):
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1032/tcp  open  iad3
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccasvca.apeagers.com.au (10.23.1.62):
+Not shown: 987 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1036/tcp  open  unknown
+3389/tcp  open  ms-term-serv
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.63:
+Not shown: 990 closed ports
+PORT     STATE SERVICE
+25/tcp   open  smtp
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+1025/tcp open  NFS-or-IIS
+3306/tcp open  mysql
+5800/tcp open  vnc-http
+5900/tcp open  vnc
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccasvcb.apeagers.com.au (10.23.1.65):
+Not shown: 987 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1044/tcp  open  unknown
+4899/tcp  open  radmin
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows 2000|XP|2003
+OS details: Microsoft Windows 2000 SP2 - SP4, Windows XP SP2 - SP3, or Windows Server 2003 SP0 - SP2
+Network Distance: 4 hops
+
+Interesting ports on ccaadm5.apeagers.com.au (10.23.1.67):
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1041/tcp  open  unknown
+1067/tcp  open  instl_boots
+4899/tcp  open  radmin
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccahadm8.apeagers.com.au (10.23.1.68):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1031/tcp  open  iad2
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccadp.apeagers.com.au (10.23.1.69):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1031/tcp  open  iad2
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.70:
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+515/tcp  open  printer
+631/tcp  open  ipp
+4000/tcp open  remoteanything
+5800/tcp open  vnc-http
+5900/tcp open  vnc
+Device type: terminal
+Running: HP Windows PocketPC/CE
+OS details: HP Compaq t5520 thin client (Microsoft Windows CE 5.00)
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.71:
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+515/tcp  open  printer
+631/tcp  open  ipp
+4000/tcp open  remoteanything
+5800/tcp open  vnc-http
+5900/tcp open  vnc
+Device type: terminal
+Running: HP Windows PocketPC/CE
+OS details: HP Compaq t5520 thin client (Microsoft Windows CE 5.00)
+Network Distance: 4 hops
+
+Interesting ports on admin02.calcity (10.23.1.72):
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1042/tcp open  unknown
+4899/tcp open  radmin
+Device type: general purpose
+Running: Microsoft Windows 2000
+OS details: Microsoft Windows 2000 SP4
+Network Distance: 4 hops
+
+Interesting ports on ccmsho6.apeagers.com.au (10.23.1.76):
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1031/tcp  open  iad2
+3389/tcp  open  ms-term-serv
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2, Microsoft Windows XP SP2 or SP3
+Network Distance: 4 hops
+
+Interesting ports on ccaadm9.apeagers.com.au (10.23.1.77):
+Not shown: 990 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+2002/tcp  open  globe
+5357/tcp  open  unknown
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows Vista|2008|7
+OS details: Microsoft Windows Vista SP0 or SP1, Server 2008, or Windows 7 Ultimate (build 7000)
+Network Distance: 4 hops
+
+Interesting ports on cchsho5.apeagers.com.au (10.23.1.78):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1037/tcp  open  unknown
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccaadma.apeagers.com.au (10.23.1.79):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1031/tcp  open  iad2
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccasvcd.apeagers.com.au (10.23.1.80):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1031/tcp  open  iad2
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on cchfmgra.apeagers.com.au (10.23.1.81):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1032/tcp  open  iad3
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccashowe.apeagers.com.au (10.23.1.83):
+Not shown: 994 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows Vista|2008|7
+OS details: Microsoft Windows Vista SP0 or SP1, Server 2008, or Windows 7 Ultimate (build 7000)
+Network Distance: 4 hops
+
+Interesting ports on ccmshow8.apeagers.com.au (10.23.1.84):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1031/tcp  open  iad2
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccmshow7.apeagers.com.au (10.23.1.85):
+Not shown: 990 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1042/tcp  open  unknown
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on cchsvc5.apeagers.com.au (10.23.1.86):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1038/tcp  open  unknown
+1935/tcp  open  rtmp
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccashow9.apeagers.com.au (10.23.1.88):
+Not shown: 990 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1031/tcp  open  iad2
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3, or Windows Server 2003
+Network Distance: 4 hops
+
+Interesting ports on ccashow8.apeagers.com.au (10.23.1.90):
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+8081/tcp open  blackice-icecap
+Device type: general purpose
+Running: Microsoft Windows 2000|XP|2003
+OS details: Microsoft Windows 2000 SP2 - SP4, Windows XP SP2 - SP3, or Windows Server 2003 SP0 - SP2
+Network Distance: 4 hops
+
+Interesting ports on ccabmgr3.apeagers.com.au (10.23.1.92):
+Not shown: 990 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1028/tcp  open  unknown
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2, Microsoft Windows XP SP2 or SP3
+Network Distance: 4 hops
+
+Interesting ports on aupadm1.apeagers.com.au (10.23.1.101):
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1027/tcp  open  IIS
+3389/tcp  open  ms-term-serv
+8081/tcp  open  blackice-icecap
+9535/tcp  open  man
+9593/tcp  open  unknown
+9594/tcp  open  msgsys
+9595/tcp  open  pds
+33354/tcp open  unknown
+Device type: general purpose
+Running: Microsoft Windows XP
+OS details: Microsoft Windows XP SP2 or SP3
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.150:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.151:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.152:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.153:
+Not shown: 990 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.154:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.155:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.156:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.157:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.158:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.159:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.160:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.161:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.162:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.163:
+Not shown: 991 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+515/tcp  open  printer
+9090/tcp open  zeus-admin
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: WAP|printer
+Running: Apple embedded, Canon embedded, Xerox embedded
+OS details: Apple AirPort Extreme v5.7 or AirPort Express v6.3, or Canon imageRUNNER printer (5055, C3045, C3380, or C5185), or Xerox Phaser 8860MFP printer
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.164:
+Not shown: 991 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+515/tcp  open  printer
+9090/tcp open  zeus-admin
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: WAP|printer
+Running: Apple embedded, Canon embedded, Xerox embedded
+OS details: Apple AirPort Extreme v5.7 or AirPort Express v6.3, or Canon imageRUNNER printer (5055, C3045, C3380, or C5185), or Xerox Phaser 8860MFP printer
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.165:
+Not shown: 991 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+515/tcp  open  printer
+9090/tcp open  zeus-admin
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: WAP|printer
+Running: Apple embedded, Canon embedded, Xerox embedded
+OS details: Apple AirPort Extreme v5.7 or AirPort Express v6.3, or Canon imageRUNNER printer (5055, C3045, C3380, or C5185), or Xerox Phaser 8860MFP printer
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.168:
+Not shown: 986 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+515/tcp  open  printer
+6839/tcp open  unknown
+7435/tcp open  unknown
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9110/tcp open  unknown
+9220/tcp open  unknown
+9290/tcp open  unknown
+9500/tcp open  unknown
+No exact OS matches for host (If you know what OS is running on it, see http://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=5.00%D=8/24%OT=80%CT=1%CU=30986%PV=Y%DS=4%G=Y%TM=4C734AB8%P=x86_6
+OS:4-slackware-linux-gnu)SEQ(SP=B1%GCD=1%ISR=AF%TS=A)OPS(O1=M5B4NW0NNSNNT11
+OS:%O2=M578NW0NNSNNT11%O3=M280NW0NNT11%O4=M5B4NW0NNSNNT11%O5=M218NW0NNSNNT1
+OS:1%O6=M109NNSNNT11)WIN(W1=B50%W2=AD8%W3=9D0%W4=B50%W5=830%W6=8E5)ECN(R=Y%
+OS:DF=Y%T=40%W=B68%O=M5B4NW0NNS%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0
+OS:%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=N%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=
+OS:N%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=N%T=40%W=0%S=A%A=Z%F=R%O=%
+OS:RD=0%Q=)T7(R=Y%DF=N%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=FF%I
+OS:PL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=FF%CD=S)
+
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.170:
+Not shown: 990 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+515/tcp  open  printer
+9090/tcp open  zeus-admin
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: general purpose
+Running: Linux 2.6.X
+OS details: Linux 2.6.9 - 2.6.27
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.171:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.172:
+Not shown: 997 closed ports
+PORT   STATE SERVICE
+21/tcp open  ftp
+23/tcp open  telnet
+80/tcp open  http
+Device type: printer
+Running: Sharp embedded
+OS details: Sharp AR-C260M or AR-M351N printer
+
+Interesting ports on 10.23.1.173:
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+515/tcp  open  printer
+631/tcp  open  ipp
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: printer
+Running (JUST GUESSING) : Kyocera embedded (94%), Sharp embedded (93%)
+Aggressive OS guesses: Kyocera FS-3800 network printer (94%), Sharp AR-C260M or AR-M351N printer (93%)
+No exact OS matches for host (test conditions non-ideal).
+
+Interesting ports on 10.23.1.174:
+Not shown: 997 closed ports
+PORT   STATE SERVICE
+21/tcp open  ftp
+23/tcp open  telnet
+80/tcp open  http
+Device type: printer
+Running: Sharp embedded
+OS details: Sharp AR-C260M or AR-M351N printer
+
+Interesting ports on 10.23.1.175:
+Not shown: 991 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+515/tcp  open  printer
+9090/tcp open  zeus-admin
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: general purpose
+Running: Linux 2.6.X
+OS details: Linux 2.6.9 - 2.6.27
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.176:
+Not shown: 991 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+515/tcp  open  printer
+9090/tcp open  zeus-admin
+9100/tcp open  jetdirect
+9101/tcp open  jetdirect
+9102/tcp open  jetdirect
+9103/tcp open  jetdirect
+Device type: general purpose
+Running: Linux 2.6.X
+OS details: Linux 2.6.9 - 2.6.27
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.230:
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+23/tcp   open  telnet
+5002/tcp open  rfe
+9000/tcp open  cslistener
+Device type: storage-misc|remote management
+Running: IBM embedded, HP embedded
+OS details: IBM BladeCenter management module (firmware BRET85L), IBM System Storage TS3100/TS3200 Express Model tape library, or HP StorageWorks MSL2024 tape library
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.232:
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+23/tcp open  telnet
+80/tcp open  http
+Device type: router
+Running: Cisco IOS 12.X
+OS details: Cisco Aironet 1240AG or 1250 WAP, or 1811 or 2800 router (IOS 12.4)
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.240:
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+23/tcp open  telnet
+80/tcp open  http
+Device type: router|WAP
+Running: Cisco IOS 12.X
+OS details: Cisco 2620 or 3620 router (IOS 12.1 - 12.3), Cisco 1131AG WAP (IOS 12.3), Cisco Aironet 1200 WAP (IOS 12.3), Cisco Aironet 1230 or 1240-series WAP (IOS 12.3)
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.249:
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+23/tcp open  telnet
+80/tcp open  http
+Device type: switch|VoIP phone
+Running: HP embedded, Thomson embedded
+OS details: HP ProCurve switch (2500-, 2600-, 2800-, or 5300xl-series), or Thomson ST 2020 or 2030 VoIP phone
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.250:
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+23/tcp open  telnet
+80/tcp open  http
+Device type: switch|VoIP phone
+Running: HP embedded, Thomson embedded
+OS details: HP ProCurve switch (2500-, 2600-, 2800-, or 5300xl-series), or Thomson ST 2020 or 2030 VoIP phone
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.251:
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+23/tcp open  telnet
+80/tcp open  http
+Device type: switch|VoIP phone
+Running: HP embedded, Thomson embedded
+OS details: HP ProCurve switch (2500-, 2600-, 2800-, or 5300xl-series), or Thomson ST 2020 or 2030 VoIP phone
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.252:
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+23/tcp open  telnet
+80/tcp open  http
+Device type: switch|VoIP phone
+Running: HP embedded, Thomson embedded
+OS details: HP ProCurve switch (2500-, 2600-, 2800-, or 5300xl-series), or Thomson ST 2020 or 2030 VoIP phone
+Network Distance: 4 hops
+
+Interesting ports on 10.23.1.254:
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+23/tcp open  telnet
+Device type: router
+Running: Cisco IOS 12.X
+OS details: Cisco Aironet 1240AG or 1250 WAP, or 1811 or 2800 router (IOS 12.4)
+
+OS detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+Nmap done: 256 IP addresses (93 hosts up) scanned in 62.57 seconds

@@ -1,0 +1,16 @@
+RANGES for check_snmp command
+
+The options -w and -c defind the warning and critical ranges.
+
+The symbol ':' denotes a range
+
+If the read value falls outside of this range, then warn or crit.
+
+Possible methods of definition:
+
+10	equiv 0:10 means anything -ve or >10 warn
+10:	means anything <10 warn
+~:10	means anything >10 warn (~ means infinity, -ve or +ve)
+10:20	means anything <10 or >20 warn
+@10:20	means anything >=10 or <=20
+

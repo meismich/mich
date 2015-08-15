@@ -1,0 +1,31 @@
+#
+# FILE:		ape_vpn.pf
+# AUTHOR:	Michael Spence
+# DATE:		2013-05-16
+# VERSION:	BSD_Gateway v0.1 (client)
+#
+
+table <vpn_gwys> const { 165.228.157.90 }
+table <vpn_nets> const { 10.0.0.0/9 172.16.0.0/12 192.168.0.0/16 }
+table <int_nets> const { 10.128.1.0/24 }
+
+#pass out quick on $if_ext proto { tcp udp icmp } to 10.1.100.254 rdr-to 165.228.157.90
+
+pass in quick on $if_ext proto esp from <vpn_gwys> to $if_ext:0
+pass out quick on $if_ext proto esp from $if_ext:0 to <vpn_gwys>
+
+pass in quick on $if_ext proto udp from <vpn_gwys> to $if_ext:0 port {isakmp, ipsec-nat-t}
+pass out quick on $if_ext proto udp from $if_ext:0 to <vpn_gwys> port {isakmp, ipsec-nat-t}
+
+pass in quick on $if_vpn proto ipencap from <vpn_gwys> to $if_ext:0 keep state (if-bound)
+pass out quick on $if_vpn proto ipencap from $if_ext:0 to <vpn_gwys> keep state (if-bound)
+
+pass in quick on $if_vpn from $if_int:network to <vpn_nets> keep state (if-bound)
+pass out quick on $if_vpn from <vpn_nets> to $if_int:network keep state (if-bound)
+
+pass in quick on $if_int from <int_nets> to <vpn_nets>
+pass out quick on $if_int from <vpn_nets> to <int_nets>
+
+pass in quick on $if_vpn from <vpn_nets> to <int_nets>
+pass out quick on $if_vpn from <int_nets> to <vpn_nets>
+

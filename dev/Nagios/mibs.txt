@@ -1,0 +1,12 @@
+MIBS - a brief overview
+2011-12-03
+Michael Spence
+
+
+MIB files are a useful addition to the SNMP system.  They allow the OID tree, which is a directory system referenced by numbers, to be symbolically viewed as meaningful text strings.  
+
+Manufacturers provide these files for referencing their device's OID tree, however, many times the information expected as a result of reading a MIB file is not available. This is due to versions of hardware which do not provide these values.
+
+It is also possible to create MIB files which reference the same OID locations.  This can be useful, as it greatly reduces the load time of MIB files, which can and do reference other MIB files.  In some cases, loading one MIB file can result in loading ten files, which is slow compared with a streamlined MIB file.
+
+

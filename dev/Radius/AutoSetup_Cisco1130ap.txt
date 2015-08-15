@@ -1,0 +1,60 @@
+CLI commands to setup bare/factory default WAP
+
+
+Manual1:
+	service password-encryption
+	enable secret 0 <is a!>
+	username issadmin password 0 <clueless>
+	int bvi1 ip address x.x.x.x 255.255.0.0
+	ip default-gateway x.x.y.254
+	hostname campus_dept_no
+	snmp-server location "CAMPUS - Brand Department - Number"
+
+
+Auto1:
+
+	no username Cisco
+
+	aaa new-model
+
+	aaa group server radius rad_eap
+		server 10.1.1.99 auth-port 1812 acct-port 1813
+	exit
+
+	aaa authentication login eap_methods group rad_eap
+	no aaa authentication login mac_methods local
+
+	ip radius source-interface BVI1
+	radius-server retransmit 3
+	radius-server attribute 32 include-in-access-req format %h
+
+
+Manual2:
+	radius-server host 10.1.1.99 auth-port 1812 acct-port 1813 key 0 <clueless>
+
+
+Auto2:
+	dot11 ssid apeagers
+		authentication open eap eap_methods
+		authentication network-eap eap_methods
+		authentication key-management wpa
+		guest-mode
+	exit
+
+	int Dot11Radio 0
+		no shutdown
+		encryption mode ciphers tkip
+		ssid apeagers
+		speed basic-1.0 basic-2.0 basic-5.5 6.0 9.0 basic-11.0 12.0 18.0 24.0 36.0 48.0 54.0
+	exit
+	int Dot11Radio 1
+		no shutdown
+		encryption mode ciphers tkip
+		ssid apeagers
+		speed basic-1.0 basic-2.0 basic-5.5 6.0 9.0 basic-11.0 12.0 18.0 24.0 36.0 48.0 54.0
+	exit
+
+	snmp-server contact "issadmin@apeagers.com.au"
+	snmp-server community apsnmpro ro
+	snmp-server community apsnmprw rw
+	sntp server 10.1.1.43

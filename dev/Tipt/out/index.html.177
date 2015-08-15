@@ -1,0 +1,4301 @@
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<html>
+<head>
+      <link rel="stylesheet" type="text/css" href="/Common/styles.css">
+      <link rel="stylesheet" type="text/css" href="/Graphics/Telstra/styles.css">
+      <script language="JavaScript" src="/Scripts/graphics.js"></script>
+      <script language="JavaScript">
+        <!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+
+
+// Define standard error strings.
+//
+// This method is not normally invoked outside this file.
+//
+// Values <n> are replaced by argument #n in the errorText() function call.
+// For example, <1> is replaced by the first argument, <2> by the second, etc.
+//
+function lookUpError(index)
+{
+  switch(index)
+  {
+    //---------------------------------------------
+    // Page-specific errors
+    //---------------------------------------------
+
+    case 2: return "This device was added at either system or service provider level and may not be configured by a service provider or group administrator.";
+    case 3: return "<1> : " + "Must specify a phone number";
+    case 7: return "The end date/time must be after the start/time date.";
+    case 9: return "Invalid character" + " ( <1> ):\n" + "Please enter the time as HH:MM (example: 10:30)";
+    case 10: return "The holiday name, start date and start time are all required.";
+    case 11: return "The holiday name, start date and end date are all required.";
+    case 12: return "The start day and time and the end day and time cannot be the same.";
+    case 13: return "The end time must be later than the start time.  For the time range to span midnight, you must save two settings.";
+    case 14: return "The end date must be after the start date.";
+    case 15: return "The holiday name and start date are both required.";
+    case 16: return "The start day, start time, end day and end time are all required fields.";
+    case 17: return "The start date and time are required.";
+    case 18: return "The end date and time are required.";
+    case 19: return "Host Name/IP Address is required to configure the device.";
+    case 21: return "Passwords do not match";
+    case 23: return "Please select a phone number to be used for the Calling Line ID.";
+    case 24: return "Start Date is required to get status and statistics.";
+    case 25: return "End Date is required to get status and statistics.";
+    case 26: return "End Date/Time can not be earlier than Start Date/Time.";
+    case 27: return "Changing the number of digits will remove all the existing account/authorization codes. Do you want to continue?";
+    case 32: return "You must upload a configuration file";
+    case 37: return "You must upload a custom configuration file";
+    case 38: return "Priority is required for Call Center :" + " <1>";
+    case 39: return "Please enter a positive float or integer as priority for Call Center :" + " <1>";
+    case 40: return "Number of rings is required.";
+    case 41: return "Number of rings should be integer between 1 and 20.";
+    case 42: return "Schedule Date";
+    case 43: return "Schedule Time";
+    case 44: return "Report Start Date";
+    case 47: return "Report Start Time";
+    case 48: return "Report End Date";
+    case 49: return "Report End Time";
+    case 50: return "If you change from a System Provider Mail Server to a Group Mail Server, you cannot switch back to System Provider Mail Server system later. Only the System Provider can perform that function. Do you want to continue?";
+    case 52: return "Voice Portal Password can only contain numeric digits";
+    case 64: return "Start Time is not valid. Please enter the time as HH:MM (example: 10:30) 0<HH<=12 00<=MM<=59";
+    case 65: return "End Time is not valid. Please enter the time as HH:MM (example: 10:30) 0<HH<=12 00<=MM<=59";
+    case 66: return "Time is not valid. Please enter the time as HH:MM (example: 10:30) 0<HH<=12 00<=MM<=59";
+    case 67: return "Start Time is not valid. Please enter the time as HH:MM (example: 10:30) 0<=HH<24 00<=MM<=59";
+    case 68: return "End Time is not valid. Please enter the time as HH:MM (example: 10:30) 0<=HH<24 00<=MM<=59";
+    case 69: return "Time is not valid. Please enter the time as HH:MM (example: 10:30) 0<=HH<24 00<=MM<=59";
+    case 75: return "Please enter a starting phone number to add a phone number range in the phone number range start field";
+    case 76: return "Please enter a ending phone number to add a phone number range in the phone number range end field";
+    case 77: return "Please enter a starting extension to add a extension range in the extension range start field";
+    case 78: return "Please enter a ending extension to add a extension range in the extension range end field";
+    case 81: return "The starting phone number can not be greater than ending phone number.";
+    case 82: return "The starting extension can not be greater than ending extension.";
+    case 84: return "Extension is not valid, extension minimum length is" + " <1>";
+    case 85: return "Starting extension is not valid, extension minimum length is" + " <1>";
+    case 86: return "Ending extension is not valid, extension minimum length is" + " <1>";
+    case 94: return "When you selected to have your voice messages forwarded the e-mail address is required.";
+    case 95: return "When you selected to receive a voice message notification the e-mail address is required.";
+    case 96: return "When you selected to transfer on 0 the phone number is required.";
+    case 97: return "When you selected to use external routing an external routing address is required.";
+    case 99: return "When you selected to send a carbon copy of the voice message the e-mail address is required.";
+    case 100: return "Warning:  Advanced Settings are required when voice messaging is enabled and unified voice messaging is used.  Please configure your Advanced Settings as soon as possible.";
+    case 101: return "The default domain cannot be unassigned.";
+    case 104: return "Must specify a name for the New IP Phone.";
+    case 107: return "Invalid Public Identity: Can not have '@' in Public Identity";
+    case 108: return "Invalid Line/Port: Can not have '@' in Line/Port";
+    case 111: return "Must have a IP phone type to add a new IP Phone.";
+    case 112: return "At least one email address should be specified.";
+    case 113: return "Call Completion Parameter";
+    case 114: return "Short Duration Parameter";
+    case 115: return "Service Level Parameter";
+    case 116: return "Abandoned Calls except in interval";
+    case 117: return "Service Level Objective";
+    case 118: return "Abandoned Call";
+    case 119: return "Agent list is required for this report template.";
+    case 120: return "Call Center or DNIS list is required for this report template.";
+    case 121: return "One Call Center need to be selected to include all DNIS.";
+    case 122: return "Number of time unit is required for report timeframe.";
+    case 123: return "Call Center list is required for this report template.";
+    case 124: return "Calling Line ID Group Name has not been filled out under Group Profile.";
+    case 129: return "The service pack quantity exceeds the maximum quantity allowed.";
+    case 131: return "The service pack quantity cannot be zero and must be a valid number.";
+    case 132: return "The service pack must contain at least one service.";
+    case 137: return "Must specify the Public Identity for using a identity profile.";
+    case 138: return "Must specify the Line/Port for using a device profile.";
+    case 139: return "Must specify a device, or set the category of device to 'None'.";
+    case 140: return "Must specify a user part in the identity.";
+    case 149: return "Authentication user name and password must both be filled in when authentication is enabled.";
+    case 150: return "Authentication user name and password must both be filled in.";
+    case 314: return "Minimum password length should not be less than the sum of all the required numbers, uppercase, lowercase and non-alphanumeric characters which is <1>.";
+    case 315: return "Password must be at least" + " <1> " + "characters";
+    case 316: return "digits";
+    case 380: return "No value entered";
+    case 381: return "Invalid character" + ": <1>";
+    case 382: return "Value must be >=" + " <1>";
+    case 383: return "Value must be <=" + " <1>";
+    case 386: return "<1>: " + "Value must be >=" + " <2> " + "and <=" + " <3>";
+    case 608: return "This user is unable to make calls because there is no phone number or group calling line ID (CLID) configured. Click OK to continue or CANCEL to return to the configuration screen to make changes.";
+    case 610: return "Must specify at least one simultaneous ring number to turn the service on.";
+    case 613: return "Once an extension length has been increased, it can not be decreased if any users have extensions. It is possible that extensions and the existing feature access codes if numeric and of the same length may be identical so that extension dialing may not work for those extensions.  Feature access codes can be viewed and modified on the Feature Access Codes screen.  Click OK to increase the extension length or CANCEL to return to the configuration screen.";
+    case 620: return "The inventory report is about to be sent to" + " <1>" + ". This can be a resource intensive operation. Click OK to continue or CANCEL to return to the screen.";
+
+    //error messges for CommPilot_Express - left separate for CPE usability reasons
+    case 700: return "Available - In the office: The busy forward to phone number is required.";
+    case 701: return "Available - In the office: The no answer forward to phone number is required.";
+    case 702: return "Available - Out of the office: The forward to number is required.";
+    case 703: return "Available - Out of the office: The e-mail address is required.";
+    case 704: return "Busy: The e-mail address is required.";
+    case 705: return "Busy: The forward to number is required.";
+    case 706: return "Busy: The send all calls to Voice Messaging except calls from these Phone numbers must provide at least one restricted number.";
+    case 707: return "Unavailable: Send all calls to Voice Messaging except calls from these Phone numbers must provide at least one restricted number";
+    case 708: return "Unavailable: The forward to number is required.";
+
+    //voice vpn messages
+    case 720: return "Location Code can only contain digits.";
+    case 721: return "Min Extension Length cannot be greater than Max Extension Length.";
+    case 722: return "Group must be specified when the selector is route.";
+    case 723: return "Treatment must be specified when the selector is treatment.";
+
+    // custom ringback
+    case 724: return "URL cannot be selected if no URL is filled in.";
+    case 725: return "Personal Ringback cannot be selected if no file is uploaded.";
+
+    // DTN
+    case 726: return "At least one specific phone number must be specified.";
+
+    // Answer Confirmation
+    case 727: return "Custom Announcement cannot be selected if no file is uploaded.";
+           
+    // Pre Alerting Announcement
+    case 728: return "Interrupt with digit sequence cannot be selected if no digits are specified.";
+    
+    // Call Center Agent Unavailable Codes
+    case 730: return "Code must be specified.";
+
+    // Authorize service
+    case 901: return "Services that have been allocated cannot be unauthorized. To unauthorize these services, first remove them from the group.";
+    case 902: return "Invalid character in limit for service" + " : <1>.";
+    case 903: return "The new" + " <1> " + "limit exceeds the services that are available for allocation.";
+    case 904: return "The number of" + " <1> " + "services in use exceeds the new limit.";
+    case 905: return "Limit for service" + " <1> : " + "0 is an invalid value.";
+    case 906: return "The number of" + " <1> " + "services allocated exceeds the new limit.";
+
+    //remove these
+    case 1: return "At least one key should transfer to the operator";
+    case 45: return "You need to enter a Greeting Name to upload an Alternate Greeting";
+    case 46: return "Greeting Name can not be empty";
+    case 55: return "Date is invalid";
+    case 56: return "Time is invalid";
+
+    //cleanup to belong below
+    case 300: return "Page cannot be submitted";
+    case 1000: return "<1> " + "is a required field";
+    case 1001: return "<1> " + "must be an integer";
+    case 1002: return "A" + " <1> " + "file must be uploaded for the" + " <2>";
+    case 1003: return "<1> " + "cannot be the same";
+    case 1004: return "<1> " + "must contain a value when selected as the Search Attribute";
+    case 1005: return "<1> " + "must be an integer >=" + " <2>";
+    case 1006: return "must contain";
+
+    // Field names
+    case 2000: return "User Limit";
+    case 2001: return "Department";
+    case 2002: return "Digit String";
+    case 2003: return "Queue Length";
+    case 2004: return "Time between messages";
+    case 2005: return "Password expiration days";
+    case 2006: return "Quantity";
+    case 2008: return "Phone Number";
+    case 2009: return "Play new Phone Number";
+    case 2010: return "Transfer on '0' to Phone Number";
+    case 2011: return "First Name";
+    case 2012: return "Last Name";
+    case 2013: return "Calling Line ID First Name";
+    case 2014: return "Calling Line ID Last Name";
+    case 2015: return "Hiragana First Name";
+    case 2016: return "Hiragana Last Name";
+    case 2017: return "User ID";
+    case 2018: return "Name";
+    case 2019: return "Administrator ID";
+    case 2020: return "E-mail Address";
+    case 2021: return "Password";
+    case 2022: return "Mail Server ID";
+    case 2023: return "Voice Mail Delivery Default from E-mail Address";
+    case 2024: return "Voice Message Notification Default from E-mail Address";
+    case 2025: return "Default From E-mail Address";
+    case 2026: return "Device Name";
+    case 2027: return "Host Name/IP Address";
+    case 2028: return "Maximum Number of Ports";
+    case 2029: return "Allocated Ports to This Group";
+    case 2030: return "Allocated Ports to This Bridge";
+    case 2031: return "Bridge Name";
+    case 2032: return "Service Provider ID";
+    case 2033: return "Group ID";
+    case 2034: return "Main Feature Access Code";
+    case 2035: return "Extension";
+    case 2036: return "Service Pack Name";
+    case 2037: return "IP Address/Range";
+    case 2038: return "Description";
+    case 2039: return "Contact";
+    case 2040: return "Domain";
+    case 2041: return "SIP-URI";
+    case 2042: return "Maximum task duration";
+    case 2043: return "Error threshold";
+    case 2044: return "Holiday Schedule Name";
+    case 2045: return "Start Date";
+    case 2046: return "Time Schedule Name";
+    case 2047: return "End Date";
+    case 2048: return "Leader Phone Number";
+    case 2049: return "Participant Phone Number";
+    case 2050: return "Title";
+    case 2051: return "You must select a file to upload";
+    case 2052: return "Day of the month";
+    case 2053: return "Daily Interval";
+    case 2054: return "Weekly Interval";
+    case 2055: return "Monthly Interval";
+    case 2056: return "Day(s) of the week";
+    case 2057: return "User Specific Voice Mail Server";
+    case 2058: return "Notify E-mail Address";
+    case 2059: return "Voice Portal Lockout Default from E-mail Address";
+    case 2060: return "Association Limit";
+    case 2061: return "Association Timeout";
+    case 2062: return "Only one host can be associated with a guest";
+    case 2063: return "Voice Messaging MWI sending delay";
+    case 2064: return "Maximum Number of Trunking Simultaneous Calls";
+    case 2065: return "Conference-URI for Service Provider";
+    case 2066: return "Line/Port";
+    case 2067: return "Maximum Call Time Minutes";
+    case 2068: return "Percentage weight must total 100";
+    case 2069: return "Percentage value";
+    case 2070: return "Identity/Device Profile Type";
+    case 2071: return "CPE System File Name";
+    case 2072: return "Device File Format";
+    case 2073: return "Reset Event";
+    case 2074: return "Configuration Type";
+    case 2075: return "Task Name";
+    case 2076: return "Extension Range";
+    case 2077: return "Cannot create a task. Trunk group does not have a device configured";
+    case 2078: return "Clicking OK will start the user creation task";
+    case 2079: return "Unreachable Destination Forward Phone Number / SIP-URI";
+    case 2080: return "Unreachable Destination Reroute Trunk Group";
+    case 2081: return "Capacity Exceeded Forward Phone Number / SIP-URI";
+    case 2082: return "Capacity Exceeded Reroute Trunk Group";
+    case 2083: return "Invitation Timeout";
+    case 2084: return "Bursting Maximum Number of Trunking Simultaneous Calls";
+    case 2088: return "Bursting Maximum Incoming Calls should be equal or less than Bursting Maximum Total Calls";
+    case 2089: return "Bursting Maximum Outgoing Calls should be equal or less than Bursting Maximum Total Calls";
+    case 2090: return "Cannot configure Bursting Maximum Incoming Calls without configuring Maximum Incoming Calls";
+    case 2091: return "Cannot configure Bursting Maximum Outgoing Calls without configuring Maximum Outgoing Calls";
+    case 2092: return "Bursting Maximum Active Calls";
+    case 2093: return "Bursting Maximum Active Incoming Calls";
+    case 2094: return "Bursting Maximum Active Outgoing Calls";
+    case 2095: return "Capacity Exceeded Initial Value";
+    case 2096: return "Capacity Exceeded Offset Value";
+    case 2097: return "Unreachable Destination Exceeded Initial Value";
+    case 2098: return "Unreachable Destination Exceeded Offset Value";
+    case 2100: return "Call Pickup Group Name";
+    case 2101: return "LDAP Directory Address";
+    case 2102: return "LDAP Directory Search Base";
+    case 2103: return "LDAP Authenticated DN";
+    case 2104: return "LDAP Authenticated Password";
+    case 2105: return "Hunt Group ID";
+    case 2106: return "Call Center ID";
+    case 2107: return "Call Capacity Group Name";
+    case 2108: return "Maximum Active Calls";
+    case 2109: return "Series Completion Group Name";
+    case 2110: return "Speed Dial 100 Prefix";
+    case 2111: return "Account/Authorization Code";
+    case 2112: return "Authorization Code";
+    case 2113: return "Report Generation Criteria";
+    case 2114: return "Maximum Active Incoming Calls";
+    case 2115: return "Maximum Active Outgoing Calls";
+    case 2116: return "Maximum Active Incoming Calls can not be greater than Maximum Active Calls";
+    case 2117: return "Maximum Active Outgoing Calls can not be greater than Maximum Active Calls";
+    case 2118: return "New User ID";
+    case 2119: return "LDAP Column 1 Attribute Name";
+    case 2120: return "LDAP Column 2 Attribute Name";
+    case 2121: return "LDAP Column 3 Attribute Name";
+    case 2122: return "LDAP Column 4 Attribute Name";
+    case 2123: return "LDAP Directory Port";
+    case 2124: return "Trunk Group Name";
+    case 2125: return "Call Park Group Name";
+    case 2126: return "Escape Digit";
+    case 2127: return "Office Zone";
+    case 2128: return "Primary Zone";
+    case 2131: return "Schedule Name";
+    case 2132: return "Schedule's Event Name";
+    case 2141: return "Start Time";
+    case 2142: return "End Time";
+    case 2143: return "Yearly Interval";
+    case 2144: return "At least one day should be chosen for weekly recurrence";
+    case 2145: return "End Occurrence";
+    case 2146: return "Recurrence End Date";
+    case 2147: return "The end date can not be before the recurrence end date.";
+    case 2148: return "The recurrence is invalid. The duration must be shorter than how frequently it occurs. Shorten the duration or change the recurrence.";
+    case 2149: return "Some months have less than 29, 30 or 31 days. For these months, the occurrence will fall on the last day of the month.";
+    case 2150: return "Some years have lesser than 29 days in February. For these years, the occurrence will fall on the last day of February.";
+    case 2200: return "Remote Phone Number";
+    case 2201: return "Call Forward Phone Number";
+    case 2202: return "Authentication User Name";
+    case 2203: return "Call Forwarding Selective can not be set to On unless there is at least 1 active criteria.";
+    case 2204: return "Pre-alerting Announcement can not be set to On unless there is at least 1 active criteria.";
+    case 2210: return "Message Desk Number";
+    case 2211: return "Name";
+    case 2212: return "Address";
+    case 2213: return "Port";
+    case 2220: return "Maximum Number of concurrent sessions";
+    case 2221: return "Maximum Number of concurrent user originating sessions";
+    case 2222: return "Maximum Number of concurrent user terminating sessions";
+    case 2223: return "Reserved Number of concurrent sessions";
+    case 2224: return "Reserved Number of concurrent user originating sessions";
+    case 2225: return "Reserved Number of concurrent user terminating sessions";
+    case 2226: return "The sum of the reserved originating sessions and the reserved terminating sessions can not exceed the reserved sessions.";
+    case 2250: return "Location Code";
+    case 2251: return "Forward to";
+    case 2252: return "Forward to another number field can not be empty";
+    case 2253: return "Carrier";
+    case 2254: return "Carrier Identification Code";
+    case 2255: return "Treatment";
+    case 2256: return "Transfer Number";
+    case 2257: return "Mobile Phone Number";
+    case 2258: return "Mobility Manager Provisioning URL";
+    case 2259: return "Mobility Manager Provisioning UserName";
+    case 2260: return "Mobility Manager Provisioning Password";
+    case 2261: return "Mobility Manager Provisioning Re-Type Password";
+    case 2262: return "Password should be between 6 and 8 characters";
+    case 2263: return "Mobility Manager Default Originating Service Key";
+    case 2264: return "Mobility Manager Default Terminating Service Key";
+    case 2265: return "Dual-Mode VCC Subscriber Password";
+    case 2266: return "Dual-Mode VCC Re-Type Password";
+    case 2267: return "Originating Service Key";
+    case 2268: return "Terminating Service Key";
+    case 2269: return "Association limit is enforced by Hoteling Host therefore it must be enabled";
+    case 2270: return "Busy Camp On Timer";
+    case 2271: return "Recall Timer";
+    case 2272: return "Directory Name";
+    case 2273: return "Tag Set Name";
+    case 2274: return "Tag Name";
+    case 2275: return "Device Access User Name";
+    case 2276: return "Device Access Password";
+    case 2277: return "Enterprise Trunk Name";
+    case 2278: return "Cannot configure Bursting Maximum Incoming Calls without configuring Bursting Maximum Total Calls";
+    case 2279: return "Cannot configure Bursting Maximum Outgoing Calls without configuring Bursting Maximum Total Calls";
+    case 2280: return "Authorization code must be at least 2 digits";
+    case 2281: return "Non numerical value in time fields";
+    case 2282: return "Maximum Duration is out of range. The value must be between 60 seconds and 24 hours.";
+    case 2283: return "Route to Phone Number";
+    case 2284: return "Default Guard Timer";
+    case 2285: return "Number of Consecutive Bounced Calls to Force Agent Unavailable";
+    case 2286: return "Lockout Duration";
+    case 2287: return "Current pin code is a required field if changing the pin code";
+    case 2288: return "Pin codes do not match";
+    case 2289: return "Pin code can only contain numeric digits";
+    case 2290: return "Alert Agent Timer";
+    case 2291: return "Bounce Call Timer";
+	case 2292: return "Automatically answer calls after waiting: " +" <1>";
+	
+    // File Names
+    case 2400: return "WAV or WMA";
+    case 2401: return "CSV";
+    case 2403: return "MOV or 3GP";
+    case 2404: return "WAV, WMA, MOV or 3GP";
+    case 2410: return "Personal Greeting";
+    case 2411: return "Personalized Name";
+    case 2412: return "Personal Busy Greeting";
+    case 2413: return "No Answer Greeting";
+    case 2414: return "phone list import";
+    case 2415: return "Personal Voice Portal Greeting";
+    case 2416: return "Personal Voice Message Greeting";
+    case 2417: return "Custom Music File";
+    case 2418: return "Personal Intercept Announcement";
+
+    case 2419: return "Duration must be greater than 0";
+
+    case 2424: return "Prefix Digits must contain only digits";
+    case 2425: return "Server Port must be an integer between 1025 and 65535";
+    case 2426: return "Custom Music/Video File";
+    case 2427: return "A WAV or WMA file must be uploaded for the Audio";
+    case 2428: return "A MOV or 3GP file must be uploaded for the Video";
+    
+    case 2429: return "Starting extension ";
+    case 2430: return "Ending extension ";
+
+    // Call Processing Policy
+    case 2500: return "Maximum Number of simultaneous calls";
+    case 2501: return "Maximum call time for answered calls";
+    case 2502: return "Maximum call time for unanswered calls";
+    case 2503: return "Maximum number of simultaneous video calls";
+    case 2504: return "Maximum number of concurrent redirected calls";
+    case 2505: return "Maximum number of find me/follow me depth";
+    case 2506: return "Maximum number of redirection depth";
+    case 2507: return "Maximum number of concurrent find me/follow me invocations";
+
+    // Authorization Code
+    case 2550: return "Invalid Account/Authorization Code length";
+    // Enhanced Call Log
+    case 2551: return "Maximum number of call logs per call type";
+    case 2552: return "Call logs expiry period";
+
+    // Delete Confirmation
+    case 2560: return "You are about to delete this user. This will result in losing all associated configuration. This action cannot be undone. Are you sure you want to delete this user?";
+    case 2561: return "You are about to delete this group. This will result in losing all associated configuration. This action cannot be undone. Are you sure you want to delete this group?";
+    case 2562: return "You are about to delete this enterprise trunk. This will result in losing all associated configuration. This action cannot be undone. Are you sure you want to delete this enterprise trunk?";
+    
+    // Dial Plan Policy
+    case 2570: return "Private Digit Map is required because one of more policy access codes have 'Secondary Dial Tone' flag enabled.";
+    case 2571: return "Public Digit Map is required because group's policy setting is selected.";
+    case 2572: return "The access code can only contain one of the following characters: 0 through 9, * or #.";
+    case 2573: return "Access Code";
+    case 2574: return "Number of Trunk Groups assigned to an Ordered Routing Enterprise Trunk cannot exceed 10";
+    case 2575: return "Number of Trunk Groups assigned to a Weighted Routing Enterprise Trunk cannot exceed 100";
+    
+     // Network Class of Service
+    case 2580: return "Select a different Network Class of Service as Default, before unassigning the current default.";
+    case 2581: return "Missing default Network Class of Service, please select one.";
+
+    // Virtual On-Net
+    case 2590: return "Virtual On-Net Call Type";
+
+     // Office Zones
+    case 2600: return "Select a different Office Zone as Default, before unassigning the current default.";
+    case 2601: return "Missing default Office Zone, please select one.";    
+
+    //Calendar Element
+    case 3000: return "Invalid date format:" + " <1> " +
+    "Format accepted is" + " <2> " +
+    ".";
+    case 3001: return "Invalid date format:" + " <1> " +
+    "No day of month value can be found.";
+    case 3002: return "Invalid day of month value:" + " <1> " +
+    "Allowed values are unsigned integers.";
+    case 3003: return "Invalid date format:" + " <1> " +
+    "No month value can be found.";
+    case 3004: return "Invalid month value:" + " <1> " +
+    "Allowed values are unsigned integers.";
+    case 3005: return "Invalid date format" + " <1> " +
+    "No year value can be found.";
+    case 3006: return "Invalid year value:" + " <1> " +
+    "Allowed values are unsigned integers.";
+    case 3007: return "Invalid month value:" + " <1> " +
+    "Allowed range is 01-12.";
+    case 3008: return "Invalid day of month value:" + " <1> " +
+    "Allowed range is 01-" + " <2> " +
+    ".";
+    case 3009: return "Invalid year value:" + " <1> " +
+    "Year must be two or four digits.";
+    case 3010: return "Mail server ID is required when third party voicemail is on";
+    case 3011: return "Number of Ports is a required field when 'Limited To' option is selected";
+    case 3012: return "Limit for number of ports field must contain only digits";
+    case 3013: return "Limit for number of ports field: 0 is an invalid value";
+    case 3100: return "File Type";
+    case 3101: return "Device Access File Format";
+    case 3102: return "Repository File Format";
+    case 3103: return "HTTP Header with Following Format";
+    case 3110: return "Maximum reroute attempts within a priority must be less than or equal to maximum reroute attempts for an enterprise trunk.";
+    case 3111: return "Trunk Group Weight must be an Integer between 1 and 65536";
+    case 4001: return "Flash Activation DTMF Digits";
+    case 4002: return "Call Transfer Activation DTMF Digits";
+    case 4010: return "Allowed range is 2-30.";
+    case 4020: return "Valid escape digits are: 0-9,*,#.";
+    case 4050: return "Time between Comfort Messages";
+    case 4051: return "Overflow timeout seconds";
+    case 4052: return "Bypass comfort message estimated wait time";
+    case 4053: return "Play announcement ring time ";
+    case 4059: return "Phone number / SIP-URI is required. ";
+    case 4060: return "Phone number / SIP-URI is required when action is set to Transfer.";
+    case 4061: return "DNIS Name";
+    case 4062: return "Promote Priority 1 to 0 seconds";
+    case 4063: return "Promote Priority 2 to 1 seconds";
+    case 4064: return "Promote Priority 3 to 2 seconds";
+    case 4070: return "Outgoing Call Center is required when make outgoing call as call center is enabled.";
+    case 4071: return "Callers in queue position";
+    case 4072: return "Callers wait time";
+    case 4073: return "Default handling time";
+    case 4074: return "Handling Sampling Period";
+    case 4075: return "Minimum Sampling Size";
+    case 4076: return "Number of calls in queue";
+    case 4077: return "Longest waiting time";
+    case 4080: return "At least one assigned zone is required when adding an Office Zone.";
+    case 4081: return "A primary zone must be selected from the list of assigned zones.";
+    case 4082: return "A maximum of 10 zones can be assigned to an office zone.";
+    case 4100: return "A default disposition code is required when the use of codes is forced.";
+    case 4101: return "Switching to use group codes in addition to call center codes will delete any call center codes that exist in the group already. Do you want to continue?";
+    case 4102: return "Switching to use enterprise codes in addition to call center codes will delete any call center codes that exist in the enterprise already. Do you want to continue?";
+    case 4103: return "Supervisor should be selected in order to Assign Agents";
+    case 4104: return "Switching to use group codes in addition to route point codes will delete any route point codes that exist in the group already. Do you want to continue?";
+    case 4105: return "Switching to use enterprise codes in addition to route point codes will delete any route point codes that exist in the enterprise already. Do you want to continue?";
+    case 4106: return "No unavailable code was selected for the agent when automatically changing the agent state to unavailable, therefore a default code might be used, Would you like to proceed?";
+    case 4107: return "A default unavailable code is required when the use of codes is forced.";
+    case 4110: return "Wrap-up timer is required when Route Point wrap-up is enabled. ";
+    case 4111: return "Automatic answer timer is requred when automatic answer is enabled.";
+    case 4112: return "Route Point External System is required when failover support is enabled.";
+    case 4113: return "Failover phone number/SIP-URI is required when failover support is enabled.";
+    case 4114: return "Per-Call Failover phone number/SIP-URI is required when per-call failover support is enabled.";
+    case 4115: return "Call failure timeout";
+    case 4116: return "Outbound call failure timeout";
+    case 4117: return "Automatic answer timer";
+    case 4118: return "Route Point wrap-up timer minutes";
+    case 4119: return "Route Point wrap-up timer seconds";
+    case 4120: return "Route Point wrap-up timer";
+    case 4121: return "Route Point ID";
+    case 4130: return "Wrap-up timer is required when ACD wrap-up is enabled.";
+    case 4131: return "ACD wrap-up timer minutes";
+    case 4132: return "ACD wrap-up timer seconds";
+    case 4133: return "ACD wrap-up timer";
+    case 4140: return "Calling Line ID Last Name and First Name are required when Use custom Calling Line name settings is enabled. ";
+    case 4150: return "Filter Number";
+    case 4151: return "Style Template";
+    case 4152: return "Custom branding cannot be selected if no file is uploaded.";
+    case 4160: return "Digit Pattern";
+    case 4161: return "Name";
+
+    case 4170: return "Priority is required";
+    case 4171: return " <1> " + "is invalid, please enter a positive number as the priority, lower or equal to" + " <2>.";
+    case 4172: return "Transfer Number is required";
+    case 4173: return "Must select a profile if not using the default Sservice Provider Communication Barring Profile";
+  }
+
+  return null;  // code not found
+}
+
+// Standard entry point for other script files
+// that need to access error text.
+//
+// Usage: errorText(<index> [, arg ]* )
+//
+//   Supply as many arguments as required for the particular
+//   text message you are looking up.
+//
+function errorText(index)
+{
+  var s = lookUpError(index);
+  if (s == null) return "Error #" + index;
+
+  var i;
+  var expr;
+
+  for (i=1; i<arguments.length; i++)
+  {
+    expr = new RegExp("<"+i+">", "g");
+    s = s.replace(expr, arguments[i]);
+  }
+
+  return s;
+}
+
+// Returns a string that combines multiple error
+// messages for display in a single dialog.
+//
+// Parameter: list (an Array)
+//
+//   Each element in the list is a string obtained
+// by calling errorText(n).
+//
+function errorTextList(list)
+{
+  if (list.length <= 0) return "";
+  if (list.length == 1) return list[0];
+
+  var s = lookUpError(300)+":\n"; // heading for list of errors
+  var i;
+
+  for (i=0; i<list.length; i++)
+  {
+    s = s.concat("  ", list[i], "\n");
+  }
+
+  return s;
+}
+
+</script>
+      <script language="JavaScript" src="/Scripts/validate.js"></script>
+      <title>User 2,New: Addresses</title>
+    </head>
+  <body topmargin="10" leftmargin="30" marginheight="10" marginwidth="30"
+       bgproperties="fixed" onLoad="initSelection();doThisOnLoad();">
+    <!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<script src="/Scripts/deployJava.js"></script>
+<script language="JavaScript">
+var commpilot = null;
+var ac = null;
+var revisedCallManager = null;
+var onlineHelp = null;
+var helpFile = "/Help/en_US/GA/GA_User_Address14sp9.htm";
+
+// Launch the combined Call Manager / Attendant Console client
+function launchCallManagerClient()
+{
+  var uniqueId = '';
+  var spId = 'N7018792R';
+
+  if ((revisedCallManager) && !(revisedCallManager.closed))
+  {
+    revisedCallManager.focus();
+  }
+  else
+  {
+    revisedCallManager=window.open("/CallManager/CallManagerDownload.jsp?serviceProvID=" + spId, uniqueId,
+                                   "width=505,height=360,resizable=1,status=0,scrollbars=no");
+    revisedCallManager.focus();
+  }
+}
+
+function launchHelp()
+{
+   help = window.open(helpFile,"onLineHelp");
+   help.focus();
+}
+
+function launchClientApplication(url)
+{
+  window.open(url);
+}
+
+function launchClientApplicationJWS(url)
+{
+  if(!deployJava.isWebStartInstalled("1.6.0_19"))
+  {
+  	if(deployJava.installJRE("1.6.0_19"))
+    {
+      deployJava.launch(url);
+    }
+  }
+  else
+  {
+    deployJava.launch(url);
+  }
+}
+
+function selectedLinkChanged(selectedLink, ccUsesJWS, recUsesJWS) 
+{
+  var choice = selectedLink.options[selectedLink.selectedIndex].value;
+
+  if (choice == "callmanager")
+  {
+    launchCallManagerClient();
+  }
+  else if(choice == "callcenter")
+  {
+    if (ccUsesJWS) 
+    { 
+      launchClientApplicationJWS("/servlet/jws/callcenter/callcenter.jnlp");
+    }
+    else
+    {
+      launchClientApplication("/servlet/ClientApplicationLaunch?application=callcenter");
+    }
+  }
+  else if(choice == "receptionist")
+  {
+    if (recUsesJWS) 
+    { 
+      launchClientApplicationJWS("/servlet/jws/receptionist/receptionist.jnlp");
+    }
+    else
+    {
+      launchClientApplication("/servlet/ClientApplicationLaunch?application=receptionist");
+    }
+  }
+
+  selectedLink.selectedIndex = 0;
+}
+</script>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="100%" colspan="3"><br></td>	
+</tr>
+<tr>
+<td rowspan="2" width="5%"><img src="/Graphics/Telstra/telstra_logo.png" width="375" height="55"></td>
+
+</tr>	
+
+<tr>
+  <td colspan="3" align="center" width="100%" valign="middle">
+  <!-- client banner -->
+  </td>
+</tr>
+
+<tr>
+  <!-- header -->
+  <td colspan=3 width="100%">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+     
+    <td valign="middle" align="right" class="hd1" colspan=3>
+
+       <a  class="headerLink" href="javascript:launchHelp()">Help</a>
+
+      &nbsp;-&nbsp;<a class="headerLink" href="/Common/folder_contents.jsp?menuId=1">Home</a>
+      </td>
+    <td class="hd"><img src="/Graphics/onepx.gif" width="2" height="1" alt="" border="0"></td>
+  </tr>
+  <tr>
+    <td class="hd1" colspan="3"><img src="/Graphics/onepx.gif" width="2" height="5" alt="" border="0"></td>
+  </tr>
+  <tr>
+   
+<td class="headerBar" width="230"><img src="/Graphics/Telstra/hd_strip.gif" alt=" " border="0" width="230" height="36"></td>
+<td class="headerBar"><img src="/Graphics/onepx.gif" width="2" height="1" alt="" border="0"><a class="headerAuthLevelLink" href="/Common/folder_contents.jsp?menuId=1">
+          Group</a>
+        &#062;<a class="headerAuthLevelLink" href="/Group/Members/">
+          Users</a>
+        :<SPAN dir='ltr' class=headerAuthLevel>
+                0732503047@apeagers.com.au</SPAN>
+        </td>
+    <td class="headerBar" align="right">
+        <SPAN class="hd1Welcome"><font size="2">Welcome&nbsp;<strong>Shane Pearce&nbsp;</strong></font></SPAN>
+          <!-- Display Sign Out button -->
+           <a class="headerLink" href="/servlet/Logout"><font color="#FFFFFF">[Logout]</a>
+    </td>
+    <td class="headerBar"><img src="/Graphics/onepx.gif" width="2" height="1" alt="" border="0"></td>
+  </tr>
+  <tr>
+    <td class="hd1" colspan="3"><img src="/Graphics/onepx.gif" width="2" height="2" alt="" border="0"></td>
+  </tr>
+  </table>
+  </td>
+ </tr>
+</table>
+
+  <script language="JavaScript">
+// Try to close the window.  If we can't, logout.
+// Scripts aren't legally allowed to close a window that was not opened by a script,
+// but IE seems to allow it.  Firefox (Mozilla) doesn't.
+function userLogout ()
+{
+  window.close();   // IE will return here if user opts not to close window,
+  if (document.all) // and Mozilla browsers will return here because you can't close the window.
+    return;         // If we're running an IE browser.
+  top.location.replace("/servlet/Logout");
+}
+</script>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+      <tr>
+        <td colspan="4" class="headandfoot" height="12"></td>
+      </tr>
+      <tr>
+
+<!----------COMMON NAVIGATION CODE------------------------------------------------->
+      <!----------LEFT NAVIGATION BAR------------------------------------------------->
+
+      <td width="18%" valign="top" class="headandfoot"><!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<form name="leftNavForm" method="post">
+<b>
+
+<script language="JavaScript">function addAltText(img, altText) {  img.alt = altText;}</script><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%"><TR><TD class="navOptions">Options:</TD></TR><TR>
+<TD class="leftnavfolderopen" nowrap>
+<img border=0 alt="" src="/Graphics/Telstra/ar.gif">&nbsp;&nbsp;<A class="leftnavfolderopen" HREF="/Common/folder_contents.jsp?folder=U0&amp;menuId=0">Profile</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U2&amp;menuId=0">Incoming Calls</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U3&amp;menuId=0">Outgoing Calls</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U4&amp;menuId=0">Call Control</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U35&amp;menuId=0">Calling Plans</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U40&amp;menuId=0">Client Applications</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U5&amp;menuId=0">Messaging</A>
+</TD>
+</TR>
+<TR>
+<TD class="leftnavfolder" nowrap>
+<A class="leftnavfolder" HREF="/Common/folder_contents.jsp?folder=U7&amp;menuId=0">Utilities</A>
+</TD>
+</TR>
+</TABLE></b>
+</form>
+
+</td>
+      <td class="headandfoot">
+        <img src="/Graphics/onepx.gif" width="10" height="1" alt="" border="0">
+      </td>
+      <td valign="top">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tr>
+      <td class=headandfoot><img src="/Graphics/round-corner.gif" width=5 height=5></td>
+      </tr>
+        </table>
+      </td>
+
+
+<!----------MAIN BODY------------------------------------------------------------------->
+
+        <td valign="top" width="82%">
+
+        <script language="JavaScript">
+          //This variable is reset when the page is refreshed.
+          var deleteCount = 0;
+          function validateForm(form)
+          {
+            if (form.buttonClicked[0].value == "delete"){
+              deleteCount += 1;
+              //This code prevents the form from being submitted if the user clicks delete multiple times
+              if (deleteCount > 1){
+                // returning false will prevent the form submission.
+               return false;
+              }
+              if(form.allowValidateOnDelete && form.allowValidateOnDelete.value == "true")
+              {
+                deleteCount = 0;
+                return validate(form);
+              }
+              else
+              {
+                return true;
+              }
+            }
+            else{
+              return validate(form);
+            }
+          }
+        </script>
+
+        <form name="mainForm" id="mainForm" method="post"
+          
+            onSubmit="return validateForm(this);"
+          
+           >
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr><td height="10"></td></tr>
+            <tr>
+              <td class="screenName">Addresses</td>
+              </tr>
+            <tr><td height="5"></td></tr>
+            <tr>
+              <td class="tip">Addresses allows you to view and maintain your phone number and other identities that are used to make and receive calls.</td>
+              </tr>
+            <tr><td height="5"></td></tr>
+            <tr>
+            </tr>
+            <tr><td height="5"></td></tr>
+            <tr id="buttonbartop">
+              <td class="buttonbar">&nbsp;&nbsp;<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<input type="hidden" name="buttonClicked" value="">
+<input type="submit" class="bwbutton" name="ok" value="OK"
+                onclick='this.form.buttonClicked[0].value = this.name;'>
+                &nbsp;&nbsp;<input type="submit" class="bwbutton" name="apply" value="Apply"
+                onclick='this.form.buttonClicked[0].value = this.name;'>
+                 &nbsp;&nbsp;<input type="button" class="bwbutton" name="cancel" value="Cancel"
+                  onclick='top.location.replace("/Common/folder_contents.jsp?folder=U0&menuId=0");'>
+</td>
+            </tr>
+            <tr>
+              <td class="enduserbody"><!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<script language="JavaScript" src="validate.js"></script>
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<script language="JavaScript">
+
+  var deviceStaticRegArray = new Array();
+  var deviceUseDomainArray = new Array();
+
+  var deviceTypeStaticRegArray = new Array();
+  var deviceTypeUseDomainArray = new Array();
+  var deviceTypeIpAddrOptionalArray = new Array();
+  var deviceTypeConfigurableArray = new Array();
+
+  var trunkStaticRegArray = new Array();
+  var trunkUseDomainArray = new Array();
+  
+    deviceStaticRegArray[0] = false;
+    deviceUseDomainArray[0] = true;
+  
+    deviceStaticRegArray[1] = false;
+    deviceUseDomainArray[1] = true;
+  
+    deviceStaticRegArray[2] = false;
+    deviceUseDomainArray[2] = true;
+  
+    deviceStaticRegArray[3] = false;
+    deviceUseDomainArray[3] = true;
+  
+    deviceStaticRegArray[4] = false;
+    deviceUseDomainArray[4] = true;
+  
+    deviceStaticRegArray[5] = false;
+    deviceUseDomainArray[5] = true;
+  
+    deviceStaticRegArray[6] = false;
+    deviceUseDomainArray[6] = true;
+  
+    deviceStaticRegArray[7] = false;
+    deviceUseDomainArray[7] = true;
+  
+    deviceStaticRegArray[8] = false;
+    deviceUseDomainArray[8] = true;
+  
+    deviceStaticRegArray[9] = false;
+    deviceUseDomainArray[9] = true;
+  
+    deviceStaticRegArray[10] = false;
+    deviceUseDomainArray[10] = true;
+  
+    deviceStaticRegArray[11] = false;
+    deviceUseDomainArray[11] = true;
+  
+    deviceStaticRegArray[12] = false;
+    deviceUseDomainArray[12] = true;
+  
+    deviceStaticRegArray[13] = false;
+    deviceUseDomainArray[13] = true;
+  
+    deviceStaticRegArray[14] = false;
+    deviceUseDomainArray[14] = true;
+  
+    deviceStaticRegArray[15] = false;
+    deviceUseDomainArray[15] = true;
+  
+    deviceStaticRegArray[16] = false;
+    deviceUseDomainArray[16] = true;
+  
+    deviceStaticRegArray[17] = false;
+    deviceUseDomainArray[17] = true;
+  
+    deviceStaticRegArray[18] = false;
+    deviceUseDomainArray[18] = true;
+  
+    deviceStaticRegArray[19] = false;
+    deviceUseDomainArray[19] = true;
+  
+    deviceStaticRegArray[20] = false;
+    deviceUseDomainArray[20] = true;
+  
+    deviceStaticRegArray[21] = false;
+    deviceUseDomainArray[21] = true;
+  
+    deviceStaticRegArray[22] = false;
+    deviceUseDomainArray[22] = true;
+  
+    deviceStaticRegArray[23] = false;
+    deviceUseDomainArray[23] = true;
+  
+    deviceStaticRegArray[24] = false;
+    deviceUseDomainArray[24] = true;
+  
+    deviceStaticRegArray[25] = false;
+    deviceUseDomainArray[25] = true;
+  
+    deviceStaticRegArray[26] = false;
+    deviceUseDomainArray[26] = true;
+  
+    deviceStaticRegArray[27] = false;
+    deviceUseDomainArray[27] = true;
+  
+    deviceStaticRegArray[28] = false;
+    deviceUseDomainArray[28] = true;
+  
+    deviceStaticRegArray[29] = false;
+    deviceUseDomainArray[29] = true;
+  
+    deviceStaticRegArray[30] = false;
+    deviceUseDomainArray[30] = true;
+  
+    deviceStaticRegArray[31] = false;
+    deviceUseDomainArray[31] = true;
+  
+    deviceStaticRegArray[32] = false;
+    deviceUseDomainArray[32] = true;
+  
+    deviceStaticRegArray[33] = false;
+    deviceUseDomainArray[33] = true;
+  
+    deviceStaticRegArray[34] = false;
+    deviceUseDomainArray[34] = true;
+  
+    deviceStaticRegArray[35] = false;
+    deviceUseDomainArray[35] = true;
+  
+    deviceStaticRegArray[36] = false;
+    deviceUseDomainArray[36] = true;
+  
+    deviceStaticRegArray[37] = false;
+    deviceUseDomainArray[37] = true;
+  
+    deviceStaticRegArray[38] = false;
+    deviceUseDomainArray[38] = true;
+  
+    deviceStaticRegArray[39] = false;
+    deviceUseDomainArray[39] = true;
+  
+    deviceStaticRegArray[40] = false;
+    deviceUseDomainArray[40] = true;
+  
+    deviceStaticRegArray[41] = false;
+    deviceUseDomainArray[41] = true;
+  
+    deviceStaticRegArray[42] = false;
+    deviceUseDomainArray[42] = true;
+  
+    deviceStaticRegArray[43] = false;
+    deviceUseDomainArray[43] = true;
+  
+    deviceStaticRegArray[44] = false;
+    deviceUseDomainArray[44] = true;
+  
+    deviceStaticRegArray[45] = false;
+    deviceUseDomainArray[45] = true;
+  
+      deviceTypeStaticRegArray[0] = false;
+      deviceTypeUseDomainArray[0] = true;
+      deviceTypeIpAddrOptionalArray[0] = true;
+      deviceTypeConfigurableArray[0] = false;
+    
+      deviceTypeStaticRegArray[1] = false;
+      deviceTypeUseDomainArray[1] = true;
+      deviceTypeIpAddrOptionalArray[1] = true;
+      deviceTypeConfigurableArray[1] = false;
+    
+      deviceTypeStaticRegArray[2] = false;
+      deviceTypeUseDomainArray[2] = true;
+      deviceTypeIpAddrOptionalArray[2] = true;
+      deviceTypeConfigurableArray[2] = false;
+    
+      deviceTypeStaticRegArray[3] = false;
+      deviceTypeUseDomainArray[3] = true;
+      deviceTypeIpAddrOptionalArray[3] = true;
+      deviceTypeConfigurableArray[3] = true;
+    
+      deviceTypeStaticRegArray[4] = false;
+      deviceTypeUseDomainArray[4] = true;
+      deviceTypeIpAddrOptionalArray[4] = true;
+      deviceTypeConfigurableArray[4] = true;
+    
+      deviceTypeStaticRegArray[5] = false;
+      deviceTypeUseDomainArray[5] = true;
+      deviceTypeIpAddrOptionalArray[5] = true;
+      deviceTypeConfigurableArray[5] = true;
+    
+      deviceTypeStaticRegArray[6] = false;
+      deviceTypeUseDomainArray[6] = true;
+      deviceTypeIpAddrOptionalArray[6] = true;
+      deviceTypeConfigurableArray[6] = true;
+    
+      deviceTypeStaticRegArray[7] = false;
+      deviceTypeUseDomainArray[7] = true;
+      deviceTypeIpAddrOptionalArray[7] = true;
+      deviceTypeConfigurableArray[7] = true;
+    
+      deviceTypeStaticRegArray[8] = false;
+      deviceTypeUseDomainArray[8] = true;
+      deviceTypeIpAddrOptionalArray[8] = true;
+      deviceTypeConfigurableArray[8] = true;
+    
+      deviceTypeStaticRegArray[9] = false;
+      deviceTypeUseDomainArray[9] = true;
+      deviceTypeIpAddrOptionalArray[9] = true;
+      deviceTypeConfigurableArray[9] = true;
+    
+      deviceTypeStaticRegArray[10] = false;
+      deviceTypeUseDomainArray[10] = true;
+      deviceTypeIpAddrOptionalArray[10] = true;
+      deviceTypeConfigurableArray[10] = true;
+    
+      deviceTypeStaticRegArray[11] = false;
+      deviceTypeUseDomainArray[11] = true;
+      deviceTypeIpAddrOptionalArray[11] = true;
+      deviceTypeConfigurableArray[11] = false;
+    
+      deviceTypeStaticRegArray[12] = false;
+      deviceTypeUseDomainArray[12] = true;
+      deviceTypeIpAddrOptionalArray[12] = true;
+      deviceTypeConfigurableArray[12] = false;
+    
+      deviceTypeStaticRegArray[13] = false;
+      deviceTypeUseDomainArray[13] = true;
+      deviceTypeIpAddrOptionalArray[13] = true;
+      deviceTypeConfigurableArray[13] = false;
+    
+      deviceTypeStaticRegArray[14] = false;
+      deviceTypeUseDomainArray[14] = true;
+      deviceTypeIpAddrOptionalArray[14] = true;
+      deviceTypeConfigurableArray[14] = false;
+    
+      deviceTypeStaticRegArray[15] = false;
+      deviceTypeUseDomainArray[15] = false;
+      deviceTypeIpAddrOptionalArray[15] = false;
+      deviceTypeConfigurableArray[15] = false;
+    
+      deviceTypeStaticRegArray[16] = false;
+      deviceTypeUseDomainArray[16] = false;
+      deviceTypeIpAddrOptionalArray[16] = false;
+      deviceTypeConfigurableArray[16] = false;
+    
+      deviceTypeStaticRegArray[17] = false;
+      deviceTypeUseDomainArray[17] = false;
+      deviceTypeIpAddrOptionalArray[17] = false;
+      deviceTypeConfigurableArray[17] = false;
+    
+      deviceTypeStaticRegArray[18] = false;
+      deviceTypeUseDomainArray[18] = false;
+      deviceTypeIpAddrOptionalArray[18] = false;
+      deviceTypeConfigurableArray[18] = false;
+    
+      deviceTypeStaticRegArray[19] = false;
+      deviceTypeUseDomainArray[19] = false;
+      deviceTypeIpAddrOptionalArray[19] = false;
+      deviceTypeConfigurableArray[19] = false;
+    
+      deviceTypeStaticRegArray[20] = false;
+      deviceTypeUseDomainArray[20] = false;
+      deviceTypeIpAddrOptionalArray[20] = false;
+      deviceTypeConfigurableArray[20] = false;
+    
+      deviceTypeStaticRegArray[21] = true;
+      deviceTypeUseDomainArray[21] = true;
+      deviceTypeIpAddrOptionalArray[21] = true;
+      deviceTypeConfigurableArray[21] = false;
+    
+      deviceTypeStaticRegArray[22] = true;
+      deviceTypeUseDomainArray[22] = true;
+      deviceTypeIpAddrOptionalArray[22] = true;
+      deviceTypeConfigurableArray[22] = false;
+    
+      deviceTypeStaticRegArray[23] = false;
+      deviceTypeUseDomainArray[23] = true;
+      deviceTypeIpAddrOptionalArray[23] = true;
+      deviceTypeConfigurableArray[23] = false;
+    
+      deviceTypeStaticRegArray[24] = false;
+      deviceTypeUseDomainArray[24] = true;
+      deviceTypeIpAddrOptionalArray[24] = true;
+      deviceTypeConfigurableArray[24] = false;
+    
+      deviceTypeStaticRegArray[25] = false;
+      deviceTypeUseDomainArray[25] = true;
+      deviceTypeIpAddrOptionalArray[25] = true;
+      deviceTypeConfigurableArray[25] = false;
+    
+      deviceTypeStaticRegArray[26] = false;
+      deviceTypeUseDomainArray[26] = false;
+      deviceTypeIpAddrOptionalArray[26] = false;
+      deviceTypeConfigurableArray[26] = false;
+    
+      deviceTypeStaticRegArray[27] = false;
+      deviceTypeUseDomainArray[27] = true;
+      deviceTypeIpAddrOptionalArray[27] = true;
+      deviceTypeConfigurableArray[27] = false;
+    
+      deviceTypeStaticRegArray[28] = false;
+      deviceTypeUseDomainArray[28] = false;
+      deviceTypeIpAddrOptionalArray[28] = false;
+      deviceTypeConfigurableArray[28] = false;
+    
+      deviceTypeStaticRegArray[29] = false;
+      deviceTypeUseDomainArray[29] = true;
+      deviceTypeIpAddrOptionalArray[29] = true;
+      deviceTypeConfigurableArray[29] = false;
+    
+      deviceTypeStaticRegArray[30] = false;
+      deviceTypeUseDomainArray[30] = false;
+      deviceTypeIpAddrOptionalArray[30] = false;
+      deviceTypeConfigurableArray[30] = false;
+    
+      deviceTypeStaticRegArray[31] = false;
+      deviceTypeUseDomainArray[31] = true;
+      deviceTypeIpAddrOptionalArray[31] = true;
+      deviceTypeConfigurableArray[31] = false;
+    
+      deviceTypeStaticRegArray[32] = false;
+      deviceTypeUseDomainArray[32] = false;
+      deviceTypeIpAddrOptionalArray[32] = false;
+      deviceTypeConfigurableArray[32] = false;
+    
+      deviceTypeStaticRegArray[33] = false;
+      deviceTypeUseDomainArray[33] = true;
+      deviceTypeIpAddrOptionalArray[33] = true;
+      deviceTypeConfigurableArray[33] = false;
+    
+      deviceTypeStaticRegArray[34] = false;
+      deviceTypeUseDomainArray[34] = true;
+      deviceTypeIpAddrOptionalArray[34] = true;
+      deviceTypeConfigurableArray[34] = false;
+    
+      deviceTypeStaticRegArray[35] = false;
+      deviceTypeUseDomainArray[35] = false;
+      deviceTypeIpAddrOptionalArray[35] = false;
+      deviceTypeConfigurableArray[35] = false;
+    
+      deviceTypeStaticRegArray[36] = false;
+      deviceTypeUseDomainArray[36] = false;
+      deviceTypeIpAddrOptionalArray[36] = false;
+      deviceTypeConfigurableArray[36] = false;
+    
+      deviceTypeStaticRegArray[37] = false;
+      deviceTypeUseDomainArray[37] = false;
+      deviceTypeIpAddrOptionalArray[37] = false;
+      deviceTypeConfigurableArray[37] = false;
+    
+      deviceTypeStaticRegArray[38] = false;
+      deviceTypeUseDomainArray[38] = false;
+      deviceTypeIpAddrOptionalArray[38] = false;
+      deviceTypeConfigurableArray[38] = false;
+    
+      deviceTypeStaticRegArray[39] = false;
+      deviceTypeUseDomainArray[39] = false;
+      deviceTypeIpAddrOptionalArray[39] = false;
+      deviceTypeConfigurableArray[39] = false;
+    
+      deviceTypeStaticRegArray[40] = false;
+      deviceTypeUseDomainArray[40] = true;
+      deviceTypeIpAddrOptionalArray[40] = true;
+      deviceTypeConfigurableArray[40] = false;
+    
+      deviceTypeStaticRegArray[41] = false;
+      deviceTypeUseDomainArray[41] = true;
+      deviceTypeIpAddrOptionalArray[41] = true;
+      deviceTypeConfigurableArray[41] = false;
+    
+      deviceTypeStaticRegArray[42] = false;
+      deviceTypeUseDomainArray[42] = false;
+      deviceTypeIpAddrOptionalArray[42] = false;
+      deviceTypeConfigurableArray[42] = false;
+    
+      deviceTypeStaticRegArray[43] = false;
+      deviceTypeUseDomainArray[43] = true;
+      deviceTypeIpAddrOptionalArray[43] = true;
+      deviceTypeConfigurableArray[43] = false;
+    
+      deviceTypeStaticRegArray[44] = false;
+      deviceTypeUseDomainArray[44] = true;
+      deviceTypeIpAddrOptionalArray[44] = true;
+      deviceTypeConfigurableArray[44] = false;
+    
+      deviceTypeStaticRegArray[45] = false;
+      deviceTypeUseDomainArray[45] = false;
+      deviceTypeIpAddrOptionalArray[45] = false;
+      deviceTypeConfigurableArray[45] = false;
+    
+      deviceTypeStaticRegArray[46] = false;
+      deviceTypeUseDomainArray[46] = false;
+      deviceTypeIpAddrOptionalArray[46] = false;
+      deviceTypeConfigurableArray[46] = false;
+    
+      deviceTypeStaticRegArray[47] = false;
+      deviceTypeUseDomainArray[47] = false;
+      deviceTypeIpAddrOptionalArray[47] = false;
+      deviceTypeConfigurableArray[47] = false;
+    
+      deviceTypeStaticRegArray[48] = false;
+      deviceTypeUseDomainArray[48] = true;
+      deviceTypeIpAddrOptionalArray[48] = true;
+      deviceTypeConfigurableArray[48] = false;
+    
+      deviceTypeStaticRegArray[49] = false;
+      deviceTypeUseDomainArray[49] = true;
+      deviceTypeIpAddrOptionalArray[49] = true;
+      deviceTypeConfigurableArray[49] = false;
+    
+      deviceTypeStaticRegArray[50] = false;
+      deviceTypeUseDomainArray[50] = false;
+      deviceTypeIpAddrOptionalArray[50] = false;
+      deviceTypeConfigurableArray[50] = false;
+    
+      deviceTypeStaticRegArray[51] = false;
+      deviceTypeUseDomainArray[51] = true;
+      deviceTypeIpAddrOptionalArray[51] = true;
+      deviceTypeConfigurableArray[51] = false;
+    
+      deviceTypeStaticRegArray[52] = false;
+      deviceTypeUseDomainArray[52] = true;
+      deviceTypeIpAddrOptionalArray[52] = true;
+      deviceTypeConfigurableArray[52] = false;
+    
+      deviceTypeStaticRegArray[53] = false;
+      deviceTypeUseDomainArray[53] = true;
+      deviceTypeIpAddrOptionalArray[53] = true;
+      deviceTypeConfigurableArray[53] = false;
+    
+      deviceTypeStaticRegArray[54] = false;
+      deviceTypeUseDomainArray[54] = true;
+      deviceTypeIpAddrOptionalArray[54] = true;
+      deviceTypeConfigurableArray[54] = false;
+    
+      deviceTypeStaticRegArray[55] = false;
+      deviceTypeUseDomainArray[55] = true;
+      deviceTypeIpAddrOptionalArray[55] = true;
+      deviceTypeConfigurableArray[55] = false;
+    
+      deviceTypeStaticRegArray[56] = false;
+      deviceTypeUseDomainArray[56] = true;
+      deviceTypeIpAddrOptionalArray[56] = true;
+      deviceTypeConfigurableArray[56] = false;
+    
+      deviceTypeStaticRegArray[57] = false;
+      deviceTypeUseDomainArray[57] = true;
+      deviceTypeIpAddrOptionalArray[57] = true;
+      deviceTypeConfigurableArray[57] = false;
+    
+      deviceTypeStaticRegArray[58] = false;
+      deviceTypeUseDomainArray[58] = true;
+      deviceTypeIpAddrOptionalArray[58] = true;
+      deviceTypeConfigurableArray[58] = false;
+    
+      deviceTypeStaticRegArray[59] = false;
+      deviceTypeUseDomainArray[59] = true;
+      deviceTypeIpAddrOptionalArray[59] = true;
+      deviceTypeConfigurableArray[59] = false;
+    
+      deviceTypeStaticRegArray[60] = false;
+      deviceTypeUseDomainArray[60] = true;
+      deviceTypeIpAddrOptionalArray[60] = true;
+      deviceTypeConfigurableArray[60] = false;
+    
+      deviceTypeStaticRegArray[61] = false;
+      deviceTypeUseDomainArray[61] = true;
+      deviceTypeIpAddrOptionalArray[61] = true;
+      deviceTypeConfigurableArray[61] = false;
+    
+      deviceTypeStaticRegArray[62] = false;
+      deviceTypeUseDomainArray[62] = true;
+      deviceTypeIpAddrOptionalArray[62] = true;
+      deviceTypeConfigurableArray[62] = false;
+    
+      deviceTypeStaticRegArray[63] = false;
+      deviceTypeUseDomainArray[63] = true;
+      deviceTypeIpAddrOptionalArray[63] = true;
+      deviceTypeConfigurableArray[63] = false;
+    
+      deviceTypeStaticRegArray[64] = false;
+      deviceTypeUseDomainArray[64] = true;
+      deviceTypeIpAddrOptionalArray[64] = true;
+      deviceTypeConfigurableArray[64] = false;
+    
+      deviceTypeStaticRegArray[65] = false;
+      deviceTypeUseDomainArray[65] = true;
+      deviceTypeIpAddrOptionalArray[65] = true;
+      deviceTypeConfigurableArray[65] = false;
+    
+      deviceTypeStaticRegArray[66] = false;
+      deviceTypeUseDomainArray[66] = false;
+      deviceTypeIpAddrOptionalArray[66] = false;
+      deviceTypeConfigurableArray[66] = false;
+    
+      deviceTypeStaticRegArray[67] = false;
+      deviceTypeUseDomainArray[67] = false;
+      deviceTypeIpAddrOptionalArray[67] = false;
+      deviceTypeConfigurableArray[67] = false;
+    
+      deviceTypeStaticRegArray[68] = false;
+      deviceTypeUseDomainArray[68] = true;
+      deviceTypeIpAddrOptionalArray[68] = true;
+      deviceTypeConfigurableArray[68] = false;
+    
+      deviceTypeStaticRegArray[69] = false;
+      deviceTypeUseDomainArray[69] = true;
+      deviceTypeIpAddrOptionalArray[69] = true;
+      deviceTypeConfigurableArray[69] = false;
+    
+      deviceTypeStaticRegArray[70] = false;
+      deviceTypeUseDomainArray[70] = false;
+      deviceTypeIpAddrOptionalArray[70] = false;
+      deviceTypeConfigurableArray[70] = false;
+    
+      deviceTypeStaticRegArray[71] = false;
+      deviceTypeUseDomainArray[71] = false;
+      deviceTypeIpAddrOptionalArray[71] = false;
+      deviceTypeConfigurableArray[71] = false;
+    
+      deviceTypeStaticRegArray[72] = false;
+      deviceTypeUseDomainArray[72] = true;
+      deviceTypeIpAddrOptionalArray[72] = true;
+      deviceTypeConfigurableArray[72] = false;
+    
+      deviceTypeStaticRegArray[73] = false;
+      deviceTypeUseDomainArray[73] = true;
+      deviceTypeIpAddrOptionalArray[73] = true;
+      deviceTypeConfigurableArray[73] = false;
+    
+      deviceTypeStaticRegArray[74] = false;
+      deviceTypeUseDomainArray[74] = true;
+      deviceTypeIpAddrOptionalArray[74] = true;
+      deviceTypeConfigurableArray[74] = false;
+    
+      deviceTypeStaticRegArray[75] = false;
+      deviceTypeUseDomainArray[75] = true;
+      deviceTypeIpAddrOptionalArray[75] = true;
+      deviceTypeConfigurableArray[75] = false;
+    
+      deviceTypeStaticRegArray[76] = false;
+      deviceTypeUseDomainArray[76] = true;
+      deviceTypeIpAddrOptionalArray[76] = true;
+      deviceTypeConfigurableArray[76] = false;
+    
+      deviceTypeStaticRegArray[77] = false;
+      deviceTypeUseDomainArray[77] = true;
+      deviceTypeIpAddrOptionalArray[77] = true;
+      deviceTypeConfigurableArray[77] = false;
+    
+      deviceTypeStaticRegArray[78] = false;
+      deviceTypeUseDomainArray[78] = true;
+      deviceTypeIpAddrOptionalArray[78] = true;
+      deviceTypeConfigurableArray[78] = false;
+    
+      deviceTypeStaticRegArray[79] = true;
+      deviceTypeUseDomainArray[79] = true;
+      deviceTypeIpAddrOptionalArray[79] = true;
+      deviceTypeConfigurableArray[79] = false;
+    
+      deviceTypeStaticRegArray[80] = false;
+      deviceTypeUseDomainArray[80] = true;
+      deviceTypeIpAddrOptionalArray[80] = true;
+      deviceTypeConfigurableArray[80] = false;
+    
+      deviceTypeStaticRegArray[81] = false;
+      deviceTypeUseDomainArray[81] = true;
+      deviceTypeIpAddrOptionalArray[81] = true;
+      deviceTypeConfigurableArray[81] = false;
+    
+      deviceTypeStaticRegArray[82] = false;
+      deviceTypeUseDomainArray[82] = true;
+      deviceTypeIpAddrOptionalArray[82] = true;
+      deviceTypeConfigurableArray[82] = false;
+    
+      deviceTypeStaticRegArray[83] = false;
+      deviceTypeUseDomainArray[83] = true;
+      deviceTypeIpAddrOptionalArray[83] = true;
+      deviceTypeConfigurableArray[83] = false;
+    
+      deviceTypeStaticRegArray[84] = false;
+      deviceTypeUseDomainArray[84] = true;
+      deviceTypeIpAddrOptionalArray[84] = true;
+      deviceTypeConfigurableArray[84] = false;
+    
+      deviceTypeStaticRegArray[85] = false;
+      deviceTypeUseDomainArray[85] = false;
+      deviceTypeIpAddrOptionalArray[85] = false;
+      deviceTypeConfigurableArray[85] = false;
+    
+      deviceTypeStaticRegArray[86] = false;
+      deviceTypeUseDomainArray[86] = false;
+      deviceTypeIpAddrOptionalArray[86] = false;
+      deviceTypeConfigurableArray[86] = false;
+    
+      deviceTypeStaticRegArray[87] = true;
+      deviceTypeUseDomainArray[87] = false;
+      deviceTypeIpAddrOptionalArray[87] = false;
+      deviceTypeConfigurableArray[87] = false;
+    
+      deviceTypeStaticRegArray[88] = true;
+      deviceTypeUseDomainArray[88] = false;
+      deviceTypeIpAddrOptionalArray[88] = false;
+      deviceTypeConfigurableArray[88] = false;
+    
+      deviceTypeStaticRegArray[89] = true;
+      deviceTypeUseDomainArray[89] = false;
+      deviceTypeIpAddrOptionalArray[89] = false;
+      deviceTypeConfigurableArray[89] = false;
+    
+      deviceTypeStaticRegArray[90] = false;
+      deviceTypeUseDomainArray[90] = false;
+      deviceTypeIpAddrOptionalArray[90] = false;
+      deviceTypeConfigurableArray[90] = true;
+    
+      deviceTypeStaticRegArray[91] = false;
+      deviceTypeUseDomainArray[91] = false;
+      deviceTypeIpAddrOptionalArray[91] = false;
+      deviceTypeConfigurableArray[91] = true;
+    
+      deviceTypeStaticRegArray[92] = false;
+      deviceTypeUseDomainArray[92] = false;
+      deviceTypeIpAddrOptionalArray[92] = false;
+      deviceTypeConfigurableArray[92] = true;
+    
+      deviceTypeStaticRegArray[93] = true;
+      deviceTypeUseDomainArray[93] = false;
+      deviceTypeIpAddrOptionalArray[93] = false;
+      deviceTypeConfigurableArray[93] = false;
+    
+      deviceTypeStaticRegArray[94] = true;
+      deviceTypeUseDomainArray[94] = false;
+      deviceTypeIpAddrOptionalArray[94] = false;
+      deviceTypeConfigurableArray[94] = false;
+    
+      deviceTypeStaticRegArray[95] = false;
+      deviceTypeUseDomainArray[95] = true;
+      deviceTypeIpAddrOptionalArray[95] = true;
+      deviceTypeConfigurableArray[95] = false;
+    
+      deviceTypeStaticRegArray[96] = false;
+      deviceTypeUseDomainArray[96] = true;
+      deviceTypeIpAddrOptionalArray[96] = true;
+      deviceTypeConfigurableArray[96] = false;
+    
+      deviceTypeStaticRegArray[97] = false;
+      deviceTypeUseDomainArray[97] = false;
+      deviceTypeIpAddrOptionalArray[97] = false;
+      deviceTypeConfigurableArray[97] = true;
+    
+      deviceTypeStaticRegArray[98] = false;
+      deviceTypeUseDomainArray[98] = false;
+      deviceTypeIpAddrOptionalArray[98] = false;
+      deviceTypeConfigurableArray[98] = true;
+    
+      deviceTypeStaticRegArray[99] = true;
+      deviceTypeUseDomainArray[99] = false;
+      deviceTypeIpAddrOptionalArray[99] = false;
+      deviceTypeConfigurableArray[99] = false;
+    
+      deviceTypeStaticRegArray[100] = false;
+      deviceTypeUseDomainArray[100] = true;
+      deviceTypeIpAddrOptionalArray[100] = true;
+      deviceTypeConfigurableArray[100] = false;
+    
+      deviceTypeStaticRegArray[101] = false;
+      deviceTypeUseDomainArray[101] = false;
+      deviceTypeIpAddrOptionalArray[101] = false;
+      deviceTypeConfigurableArray[101] = true;
+    
+      deviceTypeStaticRegArray[102] = true;
+      deviceTypeUseDomainArray[102] = false;
+      deviceTypeIpAddrOptionalArray[102] = false;
+      deviceTypeConfigurableArray[102] = false;
+    
+      deviceTypeStaticRegArray[103] = false;
+      deviceTypeUseDomainArray[103] = true;
+      deviceTypeIpAddrOptionalArray[103] = true;
+      deviceTypeConfigurableArray[103] = false;
+    
+      deviceTypeStaticRegArray[104] = false;
+      deviceTypeUseDomainArray[104] = false;
+      deviceTypeIpAddrOptionalArray[104] = false;
+      deviceTypeConfigurableArray[104] = true;
+    
+      deviceTypeStaticRegArray[105] = true;
+      deviceTypeUseDomainArray[105] = false;
+      deviceTypeIpAddrOptionalArray[105] = false;
+      deviceTypeConfigurableArray[105] = false;
+    
+      deviceTypeStaticRegArray[106] = true;
+      deviceTypeUseDomainArray[106] = false;
+      deviceTypeIpAddrOptionalArray[106] = false;
+      deviceTypeConfigurableArray[106] = false;
+    
+      deviceTypeStaticRegArray[107] = false;
+      deviceTypeUseDomainArray[107] = true;
+      deviceTypeIpAddrOptionalArray[107] = true;
+      deviceTypeConfigurableArray[107] = false;
+    
+      deviceTypeStaticRegArray[108] = false;
+      deviceTypeUseDomainArray[108] = true;
+      deviceTypeIpAddrOptionalArray[108] = true;
+      deviceTypeConfigurableArray[108] = false;
+    
+      deviceTypeStaticRegArray[109] = false;
+      deviceTypeUseDomainArray[109] = false;
+      deviceTypeIpAddrOptionalArray[109] = false;
+      deviceTypeConfigurableArray[109] = true;
+    
+      deviceTypeStaticRegArray[110] = true;
+      deviceTypeUseDomainArray[110] = false;
+      deviceTypeIpAddrOptionalArray[110] = false;
+      deviceTypeConfigurableArray[110] = false;
+    
+      deviceTypeStaticRegArray[111] = true;
+      deviceTypeUseDomainArray[111] = false;
+      deviceTypeIpAddrOptionalArray[111] = false;
+      deviceTypeConfigurableArray[111] = false;
+    
+      deviceTypeStaticRegArray[112] = true;
+      deviceTypeUseDomainArray[112] = false;
+      deviceTypeIpAddrOptionalArray[112] = false;
+      deviceTypeConfigurableArray[112] = false;
+    
+      deviceTypeStaticRegArray[113] = true;
+      deviceTypeUseDomainArray[113] = false;
+      deviceTypeIpAddrOptionalArray[113] = false;
+      deviceTypeConfigurableArray[113] = false;
+    
+      deviceTypeStaticRegArray[114] = true;
+      deviceTypeUseDomainArray[114] = false;
+      deviceTypeIpAddrOptionalArray[114] = false;
+      deviceTypeConfigurableArray[114] = false;
+    
+      deviceTypeStaticRegArray[115] = false;
+      deviceTypeUseDomainArray[115] = true;
+      deviceTypeIpAddrOptionalArray[115] = true;
+      deviceTypeConfigurableArray[115] = false;
+    
+      deviceTypeStaticRegArray[116] = false;
+      deviceTypeUseDomainArray[116] = true;
+      deviceTypeIpAddrOptionalArray[116] = true;
+      deviceTypeConfigurableArray[116] = false;
+    
+      deviceTypeStaticRegArray[117] = false;
+      deviceTypeUseDomainArray[117] = true;
+      deviceTypeIpAddrOptionalArray[117] = true;
+      deviceTypeConfigurableArray[117] = false;
+    
+      deviceTypeStaticRegArray[118] = false;
+      deviceTypeUseDomainArray[118] = true;
+      deviceTypeIpAddrOptionalArray[118] = true;
+      deviceTypeConfigurableArray[118] = false;
+    
+      deviceTypeStaticRegArray[119] = false;
+      deviceTypeUseDomainArray[119] = true;
+      deviceTypeIpAddrOptionalArray[119] = true;
+      deviceTypeConfigurableArray[119] = false;
+    
+      deviceTypeStaticRegArray[120] = true;
+      deviceTypeUseDomainArray[120] = false;
+      deviceTypeIpAddrOptionalArray[120] = false;
+      deviceTypeConfigurableArray[120] = false;
+    
+      deviceTypeStaticRegArray[121] = true;
+      deviceTypeUseDomainArray[121] = false;
+      deviceTypeIpAddrOptionalArray[121] = false;
+      deviceTypeConfigurableArray[121] = false;
+    
+      deviceTypeStaticRegArray[122] = true;
+      deviceTypeUseDomainArray[122] = false;
+      deviceTypeIpAddrOptionalArray[122] = false;
+      deviceTypeConfigurableArray[122] = false;
+    
+      deviceTypeStaticRegArray[123] = true;
+      deviceTypeUseDomainArray[123] = false;
+      deviceTypeIpAddrOptionalArray[123] = false;
+      deviceTypeConfigurableArray[123] = false;
+    
+      deviceTypeStaticRegArray[124] = true;
+      deviceTypeUseDomainArray[124] = false;
+      deviceTypeIpAddrOptionalArray[124] = false;
+      deviceTypeConfigurableArray[124] = false;
+    
+      deviceTypeStaticRegArray[125] = false;
+      deviceTypeUseDomainArray[125] = true;
+      deviceTypeIpAddrOptionalArray[125] = true;
+      deviceTypeConfigurableArray[125] = false;
+    
+      deviceTypeStaticRegArray[126] = false;
+      deviceTypeUseDomainArray[126] = true;
+      deviceTypeIpAddrOptionalArray[126] = true;
+      deviceTypeConfigurableArray[126] = false;
+    
+      deviceTypeStaticRegArray[127] = true;
+      deviceTypeUseDomainArray[127] = false;
+      deviceTypeIpAddrOptionalArray[127] = false;
+      deviceTypeConfigurableArray[127] = false;
+    
+      deviceTypeStaticRegArray[128] = true;
+      deviceTypeUseDomainArray[128] = false;
+      deviceTypeIpAddrOptionalArray[128] = false;
+      deviceTypeConfigurableArray[128] = false;
+    
+      deviceTypeStaticRegArray[129] = true;
+      deviceTypeUseDomainArray[129] = false;
+      deviceTypeIpAddrOptionalArray[129] = false;
+      deviceTypeConfigurableArray[129] = false;
+    
+      deviceTypeStaticRegArray[130] = true;
+      deviceTypeUseDomainArray[130] = false;
+      deviceTypeIpAddrOptionalArray[130] = false;
+      deviceTypeConfigurableArray[130] = false;
+    
+      deviceTypeStaticRegArray[131] = false;
+      deviceTypeUseDomainArray[131] = true;
+      deviceTypeIpAddrOptionalArray[131] = true;
+      deviceTypeConfigurableArray[131] = true;
+    
+      deviceTypeStaticRegArray[132] = false;
+      deviceTypeUseDomainArray[132] = true;
+      deviceTypeIpAddrOptionalArray[132] = true;
+      deviceTypeConfigurableArray[132] = true;
+    
+      deviceTypeStaticRegArray[133] = false;
+      deviceTypeUseDomainArray[133] = true;
+      deviceTypeIpAddrOptionalArray[133] = true;
+      deviceTypeConfigurableArray[133] = true;
+    
+      deviceTypeStaticRegArray[134] = false;
+      deviceTypeUseDomainArray[134] = true;
+      deviceTypeIpAddrOptionalArray[134] = true;
+      deviceTypeConfigurableArray[134] = true;
+    
+      deviceTypeStaticRegArray[135] = false;
+      deviceTypeUseDomainArray[135] = true;
+      deviceTypeIpAddrOptionalArray[135] = true;
+      deviceTypeConfigurableArray[135] = true;
+    
+      deviceTypeStaticRegArray[136] = true;
+      deviceTypeUseDomainArray[136] = false;
+      deviceTypeIpAddrOptionalArray[136] = false;
+      deviceTypeConfigurableArray[136] = false;
+    
+      deviceTypeStaticRegArray[137] = true;
+      deviceTypeUseDomainArray[137] = false;
+      deviceTypeIpAddrOptionalArray[137] = false;
+      deviceTypeConfigurableArray[137] = false;
+    
+      deviceTypeStaticRegArray[138] = false;
+      deviceTypeUseDomainArray[138] = true;
+      deviceTypeIpAddrOptionalArray[138] = true;
+      deviceTypeConfigurableArray[138] = false;
+    
+      deviceTypeStaticRegArray[139] = false;
+      deviceTypeUseDomainArray[139] = true;
+      deviceTypeIpAddrOptionalArray[139] = true;
+      deviceTypeConfigurableArray[139] = false;
+    
+      deviceTypeStaticRegArray[140] = true;
+      deviceTypeUseDomainArray[140] = false;
+      deviceTypeIpAddrOptionalArray[140] = false;
+      deviceTypeConfigurableArray[140] = false;
+    
+      deviceTypeStaticRegArray[141] = false;
+      deviceTypeUseDomainArray[141] = true;
+      deviceTypeIpAddrOptionalArray[141] = true;
+      deviceTypeConfigurableArray[141] = false;
+    
+      deviceTypeStaticRegArray[142] = false;
+      deviceTypeUseDomainArray[142] = true;
+      deviceTypeIpAddrOptionalArray[142] = true;
+      deviceTypeConfigurableArray[142] = false;
+    
+      deviceTypeStaticRegArray[143] = false;
+      deviceTypeUseDomainArray[143] = true;
+      deviceTypeIpAddrOptionalArray[143] = true;
+      deviceTypeConfigurableArray[143] = false;
+    
+      deviceTypeStaticRegArray[144] = false;
+      deviceTypeUseDomainArray[144] = true;
+      deviceTypeIpAddrOptionalArray[144] = true;
+      deviceTypeConfigurableArray[144] = false;
+    
+      deviceTypeStaticRegArray[145] = false;
+      deviceTypeUseDomainArray[145] = true;
+      deviceTypeIpAddrOptionalArray[145] = true;
+      deviceTypeConfigurableArray[145] = false;
+    
+      deviceTypeStaticRegArray[146] = false;
+      deviceTypeUseDomainArray[146] = true;
+      deviceTypeIpAddrOptionalArray[146] = true;
+      deviceTypeConfigurableArray[146] = false;
+    
+      deviceTypeStaticRegArray[147] = false;
+      deviceTypeUseDomainArray[147] = true;
+      deviceTypeIpAddrOptionalArray[147] = true;
+      deviceTypeConfigurableArray[147] = false;
+    
+      deviceTypeStaticRegArray[148] = false;
+      deviceTypeUseDomainArray[148] = true;
+      deviceTypeIpAddrOptionalArray[148] = true;
+      deviceTypeConfigurableArray[148] = false;
+    
+      deviceTypeStaticRegArray[149] = false;
+      deviceTypeUseDomainArray[149] = true;
+      deviceTypeIpAddrOptionalArray[149] = true;
+      deviceTypeConfigurableArray[149] = false;
+    
+      deviceTypeStaticRegArray[150] = false;
+      deviceTypeUseDomainArray[150] = false;
+      deviceTypeIpAddrOptionalArray[150] = false;
+      deviceTypeConfigurableArray[150] = false;
+    
+      deviceTypeStaticRegArray[151] = false;
+      deviceTypeUseDomainArray[151] = true;
+      deviceTypeIpAddrOptionalArray[151] = true;
+      deviceTypeConfigurableArray[151] = true;
+    
+      deviceTypeStaticRegArray[152] = false;
+      deviceTypeUseDomainArray[152] = true;
+      deviceTypeIpAddrOptionalArray[152] = true;
+      deviceTypeConfigurableArray[152] = false;
+    
+      deviceTypeStaticRegArray[153] = false;
+      deviceTypeUseDomainArray[153] = true;
+      deviceTypeIpAddrOptionalArray[153] = true;
+      deviceTypeConfigurableArray[153] = false;
+    
+      deviceTypeStaticRegArray[154] = true;
+      deviceTypeUseDomainArray[154] = true;
+      deviceTypeIpAddrOptionalArray[154] = true;
+      deviceTypeConfigurableArray[154] = false;
+    
+      deviceTypeStaticRegArray[155] = true;
+      deviceTypeUseDomainArray[155] = true;
+      deviceTypeIpAddrOptionalArray[155] = true;
+      deviceTypeConfigurableArray[155] = false;
+    
+      deviceTypeStaticRegArray[156] = true;
+      deviceTypeUseDomainArray[156] = true;
+      deviceTypeIpAddrOptionalArray[156] = true;
+      deviceTypeConfigurableArray[156] = false;
+    
+      deviceTypeStaticRegArray[157] = false;
+      deviceTypeUseDomainArray[157] = true;
+      deviceTypeIpAddrOptionalArray[157] = true;
+      deviceTypeConfigurableArray[157] = false;
+    
+      deviceTypeStaticRegArray[158] = false;
+      deviceTypeUseDomainArray[158] = false;
+      deviceTypeIpAddrOptionalArray[158] = false;
+      deviceTypeConfigurableArray[158] = false;
+    
+      deviceTypeStaticRegArray[159] = false;
+      deviceTypeUseDomainArray[159] = true;
+      deviceTypeIpAddrOptionalArray[159] = true;
+      deviceTypeConfigurableArray[159] = false;
+    
+      deviceTypeStaticRegArray[160] = false;
+      deviceTypeUseDomainArray[160] = false;
+      deviceTypeIpAddrOptionalArray[160] = false;
+      deviceTypeConfigurableArray[160] = false;
+    
+      deviceTypeStaticRegArray[161] = true;
+      deviceTypeUseDomainArray[161] = true;
+      deviceTypeIpAddrOptionalArray[161] = true;
+      deviceTypeConfigurableArray[161] = false;
+    
+      deviceTypeStaticRegArray[162] = false;
+      deviceTypeUseDomainArray[162] = true;
+      deviceTypeIpAddrOptionalArray[162] = true;
+      deviceTypeConfigurableArray[162] = false;
+    
+      deviceTypeStaticRegArray[163] = true;
+      deviceTypeUseDomainArray[163] = true;
+      deviceTypeIpAddrOptionalArray[163] = true;
+      deviceTypeConfigurableArray[163] = false;
+    
+      deviceTypeStaticRegArray[164] = false;
+      deviceTypeUseDomainArray[164] = true;
+      deviceTypeIpAddrOptionalArray[164] = true;
+      deviceTypeConfigurableArray[164] = false;
+    
+      deviceTypeStaticRegArray[165] = false;
+      deviceTypeUseDomainArray[165] = true;
+      deviceTypeIpAddrOptionalArray[165] = true;
+      deviceTypeConfigurableArray[165] = false;
+    
+      deviceTypeStaticRegArray[166] = false;
+      deviceTypeUseDomainArray[166] = true;
+      deviceTypeIpAddrOptionalArray[166] = true;
+      deviceTypeConfigurableArray[166] = false;
+    
+      deviceTypeStaticRegArray[167] = false;
+      deviceTypeUseDomainArray[167] = true;
+      deviceTypeIpAddrOptionalArray[167] = true;
+      deviceTypeConfigurableArray[167] = false;
+    
+      deviceTypeStaticRegArray[168] = false;
+      deviceTypeUseDomainArray[168] = true;
+      deviceTypeIpAddrOptionalArray[168] = true;
+      deviceTypeConfigurableArray[168] = false;
+    
+      deviceTypeStaticRegArray[169] = false;
+      deviceTypeUseDomainArray[169] = true;
+      deviceTypeIpAddrOptionalArray[169] = true;
+      deviceTypeConfigurableArray[169] = false;
+    
+      deviceTypeStaticRegArray[170] = true;
+      deviceTypeUseDomainArray[170] = true;
+      deviceTypeIpAddrOptionalArray[170] = true;
+      deviceTypeConfigurableArray[170] = false;
+    
+      deviceTypeStaticRegArray[171] = true;
+      deviceTypeUseDomainArray[171] = true;
+      deviceTypeIpAddrOptionalArray[171] = true;
+      deviceTypeConfigurableArray[171] = false;
+    
+      deviceTypeStaticRegArray[172] = true;
+      deviceTypeUseDomainArray[172] = false;
+      deviceTypeIpAddrOptionalArray[172] = false;
+      deviceTypeConfigurableArray[172] = false;
+    
+      deviceTypeStaticRegArray[173] = false;
+      deviceTypeUseDomainArray[173] = true;
+      deviceTypeIpAddrOptionalArray[173] = true;
+      deviceTypeConfigurableArray[173] = false;
+    
+      deviceTypeStaticRegArray[174] = false;
+      deviceTypeUseDomainArray[174] = true;
+      deviceTypeIpAddrOptionalArray[174] = true;
+      deviceTypeConfigurableArray[174] = false;
+    
+      deviceTypeStaticRegArray[175] = true;
+      deviceTypeUseDomainArray[175] = false;
+      deviceTypeIpAddrOptionalArray[175] = false;
+      deviceTypeConfigurableArray[175] = false;
+    
+      deviceTypeStaticRegArray[176] = true;
+      deviceTypeUseDomainArray[176] = false;
+      deviceTypeIpAddrOptionalArray[176] = false;
+      deviceTypeConfigurableArray[176] = false;
+    
+      deviceTypeStaticRegArray[177] = true;
+      deviceTypeUseDomainArray[177] = false;
+      deviceTypeIpAddrOptionalArray[177] = false;
+      deviceTypeConfigurableArray[177] = false;
+    
+      deviceTypeStaticRegArray[178] = false;
+      deviceTypeUseDomainArray[178] = true;
+      deviceTypeIpAddrOptionalArray[178] = true;
+      deviceTypeConfigurableArray[178] = false;
+    
+      deviceTypeStaticRegArray[179] = true;
+      deviceTypeUseDomainArray[179] = false;
+      deviceTypeIpAddrOptionalArray[179] = false;
+      deviceTypeConfigurableArray[179] = false;
+    
+      deviceTypeStaticRegArray[180] = false;
+      deviceTypeUseDomainArray[180] = true;
+      deviceTypeIpAddrOptionalArray[180] = true;
+      deviceTypeConfigurableArray[180] = false;
+    
+      deviceTypeStaticRegArray[181] = true;
+      deviceTypeUseDomainArray[181] = true;
+      deviceTypeIpAddrOptionalArray[181] = true;
+      deviceTypeConfigurableArray[181] = false;
+    
+      deviceTypeStaticRegArray[182] = false;
+      deviceTypeUseDomainArray[182] = true;
+      deviceTypeIpAddrOptionalArray[182] = true;
+      deviceTypeConfigurableArray[182] = false;
+    
+      deviceTypeStaticRegArray[183] = false;
+      deviceTypeUseDomainArray[183] = true;
+      deviceTypeIpAddrOptionalArray[183] = true;
+      deviceTypeConfigurableArray[183] = true;
+    
+      deviceTypeStaticRegArray[184] = false;
+      deviceTypeUseDomainArray[184] = true;
+      deviceTypeIpAddrOptionalArray[184] = true;
+      deviceTypeConfigurableArray[184] = true;
+    
+      deviceTypeStaticRegArray[185] = false;
+      deviceTypeUseDomainArray[185] = true;
+      deviceTypeIpAddrOptionalArray[185] = true;
+      deviceTypeConfigurableArray[185] = true;
+    
+      deviceTypeStaticRegArray[186] = false;
+      deviceTypeUseDomainArray[186] = true;
+      deviceTypeIpAddrOptionalArray[186] = true;
+      deviceTypeConfigurableArray[186] = false;
+    
+      deviceTypeStaticRegArray[187] = false;
+      deviceTypeUseDomainArray[187] = false;
+      deviceTypeIpAddrOptionalArray[187] = false;
+      deviceTypeConfigurableArray[187] = false;
+    
+      deviceTypeStaticRegArray[188] = true;
+      deviceTypeUseDomainArray[188] = true;
+      deviceTypeIpAddrOptionalArray[188] = true;
+      deviceTypeConfigurableArray[188] = false;
+    
+      deviceTypeStaticRegArray[189] = true;
+      deviceTypeUseDomainArray[189] = false;
+      deviceTypeIpAddrOptionalArray[189] = false;
+      deviceTypeConfigurableArray[189] = false;
+    
+      deviceTypeStaticRegArray[190] = false;
+      deviceTypeUseDomainArray[190] = true;
+      deviceTypeIpAddrOptionalArray[190] = true;
+      deviceTypeConfigurableArray[190] = true;
+    
+      deviceTypeStaticRegArray[191] = false;
+      deviceTypeUseDomainArray[191] = true;
+      deviceTypeIpAddrOptionalArray[191] = true;
+      deviceTypeConfigurableArray[191] = true;
+    
+      deviceTypeStaticRegArray[192] = false;
+      deviceTypeUseDomainArray[192] = true;
+      deviceTypeIpAddrOptionalArray[192] = true;
+      deviceTypeConfigurableArray[192] = true;
+    
+      deviceTypeStaticRegArray[193] = false;
+      deviceTypeUseDomainArray[193] = true;
+      deviceTypeIpAddrOptionalArray[193] = true;
+      deviceTypeConfigurableArray[193] = true;
+    
+      deviceTypeStaticRegArray[194] = false;
+      deviceTypeUseDomainArray[194] = true;
+      deviceTypeIpAddrOptionalArray[194] = true;
+      deviceTypeConfigurableArray[194] = true;
+    
+      deviceTypeStaticRegArray[195] = false;
+      deviceTypeUseDomainArray[195] = true;
+      deviceTypeIpAddrOptionalArray[195] = true;
+      deviceTypeConfigurableArray[195] = true;
+    
+      deviceTypeStaticRegArray[196] = false;
+      deviceTypeUseDomainArray[196] = true;
+      deviceTypeIpAddrOptionalArray[196] = true;
+      deviceTypeConfigurableArray[196] = false;
+    
+      deviceTypeStaticRegArray[197] = false;
+      deviceTypeUseDomainArray[197] = true;
+      deviceTypeIpAddrOptionalArray[197] = true;
+      deviceTypeConfigurableArray[197] = true;
+    
+      deviceTypeStaticRegArray[198] = false;
+      deviceTypeUseDomainArray[198] = true;
+      deviceTypeIpAddrOptionalArray[198] = true;
+      deviceTypeConfigurableArray[198] = true;
+    
+      deviceTypeStaticRegArray[199] = false;
+      deviceTypeUseDomainArray[199] = true;
+      deviceTypeIpAddrOptionalArray[199] = true;
+      deviceTypeConfigurableArray[199] = true;
+    
+      deviceTypeStaticRegArray[200] = false;
+      deviceTypeUseDomainArray[200] = true;
+      deviceTypeIpAddrOptionalArray[200] = true;
+      deviceTypeConfigurableArray[200] = true;
+    
+      deviceTypeStaticRegArray[201] = false;
+      deviceTypeUseDomainArray[201] = true;
+      deviceTypeIpAddrOptionalArray[201] = true;
+      deviceTypeConfigurableArray[201] = true;
+    
+      deviceTypeStaticRegArray[202] = false;
+      deviceTypeUseDomainArray[202] = true;
+      deviceTypeIpAddrOptionalArray[202] = true;
+      deviceTypeConfigurableArray[202] = true;
+    
+      deviceTypeStaticRegArray[203] = false;
+      deviceTypeUseDomainArray[203] = true;
+      deviceTypeIpAddrOptionalArray[203] = true;
+      deviceTypeConfigurableArray[203] = true;
+    
+      deviceTypeStaticRegArray[204] = false;
+      deviceTypeUseDomainArray[204] = true;
+      deviceTypeIpAddrOptionalArray[204] = true;
+      deviceTypeConfigurableArray[204] = true;
+    
+      deviceTypeStaticRegArray[205] = false;
+      deviceTypeUseDomainArray[205] = true;
+      deviceTypeIpAddrOptionalArray[205] = true;
+      deviceTypeConfigurableArray[205] = true;
+    
+      deviceTypeStaticRegArray[206] = false;
+      deviceTypeUseDomainArray[206] = true;
+      deviceTypeIpAddrOptionalArray[206] = true;
+      deviceTypeConfigurableArray[206] = true;
+    
+      deviceTypeStaticRegArray[207] = false;
+      deviceTypeUseDomainArray[207] = true;
+      deviceTypeIpAddrOptionalArray[207] = true;
+      deviceTypeConfigurableArray[207] = true;
+    
+      deviceTypeStaticRegArray[208] = false;
+      deviceTypeUseDomainArray[208] = true;
+      deviceTypeIpAddrOptionalArray[208] = true;
+      deviceTypeConfigurableArray[208] = true;
+    
+      deviceTypeStaticRegArray[209] = false;
+      deviceTypeUseDomainArray[209] = true;
+      deviceTypeIpAddrOptionalArray[209] = true;
+      deviceTypeConfigurableArray[209] = true;
+    
+      deviceTypeStaticRegArray[210] = false;
+      deviceTypeUseDomainArray[210] = true;
+      deviceTypeIpAddrOptionalArray[210] = true;
+      deviceTypeConfigurableArray[210] = true;
+    
+      deviceTypeStaticRegArray[211] = false;
+      deviceTypeUseDomainArray[211] = true;
+      deviceTypeIpAddrOptionalArray[211] = true;
+      deviceTypeConfigurableArray[211] = false;
+    
+      deviceTypeStaticRegArray[212] = false;
+      deviceTypeUseDomainArray[212] = true;
+      deviceTypeIpAddrOptionalArray[212] = true;
+      deviceTypeConfigurableArray[212] = false;
+    
+      deviceTypeStaticRegArray[213] = false;
+      deviceTypeUseDomainArray[213] = true;
+      deviceTypeIpAddrOptionalArray[213] = true;
+      deviceTypeConfigurableArray[213] = true;
+    
+      deviceTypeStaticRegArray[214] = false;
+      deviceTypeUseDomainArray[214] = true;
+      deviceTypeIpAddrOptionalArray[214] = true;
+      deviceTypeConfigurableArray[214] = true;
+    
+      deviceTypeStaticRegArray[215] = false;
+      deviceTypeUseDomainArray[215] = true;
+      deviceTypeIpAddrOptionalArray[215] = true;
+      deviceTypeConfigurableArray[215] = true;
+    
+      deviceTypeStaticRegArray[216] = true;
+      deviceTypeUseDomainArray[216] = true;
+      deviceTypeIpAddrOptionalArray[216] = true;
+      deviceTypeConfigurableArray[216] = false;
+    
+      deviceTypeStaticRegArray[217] = false;
+      deviceTypeUseDomainArray[217] = true;
+      deviceTypeIpAddrOptionalArray[217] = true;
+      deviceTypeConfigurableArray[217] = false;
+    
+      deviceTypeStaticRegArray[218] = false;
+      deviceTypeUseDomainArray[218] = true;
+      deviceTypeIpAddrOptionalArray[218] = true;
+      deviceTypeConfigurableArray[218] = false;
+    
+      deviceTypeStaticRegArray[219] = false;
+      deviceTypeUseDomainArray[219] = true;
+      deviceTypeIpAddrOptionalArray[219] = true;
+      deviceTypeConfigurableArray[219] = false;
+    
+      deviceTypeStaticRegArray[220] = false;
+      deviceTypeUseDomainArray[220] = true;
+      deviceTypeIpAddrOptionalArray[220] = true;
+      deviceTypeConfigurableArray[220] = false;
+    
+      deviceTypeStaticRegArray[221] = false;
+      deviceTypeUseDomainArray[221] = true;
+      deviceTypeIpAddrOptionalArray[221] = true;
+      deviceTypeConfigurableArray[221] = false;
+    
+      deviceTypeStaticRegArray[222] = false;
+      deviceTypeUseDomainArray[222] = true;
+      deviceTypeIpAddrOptionalArray[222] = true;
+      deviceTypeConfigurableArray[222] = false;
+    
+      deviceTypeStaticRegArray[223] = true;
+      deviceTypeUseDomainArray[223] = true;
+      deviceTypeIpAddrOptionalArray[223] = true;
+      deviceTypeConfigurableArray[223] = false;
+    
+      deviceTypeStaticRegArray[224] = false;
+      deviceTypeUseDomainArray[224] = true;
+      deviceTypeIpAddrOptionalArray[224] = true;
+      deviceTypeConfigurableArray[224] = true;
+    
+      deviceTypeStaticRegArray[225] = false;
+      deviceTypeUseDomainArray[225] = true;
+      deviceTypeIpAddrOptionalArray[225] = true;
+      deviceTypeConfigurableArray[225] = true;
+    
+      deviceTypeStaticRegArray[226] = false;
+      deviceTypeUseDomainArray[226] = true;
+      deviceTypeIpAddrOptionalArray[226] = true;
+      deviceTypeConfigurableArray[226] = true;
+    
+      deviceTypeStaticRegArray[227] = false;
+      deviceTypeUseDomainArray[227] = true;
+      deviceTypeIpAddrOptionalArray[227] = true;
+      deviceTypeConfigurableArray[227] = true;
+    
+      deviceTypeStaticRegArray[228] = false;
+      deviceTypeUseDomainArray[228] = true;
+      deviceTypeIpAddrOptionalArray[228] = true;
+      deviceTypeConfigurableArray[228] = true;
+    
+      deviceTypeStaticRegArray[229] = false;
+      deviceTypeUseDomainArray[229] = true;
+      deviceTypeIpAddrOptionalArray[229] = true;
+      deviceTypeConfigurableArray[229] = true;
+    
+      deviceTypeStaticRegArray[230] = false;
+      deviceTypeUseDomainArray[230] = true;
+      deviceTypeIpAddrOptionalArray[230] = true;
+      deviceTypeConfigurableArray[230] = true;
+    
+      deviceTypeStaticRegArray[231] = false;
+      deviceTypeUseDomainArray[231] = true;
+      deviceTypeIpAddrOptionalArray[231] = true;
+      deviceTypeConfigurableArray[231] = true;
+    
+      deviceTypeStaticRegArray[232] = false;
+      deviceTypeUseDomainArray[232] = false;
+      deviceTypeIpAddrOptionalArray[232] = false;
+      deviceTypeConfigurableArray[232] = false;
+    
+      deviceTypeStaticRegArray[233] = false;
+      deviceTypeUseDomainArray[233] = false;
+      deviceTypeIpAddrOptionalArray[233] = false;
+      deviceTypeConfigurableArray[233] = false;
+    
+      deviceTypeStaticRegArray[234] = false;
+      deviceTypeUseDomainArray[234] = false;
+      deviceTypeIpAddrOptionalArray[234] = false;
+      deviceTypeConfigurableArray[234] = false;
+    
+      deviceTypeStaticRegArray[235] = false;
+      deviceTypeUseDomainArray[235] = false;
+      deviceTypeIpAddrOptionalArray[235] = false;
+      deviceTypeConfigurableArray[235] = false;
+    
+      deviceTypeStaticRegArray[236] = false;
+      deviceTypeUseDomainArray[236] = true;
+      deviceTypeIpAddrOptionalArray[236] = true;
+      deviceTypeConfigurableArray[236] = false;
+    
+      deviceTypeStaticRegArray[237] = true;
+      deviceTypeUseDomainArray[237] = true;
+      deviceTypeIpAddrOptionalArray[237] = true;
+      deviceTypeConfigurableArray[237] = false;
+    
+      deviceTypeStaticRegArray[238] = false;
+      deviceTypeUseDomainArray[238] = false;
+      deviceTypeIpAddrOptionalArray[238] = false;
+      deviceTypeConfigurableArray[238] = false;
+    
+      deviceTypeStaticRegArray[239] = false;
+      deviceTypeUseDomainArray[239] = false;
+      deviceTypeIpAddrOptionalArray[239] = false;
+      deviceTypeConfigurableArray[239] = false;
+    
+      deviceTypeStaticRegArray[240] = false;
+      deviceTypeUseDomainArray[240] = false;
+      deviceTypeIpAddrOptionalArray[240] = false;
+      deviceTypeConfigurableArray[240] = false;
+    
+      deviceTypeStaticRegArray[241] = false;
+      deviceTypeUseDomainArray[241] = false;
+      deviceTypeIpAddrOptionalArray[241] = false;
+      deviceTypeConfigurableArray[241] = false;
+    
+      deviceTypeStaticRegArray[242] = false;
+      deviceTypeUseDomainArray[242] = false;
+      deviceTypeIpAddrOptionalArray[242] = false;
+      deviceTypeConfigurableArray[242] = false;
+    
+      deviceTypeStaticRegArray[243] = false;
+      deviceTypeUseDomainArray[243] = true;
+      deviceTypeIpAddrOptionalArray[243] = true;
+      deviceTypeConfigurableArray[243] = false;
+    
+      deviceTypeStaticRegArray[244] = false;
+      deviceTypeUseDomainArray[244] = true;
+      deviceTypeIpAddrOptionalArray[244] = true;
+      deviceTypeConfigurableArray[244] = false;
+    
+      deviceTypeStaticRegArray[245] = false;
+      deviceTypeUseDomainArray[245] = true;
+      deviceTypeIpAddrOptionalArray[245] = true;
+      deviceTypeConfigurableArray[245] = false;
+    
+      deviceTypeStaticRegArray[246] = false;
+      deviceTypeUseDomainArray[246] = true;
+      deviceTypeIpAddrOptionalArray[246] = true;
+      deviceTypeConfigurableArray[246] = false;
+    
+      deviceTypeStaticRegArray[247] = false;
+      deviceTypeUseDomainArray[247] = true;
+      deviceTypeIpAddrOptionalArray[247] = true;
+      deviceTypeConfigurableArray[247] = false;
+    
+      deviceTypeStaticRegArray[248] = false;
+      deviceTypeUseDomainArray[248] = true;
+      deviceTypeIpAddrOptionalArray[248] = true;
+      deviceTypeConfigurableArray[248] = false;
+    
+      deviceTypeStaticRegArray[249] = false;
+      deviceTypeUseDomainArray[249] = true;
+      deviceTypeIpAddrOptionalArray[249] = true;
+      deviceTypeConfigurableArray[249] = false;
+    
+      deviceTypeStaticRegArray[250] = false;
+      deviceTypeUseDomainArray[250] = true;
+      deviceTypeIpAddrOptionalArray[250] = true;
+      deviceTypeConfigurableArray[250] = false;
+    
+      deviceTypeStaticRegArray[251] = false;
+      deviceTypeUseDomainArray[251] = true;
+      deviceTypeIpAddrOptionalArray[251] = true;
+      deviceTypeConfigurableArray[251] = false;
+    
+      deviceTypeStaticRegArray[252] = false;
+      deviceTypeUseDomainArray[252] = true;
+      deviceTypeIpAddrOptionalArray[252] = true;
+      deviceTypeConfigurableArray[252] = false;
+    
+      deviceTypeStaticRegArray[253] = false;
+      deviceTypeUseDomainArray[253] = true;
+      deviceTypeIpAddrOptionalArray[253] = true;
+      deviceTypeConfigurableArray[253] = false;
+    
+      deviceTypeStaticRegArray[254] = false;
+      deviceTypeUseDomainArray[254] = true;
+      deviceTypeIpAddrOptionalArray[254] = true;
+      deviceTypeConfigurableArray[254] = false;
+    
+      deviceTypeStaticRegArray[255] = false;
+      deviceTypeUseDomainArray[255] = true;
+      deviceTypeIpAddrOptionalArray[255] = true;
+      deviceTypeConfigurableArray[255] = false;
+    
+      deviceTypeStaticRegArray[256] = false;
+      deviceTypeUseDomainArray[256] = true;
+      deviceTypeIpAddrOptionalArray[256] = true;
+      deviceTypeConfigurableArray[256] = false;
+    
+      deviceTypeStaticRegArray[257] = false;
+      deviceTypeUseDomainArray[257] = true;
+      deviceTypeIpAddrOptionalArray[257] = true;
+      deviceTypeConfigurableArray[257] = false;
+    
+      deviceTypeStaticRegArray[258] = false;
+      deviceTypeUseDomainArray[258] = true;
+      deviceTypeIpAddrOptionalArray[258] = true;
+      deviceTypeConfigurableArray[258] = false;
+    
+      deviceTypeStaticRegArray[259] = false;
+      deviceTypeUseDomainArray[259] = true;
+      deviceTypeIpAddrOptionalArray[259] = true;
+      deviceTypeConfigurableArray[259] = false;
+    
+      deviceTypeStaticRegArray[260] = false;
+      deviceTypeUseDomainArray[260] = true;
+      deviceTypeIpAddrOptionalArray[260] = true;
+      deviceTypeConfigurableArray[260] = false;
+    
+      deviceTypeStaticRegArray[261] = false;
+      deviceTypeUseDomainArray[261] = true;
+      deviceTypeIpAddrOptionalArray[261] = true;
+      deviceTypeConfigurableArray[261] = false;
+    
+      deviceTypeStaticRegArray[262] = false;
+      deviceTypeUseDomainArray[262] = true;
+      deviceTypeIpAddrOptionalArray[262] = true;
+      deviceTypeConfigurableArray[262] = false;
+    
+      deviceTypeStaticRegArray[263] = false;
+      deviceTypeUseDomainArray[263] = true;
+      deviceTypeIpAddrOptionalArray[263] = true;
+      deviceTypeConfigurableArray[263] = false;
+    
+      deviceTypeStaticRegArray[264] = false;
+      deviceTypeUseDomainArray[264] = true;
+      deviceTypeIpAddrOptionalArray[264] = true;
+      deviceTypeConfigurableArray[264] = false;
+    
+      deviceTypeStaticRegArray[265] = false;
+      deviceTypeUseDomainArray[265] = true;
+      deviceTypeIpAddrOptionalArray[265] = true;
+      deviceTypeConfigurableArray[265] = false;
+    
+      deviceTypeStaticRegArray[266] = false;
+      deviceTypeUseDomainArray[266] = true;
+      deviceTypeIpAddrOptionalArray[266] = true;
+      deviceTypeConfigurableArray[266] = false;
+    
+      deviceTypeStaticRegArray[267] = false;
+      deviceTypeUseDomainArray[267] = true;
+      deviceTypeIpAddrOptionalArray[267] = true;
+      deviceTypeConfigurableArray[267] = false;
+    
+      deviceTypeStaticRegArray[268] = false;
+      deviceTypeUseDomainArray[268] = true;
+      deviceTypeIpAddrOptionalArray[268] = true;
+      deviceTypeConfigurableArray[268] = false;
+    
+      deviceTypeStaticRegArray[269] = false;
+      deviceTypeUseDomainArray[269] = true;
+      deviceTypeIpAddrOptionalArray[269] = true;
+      deviceTypeConfigurableArray[269] = false;
+    
+      deviceTypeStaticRegArray[270] = false;
+      deviceTypeUseDomainArray[270] = true;
+      deviceTypeIpAddrOptionalArray[270] = true;
+      deviceTypeConfigurableArray[270] = false;
+    
+      deviceTypeStaticRegArray[271] = false;
+      deviceTypeUseDomainArray[271] = true;
+      deviceTypeIpAddrOptionalArray[271] = true;
+      deviceTypeConfigurableArray[271] = false;
+    
+      deviceTypeStaticRegArray[272] = false;
+      deviceTypeUseDomainArray[272] = true;
+      deviceTypeIpAddrOptionalArray[272] = true;
+      deviceTypeConfigurableArray[272] = false;
+    
+      deviceTypeStaticRegArray[273] = false;
+      deviceTypeUseDomainArray[273] = true;
+      deviceTypeIpAddrOptionalArray[273] = true;
+      deviceTypeConfigurableArray[273] = false;
+    
+      deviceTypeStaticRegArray[274] = false;
+      deviceTypeUseDomainArray[274] = true;
+      deviceTypeIpAddrOptionalArray[274] = true;
+      deviceTypeConfigurableArray[274] = false;
+    
+      deviceTypeStaticRegArray[275] = false;
+      deviceTypeUseDomainArray[275] = true;
+      deviceTypeIpAddrOptionalArray[275] = true;
+      deviceTypeConfigurableArray[275] = false;
+    
+      deviceTypeStaticRegArray[276] = false;
+      deviceTypeUseDomainArray[276] = true;
+      deviceTypeIpAddrOptionalArray[276] = true;
+      deviceTypeConfigurableArray[276] = false;
+    
+      deviceTypeStaticRegArray[277] = false;
+      deviceTypeUseDomainArray[277] = true;
+      deviceTypeIpAddrOptionalArray[277] = true;
+      deviceTypeConfigurableArray[277] = false;
+    
+      deviceTypeStaticRegArray[278] = false;
+      deviceTypeUseDomainArray[278] = true;
+      deviceTypeIpAddrOptionalArray[278] = true;
+      deviceTypeConfigurableArray[278] = false;
+    
+      deviceTypeStaticRegArray[279] = false;
+      deviceTypeUseDomainArray[279] = true;
+      deviceTypeIpAddrOptionalArray[279] = true;
+      deviceTypeConfigurableArray[279] = false;
+    
+      deviceTypeStaticRegArray[280] = false;
+      deviceTypeUseDomainArray[280] = true;
+      deviceTypeIpAddrOptionalArray[280] = true;
+      deviceTypeConfigurableArray[280] = false;
+    
+      deviceTypeStaticRegArray[281] = false;
+      deviceTypeUseDomainArray[281] = true;
+      deviceTypeIpAddrOptionalArray[281] = true;
+      deviceTypeConfigurableArray[281] = false;
+    
+      deviceTypeStaticRegArray[282] = false;
+      deviceTypeUseDomainArray[282] = true;
+      deviceTypeIpAddrOptionalArray[282] = true;
+      deviceTypeConfigurableArray[282] = false;
+    
+      deviceTypeStaticRegArray[283] = false;
+      deviceTypeUseDomainArray[283] = true;
+      deviceTypeIpAddrOptionalArray[283] = true;
+      deviceTypeConfigurableArray[283] = false;
+    
+      deviceTypeStaticRegArray[284] = false;
+      deviceTypeUseDomainArray[284] = true;
+      deviceTypeIpAddrOptionalArray[284] = true;
+      deviceTypeConfigurableArray[284] = false;
+    
+      deviceTypeStaticRegArray[285] = false;
+      deviceTypeUseDomainArray[285] = true;
+      deviceTypeIpAddrOptionalArray[285] = true;
+      deviceTypeConfigurableArray[285] = true;
+    
+      deviceTypeStaticRegArray[286] = false;
+      deviceTypeUseDomainArray[286] = true;
+      deviceTypeIpAddrOptionalArray[286] = true;
+      deviceTypeConfigurableArray[286] = false;
+    
+      deviceTypeStaticRegArray[287] = false;
+      deviceTypeUseDomainArray[287] = true;
+      deviceTypeIpAddrOptionalArray[287] = true;
+      deviceTypeConfigurableArray[287] = true;
+    
+      deviceTypeStaticRegArray[288] = false;
+      deviceTypeUseDomainArray[288] = true;
+      deviceTypeIpAddrOptionalArray[288] = true;
+      deviceTypeConfigurableArray[288] = true;
+    
+      deviceTypeStaticRegArray[289] = false;
+      deviceTypeUseDomainArray[289] = true;
+      deviceTypeIpAddrOptionalArray[289] = true;
+      deviceTypeConfigurableArray[289] = true;
+    
+      deviceTypeStaticRegArray[290] = false;
+      deviceTypeUseDomainArray[290] = true;
+      deviceTypeIpAddrOptionalArray[290] = true;
+      deviceTypeConfigurableArray[290] = true;
+    
+      deviceTypeStaticRegArray[291] = false;
+      deviceTypeUseDomainArray[291] = true;
+      deviceTypeIpAddrOptionalArray[291] = true;
+      deviceTypeConfigurableArray[291] = true;
+    
+      deviceTypeStaticRegArray[292] = false;
+      deviceTypeUseDomainArray[292] = true;
+      deviceTypeIpAddrOptionalArray[292] = true;
+      deviceTypeConfigurableArray[292] = true;
+    
+      deviceTypeStaticRegArray[293] = false;
+      deviceTypeUseDomainArray[293] = true;
+      deviceTypeIpAddrOptionalArray[293] = true;
+      deviceTypeConfigurableArray[293] = true;
+    
+      deviceTypeStaticRegArray[294] = false;
+      deviceTypeUseDomainArray[294] = true;
+      deviceTypeIpAddrOptionalArray[294] = true;
+      deviceTypeConfigurableArray[294] = true;
+    
+      deviceTypeStaticRegArray[295] = false;
+      deviceTypeUseDomainArray[295] = true;
+      deviceTypeIpAddrOptionalArray[295] = true;
+      deviceTypeConfigurableArray[295] = true;
+    
+      deviceTypeStaticRegArray[296] = false;
+      deviceTypeUseDomainArray[296] = true;
+      deviceTypeIpAddrOptionalArray[296] = true;
+      deviceTypeConfigurableArray[296] = true;
+    
+      deviceTypeStaticRegArray[297] = false;
+      deviceTypeUseDomainArray[297] = true;
+      deviceTypeIpAddrOptionalArray[297] = true;
+      deviceTypeConfigurableArray[297] = true;
+    
+      deviceTypeStaticRegArray[298] = false;
+      deviceTypeUseDomainArray[298] = true;
+      deviceTypeIpAddrOptionalArray[298] = true;
+      deviceTypeConfigurableArray[298] = true;
+    
+      deviceTypeStaticRegArray[299] = false;
+      deviceTypeUseDomainArray[299] = true;
+      deviceTypeIpAddrOptionalArray[299] = true;
+      deviceTypeConfigurableArray[299] = true;
+    
+      deviceTypeStaticRegArray[300] = false;
+      deviceTypeUseDomainArray[300] = true;
+      deviceTypeIpAddrOptionalArray[300] = true;
+      deviceTypeConfigurableArray[300] = true;
+    
+      deviceTypeStaticRegArray[301] = false;
+      deviceTypeUseDomainArray[301] = true;
+      deviceTypeIpAddrOptionalArray[301] = true;
+      deviceTypeConfigurableArray[301] = true;
+    
+      deviceTypeStaticRegArray[302] = false;
+      deviceTypeUseDomainArray[302] = true;
+      deviceTypeIpAddrOptionalArray[302] = true;
+      deviceTypeConfigurableArray[302] = true;
+    
+      deviceTypeStaticRegArray[303] = false;
+      deviceTypeUseDomainArray[303] = true;
+      deviceTypeIpAddrOptionalArray[303] = true;
+      deviceTypeConfigurableArray[303] = true;
+    
+      deviceTypeStaticRegArray[304] = false;
+      deviceTypeUseDomainArray[304] = true;
+      deviceTypeIpAddrOptionalArray[304] = true;
+      deviceTypeConfigurableArray[304] = true;
+    
+      deviceTypeStaticRegArray[305] = false;
+      deviceTypeUseDomainArray[305] = true;
+      deviceTypeIpAddrOptionalArray[305] = true;
+      deviceTypeConfigurableArray[305] = true;
+    
+      deviceTypeStaticRegArray[306] = false;
+      deviceTypeUseDomainArray[306] = true;
+      deviceTypeIpAddrOptionalArray[306] = true;
+      deviceTypeConfigurableArray[306] = true;
+    
+      deviceTypeStaticRegArray[307] = false;
+      deviceTypeUseDomainArray[307] = true;
+      deviceTypeIpAddrOptionalArray[307] = true;
+      deviceTypeConfigurableArray[307] = true;
+    
+      deviceTypeStaticRegArray[308] = false;
+      deviceTypeUseDomainArray[308] = true;
+      deviceTypeIpAddrOptionalArray[308] = true;
+      deviceTypeConfigurableArray[308] = true;
+    
+      deviceTypeStaticRegArray[309] = false;
+      deviceTypeUseDomainArray[309] = true;
+      deviceTypeIpAddrOptionalArray[309] = true;
+      deviceTypeConfigurableArray[309] = true;
+    
+      deviceTypeStaticRegArray[310] = false;
+      deviceTypeUseDomainArray[310] = true;
+      deviceTypeIpAddrOptionalArray[310] = true;
+      deviceTypeConfigurableArray[310] = true;
+    
+      deviceTypeStaticRegArray[311] = false;
+      deviceTypeUseDomainArray[311] = true;
+      deviceTypeIpAddrOptionalArray[311] = true;
+      deviceTypeConfigurableArray[311] = true;
+    
+      deviceTypeStaticRegArray[312] = false;
+      deviceTypeUseDomainArray[312] = true;
+      deviceTypeIpAddrOptionalArray[312] = true;
+      deviceTypeConfigurableArray[312] = true;
+    
+      deviceTypeStaticRegArray[313] = false;
+      deviceTypeUseDomainArray[313] = true;
+      deviceTypeIpAddrOptionalArray[313] = true;
+      deviceTypeConfigurableArray[313] = true;
+    
+      deviceTypeStaticRegArray[314] = false;
+      deviceTypeUseDomainArray[314] = true;
+      deviceTypeIpAddrOptionalArray[314] = true;
+      deviceTypeConfigurableArray[314] = true;
+    
+      deviceTypeStaticRegArray[315] = false;
+      deviceTypeUseDomainArray[315] = true;
+      deviceTypeIpAddrOptionalArray[315] = true;
+      deviceTypeConfigurableArray[315] = true;
+    
+      deviceTypeStaticRegArray[316] = false;
+      deviceTypeUseDomainArray[316] = true;
+      deviceTypeIpAddrOptionalArray[316] = true;
+      deviceTypeConfigurableArray[316] = true;
+    
+      deviceTypeStaticRegArray[317] = false;
+      deviceTypeUseDomainArray[317] = true;
+      deviceTypeIpAddrOptionalArray[317] = true;
+      deviceTypeConfigurableArray[317] = true;
+    
+      deviceTypeStaticRegArray[318] = false;
+      deviceTypeUseDomainArray[318] = true;
+      deviceTypeIpAddrOptionalArray[318] = true;
+      deviceTypeConfigurableArray[318] = true;
+    
+      deviceTypeStaticRegArray[319] = false;
+      deviceTypeUseDomainArray[319] = true;
+      deviceTypeIpAddrOptionalArray[319] = true;
+      deviceTypeConfigurableArray[319] = true;
+    
+      deviceTypeStaticRegArray[320] = false;
+      deviceTypeUseDomainArray[320] = true;
+      deviceTypeIpAddrOptionalArray[320] = true;
+      deviceTypeConfigurableArray[320] = false;
+    
+      deviceTypeStaticRegArray[321] = false;
+      deviceTypeUseDomainArray[321] = true;
+      deviceTypeIpAddrOptionalArray[321] = true;
+      deviceTypeConfigurableArray[321] = false;
+    
+      deviceTypeStaticRegArray[322] = false;
+      deviceTypeUseDomainArray[322] = true;
+      deviceTypeIpAddrOptionalArray[322] = true;
+      deviceTypeConfigurableArray[322] = false;
+    
+      deviceTypeStaticRegArray[323] = false;
+      deviceTypeUseDomainArray[323] = true;
+      deviceTypeIpAddrOptionalArray[323] = true;
+      deviceTypeConfigurableArray[323] = false;
+    
+      deviceTypeStaticRegArray[324] = false;
+      deviceTypeUseDomainArray[324] = true;
+      deviceTypeIpAddrOptionalArray[324] = true;
+      deviceTypeConfigurableArray[324] = false;
+    
+      deviceTypeStaticRegArray[325] = false;
+      deviceTypeUseDomainArray[325] = true;
+      deviceTypeIpAddrOptionalArray[325] = true;
+      deviceTypeConfigurableArray[325] = false;
+    
+      deviceTypeStaticRegArray[326] = false;
+      deviceTypeUseDomainArray[326] = true;
+      deviceTypeIpAddrOptionalArray[326] = true;
+      deviceTypeConfigurableArray[326] = false;
+    
+      deviceTypeStaticRegArray[327] = false;
+      deviceTypeUseDomainArray[327] = true;
+      deviceTypeIpAddrOptionalArray[327] = true;
+      deviceTypeConfigurableArray[327] = false;
+    
+      deviceTypeStaticRegArray[328] = false;
+      deviceTypeUseDomainArray[328] = true;
+      deviceTypeIpAddrOptionalArray[328] = true;
+      deviceTypeConfigurableArray[328] = false;
+    
+      deviceTypeStaticRegArray[329] = false;
+      deviceTypeUseDomainArray[329] = true;
+      deviceTypeIpAddrOptionalArray[329] = true;
+      deviceTypeConfigurableArray[329] = false;
+    
+      deviceTypeStaticRegArray[330] = false;
+      deviceTypeUseDomainArray[330] = true;
+      deviceTypeIpAddrOptionalArray[330] = true;
+      deviceTypeConfigurableArray[330] = false;
+    
+      deviceTypeStaticRegArray[331] = false;
+      deviceTypeUseDomainArray[331] = true;
+      deviceTypeIpAddrOptionalArray[331] = true;
+      deviceTypeConfigurableArray[331] = false;
+    
+      deviceTypeStaticRegArray[332] = false;
+      deviceTypeUseDomainArray[332] = true;
+      deviceTypeIpAddrOptionalArray[332] = true;
+      deviceTypeConfigurableArray[332] = false;
+    
+      deviceTypeStaticRegArray[333] = false;
+      deviceTypeUseDomainArray[333] = true;
+      deviceTypeIpAddrOptionalArray[333] = true;
+      deviceTypeConfigurableArray[333] = false;
+    
+      deviceTypeStaticRegArray[334] = true;
+      deviceTypeUseDomainArray[334] = true;
+      deviceTypeIpAddrOptionalArray[334] = true;
+      deviceTypeConfigurableArray[334] = false;
+    
+      deviceTypeStaticRegArray[335] = false;
+      deviceTypeUseDomainArray[335] = true;
+      deviceTypeIpAddrOptionalArray[335] = true;
+      deviceTypeConfigurableArray[335] = false;
+    
+      deviceTypeStaticRegArray[336] = true;
+      deviceTypeUseDomainArray[336] = false;
+      deviceTypeIpAddrOptionalArray[336] = false;
+      deviceTypeConfigurableArray[336] = false;
+    
+      deviceTypeStaticRegArray[337] = false;
+      deviceTypeUseDomainArray[337] = true;
+      deviceTypeIpAddrOptionalArray[337] = true;
+      deviceTypeConfigurableArray[337] = false;
+    
+      deviceTypeStaticRegArray[338] = false;
+      deviceTypeUseDomainArray[338] = true;
+      deviceTypeIpAddrOptionalArray[338] = true;
+      deviceTypeConfigurableArray[338] = false;
+    
+      deviceTypeStaticRegArray[339] = false;
+      deviceTypeUseDomainArray[339] = true;
+      deviceTypeIpAddrOptionalArray[339] = true;
+      deviceTypeConfigurableArray[339] = true;
+    
+      deviceTypeStaticRegArray[340] = false;
+      deviceTypeUseDomainArray[340] = true;
+      deviceTypeIpAddrOptionalArray[340] = true;
+      deviceTypeConfigurableArray[340] = true;
+    
+      deviceTypeStaticRegArray[341] = false;
+      deviceTypeUseDomainArray[341] = true;
+      deviceTypeIpAddrOptionalArray[341] = true;
+      deviceTypeConfigurableArray[341] = false;
+    
+      deviceTypeStaticRegArray[342] = true;
+      deviceTypeUseDomainArray[342] = false;
+      deviceTypeIpAddrOptionalArray[342] = false;
+      deviceTypeConfigurableArray[342] = false;
+    
+      deviceTypeStaticRegArray[343] = false;
+      deviceTypeUseDomainArray[343] = false;
+      deviceTypeIpAddrOptionalArray[343] = false;
+      deviceTypeConfigurableArray[343] = false;
+    
+      deviceTypeStaticRegArray[344] = false;
+      deviceTypeUseDomainArray[344] = false;
+      deviceTypeIpAddrOptionalArray[344] = false;
+      deviceTypeConfigurableArray[344] = false;
+    
+      deviceTypeStaticRegArray[345] = false;
+      deviceTypeUseDomainArray[345] = false;
+      deviceTypeIpAddrOptionalArray[345] = false;
+      deviceTypeConfigurableArray[345] = false;
+    
+      deviceTypeStaticRegArray[346] = false;
+      deviceTypeUseDomainArray[346] = true;
+      deviceTypeIpAddrOptionalArray[346] = true;
+      deviceTypeConfigurableArray[346] = false;
+    
+      deviceTypeStaticRegArray[347] = false;
+      deviceTypeUseDomainArray[347] = true;
+      deviceTypeIpAddrOptionalArray[347] = true;
+      deviceTypeConfigurableArray[347] = false;
+    
+      deviceTypeStaticRegArray[348] = false;
+      deviceTypeUseDomainArray[348] = true;
+      deviceTypeIpAddrOptionalArray[348] = true;
+      deviceTypeConfigurableArray[348] = true;
+    
+      deviceTypeStaticRegArray[349] = false;
+      deviceTypeUseDomainArray[349] = true;
+      deviceTypeIpAddrOptionalArray[349] = true;
+      deviceTypeConfigurableArray[349] = true;
+    
+      deviceTypeStaticRegArray[350] = false;
+      deviceTypeUseDomainArray[350] = true;
+      deviceTypeIpAddrOptionalArray[350] = true;
+      deviceTypeConfigurableArray[350] = true;
+    
+      deviceTypeStaticRegArray[351] = false;
+      deviceTypeUseDomainArray[351] = true;
+      deviceTypeIpAddrOptionalArray[351] = true;
+      deviceTypeConfigurableArray[351] = true;
+    
+      deviceTypeStaticRegArray[352] = false;
+      deviceTypeUseDomainArray[352] = true;
+      deviceTypeIpAddrOptionalArray[352] = true;
+      deviceTypeConfigurableArray[352] = true;
+    
+      deviceTypeStaticRegArray[353] = false;
+      deviceTypeUseDomainArray[353] = true;
+      deviceTypeIpAddrOptionalArray[353] = true;
+      deviceTypeConfigurableArray[353] = true;
+    
+      deviceTypeStaticRegArray[354] = false;
+      deviceTypeUseDomainArray[354] = true;
+      deviceTypeIpAddrOptionalArray[354] = true;
+      deviceTypeConfigurableArray[354] = true;
+    
+      deviceTypeStaticRegArray[355] = false;
+      deviceTypeUseDomainArray[355] = true;
+      deviceTypeIpAddrOptionalArray[355] = true;
+      deviceTypeConfigurableArray[355] = true;
+    
+      deviceTypeStaticRegArray[356] = false;
+      deviceTypeUseDomainArray[356] = true;
+      deviceTypeIpAddrOptionalArray[356] = true;
+      deviceTypeConfigurableArray[356] = true;
+    
+      deviceTypeStaticRegArray[357] = false;
+      deviceTypeUseDomainArray[357] = true;
+      deviceTypeIpAddrOptionalArray[357] = true;
+      deviceTypeConfigurableArray[357] = false;
+    
+      deviceTypeStaticRegArray[358] = false;
+      deviceTypeUseDomainArray[358] = true;
+      deviceTypeIpAddrOptionalArray[358] = true;
+      deviceTypeConfigurableArray[358] = false;
+    
+      deviceTypeStaticRegArray[359] = false;
+      deviceTypeUseDomainArray[359] = true;
+      deviceTypeIpAddrOptionalArray[359] = true;
+      deviceTypeConfigurableArray[359] = false;
+    
+      deviceTypeStaticRegArray[360] = false;
+      deviceTypeUseDomainArray[360] = true;
+      deviceTypeIpAddrOptionalArray[360] = true;
+      deviceTypeConfigurableArray[360] = false;
+    
+      deviceTypeStaticRegArray[361] = false;
+      deviceTypeUseDomainArray[361] = true;
+      deviceTypeIpAddrOptionalArray[361] = true;
+      deviceTypeConfigurableArray[361] = true;
+    
+      deviceTypeStaticRegArray[362] = false;
+      deviceTypeUseDomainArray[362] = true;
+      deviceTypeIpAddrOptionalArray[362] = true;
+      deviceTypeConfigurableArray[362] = false;
+    
+      deviceTypeStaticRegArray[363] = true;
+      deviceTypeUseDomainArray[363] = false;
+      deviceTypeIpAddrOptionalArray[363] = false;
+      deviceTypeConfigurableArray[363] = false;
+    
+      deviceTypeStaticRegArray[364] = true;
+      deviceTypeUseDomainArray[364] = true;
+      deviceTypeIpAddrOptionalArray[364] = true;
+      deviceTypeConfigurableArray[364] = false;
+    
+      deviceTypeStaticRegArray[365] = false;
+      deviceTypeUseDomainArray[365] = true;
+      deviceTypeIpAddrOptionalArray[365] = true;
+      deviceTypeConfigurableArray[365] = true;
+    
+      deviceTypeStaticRegArray[366] = false;
+      deviceTypeUseDomainArray[366] = true;
+      deviceTypeIpAddrOptionalArray[366] = true;
+      deviceTypeConfigurableArray[366] = false;
+    
+      deviceTypeStaticRegArray[367] = false;
+      deviceTypeUseDomainArray[367] = true;
+      deviceTypeIpAddrOptionalArray[367] = true;
+      deviceTypeConfigurableArray[367] = false;
+    
+      deviceTypeStaticRegArray[368] = false;
+      deviceTypeUseDomainArray[368] = true;
+      deviceTypeIpAddrOptionalArray[368] = true;
+      deviceTypeConfigurableArray[368] = false;
+    
+      deviceTypeStaticRegArray[369] = false;
+      deviceTypeUseDomainArray[369] = true;
+      deviceTypeIpAddrOptionalArray[369] = true;
+      deviceTypeConfigurableArray[369] = false;
+    
+      deviceTypeStaticRegArray[370] = false;
+      deviceTypeUseDomainArray[370] = true;
+      deviceTypeIpAddrOptionalArray[370] = true;
+      deviceTypeConfigurableArray[370] = false;
+    
+      deviceTypeStaticRegArray[371] = false;
+      deviceTypeUseDomainArray[371] = true;
+      deviceTypeIpAddrOptionalArray[371] = true;
+      deviceTypeConfigurableArray[371] = false;
+    
+      deviceTypeStaticRegArray[372] = false;
+      deviceTypeUseDomainArray[372] = true;
+      deviceTypeIpAddrOptionalArray[372] = true;
+      deviceTypeConfigurableArray[372] = false;
+    
+      deviceTypeStaticRegArray[373] = false;
+      deviceTypeUseDomainArray[373] = true;
+      deviceTypeIpAddrOptionalArray[373] = true;
+      deviceTypeConfigurableArray[373] = true;
+    
+      deviceTypeStaticRegArray[374] = false;
+      deviceTypeUseDomainArray[374] = true;
+      deviceTypeIpAddrOptionalArray[374] = true;
+      deviceTypeConfigurableArray[374] = true;
+    
+      deviceTypeStaticRegArray[375] = false;
+      deviceTypeUseDomainArray[375] = true;
+      deviceTypeIpAddrOptionalArray[375] = true;
+      deviceTypeConfigurableArray[375] = false;
+    
+      deviceTypeStaticRegArray[376] = false;
+      deviceTypeUseDomainArray[376] = true;
+      deviceTypeIpAddrOptionalArray[376] = true;
+      deviceTypeConfigurableArray[376] = false;
+    
+      deviceTypeStaticRegArray[377] = false;
+      deviceTypeUseDomainArray[377] = true;
+      deviceTypeIpAddrOptionalArray[377] = true;
+      deviceTypeConfigurableArray[377] = false;
+    
+      deviceTypeStaticRegArray[378] = false;
+      deviceTypeUseDomainArray[378] = true;
+      deviceTypeIpAddrOptionalArray[378] = true;
+      deviceTypeConfigurableArray[378] = false;
+    
+      deviceTypeStaticRegArray[379] = false;
+      deviceTypeUseDomainArray[379] = true;
+      deviceTypeIpAddrOptionalArray[379] = true;
+      deviceTypeConfigurableArray[379] = false;
+    
+      deviceTypeStaticRegArray[380] = false;
+      deviceTypeUseDomainArray[380] = true;
+      deviceTypeIpAddrOptionalArray[380] = true;
+      deviceTypeConfigurableArray[380] = true;
+    
+      deviceTypeStaticRegArray[381] = false;
+      deviceTypeUseDomainArray[381] = true;
+      deviceTypeIpAddrOptionalArray[381] = true;
+      deviceTypeConfigurableArray[381] = false;
+    
+      deviceTypeStaticRegArray[382] = false;
+      deviceTypeUseDomainArray[382] = true;
+      deviceTypeIpAddrOptionalArray[382] = true;
+      deviceTypeConfigurableArray[382] = false;
+    
+      deviceTypeStaticRegArray[383] = false;
+      deviceTypeUseDomainArray[383] = true;
+      deviceTypeIpAddrOptionalArray[383] = true;
+      deviceTypeConfigurableArray[383] = true;
+    
+      deviceTypeStaticRegArray[384] = false;
+      deviceTypeUseDomainArray[384] = true;
+      deviceTypeIpAddrOptionalArray[384] = true;
+      deviceTypeConfigurableArray[384] = false;
+    
+      deviceTypeStaticRegArray[385] = false;
+      deviceTypeUseDomainArray[385] = false;
+      deviceTypeIpAddrOptionalArray[385] = false;
+      deviceTypeConfigurableArray[385] = false;
+    
+      deviceTypeStaticRegArray[386] = false;
+      deviceTypeUseDomainArray[386] = false;
+      deviceTypeIpAddrOptionalArray[386] = false;
+      deviceTypeConfigurableArray[386] = false;
+    
+      deviceTypeStaticRegArray[387] = false;
+      deviceTypeUseDomainArray[387] = false;
+      deviceTypeIpAddrOptionalArray[387] = false;
+      deviceTypeConfigurableArray[387] = false;
+    
+      deviceTypeStaticRegArray[388] = false;
+      deviceTypeUseDomainArray[388] = false;
+      deviceTypeIpAddrOptionalArray[388] = false;
+      deviceTypeConfigurableArray[388] = false;
+    
+      deviceTypeStaticRegArray[389] = false;
+      deviceTypeUseDomainArray[389] = false;
+      deviceTypeIpAddrOptionalArray[389] = false;
+      deviceTypeConfigurableArray[389] = false;
+    
+      deviceTypeStaticRegArray[390] = false;
+      deviceTypeUseDomainArray[390] = false;
+      deviceTypeIpAddrOptionalArray[390] = false;
+      deviceTypeConfigurableArray[390] = false;
+    
+      deviceTypeStaticRegArray[391] = false;
+      deviceTypeUseDomainArray[391] = true;
+      deviceTypeIpAddrOptionalArray[391] = true;
+      deviceTypeConfigurableArray[391] = false;
+    
+      deviceTypeStaticRegArray[392] = false;
+      deviceTypeUseDomainArray[392] = true;
+      deviceTypeIpAddrOptionalArray[392] = true;
+      deviceTypeConfigurableArray[392] = false;
+    
+      deviceTypeStaticRegArray[393] = false;
+      deviceTypeUseDomainArray[393] = true;
+      deviceTypeIpAddrOptionalArray[393] = true;
+      deviceTypeConfigurableArray[393] = false;
+    
+      deviceTypeStaticRegArray[394] = false;
+      deviceTypeUseDomainArray[394] = true;
+      deviceTypeIpAddrOptionalArray[394] = true;
+      deviceTypeConfigurableArray[394] = false;
+    
+      deviceTypeStaticRegArray[395] = false;
+      deviceTypeUseDomainArray[395] = true;
+      deviceTypeIpAddrOptionalArray[395] = true;
+      deviceTypeConfigurableArray[395] = false;
+    
+      deviceTypeStaticRegArray[396] = false;
+      deviceTypeUseDomainArray[396] = true;
+      deviceTypeIpAddrOptionalArray[396] = true;
+      deviceTypeConfigurableArray[396] = false;
+    
+      deviceTypeStaticRegArray[397] = false;
+      deviceTypeUseDomainArray[397] = false;
+      deviceTypeIpAddrOptionalArray[397] = false;
+      deviceTypeConfigurableArray[397] = false;
+    
+      deviceTypeStaticRegArray[398] = false;
+      deviceTypeUseDomainArray[398] = false;
+      deviceTypeIpAddrOptionalArray[398] = false;
+      deviceTypeConfigurableArray[398] = false;
+    
+      deviceTypeStaticRegArray[399] = false;
+      deviceTypeUseDomainArray[399] = false;
+      deviceTypeIpAddrOptionalArray[399] = false;
+      deviceTypeConfigurableArray[399] = false;
+    
+      deviceTypeStaticRegArray[400] = false;
+      deviceTypeUseDomainArray[400] = false;
+      deviceTypeIpAddrOptionalArray[400] = false;
+      deviceTypeConfigurableArray[400] = false;
+    
+      deviceTypeStaticRegArray[401] = false;
+      deviceTypeUseDomainArray[401] = false;
+      deviceTypeIpAddrOptionalArray[401] = false;
+      deviceTypeConfigurableArray[401] = false;
+    
+      deviceTypeStaticRegArray[402] = false;
+      deviceTypeUseDomainArray[402] = false;
+      deviceTypeIpAddrOptionalArray[402] = false;
+      deviceTypeConfigurableArray[402] = false;
+    
+      deviceTypeStaticRegArray[403] = false;
+      deviceTypeUseDomainArray[403] = true;
+      deviceTypeIpAddrOptionalArray[403] = true;
+      deviceTypeConfigurableArray[403] = false;
+    
+      deviceTypeStaticRegArray[404] = false;
+      deviceTypeUseDomainArray[404] = true;
+      deviceTypeIpAddrOptionalArray[404] = true;
+      deviceTypeConfigurableArray[404] = false;
+    
+      deviceTypeStaticRegArray[405] = false;
+      deviceTypeUseDomainArray[405] = true;
+      deviceTypeIpAddrOptionalArray[405] = true;
+      deviceTypeConfigurableArray[405] = false;
+    
+      deviceTypeStaticRegArray[406] = false;
+      deviceTypeUseDomainArray[406] = true;
+      deviceTypeIpAddrOptionalArray[406] = true;
+      deviceTypeConfigurableArray[406] = false;
+    
+      deviceTypeStaticRegArray[407] = false;
+      deviceTypeUseDomainArray[407] = true;
+      deviceTypeIpAddrOptionalArray[407] = true;
+      deviceTypeConfigurableArray[407] = false;
+    
+      deviceTypeStaticRegArray[408] = false;
+      deviceTypeUseDomainArray[408] = true;
+      deviceTypeIpAddrOptionalArray[408] = true;
+      deviceTypeConfigurableArray[408] = false;
+    
+      deviceTypeStaticRegArray[409] = false;
+      deviceTypeUseDomainArray[409] = true;
+      deviceTypeIpAddrOptionalArray[409] = true;
+      deviceTypeConfigurableArray[409] = false;
+    
+      deviceTypeStaticRegArray[410] = false;
+      deviceTypeUseDomainArray[410] = true;
+      deviceTypeIpAddrOptionalArray[410] = true;
+      deviceTypeConfigurableArray[410] = false;
+    
+      deviceTypeStaticRegArray[411] = false;
+      deviceTypeUseDomainArray[411] = false;
+      deviceTypeIpAddrOptionalArray[411] = false;
+      deviceTypeConfigurableArray[411] = false;
+    
+      deviceTypeStaticRegArray[412] = false;
+      deviceTypeUseDomainArray[412] = false;
+      deviceTypeIpAddrOptionalArray[412] = false;
+      deviceTypeConfigurableArray[412] = false;
+    
+      deviceTypeStaticRegArray[413] = false;
+      deviceTypeUseDomainArray[413] = false;
+      deviceTypeIpAddrOptionalArray[413] = false;
+      deviceTypeConfigurableArray[413] = false;
+    
+      deviceTypeStaticRegArray[414] = false;
+      deviceTypeUseDomainArray[414] = false;
+      deviceTypeIpAddrOptionalArray[414] = false;
+      deviceTypeConfigurableArray[414] = false;
+    
+      deviceTypeStaticRegArray[415] = false;
+      deviceTypeUseDomainArray[415] = true;
+      deviceTypeIpAddrOptionalArray[415] = true;
+      deviceTypeConfigurableArray[415] = true;
+    
+      deviceTypeStaticRegArray[416] = false;
+      deviceTypeUseDomainArray[416] = true;
+      deviceTypeIpAddrOptionalArray[416] = true;
+      deviceTypeConfigurableArray[416] = false;
+    
+      deviceTypeStaticRegArray[417] = false;
+      deviceTypeUseDomainArray[417] = true;
+      deviceTypeIpAddrOptionalArray[417] = true;
+      deviceTypeConfigurableArray[417] = false;
+    
+      trunkStaticRegArray[0] = false;
+      trunkUseDomainArray[0] = false;
+    
+
+  // this function get invoked when a device name is selected in the available
+  // device drop down box
+  function selectDevice()
+  {
+    var form = document.mainForm;
+    var deviceIndex=form.deviceName.selectedIndex;
+
+    ///hide configure device link if it exists
+    // configure device link only show for the current device the user is using
+    if (document.getElementById("tdConfigureDevice")){
+      document.getElementById("tdConfigureDevice").style.display="none";
+    }
+
+    // set deviceName
+    var deviceName = form.deviceName.options[deviceIndex].value;
+    if (deviceName=="New Device") {
+      // display the input for new device
+      document.getElementById("trNewDeviceName").style.display="";
+      document.getElementById("trNewDeviceType").style.display="";
+      displayNewDeviceLinePort();
+    } else {
+      // hide new device input
+      document.getElementById("trNewDeviceName").style.display="none";
+      document.getElementById("trNewDeviceType").style.display="none";
+      document.getElementById("trIpAddressOptional").style.display="none";
+      document.getElementById("trIpAddress").style.display="none";
+      document.getElementById("trMacAddress").style.display="none";
+      document.getElementById("trPhysicalLocation").style.display="none";
+      form.newDeviceName.value = "";
+      form.deviceType.value = "";
+      form.ipAddress.value = "";
+      form.port.value = "";
+
+      // hide or show contact text box
+      if (deviceStaticRegArray[deviceIndex]==true) {
+        document.getElementById("trDeviceSipUrl").style.display="";
+      } else {
+        document.getElementById("trDeviceSipUrl").style.display="none";
+      }
+
+      // if the deviceName is defaultDeviceName, show default line/port value
+      
+      if (form.deviceName.options[deviceIndex].value=="d0732503047 (Group)") {
+        form.deviceLinePort.value = "p0732503047";
+        form.deviceLinePortDomain.value = "p0732503047";
+        form.linePort.value = "p0732503047";
+        form.linePortDomain.value = "apeagers.com.au";
+        form.deviceDomain.value="apeagers.com.au";
+        form.staticSipUrl.value= "";
+        form.deviceStaticSipUrl.value="";
+      } else {
+        form.deviceLinePort.value = "";
+        form.deviceLinePortDomain.value = "";
+        form.linePort.value = "";
+        form.linePortDomain.value = "apeagers.com.au";
+        form.deviceDomain.value="apeagers.com.au";
+        form.staticSipUrl.value = "";
+        form.deviceStaticSipUrl.value = "";
+      }
+      // show line/port text box or line/port with domain
+      if (deviceUseDomainArray[deviceIndex]==true) {
+        // if useDomain flag is true, show domain
+        document.getElementById("trDeviceLinePortDomain").style.display="";
+        document.getElementById("trDeviceLinePort").style.display="none";
+      } else {
+        document.getElementById("trDeviceLinePort").style.display="";
+        document.getElementById("trDeviceLinePortDomain").style.display="none";
+        form.linePortDomain.value = "";
+      }
+    }
+  }
+
+  // this function get invoked when a trunk group name is selected in the
+  // available trunk group drop down box
+  function selectTrunkGroup()
+  {
+    var form = document.mainForm;
+    var tgIndex=form.trunkGroupName.selectedIndex;
+
+    var trunkGroupName = trim(form.trunkGroupName.options[tgIndex].value);
+    if (trunkGroupName == "None")
+     form.trunkGroupNameNone.value = true;
+    else
+     form.trunkGroupNameNone.value = false;
+
+    // hide or show contact text box
+    if (trunkStaticRegArray[tgIndex]==true) {
+      document.getElementById("trTGSipUrl").style.display="";
+    } else {
+      document.getElementById("trTGSipUrl").style.display="none";
+    }
+    // if the trunkGroupName selected is the trunkGroupName, show line/port value
+    if (trim(form.trunkGroupName.options[tgIndex].value)=="") {
+      form.trunkGroupLinePort.value = "p0732503047";
+      form.trunkGroupLinePortDomain.value = "p0732503047";
+      form.linePort.value = "p0732503047";
+      form.linePortDomain.value = "apeagers.com.au";
+      form.trunkGroupDomain.value="apeagers.com.au";
+      form.staticSipUrl.value= "";
+      form.trunkGroupStaticSipUrl.value="";
+    } else {
+      form.trunkGroupLinePort.value = "";
+      form.trunkGroupLinePortDomain.value = "";
+      form.trunkGroupLinePortReq.value = "";
+      form.trunkGroupLinePortDomainReq.value = "";
+      form.linePort.value = "";
+      form.linePortDomain.value = "apeagers.com.au";
+      form.trunkGroupDomain.value="apeagers.com.au";
+      form.staticSipUrl.value = "";
+      form.trunkGroupStaticSipUrl.value = "";
+    }
+
+    // show line/port text box
+    if (trunkUseDomainArray[tgIndex]==true) {
+      // if useDomain flag is true, show domain
+      document.getElementById("trTGTextBoxDomainReq").style.display="";
+      document.getElementById("trTGTextBoxDomain").style.display="none";
+      document.getElementById("trTGTextBox").style.display="none";
+      document.getElementById("trTGTextBoxReq").style.display="none";
+    } else {
+      if (trunkGroupName == "None")
+      {
+       document.getElementById("trTGTextBox").style.display="";
+       document.getElementById("trTGTextBoxReq").style.display="none";
+       document.getElementById("trTGTextBoxDomainReq").style.display="none";
+       document.getElementById("trTGTextBoxDomain").style.display="none";
+      }
+      else
+      {
+       document.getElementById("trTGTextBoxReq").style.display="";
+       document.getElementById("trTGTextBox").style.display="none";
+       document.getElementById("trTGTextBoxDomain").style.display="none";
+       document.getElementById("trTGTextBoxDomainReq").style.display="none";
+      }
+      form.linePortDomain.value = "";
+    }
+  }
+
+  function setLinePortDomain(select)
+  {
+    var selectedIndex = select.selectedIndex;
+    document.mainForm.linePortDomain.value=select.options[selectedIndex].value;
+  }
+
+  // this function is invoked when Device or Trunk Group or None radio button is selected
+  function displayFS()
+  {
+    var form = document.mainForm;
+    var divShow;
+    var divTemp;
+
+    // hide all four divs first
+    for (var i = 0; i < 3; i++) {
+      divTemp = eval("document.getElementById(\"div" + i + "\")");
+      divTemp.style.display="none";
+    }
+
+  
+    // find out which radio button get selected
+    // if radio button number 0 get selected, show device div
+    // if radio button number 1 get selected, show trunk group div
+    // if radio button number 3 get selected, show none div
+    for (var i = 0; i < form.deviceChoice.length; i++)
+    {
+      if (form.deviceChoice[i].checked)
+      {
+        if (form.deviceChoice[i].value == "Device Profile")
+        {
+            divShow = eval("document.getElementById(\"div0\")");
+            form.linePort.value="";
+            form.linePortDomain.value="";
+          
+              if (form.newDeviceName != null) {
+                form.newDeviceName.value="";
+              }
+              if (form.deviceType != null) {
+                form.deviceType.value = "";
+              }
+          
+            form.useDevice.value=true;
+            form.useTrunk.value=false;
+            
+            // get the selected device
+            var deviceIndex = form.deviceName.selectedIndex;
+            if (form.deviceName.options[deviceIndex].value != "" &&
+                form.deviceName.options[deviceIndex].value == "d0732503047 (Group)")
+            {
+              // if the device selected is the original device user was using,
+              // display the original linport, staticSipUrl
+              form.linePort.value="p0732503047";
+              form.linePortDomain.value="apeagers.com.au";
+              form.staticSipUrl.value="";
+            }
+
+            // display add new device if new device is selected
+            if (form.deviceName.options[deviceIndex].value != "" &&
+                form.deviceName.options[deviceIndex].value == "New Device")
+            {
+              document.getElementById("trNewDeviceName").style.display="";
+              document.getElementById("trNewDeviceType").style.display="";
+              displayNewDeviceLinePort();
+            }
+
+            if (deviceUseDomainArray[deviceIndex]==true){
+              // if use domain, set the linePort value from deviceLinePortDomain input
+              // also set the linePortDomain
+              form.linePort.value=form.deviceLinePortDomain.value;
+              var domainIndex = form.deviceDomain.selectedIndex;
+              form.linePortDomain.value = form.deviceDomain.options[domainIndex].value;
+            }else{
+              // if not use domain, set the linePort value from deviceLinePort input
+              form.linePort.value=form.deviceLinePort.value;
+              form.linePortDomain.value = "";
+            }
+
+            // hide or show contact text box
+            if (deviceStaticRegArray[deviceIndex]==true) {
+              document.getElementById("trDeviceSipUrl").style.display="";
+              form.staticSipUrl.value=form.deviceStaticSipUrl.value;
+            } else {
+              document.getElementById("trDeviceSipUrl").style.display="none";
+            }
+            break;
+
+          } else if (form.deviceChoice[i].value == "Trunking") {
+            divShow = eval("document.getElementById(\"div1\")");
+            form.linePort.value = "";
+            form.linePortDomain.value="";
+          
+              if (form.newDeviceName != null) {
+                form.newDeviceName.value="";
+              }
+              if (form.deviceType != null) {
+                form.deviceType.value = "";
+              }
+          
+
+            form.useDevice.value=false;
+            form.useTrunk.value=true;
+
+            var tgIndex = form.trunkGroupName.selectedIndex;
+
+            if (form.trunkGroupName.options[tgIndex].value != "" &&
+                form.trunkGroupName.options[tgIndex].value == "None")
+            {
+              // if the trunk selected is the original trunk user was using,
+              // display the original linport, staticSipUrl
+              form.linePort.value="";
+              form.linePortDomain.value="apeagers.com.au";
+              form.staticSipUrl.value="";
+            }
+
+
+            if (trunkUseDomainArray[tgIndex]==true){
+              // if use domain, set the linePort value from trunkGroupLinePortDomain input
+              // also set the linePortDomain
+              form.linePort.value=form.trunkGroupLinePortDomain.value;
+              var domainIndex = form.trunkGroupDomain.selectedIndex;
+              form.linePortDomain.value = form.trunkGroupDomain.options[domainIndex].value;
+            }else{
+              // if not use domain, set the linePort value from trunkGroupLinePort input
+              form.linePort.value=form.trunkGroupLinePort.value;
+              form.linePortDomain.value = "";
+            }
+
+            // hide or show contact text box
+            if (trunkStaticRegArray[tgIndex]==true) {
+              document.getElementById("trTGSipUrl").style.display="";
+              form.staticSipUrl.value=document.mainForm.trunkGroupStaticSipUrl.value;
+            } else {
+              document.getElementById("trTGSipUrl").style.display="none";
+            }
+
+            break;
+          } else {
+            divShow = eval("document.getElementById(\"div2\")");
+            form.deviceType.value="";
+            form.useDevice.value=false;
+            form.useTrunk.value=false;
+            form.linePort.value="";
+            form.linePortDomain.value="";
+            form.staticSipUrl.value="";
+            break;
+          }
+
+
+        break;
+      }
+    }
+
+    //display  the selected div
+    divShow.style.display="";
+  }
+
+  function setStaticSipUrl(url)
+  {
+    document.mainForm.staticSipUrl.value=url.value;
+  }
+
+  function setLinePort(port)
+  {
+    document.mainForm.linePort.value=port.value;
+  }
+
+  function setIpAddress(ip)
+  {
+    document.mainForm.ipAddress.value = ip.value;
+  }
+
+  function setPort(port)
+  {
+    document.mainForm.port.value = port.value;
+  }
+
+  // this function get invoked when new device is selected in the device drop down box
+  function displayNewDeviceLinePort()
+  {
+    var selectedIndex = document.mainForm.newDeviceType.selectedIndex;
+    document.mainForm.deviceType.value = document.mainForm.newDeviceType.value;
+    var staticReg = deviceTypeStaticRegArray[selectedIndex];
+    var useASAddr = deviceTypeUseDomainArray[selectedIndex];
+    var ipAddrOptional = deviceTypeIpAddrOptionalArray[selectedIndex];
+    var configurableType = deviceTypeConfigurableArray[selectedIndex];
+    var isIMSMode = document.mainForm.isIMSMode.value;
+    if (isIMSMode == "false") {
+      if (ipAddrOptional) {
+        document.getElementById("trIpAddressOptional").style.display="";
+        document.getElementById("trIpAddress").style.display="none";
+      } else {
+        document.getElementById("trIpAddress").style.display="";
+        document.getElementById("trIpAddressOptional").style.display="none";
+      }
+      document.getElementById("trMacAddress").style.display="";
+    } else if (isIMSMode == "true"){
+      document.getElementById("trPhysicalLocation").style.display="";
+      document.getElementById("trIpAddress").style.display="none";
+      document.getElementById("trIpAddressOptional").style.display="none";
+      if (!configurableType)
+        document.getElementById("trMacAddress").style.display="none";
+      else
+        document.getElementById("trMacAddress").style.display="";
+    }
+
+    if (staticReg == true){
+      document.getElementById("trDeviceSipUrl").style.display="";
+    } else {
+      document.getElementById("trDeviceSipUrl").style.display="none";
+    }
+
+    document.mainForm.linePort.value = "";
+    document.mainForm.deviceLinePort.value = "";
+    document.mainForm.deviceLinePortDomain.value = "";
+    document.mainForm.linePortDomain.value = "apeagers.com.au";
+    document.mainForm.staticSipUrl.value= "";
+    document.mainForm.deviceStaticSipUrl.value= "";
+
+    if (useASAddr == true){
+      document.getElementById("trDeviceLinePortDomain").style.display="";
+      document.getElementById("trDeviceLinePort").style.display="none";
+      var domainIndex = document.mainForm.deviceDomain.selectedIndex;
+      document.mainForm.linePortDomain.value = document.mainForm.deviceDomain.options[domainIndex].value;
+    }else{
+      document.getElementById("trDeviceLinePort").style.display="";
+      document.getElementById("trDeviceLinePortDomain").style.display="none";
+      document.mainForm.linePortDomain.value= "";
+    }
+
+  }
+
+</script>
+
+<input type=hidden name="extensionMinLength" value="4">
+<input type=hidden name="extensionMaxLength" value="4">
+<input type=hidden name="extensionDefaultLength" value="4">
+<input type=hidden name="readOnlyNumber"  value="false">
+<input type=hidden name="assignedDn"  value="732503047">
+<input type=hidden name="dnActivated"  value="true">
+<input type=hidden name="numActEnabled" value="false">
+<input type=hidden name="trunkGroupNameNone" value="true">
+
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+
+<table class="enduserbody">
+  <tr>
+    <td width="20"><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td>
+    <td width="100%">
+
+
+<table border=0>
+        <tr>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+<TR>
+<TD align="right">Phone Number: </TD>
+<TD align="left"><select name="phoneNumber" id="phoneNumber" onChange="populateActivateStatus(this.form)" >
+<option value="" >None
+<option value="732503044" >732503044
+<option value="732503045" >732503045
+<option value="732503047" selected>732503047
+<option value="732503048" >732503048
+<option value="732503053" >732503053
+<option value="732503054" >732503054
+<option value="732503056" >732503056
+<option value="732503057" >732503057
+<option value="732503058" >732503058
+<option value="732503059" >732503059
+<option value="732503068" >732503068
+<option value="732503069" >732503069
+<option value="732503072" >732503072
+<option value="732503073" >732503073
+<option value="732503074" >732503074
+<option value="732503095" >732503095
+</select></TD>
+<TD align="left" style='display:' id="tdDnActivated">Activated</TD>
+<TD align="left" style='display:none' id="tdDnNotActivated">Not Activated</TD>
+</TR>
+
+<TR>
+<TD align="right" nowrap="nowrap">Extension: </TD>
+<TD align="left"><input type=text name="extension" id="extension" value='3047' size=4 maxLength=4></TD>
+</TR>
+
+<table width="100%" border=0>
+
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<input type=hidden name="deviceType" value="">
+<input type=hidden name="linePort" value="p0732503047">
+<input type=hidden name="staticSipUrl" value="">
+<input type=hidden name="linePortDomain" value="apeagers.com.au">
+<input type=hidden name="readOnlyDevice"  value="false">
+<input type=hidden name="isIMSMode" value="false">
+<input type=hidden name="useDevice" value="true">
+<input type=hidden name="useTrunk" value="false">
+<input type=hidden name="ipAddress" value="">
+<input type=hidden name="port" value="">
+
+<TR>
+<TD align="left"><input type='radio' name="deviceChoice" value='Device Profile' onClick="displayFS()" checked >Identity/Device Profile&nbsp;&nbsp;&nbsp;<input type='radio' name="deviceChoice" value='Trunking' onClick="displayFS()" >Trunking&nbsp;&nbsp;&nbsp;<input type='radio' name="deviceChoice" value='None' onClick="displayFS()" >None&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+
+<TR>
+<TD width="100%"><DIV ID="div0"style="display:"><fieldset class="fldsetline">
+<legend class="fldset"> Identity/Device Profile </legend>
+<table cellspacing='0' border=0>
+
+<TR ID="trIadName" STYLE="display:">
+<TD align="right">Identity/Device Profile Name: </TD>
+<TD align="left"><select name="deviceName" id="deviceName" onChange="selectDevice()" >
+<option value="d0732503001 (Group)" >d0732503001 (Group)
+<option value="d0732503002 (Group)" >d0732503002 (Group)
+<option value="d0732503003 (Group)" >d0732503003 (Group)
+<option value="d0732503004 (Group)" >d0732503004 (Group)
+<option value="d0732503005 (Group)" >d0732503005 (Group)
+<option value="d0732503006 (Group)" >d0732503006 (Group)
+<option value="d0732503007 (Group)" >d0732503007 (Group)
+<option value="d0732503008 (Group)" >d0732503008 (Group)
+<option value="d0732503009 (Group)" >d0732503009 (Group)
+<option value="d0732503010 (Group)" >d0732503010 (Group)
+<option value="d0732503011 (Group)" >d0732503011 (Group)
+<option value="d0732503012 (Group)" >d0732503012 (Group)
+<option value="d0732503013 (Group)" >d0732503013 (Group)
+<option value="d0732503014 (Group)" >d0732503014 (Group)
+<option value="d0732503015 (Group)" >d0732503015 (Group)
+<option value="d0732503016 (Group)" >d0732503016 (Group)
+<option value="d0732503017 (Group)" >d0732503017 (Group)
+<option value="d0732503019 (Group)" >d0732503019 (Group)
+<option value="d0732503020 (Group)" >d0732503020 (Group)
+<option value="d0732503021 (Group)" >d0732503021 (Group)
+<option value="d0732503022 (Group)" >d0732503022 (Group)
+<option value="d0732503023 (Group)" >d0732503023 (Group)
+<option value="d0732503024 (Group)" >d0732503024 (Group)
+<option value="d0732503025 (Group)" >d0732503025 (Group)
+<option value="d0732503029 (Group)" >d0732503029 (Group)
+<option value="d0732503030 (Group)" >d0732503030 (Group)
+<option value="d0732503031 (Group)" >d0732503031 (Group)
+<option value="d0732503032 (Group)" >d0732503032 (Group)
+<option value="d0732503033 (Group)" >d0732503033 (Group)
+<option value="d0732503034 (Group)" >d0732503034 (Group)
+<option value="d0732503035 (Group)" >d0732503035 (Group)
+<option value="d0732503036 (Group)" >d0732503036 (Group)
+<option value="d0732503040 (Group)" >d0732503040 (Group)
+<option value="d0732503041 (Group)" >d0732503041 (Group)
+<option value="d0732503042 (Group)" >d0732503042 (Group)
+<option value="d0732503043 (Group)" >d0732503043 (Group)
+<option value="d0732503046 (Group)" >d0732503046 (Group)
+<option value="d0732503047 (Group)" selected>d0732503047 (Group)
+<option value="d0732503050 (Group)" >d0732503050 (Group)
+<option value="d0732503051 (Group)" >d0732503051 (Group)
+<option value="d0732503060 (Group)" >d0732503060 (Group)
+<option value="d0732503061 (Group)" >d0732503061 (Group)
+<option value="d0732503062 (Group)" >d0732503062 (Group)
+<option value="d0732503063 (Group)" >d0732503063 (Group)
+<option value="d0732503070 (Group)" >d0732503070 (Group)
+<option value="New Device" >New Identity/Device Profile (Group)
+</select></TD>
+<TD align="left" id="tdConfigureDevice"><a class=headerLink href="/Group/DeviceInventory/Modify/Profile/index.jsp?name=d0732503047">Configure Identity/Device Profile</a></TD>
+</TR>
+
+<TR ID="trNewDeviceName" STYLE="display:none">
+<TD align="right" nowrap="nowrap">* New Identity/Device Profile Name: </TD>
+<TD align="left" colspan="2"><input type=text name="newDeviceName" id="newDeviceName" value='' size=20 maxLength=20></TD>
+</TR>
+
+<TR ID="trNewDeviceType" STYLE="display:none">
+<TD align="right">Identity/Device Profile Type: </TD>
+<TD align="left"><select name="newDeviceType" id="newDeviceType" onChange="displayNewDeviceLinePort()" >
+<option value="2Wire HomePortal" selected>2Wire HomePortal
+<option value="ACT P103SLC" >ACT P103SLC
+<option value="ACT P104SLD" >ACT P104SLD
+<option value="Aastra 480i" >Aastra 480i
+<option value="Aastra 480i CT" >Aastra 480i CT
+<option value="Aastra 53i" >Aastra 53i
+<option value="Aastra 55i" >Aastra 55i
+<option value="Aastra 57i" >Aastra 57i
+<option value="Aastra 57iCT" >Aastra 57iCT
+<option value="Aastra 9112i" >Aastra 9112i
+<option value="Aastra 9133i" >Aastra 9133i
+<option value="Aastra Ascotel IntelliGate 150 300" >Aastra Ascotel IntelliGate 150 300
+<option value="Aastra Ascotel IntelliGate 150 300 (sp)" >Aastra Ascotel IntelliGate 150 300 (sp)
+<option value="Aastra Ascotel IntelliGate 20x5" >Aastra Ascotel IntelliGate 20x5
+<option value="Aastra Ascotel IntelliGate 20x5 (sp)" >Aastra Ascotel IntelliGate 20x5 (sp)
+<option value="Adtran TA604" >Adtran TA604
+<option value="Adtran TA608" >Adtran TA608
+<option value="Adtran TA612" >Adtran TA612
+<option value="Adtran TA616" >Adtran TA616
+<option value="Adtran TA624" >Adtran TA624
+<option value="Adtran TA624 (sp)" >Adtran TA624 (sp)
+<option value="Adtran TA900 Series-Trunk" >Adtran TA900 Series-Trunk
+<option value="Adtran TA900 Series-Trunk (sp)" >Adtran TA900 Series-Trunk (sp)
+<option value="Adtran TA900 Series-Trunk Reg" >Adtran TA900 Series-Trunk Reg
+<option value="Adtran TA900 Series-Trunk Reg (sp)" >Adtran TA900 Series-Trunk Reg (sp)
+<option value="Adtran TA904" >Adtran TA904
+<option value="Adtran TA904 MGCP" >Adtran TA904 MGCP
+<option value="Adtran TA908" >Adtran TA908
+<option value="Adtran TA908 MGCP" >Adtran TA908 MGCP
+<option value="Adtran TA912" >Adtran TA912
+<option value="Adtran TA912 MGCP" >Adtran TA912 MGCP
+<option value="Adtran TA916" >Adtran TA916
+<option value="Adtran TA916 MGCP" >Adtran TA916 MGCP
+<option value="Adtran TA924" >Adtran TA924
+<option value="Adtran TA924 (sp)" >Adtran TA924 (sp)
+<option value="Adtran TA924 MGCP" >Adtran TA924 MGCP
+<option value="Arris 402P/502A/502G/602A/602G/632" >Arris 402P/502A/502G/602A/602G/632
+<option value="Arris 504A/504G/604A/604G" >Arris 504A/504G/604A/604G
+<option value="Arris 508/608" >Arris 508/608
+<option value="Arris 512" >Arris 512
+<option value="Arris TM401 TM501 SIP" >Arris TM401 TM501 SIP
+<option value="Arris TM401 TM501 SIP INFO" >Arris TM401 TM501 SIP INFO
+<option value="Arris TM401/TM501 NCS" >Arris TM401/TM501 NCS
+<option value="Arris TM402 TM502 SIP" >Arris TM402 TM502 SIP
+<option value="Arris TM402 TM502 SIP INFO" >Arris TM402 TM502 SIP INFO
+<option value="Arris TM402/TM502 NCS" >Arris TM402/TM502 NCS
+<option value="Arris TM402/TM502 NCS Payphone" >Arris TM402/TM502 NCS Payphone
+<option value="Arris TM508 NCS" >Arris TM508 NCS
+<option value="Arris TM508 SIP" >Arris TM508 SIP
+<option value="Arris TM508 SIP INFO" >Arris TM508 SIP INFO
+<option value="Arris TM512 NCS" >Arris TM512 NCS
+<option value="Arris TM512 SIP" >Arris TM512 SIP
+<option value="Arris TM512 SIP INFO" >Arris TM512 SIP INFO
+<option value="AsteriskNOW" >AsteriskNOW
+<option value="AsteriskNOW (sp)" >AsteriskNOW (sp)
+<option value="AudioCodes MP-102" >AudioCodes MP-102
+<option value="AudioCodes MP-104" >AudioCodes MP-104
+<option value="AudioCodes MP-108" >AudioCodes MP-108
+<option value="AudioCodes MP-112" >AudioCodes MP-112
+<option value="AudioCodes MP-114" >AudioCodes MP-114
+<option value="AudioCodes MP-118" >AudioCodes MP-118
+<option value="AudioCodes MP-124" >AudioCodes MP-124
+<option value="AudioCodes MP-124 (sp)" >AudioCodes MP-124 (sp)
+<option value="AudioCodes MP-201" >AudioCodes MP-201
+<option value="AudioCodes MP-202" >AudioCodes MP-202
+<option value="AudioCodes MP-204" >AudioCodes MP-204
+<option value="AudioCodes Mediant 1000-Trunk" >AudioCodes Mediant 1000-Trunk
+<option value="AudioCodes Mediant 1000-Trunk (sp)" >AudioCodes Mediant 1000-Trunk (sp)
+<option value="AudioCodes Mediant 1000-Trunk Reg" >AudioCodes Mediant 1000-Trunk Reg
+<option value="AudioCodes Mediant 1000-Trunk Reg (sp)" >AudioCodes Mediant 1000-Trunk Reg (sp)
+<option value="AudioCodes Mediant 2000-Trunk" >AudioCodes Mediant 2000-Trunk
+<option value="AudioCodes Mediant 2000-Trunk (sp)" >AudioCodes Mediant 2000-Trunk (sp)
+<option value="AudioCodes Mediant 2000-Trunk Reg" >AudioCodes Mediant 2000-Trunk Reg
+<option value="AudioCodes Mediant 2000-Trunk Reg (sp)" >AudioCodes Mediant 2000-Trunk Reg (sp)
+<option value="Avaya Quick Edition" >Avaya Quick Edition
+<option value="Avaya Quick Edition (sp)" >Avaya Quick Edition (sp)
+<option value="Azatel azacall 200" >Azatel azacall 200
+<option value="BellSouth Softphone" >BellSouth Softphone
+<option value="BroadWorks Communicator" >BroadWorks Communicator
+<option value="BroadWorks Media Server" >BroadWorks Media Server
+<option value="C&S Telecom CIP-6500" >C&S Telecom CIP-6500
+<option value="CMS Generic SIP Int Proxy Domain GW" >CMS Generic SIP Int Proxy Domain GW
+<option value="Carrier Access 3500" >Carrier Access 3500
+<option value="Carrier Access 3500 (sp)" >Carrier Access 3500 (sp)
+<option value="Carrier Access Adit 3104" >Carrier Access Adit 3104
+<option value="Carrier Access Adit 600-48" >Carrier Access Adit 600-48
+<option value="Carrier Access Adit 600-48 (sp)" >Carrier Access Adit 600-48 (sp)
+<option value="Cisco 1760" >Cisco 1760
+<option value="Cisco 1760-Trunk" >Cisco 1760-Trunk
+<option value="Cisco 1760-Trunk (sp)" >Cisco 1760-Trunk (sp)
+<option value="Cisco 2421-16" >Cisco 2421-16
+<option value="Cisco 2421-8" >Cisco 2421-8
+<option value="Cisco 2430-24" >Cisco 2430-24
+<option value="Cisco 2430-24 (SIP)" >Cisco 2430-24 (SIP)
+<option value="Cisco 2430-24 (SIP)(sp)" >Cisco 2430-24 (SIP)(sp)
+<option value="Cisco 2430-24 (SIP-INFO)" >Cisco 2430-24 (SIP-INFO)
+<option value="Cisco 2430-24 (SIP-INFO)(sp)" >Cisco 2430-24 (SIP-INFO)(sp)
+<option value="Cisco 2430-24 (sp)" >Cisco 2430-24 (sp)
+<option value="Cisco 2431-16" >Cisco 2431-16
+<option value="Cisco 2431-16 (SIP)" >Cisco 2431-16 (SIP)
+<option value="Cisco 2431-16 (SIP-INFO)" >Cisco 2431-16 (SIP-INFO)
+<option value="Cisco 2431-8" >Cisco 2431-8
+<option value="Cisco 2431-8 (SIP)" >Cisco 2431-8 (SIP)
+<option value="Cisco 2431-8 (SIP-INFO)" >Cisco 2431-8 (SIP-INFO)
+<option value="Cisco 2432-24" >Cisco 2432-24
+<option value="Cisco 2432-24 (SIP)" >Cisco 2432-24 (SIP)
+<option value="Cisco 2432-24 (SIP)(sp)" >Cisco 2432-24 (SIP)(sp)
+<option value="Cisco 2432-24 (SIP-INFO)" >Cisco 2432-24 (SIP-INFO)
+<option value="Cisco 2432-24 (SIP-INFO)(sp)" >Cisco 2432-24 (SIP-INFO)(sp)
+<option value="Cisco 2432-24 (sp)" >Cisco 2432-24 (sp)
+<option value="Cisco 243x-Trunk" >Cisco 243x-Trunk
+<option value="Cisco 2600-Trunk" >Cisco 2600-Trunk
+<option value="Cisco 2600-Trunk (sp)" >Cisco 2600-Trunk (sp)
+<option value="Cisco 27xx-Trunk" >Cisco 27xx-Trunk
+<option value="Cisco 27xx-Trunk (sp)" >Cisco 27xx-Trunk (sp)
+<option value="Cisco 2801 (SIP-INFO)" >Cisco 2801 (SIP-INFO)
+<option value="Cisco 2811 (SIP-INFO)" >Cisco 2811 (SIP-INFO)
+<option value="Cisco 2811 CUBE (TIPT)" >Cisco 2811 CUBE (TIPT)
+<option value="Cisco 2821 (SIP-INFO)" >Cisco 2821 (SIP-INFO)
+<option value="Cisco 2851 (SIP-INFO)" >Cisco 2851 (SIP-INFO)
+<option value="Cisco 28xx-Trunk" >Cisco 28xx-Trunk
+<option value="Cisco 36xx-Trunk" >Cisco 36xx-Trunk
+<option value="Cisco 36xx-Trunk (sp)" >Cisco 36xx-Trunk (sp)
+<option value="Cisco 37xx-Trunk" >Cisco 37xx-Trunk
+<option value="Cisco 37xx-Trunk (sp)" >Cisco 37xx-Trunk (sp)
+<option value="Cisco 3825 (SIP-INFO)" >Cisco 3825 (SIP-INFO)
+<option value="Cisco 3845 (SIP-INFO)" >Cisco 3845 (SIP-INFO)
+<option value="Cisco 53xx-Trunk" >Cisco 53xx-Trunk
+<option value="Cisco 53xx-Trunk (sp)" >Cisco 53xx-Trunk (sp)
+<option value="Cisco 5400-Trunk" >Cisco 5400-Trunk
+<option value="Cisco 5400-Trunk (sp)" >Cisco 5400-Trunk (sp)
+<option value="Cisco 7905" >Cisco 7905
+<option value="Cisco 7912" >Cisco 7912
+<option value="Cisco 7940" >Cisco 7940
+<option value="Cisco 7960" >Cisco 7960
+<option value="Cisco ATA-186" >Cisco ATA-186
+<option value="Cisco Call Manager" >Cisco Call Manager
+<option value="Cisco Call Manager (sp)" >Cisco Call Manager (sp)
+<option value="Cisco Call Manager Express" >Cisco Call Manager Express
+<option value="Cisco Call Manager Express (sp)" >Cisco Call Manager Express (sp)
+<option value="Cisco IOS-Trunk" >Cisco IOS-Trunk
+<option value="Cisco IOS-Trunk Reg" >Cisco IOS-Trunk Reg
+<option value="Cisco IOS-Trunk Reg (sp)" >Cisco IOS-Trunk Reg (sp)
+<option value="Cisco VG224 (SIP-INFO)" >Cisco VG224 (SIP-INFO)
+<option value="Citel CitelLink" >Citel CitelLink
+<option value="Citel CitelLink (sp)" >Citel CitelLink (sp)
+<option value="Citel Handset GW-TIG2" >Citel Handset GW-TIG2
+<option value="Citel Handset GWIII" >Citel Handset GWIII
+<option value="CounterPath eyeBeam" >CounterPath eyeBeam
+<option value="CrystalVoice Remote Extension" >CrystalVoice Remote Extension
+<option value="D-Link DG-102S" >D-Link DG-102S
+<option value="DMS Bootstrap" >DMS Bootstrap
+<option value="Dataflex ViNE Trunk" >Dataflex ViNE Trunk
+<option value="Dataflex ViNE Trunk (sp)" >Dataflex ViNE Trunk (sp)
+<option value="Dataflex Vine Trunk 2160p (TIPT)" >Dataflex Vine Trunk 2160p (TIPT)
+<option value="Dataflex Vine Trunk 2404b (TIPT)" >Dataflex Vine Trunk 2404b (TIPT)
+<option value="Dataflex Vine Trunk 2460p (TIPT)" >Dataflex Vine Trunk 2460p (TIPT)
+<option value="Elite VP1000" >Elite VP1000
+<option value="Empirix Hammer MGCP" >Empirix Hammer MGCP
+<option value="Epygi Quadro2x_4x_16x" >Epygi Quadro2x_4x_16x
+<option value="Generic MGCP" >Generic MGCP
+<option value="Generic SIP Gateway - Trusted (sp)" >Generic SIP Gateway - Trusted (sp)
+<option value="Generic SIP IP PBX Single Registration" >Generic SIP IP PBX Single Registration
+<option value="Generic SIP IP-PBX Proxy" >Generic SIP IP-PBX Proxy
+<option value="Generic SIP PBX" >Generic SIP PBX
+<option value="Generic SIP PBX (sp)" >Generic SIP PBX (sp)
+<option value="Generic SIP PBX Single Registration" >Generic SIP PBX Single Registration
+<option value="Generic SIP PBX Single Registration (sp)" >Generic SIP PBX Single Registration (sp)
+<option value="Generic SIP Phone" >Generic SIP Phone
+<option value="Generic SIP Smart (Proxy Addr)" >Generic SIP Smart (Proxy Addr)
+<option value="Generic SIP Static Registration" >Generic SIP Static Registration
+<option value="Generic SIP Static Registration (sp)" >Generic SIP Static Registration (sp)
+<option value="Generic SIP Std" >Generic SIP Std
+<option value="Generic SIP Std (Proxy Addr)" >Generic SIP Std (Proxy Addr)
+<option value="Generic SIP Std BW CWT (Proxy Addr)(sp)" >Generic SIP Std BW CWT (Proxy Addr)(sp)
+<option value="Generic SIP Std BW CWT (sp)" >Generic SIP Std BW CWT (sp)
+<option value="Generic SIP-Trunk" >Generic SIP-Trunk
+<option value="Generic Sip Intelligent Mobile GW (sp)" >Generic Sip Intelligent Mobile GW (sp)
+<option value="Generic TDM Overlay (Proxy Addr)(sp)" >Generic TDM Overlay (Proxy Addr)(sp)
+<option value="Generic TDM Overlay (sp)" >Generic TDM Overlay (sp)
+<option value="Generic Trusted_Registering IP-PBX" >Generic Trusted_Registering IP-PBX
+<option value="Generic Wireless (sp)" >Generic Wireless (sp)
+<option value="Grandstream BudgeTone" >Grandstream BudgeTone
+<option value="Grandstream GXW-4004" >Grandstream GXW-4004
+<option value="Grandstream GXW-4008" >Grandstream GXW-4008
+<option value="Grandstream HT-502" >Grandstream HT-502
+<option value="Grandstream Handytone-486_286" >Grandstream Handytone-486_286
+<option value="Huawei MD5500 (sp)" >Huawei MD5500 (sp)
+<option value="IPUnity Harmony 6000 (Proxy Addr)(sp)" >IPUnity Harmony 6000 (Proxy Addr)(sp)
+<option value="IPUnity Harmony 6000 (sp)" >IPUnity Harmony 6000 (sp)
+<option value="InnoMedia 3308" >InnoMedia 3308
+<option value="InnoMedia 3328-1" >InnoMedia 3328-1
+<option value="InnoMedia 3328-2" >InnoMedia 3328-2
+<option value="InnoMedia 3328-4" >InnoMedia 3328-4
+<option value="InnoMedia 3328-8" >InnoMedia 3328-8
+<option value="InnoMedia 6328-2" >InnoMedia 6328-2
+<option value="LG Electronics LDK-24 (sp)" >LG Electronics LDK-24 (sp)
+<option value="LG Electronics LIP-6812" >LG Electronics LIP-6812
+<option value="LG Electronics LIP-6830" >LG Electronics LIP-6830
+<option value="Linksys PAP2" >Linksys PAP2
+<option value="Linksys PAP2T" >Linksys PAP2T
+<option value="Linksys RTP300_WRTP54G" >Linksys RTP300_WRTP54G
+<option value="Linksys SPA-1000 1001" >Linksys SPA-1000 1001
+<option value="Linksys SPA-2000 2002 2100" >Linksys SPA-2000 2002 2100
+<option value="Linksys SPA-2102" >Linksys SPA-2102
+<option value="Linksys SPA-2102 DMS" >Linksys SPA-2102 DMS
+<option value="Linksys SPA-3000 3100" >Linksys SPA-3000 3100
+<option value="Linksys SPA-3102" >Linksys SPA-3102
+<option value="Linksys SPA-8000" >Linksys SPA-8000
+<option value="Linksys SPA-8000 DMS" >Linksys SPA-8000 DMS
+<option value="Linksys SPA-841" >Linksys SPA-841
+<option value="Linksys SPA-9000" >Linksys SPA-9000
+<option value="Linksys SPA-9000 (sp)" >Linksys SPA-9000 (sp)
+<option value="Linksys SPA-901_921_922" >Linksys SPA-901_921_922
+<option value="Linksys SPA-941_942" >Linksys SPA-941_942
+<option value="Linksys SPA-961_962" >Linksys SPA-961_962
+<option value="Local Exchange-Forwarding Override (sp)" >Local Exchange-Forwarding Override (sp)
+<option value="MESSAGEmanager Fax Server" >MESSAGEmanager Fax Server
+<option value="MediaTrix 1102" >MediaTrix 1102
+<option value="MediaTrix 1104" >MediaTrix 1104
+<option value="MediaTrix 1124" >MediaTrix 1124
+<option value="MediaTrix 1124 (sp)" >MediaTrix 1124 (sp)
+<option value="MediaTrix 2102" >MediaTrix 2102
+<option value="Microsoft Office Communicator" >Microsoft Office Communicator
+<option value="Mitel 5055" >Mitel 5055
+<option value="Mitel 5212" >Mitel 5212
+<option value="Mitel 5215" >Mitel 5215
+<option value="Mitel 5220" >Mitel 5220
+<option value="Mitel 5224" >Mitel 5224
+<option value="Mitel 5235" >Mitel 5235
+<option value="Mitel Navigator" >Mitel Navigator
+<option value="Moimstone IP250C" >Moimstone IP250C
+<option value="Motorola SBV5120" >Motorola SBV5120
+<option value="Motorola SBV5121" >Motorola SBV5121
+<option value="Motorola SBV5220" >Motorola SBV5220
+<option value="Motorola SBV5220 Payphone" >Motorola SBV5220 Payphone
+<option value="Nokia E Series Mobile" >Nokia E Series Mobile
+<option value="Non-Intell Local Exchange Fwd-Ovrd (sp)" >Non-Intell Local Exchange Fwd-Ovrd (sp)
+<option value="Occam BLC 1200-24" >Occam BLC 1200-24
+<option value="Occam BLC 6000-24" >Occam BLC 6000-24
+<option value="Occam BLC 6000-24 (sp)" >Occam BLC 6000-24 (sp)
+<option value="Occam BLC 6000-48" >Occam BLC 6000-48
+<option value="Occam BLC 6000-48 (sp)" >Occam BLC 6000-48 (sp)
+<option value="Octtel SP1632-16" >Octtel SP1632-16
+<option value="Octtel SP1632-16 (sp)" >Octtel SP1632-16 (sp)
+<option value="Octtel SP1632-32" >Octtel SP1632-32
+<option value="Octtel SP1632-32 (sp)" >Octtel SP1632-32 (sp)
+<option value="Octtel SP1632-8" >Octtel SP1632-8
+<option value="Octtel SP200-1" >Octtel SP200-1
+<option value="Octtel SP200-2" >Octtel SP200-2
+<option value="Octtel SP4220-1" >Octtel SP4220-1
+<option value="Octtel SP4220-2" >Octtel SP4220-2
+<option value="Octtel SP4220-3" >Octtel SP4220-3
+<option value="Octtel SP4220-4" >Octtel SP4220-4
+<option value="Octtel SP8440-4" >Octtel SP8440-4
+<option value="Octtel SP8440-6" >Octtel SP8440-6
+<option value="Octtel SP8440-8" >Octtel SP8440-8
+<option value="OneAccess ONE Series-Trunk Reg" >OneAccess ONE Series-Trunk Reg
+<option value="OneAccess ONE Series-Trunk Reg (sp)" >OneAccess ONE Series-Trunk Reg (sp)
+<option value="Patton SmartNode 4112_4522" >Patton SmartNode 4112_4522
+<option value="Patton SmartNode 4114_4524" >Patton SmartNode 4114_4524
+<option value="Patton SmartNode 4116_4526" >Patton SmartNode 4116_4526
+<option value="Patton SmartNode 4118_4528" >Patton SmartNode 4118_4528
+<option value="Patton SmartNode 4912" >Patton SmartNode 4912
+<option value="Patton SmartNode 4916" >Patton SmartNode 4916
+<option value="Patton SmartNode 4924" >Patton SmartNode 4924
+<option value="Patton SmartNode 4932" >Patton SmartNode 4932
+<option value="Patton SmartNode Series-Trunk" >Patton SmartNode Series-Trunk
+<option value="Patton SmartNode Series-Trunk (sp)" >Patton SmartNode Series-Trunk (sp)
+<option value="Pingtel xpressa" >Pingtel xpressa
+<option value="Polycom HDX 4000" >Polycom HDX 4000
+<option value="Polycom HDX 4000 (TIPT)" >Polycom HDX 4000 (TIPT)
+<option value="Polycom HDX 6000" >Polycom HDX 6000
+<option value="Polycom HDX 7000" >Polycom HDX 7000
+<option value="Polycom HDX 8000" >Polycom HDX 8000
+<option value="Polycom HDX 9000" >Polycom HDX 9000
+<option value="Polycom Kirk DECT KWS300 (TIPT)" >Polycom Kirk DECT KWS300 (TIPT)
+<option value="Polycom Kirk DECT KWS600 (TIPT)" >Polycom Kirk DECT KWS600 (TIPT)
+<option value="Polycom Kirk DECT KWS6000 (TIPT)" >Polycom Kirk DECT KWS6000 (TIPT)
+<option value="Polycom Kirk DECT Phone (TIPT)" >Polycom Kirk DECT Phone (TIPT)
+<option value="Polycom RMX (Trunk)" >Polycom RMX (Trunk)
+<option value="Polycom RMX 1500" >Polycom RMX 1500
+<option value="Polycom RMX 2000" >Polycom RMX 2000
+<option value="Polycom RMX 4000" >Polycom RMX 4000
+<option value="Polycom RMX2000 (TIPT)" >Polycom RMX2000 (TIPT)
+<option value="Polycom SoundPoint IP 331 (TIPT)" >Polycom SoundPoint IP 331 (TIPT)
+<option value="Polycom Soundpoint IP 200W" >Polycom Soundpoint IP 200W
+<option value="Polycom Soundpoint IP 235 DMS" >Polycom Soundpoint IP 235 DMS
+<option value="Polycom Soundpoint IP 300" >Polycom Soundpoint IP 300
+<option value="Polycom Soundpoint IP 301 DMS" >Polycom Soundpoint IP 301 DMS
+<option value="Polycom Soundpoint IP 320 330" >Polycom Soundpoint IP 320 330
+<option value="Polycom Soundpoint IP 330 DMS" >Polycom Soundpoint IP 330 DMS
+<option value="Polycom Soundpoint IP 331 DMS" >Polycom Soundpoint IP 331 DMS
+<option value="Polycom Soundpoint IP 335 DMS" >Polycom Soundpoint IP 335 DMS
+<option value="Polycom Soundpoint IP 4000" >Polycom Soundpoint IP 4000
+<option value="Polycom Soundpoint IP 4000 DMS" >Polycom Soundpoint IP 4000 DMS
+<option value="Polycom Soundpoint IP 430" >Polycom Soundpoint IP 430
+<option value="Polycom Soundpoint IP 430 DMS" >Polycom Soundpoint IP 430 DMS
+<option value="Polycom Soundpoint IP 450 (TIPT)" >Polycom Soundpoint IP 450 (TIPT)
+<option value="Polycom Soundpoint IP 450 DMS" >Polycom Soundpoint IP 450 DMS
+<option value="Polycom Soundpoint IP 500" >Polycom Soundpoint IP 500
+<option value="Polycom Soundpoint IP 501 DMS" >Polycom Soundpoint IP 501 DMS
+<option value="Polycom Soundpoint IP 550" >Polycom Soundpoint IP 550
+<option value="Polycom Soundpoint IP 550 DMS" >Polycom Soundpoint IP 550 DMS
+<option value="Polycom Soundpoint IP 560 (TIPT)" >Polycom Soundpoint IP 560 (TIPT)
+<option value="Polycom Soundpoint IP 560 DMS" >Polycom Soundpoint IP 560 DMS
+<option value="Polycom Soundpoint IP 600" >Polycom Soundpoint IP 600
+<option value="Polycom Soundpoint IP 600 DMS" >Polycom Soundpoint IP 600 DMS
+<option value="Polycom Soundpoint IP 6000 (TIPT)" >Polycom Soundpoint IP 6000 (TIPT)
+<option value="Polycom Soundpoint IP 6000 DMS" >Polycom Soundpoint IP 6000 DMS
+<option value="Polycom Soundpoint IP 601" >Polycom Soundpoint IP 601
+<option value="Polycom Soundpoint IP 601 DMS" >Polycom Soundpoint IP 601 DMS
+<option value="Polycom Soundpoint IP 650" >Polycom Soundpoint IP 650
+<option value="Polycom Soundpoint IP 650 DMS" >Polycom Soundpoint IP 650 DMS
+<option value="Polycom Soundpoint IP 670 (TIPT)" >Polycom Soundpoint IP 670 (TIPT)
+<option value="Polycom Soundpoint IP 670 DMS" >Polycom Soundpoint IP 670 DMS
+<option value="Polycom Soundpoint IP 7000 (TIPT)" >Polycom Soundpoint IP 7000 (TIPT)
+<option value="Polycom Soundpoint IP 7000 DMS" >Polycom Soundpoint IP 7000 DMS
+<option value="Polycom VVX 1500 (TIPT)" >Polycom VVX 1500 (TIPT)
+<option value="Polycom VVX 1500 DMS" >Polycom VVX 1500 DMS
+<option value="Quintum Tenor AF-2" >Quintum Tenor AF-2
+<option value="Quintum Tenor AF-4" >Quintum Tenor AF-4
+<option value="Quintum Tenor AF-6" >Quintum Tenor AF-6
+<option value="Quintum Tenor AF-8" >Quintum Tenor AF-8
+<option value="Quintum Tenor AS-2" >Quintum Tenor AS-2
+<option value="Quintum Tenor AS-4" >Quintum Tenor AS-4
+<option value="Quintum Tenor AX-16" >Quintum Tenor AX-16
+<option value="Quintum Tenor AX-24" >Quintum Tenor AX-24
+<option value="Quintum Tenor AX-24 (sp)" >Quintum Tenor AX-24 (sp)
+<option value="Quintum Tenor AX-48" >Quintum Tenor AX-48
+<option value="Quintum Tenor AX-48 (sp)" >Quintum Tenor AX-48 (sp)
+<option value="Quintum Tenor AX-8" >Quintum Tenor AX-8
+<option value="Quintum Tenor Trunk" >Quintum Tenor Trunk
+<option value="Quintum Tenor Trunk (sp)" >Quintum Tenor Trunk (sp)
+<option value="Radvision Scopia - Not for Sale" >Radvision Scopia - Not for Sale
+<option value="SIP Intelligent Gateway (sp)" >SIP Intelligent Gateway (sp)
+<option value="SIP Non-Registering Gateway (sp)" >SIP Non-Registering Gateway (sp)
+<option value="SIP Registering Gateway (sp)" >SIP Registering Gateway (sp)
+<option value="SIPquest Mobile Console" >SIPquest Mobile Console
+<option value="SNOM 320" >SNOM 320
+<option value="SNOM 320_360" >SNOM 320_360
+<option value="Samsung SMT-i8000" >Samsung SMT-i8000
+<option value="Samsung SSX5000" >Samsung SSX5000
+<option value="Scientific Atlanta DPC2203/C/C2 NCS" >Scientific Atlanta DPC2203/C/C2 NCS
+<option value="Scientific Atlanta DPC2434 NCS" >Scientific Atlanta DPC2434 NCS
+<option value="Scientific Atlanta DPX2213 NCS" >Scientific Atlanta DPX2213 NCS
+<option value="Sentito NSS19" >Sentito NSS19
+<option value="Sentito NSS19 (sp)" >Sentito NSS19 (sp)
+<option value="Siemens Optipoint 410 Advanced" >Siemens Optipoint 410 Advanced
+<option value="Siemens Optipoint 410 Economy" >Siemens Optipoint 410 Economy
+<option value="Siemens Optipoint 410 Economy Plus" >Siemens Optipoint 410 Economy Plus
+<option value="Siemens Optipoint 410 Entry" >Siemens Optipoint 410 Entry
+<option value="Siemens Optipoint 410 Standard" >Siemens Optipoint 410 Standard
+<option value="Siemens Optipoint 420 Advanced" >Siemens Optipoint 420 Advanced
+<option value="Siemens Optipoint 420 Economy" >Siemens Optipoint 420 Economy
+<option value="Siemens Optipoint 420 Economy Plus" >Siemens Optipoint 420 Economy Plus
+<option value="Siemens Optipoint 420 Standard" >Siemens Optipoint 420 Standard
+<option value="Siemens Speedstream 3010_7010" >Siemens Speedstream 3010_7010
+<option value="Siemens Speedstream 3540_7500" >Siemens Speedstream 3540_7500
+<option value="Siemens Speedstream 3550_7510" >Siemens Speedstream 3550_7510
+<option value="Siemens optiPoint 150S" >Siemens optiPoint 150S
+<option value="Siemens optiPoint 400" >Siemens optiPoint 400
+<option value="Siemens optiPoint 600" >Siemens optiPoint 600
+<option value="Sonus GSX (sp)" >Sonus GSX (sp)
+<option value="Sonus PSX (sp)" >Sonus PSX (sp)
+<option value="SwissVoice IP 10S" >SwissVoice IP 10S
+<option value="Talkswitch" >Talkswitch
+<option value="Talkswitch (sp)" >Talkswitch (sp)
+<option value="Telco Systems Access201_211" >Telco Systems Access201_211
+<option value="Telco Systems EdgeGate 232" >Telco Systems EdgeGate 232
+<option value="Telco Systems GW-282-2" >Telco Systems GW-282-2
+<option value="Telco Systems GW-282-4" >Telco Systems GW-282-4
+<option value="Telco Systems GW-282-8" >Telco Systems GW-282-8
+<option value="Thomson ST2022-SG" >Thomson ST2022-SG
+<option value="Thomson ST2030-SG" >Thomson ST2030-SG
+<option value="Thomson Telecom ST284" >Thomson Telecom ST284
+<option value="U4EA ICAD40" >U4EA ICAD40
+<option value="U4EA ICAD80" >U4EA ICAD80
+<option value="UTStarcom F1000" >UTStarcom F1000
+<option value="UTStarcom iAN-02EX" >UTStarcom iAN-02EX
+<option value="UniData WIP-5000" >UniData WIP-5000
+<option value="Uniden DTA-200" >Uniden DTA-200
+<option value="Uniden UIP-1868" >Uniden UIP-1868
+<option value="Uniden UIP200" >Uniden UIP200
+<option value="VegaStream Vega 50" >VegaStream Vega 50
+<option value="Verilink 8000 12 port" >Verilink 8000 12 port
+<option value="Verilink 8000 16 port" >Verilink 8000 16 port
+<option value="Verilink 8000 24 port" >Verilink 8000 24 port
+<option value="Verilink 8000 24 port (sp)" >Verilink 8000 24 port (sp)
+<option value="Verilink 8000 4 port" >Verilink 8000 4 port
+<option value="Verilink 8000 8 port" >Verilink 8000 8 port
+<option value="Verilink 8x04s (SIP)" >Verilink 8x04s (SIP)
+<option value="Verilink 8x08s (SIP)" >Verilink 8x08s (SIP)
+<option value="Verilink 8x12s (SIP)" >Verilink 8x12s (SIP)
+<option value="Verilink 8x16s (SIP)" >Verilink 8x16s (SIP)
+<option value="Verilink 8x24s (SIP)" >Verilink 8x24s (SIP)
+<option value="Verilink 8x24s (SIP) (sp)" >Verilink 8x24s (SIP) (sp)
+<option value="Verilink NetEngine 6x02-2" >Verilink NetEngine 6x02-2
+<option value="Verilink NetEngine 6x04-4" >Verilink NetEngine 6x04-4
+<option value="Verilink NetEngine 6x08-8" >Verilink NetEngine 6x08-8
+<option value="Verilink NetEngine 7x16-16" >Verilink NetEngine 7x16-16
+<option value="Verilink NetEngine 7x24-24" >Verilink NetEngine 7x24-24
+<option value="Verilink NetEngine 7x24-24 (sp)" >Verilink NetEngine 7x24-24 (sp)
+<option value="WEBCC IP-PBX (WebCC)" >WEBCC IP-PBX (WebCC)
+<option value="Windows Messenger Soft Client" >Windows Messenger Soft Client
+<option value="Wooksung WVP1100" >Wooksung WVP1100
+<option value="Wooksung WVP1200" >Wooksung WVP1200
+<option value="Wooksung WVP2100" >Wooksung WVP2100
+<option value="Wooksung WVP2200" >Wooksung WVP2200
+<option value="Wooksung WVP2210" >Wooksung WVP2210
+<option value="Xten Soft Client" >Xten Soft Client
+<option value="Zhone MALC" >Zhone MALC
+<option value="Zhone Z-Edge 6100-12" >Zhone Z-Edge 6100-12
+<option value="Zhone Z-Edge 6100-24" >Zhone Z-Edge 6100-24
+<option value="Zhone Z-Edge 6200" >Zhone Z-Edge 6200
+<option value="ZyXEL P2002" >ZyXEL P2002
+<option value="i3 micro Vood 111_121" >i3 micro Vood 111_121
+<option value="i3 micro Vood 142_322_422_423_453w" >i3 micro Vood 142_322_422_423_453w
+</select></TD>
+</TR>
+
+<TR ID="trIpAddress" STYLE="display:none">
+<TD align="right" nowrap="nowrap">* Host Name/IP Address: </TD>
+<TD align="left"><input type=text name="ipAddressRequired" id="ipAddressRequired" value='' size=40 maxLength=80 onChange="setIpAddress(this)"></TD>
+<TD align="right" nowrap="nowrap">Port: </TD>
+<TD align="left"><input type=text name="portRequired" id="portRequired" value='' size=10 maxLength=10 onChange="setPort(this)"></TD>
+</TR>
+
+<TR ID="trIpAddressOptional" STYLE="display:none">
+<TD align="right" nowrap="nowrap">Host Name/IP Address: </TD>
+<TD align="left"><input type=text name="ipAddressOptional" id="ipAddressOptional" value='' size=40 maxLength=80 onChange="setIpAddress(this)"></TD>
+<TD align="right" nowrap="nowrap">Port: </TD>
+<TD align="left"><input type=text name="portOptional" id="portOptional" value='' size=10 maxLength=10 onChange="setPort(this)"></TD>
+</TR>
+
+<TR ID="trMacAddress" STYLE="display:none">
+<TD align="right" nowrap="nowrap">MAC Address: </TD>
+<TD align="left" colspan="2"><input type=text name="macAddress" id="macAddress" value='' size=12 maxLength=12></TD>
+</TR>
+
+<TR ID="trPhysicalLocation" STYLE="display:none">
+<TD align="right" nowrap="nowrap">Physical Location: </TD>
+<TD align="left" colspan="2"><input type=text name="physicalLocation" id="physicalLocation" value='' size=18 maxLength=1024></TD>
+</TR>
+
+<TR ID="trDeviceLinePort" STYLE="display:none">
+<TD align="right" nowrap="nowrap">* Line/Port: </TD>
+<TD align="left" colspan="2"><input type=text name="deviceLinePort" id="deviceLinePort" value='p0732503047' size=32 maxLength=80 onBlur="setLinePort(this)"></TD>
+</TR>
+
+<TR ID="trDeviceLinePortDomain" STYLE="display:">
+<TD align="right">* Line/Port: </TD>
+<TD align="left" dir="ltr"  colspan="2"><input size=32 maxLength=80 type=text name="deviceLinePortDomain" value='p0732503047' onBlur="setLinePort(this)">@<SELECT NAME='deviceDomain' onChange='setLinePortDomain(this)'>
+<OPTION VALUE='apeagers.com.au' SELECTED >apeagers.com.au
+</SELECT></TD>
+</TR>
+
+<TR ID="trDeviceSipUrl" STYLE="display:none">
+<TD align="right">Contact: </TD>
+<TD align="left" colspan="2">sip:<input type=text name="deviceStaticSipUrl" size=40 maxlength=1020 value='' onblur="setStaticSipUrl(this)"></TD>
+</TR>
+
+</table>
+</fieldset>
+</TD>
+</TR>
+
+</DIV>
+
+<TR>
+<TD width="100%"><DIV ID="div1"style="display:none"><fieldset class="fldsetline">
+<legend class="fldset"> Trunking </legend>
+<table cellspacing='0' border=0>
+
+<TR ID="trTrunkGroupName" STYLE="display:">
+<TD align="right">Trunk Group: </TD>
+<TD align="left"><select name="trunkGroupName" id="trunkGroupName" onChange="selectTrunkGroup()" >
+<option value="None" selected>None
+</select></TD>
+<td width='20'><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td></TR>
+
+<TR ID="trTGTextBox" STYLE="display:">
+<TD align="right" nowrap="nowrap">Line/Port: </TD>
+<TD align="left" colspan="2"><input type=text name="trunkGroupLinePort" id="trunkGroupLinePort" value='' size=32 maxLength=32 onBlur="setLinePort(this)"></TD>
+</TR>
+
+<TR ID="trTGTextBoxReq" STYLE="display:none">
+<TD align="right" nowrap="nowrap">* Line/Port: </TD>
+<TD align="left" colspan="2"><input type=text name="trunkGroupLinePortReq" id="trunkGroupLinePortReq" value='' size=32 maxLength=32 onBlur="setLinePort(this)"></TD>
+</TR>
+
+<TR ID="trTGTextBoxDomain" STYLE="display:none">
+<TD align="right">Line/Port: </TD>
+<TD align="left" dir="ltr"  colspan="2"><input size=32 maxlength=32 type=text name="trunkGroupLinePortDomain" value='' onBlur="setLinePort(this)">@<SELECT NAME='trunkGroupDomain' onChange='setLinePortDomain(this)'>
+<OPTION VALUE='apeagers.com.au'>apeagers.com.au
+</SELECT></TD>
+</TR>
+
+<TR ID="trTGTextBoxDomainReq" STYLE="display:none">
+<TD align="right">* Line/Port: </TD>
+<TD align="left" dir="ltr"  colspan="2"><input size=32 maxlength=32 type=text name="trunkGroupLinePortDomainReq" value='' onBlur="setLinePort(this)">@<SELECT NAME='trunkGroupDomainReq' onChange='setLinePortDomain(this)'>
+<OPTION VALUE='apeagers.com.au'>apeagers.com.au
+</SELECT></TD>
+</TR>
+
+<TR ID="trTGSipUrl" STYLE="display:none">
+<TD align="right">Contact: </TD>
+<TD align="left" colspan="2">sip:<input type=text name="trunkGroupStaticSipUrl" size=40 maxlength=1020 value='' onblur="setStaticSipUrl(this)"></TD>
+</TR>
+
+<TR>
+<TD align="right" nowrap="nowrap">Alternate Trunk Identity: </TD>
+<TD align="left" colspan="2"><input type=text name="alternateTrunkIdentity" id="alternateTrunkIdentity" value='' size=20 maxLength=80></TD>
+</TR>
+
+<TR>
+<TD align="right">Enterprise Trunk: </TD>
+<TD align="left"><select name="enterpriseTrunk" id="enterpriseTrunk" onChange="" >
+<option value="" selected>None
+</select></TD>
+</TR>
+
+</table>
+</fieldset>
+</TD>
+</TR>
+
+<tr><td>
+      <DIV ID="div2"
+        
+             style="display:none"
+        >
+</td></tr>
+      </DIV>
+
+
+
+
+<tr>
+  <td colspan="3">&nbsp;</td>
+</tr>
+</table>
+
+<table border=0>
+<TR>
+<TD align="left">Aliases: </TD>
+<TD align="right">sip: </TD>
+<TD align="left" dir="ltr" >0732503047@apeagers.com.au</TD>
+</TR>
+
+<TR>
+<td width='20'><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td><TD align="right">sip: </TD>
+<TD align="left" dir="ltr" ><input size=40 maxlength=80 type=text name='alias1' value=''> @ <SELECT NAME='alias1Domain'>
+<OPTION VALUE='apeagers.com.au' SELECTED >apeagers.com.au
+</SELECT></TD>
+</TR>
+
+<TR>
+<td width='20'><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td><TD align="right">sip: </TD>
+<TD align="left" dir="ltr" ><input size=40 maxlength=80 type=text name='alias2' value=''> @ <SELECT NAME='alias2Domain'>
+<OPTION VALUE='apeagers.com.au' SELECTED >apeagers.com.au
+</SELECT></TD>
+</TR>
+
+<TR>
+<td width='20'><img src="/Graphics/onepx.gif" width="20" height="1" alt="" border="0"></td><TD align="right">sip: </TD>
+<TD align="left" dir="ltr" ><input size=40 maxlength=80 type=text name='alias3' value=''> @ <SELECT NAME='alias3Domain'>
+<OPTION VALUE='apeagers.com.au' SELECTED >apeagers.com.au
+</SELECT></TD>
+</TR>
+
+<TR><TD align="right" colspan="4">&nbsp</TD></TR>
+
+<tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+</table>
+
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+    </td>
+  </tr>
+</table>
+
+
+</td>
+            </tr>
+            <tr id="buttonbarbottom">
+              <td class="buttonbar">&nbsp;&nbsp;<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+<!-- General Text Messages -->
+<input type="hidden" name="buttonClicked" value="">
+<input type="submit" class="bwbutton" name="ok" value="OK"
+                onclick='this.form.buttonClicked[0].value = this.name;'>
+                &nbsp;&nbsp;<input type="submit" class="bwbutton" name="apply" value="Apply"
+                onclick='this.form.buttonClicked[0].value = this.name;'>
+                 &nbsp;&nbsp;<input type="button" class="bwbutton" name="cancel" value="Cancel"
+                  onclick='top.location.replace("/Common/folder_contents.jsp?folder=U0&menuId=0");'>
+</td>
+            </tr>
+            </table>
+          </form>
+        </td>
+     </tr>
+  </table>
+  <!--  Copyright 2000-2010, BroadSoft, Inc. All rights reserved. Proprietary Property of BroadSoft, Inc. Gaithersburg, MD. -->
+
+<!--NIPT Global Footer-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tbody><tr>
+		<td class="hd3" colspan="3" bgcolor="#ffffff"><img src="/Graphics/onepx.gif" width="1" height="1" alt=" "></td>
+	</tr>
+	<tr>
+		<td rowspan="3" bgcolor="#ffffff"><img src="/Graphics/onepx.gif" width="10" height="1" alt=" "></td>
+		<td rowspan="3" valign="top" bgcolor="#ffffff"><!--<a href="http://telstra.com/" target="_parent">--><img src="/Graphics/Telstra/telstra_logo3.gif" width="39" height="39" alt="telstra.com" border="0"><!--</a>--></td>
+		<td width="100%" align="center" class="hd1" bgcolor="#ffffff">
+			<img src="/Graphics/onepx.gif" width="49" height="20" alt=" " align="middle">
+		</td>
+	</tr>
+	<tr>
+
+	</tr>
+	<tr>
+		<td bgcolor="#ffffff"><img src="/Graphics/onepx.gif" width="1" height="17"></td>
+	</tr>
+	<tr>
+		<td class="ft1" colspan="3" bgcolor="#ffffff"><img src="/Graphics/onepx.gif" width="1" height="1" alt=" "></td>
+	</tr>
+</tbody></table>
+<br /><br />
+<!--/NIPT End Global Footer-->
+
+
+</body>
+</html>

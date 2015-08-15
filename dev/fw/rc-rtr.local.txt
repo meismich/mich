@@ -1,0 +1,243 @@
+# File:			rc.local
+# Date:			2011-11-09
+# Author: 		Michael Spence
+#
+# Change Log:
+# 2011-11-09	Start of Logging - All changes to be dated and added here
+# 2011-11-09	Verfied all Kloster Routers
+# 2011-11-09	Verfied all Bill Buckle Routers
+
+echo -n 'Michael -> Adding APEagers Network Routes'
+
+# Default routes internal
+# HERE route -n add -net 10.1.0.0/16 10.1.1.254	# Eight Mile Plains (ape core)
+route -n add -net 10.2.0.0/16 10.1.1.254	# Buranda
+route -n add -net 10.5.0.0/16 10.1.1.254	# Mt Gravatt
+route -n add -net 10.6.0.0/16 10.1.1.254	# Austin Street
+route -n add -net 10.7.0.0/16 10.1.1.254	# Glentanna St Kedron
+route -n add -net 10.8.0.0/16 10.1.1.254	#
+route -n add -net 10.10.0.0/16 10.1.1.254	# Newstead
+route -n add -net 10.11.0.0/16 10.1.1.254	# James St Valley 
+route -n add -net 10.12.0.0/16 10.1.1.254	# Windsor
+route -n add -net 10.13.0.0/16 10.1.1.254	# Townsville
+route -n add -net 10.14.0.0/16 10.1.1.254	# Kedron
+route -n add -net 10.15.0.0/16 10.1.1.254	# McLachlan St Valley
+route -n add -net 10.16.0.0/16 10.1.1.254	# Valley
+route -n add -net 10.17.0.0/16 10.1.1.254	# Breakfast Creek
+route -n add -net 10.18.0.0/16 10.1.1.254	# Strathpine
+route -n add -net 10.19.0.0/16 10.1.1.254	# Eagle Farm
+route -n add -net 10.22.0.0/16 10.1.1.254	# 
+route -n add -net 10.23.0.0/16 10.1.1.254	# Caloundra
+route -n add -net 10.24.0.0/16 10.1.1.254	# Gympie Road
+route -n add -net 10.25.0.0/16 10.1.1.254	# NorthLakes
+route -n add -net 10.26.0.0/16 10.1.1.254	# Toowoomba
+route -n add -net 10.27.0.0/16 10.1.1.254	# Caloundra2
+route -n add -net 10.28.0.0/16 10.1.1.254	# Toowong
+route -n add -net 10.29.0.0/16 10.1.1.254	# 
+route -n add -net 10.32.0.0/16 10.1.1.254	# Pinkenba
+route -n add -net 10.33.0.0/16 10.1.1.254	# Gabba1
+route -n add -net 10.34.0.0/16 10.1.1.254	# Gabba2
+route -n add -net 10.35.0.0/16 10.1.1.254	# Curramundi
+route -n add -net 10.36.0.0/16 10.1.1.254	# Brendale
+route -n add -net 10.37.0.0/16 10.1.1.254	# 3G
+route -n add -net 10.38.2.0/24 10.1.1.254	# (various)
+
+# Northern Territory
+route -n add -net 10.50.0.0/16 10.1.1.254	# Darwin City
+route -n add -net 10.51.0.0/16 10.1.1.254	# Palmerston
+route -n add -net 10.52.0.0/16 10.1.1.254	# Hidden Valley
+
+# Bill Buckles LAN
+route -n add -net 172.17.150.0/24 10.1.1.254	# Brookvale (Main)
+route -n add -net 172.17.158.0/24 10.1.1.254	# Harbour Rd Brookvale
+route -n add -net 192.168.1.0/24 10.1.1.254	# Monavale
+route -n add -net 192.168.5.0/24 10.1.1.254	# Winbourne Rd Brookvale (dep)
+route -n add -net 192.168.6.0/24 10.1.1.254	# Pittwater Rd Brookvale
+route -n add -net 192.168.7.0/24 10.1.1.254	# PittWater Rd
+route -n add -net 192.168.8.0/24 10.1.1.254	# Old Pittwater Rd
+
+# Klosters LAN
+route -n add -net 172.17.8.0/24 10.1.1.254	# Hamilton East
+route -n add -net 172.17.9.0/24 10.1.1.254	# NFI? (dep)
+route -n add -net 172.17.48.0/24 10.1.1.254	# Rutherford
+route -n add -net 172.17.74.0/24 10.1.1.254	# Cardiff
+route -n add -net 172.17.75.0/24 10.1.1.254	# Wickham
+route -n add -net 172.17.104.0/22 10.1.1.254	# Kloster (Main)
+route -n add -net 172.17.128.0/24 10.1.1.254	# Raymond Tce
+route -n add -net 172.17.142.0/24 10.1.1.254	# Gateshead
+route -n add -net 172.17.208.0/24 10.1.1.254	# Cessnock
+
+# ADTrans LAN
+route -n add -net 10.8.0.0/24 10.1.1.254 # Adrien Brien
+route -n add -net 10.9.0.0/24 10.1.1.254 # Keswick Service
+
+route -n add -net 172.16.1.0/24 10.1.1.254 	# Glenelg
+route -n add -net 172.16.2.0/24 10.1.1.254 	# Stillwell Trucks
+route -n add -net 172.16.3.0/24 10.1.1.254 	# Micham
+route -n add -net 172.16.4.0/24 10.1.1.254 	# Angaston
+route -n add -net 172.16.5.0/24 10.1.1.254 	# Somerton Park
+route -n add -net 172.16.6.0/24 10.1.1.254 	# Parts Warehouse
+route -n add -net 172.16.7.0/24 10.1.1.254 	# AdTrans Used
+
+route -n add -net 172.16.9.0/24 10.1.1.254 	# Ingle Farm Hyundai
+route -n add -net 172.16.10.0/24 10.1.1.254 	# Iveco
+route -n add -net 172.16.11.0/24 10.1.1.254 	# Stillwell (Port Rd)
+route -n add -net 172.16.12.0/24 10.1.1.254 	# Town Service
+route -n add -net 172.16.14.0/24 10.1.1.254 	# Cornes 4x4 Centre
+route -n add -net 172.16.15.0/24 10.1.1.254 	# Reynella Hyundai (Sales)
+route -n add -net 172.16.16.0/24 10.1.1.254 	# Reynella Hyundai (Service)
+
+route -n add -net 172.16.18.0/24 10.1.1.254 	# Whitehorse Trucks (Dandenong)
+route -n add -net 172.16.19.0/24 10.1.1.254 	# Whitehorse Trucks (Kilsyth) 
+route -n add -net 172.16.21.0/24 10.1.1.254 	# AdTrans Kia
+route -n add -net 172.16.22.0/24 10.1.1.254 	# Dandenong
+route -n add -net 172.16.23.0/24 10.1.1.254 	# Adtrans Truck Centre - Laverton
+route -n add -net 172.16.24.0/24 10.1.1.254	# Austrans Trucks (Whitehorse T and B)
+route -n add -net 172.16.25.0/24 10.1.1.254	# Stillwell Trucks
+route -n add -net 172.16.26.0/24 10.1.1.254	# AdTrans Mascot
+
+route -n add -net 172.16.29.0/24 10.1.1.254	# Hyundai (Stillwell)
+route -n add -net 172.16.30.0/24 10.1.1.254	# Australia Post
+route -n add -net 172.16.31.0/24 10.1.1.254	# AdTrans Hino
+route -n add -net 172.16.32.0/24 10.1.1.254	# AdTrans Wyoming
+route -n add -net 172.16.33.0/24 10.1.1.254	# Medindie
+route -n add -net 172.16.34.0/24 10.1.1.254	# Regency Park
+route -n add -net 172.16.35.0/24 10.1.1.254	# Angle Park
+
+
+echo '... done!'
+
+echo -n 'Michael -> Adding Extranet Network Routes'
+
+# Audi Routes
+route -n add -net 10.112.192.0/24 10.1.1.240
+#route -n add -net 10.112.192.0/24 10.1.1.250
+route -n add -net 10.112.230.0/24 10.1.1.240
+route -n add -host 10.112.230.8 10.1.1.240
+#route -n add -net 10.112.230.0/24 10.1.1.250
+route -n add -net 10.166.145.0/24 10.1.1.240
+
+# Test Autogrid Route
+route -n add 19.110.66.48 10.40.1.39
+
+# Autogrid Routes
+route -n add 19.197.2.93 10.40.1.39
+route -n add 19.197.2.171 10.40.1.39
+route -n add 19.197.2.183 10.40.1.39
+route -n add 19.197.6.35 10.40.1.39
+route -n add -net 136.8.159.0/24 10.40.1.39
+route -n add -net 136.9.242.0/24 10.40.1.39
+route -n add -net 136.9.246.0/24 10.40.1.39
+route -n add -net 136.9.249.0/24 10.40.1.39
+route -n add -net 136.9.252.0/24 10.40.1.39
+route -n add -net 136.130.208.0/24 10.40.1.39
+route -n add -net 192.28.103.0/24 10.40.1.39
+route -n add 193.129.10.228 10.40.1.39
+
+# Autogrid Volvo Routes
+route -n add -net 212.181.101.128/25 10.40.1.39
+route -n add -net 212.181.102.0/24 10.40.1.39
+route -n add -net 212.181.103.0/24 10.40.1.39
+
+# Dealerlink Routes
+route -n add -net 10.20.0.0/16 10.40.1.33
+route -n add -net 10.21.0.0/16 10.40.1.33
+route -n add -net 10.30.0.0/16 10.40.1.33
+route -n add -net 10.31.0.0/16 10.40.1.33
+route -n add -net 10.40.3.0/24 10.40.1.33
+route -n add -net 10.40.5.0/24 10.40.1.33
+route -n add -net 10.40.6.0/24 10.40.1.33
+route -n add -net 10.40.7.0/24 10.40.1.33
+route -n add -net 10.40.9.0/24 10.40.1.33
+route -n add -net 10.41.0.0/16 10.40.1.33
+route -n add -net 10.81.7.0/24 10.40.1.33
+route -n add -net 10.81.12.0/24 10.40.1.33
+route -n add -net 10.81.34.0/24 10.40.1.33
+route -n add -net 10.81.51.0/24 10.40.1.33
+route -n add -net 10.81.60.0/24 10.40.1.33
+route -n add -net 10.81.80.0/24 10.40.1.33
+route -n add -net 10.81.90.0/24 10.40.1.33
+route -n add -net 10.81.105.0/24 10.40.1.33
+route -n add -net 10.81.114.0/24 10.40.1.33
+route -n add -net 10.81.122.0/24 10.40.1.33
+route -n add -net 10.81.127.0/24 10.40.1.33
+route -n add -net 10.81.137.0/24 10.40.1.33
+route -n add -net 10.81.142.0/24 10.40.1.33
+route -n add -net 10.81.168.0/24 10.40.1.33
+route -n add -net 10.81.174.0/24 10.40.1.33
+route -n add -net 10.81.205.0/24 10.40.1.33
+route -n add -net 10.81.241.0/24 10.40.1.33
+route -n add -net 10.82.0.0/16 10.40.1.33
+route -n add -net 10.85.41.0/24 10.40.1.33
+route -n add -net 10.100.12.0/24 10.40.1.33
+route -n add -net 100.100.150.0/24 10.40.1.33
+route -n add 122.122.125.5 10.40.1.33
+route -n add 122.122.125.30 10.40.1.33
+route -n add 172.20.3.66 10.40.1.33
+route -n add 172.20.3.98 10.40.1.33
+route -n add 172.20.3.132 10.40.1.33
+route -n add 172.20.3.162 10.40.1.33
+route -n add 172.20.3.194 10.40.1.33
+route -n add 172.20.4.34 10.40.1.33
+route -n add 192.168.0.5 10.40.1.33
+route -n add -net 192.168.3.0/24 10.40.1.33
+route -n add -net 192.168.24.0/24 10.40.1.33
+route -n add -net 192.168.30.0/24 10.40.1.33
+route -n add -net 203.13.244.0/24 10.40.1.33
+route -n add -net 203.23.31.0/24 10.40.1.33
+route -n add -net 203.25.41.0/24 10.40.1.33
+route -n add 203.25.42.26 10.40.1.33
+route -n add 203.53.30.232 10.40.1.33
+route -n add 203.166.118.195 10.40.1.33
+route -n add -net 59.167.183.0/24 10.40.1.33
+
+# Mazda Routes
+route -n add -net 10.3.0.0/16 10.40.1.35
+route -n add -net 10.4.0.0/16 10.40.1.35
+route -n add -net 136.133.248.0/24 10.40.1.35
+route -n add -net 19.190.18.0/24 10.40.1.35
+route -n add 19.197.2.141 10.40.1.35
+
+# Porsche Routes
+route -n add -net 10.61.1.0/24 10.40.1.37
+route -n add 10.61.248.65 10.40.1.37
+route -n add 10.61.248.66 10.40.1.37
+route -n add -net 84.21.39.0/24 10.40.1.37
+route -n add 84.21.52.11 10.40.1.37
+route -n add 84.21.53.11 10.40.1.37
+route -n add 141.36.132.85 10.40.1.37
+route -n add 192.168.200.34 10.40.1.37
+route -n add 193.175.6.2 10.40.1.37
+route -n add 203.26.190.6 10.40.1.37
+route -n add 203.26.190.226 10.40.1.37
+
+# Toyota Routes
+route -n add -net 10.9.100.0/24 10.40.1.46
+route -n add -net 132.147.0.0/16 10.40.1.46
+route -n add -net 150.45.0.0/16 10.40.1.46
+route -n add -net 192.168.42.0/24 10.40.1.46
+route -n add -net 192.168.101.0/24 10.40.1.46
+route -n add -net 192.168.107.0/24 10.40.1.46
+route -n add -net 192.168.108.0/24 10.40.1.46
+route -n add -net 192.168.109.0/24 10.40.1.46
+route -n add -net 192.168.206.0/24 10.40.1.46   
+
+# VW Routes
+route -n add -net 10.112.198.0/24 10.1.1.240
+route -n add -net 10.152.15.0/24 10.1.1.240
+route -n add -net 172.16.61.0/24 10.1.1.240
+route -n add 210.193.223.156 10.1.1.240
+
+echo '... done!'
+
+echo -n 'Michael -> Adding Management Network Routes'
+
+# Management LAN
+route -n add -net 192.168.248.0/24 10.1.1.239
+
+echo '... done!'
+
+# Start ftpproxy
+#ftpproxy_flags=""
+
+

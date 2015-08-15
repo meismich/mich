@@ -1,0 +1,32 @@
+#
+# FILE:		rc.local
+# DATE:		2013-06-11
+# AUTHOR:	Michael Spence
+#
+# PURPOSE:
+#	Local additional config file.  MS uses to typically add routes.
+#
+# NOTES:
+#	Using VI substitue A.B.C.D with WAN link IP address
+#	Use (for example):
+#		:%s/A.B.C.D/A.B.C.D/ 
+#
+
+#--- PRIVATE NON-ROUTEABLES ---#
+route add -net 10/8 		A.B.C.D
+route add -net 172.16/12 	A.B.C.D
+route add -net 192.168/16 	A.B.C.D
+
+#-- TOYOTA DAN ACCESS ROUTES --#
+route add -net 10.9.100.0/24 	A.B.C.D
+route add -net 10.12.100.0/24 	A.B.C.D
+route add -net 10.255.254.0/24 	A.B.C.D
+route add -net 132.147.0.0/16 	A.B.C.D
+route add -net 150.45.0.0/16 	A.B.C.D
+route add -net 192.168.42.0/24 	A.B.C.D
+route add -net 192.168.101.0/24 A.B.C.D
+route add -net 192.168.107.0/24 A.B.C.D
+route add -net 192.168.108.0/24 A.B.C.D
+route add -net 192.168.109.0/24 A.B.C.D
+route add -net 192.168.206.0/24 A.B.C.D
+

@@ -1,0 +1,92 @@
+
+Starting Nmap 5.00 ( http://nmap.org ) at 2010-08-13 10:03 EST
+Host cca-esx1.apeagers.com.au (10.23.1.1) is up (0.0048s latency).
+Host cca-fs.apeagers.com.au (10.23.1.2) is up (0.0053s latency).
+Host cca-app1.apeagers.com.au (10.23.1.3) is up (0.0048s latency).
+Host cca-sql.apeagers.com.au (10.23.1.4) is up (0.0052s latency).
+Host 10.23.1.8 is up (0.0052s latency).
+Host cca-issadm.apeagers.com.au (10.23.1.9) is up (0.0052s latency).
+Host cca-bk.apeagers.com.au (10.23.1.10) is up (0.0052s latency).
+Host ccaadm1.apeagers.com.au (10.23.1.21) is up (0.0050s latency).
+Host ccasho3.apeagers.com.au (10.23.1.23) is up (0.0050s latency).
+Host ccasho4.apeagers.com.au (10.23.1.24) is up (0.0049s latency).
+Host ccasho5.apeagers.com.au (10.23.1.25) is up (0.0049s latency).
+Host ccasho1.apeagers.com.au (10.23.1.26) is up (0.0058s latency).
+Host ccasho6.apeagers.com.au (10.23.1.27) is up (0.0049s latency).
+Host cchsho2.apeagers.com.au (10.23.1.28) is up (0.0049s latency).
+Host cchsho3.apeagers.com.au (10.23.1.29) is up (0.0046s latency).
+Host cchsho1.apeagers.com.au (10.23.1.30) is up (0.0047s latency).
+Host ccashoa.apeagers.com.au (10.23.1.36) is up (0.0054s latency).
+Host cchsvc1.apeagers.com.au (10.23.1.37) is up (0.0048s latency).
+Host cchsvc2.apeagers.com.au (10.23.1.39) is up (0.0048s latency).
+Host cchsvc3.apeagers.com.au (10.23.1.40) is up (0.0053s latency).
+Host cchsvc4.apeagers.com.au (10.23.1.41) is up (0.0053s latency).
+Host ccmsho1.apeagers.com.au (10.23.1.42) is up (0.0053s latency).
+Host ccmsho5.apeagers.com.au (10.23.1.43) is up (0.051s latency).
+Host ccssho1.apeagers.com.au (10.23.1.44) is up (0.0049s latency).
+Host ccmsho2.apeagers.com.au (10.23.1.45) is up (0.0053s latency).
+Host ccashob.apeagers.com.au (10.23.1.46) is up (0.0052s latency).
+Host ccashoc.apeagers.com.au (10.23.1.47) is up (0.0047s latency).
+Host ccapts2.apeagers.com.au (10.23.1.48) is up (0.0047s latency).
+Host ccapts3.apeagers.com.au (10.23.1.49) is up (0.0044s latency).
+Host ccapts4.apeagers.com.au (10.23.1.51) is up (0.0044s latency).
+Host ccasv6new.apeagers.com.au (10.23.1.52) is up (0.0048s latency).
+Host ccapts1.apeagers.com.au (10.23.1.53) is up (0.0047s latency).
+Host ccapts5.apeagers.com.au (10.23.1.54) is up (0.0044s latency).
+Host ccapts6.apeagers.com.au (10.23.1.55) is up (0.0052s latency).
+Host ccaadm2.apeagers.com.au (10.23.1.56) is up (0.0052s latency).
+Host ccaadm3.apeagers.com.au (10.23.1.57) is up (0.0052s latency).
+Host ccasvc1.apeagers.com.au (10.23.1.58) is up (0.0059s latency).
+Host ccasvc7.apeagers.com.au (10.23.1.59) is up (0.0052s latency).
+Host ccasvc9.apeagers.com.au (10.23.1.61) is up (0.0052s latency).
+Host ccasvca.apeagers.com.au (10.23.1.62) is up (0.0059s latency).
+Host 10.23.1.63 is up (0.0047s latency).
+Host ccasvc3.apeagers.com.au (10.23.1.64) is up (0.0045s latency).
+Host ccasvcb.apeagers.com.au (10.23.1.65) is up (0.0053s latency).
+Host ccahadm8.apeagers.com.au (10.23.1.68) is up (0.0053s latency).
+Host ccadp.apeagers.com.au (10.23.1.69) is up (0.0050s latency).
+Host 10.23.1.70 is up (0.0041s latency).
+Host 10.23.1.71 is up (0.0045s latency).
+Host admin02.calcity (10.23.1.72) is up (0.0045s latency).
+Host ccmsho6.apeagers.com.au (10.23.1.76) is up (0.0045s latency).
+Host ccaadma.apeagers.com.au (10.23.1.79) is up (0.0056s latency).
+Host ccasvcd.apeagers.com.au (10.23.1.80) is up (0.0056s latency).
+Host cchfmgra.apeagers.com.au (10.23.1.81) is up (0.0051s latency).
+Host ccmshow8.apeagers.com.au (10.23.1.84) is up (0.0051s latency).
+Host ccmshow7.apeagers.com.au (10.23.1.85) is up (0.0051s latency).
+Host ccabmgr3.apeagers.com.au (10.23.1.86) is up (0.0051s latency).
+Host ccashow9.apeagers.com.au (10.23.1.88) is up (0.0050s latency).
+Host aupadm1.apeagers.com.au (10.23.1.101) is up (0.0051s latency).
+Host 10.23.1.150 is up (0.0046s latency).
+Host 10.23.1.151 is up (0.0045s latency).
+Host 10.23.1.152 is up (0.0044s latency).
+Host 10.23.1.153 is up (0.018s latency).
+Host 10.23.1.154 is up (0.0048s latency).
+Host 10.23.1.155 is up (0.0044s latency).
+Host 10.23.1.156 is up (0.0044s latency).
+Host 10.23.1.157 is up (0.0046s latency).
+Host 10.23.1.158 is up (0.0056s latency).
+Host 10.23.1.159 is up (0.0056s latency).
+Host 10.23.1.160 is up (0.0046s latency).
+Host 10.23.1.161 is up (0.0044s latency).
+Host 10.23.1.162 is up (0.0044s latency).
+Host 10.23.1.163 is up (0.0046s latency).
+Host 10.23.1.164 is up (0.0045s latency).
+Host 10.23.1.165 is up (0.0050s latency).
+Host 10.23.1.168 is up (0.0053s latency).
+Host 10.23.1.170 is up (0.0055s latency).
+Host 10.23.1.171 is up (0.015s latency).
+Host 10.23.1.172 is up (0.0067s latency).
+Host 10.23.1.173 is up (0.0056s latency).
+Host 10.23.1.174 is up (0.0065s latency).
+Host 10.23.1.175 is up (0.0065s latency).
+Host 10.23.1.176 is up (0.0043s latency).
+Host 10.23.1.230 is up (0.060s latency).
+Host 10.23.1.232 is up (0.0070s latency).
+Host 10.23.1.240 is up (0.0060s latency).
+Host 10.23.1.249 is up (0.0063s latency).
+Host 10.23.1.250 is up (0.0062s latency).
+Host 10.23.1.251 is up (0.0062s latency).
+Host 10.23.1.252 is up (0.0062s latency).
+Host 10.23.1.254 is up (0.024s latency).
+Nmap done: 256 IP addresses (89 hosts up) scanned in 2.15 seconds

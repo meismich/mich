@@ -1,0 +1,86 @@
+Darwin - Migration
+2011-12-07
+Michael Spence
+
+
+Essential Tasks:
+
+Migrate email from in-house exchange to Microsoft 365
+Merge darwin.apeagers to apeagers
+
+
+Additional Tasks:
+
+Decomission Exchange server
+Install common wireless
+Confirm/Install remote management s/w
+
+
+
+Tasks in detail
+
+Migrate email:
+
+Desired method:
+1- setup OWA on current darwin exchange to appear as owa.apeagers.com.au
+2- test migrate of one single user
+3- complete and test migration of single user
+4- test migrate of live users
+5- complete and verify migration success
+6- plan migration of 130 users for Monday
+7- begin migration on Friday night to complete sometime Monday 
+8- deploy via GP shortcut to MS365 portal on the desktop of each user
+9- configure outlook clients over Monday and Tuesday
+10- plan migration of remaining 35 users for Tuesday
+11- begin migration on Monday night
+12- configure outlook clients over Tuesday
+
+Alternate method:
+1- For each mailbox identified export mailbox to pst
+2- License users before monday
+3- Copy pst files to computers monday and configure outlook
+4- attach pst file to outlook and demonstrate how to copy from pst to 365
+
+
+Merge domain:
+
+From Rob's Notes:
+Have to use tool ADMT (Active Directory Migration Tool) [These steps KLOSTER specific]
+1- Install on klo-dc1 (or whatever the primary is for this domain)
+2- Get pw key from klo-dc20 (running pw service)
+3- Run ADMT on klo-dc1 "as" KLOSTER_GROUP\administrator
+
+Also
+- Add domain administrators from src domain to admin local group
+- Add domain administrators from dest domain to admin local group
+
+
+Robs steps for migration [Translated into DARWIN specific]
+1- a- Migrate Domain Global to Group
+   b- Copy group members un-checked
+   c- Fix membership of group checked
+
+2- a- Migration Domain Local Group
+   b- copy group members un-checked
+   c- Fix membership of group checked
+
+3- User account migration steps
+   a- select users & target OU
+   b- migrate p/w's
+   c- "state = same as source" - migrate user SIDS
+   d- user account -> use source domain administrator
+   e- user options:
+	i- update user rights (tick)
+	ii- migrate associated user groups
+	iii- Fix users group memberships (tick) checked
+
+4- Computer accounts
+   a- Change DNS server to qld-dc1?? first (apparently not needed??)
+   b- Select all attributes
+   c- user replace mode security translation (double tick??)
+
+5- Run security translation wizard if any accounts are migrate "after" computer accounts.  also need to add "darwin\administrator" into local admin group on computer.
+
+Additional notes:
+
+When users reboot they must change the login domain to APEAGERS from DARWIN

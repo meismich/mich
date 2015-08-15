@@ -1,0 +1,342 @@
+Request for Tender
+
+APEagers Ltd
+Wide Area Network
+and
+VOIP Telephony
+
+
+Authors:
+Mark Nix (General Manager IT)
+Shane Pearce (Manager IT Services)
+Michael Spence (Network Engineer)
+
+Sponsors:
+APEG Board of Directors
+Steven Best (CIO)
+Mark Nix (GMIT)
+
+
+
+Table of Contents
+
+Section I
+
+1. Introduction
+2. Profile of APEagers
+	a. Background
+	b. Organisational Chart
+3. Objectives and Requirements
+	a. Objectives
+	b. Requirements
+	c. Partnership
+4. Timetable
+
+Section II
+
+5. Conditions of Tender
+	a. Interpretation
+	b. General Conditions
+	c. Legal Conditions
+6. Evaluation Criteria
+	a. Cost
+	b. Compatibility
+	c. Support
+	d. Transition
+	e. Business Risk
+7. Functional Specification
+	a. Current Network
+	b. Current Telphony
+	c. Monitoring Tools
+	d. Future Needs
+
+Section III
+
+8. Format of Response
+	a. Supplier Profile
+	b. General Requirements
+	c. Functional Requirements
+	d. Costings
+
+9. Project Management
+	a. Statement of Works
+	b. Account Management
+	c. Project Management
+	d. Timetable
+
+10. Contracts and Agreements
+
+Section IV
+
+11. Optionals
+12. References
+
+Appendices
+
+A. Functional Specification Summary
+B. Project and Resources
+C. Current Hardware and Systems
+D. Traffic Analysis and Load
+E. Hours of Operation
+F. Network LAN and WAN Topologies
+
+
+
+
+
+Section I
+
+1. Introduction
+
+APEagers Ltd is seeking proposals for the supply, delivery, installation, maintenance and support of an Enterprise grade Wide Area Network and a Telephony solution to suit our internal business units.
+
+Over 100 sites across 5 states of Australia are to be considered for this proposal as well as over 3000 fixed line phones.
+
+Coordination will be through the corporate IT team based in Queensland.
+
+It is intended that all sites will share a common configuration methodology, although it will be necessary to allow for individual policies as well as giving engineers flexibility and agility to ever changing requirements.
+
+
+2. Profile of APEagers
+
+
+	a. Background
+
+A. P. Eagers Ltd is a publicly listed company which has its founding roots from Eagers & Sons, over 100 years ago.  A. P. Eagers has transitioned from selling some of the first cars in Australia to becoming one of Australia's largest vehicle selling conglomerates.  Originally this company operated solely from the state of Queensland, and fortunately, recent growth has extended the company across the five major eastern states.
+
+	b. Organisational Chart
+
+As a publicly listed company, A. P. Eagers Ltd employs a board of directors, which is comprised of some of the top shareholders of the company.  The Board is the ultimate decision maker for the company, however, even though direction ultimately direction comes from the board, they have delegated responsibility for Information Services, including Networking and Telephony to the C.I.O., Stephen Best.  Stephen employs an IT team to undertake the research, implementation and validation of services across A. P. Eagers Ltd; this team is headed by Mark Nix, A. P. Eagers' General Manager of IT.  Within Mark's team are three distinct groups: helpdesk, applications and services.  These groups look after respectively: coordination of features and issues between users and systems; the administration and development of core business applications (i.e. dealer management systems); and, the development and deployment of core IT services (including PC's, networks, servers and telephone systems).  Shane Pearce, the manager of the Services group, leads a team of five people to fulfil the role of deploying services across Australia; Shane's lead engineer is Michael Spence.  Due to the rapid expansion of A. P. Eagers Ltd in recent history has lead to business units which do not fall under this regime and hence additional discussion with other IT managers is necessary at times; yet, Stephen has delegated the responsibility of gaining the best proposal for all sites to Shane; further discussion should not be necessary.
+
+
+3. Objectives and Requirements
+
+
+	a. Objectives
+
+The prime objective is to transition to a cost effective and feature rich network and telephony model.  
+
+Over the course of many generations of network implementers within APEagers and due to the recent rapid expansion of the company, many different installation sytles have been used to implement a common network.  Little information was previously gathered regarding the use of this network and until now the cost of that use has not been taken into consideration.  Due to recent increases in demand for internet services, detailed analysis of network requirements has been undertaken.  From these results, we have been able to demonstrate that our WAN is far more expensive than it is required to be.  We are looking for a strategic partner to offer a broad range of solutions for both our current usage needs and our emerging future wide area networking requirements.
+
+Due to the autonomous dealership units having prior sole responsibility for their telephone systems, it is no wonder that there are a plethora of different solutions in place.  Now that this responsibility has come under the banner of the corporate Information Services Team, it would be desirable to unify, simplify and standardise the employed phone system for each business unit.  
+
+
+	b. Requirements
+
+[Full Requirements list will be published with final Request document.]
+
+	c. Partnership
+
+It is the intention of the APEagers IT Team to develop a strong relationship with the winning respondant.  
+
+
+4. Timetable
+
+This request for tender should be available for all respondants by the end of January.
+
+It is expected that respondants will have responded with their initial responses by mid-March.
+
+Evaluation of these responses will be finalised by the end of March, with an expected final response from all respondants by the end of April.
+
+Final responses will be evaluated and the winning respondant will gain the contract for these services beginning September 2014.
+
+
+
+Section II
+
+
+
+
+
+5. Conditions of Tender
+
+
+	a. Interpretation
+
+At all times the term 'APEagers' refers to A.P. Eagers Ltd and all of its business units throughout Austrlia.
+
+
+	b. General Conditions
+
+APEagers reserves the right to ammend this Request for Tender at any time prior to the Proposal closing time, including: extending the proposal time, abandoning this request, or changing the scope.  APEagers will not be forced to consider or accept a proposal even though it meets the evaulation criteria.
+
+
+	c. Legal Conditions
+
+The successful Respondent will be bound by this request for tender, their response and all correspondence relating to this request for tender or their response.
+
+This request for tender remains the property of APEagers Ltd.  All information contained herein is provided in confidence and cannot be divulged without prior written agreement.
+
+Any and all required information needed for Respondents to make a complete response will be made available to all Respondents.  Queries regarding or requests for information should be made promptly to the project manager.
+
+It may be necessary that Respondents make a presentation of its Proposal for evaluation purposes.  During which APEagers will not divulge any intellectual property of one Respondent to another.
+
+
+6. Evaluation Criteria
+
+
+	a. Cost
+
+The prime evaulation criteria is Cost and a heavy bias will be placed on the overall expense of the Proposal for the term of the contract.  Individual items within the Proposal may incur a heavier bias for consideration dependant on business needs and percieved future benefit.
+
+
+	b. Compatibility
+
+The major consideration for any Proposal will be its compatibility with the needs of APEagers Ltd.  Please refer to the appendicies for an overview of our present systems usage.  Biases towards durability, improved efficiencies or other items within the Proposal may bias consideration for a solution.
+
+
+	c. Support
+
+A considerable amount of consideration will be given to a Proposal that can demonstrate its support regime in a manner that suits the requirements of APEagers Ltd.  Additional support options above and beyond the requirements may bias the consideration of a Proposal.
+
+
+	d. Transition
+
+A considerable amount of consideration will be given to a Proposal which details a thorough and comprehensive transition plan.
+
+
+	e. Business Risk
+
+At all times the business risk of a Proposal will be considered.  Please ensure that items within the Propsal have the least impact on business function at APEagers Ltd.
+
+
+7. Functional Specification
+
+
+	a. Current Network
+
+Even though all dealerships work independently, all use centeralised dealer management systems for accounting and business activity.  To support these activities, internally businesses use common Microsoft file sharing techniques, internal websites and collaboration methods.  All of which are complimented by vendor specific information, generally (and increasingly) found on the internet or (now less commonly) via internally connected extranets.
+
+The current network is comprised of a number of independent MPLS WANs which are tied together using Inter-WAN VPN tunnels.  Generally, each MPLS WAN is independent with little interaction with other WANs.
+
+Each MPLS contains a default route to a central data centre, at this point internally connected extranets are present.
+
+
+	b. Current Telphony
+
+Throughout the dealerships which make up the APEagers conglomerate, there are are countless different systems in place supplying the need for telephones.  These telephones are different in nature but they all provide essentially the same result.  
+
+If we take for example a standard dealership, they will have a number of simple requirements for a phone system.  Initially, each dealership has an advertised set of 1300 numbers for internal use, such as new car sales or service or part sales.  These numbers naturally connect to a reception area, which may consist of a set of business unit representatives.  Many dealerships employ menus allowing customers to reach targeted business units easily from one incoming number.  At the back-end users typically require a mix of desk phones or walk about phones, dependant on job role.  These phones require messaging systems and features typical of people working within an office.
+
+It can be expected of any prospective phone solution that it must be able to provide:
+
+	- Call Centres
+	- Auto Attendants
+	- Messaging
+	- Call Pickup
+	- Reporting
+	- Short Dial
+	- Central Management
+	- Self Deployment
+
+As copper is retired throughout the country, we believe it will be necessary to move towards fibre, so optionally:
+
+	- Network provided
+
+
+	c. Monitoring Tools
+
+As a proactive IT team, a number of tools have been built to monitor and assess the stability on the internal IT systems.  This extends to systems which are out of our control, but on which we rely.
+
+
+	d. Future Needs
+
+[Full assessment of potential future needs will be released in final request document.]
+
+
+
+
+Section III
+
+
+
+
+
+8. Format of Response
+
+All responses will follow the following layout.
+
+	a. Supplier Profile
+
+Each response will include a consise profile describing the Respondant and their capabilities.  Each respondant should highlight their expertise in particular areas and detail which areas of the proposal they are willing to undertake. 
+
+
+	b. General Requirements
+
+The requirements are broken into two areas: network and telephony.  In the Appendicies, the Respondant will find a list of The summary requirements for both these areas.  Include in the Response, the Respondant's ability to achieve this requirement.  Use the distinct responses: Full solution; Partial solution; Alternate solution; Future solution; or, No solution.
+
+
+	c. Functional Requirements
+
+Each Response will detail a soultion (or multiple solutions) for each item in the list of requirements, meeting the needs of APEagers.  Fully granular detail is not necessary unless this specification will lend evidence of the Respondant's capability to deliver the requirement.
+
+
+	d. Costings
+
+Finally, the base costings for the solutions proposed for the requirements will be included in the Responses.  
+
+
+
+9. Project Management
+
+
+	a. Statement of Works
+
+
+	b. Account Management
+
+
+	c. Project Management
+
+
+	d. Timetable
+
+
+
+
+
+10. Contracts and Agreements
+
+
+
+
+
+Section IV
+
+
+
+
+
+11. Optionals
+
+
+12. References
+
+
+
+
+
+Appendices
+
+
+
+
+
+A. Functional Specification Summary
+
+
+B. Project and Resources
+
+
+C. Current Hardware and Systems
+
+
+D. Traffic Analysis and Load
+
+
+E. Hours of Operation
+
+
+F. Network LAN and WAN Topologies
+
+

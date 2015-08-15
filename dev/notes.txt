@@ -1,0 +1,12 @@
+Active Directory Upgrade Notes
+
+
+After installing 4x Windows 2008 R2 Servers.
+Ran "adprep /forestprep" on QLD-DC1 (old - Win2k3 r2)
+	- All successful
+Ran "adprep /domainprep" on QLD-DC1 (old)
+	- Had the message :
+"The new cross domain planning functionality for Group Policy, RSOP Planning Mode, requires file system and Active Directory Domain Services permissions to be updated for existing Group Policy Objmects (GPOs).  You can enable this functionality at any time by runnign the "adprep.exe /domainprep /gpprep" on the Active Directory Domain Controller that holds the infrastructure operations master role.  <CR>  This operation will cause all GPOs location in the policies folder of the SYSVOL to be replicated once between the AD DCs in this domain.  Microsoft recommends reading KB Q324392, particularly if you have a large number opf Group plicy Objects."
+	- this KB seems to describe a problem and a hotfix remedy
+
+

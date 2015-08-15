@@ -1,0 +1,137 @@
+Mini VRanger - Setup Guide
+2012-03-23
+Michael Spence
+
+
+Topics of Discussion:
+
+	Preparation
+	Base Windows Installation
+	vRanger Backup Installation
+	vRanger Backup Configuration
+		- Initial Options
+		- Seagate FreeAgent GoFlex
+		- Mail Options
+	vRanger Backup Job Configuration
+
+
+Topics in Detail
+
+1. Preparation
+
+The Mini VRanger solution makes use of the the Zotac ZBox.  The ZBox is a small form factor PC which is capable of running VRanger, and has a USB3 port capable of fast throughput to the attached SeaGate HDD.
+
+On first boot, the BIOS should be configured:  
+	- Enter BIOS by pressing the [DELETE] key immediately after power on.  
+	- Under Advanced, choose the menu system "Wake Up Events Settings"
+	- Change the option "Restore on AC Power Loss" to "Power On"
+	- Apply changes to BIOS settings by pressing [F10] and selecting "Yes"
+
+
+2. Base Windows Installation
+
+The default installed Windows 7 which comes with the ZBox is sufficient to run the vRanger application.  Standard configuration options need to be configured as for any new machine:
+
+	- Choose timezone and insert product key
+	- Name computer with meanginful name.  The suggested formula is:
+		<computer name> = <campus code>-bk[n]      (where n is the nth backup device on location)
+	- Join computer to APEagers domain
+	- Allow computer to reboot and login with Domain Admin credentials
+	- Add the user "apeagers\minivranger" to the administrators group
+	- Enable remote access to this computer ("minivranger" may need to be added to the list)
+	- Start Internet Explorer and verify that internet access is available.  Change proxy as required.
+	- Start the Activate Windows System and activate
+	- Change the power settings for the computer to "Always On"
+	- Ensure McAfee is installed.  Install VSE, Brisbane Agent and perform an update.
+	- Log Off
+
+
+3. vRanger Backup Installation
+
+	- Log in as "apeagers\minivranger".  Password is <clueless>
+	- Connect the Seagate (or similar) External drive to the ZBox.  Ensure the USB3 port is being used (this is the blue port)
+	- Ensure that the directory vRanger exists on the External drive
+	- Copy the contents of "\\qld-bk1\d$\vRanger Installer" to the vRanger directory on the external drive
+	- Start the installation application "Quest_vRanger-Backup--Replication***" from the "vRanger" directory 
+	- The initial steps are straightforward and ask for verification of terms and installation directories.
+	- Credentials required for running services should be configured as:
+
+		domain:		apeagers
+		username:	minivranger
+		password:	<clueless>
+
+	- The base of the installation will be performed
+	- The installation will then begin to install SQL express
+	- Choose "Install on new instance of SQL Express 2005" using "Windows" authentication
+	- The installation then builds the database, after "Automatic Setup" is clicked
+	- The final steps of the installtion will be performed.  Follow the required prompts.
+
+4. vRanger Backup Configuration
+4.a Initial Options
+
+The vRanger application will ask to be licenced if it has not already been.  Choose the ".asc" file from the vRanger folder on the external drive.  Press Save.
+
+Add hosts to the backup system.  Either the VC or the local ESXi host can be added.  (It has been suggested that the VC is the best choice.)  If adding a host, enter the hostname and the required root credentials for the host.  When adding the VC a local account on the VC must be used.  Allow vRanger to communicate with either the VC or the newly added host.
+
+Before proceeding, ensure there is a directory on the external drive named "Backup" and that the external drive is connected as the D:
+
+
+4.b Seagate FreeAgent GoFlex
+
+Create a repository.  Choose "Windows Share (CIFS)" and enter the following information
+
+	Repository:	vRanger Backup
+	Description:	vRanger Backup
+	Username:	apeagers\minivranger
+	Password:	<clueless>
+	Server:		\\127.0.0.1\d$\Backup
+
+
+4.c Mail Options
+
+Enter the following details for mail server settings
+
+	Server:		10.1.1.10
+	Port:		25
+	Sender:		<computername>@apeagers.com.au
+
+From the Tools menu select Options, and choose Email Configuration from the Tree menu.
+Add the following email address to be used as a primary recipient of backup jobs.
+
+	Name:		ISS Admin
+	Email address:	issadmin@apeagers.com.au
+
+Or alternatively, under email addresses perform the same action.... (thx Matt)
+
+Add other email addresses as deemed appropriate
+
+
+5. vRanger Backup Job Configuration
+
+Highlight "Scheduled Jobs" in the tree menu.  Press the "Add" button from the tool bar and select "Backup Job"
+
+Choose the appropriate host from the list for this backup job.
+
+It is recommended that an "Advance" job setup is performed.  
+
+Label and describe the job as necessary
+
+Exclusions should be quite rare, but if required do so in the Exclusions page
+
+It is assumed that all disks need to be backed up.  SQL servers should never have their database disks backed up using this document's technique (refer to SQL backups)
+
+Choose the vRanger Backup repository as configured previously
+
+Options.  The default options are listed below.  It is recommeded that they are used.
+
+	Check destiantion for free space
+	Compress backed up files
+	Update notes with the latest backup results
+	Perform Lan-free backup
+	Perform network-backup on Lan-free failure
+
+For the time being the practice is to keep two (2) savepoints as backups on the media, with no space saving tech.
+
+Choose an appropriate time for the backup to be run.  It is recommended that 7:30pm is a suitable time for most backups to occur.  The job should be run daily, forever.
+
+Finally choose the appropriate people to notify by mail when the job completes (successfully or not)

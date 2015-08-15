@@ -1,0 +1,28 @@
+#
+# FILE:         ape_dan.pf
+# AUTHOR:       Michael Spence
+# DATE:         2013-06-11
+# VERSION:      BSD_Gateway v0.1 (client)
+#
+# PURPOSE:      Pass & NAT Toyota DAN requests
+#
+
+table <xnet_toyota> const { 				\
+	10.9.100.0/24 					\
+	132.147.0.0/16 					\
+	150.45.0.0/16 					\
+	192.168.42.0/24 				\
+	192.168.101.0/24 				\
+	192.168.108.0/24 				\
+	192.168.109.0/24 				\
+	192.168.127.0/24 				\
+	192.168.206.0/24 				\
+	}
+
+#pass in  quick on $if_int proto { tcp udp } from any to <xnet_toyota> nat-to ($if_int:0) static-port
+#pass out quick on $if_int proto { tcp udp } from ($if_int:0) to <xnet_toyota>
+#pass in  quick on $if_int proto { tcp udp } from <xnet_toyota> to ($if_int:0)
+#pass out quick on $if_int proto { tcp udp } from <xnet_toyota> to any
+
+pass quick on $if_int from any to <xnet_toyota>
+pass quick on $if_int from <xnet_toyota> to any

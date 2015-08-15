@@ -1,0 +1,117 @@
+Prime Servers - ERA Servers
+Michael Spence
+2012-10-09
+
+
+Preamble:
+
+Describes the state of the Prime servers which are the base servers to use with no information on.
+
+
+
+Contents:
+
+	Original
+		Pentana OVF Templates
+		ERA Licenced
+		Printers Added
+	Prime
+		Added new Data Disks
+		Removed Backup space
+		Resized OS Disk
+		Mounted /backup to BK2
+		Altered Network Scripts
+		Added VMWare Tools		
+		Time Zone Adjusted
+	
+
+Original
+
+The original servers were provided by Pentana and built to an initial specification by Andrew Ireland and Michael Spence.  The following items were configured.
+
+Pentana OVF Templates
+
+The servers were supplied by Pentana to APEagers via OVF Templates (virtual machine templates).  These were loaded into the ESX environment using the standard VMWare import OVF tool in the vSphere console.  The templates were loaded and disks were set to Thick provisioning; networking was set to internal (VMNetwork) on all interfaces; CPUs were added to the maximum; and excessive amount of memory were given to each machine.
+
+ERA Licenced
+
+Andrew (from Pentana) performed the necessary tasks to licence the version of ERA on each virtual server.
+
+Printers Added
+
+The printers file from the AIX ERA servers was ported across to these servers respectively and Michael created a script to add these printers to each machine.  This effectively added all the printers to the host files and created print queues for each.
+
+
+Prime
+
+prime, adj. 1. of first importance; demanding the fullest consideration. 2. first-rate
+
+The prime servers are completely clean servers with additional features from the original servers, which suit APEagers' needs better.  The following features were added.
+
+Added new Data Disks
+
+The Data Disks were added to the machines for the storage of the Universe database.  This independant disk will allow backups to be performed on the OS disk independantly to the database.
+
+
+Removed Backup space
+
+The initial Disk also contained a space for backup.  This space was under capacity and unnecessary in its current state.  The backup mount point and LV was removed from the system.  The remaining LV's were then shuffled to the front of the LP and was resized.
+
+Process taken:
+
+	editted /etc/fstab and removed /backup entry
+	unmounted /backup using "umount /backup"
+	removed LV using "lvremove /dev/vg01/backupLV" (answered "Y")
+	moved the extents to front of drive using "pvmove"
+		pvdisplay --map 
+			==> shows mapping of LV's on PV
+		pvmove --alloc anywhere /dev/sda2:[PE0start]-[PE0end] /dev/sda2:[PE1start]-[PE1end]
+			==> moves extents within the PV from PE0 to PE1 (had to ensure sizes were correct)
+	resized PV using "pvresize /dev/sda2 --setphysicalvolumesize 50G"
+	calculated volume size in sectors using "pvs --units s"  ==> this is "S"
+	discovered start sector using "parted /dev/sda unit s print"  ==> this is "O"
+	removed partition using "parted /dev/sda rm 2"
+	created partition using "parted /dev/sda mkpart primary [O]s [O + S + 131072]s" 
+	initialised LV on partition using "parted /dev/sda set 2 lvm on"
+
+
+Resized OS Disk
+
+The disk containing the shrunk OS partition was "ghosted" from the larger 200GB drive to a smaller 60GB drive.  
+
+Used the g4l.iso tool for this purpose.
+
+
+Mounted /backup to BK2
+
+The backup mount point was recreated as a mount onto the APEagers backup server QLD-BK2.  A dedicated share has been created on this server to cater for the backup of the ERA machines.
+
+The fstab was editted and the entry for the /backup mount point was added:
+
+//qld-bk2.apeagers.com.au/erpbackup     /backup                 cifs    credentials=/etc/apecreds,iocharset=utf8,file_mode=0777,dir_mode=0777 1 3
+
+This requires the file /etc/apecreds for authentication when accessing this share.  This file is populated with:
+
+username=siteservices
+password=xxxxxxxx
+domain=apeagers.com.au
+
+
+Altered Network Scripts
+
+It was noted in the testing phase that the PSadmin tool was capable of altering and damaging a number of key network scripts during its execution.  While this was necessary during the deployment, its use during production would be damaging at best.  For this reason the networking scripts were altered to minimise this damage.  The networking script for rc3.d now reads apeifcfg-ethx files rather than the ifcfg-ethx files which are altered by the PSadmin tool.  The X00iptables file was also moved to E00iptables to stop its function as a firewall.
+
+Added VMWare Tools		
+
+The latest VMWare Tools were installed onto each server.  This will allow effective monitoring of each server from the VMWare console.
+
+
+Time Zone Adjusted
+
+The time zone was adjusted to Australian Brisbane time.  The /etc/sysconfig/clock file was editted to:
+
+ZONE="Australia/Brisbane"
+UTC=true
+ARC=false
+
+Also the /etc/localtime file was linked to /usr/share/zoneinfo/Australia/Brisbane

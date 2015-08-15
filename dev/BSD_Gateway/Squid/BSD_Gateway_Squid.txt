@@ -1,0 +1,267 @@
+Squid - BSD Gateway
+2013-04-02
+Michael Spence
+
+
+Audience
+
+Network engineer
+
+
+Preamble
+
+The purpose of this document is to describe the configuration of a Squid server.  This server needs to be compatible with the Symantec Web Side Proxy service which is the default web proxy for APEagers Ltd.  The server needs to also provide a transparent proxy function to allow devices such as iPads and diagnostics machines, which do not have domain credentials, with internet access.
+
+This document does not describe how to configure the Symantec WSP.
+
+This document does not describe how to configure a CSP.
+
+This document details how to install Samba for the purpose of NTLM authentication.
+
+This document details the changes made to a CSP squid configuration file for this purpose.
+
+This document describes the methodology used to provide a transparent/non-transparent proxy.
+
+This document lists the required packet filter rules for the proxy service including the transparent proxy translation.
+
+This document lists the restart script designed for restarting the squid service.
+
+
+Topics of Discussion
+
+1. Installation
+	a. OpenBSD
+	b. Samba
+	c. Squid with NTLM
+2. Samba Configuration
+	a. smb.conf
+	b. winbind
+	c. winbind_priveledges dir
+	d. Test NTLM
+3. Squid Configuration
+	a. squid.conf from CSP
+	b. Change NTLM
+	c. Add cache_peer and Names
+	d. Add host_allow and cache_peer_access
+	e. Remove faults
+4. Packet Filter
+	a. Transparent Translation
+	b. Allow external access
+5. Scripts
+
+
+1. Installation
+
+The following procedures were followed to install the necessary software to create this squid proxy.
+
+
+1a. OpenBSD
+
+Open BSD 5.1 was installed using a default configuration.  X-windows packages were not installed.
+
+The PKG_PATH environment variable for root was configured as:
+
+	PKG_PATH=http://ftp.iinet.net.au/pub/OpenBSD/5.1/packages/i386/
+
+
+1b. Samba
+
+Samba version 3.6.1 was installed using the root account.  The following command was issued:
+
+	pkg_add -i samba-3.6.1p1
+
+The installer prompted for a particular verson.  The base installation was chosen.
+
+
+1c. Squid with NTLM
+
+Squid version 2.7 was installed using the root account.  The following command was issued:
+
+	pkg_add -i squid-2.7.STABLE9p15-ntlm
+
+
+2. Samba Configuration
+
+The following steps were carried out to configure the samba installation ready for NTLM authentication
+
+
+2a. smb.conf
+
+The following configuration options were added to the [global] section of the smb.conf master configuration file.  This file is located in /etc/samba.
+
+	workgroup = APEAGERS
+	password server = qld-dc1.apeagers.com.au
+	security = domain
+	winbind uid = 10000-20000
+	wingind gid = 10000-20000
+	winbind use default domain = yes
+
+2b. Join Domain
+
+The first step in joining the domain is to create the nsswitch.conf file.  Edit the /etc/nsswitch.conf file and add the following lines:
+
+	passwd: files winbind
+	group:  files winbind
+
+This file configures how BSD finds passwords and groups; in this case, BSD looks at its local files first before asking winbind.
+
+To join the APEAGERS domain the following command was issued:
+
+	net join -S 10.1.1.43 -U <admin account>
+
+where admin account was subsituted with a valid domain administrator account name.  This process requires the entry of a domain password.
+
+
+2c. Start Services
+
+Once installed and configured, the services  can be started using the rc.d startup scripts.  The following commands will start the required services:
+
+	/etc/rc.d/smbd start
+	/etc/rc.d/nmbd start
+	/etc/rc.d/winbindd start
+
+To have the services start at boot time, add the following lines to the /etc/rc.conf.local file:
+
+	winbindd_flags=""
+	smbd_flags=""
+	nmbd_flags=""
+
+
+2d. winbind_priveledges dir
+
+Once samba is running, verify the samba environment variable $LOCKDIR.  Do this by performing the following command:
+
+	/usr/local/libexec/smbd -b
+
+which will display the build options.  Find and record the path for LOCKDIR.
+
+Change the group ownership of the folder $LOCKDIR/winbind_priveledges to _squid.  The following is the command used:
+
+	chgrp _squid $LOCKDIR/winbind_priveledges
+
+where $LOCKDIR is the recorded path from samba build options.  Note this is not an environment variable.
+
+
+2d. Test NTLM
+
+The configuration can be checked using both wbinfo and ntlm_auth.  The following wbinfo command demonstrates the ability to authenticate a user:
+
+	wbinfo -b apeagers\\<username>
+
+
+
+3. Squid Configuration
+
+The following steps were taken to configure the squid proxy service.
+
+
+3a. squid.conf from CSP
+
+The squid.conf file was copied from a CSP server (for example aus-csp), including the accompanying files ape_ips.txt and ape_doms.txt.  All files were moved into the /etc/squid directory.  
+
+
+3b. Change NTLM
+
+Alter the auth_param lines which reference the windows ntlm application.  The linux application being used is:
+
+	/usr/local/bin/ntlm_auth
+
+and the auth_param lines should read:
+
+	auth_param ntlm program /usr/local/bin/ntlm_auth --helper-protocol=squid-2.5-ntlmssp
+and
+	auth_param basic program /usr/local/bin/ntlm_auth --helper-protocol=squid-2.5-basic
+
+The following ACL identifies an authenticated user:
+
+	acl authproxy proxy_auth
+
+
+
+3c. Add cache_peer and Names
+
+As there will be two methods for accessing the web side proxy service provided by Symantec, two cache peers need to be configured.  They can be differentiated by giving each a unique name.  
+
+The first cache_peer entry is named "peer_authed" and passes the login information gathered by NTLM to the WSP.  This is configured as shown:
+
+	cache_peer proxy1.ap.webscanningservice.com parent 3128 0000 \
+			default no-query no-digest name=peer_authed login=PASS
+
+The second cache_peer entry, named "peer_noatuh" and passes default login credentials (internetuser) to the WSP.  This is configured as shown:
+
+	cache_peer proxy1.ap.webscanningservice.com parent 3128 0000 \
+			default no-query no-digest name=peer_noauth login=apeagers\internetuser:<woody>
+
+
+
+3d. Add host_allow and cache_peer_access
+
+The intention is to allow access to two distinct user groups "Authorised" and "Not Authorised".  The group of authorised users is the cross section of "NTLM Authorised" users and "Machines on Local Network".  Whereas, the group of not authroised users is the set difference of these groups.  Since squid rules work top down, meaning that when a rule matches the processing goes no further (for that type of rule), the following logic has been applied:
+
+	DENY machines not on local network
+	ALLOW authorised and pass to PEER peer_authed
+	ALLOW local network and pass to PEER peer_noauth
+	DENY all others
+
+This is configured in the squid.conf file as:
+
+	http_access deny !our_networks
+	http_access allow authproxy
+	cache_peer_access peer_authed allow authproxy
+	http_access allow our_networks
+	cache_peer_access peer_noauth allow our_networks
+	http_access deny all
+
+
+3e. Remove faults
+
+Some of the configuration options from the windows based CSP proxy servers are not valid for the squid version installed here.  When starting squid from the command line take note of the "faulty" lines in the confiugration and remove them.
+
+
+4. Packet Filter
+
+Certain considerations need to be put in place within the packet fileter so that the squid proxy service can function correctly.
+
+
+4a. Transparent Translation
+
+The transparent functionality of the squid proxy work primarily from the functioning of the packet filter.  The filter redirects traffic to port 80 or 443 (http or https) to the listening port of the proxy server.  The proxy server then makes the request on behalf of the client.
+
+This can be achieved with the following two rules:
+
+	match in quick on $if_int proto { tcp, udp } \
+			from 192.168.1/24 to any port { 80, 443 } \
+			rdr-to 127.0.0.1 port 3128
+	pass in quick on $if_int proto { tcp, udp } \
+			from 192.168.1/24 to 127.0.0.1 port 3128 keep state
+
+
+4c. Allow Internal Access
+
+So that clients of the local network can access the proxy server using authentication, the internal network must be passed to access the squid server.  The following rule sets up this relationship:
+
+	pass in quick on $if_int proto { tcp, udp } 
+			to ($if_int:0) port 3128 keep state
+
+
+4c. Allow external access
+
+Finally, the squid proxy must be allowed to access the internet so that it can provide clients with the internet.  The following rule loosely allows all to access any internet address on ports 80, 443 or 3128:
+
+	pass out quick on $if_ext proto { tcp, udp } \
+			to any port { 80, 443, 3128 } \
+			keep state nat-to ($if_ext:0)
+
+However as ports 80 and 443 are redirected on the internal interface access can only be from the internal services.  If further security is needed to block port 3128 access the following might need to be included:
+
+	block in quick on $if_int proto { tcp, udp } \
+			to any port 3128
+
+This would follow the pass setup in the previous topic.
+
+
+5. Scripts
+
+
+
+

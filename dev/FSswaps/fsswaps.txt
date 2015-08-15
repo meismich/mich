@@ -1,0 +1,135 @@
+File Server - Swapping to new systems
+2011-11-18
+Michael Spence
+
+
+Audience:
+
+This document is for field support and system administrators
+
+
+Preamble:
+
+This document describes the techniques employed to decommission a file server and put in place a file server with the same name and file shares.
+
+This document details the creation of a Virtual Machine to take the place of an existing file server.
+
+This document outlines the steps taken to transfer data from the existing system to the replacement system, including the steps to gain information about existing shres, the steps taken to copy data and finally the steps to create new shares.
+
+This document details the method for making the new server appear as the current server.
+
+
+Topics of Discussion:
+
+1. Overview
+2. Creating a Virtual Machine File Server
+3. File Shares
+	a. Export File Share List
+	b. Robocopy Usage
+	c. Creating Shares
+4. Transitioning
+
+
+Topics in Detail:
+
+1. Overview
+
+Physical file servers have been employed throughout APEagers for many years, and similar to PC replacements must be turned over on a regular basis.  The time frame for replacement is supposedly four (4) years, but typically this has been much greater.  Machines over the age of 4 years are no longer covered by warranty and as such should be replaced.
+
+Within the four year life cycle of a Server, many improvements and technologies have evolved throughout the IT industry and at the time of replacement differing technologies should be examined as a potential replacement solution.  This document describes a method to use VMWare on a new replacement server, giving the ability to have applications and file servers as separate machines.  In the future, there may be no need to have file servers at a campus, as such much of this document may be outdated.  It is the author's hope that some may be of some use.
+
+Primarily, the transitioning from a current physical file server to a new virtual server, involves the creation of the new virtual machine, copying the data from the current machine to the new machine and then transitioning the names of the servers so that the new server appears to be the current server.  There are some potential complications with this process, which are discussed in closing.
+
+
+2. Creating a Virtual Machine File Server
+
+It is assumed that the host server, which is to contain the new file server, has been configured with an appropriate VMWare installation.  To begin building a virtual machine, connect vSphere client to the ESX host.  Typically within the QLD/NT network, a dealership level ESX host should be configured as follows:
+
+	IP Address:	10.[n].0.101		where n is the campus 2nd Octect value
+	UserName:	root
+	Password:	<is a!>
+
+Once the client has connected to the host, right-click on the host and select "New Virtual Machine...".  A typical configuration is appropriate for this setup; press Next.  Give the machine an appropriate name; it is suggested that this should be <server>_new where server is the current servers name.  
+
+Next, select the appropriate storage on which to place the virtual machine.  In a default APEagers ESX host, there should be configured two (2) drives: a small drive used for ESX OS only (approx 30GB); and a large drive used for Production VMs (over 1TB).  Use the large, prodution data store for the storage of this virtual machine.
+
+Select the OS type being used from the list.  It is suggested that for a file server, there may be little need to run anything later than Windows Server 2003 R2 (32-bit).  Select as appropriate.
+
+Create a HDD appropriate for the OS of the file server.  For Windows Server 2003 there should be little need for the OS drive to be larger than 25GB.  Remember that the C: of the system is NOT for storage or shares, but the OS only.  This method allows the separation and easy backup of differing drives.  It also allow easy porting of the drive from one system to another if necessary.
+
+Before pressing Finish, tick the check box "Edit the virtual machine settings before completion".  There are some changes which should be made before completing such as: removing the floppy drive, adding the additional HDD, and adding the ISO to the CD (remember to "Connect at Power On").
+
+Once all the setup options have been configured, it is time to power up the new server and complete an installation of Windows Server.  This can be done by opening a console to the virtual machine and pressing the "green" play button to turn it on.  Note: there is little time before the OS on the CD boots and it is nearly impossible to get to the bios of the virtual machine in this way.  Bios can be accessed through the settings of the machine by checking "Force BIOS Setup" under "Boot Options".  This may be necessary if the CD was not connected at power on.
+
+Perform the windows installation as usually done.  Join the system to the domain when done.  
+
+As with all systems within the APEagers network, appropriate anit-virus software must be installed.  Perform a regulary McAfee Anti Virus installation.
+
+Before rebooting for the process of joining the domain, to save time, the VMWare tools can be installed.  To do this, under the VM menu -> Guest, click the "Install/Upgrade VMWare Tools".  This will attach a temporary CD to the OS of the VM and the autoplay feature will begin the installation process.  There is most times no need to change the parameters of this installation, so allow it to complete naturally.
+
+Finally, prepare the second HDD for use.  It is the author's preference to perform this through the System Manager MMC.  Under "Drive Management" select the drive and "Add Partition".  By default the CD is referenced as "D"; it may be neceesary to first change this drive letter if it does not suit.  There is no need to perform a "quick" format as the VMWare supplied HDD is not a real disk and the format barely does anything in reality.
+
+
+3. File Shares
+
+It is important to note that this exercise aims to replicate exactly the data contained on another server and then serve this data through shares in exactly the same way as originally supplied.  To do this, it is necessary to gain information about the original setup, have a method for copying and then checking that copy, and finally recreating the shares as if they were the original.
+
+	a. Export File Share List
+
+The system manager tool lists the shares on a server.  This tool can be used from any windows machine, with the correct credentials, and the information can be extracted to a locally used machine.  Very Handy.  
+
+Find the shares in the system management tree.  In the right panel, right-click some whitespance and select "Export List...".  Choose an area to save the file and press done.
+
+When the exported file is examined, the share name and paths for the share can be seen.  Store the file for comparison at the end of this document.
+
+	b. Robocopy Usage
+
+Robocopy is a tool bundled with the Microsoft Server Resource Tools Kit and has been present since NT4.0.  This tool has SYSTEM level privileges which enable it to traverse folders which even an administrator does not have permission to access.  This allows this tool to copy all files within a file system.  
+
+Robocopy is also capable of copying the securities from one file system to another.  Naturally the machines will need to part of the same domain for the credentials to make sense.
+
+There are two appropriate copy methods for this task: full folder copy, and update changes copy.  The copying of a file can fail if the file is open and in use.  This is typical of system files, such as shadow copies and the like.
+
+The command for a full folder copy takes the form:
+
+	robocopy \\server\path \\server_new\path /e /v /zb /r:0 /w:0 /copyall /log:logfile
+
+The update changes copy is performed using the following:
+
+	robocopy \\server\path \\server_new\path /mir /v /zb /r:0 /w:0 /copyall /log:logfile
+
+It is recommended that a full copy is performed well in advance of the transition time, and an update changes copy is just prior to the cutover.
+
+Appropriate logfile names should be used for verification purposes.  Errors are described in detail on files which fail to copy.  Also note that "path" can be substitued with "d$" to copy the entire "D:" of a machine.  Due to system files being located in the root of windows file systems, this will throw errors when these system files are attempted to be copied.
+
+
+	c. Creating Shares
+
+Once all data has been copied from the existing system to the new system, the shares can be duplicated on the new system.  Using the exported share list, as described above, create shares to match this list on the new machine.
+
+When creating shares, the methodology employed states that all shares should be given permissions appropriate to let "Everyone" have full control to the share.  Securities will restrict the access to the share with the appropriate application of security groups or users (groups is the preferred method in this case).  
+
+Ensure that the permissions are set correctly for all created shares.  The securities will have been set during the robocopy process, but it is advisable to verify that these securities exist.
+
+
+4. Transitioning
+
+After all shares have been recreated, it is now possible to transition from the existing server to the new server.  To do this ensure that there are no users accessing the current system.  If users are accessing files, it may be necessary to perform an update copy of the files, as explained in the robocopy usage above.  
+Firstly, from a remote desktop connection to the current server, rename the server to an alternate name.  It has been proposed that this should be "server_old" to identify the server as the old copy of the system.  Once the server reboots, again from a remote connection, alter the IP address of the system and ensure that DNS updates the records for the server.
+
+Finally, now accessing the new server, change the name of the server.  This will require a reboot, after which, the IP address of the machine can now be changed to match the original settings of the original server.
+
+At this stage the newly built server will appear to be an exact replica of the original system.  Task complete.
+
+
+5. Considerations
+
+When performing a File Server swap procedure, as detailed in this document, planning is key to a successful cut over.  Seemingly trivial details of the existing server should always be recorded for use in the migration process.  
+
+DHCP has often been housed on the file servers at dealerships thoughout APEagers and as such needs to be replicated on the new file servers.  Refer to the DHCP setup guide for this process.
+
+Applications which may be installed on the original file servers, should be transitioned to other systems.  If absolutely necessary or to save time during a migration, installation can be performed on the new file server.  Care should always be taken to replicate information between the systems to maintain data integrety and validity.  Also program data should always be directed to the data drive of a file server, not the OS drive.
+
+
+Z. References
+

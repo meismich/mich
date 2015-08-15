@@ -1,0 +1,19 @@
+Bill Buckle - ESX Environment
+2012-09-21
+Michael Spence
+
+
+Preamble:
+
+Details the ESX setup for bill buckles
+
+
+Topics
+
+	ESX install
+	ESX Config
+	VM Guests
+		dc
+		issadmin
+		ts
+		fw

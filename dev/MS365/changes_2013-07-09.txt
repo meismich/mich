@@ -1,0 +1,47 @@
+
+
+
+I re-routed the following on emp-rtr today:
+
+[root]:/etc# route add 203.25.42.232 10.40.1.33
+add host 203.25.42.232: gateway 10.40.1.33
+[root]:/etc# route -n add -net 72.51.26.208/28 10.1.254.254
+add net 72.51.26.208/28: gateway 10.1.254.254
+[root]:/etc# route -n add -net 199.36.100.0/22 10.1.254.254                                 
+add net 199.36.100.0/22: gateway 10.1.254.254
+[root]:/etc# route -n add -net 125.56.128.0/17 10.1.254.254 
+add net 125.56.128.0/17: gateway 10.1.254.254
+[root]:/etc# route -n add -net 65.39.128.128/26 10.1.254.254
+add net 65.39.128.128/26: gateway 10.1.254.254
+[root]:/etc# route delete 203.25.42.232
+delete host 203.25.42.232
+[root]:/etc# route delete -net 125.56.128.0/17
+delete net 125.56.128.0/17
+
+
+and also these:
+
+[root]:/etc# route -n add -net 169.254.0.0/16 10.1.254.254           # Link Local RFC 3927
+add net 169.254.0.0/16: gateway 10.1.254.254
+[root]:/etc# route -n add -net 192.0.0.0/24 10.1.254.254             # Unassigned RFC 5736
+add net 192.0.0.0/24: gateway 10.1.254.254
+[root]:/etc# route -n add -net 192.0.2.0/24 10.1.254.254             # Test Net 1 RFC 5737
+add net 192.0.2.0/24: gateway 10.1.254.254
+[root]:/etc# route -n add -net 192.18.0.0/15 10.1.254.254            # Benchmark  RFC 2544
+add net 192.18.0.0/15: gateway 10.1.254.254
+[root]:/etc# route -n add -net 198.51.100.0/24 10.1.254.254          # Test Net 2 RFC 5737
+add net 198.51.100.0/24: gateway 10.1.254.254
+[root]:/etc# route -n add -net 203.0.113.0/24 10.1.254.254           # Test Net 3 RFC 5737
+add net 203.0.113.0/24: gateway 10.1.254.254
+[root]:/etc# route -n add -net 74.125.0.0/16 10.1.254.254           # Test Net 3 RFC 5737  
+add net 74.125.0.0/16: gateway 10.1.254.254
+[root]:/etc# route -n add -net 173.222.0.0/15 10.1.254.254
+add net 173.222.0.0/15: gateway 10.1.254.254
+[root]:/etc# more rc.local
+
+
+what about:
+
+96.7.130.70
+
+

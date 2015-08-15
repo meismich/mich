@@ -1,0 +1,95 @@
+Hidden Valley ESX Host - Specification and Installation
+2012-02-02
+Michael Spence
+
+
+Audience:
+
+For System Engineer, some parts useable by Field
+
+
+Preamble:
+
+This document summarizes the necessary setup requirements for the HVY-ESX server.
+
+This document demonstrates the required connectivity to the network.
+
+This document DOES NOT include the required setups for the VMs which are to live on this host.
+
+
+Topics of Discussion:
+
+1- System Specs
+2- Disk Configuration
+3- ESX Installation
+4- RMM Configuration
+5- Network Ports
+
+
+Topics in Detail:
+
+1- System Specs
+
+[Insert Ocean Specs for this machine here]
+
+
+2- Disk Configuration
+
+Disk Array 1
+	2x 32GB SSD X25E
+Disk Array 1
+	4x 1TB HDD 7200rpm
+
+Virtual Disk 0
+	Raid 1 across Disk Array 1 for a total of 24GB
+Virtual Disk 1
+	Raid 5 across Disk Array 2 for a total of 1.3TB
+Virtual Disk 2
+	Raid 5 across Disk Array 2 for a total of 1.3TB
+
+
+3- ESX Installation
+
+ESX version: ESXi 4.1
+ESX Licence: Standard CPU Licence
+Root password: <is a!>.
+Name of host as configured in DNS: hvy-esx1
+Network address of Host: 10.52.0.101
+Primary DNS: 10.1.1.43
+Secondary DNS: 10.50.1.4
+DNS Suffix: apeagers.com.au
+
+Storage
+ESX Host:	hvy-esx host	24GB (23GB free after host installation) (Across Virtual Disk 0 only)
+ESX Guest:	hvy-vm prod	2.7TB (Across Virtual Disk 1 and Virtual Disk 2) 
+
+Networking
+Virtual Switch	VLAN 1		Nic0 and Nic2	Connected to all VMs as default		Connected to LAN
+Virtual Switch	VLAN 666	Nic1		Coneected only to HVY-FW		Connected to WWW
+
+
+4- RMM Configuration
+
+Configured through BIOS under "Server Management" -> "Baseboard LAN configuration"
+
+Under, "Intel RMM3 LAN configuration"
+
+IP Address:	10.50.0.100
+
+Under, "User configuration"
+
+UserID = User3 configured to be:
+
+U/N:		issadmin
+P/W:		<is a>
+Status:		Enabled
+
+
+5- Network Ports
+
+The following diagram illustrates the positions of the network ports on the rear of the server.
+
+[Insert Photo of ESX network ports here]
+
+
+Nic0 and Nic2 which are components of different hardware, are to be used as redundant network connections to the local area network.  Nic1 is the direct link to the internet at this locaiton.  The RMM interface should also be connected directly to the LAN..

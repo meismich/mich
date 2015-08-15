@@ -1,0 +1,4 @@
+open used@www.phase.com.au
+lcd c:\pics
+mput *.jpg
+close

@@ -1,0 +1,19 @@
+#
+# FILE:		pf/ape_dst.pf
+# AUTHOR:	Michael Spence
+# DATE:		2013-06-14
+# VERSION:	BSD_Gateway v0.1 (client)
+#
+# PURPOSE:	Pass & NAT Allowed Internet Destinations
+#
+
+dst_subaru =	"59.154.25.3"			# Subaru 400 ..... Sam Roche 2013-05-18 [MS]
+dst_atlas =	"210.193.207.91"		# Toyota Atlas ... Sam Roche 2013-06-12 [MS]
+
+table <dsts_allow> const {				\
+			$dst_atlas			\
+			$dst_subaru			\
+			}
+
+pass in quick on $if_int proto { tcp udp } to <dsts_allow>
+pass out quick on $if_ext proto { tcp udp } to <dsts_allow> nat-to ($if_ext:0)

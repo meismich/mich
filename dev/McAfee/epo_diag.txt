@@ -1,0 +1,90 @@
+ePolicy Orchestrator Diagnosis
+2011-05-17
+Michael Spence
+
+(Menu->Software->Extensions->Server)
+All:
+	Install Date:	4th Feb, 2010
+Agent Management:
+Common Events:
+Counter Measures:
+Data Channel:
+ePO Core:
+MyAvert Security:
+Policy & Task Mgmt:
+Repository Mgmt:
+System Mgmt:
+	Version:	4.5.1.851
+
+Console:
+Help:
+LDAP Extension:
+Registered Servers:
+Scheduler:
+	Version:	2.0.1
+
+	
+Users:
+admin		<woody>		global admin
+issadmin	<isa!>		global admin
+rmadden		(???)		global admin
+
+
+Permissions Sets:
+(no users using these)
+Executive Reviewer
+Global Reviewer
+Group Admin
+Group Reviewer
+
+
+Server Settings:
+TODO: Read "Server Settings and Behavious They Control" in "Managing User Roles and Permissions" (in what document???)
+
+
+System Tree:
+Organised by Campus for QLD sites with sub-groups for Dealerships
+Organised as Klosters for Newcastle
+Organised as Darwin for NT with sub-groups for Bridge & Hidden Valley
+
+
+Policy Catalogs for VirusScan Ent 8.7.0 On Access:
+APEagers Default:
+Scans: Boot Sectors, Floppy during shutdown (workstation only)
+Enable On-access scanning: At Startup, When policy enforced
+Max Scan Time:  archive 15sec, file 45sec
+Cookies: scanned
+Heuristic check for suspicious: Sensitivity = very low(workstation) disabled (server)
+
+
+Policy Catalogs for VSE8.7 Access Protection:
+AS Max: -/R execution of scripts from Temp
+AV Std: B/R remote creation of autorun (-/R on server)
+	B/R mass mailing worms 
+		(except AcroRd32.exe, agent.exe, amgrsrvc.exe, automail.exe, beserver.exe, 
+			corvu32.exe, ebs.exe, eudora.exe, excel.exe, FireSvc.exe, 
+			inetinfo.exe, ivm.exe, java.exe, javaw.exe, mailsndr.exe, 
+			modulewrapper.exe, mozilla.exe, msimn.exe, MSKDetct.exe, 
+			MSKSrvr.exe, mwcs.exe, netscp.exe, nlnotes.exe, nrouter.exe, 
+			nsmtp.exe, ntaskldr.exe, ntvdm.exe, opera.exe, outlook.exe, 
+			PF_SMTP.EXE, pine.exe, poco.exe, print32.exe, retrospect.exe, 
+			thebat.exe, thunderbird.exe, tomcat.exe, tomcat5.exe, tomcat5w.exe, 
+			tomcat6.exe, tomcat6w.exe, 
+			Touchpaper.Service.Mail.Inbound.WindowsService.exe, 
+			Touchpaper.Service.Mail.Outbound.WindowsService.exe, winpm-32.exe
+			) (list maybe different on server)
+	B/R IRC comms
+
+C Std:	B/R modification of McAfee
+	B/R mod of Agent
+	B/R mod of Engine
+	-/R execution of progs from Temp
+	B/R termination of McAfee
+C Max:	-/R execution of profs from Download
+Virt:	-/R mod of VMWare WS files
+	-/R mod of VMWare Svr files
+	-/R mod ov VMWare VM files
+
+
+Creating Agent Files:
+This can be done "per domain" on the network.  Go to "system Tree" and "System Tree Actions".  Select "new Systems" and change radio selection to "Create and Download agent installation package".  Add the correct domain credentials and press OK.  Finally download the file on the following page and name appropriately.

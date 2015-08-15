@@ -1,0 +1,43 @@
+Firewalls - Known Rules
+2012-07-12
+Michael Spence
+
+
+Background Knowledge
+
+The firewalls are configured to allow only specific known traffic to pass accross them.  The configuration of the rules required to perform this have been simplified to allow the administrator to easily make required firewall changes.
+
+Most changes can be categorised under three types of changes:
+	- Internal machine needing access to entire internet [INTERNAL_SOURCES]
+	- Single internet destination needed to be accessed by internal [INTERNET_DESTINATIONS]
+	- External machines need access to internal resource [EXTERNAL_REDIRECT]
+
+Internal Sources -
+
+Are machines which have the ability to access all internet resources in at least some fashion.  Allowances have been made for machines in the following categories:
+
+	Proxy Servers - ports 80, 443 and 3128 access required
+	Mail Servers - port 25 access required
+	Raw Servers - all ports allowed
+
+
+
+
+
+
+Template
+
+(Copy the following template below to the bottom of this file and update the information appropriatly)
+
+Rule #: [000000]
+Date Added: [Today's Date]
+Dealership: [That requested this change]
+IT Requester: [APEagers Employee requesting change]
+HD Call #: [Service Desk Job Number]
+SysAdmin: [Employee making the change]
+Change Type: <select from type list>
+Notes:
+[Any relevant Notes about the change.]
+
+
+

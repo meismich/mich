@@ -1,0 +1,28 @@
+Radius - The Full Story
+2011-09-13
+(c) mic Enterprises 2011
+
+Preface:
+
+
+
+Table of Contents:
+
+1. Introduction
+2. Overview
+3. Installation of Open BSD
+4. Configuration of Radius
+	a.	
+5. Certificate Creation
+	a.	First Time Creation
+	b.	Ongoing Creation
+6. Administration Menu
+7. Access Point Configuration
+	a.	Cisco 1131
+	b.	Other Devices
+8. End Point Configuration
+	a.	Windows XP
+	b.	Windows 7
+	c.	iPhone/iPad
+	d.	Other Devices
+9. Maintenance

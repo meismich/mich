@@ -1,0 +1,55 @@
+Microsoft 365 - Configuring Your Outlook
+2011-06-10
+Michael Spence
+
+
+Audience:
+
+This document is intended for all APEagers Users.
+
+
+Preamble:
+
+This document describes how to configure your Outlook to work with the new Microsoft 365 email server.  IT have done a lot of background work to make this setup as painless as possible, but some manual steps must be performed.  This document is intended to be user friendly and as easy to follow as possible, but if this method does not make sense to you, please ring the Helpdesk and ask for assistance.  
+
+
+Method:
+
+This process will only work once IT have migrated all your emails to the new system.
+
+*** Please DO NOT proceed until directed to by IT staff. ***
+
+It will be assumed that you are logging onto your computer for the first time.  If you do not regularly log off or shut down your computer, please reboot before proceeding.
+
+The first change IT should have automatically made to your computer was to remove your OLD Outlook setup.  The following screen should appear, if it is removed.
+
+[INSERT STEP 1 IMAGE]
+
+If Outlook is showing your email account, this automatic step did not work.  That is OK though, you can perform this manaully.  
+	First, shutdown Outlook so we don't have any complications.
+	Second, using Internet Explorer, go to the address:
+
+		http://ittools/hacks/reg/resetprofile.reg
+	Third, Click "Allow" and "Yes" to make changes to your computer
+	Fourth, Restart Outlook and Now you should have the above picture
+	(IF YOU DIDN'T RING HELPDESK AND ASK FOR ASSISTANCE, STOP HERE!)
+ 
+Now that we are ready to proceed, Click "Next".  The following screen will appear.
+
+[INSERT STEP 2 IMAGE]
+
+Click the circle beside "Yes" and Click "Next".  Now the setup will display the following screen and will fetch your account details AUTOMATICALLY.
+
+[INSERT STEP 3 IMAGE]
+
+If this step doens't fetch the account details, ring helpdesk and ask for assistance.
+
+Once the details have been gathered, Click "Next".  The setup then tries to connect to your account, but your 365 email account has a different password.  The screen will change and a popup will be displayed as shown below.
+
+[INSERT STEP 4b IMAGE]
+
+By default your 365 password is "pa$$w0rd".  Please enter this into the password field.  Note your username is already supplied, this is automatic.  Click "OK" to continue.  Now that your credentials are supplied, setup can continue and connect to your account.  Click "Next" to continue and the final setup screen will be displayed as shown below.
+
+[INSERT STEP 5 IMAGE]
+
+Click "Finish" and shortly Outlook will be ready to use.  It will do some processing for a minute or two while it fetches some emails, your calendar, etc.  Please wait and it will be with you shortly.

@@ -1,0 +1,106 @@
+notes on installation:
+
+as root:
+export PKG_PATH=http://mirror.aarnet.edu.au/pub/OpenBSD/4.8/packages/i386/
+
+pkg_add freeradius
+(this installs the freeradius system and dependencies)
+(at the end of the installation note the instructions to install into rc.local)
+
+if [ -x /usr/local/sbin/radiusd ]; then
+	install -d -o _freeradius /var/run/radiusd
+	echo -n ' radiusd'; /usr/local/sbin/radiusd
+fi
+
+
+notes on certificates:
+
+edit the following files -
+	ca.cnf
+	server.cnf
+	clients.cnf
+DO NOT change [CA_defaults]
+MAY change matching on organizationalUnitName and countryName and localityName etc
+DO change input_password & output_password
+DO change countryName, stateOrProvinceName, localityName, organizationName, emailAddress, commonName
+(note: commonName MUST be different between each .cnf other's to be EXACTLY the same)
+
+cnf has "default_days" This should be 10years for root cert, and server.  
+time for client certificates 1240 days (3years, 4months)
+new client certificate created every 3 months
+
+input & output passwords: R4d1usC3rtificate
+countryName		= AU
+stateOrProvince		= Queensland
+localityName		= Brisbane
+organizationName	= "A.P. Eagers Ltd."
+emailAddress		= issadmin@apeagers.com.au
+commonName		= [for CA] "APEagers Certificate Authority"
+			  [for server] "APEagers Server Certificate"
+			  [for client] "APEagers Client Certificate"
+
+make ca.pem
+make ca.der
+make server.pem
+make client.pem
+
+copy ca.der and client.pem to common location
+
+notes on how freeradius works:
+
+radiusd.conf:
+
+Max_requests - set to 256 x no of clients.... um expecting 500 clients thats 102400 + 25600 = 128000
+
+2x listen obviously for auth and acct
+
+reg_ex and ext_ex.... um haven't figured out what for yet
+
+log - investigate "requests" to log each request to differing log files
+
+
+radutmp - mentioned in sites-available/default under "session"
+(look at the module radutmp)
+
+
+eap.conf:
+delete all other methods except TLS set default to TLS  <-- needs testing
+
+Why??
+
+"We do not list EAP-TLS in the above table, because it performs authentication with certificates, and doesn't use passwords."
+    --http://deployingradius.com/documents/protocols/compatibility.html
+
+"Although it [EAP-TLS] is rarely deployed, it is still considered one of the most secure EAP standards available and is universally supported by all manufacturers of wireless LAN hardware and software."
+    --http://en.wikipedia.org/wiki/Extensible_Authentication_Protocol#EAP-TLS
+
+
+
+Zephyr's MAC Address - 001d.d956.7899
+
+eap reply message:
+	Reply-Message = "Device with MAC Address %{Calling-Station-Id} authorized for network access"
+
+
+Menu System:
+created by Michael for the express purpose of adding and deleting mac addresses and restarting the service.
+
+access to the menu is given through user "radadmin"
+scripts held in "bin"
+requires directories "bup" and "tmp"
+requires "radadmin	ALL = (root) NOPASSWD: /bin/kill, /bin/ps"
+     (for restarting service)
+login script ".profile" edited to start menu and exit once complete
+
+
+Making new client certificates:
+
+in /etc/raddb/certs
+(ca and server certificates have been made unwritable so they DO NOT get overwritten - if these ARE damaged then they MUST be replaced with the originals stored in bup/2011-04 - unless you feel like touching ever computer connected to the network... I didn't think so)
+to create new client certificates, edit client.cnf and make necessary changes
+(suggest changing "commonName" to "client{YYYY}{MM}@apeagers.com.au") but could change valid time, etc
+remove all index.txt* files
+type "make client"
+copy "client.p12" to whereever you use it from  (use pscp.exe from nsd-issadm) or scp from qld-ras1 to another nix box.
+
+

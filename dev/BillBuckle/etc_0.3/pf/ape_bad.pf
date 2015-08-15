@@ -1,0 +1,19 @@
+#
+# FILE:		pf/ape_bad.pf
+# AUTHOR:	Michael Spence
+# DATE:		2013-06-11
+# VERSION:	BSD_Gateway v0.1 (client)
+#
+# PURPOSE:	Block Specific Destinations or Sources
+#
+
+table <ext_bad> const { 114.29.203.33 }
+
+block in quick on $if_int from any to <ext_bad>
+block out quick on $if_ext from any to <ext_bad>
+
+table <int_bad> const { 10.128.1.1 }
+
+block in quick on $if_int from <int_bad> to any
+block out quick from <int_bad> to any
+

@@ -1,0 +1,453 @@
+/***************************************/
+/* Telstra Theme Style sheet */
+/***************************************/
+
+/**********
+ * Global *
+ **********/
+BODY
+{
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background: inherit;
+	margin: 0;
+}
+TD {font-family: Verdana, arial, helvetica, sans-serif;font-size: 10px;}
+
+/*******************
+ * Header Elements *
+ *******************/
+.headerBar
+{
+	color: #ffffff;
+	background-color: #0066cc;
+	border-top: 1px solid #6699ff;
+	border-bottom: 1px solid #6699ff;
+}
+
+.headerBarWelcome
+{
+	color: #000066;
+	background-color: #FFFFFF;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.headerAuthLevel
+{
+	color: white;
+	font-size: 12px;
+}
+A.headerLink
+{
+	color: #4477AA;
+	text-decoration:underline;
+}
+A.headerAuthLevelLink
+{
+	color: white;
+	text-decoration:underline;
+	font-size: 12px;
+	font-weight: bold;
+}
+.passExpires
+{
+	color: red;
+}
+
+
+/**************************
+ * Left navigation styles *
+ **************************/
+ 
+ /* used for Options text in navigation*/
+ .navOptions {color: #000066;background-color: #b4e6ff;border-bottom: 1px solid #B6CBEB;
+	font: normal 13px Verdana;
+	border-top: 1px solid #6699ff;
+	border-right: 1px solid #6699ff;
+	text-align: center;
+	padding: 8px 20px 8px 10px;
+} 
+ 
+ /* used in left navigation for unselected folders*/
+.leftnavfolder { background-color: #F0F8FF;border-bottom: 1px solid #B6CBEB;
+	border-right: 1px solid #6699ff;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+}
+
+.leftnavfolder:hover {	color: #000066;
+}
+
+.leftnavfolder2:hover { background-color: #d9ecff;border-bottom: 1px solid #B6CBEB;
+	color: #ff6600;
+}
+A.leftnavfolder {border-left: none; text-decoration:underline;color: #000066;
+	background: inherit;
+	border-style: none;
+	font-weight: bold;
+	border-right-color: #000000;
+	padding-right: 70px;
+}
+A.leftnavfolder:hover {text-decoration:underline;
+	border-right-color: #000000;
+	color: #ff6600;
+}
+
+/* used in left navigtaion for selected folders*/
+.leftnavfolderopen {padding-top: 6px; padding-bottom: 7px;font-size:14px;background-color: #FFFFFF;
+	border-right: 1px solid #6699ff;
+	color: #000000;
+	padding-left: 1px;
+}
+A.leftnavfolderopen {text-decoration:underline;font-size: 10px;font-weight:bold;color: #ff6600;background-color: #ffffff;font-family: Verdana, Arial, Helvetica, sans-seri;
+	border-right-style: none;
+}
+A.leftnavfolderopen:hover {text-decoration:underline;
+	color: #ff6600;
+}
+
+/* used in navigation link sub-menu */
+A.navMenuItem
+{
+	text-decoration:underline;
+	color: #4477AA;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding-right: 5px;
+	border: none;
+}
+A.navMenuItem:hover
+{
+	text-decoration:underline;
+	color: #ff6600;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* used for navigation folder menu category header*/
+.menuCategory
+{
+	font-weight: bold;
+	font-size:14px;
+	color: #000066;
+	background-color: #F0F8FF;
+	padding: 4px;
+}
+ 
+ /* used for Off keyword in menus when service is off*/
+.serviceOff
+{
+	color: #A0A0A0;
+}
+
+
+/*****************
+ * Body Elements * 
+ *****************/
+ 
+ /* used for column header for tables */
+.listHeader
+{
+	text-decoration:none;
+	font-weight:bold;
+	color: #000000;
+	background-color: #c9dbff;
+}
+
+/*used for column headers for tables which can be sorted on that column */
+A.listSortHeader
+{
+	text-decoration:underline;
+	font-weight:bold;
+	color: #000000;
+	background-color: #c9dbff;
+}
+
+/* used for user home page for the service links */
+.link
+{
+	text-decoration:underline;
+	color:black;
+}
+
+ /* used for background for buttons on pages */
+.buttonbar
+{
+	font-weight:bold;
+	color: #ffffff;
+	background-color: #d9ecff;
+	border: 1px solid #6699ff;
+	padding: 6px;
+	border-right-style: none;
+}
+
+ /* used for screen name on pages */
+.screenName
+{
+	color: #000066;
+	font-size: 21px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+ /* used for colored bars on pages */
+.headandfoot
+{
+	color: #000066;
+	font-weight:bold;
+	background: #e6f8ff;
+}
+
+ /* used for backround body colors */
+
+.enduserbody
+{
+	padding-bottom: 2px;
+	padding-top: 2px;
+	font-family: "Lucida Grande";
+	background-image: url(/Graphics/Telstra/bg_lines2.gif);
+	background-repeat: repeat-x;
+}
+ 
+/* used for links in body pages, such as configure Device,customize columns,etc.*/ 
+A.nestedLink {color: #4477AA;text-decoration: underline; cursor:pointer;}
+
+/******************
+ * Table Elements *
+ ******************/
+TD.unselected {background-color: transparent;text-decoration:none;
+	padding: 0px;
+}
+TR.unselected {background-color: transparent;text-decoration:none;
+}
+TR.hilite {background-color: #E6F4FF;color: #4477AA;text-decoration:none;}
+A.tableLink {background-color: transparent;color: #000000;text-decoration:none;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+A.tableLink:hover {background-color: inherit;text-decoration:none;
+	font-weight: bold;
+	color: #ff6600;
+}
+
+/********
+ * Tabs *
+ ********/
+TD.tabActive
+{
+	font-size:12px;
+	color: #FFFFFF;
+	background-color: #B6CBEB;
+	font-weight:bold;
+}
+TD.tab
+{
+	font-size:12px;
+	color: #FFFFFF;
+	background-color: #666666;
+	font-weight:bold;
+}
+A.tab
+{
+	font-size:12px;
+	color: #FFFFFF;
+	font-family:Tahoma, Verdana;
+} /* GET RID OF*/
+
+/******************
+ * User Messages  *
+ ******************/
+.error{font-size:12px;color:red;background-color: #F0F0F0 ;border: thin solid #C8C8C8;padding: 5px}
+.warning{font-size:12px;color:blue;background-color: #F0F0F0 ;border: thin solid #C8C8C8;padding: 5px}
+.informational{font-size:12px;color:blue;background-color: #F0F0F0 ;border: thin solid #C8C8C8;padding: 5px}
+
+
+/******************
+ * Login Screen   *
+ ******************/
+.login {background-color: #CCCCCC;}
+.loginbase {background-color: #CCCCCC;}
+.logintext {font-size: 12px; color: #ffffff;}
+
+/******************
+ * Button styles  *
+ ******************/
+ .bwbutton {font-size:12;height: 22;width: 75;}
+ .bwbuttonNoWidth {font-size:12;height: 22;}
+ 
+/******************
+ * Fieldset styles*
+ ******************/
+ .fldset {font-size:12px;color: #000000}
+ .fldsetline {border-color: #FFFFFF}
+
+/*******************
+ * Calendar styles *
+ *******************/
+ .monthbar{color: #ffffff;background-color: #4477AA;}
+ .daybar{color: #ffffff;background-color: #B6CBEB;}
+ .weekend{color: #ffffff;background-color: #E6F4FF;}
+
+/*******************
+ * Debug styles    *
+ *******************/
+TABLE.debug {color: #FFFFFF;}
+
+
+
+/*******************
+ * Telstra styles    *
+ *******************/
+
+.hd1 {color:#6699FF;font-family:verdana,sans-serif;font-size:11px;}
+.hd1 A:link,.hd1 A:visited,.hd6{color:#000066;}
+.hd1 A:hover{color:#FF6600;}
+.hd2 {background-color:#F1F8FE;}
+
+.hd2bg {background-color:#F1F8FE;}
+.hd2 A:link,.hd2 A:visited,.hd2 A:hover{font-family:verdana,sans-serif;font-size:8pt;color:#000066;text-decoration:none;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.hd2:hover {
+	background: #c9dbff;
+}
+.hd3 {background-color:#6699FF;}
+.hd4 {background-color:#FF9900;}
+.hd5 {color:#000066;font-family:HarmonyWeb,'Harmony display',arial,sans-serif;font-size: 20pt;}
+#t1,#t2,#t3,#t4,#t5,#t6,#t7{position:relative;}
+.ft1{background-image:url(gwy_ft_bg.gif);background-color:#6699FF;}
+.ap1{background: url(gwy_app_hd_bg.gif #c9dbff;}
+
+
+/*******************
+ * Telstra styles - Frontpage    *
+ *******************/
+
+/* modules */
+
+div.moduleContent {
+	padding: 0 5px 10px 10px;
+}
+
+div.moduleContent p {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+/* promo module */
+td.promoModule {
+	background-color: #ffffff;
+}
+
+td.promoModule p {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	color: #000066;
+}
+
+td.promoModule a, td.promoModule a:link, td.promoModule a:visited {
+	font-weight: bold;
+	color: #000066;
+}
+
+td.promoModule a:active, td.promoModule a:hover {
+	color: #ff6600;
+}
+
+/* top modules */
+td.topModules {
+	background-color: #D9ECFF;
+}
+
+td.topModule {
+	background-color: #F1F8FE;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+td.topModule p {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	color: #000066;
+}
+
+td.topModule a, td.topModule a:link, td.topModule a:visited {
+	font-weight: bold;
+	color: #000066;
+}
+
+td.topModule a:active, td.topModule a:hover {
+	color: #ff6600;
+}
+
+/* Latest from Telstra module */
+
+td.latestModule {
+	background-color: #EAF9FF;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+td.latestModule p {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	color: #000066;
+}
+
+td.latestModule a, td.latestModule a:link, td.latestModule a:visited {
+	font-weight: bold;
+	color: #000066;
+}
+
+td.latestModule a:active, td.latestModule a:hover {
+	color: #ff6600;
+}
+
+/* Quick Links module */
+
+td.quickLinksModule div.moduleContent {
+	padding: 0 5px 0 14px;
+	margin: 7px 0;
+}
+
+td.quickLinksModule div.moduleContent p {
+	margin-top: 7px;
+}
+
+td.quickLinksModule {
+	background-color: #FFEBC1;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+td.quickLinksModule p {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	color: #660000;
+}
+
+td.quickLinksModule a, td.quickLinksModule a:link, td.quickLinksModule a:visited {
+	font-weight: bold;
+	color: #660000;
+}
+
+td.quickLinksModule a:active, td.quickLinksModule a:hover {
+	color: #ff6600;
+}
+
+/* keylines */
+.blueLine {
+	background: #6699ff;
+}
+
+.orangeLine {
+	background: #ff9900;
+}
+

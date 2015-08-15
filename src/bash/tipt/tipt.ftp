@@ -1,0 +1,5 @@
+open -u p312,n7015676r configs.nipt.telstra.com
+cd /tftpboot
+mget -O ./out/spa spa*.xml
+mget -O ./out/spa spa*.cfg
+close

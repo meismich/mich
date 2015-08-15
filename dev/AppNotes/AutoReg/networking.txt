@@ -1,0 +1,25 @@
+AutoReg - Networking
+2013-07-09
+Michael Spence
+
+
+
+Notes on networking:
+
+Auto Reg application:
+	- talks to IP address 203.25.42.232
+	- can be configured for use with proxy
+
+203.25.42.232
+	- Responds regularly with:
+		203.25.42.232 > 165.228.157.90: icmp: host 203.25.42.232 unreachable - admin prohibited
+
+203.25.42.0/24 from aus-fw1 is routed back to EMP
+
+203.25.42.232 from emp-rtr is routed to emp-pf by default
+
+203.25.40.0/22 is owned by "REYNOLDS1-AU" (aka PENTANASOLUTIONS-AU)
+
+203.25.42.232 cannot be routed across dealerlink
+
+

@@ -1,0 +1,5 @@
+OPEN dialupmx.connect.com.au 25
+EHLO test.com
+MAIL FROM:admin@test.com
+RCPT TO:debbie-leight@aapt.net.au
+QUIT

@@ -1,0 +1,9 @@
+RDP VIA GK
+
+Version 1.1
+
+This version is live.
+
+Administrators please adhere to the instructions at:
+
+	\\it-fs\it.data\Field Support\Policy and Procedure Doc\GKRDP Procedure.txt

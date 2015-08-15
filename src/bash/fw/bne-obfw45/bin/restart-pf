@@ -1,0 +1,8 @@
+clear
+pfctl -F nat
+pfctl -N -f /etc/apeagers.conf
+pfctl -s nat
+pfctl -F rules
+#pfctl -R -f /etc/apeagers.conf
+pfctl -f /etc/apeagers.conf
+pfctl -s rules

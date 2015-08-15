@@ -1,0 +1,276 @@
+Bill Buckles - Trip Debrief
+2014-02-26
+Michael Spence
+
+
+Preamble:
+
+This document discusses the successes of the recent trip to Bill Buckles
+
+This document points out further action points which can be achieved by onsite IT support.
+
+
+
+Topics of Discussion
+
+	1. BRO Patching
+		a. Inter-Rack Patching
+			i. ESX connectors
+			ii. TID cabling
+			iii. Colour coding
+		b. Patch-to-wall correlation
+		c. Core to Ubiquiti
+	2. HRB Patching
+		a. Workshop Patch panels
+		b. Core Rack
+			i. Colour coding
+			ii. Connectivity
+			iii. Diagrams
+		c. Removed equipment
+	3. VW and Subaru network
+	4. ESX Environment
+		a. Guests Migrated
+		b. New Guests
+		c. Removed Host
+		d. Further Work
+			i. New Firewall
+			ii. Domain Controller
+			iii. File Server
+	5. Active Directory
+		a. Join Computers
+		b. Local accounts
+		c. Group Policy
+
+
+
+Topics in Detail
+
+1. BRO Patching
+
+The Brookvale site's patching at the core of the network is still in quite good working order.  There exists some complications as discussed here.
+
+a. Inter-Rack Patching
+
+The inter-rack patching, between the "Patch Rack" and the "Server Rack" is still difficult to visually trace.  
+
+This table summarises the patching between the racks and their destinations.
+
+
+	Server Rack		Patch #		Patch Rack
+
+	sltm8			1		-+
+	voim24			2		 |
+	prim			3		 +- Core 1 - 4
+	mfim300			4		-+
+	                  +---	5		wall 56 (aka 5:24)
+	                  |	6		wall 55 (aka 5:23)
+	Back of sltm8 ----+	7		wall 92 (aka 3:13)
+	                  |	8		wall ?? (aka 9:48)
+	Thermometer	  :	9
+	                  |	10		wall 5 (aka 6:5)
+	                  +---	11		wall 141 (aka 2:29)
+	BRO-RMM			12		Core 10
+	BRO-ESX vNic0		13		Core 7
+	BRO-ESX vNic1		14		Core 8
+	BRO-ESX vNic2		15		TID
+	MIDAS			16		Core 35
+	(spare)			17		Core 36
+	ANBBSVR4 Nic2		18		Core 20
+	ANBBSVR5 Nic1		19		Core 34
+	Units-BK		20		Core 31
+	ANBBSVR4 IMM		21		Core 30
+	ANBBSVR4 Nic1		22		Core 32
+	(unknown)		23		(unknown)
+	(blank)			24		(blank)
+
+
+The patch cables used do not denote the purpose of the patching, which leads to mis-interpretation of the patching.  The following are recommendations:
+
+
+i. ESX connectors
+
+The ESX ports vNic0 and vNic1 carry both VLAN 1 and VLAN 5 traffic.  It is recommended that a different colour is used to denote this extra purpose.  In the Patch Rack, PURPLE 50cm patch leads have been used already to denote this, but the Server Rack remains using BLUE cables.  
+
+*** Need to supply 2x PURPLE 8ft patch leads ***
+
+
+ii. TID cabling
+
+The TID connection lives in the Comms Rack which is directly above the Patch Rack.  The ethernet cable from the TID router leads directly behind these racks and into the inter-rack patch.  Currently the cables on either end of this inter-rack patch are both blue and nothing denotes this patch's importance.  It is recommended that ORANGE patch leads are put in place between the TID router and the Patch Rack, and between the ESX server and Server Rack.
+
+*** Need to supply 2x ORANGE 8ft patch leads ***
+
+
+iii. Colour coding
+
+Following these recommendations, the following table will summarise the Colour coding used within the Brookvale core.
+
+
+	Colour		Usage
+	BLUE		VLAN 1 - Standard IP data between PCs/Printers and servers
+	WHITE		VLAN 100 - VOIP data between phones and switches
+	GREEN		VLAN 100 - VOIP data between IPECS and switches
+	BLACK		Analogue? between SLTM8 and Wall ports
+	RED		Inter-swtich connectors (TRUNKS)
+	PURPLE		VLAN 1 native and VLAN 5 tagged TRUNK
+	ORANGE		Internet Feed cable
+
+
+b. Patch-to-wall correlation
+
+As discovered on a previous visit, the wall port numbering does not match the patch panel.  To correlate between wall ports and patch panel a key is used.  The patch panel is separated into sets of units of (approximately) 24 points each; these points are numbered 1 to 24 on each unit.  At this time, the units are not identified in any way, but if they were, the wall ports could easily be changed to match this new identification system.
+
+
+c. Core to Ubiquiti
+
+The Ubiquiti is the wireless access point which connects the Toyota building with the VW and Subaru buildings.  Presently there is a patch cable which leads to a POE injector, which leads to an ethernet cable that is connected to the Ubiquiti.  The POE injector is hidden under the Patch rack and the patch cable which leads to it is not easily identifiable.
+
+It is recommended that a suitable home be located for the POE injector so that it is in a reasonable and accessible position.  Also, a RED patch cable should be used between the core switch and the POE injector to denote the purpose of this connection.
+
+
+2. HRB Patching
+
+Generally the core rack at the Harbour Rd Service Centre was in good repair.  There are a few points which need comment.
+
+a. Workshop Patch points
+
+The workshop panels have either not been labelled correctly or have lost their labelling at some point.  It is difficult to ascertain where wall points connect to within the patch panel.  
+
+Also some patch points have been broken off the wall and dangle freely from their cables.  It is also evident that further runs have been made, to stretch reachability, which require the use of small rinky-dink switches.
+
+Connection to a particular point was found through trial and error so that an access point could be installed at that location.
+
+
+b. Core Rack
+
+The core rack was reasonably neat, although it did require some rationalisation as discussed here.
+
+
+i. Colour coding
+
+The following colour coding was used within the rack at HRB.
+
+	Colour		Uage
+	BLUE		VLAN 1 - Standard IP data between PCs/Printers and servers
+	WHITE		VLAN 100 - VOIP data between phones and switches
+	RED		Inter-swtich connectors (TRUNKS)
+	GREEN		NOS BOX patch
+	ORANGE		WAN patch
+	YELLOW		HRB-FW patch
+
+Generally this colour coding was already in place; some tidying up needed to be done for PCs and Phones.  RED cables were installed for inter-switch connectivity.
+
+
+ii. Firewall
+
+After rationalising the network, tests were carried out to verify the work performed.  It was found that the firewall was no longer useable, so it was reset.  Even though it appeared that the system came back up (arp resolved the IP address), it seemed that the PF did not start.  When a monitor was connected to the firewall, the startup sequence was stuck at this step.  "Ctrl-C" forced the system to skip this step and from the console the PF needed to be started manually (as did squid which could not start due to lack of connectivity).
+
+*** Need to investigate this event ***
+
+*** Need to give local access to system ***
+
+
+iii. Diagrams
+
+From the investigation of the network at HRB, diagrams were made for Layers 1, 2 and 3.
+
+
+c. Removed equipment
+
+During the clean up the following equipment was removed:
+
+	ADSL Modem
+	Juniper
+
+
+3. VW and Subaru network
+
+The networks at VW and Subaru were quickly examined.  The VW network is tidy, but the Ubiquiti POE injector needs a better home.  The Subaru network is still not colour coded correctly and is still quite messy; the room in which it is housed is a bombshell.
+
+It is recommended that the Ubiquiti leads directly to the 24 port switch at VW and then branched to the Subaru Data and VOIP switches as well as the VW VOIP switch.  This will require minor configuration changes on the VW switch.
+
+Also, the POE switch in subaru should be re-mounted to enable the rack to close to the wall.  Presently the switch stops the swinging action of the rack.
+
+
+4. ESX Environment
+
+The new ESX server has replaced the old server.
+
+
+a. Guests Migrated
+
+All useful guests were migrated from the old server to the new.  These include the following:
+
+	bb-dc
+	bb-ts
+	bb-fw
+	bb-issadm
+
+The following were not migrated:
+
+	bb-isa
+	bb-gw
+	Voip-gw
+
+
+b. New Guests
+
+The following guests have been installed and joined to the Bill Buckle domain:
+
+	bbu-dc1
+	bbu-fs1
+	bbu-ts1
+
+They all need some configuration to complete their installation.
+
+*** Need to promote DC ***
+
+*** Need to add TS role ***
+
+A new firewall has been built but is yet to be configured: BRO-FW1
+
+*** Need to migrate 4.5 rules to 5.1 rules ***
+*** Need to configure Squid ***
+
+
+c. Removed Host
+
+The old ESX host was removed from the rack and the new ESX host installed.
+
+
+d. Further Work
+
+
+i. New Firewall
+
+Once the new FW has been configured, it will be required that the old one(s) be decommisstioned.
+
+
+ii. Domain Controller
+
+The domain controller has been built with the intention of taking the primary FSMO roles, this may require some preparation and testing.
+
+
+iii. File Server
+
+The file server needs a file structure built and a corresponding security model to match.
+
+
+5. Active Directory
+
+The active directory roll out seems to be going well, but no evidence of Group Policy usage was seen.
+
+a. Join Computers
+
+A number of computers still remain off domain.  Some of these are due to the use of "Home Edition", but a number of "Pro Edition" PCs are also not on the domain either.  This is hampering administration of these computers remotely.
+
+
+b. Local accounts
+
+A number of Domain Joined computers still have users logging onto them with local computer accounts.  It is recommended that these user accounts are removed and users forced to use AD accounts.  This will obviously require copying of locally stored files into new profiles etc.
+
+
+c. Group Policy
+
+Group policies could assist in many ways, but primarily the configuration of Folder Redirection and Proxy server settings would probably be the initial policies to configure.
+

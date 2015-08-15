@@ -1,0 +1,307 @@
+Nagios
+2011-10-27
+Michael Spence
+
+Audience;
+
+This document is written for the express use of Michael Spence.  Permission to use this document may be given to whomever Michael deems worthy.
+
+
+Preamble:
+
+This document details the reasons why a monitoring solution is necessary in a network.  Why Nagios was chosen as a suitable monitoring service is discussed as is the choice for OpenBSD as a host operating system for such a service.
+
+This document describes the methodologies employed to streamline a Nagios configuration.  Thoughts and methods are described explaining the reasons certain solutions are used in the APEagers Nagios setup.
+
+
+Topics of Discussion
+
+1. Overview
+2. Necessities
+3. Capabilities
+4. Methodologies
+5. Intricacies
+6. Vulnerabilites
+7. Extensions
+
+Z. References
+
+
+
+
+Topics in Detail
+
+1. Overview
+
+While not essential to the everyday workings of a healthy network, a monitoring server provides a central resource for checking the immediate health of systems.  Up to date informatoin can be seen, and while not immdiately giving the cause of a problem, leads to resolution paths which may have taken some time to determine.  Also the ability to inform administration staff of errors via email, enables an IT department to have confidence in the state of their systems.
+
+The various techniques to monitor systems are numerous, and a Nagios system can monitor nearly all of these.  Some monitoring methods are better handled by other applications, but Nagios can easily be linked into these systems.  Determining what is necessary or prudent to monitor becomes the essential requirement to planning the final design.  The question "How much information is too much information?" must be asked.
+
+Dependent on the method of setup, configuring a Nagios monitoring server can be made either simple or difficult.  Careful planning and preparation needs to be given to the final solution so that the maximum result can be achieved for a minimal outlay in man hours.  Nagios provides many features, which need examination, which achieve a streamlined and easily maintainable setup.
+
+Without prior knowledge of Nagios, the setup can seem rather overwhelming.  Solid documentation from the Nagios website makes the particulars of the configuration easy, with minimal practice.  The syntax for configuration is straight forward and the in-built testing feature allows any changes to be checked before being put into production.
+
+Nagios is suceptible to overloading in certain circumstances.  As was evident in the previous Nagios setup within APEagers, poor configuration can lead to the system being unable to perform the necessary checks within a reasonable timeframe.  Such a system results in poor monitoring, and information which easily becomes out of date.  Also the default behaviour of Nagios is to "obsess" over current faults.  Having a large number of faults at any one time, causes the system to request excessive amounts of service checks, potentially bringing even a well designed setup to its knees.
+
+Many additional plugins are available for Nagios and further capability can easily be added to its functionality.  Most notably is the SNMP plugin, which must be a necessity in any monitoring solution.
+
+
+2. Necessities
+
+When the subject of monitoring systems on the APEagers WAN was brought to light again, the question "What can we monitor?" was raised.  The answer to this question was: Everything.  There is not a network device which cannot be monitored in some fashion, and most devices offer the ability to measure much more than a simple "host is alive" type check.
+
+So the list of devices to monitor needed to be defined.  Determining, which devices were important enough to warrant monitoring, became the first step in planning the solution.  Essentially, all systems can be broken down into simple role type categories: Core, systems at the heart of the network; Enterprise, systems in use by all users; Dealership, used by a single dealership entity; and, User, single-end user devices.  
+
+Using these categories, it becomes apparent that systems placed in the Core, Enterprise and Dealership categories must be monitored, as multiple users rely on their functionality.  Also it follows that these devices are reliant on other devices further towards the core of the network.  Already, at this stage of planning the child-to-parent relationship between devices was becoming apparent.
+
+Armed with this information about the devices to monitor, it became necessary to determine what information should be gained from each device.  Simple "host is alive" checks give information which is no better than a ping test from a command prompt.  Checks needed to inform the IT team of the health of a system.  As each individual device was examined, it became obvious that similar or same model devices have the same checks available to them.  Details of how to streamline the setup was becoming clear.
+
+Essentially the following table summarises the requirements for adding a device to the monitoring server.
+
+Hosts to be checked:
+	Any device which more than a couple of users rely upon
+
+Services to be checked:
+	Memory
+	CPU Usage
+	Capacity
+	Essential services
+	Host alive
+	Interfaces
+	
+The above services are broard and open to interpretation dependent on the device being monitored.  Due to their uniqueness to the device type, services need to be gauged at the time they are added based on their functionality.
+
+The final necessity of a monitoring system was its ability to display and report effectively the faults in realtime.  Nagios provides a simple web interface and a strong emailing service to perform both these functions.
+
+
+3. Capabilities
+
+With the addition of some extra modules, the following services can be monitored on network devices:
+
+Windows Machines:
+	CPU Usage
+	Disk Capacity
+	Running Services (incl DHCP or BackupExec) 
+	Memory Free
+	Network Capacity
+
+Windows checks are made possible with the NSClient++ service which can be easily installed on any Windows system.  This software is covered by the GPL and is freely usable.  
+
+
+MultiFlex Machines:
+	Health of Components
+		(incl SBMs, SCMs, SWMs, RMM, Fans, PSUs)
+	Data Flow from Switches
+	System Uptime
+
+SNMP checks are used to interogate the RMM on the MultiFlex.  Appropriate MIB entries are gained from the INTELCORPORATION-MULTI-FLEX-SERVER MIB pack which must be installed.
+
+
+Switches and Routers
+	System Uptime
+	Memory Free
+	CPU Usage
+	often Temperature
+	Radios on WAPs
+
+SNMP checks are used to interrogate the switches and routers directly.  Cisco and HP both publish MIB sets for use in interogating their switches or routers.  These can be installed, but care must be taken that overloading the snmp service with information does not occur.  Overloading can result in poor performance of snmp interrogations.
+	
+Printers
+	Page Counts
+	Toner Capactiy
+	Temperature
+	System Uptime
+
+Printers are also monitored by SNMP.  Configuration is usually required on the device to allow SNMP and MIBs are more than likely readily available from a printer's supplier.
+(Note this setup doesn't use printer monitoring, but it is easily possible)
+
+
+4. Methodologies
+
+Essentially the method employed to create a functional and easily maintainable Nagios setup was to make generic templates for hosts to use.  With these templates setup, any new host, merely needed to be defined and attached to the template.  For this to work, specific services needed to be assigned to these generic templates.  Often times, it was possible to make these services generic across multiple generic host types.
+
+Using host templates makes it possible in Nagios to create variables which can be used for services which are applicable to multiple host templates.  This enables a steamlined approach to defining services.
+
+For example, a HP 2510 48 port switch is generally sold with 48MB of memory.  For generic switches of this type a template may appear like the following.
+
+define host {
+	name		generic_hp2510_48port
+	use		generic_switch
+	hostgroups	switches_hp2510
+	_MEM		51263824
+	}
+
+Similarly, a HP 2510 24 port switch is generally sold with only 24MB or memory.  Hence its template may appear like:
+
+define host {
+	name		gneric_hp2510_24port
+	use		generic_switch
+	hostgroups	switches_hp2510
+	_MEM		25631912
+	}
+
+Then using the hostgroup entry these two templates are easily applied to a generic service to measure the available memory against this value.
+
+define service {
+	service_description	HP 2510 Memory
+	use			generic_service
+	hostgroup_name		switches_hp2510
+	check_command		check_snmp!-C public -o enterprises.11.2.14.11.5.1.9.6.1.0 -w $(($_HOSTMEM / 5)) -c $(($_HOSTMEM / 10))
+	}
+
+Using this method, it was now a simple matter of defining what was capable of each device and creating the necessary templates and services.  Ensuring that templates had the appropriate constants was also appropriate.
+
+The usage of these variables also made it possible have host specific values, which was particularly useful in defining a router's maximum configured throughput, as this varied throughout the APEagers Network.
+
+The templating setup as demonstrated above, also allowed the separation of networks into uniquely identified files for each site within APEagers.  This has allowed the administration of a site to be straight forward and easy to follow.
+
+5. Intricacies
+6. Vulnerabilites
+7. Extensions
+
+Z. References
+
+
+
+
+[root]:/root> export PKG_PATH=http://mirror.aarnet.edu.au/pub/OpenBSD/4.8/packages/i386                                                                                 
+[root]:/root> pkg_add libiconv
+libiconv-1.13p1: ok                                                                                                                                                      
+[root]:/root> pkg_add gettext
+gettext-0.18.1: ok                                                                                                                                                       
+[root]:/root> pkg_add pcre
+pcre-8.02p1: ok                                                                                                                                                          
+[root]:/root> pkg_add libltdl
+libltdl-1.5.26p0: ok                                                                                                                                                     
+[root]:/root> pkg_add nagios-plugins
+nagios-plugins-1.4.14p0: ok                                                                                                                                              
+--- +nagios-plugins-1.4.14p0 -------------------
+The check_dhcp and check_icmp plugins need to run with superuser
+privileges. For security reasons they are not installed suid root
+by default. If you want to use them, you have to either change
+their mode manually or use systrace's privilege elevation feature.
+
+For further details see /usr/local/share/doc/nagios-plugins/README.OpenBSD.
+[root]:/root> pkg_add nagios-3.2.0-chroot
+nagios-3.2.0-chroot:libxml-2.7.6: ok                                                                                                                                     
+nagios-3.2.0-chroot:php5-core-5.2.13p0: ok                                                                                                                               
+useradd: Warning: home directory `/var/www/nagios' doesn't exist, and -m was not specified                                                                               
+nagios-3.2.0-chroot: ok                                                                                                                                                  
+--- +nagios-3.2.0-chroot -------------------
+Sample configuration files and web server configuration can be found in
+/usr/local/share/examples/nagios.
+
+Beware that Nagios might or might not work correctly on 64bit machines.
+
+To start nagios automatically, add these lines to /etc/rc.local
+
+if [ -x /usr/local/sbin/nagios ]; then
+        install -d -o _nagios /var/run/nagios
+        echo -n ' nagios'; /usr/local/sbin/nagios -d /etc/nagios/nagios.cfg
+fi
+--- +php5-core-5.2.13p0 -------------------
+To enable the php5 module please create a symbolic
+link from /var/www/conf/modules.sample/php5.conf
+to /var/www/conf/modules/php5.conf.
+
+ln -s /var/www/conf/modules.sample/php5.conf \
+        /var/www/conf/modules
+
+The recommended php configuration has been installed
+to /var/www/conf/php.ini.
+[root]:/root> pkg_add nagios-web-3.2.0-chroot
+nagios-web-3.2.0-chroot: ok
+
+[root]:/root> htpasswd -c /var/www/users/nagios.passwd nagiosadmin
+New password: 
+Re-type new password: 
+Adding password for user nagiosadmin
+[root]:/root> openssl genrsa -des3 -out server.3des-key 1024
+Generating RSA private key, 1024 bit long modulus
+......++++++
+...................................++++++
+e is 65537 (0x10001)
+Enter pass phrase for server.3des-key:
+Verifying - Enter pass phrase for server.3des-key:
+[root]:/root> openssl rsa -in server.3des-key -out server.key
+Enter pass phrase for server.3des-key:
+writing RSA key
+[root]:/root> openssl req -new -key server.key -x509 -out server.crt -days 1095
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) []:AU
+State or Province Name (full name) []:Queensland
+Locality Name (eg, city) []:Brisbane
+Organization Name (eg, company) []:APEagers
+Organizational Unit Name (eg, section) []:IT
+Common Name (eg, fully qualified host name) []:qld-nag.apeagers.com.au
+Email Address []:issadmin@apeagers.com.au
+[root]:/root> ls -la
+total 40
+drwx------   2 root  wheel   512 Aug 31 13:54 .
+drwxr-xr-x  14 root  wheel   512 Aug 31 13:35 ..
+-rw-r--r--   1 root  wheel    22 Aug 17  2010 .Xdefaults
+-rw-r--r--   1 root  wheel   578 Aug 17  2010 .cshrc
+-rw-------   1 root  wheel   125 Aug 17  2010 .klogin
+-rw-r--r--   1 root  wheel   328 Aug 17  2010 .login
+-rw-r--r--   1 root  wheel   473 Aug 31 13:39 .profile
+-rw-r--r--   1 root  wheel   951 Aug 31 13:52 server.3des-key
+-rw-r--r--   1 root  wheel  1005 Aug 31 13:54 server.crt
+-rw-r--r--   1 root  wheel   887 Aug 31 13:53 server.key
+[root]:/root> rm server.3des-key                                                                                                                                         
+[root]:/root> chmod 600 server.key                                                                                                                                       
+[root]:/root> mv server.crt /etc/ssl/.
+[root]:/root> mv server.key /etc/ssl/private/.                                                                                                                           
+
+--<edited rc.conf>------------
+httpd_flags="-DSSL"
+pf=NO
+------------------------------
+
+--<edited httpd.conf>---------[ refer to HTTPDchanges.txt ]
+Added /cgi-bin/nagios & /nagios 
+Added Authentication
+SSL wasn't working so turned it off in httpd.conf
+Added php in (copied php5.conf into httpd.conf)
+------------------------------
+
+[root]:/root> pkg_add mrtg
+mrtg-2.16.4:p5-SNMP_Session-1.13p1: ok
+mrtg-2.16.4:p5-Digest-SHA1-2.12: ok
+mrtg-2.16.4:p5-Digest-HMAC-1.02: ok
+mrtg-2.16.4:p5-Crypt-DES-2.05p1: ok
+mrtg-2.16.4:p5-Net-SNMP-6.0.0: ok
+mrtg-2.16.4:p5-Socket6-0.23: ok
+mrtg-2.16.4:p5-IO-Socket-INET6-2.65: ok
+mrtg-2.16.4:jpeg-8b: ok
+mrtg-2.16.4:png-1.2.44: ok
+mrtg-2.16.4:gd-2.0.35p0: ok
+mrtg-2.16.4:libart-2.3.21: ok
+mrtg-2.16.4:rrdtool-1.2.30p0: ok
+mrtg-2.16.4:p5-RRD-1.2.30: ok
+mrtg-2.16.4: ok
+[root]:/root> pkg_add net-snmp
+net-snmp-5.4.2.1p5: ok
+--- +net-snmp-5.4.2.1p5 -------------------
+To have snmpd start at boot time, you must edit /etc/snmp/snmpd.conf
+and add the following lines to /etc/rc.local:
+
+if [ -x /usr/local/sbin/snmpd ]; then
+        echo -n ' snmpd';       /usr/local/sbin/snmpd
+fi
+
+This will start snmpd and use /etc/snmp/snmpd.conf for the configuration. 
+The snmpconf tool can be used to help edit your configuration files.  See 
+snmpconf(1), snmpd(8), and snmpd.conf(5) for more options.
+[root]:/var/www> mkdir mrtg
+
+--<edited httpd.conf>---------[ refer to HTTPDchanges.txt ]
+Added /mrtg
+------------------------------
+
+

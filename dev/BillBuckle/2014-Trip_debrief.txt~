@@ -1,0 +1,153 @@
+Bill Buckles - Trip Debrief
+2014-02-26
+Michael Spence
+
+
+Preamble:
+
+This document discusses the successes of the recent trip to Bill Buckles
+
+This document points out further action points which can be achieved by onsite IT support.
+
+
+
+Topics of Discussion
+
+	1. BRO Patching
+		a. Inter-Rack Patching
+			i. ESX connectors
+			ii. TID cabling
+			iii. Colour coding
+		b. Patch-to-wall correlation
+		c. Core to Ubiquiti
+	2. HRB Patching
+		a. Workshop Patch panels
+		b. Core Rack
+			i. Colour coding
+			ii. Connectivity
+			iii. Diagrams
+		c. Removed equipment
+	3. VW and Subaru network
+	4. ESX Environment
+		a. Guests Migrated
+		b. New Guests
+		c. Removed Host
+		d. Further Work
+			i. New Firewall
+			ii. Domain Controller
+			iii. File Server
+	5. Active Directory
+		a. Join Computers
+		b. Local accounts
+		c. Group Policy
+
+
+
+Topics in Detail
+
+1. BRO Patching
+
+The Brookvale site's patching at the core of the network is still in quite good working order.  There exists some complications as discussed here.
+
+a. Inter-Rack Patching
+
+The inter-rack patching, between the "Patch Rack" and the "Server Rack" is still difficult to visually trace.  
+
+This table summarises the patching between the racks and their destinations.
+
+
+	Server Rack		Patch #		Patch Rack
+
+	sltm8			1		-+
+	voim24			2		 |
+	prim			3		 +- Core 1 - 4
+	mfim300			4		-+
+	                  +---	5		wall 56 (aka 5:24)
+	                  |	6		wall 55 (aka 5:23)
+	Back of sltm8 ----+	7		wall 92 (aka 3:13)
+	                  |	8		wall ?? (aka 9:48)
+	Thermometer	  :	9
+	                  |	10		wall 5 (aka 6:5)
+	                  +---	11		wall 141 (aka 2:29)
+
+
+
+
+The following are recommendations:
+
+
+i. ESX connectors
+
+
+ii. TID cabling
+
+
+iii. Colour coding
+
+
+b. Patch-to-wall correlation
+
+
+c. Core to Ubiquiti
+
+
+2. HRB Patching
+
+
+a. Workshop Patch panels
+
+
+b. Core Rack
+
+
+i. Colour coding
+
+
+ii. Connectivity
+
+
+iii. Diagrams
+
+
+c. Removed equipment
+
+
+3. VW and Subaru network
+
+
+4. ESX Environment
+
+
+a. Guests Migrated
+
+
+b. New Guests
+
+
+c. Removed Host
+
+
+d. Further Work
+
+
+i. New Firewall
+
+
+ii. Domain Controller
+
+
+iii. File Server
+
+
+5. Active Directory
+
+
+a. Join Computers
+
+
+b. Local accounts
+
+
+c. Group Policy
+
+

@@ -1,0 +1,125 @@
+#### Below is the config as setup on 2011-04-01
+
+version 12.3
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname ap
+!
+enable secret 5 $1$BVpB$/LbIdc9CWNJntMhu1E18y.
+!
+ip subnet-zero
+!
+!
+aaa new-model
+!
+!
+aaa group server radius rad_eap
+ server 10.32.100.78 auth-port 1812 acct-port 1813
+!
+aaa group server radius rad_mac
+!
+aaa group server radius rad_acct
+!
+aaa group server radius rad_admin
+!
+aaa group server tacacs+ tac_admin
+!
+aaa group server radius rad_pmip
+!
+aaa group server radius dummy
+!
+aaa authentication login eap_methods group rad_eap
+aaa authentication login mac_methods local
+aaa authorization exec default local 
+aaa accounting network acct_methods start-stop group rad_acct
+aaa session-id common
+!
+dot11 ssid aptest
+   authentication open eap eap_methods 
+   authentication network-eap eap_methods 
+   authentication key-management wpa
+   guest-mode
+!
+power inline negotiation prestandard source
+!
+!
+username Cisco password 7 032752180500
+username 001dd9567899 password 7 055B565E2548175C4F524F4B52
+username 001dd9567899 autocommand exit
+!
+bridge irb
+!
+!
+interface Dot11Radio0
+ no ip address
+ no ip route-cache
+ !
+ encryption mode ciphers tkip 
+ !
+ ssid aptest
+ !
+ speed basic-1.0 basic-2.0 basic-5.5 6.0 9.0 basic-11.0 12.0 18.0 24.0 36.0 48.0 54.0
+ station-role root
+ bridge-group 1
+ bridge-group 1 subscriber-loop-control
+ bridge-group 1 block-unknown-source
+ no bridge-group 1 source-learning
+ no bridge-group 1 unicast-flooding
+ bridge-group 1 spanning-disabled
+!
+interface Dot11Radio1
+ no ip address
+
+ no ip route-cache
+ !
+ encryption mode ciphers tkip 
+ speed basic-6.0 9.0 basic-12.0 18.0 basic-24.0 36.0 48.0 54.0
+ station-role root
+ bridge-group 1
+ bridge-group 1 subscriber-loop-control
+ bridge-group 1 block-unknown-source
+ no bridge-group 1 source-learning
+ no bridge-group 1 unicast-flooding
+ bridge-group 1 spanning-disabled
+!
+interface FastEthernet0
+ no ip address
+ no ip route-cache
+ duplex auto
+ speed auto
+ bridge-group 1
+ no bridge-group 1 source-learning
+ bridge-group 1 spanning-disabled
+ hold-queue 160 in
+!
+interface BVI1
+ ip address 10.32.0.230 255.255.0.0
+ no ip route-cache
+!
+ip default-gateway 10.32.3.254
+ip http server
+no ip http secure-server
+ip http help-path http://www.cisco.com/warp/public/779/smbiz/prodconfig/help/eag
+ip radius source-interface BVI1 
+!
+radius-server local
+!
+radius-server attribute 32 include-in-access-req format %h
+radius-server host 10.32.100.78 auth-port 1812 acct-port 1813 key 7 0010161510520501
+radius-server vsa send accounting
+!
+control-plane
+!
+bridge 1 route ip
+!
+!
+!
+line con 0
+line vty 0 4
+!
+end
+
+#### End of config as it stood at 2011-04-01

@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CURRENT_USER\Software\Classes\.exe]
+[-HKEY_CURRENT_USER\Software\Classes\secfile]
+[-HKEY_CLASSES_ROOT\secfile]
+[-HKEY_CLASSES_ROOT\.exe\shell\open\command]
+
+[HKEY_CLASSES_ROOT\exefile\shell\open\command]
+@="\"%1\" %*"
+
+[HKEY_CLASSES_ROOT\.exe]
+@="exefile"
+"Content Type"="application/x-msdownload"
+

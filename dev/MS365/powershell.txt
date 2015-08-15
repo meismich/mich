@@ -1,0 +1,35 @@
+
+
+Accessing mailbox via Outlook using Powershell
+
+$oos = (new-object -comobject Outlook.Applicaton).session
+
+$oos.logon('outlook365')
+
+$oos.folders | foreach { $_.folders }		# For all folders in the root, list all sub folders.  (typically only one in root)
+
+$osi = $oos.getdefaultfolder(5)		# Selects the "Sent Items" folder".... want this step to be 
+
+$osi.items | foreach { $_.conversationindex } > blah.txt
+
+more blah.txt | sort -unique			# gives unique lines in order
+
+
+
+DoFolders($oos.folders)
+
+function DoFolders($fs) {
+
+	foreach ($f in $fs) {
+		$fn = "C:\tmp\" + $f.name
+		foreach ($i in $f.items) {
+			switch ($i.class) {
+				40 { "CONTACT:" + $i.conversationindex }
+				43 { $i.convsersationindex }
+				}
+			} > $fn
+
+		DoFolders($f.folders)
+		}
+
+	}

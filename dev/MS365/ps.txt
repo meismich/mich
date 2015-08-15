@@ -1,0 +1,104 @@
+
+
+Accessing mailbox via Outlook using Powershell
+
+$oos = (new-object -comobject Outlook.Application).session
+
+$oos.logon('outlook365')
+
+$oos.folders | foreach { $_.folders }		# For all folders in the root, list all sub folders.  (typically only one in root)
+
+$osi = $oos.getdefaultfolder(5)		# Selects the "Sent Items" folder".... want this step to be 
+
+$osi.items | foreach { $_.conversationindex } > blah.txt
+
+more blah.txt | sort -unique			# gives unique lines in order
+
+
+
+DoFolders($oos.folders)
+
+function DoFolders($fs) {
+
+	foreach ($f in $fs) {
+"@" + $f.name
+		#$fn = "C:\tmp\" + $f.name + ".txt"
+
+		DoDateMove($f.items)
+
+ 		#DoItemsPrep($f.items) > $fn
+		#DoItemsMove($fn)
+
+		DoFolders($f.folders)
+		}
+
+	}
+
+$nf = $oos.getdefaultfolder(6).folders.add("Moved_" + [datetime]::Now)
+
+function DoDateMove($is) {
+"#"
+	$cd = [datetime]::parse("1/5/2012 12:00pm")
+write-host $cd
+	$rd = [datetime]::parse("12/11/2011 5:59pm")
+	$sf = "[CreationTime] < '" + $cd + "' AND [ReceivedTime] < '" + $rd + "'"
+
+	$i = $is.find($sf)
+	$i.conversationindex
+
+	if ($i -eq $null) {
+		"BORK"
+		} else {
+		"BINGO"
+		do {
+			$i.conversationindex
+			$i = $is.findnext()
+			$i.move($nf)
+			} while ( $i -ne $null )
+		}
+
+	}
+
+function DoItemsPrep($is) {
+	foreach ($i in $is) {
+		switch ($i.class) 
+			{
+			40 { $i.conversationindex }
+			43 { $i.conversationindex }
+			default { $i.class }
+			}
+		
+		}
+	}
+
+function DoItemsMove($in) {
+"X"	
+	get-content $in | sort -unique | foreach {
+
+		$c = 0
+"/"
+		if ( $_ -ne "" ) {
+			$ss = "^" + $_ + "$"
+			$c = (get-content $in | select-string $ss | measure-object).count
+			$_ + " = " + $c
+			}
+"\"
+		if ($c -gt 1) {
+			$_ + " = " + $c
+			# Find the items with this UID
+			#$filter = "[ConversationIndex] = '" + $_ + "'"     # CAN'T DO THIS
+			#$f.items.find($filter).move($nf)
+			$first = 1
+			foreach ( $j in $f.items ) {
+				if ( $first -eq 1 ) {
+					if ( $j.conversationindex -eq $_ ) {
+						$j.move($nf)
+						$first = 0
+						break
+						}
+					}
+				}
+			}
+		}
+	}
+

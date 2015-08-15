@@ -1,0 +1,77 @@
+
+GP's built to help migrate and configure MS365 users
+
+On first use Outlook has to have profiles cleared and a new one configured.  GP created to manage New Users:
+
+	"Microsoft 365 - New Users"
+
+which is security filtered to the Security group "MS 365 Outlook Reset".  This GP currently performs a registry hack to delete profiles
+
+	"resetprofile.reg"
+
+Plan to replace this with a vbs as the registry is not being altered as hoped.
+
+
+All Outlook clients need to have caching mode turned on for best performace.  GP created to manage all 365 Users:
+
+	"Microsoft 365 - Permanent"
+
+which is security filtered to the Security group "MS 365 Users".  This GP currently only configures the Outlook client using a Outlook template.  In the future this group may also be used to set other 365 properties.
+
+
+
+
+POWER SHELL
+
+
+Logging onto 365 Powershell:
+
+$c = Get-Credential
+#  Connect-MsolService -Credential $c  # THIS IS NECESSARY ANYMORE 2011-11-09
+$s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Credential $c -Authentication Basic -AllowRedirect
+Import-PSSession $s
+
+
+Some useful PowerShell commands:
+
+get-msolcompanyinformation
+
+get-msoluser
+	-licensereconciliationneededonly	Shows unlicencsed
+	-domain <domainname>			Shows Domain users (primary email address sort)
+
+get-command -module <modulename>
+
+
+Listing Users:
+
+get-mailbox
+	| select-object -Property Office,CustomAttribute1,UserPrincipalName,primarySmtpAddress 
+	| ConvertTo-csv > somefile.csv
+
+(The first line of the output is the headings so if no "select-object" is done, then you can just read the headings)
+
+Setting a Mailbox to be opened by another user:
+
+Add-MailboxPermission -Identity <ToOpenUser> -User <OpeningUser> -AccessRights FullAccess -InheritanceType All
+	(for example if "Borko" wants to open user "Bingo"s mailbox the following would be used:
+		Add-MailboxPermission -Identity Bingo -User Borko -AccessRights FullAccess -InheritanceType All
+	you may find it easier to use email addresses... I did!)
+
+
+Allowing User to SendAs another user:
+
+Add-RecipientPermission -Identity <WhoToSendAsUser> -AccessRights SendAs -Trustee <RealSender>
+	(for example if "Borko" wants to SendAs "Bingo" the following would be used:
+		Add-RecipientPermission -Identity Bingo -AccessRights SendAs -Trustee Borkoi
+	you may find it easier to use email addresses... I did!)
+
+
+
+Last Logon Time statistics for entire group:
+
+Get-Mailbox -resultsize unlimited 
+	| select @{Name="Identity";Expression={$_.UserPrincipalName}}			<-- converts "UPN" to "Identity" as an object field
+	| get-mailboxstatistics 
+	| select-object -property DisplayName,LastLogonTime 
+	| export-csv c:\tmp\mblogontimes.csv

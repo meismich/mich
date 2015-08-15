@@ -1,0 +1,82 @@
+REGEDIT4
+
+; ===================================
+; 
+; Turn off Audit mode flag
+; ===================================
+
+; Office 12 Audit mode key
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Office\12.0\Common\General]
+"AuditMode"=-
+
+; Office 12 Audit mode key (64-bit)
+[HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Office\12.0\Common\General]
+"AuditMode"=-
+
+; ===================================
+; 
+; clear all application FirstRun data
+; ===================================
+
+; msoridOfficeFirstRun in keyCUOfficeGeneral
+; Comments   : Determines if Office First Run has occurred yet.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Common\General]
+"FirstRun"=-
+
+
+; ===================================
+; 
+; user info
+; ===================================
+; All the userinfo
+[-HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Common\UserInfo]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Common\UserInfo]
+"Company"=hex:00,00
+"UserName"=hex:00,00
+"UserInitials"=hex:00,00
+
+; ===================================
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\00002119130000000000000000F01FEC\InstallProperties]
+"ProductID"=-
+"RegOwner"=-
+"RegCompany"=-
+
+; Clear out registration info 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\12.0\Registration\{91120000-0031-0000-0000-0000000FF1CE}]
+"DigitalProductID"=-
+"ProductID"=-
+"OEM"=-
+"PSS"=-
+[-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\12.0\Registration]
+
+; Clear out registration info (64-bit) 
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Office\12.0\Registration\{91120000-0031-0000-0000-0000000FF1CE}]
+"DigitalProductID"=-
+"ProductID"=-
+"OEM"=-
+"PSS"=-
+
+; Remove Product Code from Add/Remove Programs 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\PROHYBRIDR] 
+"ProductID"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\PROHYBRID2R] 
+"ProductID"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\HOMESTUDENTR] 
+"ProductID"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\SMALLBUSINESSR] 
+"ProductID"=-
+; Remove Product Code from Add/Remove Programs (64-bit) 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\PROHYBRIDR] 
+"ProductID"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\PROHYBRID2R] 
+"ProductID"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\HOMESTUDENTR] 
+"ProductID"=-
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\SMALLBUSINESSR] 
+"ProductID"=-
+; Set flag to show Office Update Dialog at FirstRun
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\12.0\Common\General]
+"ShownOptIn"=dword:00000000

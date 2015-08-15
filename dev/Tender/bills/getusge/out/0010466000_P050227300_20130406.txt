@@ -1,0 +1,7 @@
+,962,Local N Everyday,to 31 Mar,519 calls,25.95,28.56
+,960,Calls to 13 Numbers,to 31 Mar,26 calls,8.27,9.10
+,983,STD,to 31 Mar,23 calls,1.78,1.96
+,984,Calls direct to Mobiles,to 31 Mar,342 calls,55.83,61.41
+,963,Local N Everyday,to 31 Mar,199 calls,9.95,10.95
+,961,Calls to 13 Numbers,to 31 Mar,46 calls,14.63,16.09
+,986,STD,to 31 Mar,4 calls,0.21,0.23

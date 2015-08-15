@@ -1,0 +1,13 @@
+#
+# FILE:		ape_sqd.pf
+# AUTHOR:	Michael Spence
+# DATE:		2013-05-16
+# VERSION:	BSD_Gateway v0.1 (client)
+#
+
+match in quick on $if_int proto { tcp udp } from $net_local to any port { 80 443 } rdr-to 127.0.0.1 port 3128
+pass in quick on $if_int proto { tcp udp } from $net_local to 127.0.0.1 port 3128 keep state
+pass in quick on $if_int proto { tcp udp } to $if_int port 3128 keep state
+pass out quick on $if_ext proto { tcp udp } to any port { 80 443 3128 } keep state nat-to ($if_ext:0)
+pass out quick on $if_int proto { tcp udp } to any port { 80 443 } keep state nat-to ($if_int:0)
+

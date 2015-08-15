@@ -1,0 +1,62 @@
+OpenBSD SMTP Relay  Server
+2012-02-23
+Michael Spence
+
+
+Audience:
+
+System Engineer or System Administrator
+
+
+Preamble:
+
+This document details the steps take to create a smtp relay server for the purpose of relaying emails sent from devices within the WAN.  Devices include: printers, scanners, ERA, and various manufacturer applications.  Devices may also include: servers, RMMs, monitoring servers.
+
+
+Topics of Discussion
+
+1. System Requirements
+2. OpenBSD Installation
+3. Sendmail CF file
+4. Startup Configuration
+5. PF Rules ???
+
+
+Topics in Detail
+
+1. System Requirements
+
+fuck all
+
+
+2. OpenBSD Installation
+
+as per usual
+
+IP Address x.y.1.10
+
+3. Sendmail CF file
+
+
+
+4. Startup Configuration
+
+in rc.conf:
+
+sendmail_flags="-L sm-mta -C/etc/mail/mspence.cf -bd -q10m"
+
+users mspence.cf for configuration and has a 10 minute queue retry.
+
+
+5. PF Rules ???
+
+This is assumed to be the default, but here is the configuration on the dev box
+
+-----------------------------------
+pass
+block in on ! lo0 proto tcp to port 6000:6010
+-----------------------------------
+
+
+
+

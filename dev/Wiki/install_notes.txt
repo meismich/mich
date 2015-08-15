@@ -1,0 +1,58 @@
+TWiki Installation Notes
+2011-10-07
+Michael Spence
+
+
+Installation of OpenBSD system 8G HDD 7.5 as / and .5 as swap
+
+Turned on httpd_flags in rc.conf as "-DSSL"
+
+Created FW hole for package adding
+
+added package TWiki... results:
+
+TWiki-4.1.1:p5-Net-Daemon-0.43: ok
+TWiki-4.1.1:p5-PlRPC-0.2018p0: ok
+TWiki-4.1.1:p5-DBI-1.609: ok
+TWiki-4.1.1:p5-YAML-Syck-1.08: ok
+TWiki-4.1.1:p5-FreezeThaw-0.43p1: ok
+TWiki-4.1.1:mysql-client-5.1.48: ok
+TWiki-4.1.1:p5-DBD-mysql-4.014: ok
+TWiki-4.1.1:libiconv-1.13p1: ok
+TWiki-4.1.1:libxml-2.7.6: ok
+TWiki-4.1.1:postgresql-client-8.4.4: ok
+TWiki-4.1.1:p5-DBD-Pg-2.17.1: ok
+TWiki-4.1.1:p5-HTML-Tagset-3.20: ok
+TWiki-4.1.1:libghttp-1.0.9p2: ok
+TWiki-4.1.1:p5-HTTP-GHTTP-1.07p1: ok
+TWiki-4.1.1:p5-HTML-Parser-3.65: ok
+TWiki-4.1.1:p5-Crypt-SSLeay-0.57p0: ok
+TWiki-4.1.1:p5-URI-1.54: ok
+TWiki-4.1.1:p5-libwww-5.834p0: ok
+TWiki-4.1.1:p5-JSON-2.21: ok
+TWiki-4.1.1:sqlite3-3.6.23p0: ok
+TWiki-4.1.1:p5-DBD-SQLite-1.25v0: ok
+TWiki-4.1.1:p5-IO-stringy-2.110p0: ok
+TWiki-4.1.1:p5-CGI-Simple-1.112: ok
+TWiki-4.1.1:p5-CGI-Session-4.20: ok
+TWiki-4.1.1: ok
+--- +TWiki-4.1.1 -------------------
+If you're using Apache, run it in non-chrooted mode, or create a correct
+environment with sendmail(8), egrep(1) etc. You should add
+"Include /var/www/conf/httpd-twiki.conf" to your httpd.conf.
+
+You have to customize your twiki installation (like WIKIWEBMASTER)
+in /var/www/htdocs/twiki/data/TWiki/TWikiPreferences.txt
+
+Pages:
+* http://localhost/twiki/
+* http://localhost/twiki/bin/view/TWiki
+* http://localhost/twiki/bin/view/Main/WebHome
+
+To start the httpd daemon in a non chroot use the -u flag as stated in the man page -- Michael
+
+perform the configure as stated in the documentation
+
+Searching:
+
+Twiki expects "egrep" and "fgrep" to use the "-H" option which is popular with modern versions.  On Open BSD this feature is not enabled and must be removed in the configuration.  This works as expected.

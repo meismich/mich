@@ -1,0 +1,23 @@
+
+Starting Nmap 4.76 ( http://nmap.org ) at 2010-07-15 11:44 EST
+Host sstsho1.apeagers.com.au (10.1.254.1) appears to be up.
+MAC Address: 00:15:17:E6:CC:A3 (Intel Corporate)
+Host 10.1.254.4 appears to be up.
+MAC Address: 00:04:23:DC:25:0B (Intel)
+Host payroll.apeagers.com.au (10.1.254.5) appears to be up.
+MAC Address: 00:50:56:8D:6B:DF (VMWare)
+Host supportpc.apeagers.com.au (10.1.254.7) appears to be up.
+MAC Address: 00:50:56:8D:62:C8 (VMWare)
+Host 10.1.254.8 appears to be up.
+MAC Address: 00:04:23:DE:A5:CB (Intel)
+Host zoogab2.apeagers.com.au (10.1.254.10) appears to be up.
+MAC Address: 00:1D:09:71:4B:E6 (Dell)
+Host ssfsvca (10.1.254.14) appears to be up.
+MAC Address: 00:15:17:8F:94:42 (Intel Corporate)
+Host 10.1.254.15 appears to be up.
+MAC Address: 00:15:17:8F:94:43 (Intel Corporate)
+Host test-ts1.apeagers.com.au (10.1.254.29) appears to be up.
+MAC Address: 00:50:56:8D:0B:00 (VMWare)
+Host 10.1.254.57 appears to be up.
+MAC Address: 00:1E:4F:33:85:9E (Dell)
+Nmap done: 256 IP addresses (10 hosts up) scanned in 2.30 seconds

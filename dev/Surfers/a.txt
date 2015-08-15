@@ -1,0 +1,71 @@
+Surfers City - Analysis findings
+Michael Spence
+
+
+
+Site Assessment
+
+Email Clients
+	Office 2010	32
+	Office 2007	5
+	Office 2003	4
+	Express		1
+
+Computers w/ Email Count 42
+
+Email Usage
+	No Folders in Deleted Items
+	No Shared Accounts Noted
+	Almost all sited users had folders outside Inbox
+	No users saving to EML files
+	All accounts POP and using PST
+	Acive PST used in many accounts archiving Sent Items only
+	Unknown Junk Email filter options
+
+Email Storage Size
+	Only a few accounts were actually tested for size:
+		Saw a few around 1 to 2 GB
+		Saw one at 5GB
+	Assuming most accounts around the 1.5GB mark
+
+Other Devices
+	Photocopier - Task Alfa
+		Scans to email
+		SMTP server = 203.25.185.2 (aka smtp.esc.net.au)
+		U&P for interface = 3000
+		U&P for webpage = Admin
+	Multifunctions - Kyo 1128MFP
+		Scans to email
+		SMTP server = 203.25.185.2 (aka smtp.esc.net.au)
+		U&P for webpage = admin00
+		
+	Smart Phones
+		Predominantly iPhone
+	Tablets
+		Didn't see any
+	ERP
+		Emails, but don't know how
+		Working on this with Units
+
+PC Configuration
+	DNS	172.16.1.93	(UNITs Server)
+		172.16.1.254	(Firewall)
+	OSes	XP or 7
+
+Network Tests
+	Speed Test	3Mbps
+	Office 365 Portal was available
+	Outlook Connectivitiy WAS NOT available
+		working with IT Leaders to test firewall/proxy
+	Transparent Proxy ??
+
+Domain Name Transfers
+	Have had response from Escapenet
+	Passed Password details to MelbourneIT
+	Have been requested to get ownership forms filled out by Escapenet
+	Have forwarded to Escapenet
+		surferscity.com.au
+		surferscityholden.com.au
+	Other domains are migrating
+
+

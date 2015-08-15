@@ -1,0 +1,8 @@
+ADMT - Migration
+
+Topics of Discussion:
+
+	Migrate Univseral Groups
+	Migrate User Accounts
+		- OUs and Subtree OUs
+		- User Accounts

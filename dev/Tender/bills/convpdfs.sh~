@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for i in $( ls *pdf ); do 
+	echo $i
+	pdftotext -f 3 -l 3 -layout $i out/$i.txt
+done
+
+for i in $( ls out/*txt ); do
+	echo $i
+	vim -s convpdf.vim $i
+done
+
+cat out/*txt all_usage.csv
+
